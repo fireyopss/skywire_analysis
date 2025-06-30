@@ -1,0 +1,38 @@
+module.exports = {
+  apps: [{
+    name: '{{ app_name }}',
+    script: 'npm',
+    args: 'run preview',
+    cwd: '{{ app_directory }}/app',
+    instances: 1,
+    autorestart: true,
+    watch: false,
+    max_memory_restart: '1G',
+    env: {
+      NODE_ENV: '{{ environment }}',
+      PORT: {{ app_port }}
+    },
+    env_production: {
+      NODE_ENV: 'production',
+      PORT: {{ app_port }}
+    },
+    log_file: '{{ app_directory }}/logs/combined.log',
+    out_file: '{{ app_directory }}/logs/out.log',
+    error_file: '{{ app_directory }}/logs/error.log',
+    time: true,
+    merge_logs: true
+  }],
+
+  deploy: {
+    production: {
+      user: '{{ app_user }}',
+      host: '{{ ansible_host }}',
+      ref: 'origin/main',
+      repo: 'https://github.com/your-username/skywire-repos-viewer.git',
+      path: '{{ app_directory }}/app',
+      'pre-deploy-local': '',
+      'post-deploy': 'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
+      'pre-setup': ''
+    }
+  }
+};

@@ -1,0 +1,95 @@
+---
+- name: Deploy Skywire Repos Viewer
+  hosts: web
+  become: yes
+  gather_facts: yes
+  
+  vars:
+    app_name: "skywire-repos-viewer"
+    web_root: "/var/www/skywire-repos"
+    repo_url: "https://github.com/fireyopss/skywire_analysis.git"
+    
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install required packages
+      apt:
+        name:
+          - nginx
+          - nodejs
+          - npm
+          - git
+        state: present
+
+    - name: Create web directory
+      file:
+        path: "{{ web_root }}"
+        state: directory
+        owner: www-data
+        group: www-data
+        mode: '0755'
+
+    - name: Clone repository
+      git:
+        repo: "{{ repo_url }}"
+        dest: "{{ web_root }}/source"
+        version: main
+        force: yes
+
+    - name: Install npm dependencies
+      npm:
+        path: "{{ web_root }}/source/skywire-repos-viewer"
+        state: present
+      
+    - name: Build the application
+      shell: npm run build
+      args:
+        chdir: "{{ web_root }}/source/skywire-repos-viewer"
+
+    - name: Copy built files to web root
+      copy:
+        src: "{{ web_root }}/source/skywire-repos-viewer/dist/"
+        dest: "{{ web_root }}/html/"
+        remote_src: yes
+        owner: www-data
+        group: www-data
+        mode: '0644'
+
+    - name: Configure Nginx
+      template:
+        src: nginx.conf.j2
+        dest: /etc/nginx/sites-available/{{ app_name }}
+        backup: yes
+      notify: restart nginx
+
+    - name: Enable Nginx site
+      file:
+        src: /etc/nginx/sites-available/{{ app_name }}
+        dest: /etc/nginx/sites-enabled/{{ app_name }}
+        state: link
+      notify: restart nginx
+
+    - name: Remove default Nginx site
+      file:
+        path: /etc/nginx/sites-enabled/default
+        state: absent
+      notify: restart nginx
+
+    - name: Test Nginx configuration
+      shell: nginx -t
+      changed_when: false
+
+    - name: Start and enable Nginx
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes
+
+  handlers:
+    - name: restart nginx
+      systemd:
+        name: nginx
+        state: restarted

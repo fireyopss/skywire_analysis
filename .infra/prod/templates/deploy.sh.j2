@@ -1,0 +1,79 @@
+#!/bin/bash
+set -e
+
+# Deployment script for {{ app_name }}
+# Usage: ./deploy.sh [branch]
+
+BRANCH=${1:-main}
+APP_DIR="{{ app_directory }}/app"
+BACKUP_DIR="{{ app_directory }}/backups"
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+
+echo "🚀 Starting deployment of {{ app_name }} (branch: $BRANCH)"
+
+# Create backup directory
+mkdir -p "$BACKUP_DIR"
+
+# Backup current version
+if [ -d "$APP_DIR" ]; then
+    echo "📦 Creating backup of current version..."
+    tar -czf "$BACKUP_DIR/backup_$TIMESTAMP.tar.gz" -C "$APP_DIR" .
+    echo "✅ Backup created: $BACKUP_DIR/backup_$TIMESTAMP.tar.gz"
+fi
+
+# Update code
+echo "🔄 Updating code from repository..."
+cd "$APP_DIR"
+git fetch origin
+git checkout "$BRANCH"
+git pull origin "$BRANCH"
+
+# Install dependencies
+echo "📦 Installing dependencies..."
+npm ci
+
+# Build application
+echo "🔨 Building application..."
+npm run build
+
+# Restart application
+echo "🔄 Restarting application..."
+pm2 restart {{ app_name }} || pm2 start ecosystem.config.js
+
+# Wait for application to start
+echo "⏳ Waiting for application to start..."
+sleep 5
+
+# Health check
+echo "🔍 Performing health check..."
+if curl -f http://localhost:{{ app_port }}/health >/dev/null 2>&1; then
+    echo "✅ Health check passed!"
+else
+    echo "❌ Health check failed!"
+    echo "🔄 Rolling back to previous version..."
+    
+    # Restore from backup
+    if [ -f "$BACKUP_DIR/backup_$TIMESTAMP.tar.gz" ]; then
+        cd "$APP_DIR"
+        tar -xzf "$BACKUP_DIR/backup_$TIMESTAMP.tar.gz"
+        pm2 restart {{ app_name }}
+        echo "✅ Rollback completed"
+    fi
+    exit 1
+fi
+
+# Cleanup old backups (keep last 5)
+echo "🧹 Cleaning up old backups..."
+cd "$BACKUP_DIR"
+ls -t backup_*.tar.gz | tail -n +6 | xargs -r rm
+
+# Reload Nginx (in case of configuration changes)
+echo "🔄 Reloading Nginx..."
+sudo nginx -t && sudo systemctl reload nginx
+
+echo "🎉 Deployment completed successfully!"
+echo "🌐 Application is available at: http://{{ app_domain }}"
+
+# Show PM2 status
+echo "📊 PM2 Status:"
+pm2 status {{ app_name }}
