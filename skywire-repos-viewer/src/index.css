@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
+
+/* Markdown styling - High Contrast */
+.markdown-content {
+  color: #ffffff;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.markdown-content h1 {
+  color: #ffffff;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid #404040;
+  padding-bottom: 0.75rem;
+}
+
+.markdown-content h2 {
+  color: #ffffff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.markdown-content h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.markdown-content h4 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.markdown-content p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #e5e5e5;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #e5e5e5;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #e5e5e5;
+}
+
+.markdown-content li {
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+  color: #e5e5e5;
+}
+
+.markdown-content code {
+  background-color: #1a1a1a;
+  color: #22d3ee;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid #404040;
+}
+
+.markdown-content pre {
+  background-color: #0a0a0a;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+}
+
+.markdown-content pre code {
+  background: transparent;
+  padding: 0;
+  color: #e5e5e5;
+  border: none;
+  font-size: inherit;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background-color: #0a0a0a;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown-content th {
+  background-color: #1a1a1a;
+  border: 1px solid #404040;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.markdown-content td {
+  border: 1px solid #404040;
+  padding: 0.75rem 1rem;
+  color: #e5e5e5;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid #3b82f6;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #d1d5db;
+  background-color: #0a0a0a;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.markdown-content strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.markdown-content em {
+  font-style: italic;
+  color: #e5e5e5;
+}
+
+.markdown-content a {
+  color: #60a5fa;
+  text-decoration: underline;
+  text-decoration-color: #60a5fa;
+}
+
+.markdown-content a:hover {
+  color: #93c5fd;
+  text-decoration-color: #93c5fd;
+}
+
+/* Button improvements */
+.btn-primary {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-secondary {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+  border: 1px solid #404040;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #262626;
+  border-color: #525252;
+  color: #ffffff;
+}
