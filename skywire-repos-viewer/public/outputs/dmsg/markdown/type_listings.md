@@ -1,0 +1,1389 @@
+# DMSG Repository Type Listings
+
+## Analysis Summary
+- Total compilation units analyzed: 64
+- Total structs: 90
+- Total interfaces: 8
+- Total type aliases: 12
+- Total types: 110
+
+---
+
+## .
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/conf
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/conf
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/conf/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/conf/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dial
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dial
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dial/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dial/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg-discovery
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-discovery
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg-discovery/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-discovery/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg-server
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg-server/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg-server/commands/config
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server/commands/config
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg-server/commands/start
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server/commands/start
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg-socks5
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-socks5
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg-socks5/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-socks5/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsg/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgcurl
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgcurl
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgcurl/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgcurl/commands
+**Types**: 3 (2 structs, 0 interfaces, 1 type aliases)
+
+### Structs
+
+#### curlError (private)
+**File**: errors.go:39
+**Documentation**: curlError is the struct of dmsgcurl functions output, to set appropriate exit code
+**Fields**:
+- **Error** (public): `error`
+- **Code** (public): `int`
+
+#### progressWriter (private)
+**File**: dmsgcurl.go:367
+**Fields**:
+- **Current** (public): `int64`
+- **Total** (public): `int64`
+
+### Type Aliases
+- **readerFunc** (private): `func(p []byte) n int, err error` - dmsgcurl.go:351
+
+---
+
+## cmd/dmsghttp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsghttp
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsghttp/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsghttp/commands
+**Types**: 1 (1 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### GinHandler (public)
+**File**: dmsghttp.go:215
+**Documentation**: GinHandler is handler for gin on dmsg http sever
+**Fields**:
+- **Router** (public): `*gin.Engine`
+
+---
+
+## cmd/dmsgip
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgip
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgip/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgip/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgpty-cli
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-cli
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgpty-cli/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-cli/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgpty-host
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-host
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgpty-host/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-host/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgpty-ui
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-ui
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgpty-ui/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-ui/commands
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgweb
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgweb
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## cmd/dmsgweb/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgweb/commands
+**Types**: 2 (2 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### customResolver (private)
+**File**: dmsgweb.go:33
+**Fields**: None
+
+#### ginHandler (private)
+**File**: root.go:327
+**Fields**:
+- **Router** (public): `*gin.Engine`
+
+---
+
+## examples/basics
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/basics
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/dmsgcurl/dmsg-example-http-server
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgcurl/dmsg-example-http-server
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/dmsgcurl/gen-keys
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgcurl/gen-keys
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/dmsghttp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsghttp
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/dmsghttp-client
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsghttp-client
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/dmsgtcp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgtcp
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/dmsgweb
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgweb
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/dmsgweb/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgweb/commands
+**Types**: 1 (1 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### customResolver (private)
+**File**: root.go:35
+**Fields**: None
+
+---
+
+## examples/gen-keys
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/gen-keys
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/http
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/http
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/proxified
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/proxified
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/tcp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/tcp-multi-proxy-dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-multi-proxy-dmsg
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/tcp-proxy
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-proxy
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## examples/tcp-proxy-dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-proxy-dmsg
+**Types**: 1 (1 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### logWriterImpl (private)
+**File**: tcp-proxy-dmsg.go:215
+**Documentation**: logWriterImpl is an implementation of io.Writer that logs data as it is written.
+**Fields**:
+- **prefix** (private): `string`
+- **log** (private): `*logging.Logger`
+
+---
+
+## examples/tcp-reverse-proxy-dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-reverse-proxy-dmsg
+**Types**: 1 (1 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### logWriterImpl (private)
+**File**: tcp-reverse-proxy-dmsg.go:217
+**Documentation**: logWriterImpl is an implementation of io.Writer that logs data as it is written.
+**Fields**:
+- **prefix** (private): `string`
+- **log** (private): `*logging.Logger`
+
+---
+
+## internal/cli
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/cli
+**Types**: 1 (1 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### FallbackRoundTripper (public)
+**File**: cli.go:219
+**Documentation**: FallbackRoundTripper tries multiple DMSG transports until one succeeds.
+**Fields**:
+- **ctx** (private): `context.Context`
+- **clients** (private): `[]*dmsg.Client`
+
+---
+
+## internal/discmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/discmetrics
+**Types**: 3 (2 structs, 1 interfaces, 0 type aliases)
+
+### Structs
+
+#### Empty (public)
+**File**: empty.go:10
+**Documentation**: Empty implements Metrics, but does nothing.
+**Fields**: None
+
+#### VictoriaMetrics (public)
+**File**: victoria_metrics.go:9
+**Documentation**: VictoriaMetrics implements `Metrics` using `VictoriaMetrics`.
+**Fields**:
+- **clientsCount** (private): `*metricsutil.VictoriaMetricsIntGaugeWrapper`
+- **serversCount** (private): `*metricsutil.VictoriaMetricsIntGaugeWrapper`
+
+### Interfaces
+
+#### Metrics (public)
+**File**: metrics.go:5
+**Documentation**: Metrics collects metrics for metrics tracking system.
+**Methods**:
+- `SetClientsCount(val int64)`
+- `SetServersCount(val int64)`
+
+---
+
+## internal/dmsg-discovery/api
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/dmsg-discovery/api
+**Types**: 1 (1 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### API (public)
+**File**: api.go:38
+**Documentation**: API represents the api of the dmsg-discovery service`
+**Fields**:
+- **http.Handler** (public): `http.Handler`
+- **metrics** (private): `discmetrics.Metrics`
+- **db** (private): `store.Storer`
+- **reqsInFlightCountMiddleware** (private): `*metricsutil.RequestsInFlightCountMiddleware`
+- **testMode** (private): `bool`
+- **startedAt** (private): `time.Time`
+- **enableLoadTesting** (private): `bool`
+- **dmsgAddr** (private): `string`
+- **DmsgServers** (public): `[]string`
+- **authPassphrase** (private): `string`
+- **OfficialServers** (public): `map[string]bool`
+
+---
+
+## internal/dmsg-discovery/store
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/dmsg-discovery/store
+**Types**: 4 (3 structs, 1 interfaces, 0 type aliases)
+
+### Structs
+
+#### Config (public)
+**File**: storer.go:55
+**Documentation**: Config configures the Store object.
+**Fields**:
+- **URL** (public): `string`
+- **Password** (public): `string`
+- **Timeout** (public): `time.Duration`
+
+#### MockStore (public)
+**File**: testing.go:15
+**Documentation**: MockStore implements a storer mock
+**Fields**:
+- **mLock** (private): `sync.RWMutex`
+- **serversLock** (private): `sync.RWMutex`
+- **m** (private): `map[string][]byte`
+- **servers** (private): `map[string][]byte`
+
+#### redisStore (private)
+**File**: redis.go:21
+**Fields**:
+- **client** (private): `*redis.Client`
+- **timeout** (private): `time.Duration`
+
+### Interfaces
+
+#### Storer (public)
+**File**: storer.go:24
+**Documentation**: Storer is an interface which allows to implement different kinds of stores and choose which one to use in the server
+**Methods**:
+- `Entry(ctx context.Context, staticPubKey cipher.PubKey) (*disc.Entry, error)` - Entry obtains a single dmsg instance entry.
+- `SetEntry(ctx context.Context, entry *disc.Entry, timeout time.Duration) error` - SetEntry set's an entry. This is unsafe and does not check signature.
+- `DelEntry(ctx context.Context, staticPubKey cipher.PubKey) error` - DelEntry delete's an entry.
+- `AvailableServers(ctx context.Context, maxCount int) ([]*disc.Entry, error)` - AvailableServers discovers available dmsg servers.
+- `AllServers(ctx context.Context) ([]*disc.Entry, error)` - AllServers discovers available dmsg servers.
+- `CountEntries(ctx context.Context) (int64, int64, error)` - CountEntries returns numbers of servers and clients.
+- `RemoveOldServerEntries(ctx context.Context) error` - RemoveOldServerEntries check and remove old server entries that left on redis because of unexpected server shutdown
+- `AllEntries(ctx context.Context) ([]string, error)` - AllEntries returns all clients PKs.
+- `AllVisorEntries(ctx context.Context) ([]string, error)` - AllVisorEntries returns all clients PKs.
+
+---
+
+## internal/dmsg-server/api
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/dmsg-server/api
+**Types**: 1 (1 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### API (public)
+**File**: api.go:27
+**Documentation**: API main object of the server
+**Fields**:
+- **metrics** (private): `servermetrics.Metrics`
+- **startedAt** (private): `time.Time`
+- **dmsgServer** (private): `*dmsg.Server`
+- **sMu** (private): `sync.Mutex`
+- **minuteDecValues** (private): `map[*dmsg.SessionCommon]uint64`
+- **minuteEncValues** (private): `map[*dmsg.SessionCommon]uint64`
+- **secondDecValues** (private): `map[*dmsg.SessionCommon]uint64`
+- **secondEncValues** (private): `map[*dmsg.SessionCommon]uint64`
+- **router** (private): `*chi.Mux`
+
+---
+
+## internal/flags
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/flags
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## internal/fsutil
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/fsutil
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## internal/servermetrics
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/servermetrics
+**Types**: 4 (2 structs, 1 interfaces, 1 type aliases)
+
+### Structs
+
+#### Empty (public)
+**File**: empty.go:10
+**Documentation**: Empty implements Metrics, but does nothing.
+**Fields**: None
+
+#### VictoriaMetrics (public)
+**File**: victoria_metrics.go:12
+**Documentation**: VictoriaMetrics implements `Metrics` using `VictoriaMetrics`.
+**Fields**:
+- **packetsPerMinute** (private): `*metricsutil.VictoriaMetricsUintGaugeWrapper`
+- **packetsPerSecond** (private): `*metricsutil.VictoriaMetricsUintGaugeWrapper`
+- **clientsCount** (private): `*metricsutil.VictoriaMetricsIntGaugeWrapper`
+- **activeSessions** (private): `*metricsutil.VictoriaMetricsIntGaugeWrapper`
+- **successfulSessions** (private): `*metrics.Counter`
+- **failedSessions** (private): `*metrics.Counter`
+- **activeStreams** (private): `*metricsutil.VictoriaMetricsIntGaugeWrapper`
+- **successfulStreams** (private): `*metrics.Counter`
+- **failedStreams** (private): `*metrics.Counter`
+
+### Interfaces
+
+#### Metrics (public)
+**File**: metrics.go:5
+**Documentation**: Metrics collects metrics for metrics tracking system.
+**Methods**:
+- `RecordSession(delta DeltaType)`
+- `RecordStream(delta DeltaType)`
+- `SetClientsCount(val int64)`
+- `SetPacketsPerSecond(val uint64)`
+- `SetPacketsPerMinute(val uint64)`
+
+### Type Aliases
+- **DeltaType** (public): `int` - delta.go:5 - DeltaType represents a change in metrics gauge.
+
+---
+
+## pkg/direct
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/direct
+**Types**: 1 (1 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### directClient (private)
+**File**: client.go:18
+**Documentation**: directClient represents a client that doesnot communicates with a dmsg-discovery, instead directly gets the dmsg-server info via the user or is hardcoded, all the data is stored in memory and it implements disc.APIClient
+**Fields**:
+- **entries** (private): `map[cipher.PubKey]*disc.Entry`
+- **mx** (private): `sync.RWMutex`
+
+---
+
+## pkg/disc
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/disc
+**Types**: 8 (7 structs, 1 interfaces, 0 type aliases)
+
+### Structs
+
+#### Client (public)
+**File**: entry.go:150
+**Documentation**: Client contains parameters for Client instances.
+**Fields**:
+- **DelegatedServers** (public): `[]cipher.PubKey` `json:"delegated_servers"` - DelegatedServers contains a list of delegated servers represented by their public keys.
+
+#### Entry (public)
+**File**: entry.go:102
+**Documentation**: Entry represents a Dmsg Node's entry in the Discovery database.
+**Fields**:
+- **Version** (public): `string` `json:"version"` - The data structure's version.
+- **Sequence** (public): `uint64` `json:"sequence"` - An Entry of a given public key may need to iterate. This is the iteration sequence.
+- **Timestamp** (public): `int64` `json:"timestamp"` - Timestamp of the current iteration.
+- **Static** (public): `cipher.PubKey` `json:"static"` - Static public key of an instance.
+- **Client** (public): `*Client` `json:"client,omitempty"` - Contains the instance's client meta if it's to be advertised as a DMSG Client.
+- **ClientType** (public): `string` `json:"client_type,omitempty"` - ClientType the instance's client_type meta if it's to be advertised as a DMSG Client.
+- **Server** (public): `*Server` `json:"server,omitempty"` - Contains the instance's server meta if it's to be advertised as a DMSG Server.
+- **Signature** (public): `string` `json:"signature,omitempty"` - Signature for proving authenticity of an Entry.
+
+#### EntryValidationError (public)
+**File**: entry.go:88
+**Documentation**: EntryValidationError represents transient error caused by invalid data in Entry
+**Fields**:
+- **Cause** (public): `string`
+
+#### HTTPMessage (public)
+**File**: http_message.go:17
+**Documentation**: HTTPMessage represents a message to be returned as an http response
+**Fields**:
+- **Message** (public): `string` `json:"message"`
+- **Code** (public): `int` `json:"code"`
+
+#### Server (public)
+**File**: entry.go:167
+**Documentation**: Server contains parameters for Server instances.
+**Fields**:
+- **Address** (public): `string` `json:"address"` - IPv4 or IPv6 public address of the DMSG Server.
+- **AvailableSessions** (public): `int` `json:"availableSessions"` - AvailableSessions is the number of available sessions that the server can currently accept.
+- **ServerType** (public): `string` `json:"serverType,omitempty"` - ServerType of DMSG Server, be `official` of `community`
+
+#### httpClient (private)
+**File**: client.go:33
+**Documentation**: HTTPClient represents a client that communicates with a dmsg-discovery service through http, it implements APIClient
+**Fields**:
+- **client** (private): `*http.Client`
+- **address** (private): `string`
+- **updateMux** (private): `sync.Mutex`
+- **log** (private): `*logging.Logger`
+
+#### mockClient (private)
+**File**: testing.go:16
+**Documentation**: MockClient is an APIClient mock. The mock doesn't reply with the same errors as the real client, and it mimics it's functionality not being 100% accurate.
+**Fields**:
+- **entries** (private): `map[cipher.PubKey]Entry`
+- **mx** (private): `sync.RWMutex`
+- **timeout** (private): `time.Duration`
+
+### Interfaces
+
+#### APIClient (public)
+**File**: client.go:21
+**Documentation**: APIClient implements dmsg discovery API client.
+**Methods**:
+- `Entry(context.Context, cipher.PubKey) (*Entry, error)`
+- `PostEntry(context.Context, *Entry) error`
+- `PutEntry(context.Context, cipher.SecKey, *Entry) error`
+- `DelEntry(context.Context, *Entry) error`
+- `AvailableServers(context.Context) ([]*Entry, error)`
+- `AllServers(context.Context) ([]*Entry, error)`
+- `AllEntries(ctx context.Context) ([]string, error)`
+
+---
+
+## pkg/dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsg
+**Types**: 21 (16 structs, 0 interfaces, 5 type aliases)
+
+### Structs
+
+#### Addr (public)
+**File**: types.go:32
+**Documentation**: Addr implements net.Addr for dmsg addresses.
+**Fields**:
+- **PK** (public): `cipher.PubKey` `json:"public_key"`
+- **Port** (public): `uint16` `json:"port"`
+
+#### Client (public)
+**File**: client.go:70
+**Documentation**: Client represents a dmsg client entity.
+**Fields**:
+- **ready** (private): `chan struct{...}`
+- **readyOnce** (private): `sync.Once`
+- **EntityCommon** (public): `EntityCommon`
+- **conf** (private): `*Config`
+- **porter** (private): `*netutil.Porter`
+- **bo** (private): `time.Duration`
+- **maxBO** (private): `time.Duration`
+- **factor** (private): `float64`
+- **errCh** (private): `chan error`
+- **done** (private): `chan struct{...}`
+- **once** (private): `sync.Once`
+- **sesMx** (private): `sync.Mutex`
+
+#### ClientCallbacks (public)
+**File**: client.go:29
+**Documentation**: ClientCallbacks contains callbacks which a Client uses.
+**Fields**:
+- **OnSessionDial** (public): `SessionDialCallback`
+- **OnSessionDisconnect** (public): `SessionDisconnectCallback`
+
+#### ClientSession (public)
+**File**: client_session.go:15
+**Documentation**: ClientSession represents a session from the perspective of a dmsg client.
+**Fields**:
+- ***SessionCommon** (public): `*SessionCommon`
+- **porter** (private): `*netutil.Porter`
+
+#### Config (public)
+**File**: client.go:44
+**Documentation**: Config configures a dmsg client entity.
+**Fields**:
+- **MinSessions** (public): `int`
+- **UpdateInterval** (public): `time.Duration`
+- **Callbacks** (public): `*ClientCallbacks`
+- **ClientType** (public): `string`
+- **ConnectedServersType** (public): `string`
+
+#### DmsghttpConfig (public)
+**File**: const.go:68
+**Documentation**: DmsghttpConfig is the struct that corresponds to the json data of the dmsghttp-config.json
+**Fields**:
+- **DmsgServers** (public): `[]disc.Entry` `json:"dmsg_servers"`
+- **DmsgDiscovery** (public): `string` `json:"dmsg_discovery"`
+- **TransportDiscovery** (public): `string` `json:"transport_discovery"`
+- **AddressResolver** (public): `string` `json:"address_resolver"`
+- **RouteFinder** (public): `string` `json:"route_finder"`
+- **UptimeTracker** (public): `string` `json:"uptime_tracker"`
+- **ServiceDiscovery** (public): `string` `json:"service_discovery"`
+
+#### EntityCommon (public)
+**File**: entity_common.go:20
+**Documentation**: EntityCommon contains the common fields and methods for server and client entities.
+**Fields**:
+- **lastUpdate** (private): `int64` - atomic requires 64-bit alignment for struct field access
+- **pk** (private): `cipher.PubKey`
+- **sk** (private): `cipher.SecKey`
+- **dc** (private): `disc.APIClient`
+- **sessions** (private): `map[cipher.PubKey]*SessionCommon`
+- **sessionsMx** (private): `*sync.Mutex`
+- **updateInterval** (private): `time.Duration`
+- **log** (private): `logrus.FieldLogger`
+- **mlog** (private): `*logging.MasterLogger`
+- **setSessionCallback** (private): `func(ctx context.Context) error`
+- **delSessionCallback** (private): `func(ctx context.Context) error`
+
+#### Error (public)
+**File**: errors.go:78
+**Documentation**: Error represents a dmsg-related error.
+**Fields**:
+- **code** (private): `errorCode`
+- **msg** (private): `string`
+- **timeout** (private): `bool`
+- **temp** (private): `bool`
+- **nxt** (private): `error`
+
+#### Listener (public)
+**File**: listener.go:14
+**Documentation**: Listener listens for remote-initiated streams.
+**Fields**:
+- **porter** (private): `*netutil.Porter`
+- **addr** (private): `Addr`
+- **accept** (private): `chan *Stream`
+- **mx** (private): `sync.Mutex`
+- **doneFunc** (private): `atomic.Value`
+- **done** (private): `chan struct{...}`
+- **once** (private): `sync.Once`
+
+#### Server (public)
+**File**: server.go:34
+**Documentation**: Server represents a dsmg server entity.
+**Fields**:
+- **EntityCommon** (public): `EntityCommon`
+- **m** (private): `servermetrics.Metrics`
+- **ready** (private): `chan struct{...}`
+- **readyOnce** (private): `sync.Once`
+- **done** (private): `chan struct{...}`
+- **once** (private): `sync.Once`
+- **wg** (private): `sync.WaitGroup`
+- **addr** (private): `string` - Public TCP address which the dmsg server advertises itself as. This should only be set once. Once set, addrDone closes.
+- **addrDone** (private): `chan struct{...}`
+- **maxSessions** (private): `int`
+- **authPassphrase** (private): `string`
+
+#### ServerConfig (public)
+**File**: server.go:19
+**Documentation**: ServerConfig configues the Server
+**Fields**:
+- **MaxSessions** (public): `int`
+- **UpdateInterval** (public): `time.Duration`
+- **AuthPassphrase** (public): `string`
+
+#### ServerSession (public)
+**File**: server_session.go:18
+**Documentation**: ServerSession represents a session from the perspective of a dmsg server.
+**Fields**:
+- ***SessionCommon** (public): `*SessionCommon`
+- **m** (private): `servermetrics.Metrics`
+
+#### SessionCommon (public)
+**File**: session_common.go:22
+**Documentation**: SessionCommon contains the common fields and methods used by a session, whether it be it from the client or server perspective.
+**Fields**:
+- **entity** (private): `*EntityCommon`
+- **rPK** (private): `cipher.PubKey`
+- **netConn** (private): `net.Conn`
+- **ys** (private): `*yamux.Session`
+- **ns** (private): `*noise.Noise`
+- **nMap** (private): `noise.NonceMap`
+- **rMx** (private): `sync.Mutex`
+- **wMx** (private): `sync.Mutex`
+- **log** (private): `logrus.FieldLogger`
+
+#### Stream (public)
+**File**: stream.go:17
+**Documentation**: Stream represents a dmsg connection between two dmsg clients.
+**Fields**:
+- **ses** (private): `*ClientSession`
+- **yStr** (private): `*yamux.Stream`
+- **lAddr** (private): `Addr` - The following fields are to be filled after handshake.
+- **rAddr** (private): `Addr`
+- **ns** (private): `*noise.Noise`
+- **nsConn** (private): `*noise.ReadWriter`
+- **close** (private): `func()`
+- **log** (private): `logrus.FieldLogger`
+
+#### StreamRequest (public)
+**File**: types.go:167
+**Documentation**: StreamRequest represents a stream dial request object.
+**Fields**:
+- **Timestamp** (public): `int64`
+- **SrcAddr** (public): `Addr`
+- **DstAddr** (public): `Addr`
+- **IPinfo** (public): `bool`
+- **NoiseMsg** (public): `[]byte`
+- **raw** (private): `SignedObject` `enc:"-"`
+
+#### StreamResponse (public)
+**File**: types.go:205
+**Documentation**: StreamResponse is the response of a StreamRequest.
+**Fields**:
+- **ReqHash** (public): `cipher.SHA256`
+- **Accepted** (public): `bool`
+- **IP** (public): `net.IP`
+- **ErrCode** (public): `errorCode`
+- **NoiseMsg** (public): `[]byte`
+- **raw** (private): `SignedObject` `enc:"-"`
+
+### Type Aliases
+- **ConnectionsSummary** (public): `map[cipher.PubKey][]cipher.PubKey` - client.go:613 - ConnectionsSummary associates connected clients, and the servers that connect such clients. Key: Client PK, Value: Slice of Server PKs
+- **SessionDialCallback** (public): `func(network, addr string) err error` - client.go:23 - SessionDialCallback is triggered BEFORE a session is dialed to. If a non-nil error is returned, the session dial is instantly terminated.
+- **SessionDisconnectCallback** (public): `func(network, addr string, err error)` - client.go:26 - SessionDisconnectCallback triggers after a session is closed.
+- **SignedObject** (public): `[]byte` - types.go:102 - SignedObject represents a gob-encoded structure prepended with a signature.
+- **errorCode** (private): `uint16` - errors.go:57
+
+---
+
+## pkg/dmsgctrl
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgctrl
+**Types**: 2 (1 structs, 0 interfaces, 1 type aliases)
+
+### Structs
+
+#### Control (public)
+**File**: control.go:29
+**Documentation**: Control wraps and takes over a dmsg.Stream and provides control features.
+**Fields**:
+- **conn** (private): `net.Conn`
+- **pongCh** (private): `chan time.Time`
+- **doneCh** (private): `chan struct{...}`
+- **err** (private): `error`
+- **errOnce** (private): `sync.Once`
+
+### Type Aliases
+- **PacketType** (public): `byte` - control.go:20 - PacketType represents the packet type.
+
+---
+
+## pkg/dmsgcurl
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgcurl
+**Types**: 9 (7 structs, 1 interfaces, 1 type aliases)
+
+### Structs
+
+#### DmsgCurl (public)
+**File**: dmsgcurl.go:28
+**Documentation**: DmsgCurl contains the logic for dmsgcurl (curl over dmsg).
+**Fields**:
+- **startF** (private): `startupFlags`
+- **dmsgF** (private): `dmsgFlags`
+- **dlF** (private): `downloadFlags`
+- **httpF** (private): `httpFlags`
+- **fs** (private): `*flag.FlagSet`
+
+#### ProgressWriter (public)
+**File**: progress_writer.go:10
+**Documentation**: ProgressWriter prints the progress of a download to stdout.
+**Fields**:
+- **Current** (public): `int64` - atomic requires 64-bit alignment for struct field access
+- **Total** (public): `int64`
+
+#### URL (public)
+**File**: url.go:18
+**Documentation**: URL represents a dmsg http URL.
+**Fields**:
+- **dmsg.Addr** (public): `dmsg.Addr`
+- **url.URL** (public): `url.URL`
+
+#### dmsgFlags (private)
+**File**: flags.go:35
+**Fields**:
+- **Disc** (public): `string`
+- **Sessions** (public): `int`
+
+#### downloadFlags (private)
+**File**: flags.go:54
+**Fields**:
+- **Output** (public): `string`
+- **Tries** (public): `int`
+- **Wait** (public): `int`
+
+#### httpFlags (private)
+**File**: flags.go:68
+**Fields**:
+- **UserAgent** (public): `string`
+
+#### startupFlags (private)
+**File**: flags.go:24
+**Fields**:
+- **Help** (public): `bool`
+
+### Interfaces
+
+#### FlagGroup (public)
+**File**: flags.go:19
+**Documentation**: FlagGroup represents a group of flags.
+**Methods**:
+- `Name() string`
+- `Init(fs *flag.FlagSet)`
+
+### Type Aliases
+- **readerFunc** (private): `func(p []byte) n int, err error` - dmsgcurl.go:247
+
+---
+
+## pkg/dmsghttp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsghttp
+**Types**: 4 (4 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### HTTPTransport (public)
+**File**: http_transport.go:18
+**Documentation**: HTTPTransport implements http.RoundTripper Do not confuse this with a Skywire Transport implementation.
+**Fields**:
+- **ctx** (private): `context.Context`
+- **dmsgC** (private): `*dmsg.Client`
+
+#### httpClientResult (private)
+**File**: http_test.go:55
+**Fields**:
+- **Path** (public): `string`
+- **ReqB** (public): `[]byte`
+- **ReqErr** (public): `error`
+- **RespB** (public): `[]byte`
+- **RespErr** (public): `error`
+- **RespCloseErr** (public): `error`
+
+#### httpServerResult (private)
+**File**: http_test.go:27
+**Fields**:
+- **Path** (public): `string`
+- **ReqB** (public): `[]byte`
+- **ReqErr** (public): `error`
+- **RespB** (public): `[]byte`
+- **RespErr** (public): `error`
+
+#### wrappedBody (private)
+**File**: http_transport.go:65
+**Documentation**: wrappedBody ensures that the DMSG stream is closed when the HTTP response body is closed.
+**Fields**:
+- **io.ReadCloser** (public): `io.ReadCloser`
+- **stream** (private): `*dmsg.Stream`
+
+---
+
+## pkg/dmsgpty
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgpty
+**Types**: 25 (21 structs, 3 interfaces, 1 type aliases)
+
+### Structs
+
+#### CLI (public)
+**File**: cli.go:20
+**Documentation**: CLI connects with and has ownership over a dmsgpty.Host.
+**Fields**:
+- **Log** (public): `logrus.FieldLogger` `json:"-"`
+- **Net** (public): `string` `json:"cli_network"`
+- **Addr** (public): `string` `json:"cli_address"`
+
+#### CommandReq (public)
+**File**: pty_gateway.go:22
+**Documentation**: CommandReq represents a pty command.
+**Fields**:
+- **Name** (public): `string`
+- **Arg** (public): `[]string`
+- **Size** (public): `*WinSize`
+
+#### Config (public)
+**File**: conf.go:15
+**Documentation**: Config struct is used to read the values from the config.json file
+**Fields**:
+- **DmsgDisc** (public): `string` `json:"dmsgdisc"`
+- **DmsgSessions** (public): `int` `json:"dmsgsessions"`
+- **DmsgPort** (public): `uint16` `json:"dmsgport"`
+- **CLINet** (public): `string` `json:"clinet"`
+- **CLIAddr** (public): `string` `json:"cliaddr"`
+- **SK** (public): `string` `json:"sk"`
+- **PK** (public): `string` `json:"pk"`
+- **WL** (public): `[]string` `json:"wl"`
+
+#### ErrorJSON (public)
+**File**: ui.go:204
+**Documentation**: ErrorJSON displays errors in JSON format.
+**Fields**:
+- **ErrorCode** (public): `int` `json:"error_code"`
+- **ErrorMsg** (public): `string` `json:"error_msg"`
+
+#### Host (public)
+**File**: host.go:23
+**Documentation**: Host represents the main instance of dmsgpty.
+**Fields**:
+- **dmsgC** (private): `*dmsg.Client`
+- **wl** (private): `Whitelist`
+- **cliN** (private): `int32`
+- **connN** (private): `int32`
+
+#### LocalPtyGateway (public)
+**File**: pty_gateway.go:29
+**Documentation**: LocalPtyGateway is the gateway to a local pty.
+**Fields**:
+- **ses** (private): `*Pty`
+
+#### ProxiedPtyGateway (public)
+**File**: pty_gateway.go:74
+**Documentation**: ProxiedPtyGateway is an RPC gateway for a remote pty.
+**Fields**:
+- **ptyC** (private): `*PtyClient`
+
+#### Pty (public)
+**File**: pty_windows.go:23
+**Documentation**: Pty runs a local pty.
+**Fields**:
+- **pty** (private): `*conpty.ConPty`
+- **mx** (private): `sync.RWMutex`
+
+#### Pty (public)
+**File**: pty_unix.go:23
+**Documentation**: Pty runs a local pty.
+**Fields**:
+- **pty** (private): `*os.File`
+- **mx** (private): `sync.RWMutex`
+
+#### PtyClient (public)
+**File**: pty_client.go:16
+**Documentation**: PtyClient represents the client end of a dmsgpty session.
+**Fields**:
+- **log** (private): `logrus.FieldLogger`
+- **rpcC** (private): `*rpc.Client`
+- **done** (private): `chan struct{...}`
+- **once** (private): `sync.Once`
+
+#### UI (public)
+**File**: ui.go:41
+**Documentation**: UI connects to a dmsgpty-host and exposes a pty via a web UI.
+**Fields**:
+- **log** (private): `logrus.FieldLogger`
+- **conf** (private): `UIConfig`
+- **dialer** (private): `UIDialer`
+
+#### UIConfig (public)
+**File**: ui.go:27
+**Documentation**: UIConfig configures the dmsgpty-ui.
+**Fields**:
+- **CmdName** (public): `string`
+- **CmdArgs** (public): `[]string`
+
+#### WhitelistClient (public)
+**File**: whitelist_client.go:12
+**Documentation**: WhitelistClient interacts with a whitelist's API.
+**Fields**:
+- **c** (private): `*rpc.Client`
+
+#### WhitelistGateway (public)
+**File**: whitelist_gateway.go:9
+**Documentation**: WhitelistGateway is the configuration gateway.
+**Fields**:
+- **wl** (private): `Whitelist`
+
+#### WinSize (public)
+**File**: pty_gateway.go:5
+**Documentation**: WinSize wraps around pty.Winsize and *windows.Coord
+**Fields**:
+- **X** (public): `uint16`
+- **Y** (public): `uint16`
+- **Rows** (public): `uint16`
+- **Cols** (public): `uint16`
+
+#### configWhitelist (private)
+**File**: whitelist.go:47
+**Fields**:
+- **confPath** (private): `string`
+
+#### dmsgUIDialer (private)
+**File**: ui_dialer.go:27
+**Fields**:
+- **dmsgC** (private): `*dmsg.Client`
+- **rAddr** (private): `dmsg.Addr`
+
+#### hostMux (private)
+**File**: host_mux.go:19
+**Fields**:
+- **entries** (private): `[]muxEntry`
+
+#### memoryWhitelist (private)
+**File**: whitelist.go:217
+**Fields**:
+- **m** (private): `map[cipher.PubKey]struct{...}`
+- **mux** (private): `sync.RWMutex`
+
+#### muxEntry (private)
+**File**: host_mux.go:14
+**Fields**:
+- **pat** (private): `string`
+- **fn** (private): `handleFunc`
+
+#### netUIDialer (private)
+**File**: ui_dialer.go:40
+**Fields**:
+- **network** (private): `string`
+- **address** (private): `string`
+
+### Interfaces
+
+#### PtyGateway (public)
+**File**: pty_gateway.go:13
+**Documentation**: PtyGateway represents a pty gateway, hosted by the pty.SessionServer
+**Methods**:
+- `Start(req *CommandReq, _ *struct{...}) error`
+- `Stop(_, _ *struct{...}) error`
+- `Read(reqN *int, respB *[]byte) error`
+- `Write(reqB *[]byte, respN *int) error`
+- `SetPtySize(size *WinSize, _ *struct{...}) error`
+
+#### UIDialer (public)
+**File**: ui_dialer.go:12
+**Documentation**: UIDialer represents a dialer for dmsgpty-ui.
+**Methods**:
+- `Dial() (net.Conn, error)`
+- `AddrString() string`
+
+#### Whitelist (public)
+**File**: whitelist.go:24
+**Documentation**: Whitelist represents a whitelist of public keys.
+**Methods**:
+- `Get(pk cipher.PubKey) (bool, error)`
+- `All() (map[cipher.PubKey]bool, error)`
+- `Add(pks ...cipher.PubKey) error`
+- `Remove(pks ...cipher.PubKey) error`
+
+### Type Aliases
+- **handleFunc** (private): `func(ctx context.Context, uri *url.URL, rpcS *rpc.Server) error` - host_mux.go:23
+
+---
+
+## pkg/dmsgserver
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgserver
+**Types**: 1 (1 structs, 0 interfaces, 0 type aliases)
+
+### Structs
+
+#### Config (public)
+**File**: config.go:30
+**Documentation**: Config is structure of config file
+**Fields**:
+- **Path** (public): `string` `json:"-"`
+- **PubKey** (public): `cipher.PubKey` `json:"public_key"`
+- **SecKey** (public): `cipher.SecKey` `json:"secret_key"`
+- **Discovery** (public): `string` `json:"discovery"`
+- **PublicAddress** (public): `string` `json:"public_address"`
+- **LocalAddress** (public): `string` `json:"local_address"`
+- **HTTPAddress** (public): `string` `json:"health_endpoint_address"`
+- **LogLevel** (public): `string` `json:"log_level"`
+- **UpdateInterval** (public): `time.Duration` `json:"update_interval"`
+- **MaxSessions** (public): `int` `json:"max_sessions"`
+
+---
+
+## pkg/dmsgtest
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgtest
+**Types**: 3 (2 structs, 0 interfaces, 1 type aliases)
+
+### Structs
+
+#### Env (public)
+**File**: env.go:23
+**Documentation**: Env can run an entire local dmsg environment inclusive of a mock discovery, dmsg servers and clients.
+**Fields**:
+- **t** (private): `*testing.T`
+- **timeout** (private): `time.Duration`
+- **d** (private): `disc.APIClient`
+- **s** (private): `map[cipher.PubKey]*dmsg.Server`
+- **c** (private): `map[cipher.PubKey]*dmsg.Client`
+- **mx** (private): `sync.RWMutex`
+- **sWg** (private): `sync.WaitGroup`
+- **cWg** (private): `sync.WaitGroup`
+
+#### clientChange (private)
+**File**: dmsg_client_test.go:157
+**Fields**:
+- **ingress** (private): `bool`
+- **delta** (private): `int`
+
+### Type Aliases
+- **advanceClientFunc** (private): `func(t *testing.T) *dmsg.Client` - dmsg_client_test.go:144
+
+---
+
+## pkg/ioutil
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/ioutil
+**Types**: 0 (0 structs, 0 interfaces, 0 type aliases)
+
+*No types found*
+
+---
+
+## pkg/noise
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/noise
+**Types**: 13 (12 structs, 0 interfaces, 1 type aliases)
+
+### Structs
+
+#### AddIn (public)
+**File**: net_test.go:23
+**Fields**:
+- **A** (public): `int`
+- **B** (public): `int`
+
+#### Addr (public)
+**File**: net.go:145
+**Documentation**: Addr is the address of a either an AppNode or ManagerNode.
+**Fields**:
+- **PK** (public): `cipher.PubKey`
+- **Addr** (public): `net.Addr`
+
+#### Config (public)
+**File**: noise.go:24
+**Documentation**: Config hold noise parameters.
+**Fields**:
+- **LocalPK** (public): `cipher.PubKey`
+- **LocalSK** (public): `cipher.SecKey`
+- **RemotePK** (public): `cipher.PubKey`
+- **Initiator** (public): `bool`
+
+#### Conn (public)
+**File**: net.go:161
+**Documentation**: Conn wraps a net.Conn and encrypts the connection with noise.
+**Fields**:
+- **net.Conn** (public): `net.Conn`
+- **ns** (private): `*ReadWriter`
+
+#### Listener (public)
+**File**: net.go:202
+**Documentation**: Listener accepts incoming connections and encrypts with noise.
+**Fields**:
+- **net.Listener** (public): `net.Listener`
+- **pk** (private): `cipher.PubKey`
+- **sk** (private): `cipher.SecKey`
+- **init** (private): `bool`
+- **pattern** (private): `noise.HandshakePattern`
+
+#### Noise (public)
+**File**: noise.go:33
+**Documentation**: Noise handles the handshake and the frame's cryptography. All operations on Noise are not guaranteed to be thread-safe.
+**Fields**:
+- **pk** (private): `cipher.PubKey`
+- **sk** (private): `cipher.SecKey`
+- **init** (private): `bool`
+- **pattern** (private): `noise.HandshakePattern`
+- **hs** (private): `*noise.HandshakeState`
+- **enc** (private): `*noise.CipherState`
+- **dec** (private): `*noise.CipherState`
+- **encNonce** (private): `uint64`
+- **decNonce** (private): `uint64`
+
+#### RPCClientDialer (public)
+**File**: net.go:45
+**Documentation**: RPCClientDialer attempts to redial to a remotely served RPCClient. It exposes an RPCServer to the remote server. The connection is encrypted via noise.
+**Fields**:
+- **config** (private): `Config`
+- **pattern** (private): `noise.HandshakePattern`
+- **addr** (private): `string`
+- **conn** (private): `net.Conn`
+- **mu** (private): `sync.Mutex`
+- **done** (private): `chan struct{...}`
+
+#### ReadWriter (public)
+**File**: read_writer.go:51
+**Documentation**: ReadWriter implements noise encrypted read writer.
+**Fields**:
+- **origin** (private): `io.ReadWriter`
+- **ns** (private): `*Noise`
+- **rawInput** (private): `*bufio.Reader`
+- **input** (private): `bytes.Buffer`
+- **rErr** (private): `error`
+- **rMx** (private): `sync.Mutex`
+- **wErr** (private): `error`
+- **wMx** (private): `sync.Mutex`
+
+#### Secp256k1 (public)
+**File**: dh.go:12
+**Documentation**: Secp256k1 implements `noise.DHFunc`.
+**Fields**: None
+
+#### TestRPC (public)
+**File**: net_test.go:21
+**Fields**: None
+
+#### netError (private)
+**File**: read_writer.go:39
+**Fields**:
+- **err** (private): `error`
+- **timeout** (private): `bool`
+- **temp** (private): `bool`
+
+#### timeoutError (private)
+**File**: read_writer.go:33
+**Fields**: None
+
+### Type Aliases
+- **NonceMap** (public): `map[uint64]struct{...}` - noise.go:167 - NonceMap is a map of used nonces.
+
+---
+

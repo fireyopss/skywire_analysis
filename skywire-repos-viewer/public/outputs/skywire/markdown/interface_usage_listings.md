@@ -1,0 +1,7474 @@
+# Skywire Repository Interface Usage Listings
+
+## Analysis Summary
+- Total compilation units analyzed: 153
+- Total interface usages: 3354
+- Unique interfaces used: 193
+
+---
+## cmd/address-resolver
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/address-resolver
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/address-resolver/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/address-resolver/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/apps/skychat
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skychat
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/apps/skychat/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skychat/commands
+**Interface Usages**: 18
+
+### app.Client
+**Field (1)**:
+- skychat.go:333 - field appCl
+
+**Parameter (3)**:
+- skychat.go:333 - function setAppPort
+- skychat.go:327 - function setAppError
+- skychat.go:321 - function setAppStatus
+
+**Variable (1)**:
+- skychat.go:43 - variable appCl
+
+### context.Context
+**Field (1)**:
+- skychat.go:205 - field ctx
+
+**Parameter (1)**:
+- skychat.go:205 - function messageHandler
+
+### error
+**Field (2)**:
+- skychat.go:231 - struct field
+- skychat.go:327 - field appErr
+
+**Parameter (1)**:
+- skychat.go:327 - function setAppError
+
+**Variable (1)**:
+- skychat.go:230 - variable err
+
+### http.ResponseWriter
+**Field (1)**:
+- skychat.go:260 - field w
+
+**Parameter (1)**:
+- skychat.go:260 - function sseHandler
+
+### ipc.Client
+**Field (1)**:
+- skychat.go:298 - field client
+
+**Parameter (1)**:
+- skychat.go:298 - function handleIPCSignal
+
+### net.Conn
+**Field (1)**:
+- skychat.go:178 - field conn
+
+**Parameter (1)**:
+- skychat.go:178 - function handleConn
+
+**Variable (1)**:
+- skychat.go:45 - variable conns
+
+---
+
+## cmd/apps/skysocks
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skysocks
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/apps/skysocks-client
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skysocks-client
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/apps/skysocks-client/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skysocks-client/commands
+**Interface Usages**: 17
+
+### app.Client
+**Field (1)**:
+- skysocks-client.go:174 - field appCl
+
+**Parameter (4)**:
+- skysocks-client.go:143 - function dialServer
+- skysocks-client.go:168 - function setAppStatus
+- skysocks-client.go:174 - function setAppPort
+- skysocks-client.go:162 - function setAppErr
+
+### context.Context
+**Field (1)**:
+- skysocks-client.go:180 - field ctx
+
+**Parameter (2)**:
+- skysocks-client.go:180 - function httpProxy
+- skysocks-client.go:143 - function dialServer
+
+### error
+**Field (2)**:
+- skysocks-client.go:146 - struct field
+- skysocks-client.go:162 - field err
+
+**Parameter (1)**:
+- skysocks-client.go:162 - function setAppErr
+
+**Return (1)**:
+- skysocks-client.go:143 - function dialServer
+
+**Variable (1)**:
+- skysocks-client.go:147 - variable err
+
+### net.Conn
+**Field (1)**:
+- skysocks-client.go:143 - struct field
+
+**Return (1)**:
+- skysocks-client.go:143 - function dialServer
+
+**Variable (1)**:
+- skysocks-client.go:145 - variable conn
+
+### netutil.Retrier
+**Variable (1)**:
+- skysocks-client.go:39 - variable r
+
+---
+
+## cmd/apps/skysocks/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skysocks/commands
+**Interface Usages**: 6
+
+### app.Client
+**Field (1)**:
+- skysocks.go:101 - field appCl
+
+**Parameter (3)**:
+- skysocks.go:101 - function setAppStatus
+- skysocks.go:107 - function setAppError
+- skysocks.go:113 - function setAppPort
+
+### error
+**Field (1)**:
+- skysocks.go:107 - field appErr
+
+**Parameter (1)**:
+- skysocks.go:107 - function setAppError
+
+---
+
+## cmd/apps/vpn-client
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/vpn-client
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/apps/vpn-client/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/vpn-client/commands
+**Interface Usages**: 6
+
+### app.Client
+**Field (1)**:
+- vpn-client.go:219 - field appCl
+
+**Parameter (3)**:
+- vpn-client.go:219 - function setAppErr
+- vpn-client.go:225 - function setAppStatus
+- vpn-client.go:231 - function setAppPort
+
+### error
+**Field (1)**:
+- vpn-client.go:219 - field err
+
+**Parameter (1)**:
+- vpn-client.go:219 - function setAppErr
+
+---
+
+## cmd/apps/vpn-server
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/vpn-server
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/apps/vpn-server/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/vpn-server/commands
+**Interface Usages**: 6
+
+### app.Client
+**Field (1)**:
+- vpn-server.go:142 - field appCl
+
+**Parameter (3)**:
+- vpn-server.go:142 - function setAppErr
+- vpn-server.go:148 - function setAppStatus
+- vpn-server.go:154 - function setAppPort
+
+### error
+**Field (1)**:
+- vpn-server.go:142 - field err
+
+**Parameter (1)**:
+- vpn-server.go:142 - function setAppErr
+
+---
+
+## cmd/conf
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/conf
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/conf/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/conf/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/config-bootstrapper
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/config-bootstrapper
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/config-bootstrapper/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/config-bootstrapper/commands
+**Interface Usages**: 3
+
+### io.Reader
+**Variable (1)**:
+- root.go:131 - variable r
+
+### logging.Logger
+**Field (1)**:
+- root.go:130 - field log
+
+**Parameter (1)**:
+- root.go:130 - function readConfig
+
+---
+
+## cmd/gen
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/gen
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/network-monitor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/network-monitor
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/network-monitor/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/network-monitor/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/route-finder
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/route-finder
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/route-finder/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/route-finder/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/service-discovery
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/service-discovery
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/service-discovery/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/service-discovery/commands
+**Interface Usages**: 1
+
+### httpauth.NonceStore
+**Variable (1)**:
+- root.go:117 - variable nonceDB
+
+---
+
+## cmd/setup-node
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/setup-node
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/setup-node/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/setup-node/commands
+**Interface Usages**: 4
+
+### error
+**Variable (1)**:
+- root.go:64 - variable err
+
+### io.Reader
+**Variable (1)**:
+- root.go:63 - variable rdr
+
+### logrus.FieldLogger
+**Field (1)**:
+- root.go:108 - field log
+
+**Parameter (1)**:
+- root.go:108 - function prepareMetrics
+
+---
+
+## cmd/skycoin-skywire
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skycoin-skywire
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire-cli
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire-cli/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire-cli/commands/completion
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/completion
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire-cli/commands/config
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/config
+**Interface Usages**: 3
+
+### error
+**Field (1)**:
+- services.go:56 - struct field
+
+**Return (1)**:
+- services.go:56 - function fetchServicesConf
+
+**Variable (1)**:
+- gen.go:307 - variable err
+
+---
+
+## cmd/skywire-cli/commands/dmsgpty
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/dmsgpty
+**Interface Usages**: 1
+
+### error
+**Field (1)**:
+- root.go:72 - struct field
+
+---
+
+## cmd/skywire-cli/commands/log
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/log
+**Interface Usages**: 29
+
+### ProgressWriter
+**Field (1)**:
+- log.go:313 - field pw
+
+### context.Context
+**Field (1)**:
+- log.go:286 - field ctx
+
+**Parameter (3)**:
+- log.go:286 - function CancellableCopy
+- log.go:249 - function downloadDmsg
+- log.go:236 - function download
+
+### dmsgServer
+**Field (1)**:
+- log.go:353 - struct field
+
+**Return (1)**:
+- log.go:353 - function getAllDMSGServers
+
+**Variable (1)**:
+- log.go:354 - variable results
+
+### error
+**Field (2)**:
+- log.go:282 - field err
+- log.go:328 - struct field
+
+**Return (6)**:
+- log.go:328 - function getUptimes
+- log.go:282 - method readerFunc.Read
+- log.go:286 - function CancellableCopy
+- log.go:249 - function downloadDmsg
+- log.go:313 - method *ProgressWriter.Write
+- log.go:236 - function download
+
+### http.Client
+**Field (1)**:
+- log.go:249 - field httpC
+
+**Parameter (2)**:
+- log.go:249 - function downloadDmsg
+- log.go:236 - function download
+
+### io.ReadCloser
+**Field (1)**:
+- log.go:286 - field body
+
+**Parameter (1)**:
+- log.go:286 - function CancellableCopy
+
+### io.Writer
+**Field (1)**:
+- log.go:249 - field w
+
+**Parameter (2)**:
+- log.go:249 - function downloadDmsg
+- log.go:286 - function CancellableCopy
+
+### logging.Logger
+**Field (1)**:
+- log.go:328 - field log
+
+**Parameter (2)**:
+- log.go:328 - function getUptimes
+- log.go:236 - function download
+
+### logrus.FieldLogger
+**Field (1)**:
+- log.go:249 - field log
+
+**Parameter (1)**:
+- log.go:249 - function downloadDmsg
+
+---
+
+## cmd/skywire-cli/commands/mdisc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/mdisc
+**Interface Usages**: 1
+
+### bytes.Buffer
+**Variable (1)**:
+- root.go:110 - variable b
+
+---
+
+## cmd/skywire-cli/commands/proxy
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/proxy
+**Interface Usages**: 2
+
+### bytes.Buffer
+**Variable (1)**:
+- proxy.go:214 - variable b
+
+### services.Service
+**Variable (1)**:
+- proxy.go:312 - variable list
+
+---
+
+## cmd/skywire-cli/commands/reward
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/reward
+**Interface Usages**: 1
+
+### bytes.Buffer
+**Variable (1)**:
+- rules.go:42 - variable buf
+
+---
+
+## cmd/skywire-cli/commands/rewards
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/rewards
+**Interface Usages**: 18
+
+### bytes.Buffer
+**Variable (3)**:
+- server.go:568 - variable result
+- services.go:131 - variable renderedServiceFile1
+- services.go:130 - variable renderedServiceFile
+
+### error
+**Field (3)**:
+- server.go:121 - struct field
+- server.go:144 - field err
+- server.go:179 - field e
+
+**Parameter (1)**:
+- server.go:179 - function server
+
+**Return (3)**:
+- server.go:1338 - function generateAndCacheStats
+- server.go:1274 - function generateAndCacheJSON
+- server.go:121 - function extractFiles
+
+**Variable (2)**:
+- calc.go:135 - variable err
+- server.go:243 - variable err1
+
+### gin.Context
+**Field (1)**:
+- server.go:683 - field c
+
+**Parameter (1)**:
+- server.go:1821 - function mainPage
+
+### ginHandler
+**Field (1)**:
+- server.go:1501 - field h
+
+### http.ResponseWriter
+**Field (1)**:
+- server.go:1501 - field w
+
+**Parameter (1)**:
+- server.go:1501 - method *ginHandler.ServeHTTP
+
+### strings.Builder
+**Variable (1)**:
+- calc.go:363 - variable inputStr
+
+---
+
+## cmd/skywire-cli/commands/rewards/tgbot
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/rewards/tgbot
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire-cli/commands/rewards/ui
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/rewards/ui
+**Interface Usages**: 1
+
+### core.Button
+**Embedded (1)**:
+- ui.go:82 - struct DateButton
+
+---
+
+## cmd/skywire-cli/commands/route
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/route
+**Interface Usages**: 2
+
+### bytes.Buffer
+**Variable (1)**:
+- route.go:464 - variable b
+
+### io.Writer
+**Field (1)**:
+- route.go:409 - field w
+
+---
+
+## cmd/skywire-cli/commands/rpc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/rpc
+**Interface Usages**: 2
+
+### error
+**Field (1)**:
+- root.go:23 - struct field
+
+**Return (1)**:
+- root.go:23 - function Client
+
+---
+
+## cmd/skywire-cli/commands/skyfwd
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/skyfwd
+**Interface Usages**: 1
+
+### bytes.Buffer
+**Variable (1)**:
+- root.go:46 - variable b
+
+---
+
+## cmd/skywire-cli/commands/skyrev
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/skyrev
+**Interface Usages**: 1
+
+### bytes.Buffer
+**Variable (1)**:
+- root.go:52 - variable b
+
+---
+
+## cmd/skywire-cli/commands/survey
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/survey
+**Interface Usages**: 10
+
+### context.Context
+**Field (1)**:
+- root.go:150 - field ctx
+
+**Parameter (1)**:
+- root.go:150 - function startDmsg
+
+### dmsg.Client
+**Field (1)**:
+- root.go:150 - field dmsgC
+
+**Return (1)**:
+- root.go:150 - function startDmsg
+
+### error
+**Field (2)**:
+- root.go:133 - struct field
+- root.go:150 - field err
+
+**Return (2)**:
+- root.go:133 - function FetchIP
+- root.go:150 - function startDmsg
+
+### logging.Logger
+**Field (1)**:
+- root.go:150 - field log
+
+**Parameter (1)**:
+- root.go:150 - function startDmsg
+
+---
+
+## cmd/skywire-cli/commands/tp
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/tp
+**Interface Usages**: 3
+
+### bytes.Buffer
+**Variable (1)**:
+- tp.go:318 - variable b
+
+### error
+**Field (1)**:
+- tp.go:453 - struct field
+
+**Return (1)**:
+- tp.go:453 - method *transportID.Set
+
+---
+
+## cmd/skywire-cli/commands/ut
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/ut
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire-cli/commands/visor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/visor
+**Interface Usages**: 17
+
+### bytes.Buffer
+**Variable (1)**:
+- app.go:72 - variable b
+
+### context.Context
+**Field (1)**:
+- process.go:61 - field ctx
+
+**Parameter (1)**:
+- process.go:61 - function gort
+
+### error
+**Field (2)**:
+- top.go:188 - struct field
+- top.go:188 - field err
+
+**Return (6)**:
+- process.go:61 - function gort
+- top.go:97 - function parseArgs
+- ip.go:76 - function getStunServers
+- ip.go:40 - function getIPAddress
+- top.go:526 - function getLayout
+- app.go:336 - function ensureDir
+
+**Variable (1)**:
+- process.go:42 - variable err
+
+### http.ResponseWriter
+**Field (1)**:
+- top.go:515 - field w
+
+### io.Reader
+**Field (1)**:
+- top.go:526 - struct field
+
+**Return (1)**:
+- top.go:526 - function getLayout
+
+### logging.Logger
+**Field (1)**:
+- ip.go:67 - field logger
+
+**Parameter (1)**:
+- ip.go:67 - function isPublic
+
+---
+
+## cmd/skywire-cli/commands/vpn
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/vpn
+**Interface Usages**: 2
+
+### bytes.Buffer
+**Variable (1)**:
+- vvpn.go:142 - variable b
+
+### services.Service
+**Variable (1)**:
+- vvpn.go:214 - variable list
+
+---
+
+## cmd/skywire-cli/internal
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/internal
+**Interface Usages**: 6
+
+### error
+**Field (1)**:
+- internal.go:26 - field err
+
+**Parameter (5)**:
+- internal.go:26 - function Catch
+- internal.go:33 - function PrintFatalError
+- internal.go:50 - function PrintFatalRPCError
+- internal.go:55 - function PrintRPCError
+- internal.go:60 - function PrintError
+
+---
+
+## cmd/skywire-services
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-services
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire-services/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-services/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire-visor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-visor
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/skywire/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/sw-env
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/sw-env
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/sw-env/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/sw-env/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/transport-discovery
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/transport-discovery
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/transport-discovery/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/transport-discovery/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/transport-setup
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/transport-setup
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/transport-setup/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/transport-setup/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/uptime-tracker
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/uptime-tracker
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/uptime-tracker/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/uptime-tracker/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/version
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/version
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## cmd/version/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/version/commands
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## example/example-client-app
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/example/example-client-app
+**Interface Usages**: 16
+
+### app.Client
+**Field (1)**:
+- example-client-app.go:35 - field appCl
+
+**Parameter (3)**:
+- example-client-app.go:126 - function setAppErr
+- example-client-app.go:35 - function dialServer
+- example-client-app.go:132 - function setAppStatus
+
+### context.Context
+**Field (1)**:
+- example-client-app.go:35 - field ctx
+
+**Parameter (1)**:
+- example-client-app.go:35 - function dialServer
+
+### error
+**Field (2)**:
+- example-client-app.go:126 - field err
+- example-client-app.go:37 - struct field
+
+**Parameter (1)**:
+- example-client-app.go:126 - function setAppErr
+
+**Return (1)**:
+- example-client-app.go:35 - function dialServer
+
+**Variable (1)**:
+- example-client-app.go:38 - variable err
+
+### net.Conn
+**Field (2)**:
+- example-client-app.go:138 - field conn
+- example-client-app.go:35 - struct field
+
+**Parameter (1)**:
+- example-client-app.go:138 - function handleConn
+
+**Return (1)**:
+- example-client-app.go:35 - function dialServer
+
+**Variable (1)**:
+- example-client-app.go:36 - variable conn
+
+---
+
+## example/example-server-app
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/example/example-server-app
+**Interface Usages**: 7
+
+### app.Client
+**Field (1)**:
+- example-server-app.go:76 - field appCl
+
+**Parameter (2)**:
+- example-server-app.go:76 - function setAppStatus
+- example-server-app.go:82 - function setAppError
+
+### error
+**Field (1)**:
+- example-server-app.go:82 - field appErr
+
+**Parameter (1)**:
+- example-server-app.go:82 - function setAppError
+
+### net.Conn
+**Field (1)**:
+- example-server-app.go:88 - field conn
+
+**Parameter (1)**:
+- example-server-app.go:88 - function handleConn
+
+---
+
+## example/http-server
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/example/http-server
+**Interface Usages**: 4
+
+### error
+**Field (1)**:
+- server.go:79 - struct field
+
+**Return (1)**:
+- server.go:79 - function client
+
+### http.ResponseWriter
+**Field (1)**:
+- server.go:18 - field w
+
+**Parameter (1)**:
+- server.go:18 - function homepage
+
+---
+
+## example/http-server/html
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/example/http-server/html
+**Interface Usages**: 4
+
+### error
+**Field (1)**:
+- html.go:24 - struct field
+
+**Return (1)**:
+- html.go:24 - function Homepage
+
+### io.Writer
+**Field (1)**:
+- html.go:24 - field w
+
+**Parameter (1)**:
+- html.go:24 - function Homepage
+
+---
+
+## internal/armetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/armetrics
+**Interface Usages**: 1
+
+### metricsutil.VictoriaMetricsIntGaugeWrapper
+**Field (1)**:
+- victoria_metrics.go:9 - field clientsCount
+
+---
+
+## internal/config
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/config
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## internal/httpauth
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/httpauth
+**Interface Usages**: 33
+
+### Client
+**Field (2)**:
+- client.go:193 - field c
+- client.go:70 - struct field
+
+**Return (1)**:
+- client.go:69 - function NewClient
+
+### context.Context
+**Field (1)**:
+- client.go:150 - field ctx
+
+**Parameter (2)**:
+- client.go:150 - method *Client.Nonce
+- client.go:69 - function NewClient
+
+### error
+**Field (1)**:
+- client.go:70 - struct field
+
+**Return (9)**:
+- client.go:96 - method *Client.do
+- client.go:92 - method *Client.Do
+- client.go:285 - function ExtractError
+- client.go:226 - function isNonceValid
+- client.go:69 - function NewClient
+- client.go:150 - method *Client.Nonce
+- client.go:193 - method *Client.doRequest
+- nonce.go:21 - function Sign
+- client.go:269 - function extractHTTPError
+
+### http.Client
+**Field (1)**:
+- client.go:96 - field client
+
+**Parameter (3)**:
+- client.go:96 - method *Client.do
+- client.go:193 - method *Client.doRequest
+- client.go:69 - function NewClient
+
+### http.Header
+**Field (2)**:
+- client_test.go:99 - field headers
+- client_test.go:107 - field headerCh
+
+**Parameter (2)**:
+- client_test.go:99 - function checkResp
+- client_test.go:107 - function newTestServer
+
+### http.ResponseWriter
+**Field (1)**:
+- client_test.go:109 - field w
+
+### httptest.Server
+**Field (1)**:
+- client_test.go:107 - struct field
+
+**Return (1)**:
+- client_test.go:107 - function newTestServer
+
+### io.Reader
+**Field (1)**:
+- client.go:269 - field r
+
+**Parameter (2)**:
+- client.go:285 - function ExtractError
+- client.go:269 - function extractHTTPError
+
+### logging.Logger
+**Field (1)**:
+- client.go:60 - field log
+
+### logging.MasterLogger
+**Field (1)**:
+- client.go:70 - field mLog
+
+**Parameter (1)**:
+- client.go:69 - function NewClient
+
+---
+
+## internal/nm
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/nm
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## internal/packetfilter
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/packetfilter
+**Interface Usages**: 10
+
+### AddressFilter
+**Field (2)**:
+- address-filter.go:17 - struct field
+- address-filter.go:25 - field f
+
+**Return (1)**:
+- address-filter.go:17 - function NewAddressFilter
+
+### KCPConversationFilter
+**Field (2)**:
+- kcp-filter.go:26 - struct field
+- kcp-filter.go:51 - field f
+
+**Return (1)**:
+- kcp-filter.go:26 - function NewKCPConversationFilter
+
+### logging.Logger
+**Field (1)**:
+- address-filter.go:12 - field log
+
+### logging.MasterLogger
+**Field (1)**:
+- kcp-filter.go:26 - field mLog
+
+**Parameter (2)**:
+- kcp-filter.go:26 - function NewKCPConversationFilter
+- address-filter.go:17 - function NewAddressFilter
+
+---
+
+## internal/pg
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/pg
+**Interface Usages**: 2
+
+### error
+**Field (1)**:
+- lib.go:10 - struct field
+
+**Return (1)**:
+- lib.go:10 - function Init
+
+---
+
+## internal/sdmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/sdmetrics
+**Interface Usages**: 5
+
+### metricsutil.VictoriaMetricsUintGaugeWrapper
+**Field (5)**:
+- victoria_metrics.go:9 - field servicesRegByTypeCount
+- victoria_metrics.go:10 - field serviceTypesCount
+- victoria_metrics.go:11 - field serviceTypeVPNCount
+- victoria_metrics.go:12 - field serviceTypeVisorCount
+- victoria_metrics.go:13 - field serviceTypeSkysocksCount
+
+---
+
+## internal/skysocks
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/skysocks
+**Interface Usages**: 33
+
+### Client
+**Field (2)**:
+- client.go:178 - field c
+- client.go:29 - struct field
+
+**Return (1)**:
+- client.go:29 - function NewClient
+
+### Server
+**Field (2)**:
+- server.go:105 - field s
+- server.go:30 - struct field
+
+**Return (1)**:
+- server.go:30 - function NewServer
+
+### app.Client
+**Field (1)**:
+- server.go:22 - field appCl
+
+**Parameter (2)**:
+- server.go:30 - function NewServer
+- client.go:29 - function NewClient
+
+### error
+**Field (2)**:
+- server.go:30 - struct field
+- client.go:171 - field appErr
+
+**Parameter (1)**:
+- client.go:171 - method *Client.setAppError
+
+**Return (6)**:
+- client.go:29 - function NewClient
+- server.go:112 - method *Server.Close
+- client.go:51 - method *Client.ListenAndServe
+- server.go:30 - function NewServer
+- server.go:51 - method *Server.Serve
+- client.go:178 - method *Client.Close
+
+**Variable (1)**:
+- client.go:183 - variable err
+
+### http.ResponseWriter
+**Field (1)**:
+- server_test.go:73 - field w
+
+### ipc.Client
+**Field (2)**:
+- client.go:162 - field client
+- common.go:13 - field ipcClient
+
+**Parameter (3)**:
+- common.go:13 - function listenIPC
+- server.go:95 - method *Server.ListenIPC
+- client.go:162 - method *Client.ListenIPC
+
+### net.Conn
+**Field (1)**:
+- client.go:29 - field conn
+
+**Parameter (2)**:
+- client.go:108 - method *Client.handleStream
+- client.go:29 - function NewClient
+
+### net.Listener
+**Field (2)**:
+- server.go:51 - field l
+- server.go:25 - field listener
+
+**Parameter (1)**:
+- server.go:51 - method *Server.Serve
+
+### socks5.CredentialStore
+**Variable (1)**:
+- server.go:31 - variable credentials
+
+### socks5.Server
+**Field (1)**:
+- server.go:24 - field socks
+
+---
+
+## internal/testhelpers
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/testhelpers
+**Interface Usages**: 1
+
+### error
+**Variable (1)**:
+- testhelpers.go:9 - variable NoErr
+
+---
+
+## internal/tpdiscmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/tpdiscmetrics
+**Interface Usages**: 4
+
+### metricsutil.VictoriaMetricsIntGaugeWrapper
+**Field (4)**:
+- victoria_metrics.go:13 - field stcpCounts
+- victoria_metrics.go:14 - field stcprCounts
+- victoria_metrics.go:15 - field sudphCounts
+- victoria_metrics.go:16 - field dmsgCounts
+
+---
+
+## internal/utmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/utmetrics
+**Interface Usages**: 1
+
+### metricsutil.VictoriaMetricsIntGaugeWrapper
+**Field (1)**:
+- victoria_metrics.go:9 - field entriesCount
+
+---
+
+## internal/vpn
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/vpn
+**Interface Usages**: 113
+
+### Client
+**Field (2)**:
+- client.go:710 - field c
+- client.go:61 - struct field
+
+**Return (1)**:
+- client.go:61 - function NewClient
+
+### IPGenerator
+**Field (3)**:
+- ip_generator.go:18 - struct field
+- ip_generator.go:47 - field g
+- server.go:23 - field ipGen
+
+**Return (1)**:
+- ip_generator.go:18 - function NewIPGenerator
+
+### Server
+**Field (2)**:
+- server.go:201 - field s
+- server.go:33 - struct field
+
+**Return (1)**:
+- server.go:33 - function NewServer
+
+### app.Client
+**Field (1)**:
+- client.go:710 - field appCl
+
+**Parameter (3)**:
+- server.go:33 - function NewServer
+- client.go:61 - function NewClient
+- client.go:710 - method *Client.dialServer
+
+### error
+**Field (3)**:
+- os_darwin.go:61 - struct field
+- server.go:357 - field appErr
+- os.go:9 - field err
+
+**Parameter (2)**:
+- client.go:749 - method *Client.setAppError
+- server.go:357 - method *Server.setAppError
+
+**Return (73)**:
+- client.go:710 - method *Client.dialServer
+- os_darwin.go:94 - method *Server.SetupTUN
+- os_server.go:78 - function DisableIPMasquerading
+- os_server_linux.go:41 - function SetIPTablesForwardPolicy
+- os_server.go:73 - function EnableIPMasquerading
+- os_server_linux.go:47 - function SetIPTablesForwardAcceptPolicy
+- os_server.go:68 - function EnableIPv6Forwarding
+- os_server_linux.go:54 - function AllowIPToLocalNetwork
+- os_server.go:63 - function EnableIPv4Forwarding
+- os_server_linux.go:61 - function BlockIPToLocalNetwork
+- os_server.go:58 - function SetIPv6ForwardingValue
+- os_server_linux.go:67 - function GetIPv4ForwardingValue
+- os_server.go:53 - function SetIPv4ForwardingValue
+- os_server_linux.go:72 - function GetIPv6ForwardingValue
+- os_server.go:16 - function GetIPTablesForwardPolicy
+- os_server_linux.go:124 - function getIPForwardingValue
+- client.go:601 - function rfIPFromEnv
+- os_server_linux.go:138 - function parseIPForwardingOutput
+- os_linux.go:173 - method *Server.AddRoute
+- os_windows.go:20 - method *Client.SetupTUN
+- client.go:605 - function uptimeTrackerIPFromEnv
+- client.go:597 - function addressResolverIPFromEnv
+- os_linux.go:117 - method *Client.SetupDNS
+- os_windows.go:63 - method *Client.ChangeRoute
+- client.go:593 - function tpDiscIPFromEnv
+- client.go:609 - function tpRemoteIPsFromEnv
+- os_windows.go:68 - method *Client.AddRoute
+- os_linux.go:107 - method *Client.DeleteRoute
+- client.go:570 - function dmsgSrvAddrsFromEnv
+- client.go:641 - function stcpEntitiesFromEnv
+- os_windows.go:77 - function modifyRoutingTable
+- client.go:669 - method *Client.shakeHands
+- client.go:566 - function dmsgDiscIPFromEnv
+- client.go:543 - method *Client.removeDirectRoute
+- os_darwin.go:79 - method *Client.modifyRoutingTable
+- client.go:532 - method *Client.setupDirectRoute
+- server.go:33 - function NewServer
+- ip_generator.go:47 - method *IPGenerator.Next
+- client.go:519 - method *Client.setupDirectRoutes
+- ip_generator.go:67 - function fetchIPv4Octets
+- server.go:95 - method *Server.Serve
+- client.go:486 - method *Client.routeTrafficThroughTUN
+- server.go:158 - method *Server.Close
+- client.go:460 - method *Client.dialServeConn
+- client.go:770 - function ipFromEnv
+- client.go:348 - method *Client.serveConn
+- os_client_windows.go:54 - function setupClientSysPrivileges
+- client.go:334 - method *Client.setupTUN
+- os_client_windows.go:21 - function DefaultNetworkGateway
+- client.go:319 - method *Client.closeTUN
+- os_client_linux.go:83 - function releaseClientSysPrivileges
+- client.go:300 - method *Client.createTUN
+- tun_device_windows.go:51 - method *tunDevice.Close
+- client.go:282 - method *Client.setSysPrivileges
+- server.go:273 - method *Server.shakeHands
+- client.go:266 - method *Client.RemoveDirectRoute
+- client.go:258 - method *Client.removeDirectRouteFn
+- os.go:9 - function parseCIDR
+- client.go:243 - method *Client.AddDirectRoute
+- env.go:121 - function IPFromEnv
+- net.go:66 - function ReadJSON
+- client.go:134 - method *Client.Serve
+- env.go:136 - function ParseIP
+- subnet_ip_incrementer.go:35 - method *subnetIPIncrementer.next
+- net.go:49 - function ReadJSONWithTimeout
+- client.go:61 - function NewClient
+- tun_device_unix.go:12 - function newTUNDevice
+- handshake_status.go:41 - method HandshakeStatus.getError
+- net.go:29 - function WriteJSON
+- tun_device_windows.go:36 - method *tunDevice.Read
+- ip_generator.go:30 - method *IPGenerator.Reserve
+- tun_device_windows.go:46 - method *tunDevice.Write
+- net.go:12 - function WriteJSONWithTimeout
+
+**Variable (1)**:
+- os_client_linux.go:48 - variable err
+
+### io.ReadWriteCloser
+**Field (1)**:
+- tun_device.go:10 - struct field
+
+### ipc.Client
+**Field (1)**:
+- client.go:211 - field client
+
+**Parameter (1)**:
+- client.go:211 - method *Client.ListenIPC
+
+### net.Conn
+**Field (2)**:
+- net.go:29 - field conn
+- client.go:710 - struct field
+
+**Parameter (10)**:
+- net.go:49 - function ReadJSONWithTimeout
+- server.go:273 - method *Server.shakeHands
+- server.go:209 - method *Server.closeConn
+- net.go:66 - function ReadJSON
+- server.go:363 - method *Server.sendServerErrHello
+- server.go:215 - method *Server.serveConn
+- client.go:669 - method *Client.shakeHands
+- client.go:348 - method *Client.serveConn
+- net.go:29 - function WriteJSON
+- net.go:12 - function WriteJSONWithTimeout
+
+**Return (1)**:
+- client.go:710 - method *Client.dialServer
+
+**Variable (1)**:
+- client.go:716 - variable conn
+
+### net.Listener
+**Field (2)**:
+- server.go:95 - field l
+- server.go:21 - field lis
+
+**Parameter (1)**:
+- server.go:95 - method *Server.Serve
+
+---
+
+## pkg/address-resolver/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/address-resolver/api
+**Interface Usages**: 32
+
+### chi.Router
+**Field (1)**:
+- api.go:118 - field r
+
+### error
+**Field (1)**:
+- api.go:446 - struct field
+
+**Return (1)**:
+- api.go:446 - method *API.askToDialUDP
+
+### http.Handler
+**Embedded (1)**:
+- api.go:52 - struct API
+
+**Field (1)**:
+- api.go:53 - struct field
+
+### http.ResponseWriter
+**Field (1)**:
+- api.go:271 - field w
+
+**Parameter (7)**:
+- api.go:174 - method *API.bind
+- api.go:336 - method *API.health
+- api.go:271 - method *API.resolve
+- api.go:346 - method *API.transports
+- api.go:487 - method *API.writeJSON
+- api.go:356 - method *API.deregister
+- api.go:235 - method *API.delBind
+
+### httpauth.NonceStore
+**Field (1)**:
+- api.go:92 - field nonceStore
+
+**Parameter (1)**:
+- api.go:92 - function New
+
+### logging.Logger
+**Field (1)**:
+- api.go:92 - field log
+
+**Parameter (1)**:
+- api.go:92 - function New
+
+### logrus.FieldLogger
+**Field (1)**:
+- api.go:170 - struct field
+
+**Return (1)**:
+- api.go:170 - method *API.logger
+
+### metricsutil.RequestsInFlightCountMiddleware
+**Field (1)**:
+- api.go:59 - field reqsInFlightCountMiddleware
+
+### net.Conn
+**Field (3)**:
+- api.go:539 - field conn
+- api.go:471 - struct field
+- api.go:62 - field udpConns
+
+**Parameter (3)**:
+- api.go:539 - method *API.bindSUDPH
+- api.go:480 - method *API.setUDPConn
+- api.go:521 - method *API.sudphConnHandshake
+
+**Return (1)**:
+- api.go:471 - method *API.udpConn
+
+### net.Listener
+**Field (1)**:
+- api.go:506 - field listener
+
+**Parameter (1)**:
+- api.go:506 - method *API.ListenUDP
+
+### store.Store
+**Field (2)**:
+- api.go:92 - field s
+- api.go:56 - field store
+
+**Parameter (1)**:
+- api.go:92 - function New
+
+---
+
+## pkg/address-resolver/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/address-resolver/store
+**Interface Usages**: 52
+
+### AddressStore
+**Embedded (1)**:
+- address_test.go:19 - struct AddressSuite
+
+**Field (1)**:
+- address_test.go:21 - struct field
+
+### Store
+**Field (1)**:
+- store.go:37 - struct field
+
+**Return (2)**:
+- store.go:37 - function New
+- redis_store_test.go:42 - function newStore
+
+### context.Context
+**Field (2)**:
+- store.go:24 - field ctx
+- memory_store.go:23 - field _
+
+**Parameter (14)**:
+- store.go:37 - function New
+- redis_store.go:51 - method *redisStore.Bind
+- redis_store.go:27 - function newRedisStore
+- redis_store.go:71 - method *redisStore.Resolve
+- redis_store.go:81 - method *redisStore.GetAll
+- memory_store.go:60 - method *memStore.GetAll
+- memory_store.go:43 - method *memStore.Resolve
+- redis_store.go:91 - method *redisStore.bind
+- redis_store.go:129 - method *redisStore.getAll
+- memory_store.go:36 - method *memStore.DelBind
+- redis_store.go:111 - method *redisStore.resolve
+- redis_store.go:61 - method *redisStore.DelBind
+- memory_store.go:23 - method *memStore.Bind
+- redis_store.go:104 - method *redisStore.delBind
+
+### error
+**Field (2)**:
+- redis_store.go:71 - struct field
+- memory_store.go:60 - field err
+
+**Return (16)**:
+- redis_store.go:27 - function newRedisStore
+- memory_store.go:43 - method *memStore.Resolve
+- redis_store.go:71 - method *redisStore.Resolve
+- redis_store.go:129 - method *redisStore.getAll
+- memory_store.go:23 - method *memStore.Bind
+- store.go:37 - function New
+- redis_store.go:111 - method *redisStore.resolve
+- redis_store.go:81 - method *redisStore.GetAll
+- redis_store_test.go:31 - function newRedisClient
+- redis_store.go:51 - method *redisStore.Bind
+- memory_store.go:36 - method *memStore.DelBind
+- redis_store.go:61 - method *redisStore.DelBind
+- redis_store_test.go:42 - function newStore
+- memory_store.go:60 - method *memStore.GetAll
+- redis_store.go:104 - method *redisStore.delBind
+- redis_store.go:91 - method *redisStore.bind
+
+### logging.Logger
+**Field (1)**:
+- redis_store.go:27 - field logger
+
+**Parameter (2)**:
+- store.go:37 - function New
+- redis_store.go:27 - function newRedisStore
+
+### memStore
+**Field (2)**:
+- memory_store.go:36 - field s
+- memory_store.go:17 - struct field
+
+**Return (1)**:
+- memory_store.go:17 - function newMemoryStore
+
+### redis.Client
+**Field (2)**:
+- redis_store_test.go:31 - struct field
+- redis_store.go:24 - field client
+
+**Return (1)**:
+- redis_store_test.go:31 - function newRedisClient
+
+### redisStore
+**Field (2)**:
+- redis_store.go:61 - field s
+- redis_store.go:27 - struct field
+
+**Return (1)**:
+- redis_store.go:27 - function newRedisStore
+
+### suite.Suite
+**Embedded (1)**:
+- address_test.go:19 - struct AddressSuite
+
+---
+
+## pkg/app
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app
+**Interface Usages**: 58
+
+### Client
+**Field (2)**:
+- client.go:46 - struct field
+- client.go:168 - field c
+
+**Return (3)**:
+- client.go:46 - function NewClientFromConfig
+- client.go:31 - function NewClient
+- client_test.go:289 - function prepClient
+
+### Conn
+**Field (1)**:
+- conn.go:35 - field c
+
+### Listener
+**Field (1)**:
+- listener.go:72 - field l
+
+### appevent.Subscriber
+**Field (2)**:
+- client.go:46 - field subs
+- client.go:31 - field eventSubs
+
+**Parameter (2)**:
+- client.go:31 - function NewClient
+- client.go:46 - function NewClientFromConfig
+
+### appserver.RPCIngressClient
+**Field (2)**:
+- client.go:24 - field rpcC
+- client_test.go:289 - field rpc
+
+**Parameter (1)**:
+- client_test.go:289 - function prepClient
+
+### error
+**Field (3)**:
+- conn_test.go:32 - field readErr
+- conn_test.go:177 - struct field
+- conn_test.go:71 - field writeErr
+
+**Return (15)**:
+- client.go:88 - method *Client.Dial
+- client.go:78 - method *Client.SetError
+- conn.go:85 - method *Conn.SetWriteDeadline
+- conn.go:80 - method *Conn.SetReadDeadline
+- listener.go:72 - method *Listener.Close
+- client.go:83 - method *Client.SetAppPort
+- client.go:73 - method *Client.SetConnectionDuration
+- conn.go:75 - method *Conn.SetDeadline
+- conn.go:49 - method *Conn.Close
+- client.go:68 - method *Client.SetDetailedStatus
+- client.go:126 - method *Client.Listen
+- listener.go:30 - method *Listener.Accept
+- client.go:46 - function NewClientFromConfig
+- conn.go:35 - method *Conn.Write
+- conn.go:28 - method *Conn.Read
+
+**Variable (6)**:
+- client_test.go:226 - variable closeNoErr
+- client_test.go:142 - variable listenErr
+- client_test.go:34 - variable dialErr
+- client_test.go:78 - variable closeErr
+- listener_test.go:247 - variable noErr
+- listener_test.go:116 - variable acceptErr
+
+### idmanager.Manager
+**Field (2)**:
+- client.go:26 - field cm
+- client.go:25 - field lm
+
+### io.Closer
+**Field (1)**:
+- client.go:27 - field closers
+
+### logging.Logger
+**Field (1)**:
+- client_test.go:289 - field l
+
+**Parameter (1)**:
+- client_test.go:289 - function prepClient
+
+### logrus.FieldLogger
+**Field (1)**:
+- client.go:46 - field log
+
+**Parameter (1)**:
+- client.go:46 - function NewClientFromConfig
+
+### net.Conn
+**Embedded (1)**:
+- conn_test.go:154 - struct wrappedConn
+
+**Field (2)**:
+- conn_test.go:160 - field conn
+- conn_test.go:155 - struct field
+
+**Parameter (1)**:
+- conn_test.go:160 - function wrapConn
+
+**Return (2)**:
+- client.go:88 - method *Client.Dial
+- listener.go:30 - method *Listener.Accept
+
+**Variable (1)**:
+- client.go:171 - variable conns
+
+### net.Listener
+**Field (1)**:
+- client.go:126 - struct field
+
+**Return (1)**:
+- client.go:126 - method *Client.Listen
+
+**Variable (1)**:
+- client.go:170 - variable listeners
+
+### wrappedConn
+**Field (2)**:
+- conn_test.go:172 - field p
+- conn_test.go:160 - struct field
+
+**Return (1)**:
+- conn_test.go:160 - function wrapConn
+
+---
+
+## pkg/app/appcommon
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appcommon
+**Interface Usages**: 44
+
+### LogStore
+**Field (2)**:
+- log_store.go:28 - field db
+- log_store.go:71 - field _
+
+**Return (2)**:
+- log_store.go:71 - function NewBBoltLogStore
+- log_store.go:28 - function NewProcLogger
+
+### MockConn
+**Field (1)**:
+- mock_conn.go:123 - field _m
+
+### MockListener
+**Field (1)**:
+- mock_listener.go:40 - field _m
+
+### bBoltLogStore
+**Field (1)**:
+- log_store.go:102 - field l
+
+### error
+**Field (2)**:
+- mock_conn.go:22 - struct field
+- log_store.go:49 - field err
+
+**Return (19)**:
+- hello.go:58 - function WriteHello
+- log_store.go:161 - method *bBoltLogStore.LogsSince
+- log_store.go:71 - function NewBBoltLogStore
+- log_store.go:236 - method *bBoltLogStore.Flush
+- mock_conn.go:109 - method *MockConn.SetWriteDeadline
+- proc_config.go:87 - function ProcConfigFromEnv
+- mock_conn.go:95 - method *MockConn.SetReadDeadline
+- mock_listener.go:17 - method *MockListener.Accept
+- proc_config.go:52 - method *ProcKey.UnmarshalText
+- log_store.go:195 - method *bBoltLogStore.Fire
+- mock_conn.go:81 - method *MockConn.SetDeadline
+- mock_conn.go:18 - method *MockConn.Close
+- proc_config.go:47 - method ProcKey.MarshalText
+- mock_conn.go:123 - method *MockConn.Write
+- log_store.go:102 - method *bBoltLogStore.Write
+- mock_conn.go:46 - method *MockConn.Read
+- mock_listener.go:54 - method *MockListener.Close
+- hello.go:37 - function ReadHello
+- log_store.go:138 - method *bBoltLogStore.Store
+
+**Variable (2)**:
+- mock_listener.go:57 - variable r0
+- mock_conn.go:56 - variable r1
+
+### io.Reader
+**Field (1)**:
+- hello.go:37 - field r
+
+**Parameter (1)**:
+- hello.go:37 - function ReadHello
+
+### io.Writer
+**Field (1)**:
+- hello.go:58 - field w
+
+**Parameter (1)**:
+- hello.go:58 - function WriteHello
+
+### logging.MasterLogger
+**Field (2)**:
+- log_store.go:28 - field mLog
+- log_store.go:28 - field log
+
+**Parameter (1)**:
+- log_store.go:28 - function NewProcLogger
+
+**Return (1)**:
+- log_store.go:28 - function NewProcLogger
+
+### mock.Mock
+**Embedded (3)**:
+- mock_listener.go:12 - struct MockListener
+- mock_conn.go:13 - struct MockConn
+- mock_addr.go:8 - struct MockAddr
+
+### net.Conn
+**Field (1)**:
+- mock_listener.go:17 - struct field
+
+**Return (1)**:
+- mock_listener.go:17 - method *MockListener.Accept
+
+**Variable (1)**:
+- mock_listener.go:20 - variable r0
+
+---
+
+## pkg/app/appdisc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appdisc
+**Interface Usages**: 8
+
+### Factory
+**Field (1)**:
+- factory.go:30 - field f
+
+### Updater
+**Field (1)**:
+- factory.go:48 - struct field
+
+**Return (2)**:
+- factory.go:48 - method *Factory.VisorUpdater
+- factory.go:69 - method *Factory.AppUpdater
+
+### http.Client
+**Field (1)**:
+- factory.go:26 - field Client
+
+### logging.MasterLogger
+**Field (1)**:
+- factory.go:21 - field MLog
+
+### logrus.FieldLogger
+**Field (1)**:
+- factory.go:20 - field Log
+
+### servicedisc.HTTPClient
+**Field (1)**:
+- discovery_manager.go:29 - field client
+
+---
+
+## pkg/app/appevent
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appevent
+**Interface Usages**: 66
+
+### Broadcaster
+**Field (4)**:
+- broadcaster.go:48 - field mc
+- utils.go:24 - field eb
+- handshake.go:59 - field ebc
+- broadcaster.go:26 - struct field
+
+**Parameter (1)**:
+- handshake.go:59 - function DoRespHandshake
+
+**Return (1)**:
+- broadcaster.go:26 - function NewBroadcaster
+
+### MockRPCClient
+**Field (2)**:
+- mock_rpc_client.go:37 - field _m
+- mock_rpc_client.go:79 - struct field
+
+**Return (1)**:
+- mock_rpc_client.go:76 - function NewMockRPCClient
+
+### RPCClient
+**Field (4)**:
+- broadcaster.go:39 - field c
+- broadcaster.go:91 - field client
+- broadcaster_test.go:21 - struct field
+- broadcaster.go:20 - field clients
+
+**Parameter (2)**:
+- broadcaster.go:39 - method *Broadcaster.AddClient
+- broadcaster.go:91 - function notifyClient
+
+**Return (1)**:
+- rpc.go:48 - function NewRPCClient
+
+### Subscriber
+**Field (3)**:
+- subscriber.go:78 - field s
+- subscriber.go:27 - struct field
+- rpc.go:19 - field subs
+
+**Parameter (3)**:
+- rpc.go:23 - function NewRPCGateway
+- handshake.go:19 - function DoReqHandshake
+- subscriber.go:115 - function PushEvent
+
+**Return (1)**:
+- subscriber.go:27 - function NewSubscriber
+
+### context.Context
+**Field (2)**:
+- broadcaster.go:91 - field ctx
+- mock_rpc_client.go:65 - struct field
+
+**Parameter (7)**:
+- rpc.go:66 - method *rpcClient.Notify
+- utils.go:9 - method *Broadcaster.SendTCPDial
+- broadcaster.go:91 - function notifyClient
+- utils.go:24 - method *Broadcaster.sendEvent
+- mock_rpc_client.go:57 - method *MockRPCClient.Notify
+- utils.go:16 - method *Broadcaster.SendTPClose
+- broadcaster.go:48 - method *Broadcaster.Broadcast
+
+### error
+**Field (4)**:
+- mock_rpc_client.go:65 - struct field
+- broadcaster.go:20 - field clients
+- rpc.go:34 - field err
+- broadcaster.go:91 - field errCh
+
+**Parameter (1)**:
+- broadcaster.go:91 - function notifyClient
+
+**Return (12)**:
+- subscriber.go:115 - function PushEvent
+- broadcaster.go:48 - method *Broadcaster.Broadcast
+- broadcaster.go:100 - method *Broadcaster.Close
+- rpc.go:48 - function NewRPCClient
+- mock_rpc_client.go:19 - method *MockRPCClient.Close
+- subscriber.go:98 - method *Subscriber.Close
+- rpc.go:86 - method *rpcClient.Close
+- rpc.go:66 - method *rpcClient.Notify
+- handshake.go:59 - function DoRespHandshake
+- handshake.go:19 - function DoReqHandshake
+- rpc.go:34 - method *RPCGateway.Notify
+- mock_rpc_client.go:57 - method *MockRPCClient.Notify
+
+**Variable (2)**:
+- mock_rpc_client.go:64 - variable r0
+- broadcaster.go:92 - variable err
+
+### interface{}
+**Field (1)**:
+- mock_rpc_client.go:76 - field t (anonymous interface)
+
+**Parameter (1)**:
+- mock_rpc_client.go:76 - function NewMockRPCClient (anonymous interface)
+
+### io.Closer
+**Field (1)**:
+- handshake.go:19 - struct field
+
+**Return (1)**:
+- handshake.go:19 - function DoReqHandshake
+
+**Variable (1)**:
+- handshake.go:20 - variable closers
+
+### logrus.FieldLogger
+**Field (1)**:
+- broadcaster.go:19 - field log
+
+**Parameter (2)**:
+- broadcaster.go:26 - function NewBroadcaster
+- rpc.go:23 - function NewRPCGateway
+
+### mock.Mock
+**Embedded (1)**:
+- mock_rpc_client.go:14 - struct MockRPCClient
+
+### net.Conn
+**Field (2)**:
+- handshake.go:59 - field conn
+- handshake.go:19 - struct field
+
+**Parameter (1)**:
+- handshake.go:59 - function DoRespHandshake
+
+**Return (1)**:
+- handshake.go:19 - function DoReqHandshake
+
+### rpc.Client
+**Field (1)**:
+- rpc.go:61 - field rpcC
+
+### rpcClient
+**Field (1)**:
+- rpc.go:66 - field c
+
+---
+
+## pkg/app/appnet
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appnet
+**Interface Usages**: 135
+
+### DmsgNetworker
+**Field (1)**:
+- dmsg_networker.go:32 - field n
+
+### ForwardConn
+**Field (3)**:
+- forwarding.go:25 - field fwd
+- forwarding.go:67 - struct field
+- forwarding.go:95 - field f
+
+**Parameter (1)**:
+- forwarding.go:25 - function AddForwarding
+
+**Return (3)**:
+- forwarding.go:40 - function GetAllForwardConns
+- forwarding.go:32 - function GetForwardConn
+- forwarding.go:67 - function NewForwardConn
+
+### HTTPTransport
+**Field (2)**:
+- http_transport.go:28 - field t
+- http_transport.go:19 - struct field
+
+**Return (1)**:
+- http_transport.go:19 - function MakeHTTPTransport
+
+### MockNetworker
+**Field (2)**:
+- mock_networker.go:111 - field _m
+- mock_networker.go:175 - struct field
+
+**Return (1)**:
+- mock_networker.go:172 - function NewMockNetworker
+
+### Networker
+**Field (2)**:
+- dmsg_networker.go:20 - struct field
+- networker.go:27 - field n
+
+**Parameter (1)**:
+- networker.go:27 - function AddNetworker
+
+**Return (3)**:
+- skywire_networker.go:37 - function NewSkywireNetworker
+- networker.go:37 - function ResolveNetworker
+- dmsg_networker.go:20 - function NewDMSGNetworker
+
+**Variable (1)**:
+- networker_test.go:34 - variable n
+
+### SkywireConn
+**Field (1)**:
+- skywire_conn.go:57 - field c
+
+### SkywireNetworker
+**Field (1)**:
+- skywire_networker.go:103 - field r
+
+### WrappedConn
+**Field (1)**:
+- wrapped_conn.go:41 - field c
+
+### context.Context
+**Field (3)**:
+- mock_networker.go:60 - struct field
+- skywire_networker.go:108 - field ctx
+- dmsg_networker.go:52 - field _
+
+**Parameter (9)**:
+- mock_networker.go:51 - method *MockNetworker.DialContext
+- skywire_networker.go:51 - method *SkywireNetworker.DialContext
+- networker.go:83 - function DialContext
+- networker.go:98 - function ListenContext
+- mock_networker.go:111 - method *MockNetworker.ListenContext
+- skywire_networker.go:108 - method *SkywireNetworker.ListenContext
+- skywire_networker.go:138 - method *SkywireNetworker.serveRouteGroup
+- dmsg_networker.go:52 - method *DmsgNetworker.ListenContext
+- dmsg_networker.go:37 - method *DmsgNetworker.DialContext
+
+### dmsg.Client
+**Field (1)**:
+- dmsg_networker.go:16 - field dmsgC
+
+**Parameter (1)**:
+- dmsg_networker.go:20 - function NewDMSGNetworker
+
+### error
+**Field (2)**:
+- skywire_networker.go:46 - struct field
+- addr_test.go:18 - field err
+
+**Parameter (1)**:
+- skywire_conn.go:52 - method *SkywireConn.SetError
+
+**Return (32)**:
+- errors.go:11 - function ErrServiceOffline
+- dmsg_networker.go:52 - method *DmsgNetworker.ListenContext
+- networker.go:83 - function DialContext
+- mock_networker.go:141 - method *MockNetworker.Ping
+- skywire_networker.go:77 - method *SkywireNetworker.Ping
+- mock_networker.go:51 - method *MockNetworker.DialContext
+- mock_networker.go:21 - method *MockNetworker.Dial
+- skywire_networker.go:108 - method *SkywireNetworker.ListenContext
+- networker.go:98 - function ListenContext
+- skywire_networker.go:51 - method *SkywireNetworker.DialContext
+- http_transport.go:28 - method HTTPTransport.RoundTrip
+- networker.go:69 - function Dial
+- mock_networker.go:81 - method *MockNetworker.Listen
+- skywire_networker.go:138 - method *SkywireNetworker.serveRouteGroup
+- skywire_networker.go:46 - method *SkywireNetworker.Dial
+- forwarding.go:116 - method *ForwardConn.Close
+- wrapped_conn.go:17 - function WrapConn
+- networker.go:37 - function ResolveNetworker
+- networker.go:93 - function Listen
+- mock_networker.go:111 - method *MockNetworker.ListenContext
+- dmsg_networker.go:27 - method *DmsgNetworker.Dial
+- networker.go:74 - function Ping
+- addr.go:49 - function ConvertAddr
+- skywire_networker.go:103 - method *SkywireNetworker.Listen
+- dmsg_networker.go:32 - method *DmsgNetworker.Ping
+- skywire_networker.go:210 - method *skywireListener.Accept
+- networker.go:27 - function AddNetworker
+- dmsg_networker.go:47 - method *DmsgNetworker.Listen
+- dmsg_networker.go:37 - method *DmsgNetworker.DialContext
+- skywire_networker.go:223 - method *skywireListener.Close
+- skywire_conn.go:57 - method *SkywireConn.GetError
+- skywire_conn.go:62 - method *SkywireConn.Close
+
+**Variable (4)**:
+- mock_networker.go:59 - variable r1
+- networker_test.go:63 - variable dialErr
+- skywire_conn.go:63 - variable err
+- networker_test.go:94 - variable listenErr
+
+### http.ResponseWriter
+**Field (1)**:
+- forwarding.go:135 - field w
+
+### http.Server
+**Field (1)**:
+- forwarding.go:61 - field srv
+
+### interface{}
+**Field (1)**:
+- mock_networker.go:172 - field t (anonymous interface)
+
+**Parameter (1)**:
+- mock_networker.go:172 - function NewMockNetworker (anonymous interface)
+
+### io.Closer
+**Field (1)**:
+- skywire_networker.go:193 - field closer
+
+**Parameter (1)**:
+- skywire_networker.go:193 - method *SkywireNetworker.close
+
+### logging.Logger
+**Field (1)**:
+- http_transport.go:15 - field log
+
+**Parameter (3)**:
+- forwarding.go:134 - function handleFunc
+- forwarding.go:67 - function NewForwardConn
+- http_transport.go:19 - function MakeHTTPTransport
+
+### logrus.FieldLogger
+**Field (2)**:
+- skywire_networker.go:30 - field log
+- skywire_networker.go:37 - field l
+
+**Parameter (1)**:
+- skywire_networker.go:37 - function NewSkywireNetworker
+
+### mock.Mock
+**Embedded (1)**:
+- mock_networker.go:16 - struct MockNetworker
+
+### net.Conn
+**Embedded (2)**:
+- wrapped_conn.go:10 - struct WrappedConn
+- skywire_conn.go:13 - struct SkywireConn
+
+**Field (5)**:
+- networker.go:69 - struct field
+- forwarding.go:59 - field remoteConn
+- skywire_networker.go:241 - field conn
+- http_transport.go:19 - field appConn
+- skywire_networker.go:203 - field connsCh
+
+**Parameter (6)**:
+- forwarding.go:134 - function handleFunc
+- http_transport.go:19 - function MakeHTTPTransport
+- skywire_networker.go:241 - method *skywireListener.putConn
+- forwarding.go:67 - function NewForwardConn
+- wrapped_conn.go:17 - function WrapConn
+- skywire_networker.go:160 - method *SkywireNetworker.serve
+
+**Return (14)**:
+- skywire_networker.go:46 - method *SkywireNetworker.Dial
+- skywire_networker.go:77 - method *SkywireNetworker.Ping
+- skywire_networker.go:210 - method *skywireListener.Accept
+- networker.go:69 - function Dial
+- networker.go:83 - function DialContext
+- networker.go:74 - function Ping
+- mock_networker.go:21 - method *MockNetworker.Dial
+- dmsg_networker.go:32 - method *DmsgNetworker.Ping
+- dmsg_networker.go:27 - method *DmsgNetworker.Dial
+- dmsg_networker.go:37 - method *DmsgNetworker.DialContext
+- mock_networker.go:51 - method *MockNetworker.DialContext
+- wrapped_conn.go:17 - function WrapConn
+- mock_networker.go:141 - method *MockNetworker.Ping
+- skywire_networker.go:51 - method *SkywireNetworker.DialContext
+
+**Variable (2)**:
+- networker_test.go:62 - variable dialConn
+- mock_networker.go:28 - variable r0
+
+### net.Listener
+**Field (1)**:
+- mock_networker.go:111 - struct field
+
+**Return (8)**:
+- networker.go:98 - function ListenContext
+- dmsg_networker.go:52 - method *DmsgNetworker.ListenContext
+- mock_networker.go:111 - method *MockNetworker.ListenContext
+- skywire_networker.go:103 - method *SkywireNetworker.Listen
+- mock_networker.go:81 - method *MockNetworker.Listen
+- networker.go:93 - function Listen
+- dmsg_networker.go:47 - method *DmsgNetworker.Listen
+- skywire_networker.go:108 - method *SkywireNetworker.ListenContext
+
+**Variable (2)**:
+- mock_networker.go:118 - variable r0
+- networker_test.go:93 - variable listenLis
+
+### netutil.Porter
+**Field (1)**:
+- skywire_networker.go:32 - field porter
+
+### router.Router
+**Field (1)**:
+- skywire_networker.go:31 - field r
+
+**Parameter (1)**:
+- skywire_networker.go:37 - function NewSkywireNetworker
+
+### skywireListener
+**Field (1)**:
+- skywire_networker.go:235 - field l
+
+---
+
+## pkg/app/appserver
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appserver
+**Interface Usages**: 205
+
+### MockProcManager
+**Field (2)**:
+- mock_proc_manager.go:226 - field _m
+- mock_proc_manager.go:388 - struct field
+
+**Return (1)**:
+- mock_proc_manager.go:385 - function NewMockProcManager
+
+### MockRPCIngressClient
+**Field (2)**:
+- mock_rpc_ingress_client.go:74 - field _m
+- mock_rpc_ingress_client.go:341 - struct field
+
+**Return (1)**:
+- mock_rpc_ingress_client.go:338 - function NewMockRPCIngressClient
+
+### ProcManager
+**Field (2)**:
+- proc.go:58 - field m
+- proc_manager.go:81 - struct field
+
+**Parameter (1)**:
+- proc.go:83 - function NewProc
+
+**Return (1)**:
+- proc_manager.go:81 - function NewProcManager
+
+### RPCIngressClient
+**Field (1)**:
+- rpc_ingress_client_test.go:715 - struct field
+
+**Return (2)**:
+- rpc_ingress_client_test.go:715 - function prepRPCClient
+- rpc_ingress_client.go:41 - function NewRPCIngressClient
+
+### appcommon.LogStore
+**Field (2)**:
+- proc.go:136 - struct field
+- proc.go:45 - field logDB
+
+**Return (1)**:
+- proc.go:136 - method *Proc.Logs
+
+**Variable (1)**:
+- proc.go:97 - variable appLogDB
+
+### appcommon.MockConn
+**Field (1)**:
+- rpc_ingress_client_test.go:693 - field conn
+
+**Parameter (1)**:
+- rpc_ingress_client_test.go:693 - function prepNetworkerWithConn
+
+### appcommon.MockListener
+**Field (1)**:
+- rpc_ingress_client_test.go:681 - field lis
+
+**Parameter (1)**:
+- rpc_ingress_client_test.go:681 - function prepNetworkerWithListener
+
+### appdisc.Factory
+**Field (1)**:
+- proc_manager.go:81 - field discF
+
+**Parameter (1)**:
+- proc_manager.go:81 - function NewProcManager
+
+### appdisc.Updater
+**Field (1)**:
+- proc.go:41 - field disc
+
+**Parameter (1)**:
+- proc.go:83 - function NewProc
+
+### appevent.Broadcaster
+**Field (1)**:
+- proc_manager.go:81 - field eb
+
+**Parameter (1)**:
+- proc_manager.go:81 - function NewProcManager
+
+### error
+**Field (3)**:
+- proc_manager.go:454 - struct field
+- rpc_ingress_client.go:22 - field err
+- proc.go:50 - field waitErr
+
+**Parameter (1)**:
+- rpc_ingress_gateway.go:412 - function ioErrToRPCIOErr
+
+**Return (77)**:
+- rpc_ingress_gateway.go:341 - method *RPCIngressGateway.SetDeadline
+- proc_manager.go:438 - method *procManager.Close
+- mock_rpc_ingress_client.go:127 - method *MockRPCIngressClient.Listen
+- mock_rpc_ingress_client.go:155 - method *MockRPCIngressClient.Read
+- mock_rpc_ingress_client.go:183 - method *MockRPCIngressClient.SetAppPort
+- rpc_ingress_gateway.go:80 - method *RPCIngressGateway.SetDetailedStatus
+- mock_rpc_ingress_client.go:201 - method *MockRPCIngressClient.SetConnectionDuration
+- rpc_ingress_gateway.go:89 - method *RPCIngressGateway.SetConnectionDuration
+- mock_rpc_ingress_client.go:219 - method *MockRPCIngressClient.SetDeadline
+- rpc_ingress_gateway.go:96 - method *RPCIngressGateway.SetError
+- mock_rpc_ingress_client.go:237 - method *MockRPCIngressClient.SetDetailedStatus
+- rpc_ingress_gateway.go:103 - method *RPCIngressGateway.SetAppPort
+- mock_rpc_ingress_client.go:255 - method *MockRPCIngressClient.SetError
+- rpc_ingress_gateway.go:116 - method *RPCIngressGateway.Dial
+- mock_proc_manager.go:41 - method *MockProcManager.Close
+- rpc_ingress_gateway.go:153 - method *RPCIngressGateway.Listen
+- mock_rpc_ingress_client.go:273 - method *MockRPCIngressClient.SetReadDeadline
+- rpc_ingress_gateway.go:186 - method *RPCIngressGateway.Accept
+- rpc_ingress_client.go:172 - method *rpcIngressClient.SetWriteDeadline
+- rpc_ingress_gateway.go:246 - method *RPCIngressGateway.Write
+- mock_proc_manager.go:59 - method *MockProcManager.ConnectionsSummary
+- rpc_ingress_gateway.go:273 - method *RPCIngressGateway.Read
+- rpc_ingress_client.go:162 - method *rpcIngressClient.SetReadDeadline
+- rpc_ingress_gateway.go:311 - method *RPCIngressGateway.CloseConn
+- mock_rpc_ingress_client.go:291 - method *MockRPCIngressClient.SetWriteDeadline
+- rpc_ingress_gateway.go:323 - method *RPCIngressGateway.CloseListener
+- rpc_ingress_client.go:152 - method *rpcIngressClient.SetDeadline
+- mock_proc_manager.go:89 - method *MockProcManager.Deregister
+- rpc_ingress_client.go:147 - method *rpcIngressClient.CloseListener
+- rpc_ingress_gateway.go:351 - method *RPCIngressGateway.SetReadDeadline
+- mock_rpc_ingress_client.go:309 - method *MockRPCIngressClient.Write
+- rpc_ingress_gateway.go:361 - method *RPCIngressGateway.SetWriteDeadline
+- rpc_ingress_client.go:142 - method *rpcIngressClient.CloseConn
+- mock_proc_manager.go:107 - method *MockProcManager.DetailedStatus
+- rpc_ingress_gateway.go:372 - method *RPCIngressGateway.popListener
+- rpc_ingress_client.go:123 - method *rpcIngressClient.Read
+- proc.go:193 - method *Proc.Start
+- rpc_ingress_client.go:108 - method *rpcIngressClient.Write
+- rpc_ingress_gateway.go:383 - method *RPCIngressGateway.popConn
+- mock_proc_manager.go:163 - method *MockProcManager.GetAppPort
+- rpc_ingress_client.go:98 - method *rpcIngressClient.Accept
+- proc.go:293 - method *Proc.Stop
+- rpc_ingress_gateway.go:393 - method *RPCIngressGateway.getListener
+- rpc_ingress_client.go:88 - method *rpcIngressClient.Listen
+- mock_proc_manager.go:226 - method *MockProcManager.Register
+- rpc_ingress_client.go:78 - method *rpcIngressClient.Dial
+- rpc_ingress_gateway.go:403 - method *RPCIngressGateway.getConn
+- proc.go:334 - method *Proc.Wait
+- rpc_ingress_client.go:64 - method *rpcIngressClient.SetAppPort
+- proc_manager.go:81 - function NewProcManager
+- rpc_ingress_client.go:59 - method *rpcIngressClient.SetError
+- mock_proc_manager.go:256 - method *MockProcManager.SetDetailedStatus
+- rpc_ingress_client.go:54 - method *rpcIngressClient.SetConnectionDuration
+- mock_rpc_ingress_client.go:92 - method *MockRPCIngressClient.Dial
+- rpc_ingress_client.go:49 - method *rpcIngressClient.SetDetailedStatus
+- proc_manager.go:182 - method *procManager.Start
+- mock_proc_manager.go:274 - method *MockProcManager.SetError
+- proc_manager.go:469 - method *procManager.get
+- mock_rpc_ingress_client.go:74 - method *MockRPCIngressClient.CloseListener
+- proc_manager.go:454 - method *procManager.pop
+- mock_proc_manager.go:292 - method *MockProcManager.Start
+- proc_manager.go:228 - method *procManager.Register
+- proc_manager.go:273 - method *procManager.Deregister
+- mock_rpc_ingress_client.go:56 - method *MockRPCIngressClient.CloseConn
+- mock_proc_manager.go:320 - method *MockProcManager.Stats
+- mock_rpc_ingress_client.go:21 - method *MockRPCIngressClient.Accept
+- proc_manager.go:300 - method *procManager.Stop
+- proc_manager.go:409 - method *procManager.ConnectionsSummary
+- proc_manager.go:310 - method *procManager.Wait
+- proc_manager.go:399 - method *procManager.GetAppPort
+- mock_proc_manager.go:348 - method *MockProcManager.Stop
+- proc_manager.go:389 - method *procManager.SetError
+- rpc_ingress_gateway.go:33 - method *RPCIOErr.ToError
+- proc_manager.go:379 - method *procManager.DetailedStatus
+- proc_manager.go:348 - method *procManager.Stats
+- mock_proc_manager.go:366 - method *MockProcManager.Wait
+- proc_manager.go:367 - method *procManager.SetDetailedStatus
+
+**Variable (9)**:
+- mock_proc_manager.go:115 - variable r1
+- mock_proc_manager.go:281 - variable r0
+- rpc_ingress_client_test.go:694 - variable noErr
+- rpc_ingress_gateway_test.go:923 - variable closeErr
+- rpc_ingress_gateway_test.go:359 - variable acceptErr
+- rpc_ingress_gateway_test.go:196 - variable listenErr
+- mock_rpc_ingress_client.go:30 - variable r2
+- rpc_ingress_gateway_test.go:156 - variable dialErr
+- rpc_ingress_gateway_test.go:413 - variable writeErr
+
+### idmanager.Manager
+**Field (2)**:
+- rpc_ingress_gateway.go:61 - field lm
+- rpc_ingress_gateway.go:62 - field cm
+
+### interface{}
+**Field (1)**:
+- mock_rpc_ingress_client.go:338 - field t (anonymous interface)
+
+**Parameter (2)**:
+- mock_rpc_ingress_client.go:338 - function NewMockRPCIngressClient (anonymous interface)
+- mock_proc_manager.go:385 - function NewMockProcManager (anonymous interface)
+
+### io.Closer
+**Field (1)**:
+- proc_manager.go:39 - struct field
+
+### io.ReadCloser
+**Field (2)**:
+- stderr.go:14 - field stderr
+- proc.go:76 - field cmdStderr
+
+**Parameter (1)**:
+- stderr.go:14 - function printStdErr
+
+**Variable (1)**:
+- proc.go:99 - variable stderr
+
+### ipc.Server
+**Field (1)**:
+- proc.go:39 - field ipcServer
+
+### logging.Logger
+**Field (2)**:
+- rpc_ingress_gateway_test.go:991 - field l
+- rpc_ingress_gateway.go:63 - field log
+
+**Parameter (43)**:
+- rpc_ingress_gateway_test.go:349 - function testRPCIngressGatewayAcceptErrorWrappingConn
+- rpc_ingress_gateway_test.go:410 - function testRPCIngressGatewayWriteOK
+- rpc_ingress_gateway_test.go:828 - function testRPCIngressGatewaySetDeadlineOK
+- rpc_ingress_gateway_test.go:657 - function testRPCIngressGatewaySetWriteDeadlineNoSuchConn
+- rpc_ingress_gateway_test.go:287 - function testRPCIngressGatewayAcceptOK
+- rpc_ingress_gateway_test.go:237 - function testRPCIngressGatewayListenError
+- rpc_ingress_gateway_test.go:305 - function testRPCIngressGatewayAcceptNoSuchListener
+- rpc_ingress_gateway_test.go:216 - function testRPCIngressGatewayListenNoMoreSlots
+- rpc_ingress_gateway_test.go:850 - function testRPCIngressGatewaySetDeadlineNoSuchConn
+- rpc_ingress_gateway_test.go:316 - function testRPCIngressGatewayAcceptListenerNotSet
+- rpc_ingress_gateway_test.go:782 - function testRPCIngressGatewaySetReadDeadlineError
+- rpc_ingress_gateway_test.go:190 - function testRPCIngressGatewayListenOK
+- rpc_ingress_gateway_test.go:327 - function testRPCIngressGatewayAcceptNoMoreSlots
+- rpc_ingress_gateway_test.go:145 - function testRPCIngressGatewayDialErrorWrappingConn
+- rpc_ingress_gateway_test.go:957 - function testRPCIngressGatewayCloseConnError
+- rpc_ingress_gateway_test.go:991 - function testRPCIngressGatewayCloseListenerOK
+- rpc_ingress_gateway_test.go:768 - function testRPCIngressGatewaySetReadDeadlineConnNotSet
+- rpc_ingress_gateway_test.go:864 - function testRPCIngressGatewaySetDeadlineConnNotSet
+- rpc_ingress_gateway_test.go:371 - function testRPCIngressGatewayAcceptError
+- rpc_ingress_gateway_test.go:562 - function testRPCIngressGatewayReadConnNotSet
+- rpc_ingress_gateway_test.go:547 - function testRPCIngressGatewayReadNoSuchConn
+- rpc_ingress_gateway_test.go:1018 - function testRPCIngressGatewayCloseListenerNotSet
+- rpc_ingress_gateway_test.go:754 - function testRPCIngressGatewaySetReadDeadlineNoSuchConn
+- rpc_ingress_gateway_test.go:937 - function testRPCIngressGatewayCloseNoSuchConn
+- rpc_ingress_gateway_test.go:578 - function testRPCIngressGatewayReadError
+- rpc_ingress_gateway_test.go:436 - function testRPCIngressGatewayWriteNoSuchConn
+- rpc_ingress_gateway_test.go:878 - function testRPCIngressGatewaySetDeadlineError
+- rpc_ingress_gateway_test.go:124 - function testRPCIngressGatewayDialError
+- rpc_ingress_gateway_test.go:451 - function testRPCIngressGatewayWriteConnNotSet
+- rpc_ingress_gateway_test.go:521 - function testRPCIngressGatewayReadOK
+- rpc_ingress_gateway_test.go:732 - function testRPCIngressGatewaySetReadDeadlineOK
+- rpc_ingress_gateway_test.go:35 - function testRPCIngressGatewaySetDetailedStatusOK
+- rpc_ingress_gateway_test.go:467 - function testRPCIngressGatewayWriteError
+- rpc_ingress_gateway_test.go:104 - function testRPCIngressGatewayDialNoMoreSlots
+- rpc_ingress_gateway_test.go:635 - function testRPCIngressGatewaySetWriteDeadlineOK
+- rpc_ingress_gateway_test.go:920 - function testRPCIngressGatewayCloseConnOK
+- rpc_ingress_gateway_test.go:947 - function testRPCIngressGatewayCloseConnNotSet
+- rpc_ingress_gateway_test.go:686 - function testRPCIngressGatewaySetWriteDeadlineError
+- rpc_ingress_gateway_test.go:1028 - function testRPCIngressGatewayCloseListenerError
+- rpc_ingress_gateway.go:67 - function NewRPCGateway
+- rpc_ingress_gateway_test.go:1008 - function testRPCIngressGatewayCloseListenerNoSuchListener
+- rpc_ingress_gateway_test.go:74 - function testRPCIngressGatewayDialOK
+- rpc_ingress_gateway_test.go:672 - function testRPCIngressGatewaySetWriteDeadlineConnNotSet
+
+### logging.MasterLogger
+**Field (2)**:
+- proc.go:479 - field log
+- proc.go:83 - field mLog
+
+**Parameter (3)**:
+- proc_manager.go:81 - function NewProcManager
+- proc.go:479 - function storeLog
+- proc.go:83 - function NewProc
+
+**Variable (1)**:
+- proc.go:98 - variable appLog
+
+### mock.Mock
+**Embedded (2)**:
+- mock_rpc_ingress_client.go:16 - struct MockRPCIngressClient
+- mock_proc_manager.go:16 - struct MockProcManager
+
+### net.Conn
+**Field (3)**:
+- proc.go:160 - field conn
+- rpc_ingress_gateway.go:383 - struct field
+- proc_manager.go:63 - field conns
+
+**Parameter (3)**:
+- proc.go:160 - method *Proc.InjectConn
+- proc_manager.go:152 - method *procManager.handleConn
+- rpc_ingress_gateway_test.go:1054 - function addConn
+
+**Return (2)**:
+- rpc_ingress_gateway.go:403 - method *RPCIngressGateway.getConn
+- rpc_ingress_gateway.go:383 - method *RPCIngressGateway.popConn
+
+**Variable (3)**:
+- rpc_ingress_gateway_test.go:130 - variable dialConn
+- rpc_ingress_client_test.go:201 - variable lisConn
+- rpc_ingress_gateway_test.go:374 - variable acceptConn
+
+### net.Listener
+**Field (2)**:
+- proc_manager.go:62 - field lis
+- rpc_ingress_gateway.go:372 - struct field
+
+**Parameter (1)**:
+- rpc_ingress_gateway_test.go:1064 - function addListener
+
+**Return (3)**:
+- rpc_ingress_gateway.go:393 - method *RPCIngressGateway.getListener
+- rpc_ingress_client_test.go:722 - function prepListener
+- rpc_ingress_gateway.go:372 - method *RPCIngressGateway.popListener
+
+**Variable (1)**:
+- rpc_ingress_client_test.go:143 - variable listenLis
+
+### procManager
+**Field (1)**:
+- proc_manager.go:337 - field m
+
+### rpc.Client
+**Field (1)**:
+- rpc_ingress_client.go:41 - field rpc
+
+**Parameter (1)**:
+- rpc_ingress_client.go:41 - function NewRPCIngressClient
+
+### rpc.Server
+**Field (1)**:
+- rpc_ingress_client_test.go:707 - struct field
+
+**Return (1)**:
+- rpc_ingress_client_test.go:707 - function prepRPCServer
+
+### rpcIngressClient
+**Field (1)**:
+- rpc_ingress_client.go:49 - field c
+
+---
+
+## pkg/app/idmanager
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/idmanager
+**Interface Usages**: 20
+
+### DeltaInformer
+**Field (2)**:
+- delta_informer.go:25 - field di
+- delta_informer.go:12 - struct field
+
+**Return (2)**:
+- manager.go:38 - method *Manager.AddDeltaInformer
+- delta_informer.go:12 - function NewDeltaInformer
+
+### Manager
+**Field (2)**:
+- manager.go:38 - field m
+- manager.go:31 - struct field
+
+**Return (1)**:
+- manager.go:31 - function New
+
+### error
+**Field (2)**:
+- util.go:10 - struct field
+- manager.go:47 - field err
+
+**Return (6)**:
+- manager.go:113 - method *Manager.Set
+- manager.go:47 - method *Manager.ReserveNextID
+- util.go:10 - function AssertListener
+- util.go:20 - function AssertConn
+- manager.go:73 - method *Manager.Pop
+- manager.go:96 - method *Manager.Add
+
+### io.Closer
+**Field (1)**:
+- manager.go:180 - field c
+
+### net.Conn
+**Field (1)**:
+- util.go:20 - struct field
+
+**Return (1)**:
+- util.go:20 - function AssertConn
+
+### net.Listener
+**Field (1)**:
+- util.go:10 - struct field
+
+**Return (1)**:
+- util.go:10 - function AssertListener
+
+---
+
+## pkg/app/launcher
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/launcher
+**Interface Usages**: 28
+
+### AppLauncher
+**Field (2)**:
+- launcher.go:161 - field l
+- launcher.go:77 - struct field
+
+**Return (1)**:
+- launcher.go:77 - function NewLauncher
+
+### appserver.ProcManager
+**Field (1)**:
+- launcher.go:77 - field procM
+
+**Parameter (1)**:
+- launcher.go:77 - function NewLauncher
+
+### dmsg.Client
+**Field (1)**:
+- launcher.go:77 - field dmsgC
+
+**Parameter (1)**:
+- launcher.go:77 - function NewLauncher
+
+### error
+**Field (1)**:
+- launcher.go:223 - struct field
+
+**Return (15)**:
+- launcher.go:215 - method *AppLauncher.RegisterApp
+- launcher.go:372 - method *AppLauncher.killHangingProcesses
+- launcher.go:77 - function NewLauncher
+- launcher.go:343 - method *AppLauncher.pidFile
+- launcher.go:230 - method *AppLauncher.startApp
+- launcher.go:307 - function makeProcConfig
+- launcher.go:347 - method *AppLauncher.persistPID
+- launcher.go:207 - method *AppLauncher.StartApp
+- launcher.go:223 - method *AppLauncher.DeregisterApp
+- launcher.go:127 - method *AppLauncher.AutoStart
+- launcher.go:290 - method *AppLauncher.RestartApp
+- launcher.go:278 - method *AppLauncher.KillApp
+- launcher.go:325 - function ensureDir
+- launcher.go:427 - method *AppLauncher.killApp
+- launcher.go:261 - method *AppLauncher.StopApp
+
+**Variable (1)**:
+- launcher.go:142 - variable err
+
+### logrus.FieldLogger
+**Field (1)**:
+- launcher.go:77 - field log
+
+**Parameter (1)**:
+- launcher.go:77 - function NewLauncher
+
+### router.Router
+**Field (1)**:
+- launcher.go:41 - field r
+
+**Parameter (1)**:
+- launcher.go:77 - function NewLauncher
+
+---
+
+## pkg/config-bootstrapper/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/config-bootstrapper/api
+**Interface Usages**: 11
+
+### http.Handler
+**Embedded (1)**:
+- api.go:26 - struct API
+
+**Field (1)**:
+- api.go:27 - struct field
+
+### http.ResponseWriter
+**Field (1)**:
+- api.go:126 - field w
+
+**Parameter (4)**:
+- api.go:126 - method *API.health
+- api.go:135 - method *API.config
+- api.go:139 - method *API.writeJSON
+- api.go:157 - method *API.dmsghttp
+
+### logging.Logger
+**Field (1)**:
+- api.go:29 - field log
+
+**Parameter (1)**:
+- api.go:65 - function New
+
+### logrus.FieldLogger
+**Field (1)**:
+- api.go:122 - struct field
+
+**Return (1)**:
+- api.go:122 - method *API.logger
+
+---
+
+## pkg/dmsgc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/dmsgc
+**Interface Usages**: 10
+
+### appevent.Broadcaster
+**Field (1)**:
+- dmsgc.go:25 - field eb
+
+**Parameter (1)**:
+- dmsgc.go:25 - function New
+
+### dmsg.Client
+**Field (1)**:
+- dmsgc.go:25 - struct field
+
+**Return (1)**:
+- dmsgc.go:25 - function New
+
+### error
+**Field (2)**:
+- dmsgc.go:29 - struct field
+- dmsgc.go:36 - field _
+
+### http.Client
+**Field (1)**:
+- dmsgc.go:25 - field httpC
+
+**Parameter (1)**:
+- dmsgc.go:25 - function New
+
+### logging.MasterLogger
+**Field (1)**:
+- dmsgc.go:25 - field masterLogger
+
+**Parameter (1)**:
+- dmsgc.go:25 - function New
+
+---
+
+## pkg/network-monitor/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/network-monitor/api
+**Interface Usages**: 43
+
+### context.Context
+**Field (1)**:
+- api.go:242 - field ctx
+
+**Parameter (11)**:
+- api.go:426 - method *API.checkingEntries
+- api.go:453 - method *API.cleaningInfo
+- api.go:396 - method *API.fetchDmsgdData
+- api.go:598 - method *API.fetchUTData
+- api.go:261 - method *API.clean
+- api.go:471 - method *API.tpdCleaning
+- api.go:242 - method *API.cleanNetwork
+- api.go:292 - method *API.cleaningService
+- api.go:329 - method *API.fetchSdData
+- api.go:187 - method *API.InitCleaningLoop
+- api.go:365 - method *API.fetchArData
+
+### error
+**Field (2)**:
+- api.go:152 - field err
+- api.go:554 - struct field
+
+**Parameter (1)**:
+- api.go:152 - method *API.writeError
+
+**Return (12)**:
+- api.go:530 - method *API.deregister
+- api.go:205 - method *API.updateNetworkStatus
+- api.go:471 - method *API.tpdCleaning
+- api.go:453 - method *API.cleaningInfo
+- api.go:292 - method *API.cleaningService
+- api.go:365 - method *API.fetchArData
+- api.go:426 - method *API.checkingEntries
+- api.go:396 - method *API.fetchDmsgdData
+- api.go:554 - method *API.deregisterRequest
+- api.go:329 - method *API.fetchSdData
+- api.go:242 - method *API.cleanNetwork
+- api.go:598 - method *API.fetchUTData
+
+**Variable (1)**:
+- api.go:294 - variable err
+
+### http.Client
+**Field (1)**:
+- api.go:37 - field httpClient
+
+### http.Handler
+**Embedded (1)**:
+- api.go:31 - struct API
+
+**Field (1)**:
+- api.go:32 - struct field
+
+### http.ResponseWriter
+**Field (1)**:
+- api.go:133 - field w
+
+**Parameter (4)**:
+- api.go:125 - method *API.health
+- api.go:115 - method *API.getStatus
+- api.go:133 - method *API.writeJSON
+- api.go:152 - method *API.writeError
+
+### logging.Logger
+**Field (1)**:
+- api.go:85 - field logger
+
+**Parameter (1)**:
+- api.go:85 - function New
+
+### logrus.FieldLogger
+**Field (1)**:
+- api.go:182 - struct field
+
+**Return (1)**:
+- api.go:182 - method *API.log
+
+### store.Store
+**Field (2)**:
+- api.go:85 - field s
+- api.go:36 - field store
+
+**Parameter (1)**:
+- api.go:85 - function New
+
+---
+
+## pkg/network-monitor/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/network-monitor/store
+**Interface Usages**: 9
+
+### Store
+**Field (1)**:
+- memory_store.go:16 - struct field
+
+**Return (2)**:
+- store.go:22 - function New
+- memory_store.go:16 - function newMemoryStore
+
+### TransportStore
+**Field (1)**:
+- store.go:12 - struct field
+
+### error
+**Field (1)**:
+- memory_store.go:22 - struct field
+
+**Return (3)**:
+- memory_store.go:29 - method *memStore.SetNetworkStatus
+- store.go:22 - function New
+- memory_store.go:22 - method *memStore.GetNetworkStatus
+
+### memStore
+**Field (1)**:
+- memory_store.go:29 - field s
+
+---
+
+## pkg/route-finder/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/route-finder/api
+**Interface Usages**: 17
+
+### error
+**Field (1)**:
+- api.go:169 - field e
+
+**Parameter (1)**:
+- api.go:169 - method *API.handleError
+
+### http.Handler
+**Embedded (1)**:
+- api.go:27 - struct API
+
+**Field (1)**:
+- api.go:28 - struct field
+
+### http.ResponseWriter
+**Field (1)**:
+- api.go:93 - field w
+
+**Parameter (4)**:
+- api.go:93 - method *API.getPairedRoutes
+- api.go:159 - method *API.health
+- api.go:169 - method *API.handleError
+- api.go:178 - method *API.writeJSON
+
+### logrus.FieldLogger
+**Field (2)**:
+- api.go:45 - field logger
+- api.go:75 - struct field
+
+**Parameter (1)**:
+- api.go:45 - function New
+
+**Return (1)**:
+- api.go:75 - method *API.log
+
+### metricsutil.RequestsInFlightCountMiddleware
+**Field (1)**:
+- api.go:29 - field reqsInFlightCountMiddleware
+
+### store.Store
+**Field (2)**:
+- api.go:45 - field s
+- api.go:30 - field store
+
+**Parameter (1)**:
+- api.go:45 - function New
+
+---
+
+## pkg/route-finder/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/route-finder/store
+**Interface Usages**: 32
+
+### context.Context
+**Field (3)**:
+- graph_test.go:33 - struct field
+- mark_and_sweep.go:95 - field ctx
+- graph_test.go:39 - field _
+
+**Parameter (11)**:
+- mark_and_sweep.go:79 - method *Graph.MarkAndSweep
+- graph_test.go:39 - method *mockStore.GetTransportsByEdge
+- graph_test.go:47 - method *mockStore.GetNumberOfTransports
+- mark_and_sweep.go:49 - function NewGraph
+- graph_test.go:33 - method *mockStore.DeregisterTransport
+- graph_test.go:30 - method *mockStore.RegisterTransport
+- graph_test.go:50 - method *mockStore.GetAllTransports
+- mark_and_sweep.go:95 - method *Graph.DeepFirstSearch
+- finder.go:71 - method *Graph.finder
+- graph_test.go:36 - method *mockStore.GetTransportByID
+- finder.go:24 - method *Graph.GetRoute
+
+### error
+**Field (1)**:
+- graph_test.go:39 - struct field
+
+**Return (11)**:
+- mark_and_sweep.go:79 - method *Graph.MarkAndSweep
+- graph_test.go:30 - method *mockStore.RegisterTransport
+- graph_test.go:33 - method *mockStore.DeregisterTransport
+- finder.go:24 - method *Graph.GetRoute
+- mark_and_sweep.go:95 - method *Graph.DeepFirstSearch
+- graph_test.go:36 - method *mockStore.GetTransportByID
+- mark_and_sweep.go:49 - function NewGraph
+- finder.go:71 - method *Graph.finder
+- graph_test.go:50 - method *mockStore.GetAllTransports
+- graph_test.go:39 - method *mockStore.GetTransportsByEdge
+- graph_test.go:47 - method *mockStore.GetNumberOfTransports
+
+### mockStore
+**Field (2)**:
+- graph_test.go:75 - field m
+- graph_test.go:24 - struct field
+
+**Return (1)**:
+- graph_test.go:24 - function newMockStore
+
+### store.Store
+**Field (2)**:
+- mark_and_sweep.go:42 - field store
+- mark_and_sweep.go:49 - field s
+
+**Parameter (1)**:
+- mark_and_sweep.go:49 - function NewGraph
+
+---
+
+## pkg/routefinder/rfclient
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/routefinder/rfclient
+**Interface Usages**: 22
+
+### Client
+**Field (1)**:
+- client.go:63 - struct field
+
+**Return (1)**:
+- client.go:63 - function NewHTTP
+
+### MockClient
+**Field (2)**:
+- mock_client.go:19 - field _m
+- mock_client.go:53 - struct field
+
+**Return (1)**:
+- mock_client.go:50 - function NewMockClient
+
+### apiClient
+**Field (1)**:
+- client.go:81 - field c
+
+### context.Context
+**Field (2)**:
+- mock_client.go:28 - struct field
+- mock_client.go:19 - field ctx
+
+**Parameter (2)**:
+- mock_client.go:19 - method *MockClient.FindRoutes
+- client.go:81 - method *apiClient.FindRoutes
+
+### error
+**Field (1)**:
+- client.go:81 - struct field
+
+**Return (2)**:
+- mock_client.go:19 - method *MockClient.FindRoutes
+- client.go:81 - method *apiClient.FindRoutes
+
+**Variable (1)**:
+- mock_client.go:27 - variable r1
+
+### http.Client
+**Field (1)**:
+- client.go:57 - field client
+
+**Parameter (1)**:
+- client.go:63 - function NewHTTP
+
+### interface{}
+**Field (1)**:
+- mock_client.go:50 - field t (anonymous interface)
+
+**Parameter (1)**:
+- mock_client.go:50 - function NewMockClient (anonymous interface)
+
+### logging.Logger
+**Field (1)**:
+- client.go:59 - field log
+
+### logging.MasterLogger
+**Field (1)**:
+- client.go:63 - field mlogger
+
+**Parameter (1)**:
+- client.go:63 - function NewHTTP
+
+### mock.Mock
+**Embedded (1)**:
+- mock_client.go:14 - struct MockClient
+
+---
+
+## pkg/router
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/router
+**Interface Usages**: 295
+
+### Client
+**Field (4)**:
+- routerclient.go:39 - struct field
+- routerclient.go:48 - field c
+- map.go:15 - field client
+- routerclient_test.go:92 - field cl
+
+**Return (6)**:
+- routerclient_test.go:92 - function prepRPCServerAndClient
+- id_reserver.go:131 - method *idReserver.Client
+- routerclient.go:30 - function NewClient
+- map.go:57 - method Map.Client
+- mock_id_reserver.go:21 - method *MockIDReserver.Client
+- routerclient.go:39 - function NewClientFromRaw
+
+**Variable (2)**:
+- routerclient_test.go:27 - variable cl
+- mock_id_reserver.go:28 - variable r0
+
+### IDReserver
+**Field (3)**:
+- setupnode.go:249 - field rtIDR
+- testing_test.go:87 - struct field
+- setupnode.go:165 - field idR
+
+**Parameter (2)**:
+- setupnode.go:249 - function BroadcastIntermediaryRules
+- setupnode.go:193 - function GenerateRules
+
+**Return (3)**:
+- id_reserver.go:53 - function NewIDReserver
+- testing_test.go:87 - function newMockReserver
+- setupnode.go:165 - function ReserveRouteIDs
+
+### MockIDReserver
+**Field (2)**:
+- mock_id_reserver.go:41 - field _m
+- mock_id_reserver.go:145 - struct field
+
+**Return (1)**:
+- mock_id_reserver.go:142 - function NewMockIDReserver
+
+### MockRouteGroupDialer
+**Field (2)**:
+- mock_route_group_dialer.go:25 - field _m
+- mock_route_group_dialer.go:57 - struct field
+
+**Return (1)**:
+- mock_route_group_dialer.go:54 - function NewMockRouteGroupDialer
+
+### MockRouter
+**Field (2)**:
+- mock_router.go:53 - field _m
+- mock_router.go:339 - struct field
+
+**Return (1)**:
+- mock_router.go:336 - function NewMockRouter
+
+### RouteGroupDialer
+**Field (2)**:
+- router.go:70 - field RouteGroupDialer
+- wrappers.go:31 - struct field
+
+**Return (1)**:
+- wrappers.go:31 - function NewSetupNodeDialer
+
+### Router
+**Field (3)**:
+- routerclient_test.go:92 - field r
+- router.go:178 - struct field
+- rpc_gateway.go:12 - field router
+
+**Parameter (3)**:
+- routerclient_test.go:92 - function prepRPCServerAndClient
+- rpc_gateway.go:16 - function NewRPCGateway
+- map_test.go:102 - function serveRouterRPC
+
+**Return (1)**:
+- router.go:178 - function New
+
+### SetupClient
+**Field (2)**:
+- setupclient.go:96 - field c
+- setupclient.go:32 - struct field
+
+**Return (1)**:
+- setupclient.go:32 - function NewSetupClient
+
+### bytes.Buffer
+**Field (1)**:
+- route_group.go:104 - field readBuf
+
+### context.Context
+**Field (5)**:
+- routerclient.go:70 - field ctx
+- mock_router.go:136 - struct field
+- mock_router.go:294 - field _a0
+- testing_test.go:57 - field _
+- setup_rpc_gateway.go:19 - field Ctx
+
+**Parameter (43)**:
+- router.go:237 - method *router.DialRoutes
+- id_reserver.go:88 - method *idReserver.ReserveIDs
+- setupclient.go:87 - method *SetupClient.HealthCheck
+- mock_router.go:76 - method *MockRouter.DialRoutes
+- setupclient.go:50 - method *SetupClient.dial
+- setupclient.go:96 - method *SetupClient.call
+- id_reserver.go:53 - function NewIDReserver
+- router.go:439 - method *router.Serve
+- setupnode.go:65 - method *Node.Serve
+- setupnode.go:113 - function CreateRouteGroup
+- router.go:680 - method *router.handleClosePacket
+- mock_router.go:294 - method *MockRouter.Serve
+- router.go:741 - method *router.handleKeepAlivePacket
+- setupnode.go:165 - function ReserveRouteIDs
+- setupclient.go:32 - function NewSetupClient
+- router.go:449 - method *router.serveTransportManager
+- router.go:771 - method *router.handlePingPacket
+- mock_router.go:124 - method *MockRouter.PingRoute
+- route_group.go:383 - method *RouteGroup.writePacket
+- router.go:394 - method *router.AcceptRoutes
+- map.go:21 - function MakeMap
+- router.go:824 - method *router.handlePongPacket
+- router.go:609 - method *router.handleTransportPacket
+- wrappers.go:36 - method *setupNodeDialer.Dial
+- map_test.go:153 - method *testDialer.Dial
+- router.go:877 - method *router.handleErrorPacket
+- mock_router.go:23 - method *MockRouter.AcceptRoutes
+- router.go:331 - method *router.PingRoute
+- setupnode.go:249 - function BroadcastIntermediaryRules
+- dmsg_wrapper.go:24 - method *dmsgClientDialer.Dial
+- setupclient.go:79 - method *SetupClient.DialRouteGroup
+- mock_id_reserver.go:87 - method *MockIDReserver.ReserveIDs
+- routerclient.go:76 - method *Client.call
+- router.go:979 - method *router.forwardPacket
+- routerclient.go:70 - method *Client.ReserveIDs
+- route_group.go:366 - method *RouteGroup.writePacketAsync
+- routerclient.go:63 - method *Client.AddIntermediaryRules
+- testing_test.go:57 - method mockDialer.Dial
+- routerclient.go:56 - method *Client.AddEdgeRules
+- mock_route_group_dialer.go:25 - method *MockRouteGroupDialer.Dial
+- map.go:72 - function isDone
+- router.go:628 - method *router.handleDataHandshakePacket
+- routerclient.go:30 - function NewClient
+
+### dmsg.Client
+**Field (2)**:
+- setupclient.go:32 - field dmsgC
+- dmsg_wrapper.go:21 - struct field
+
+**Parameter (6)**:
+- dmsg_wrapper.go:16 - function WrapDmsgClient
+- setupclient.go:32 - function NewSetupClient
+- setupclient.go:50 - method *SetupClient.dial
+- router.go:178 - function New
+- wrappers.go:36 - method *setupNodeDialer.Dial
+- mock_route_group_dialer.go:25 - method *MockRouteGroupDialer.Dial
+
+### dmsg.Listener
+**Field (1)**:
+- router.go:162 - field sl
+
+### dmsgClientDialer
+**Field (1)**:
+- dmsg_wrapper.go:24 - field w
+
+### error
+**Field (6)**:
+- id_reserver.go:149 - field errCh
+- mock_router.go:53 - struct field
+- route_group.go:158 - field err
+- route_group.go:121 - field closeError
+- map.go:62 - field errs
+- id_reserver_test.go:86 - field expErr
+
+**Parameter (3)**:
+- id_reserver.go:149 - function firstError
+- route_group.go:290 - method *RouteGroup.SetError
+- noise_route_group.go:59 - method *NoiseRouteGroup.SetError
+
+**Return (104)**:
+- route_group.go:767 - method *RouteGroup.waitForCloseRouteGroup
+- router.go:394 - method *router.AcceptRoutes
+- route_group.go:733 - method *RouteGroup.handlePongPacket
+- route_group.go:720 - method *RouteGroup.handlePingPacket
+- route_group.go:158 - method *RouteGroup.Read
+- route_group.go:366 - method *RouteGroup.writePacketAsync
+- route_group.go:706 - method *RouteGroup.handleClosePacket
+- map_test.go:153 - method *testDialer.Dial
+- rpc_gateway.go:24 - method *RPCGateway.AddEdgeRules
+- routerclient.go:76 - method *Client.call
+- rpc_gateway.go:39 - method *RPCGateway.AddIntermediaryRules
+- id_reserver.go:88 - method *idReserver.ReserveIDs
+- rpc_gateway.go:54 - method *RPCGateway.ReserveIDs
+- mock_router.go:154 - method *MockRouter.ReserveKeys
+- routerclient.go:70 - method *Client.ReserveIDs
+- mock_router.go:124 - method *MockRouter.PingRoute
+- wrappers.go:36 - method *setupNodeDialer.Dial
+- setup_rpc_gateway.go:27 - method *SetupRPCGateway.DialRouteGroup
+- routerclient.go:63 - method *Client.AddIntermediaryRules
+- setup_rpc_gateway.go:60 - method *SetupRPCGateway.HealthCheck
+- map.go:62 - method Map.CloseAll
+- id_reserver.go:142 - method *idReserver.Close
+- id_reserver.go:53 - function NewIDReserver
+- route_group.go:383 - method *RouteGroup.writePacket
+- routerclient.go:56 - method *Client.AddEdgeRules
+- route_group.go:693 - method *RouteGroup.handleErrorPacket
+- mock_router.go:106 - method *MockRouter.IntroduceRules
+- routerclient.go:48 - method *Client.Close
+- setupclient.go:32 - function NewSetupClient
+- id_reserver.go:149 - function firstError
+- route_group.go:254 - method *RouteGroup.SetWriteDeadline
+- mock_router.go:202 - method *MockRouter.Rule
+- route_group.go:674 - method *RouteGroup.handleDataPacket
+- routerclient.go:30 - function NewClient
+- route_group.go:338 - method *RouteGroup.write
+- route_group.go:176 - method *RouteGroup.Write
+- router.go:178 - function New
+- setupclient.go:50 - method *SetupClient.dial
+- noise_route_group.go:72 - method *NoiseRouteGroup.handlePacket
+- router.go:1273 - method *router.SaveRule
+- route_group.go:642 - method *RouteGroup.handlePacket
+- router.go:1268 - method *router.Rule
+- router.go:1240 - method *router.IntroduceRules
+- setupclient.go:66 - method *SetupClient.Close
+- route_group.go:597 - method *RouteGroup.close
+- router.go:1192 - method *router.ReserveKeys
+- router.go:1179 - method *router.SaveRoutingRules
+- setupclient.go:79 - method *SetupClient.DialRouteGroup
+- router.go:1103 - method *router.fetchPingRoute
+- route_group.go:575 - method *RouteGroup.sendError
+- router.go:1054 - method *router.fetchBestRoutes
+- mock_router.go:76 - method *MockRouter.DialRoutes
+- setupclient.go:87 - method *SetupClient.HealthCheck
+- route_group.go:298 - method *RouteGroup.GetError
+- route_group.go:404 - method *RouteGroup.rule
+- router.go:237 - method *router.DialRoutes
+- route_group.go:543 - method *RouteGroup.sendHandshake
+- setupclient.go:96 - method *SetupClient.call
+- router.go:979 - method *router.forwardPacket
+- mock_router.go:252 - method *MockRouter.SaveRoutingRules
+- router.go:959 - method *router.Close
+- router.go:949 - method *router.UpdateRuleActivity
+- setupnode.go:32 - function NewNode
+- router.go:929 - method *router.GetRule
+- setupnode.go:57 - method *Node.Close
+- route_group.go:248 - method *RouteGroup.SetReadDeadline
+- testing_test.go:125 - method *mockGatewayForReserver.AddIntermediaryRules
+- setupnode.go:65 - method *Node.Serve
+- router.go:877 - method *router.handleErrorPacket
+- mock_route_group_dialer.go:25 - method *MockRouteGroupDialer.Dial
+- route_group.go:516 - method *RouteGroup.sendKeepAlive
+- mock_router.go:53 - method *MockRouter.Close
+- setupnode.go:113 - function CreateRouteGroup
+- router.go:824 - method *router.handlePongPacket
+- mock_id_reserver.go:41 - method *MockIDReserver.Close
+- mock_router.go:276 - method *MockRouter.SaveRule
+- router.go:771 - method *router.handlePingPacket
+- router.go:741 - method *router.handleKeepAlivePacket
+- noise_route_group.go:64 - method *NoiseRouteGroup.GetError
+- map.go:21 - function MakeMap
+- setupnode.go:165 - function ReserveRouteIDs
+- router.go:680 - method *router.handleClosePacket
+- testing_test.go:73 - method *mockGatewayForDialer.ReserveIDs
+- route_group.go:461 - method *RouteGroup.sendPong
+- mock_router.go:23 - method *MockRouter.AcceptRoutes
+- mock_router.go:294 - method *MockRouter.Serve
+- route_group.go:239 - method *RouteGroup.SetDeadline
+- setupnode.go:193 - function GenerateRules
+- router.go:628 - method *router.handleDataHandshakePacket
+- router.go:331 - method *router.PingRoute
+- route_group.go:435 - method *RouteGroup.sendPing
+- dmsg_wrapper.go:24 - method *dmsgClientDialer.Dial
+- router.go:609 - method *router.handleTransportPacket
+- setupnode.go:249 - function BroadcastIntermediaryRules
+- route_group.go:307 - method *RouteGroup.read
+- router.go:501 - method *router.saveRouteGroupRules
+- route_group.go:208 - method *RouteGroup.Close
+- testing_test.go:57 - method mockDialer.Dial
+- setupnode_test.go:188 - method *mockRouterGateway.AddEdgeRules
+- router.go:439 - method *router.Serve
+- setupnode_test.go:197 - method *mockRouterGateway.AddIntermediaryRules
+- route_group.go:416 - method *RouteGroup.tp
+- setupnode_test.go:206 - method *mockRouterGateway.ReserveIDs
+- mock_id_reserver.go:87 - method *MockIDReserver.ReserveIDs
+
+**Variable (4)**:
+- mock_router.go:113 - variable r0
+- router.go:1014 - variable err
+- mock_route_group_dialer.go:33 - variable r1
+- id_reserver.go:150 - variable firstErr
+
+### fmt.Stringer
+**Field (1)**:
+- id_reserver.go:27 - struct field
+
+### interface{}
+**Field (1)**:
+- mock_route_group_dialer.go:54 - field t (anonymous interface)
+
+**Parameter (3)**:
+- mock_route_group_dialer.go:54 - function NewMockRouteGroupDialer (anonymous interface)
+- mock_router.go:336 - function NewMockRouter (anonymous interface)
+- mock_id_reserver.go:142 - function NewMockIDReserver (anonymous interface)
+
+### io.Closer
+**Field (1)**:
+- id_reserver.go:26 - struct field
+
+### io.ReadWriteCloser
+**Field (1)**:
+- routerclient.go:39 - field conn
+
+**Parameter (1)**:
+- routerclient.go:39 - function NewClientFromRaw
+
+### logging.Logger
+**Field (4)**:
+- mock_route_group_dialer.go:25 - field log
+- mock_route_group_dialer.go:37 - struct field
+- router.go:64 - field Logger
+- route_group.go:80 - field logger
+
+**Parameter (3)**:
+- wrappers.go:36 - method *setupNodeDialer.Dial
+- setupclient.go:32 - function NewSetupClient
+- mock_route_group_dialer.go:25 - method *MockRouteGroupDialer.Dial
+
+### logging.MasterLogger
+**Field (4)**:
+- route_group.go:125 - field mLoggger
+- router.go:65 - field MasterLogger
+- router.go:161 - field mLogger
+- rpc_gateway.go:16 - field mLog
+
+**Parameter (2)**:
+- rpc_gateway.go:16 - function NewRPCGateway
+- route_group.go:125 - function NewRouteGroup
+
+### logrus.FieldLogger
+**Field (1)**:
+- setupnode.go:165 - field log
+
+**Parameter (2)**:
+- setupnode.go:165 - function ReserveRouteIDs
+- setupnode.go:249 - function BroadcastIntermediaryRules
+
+### mock.Mock
+**Embedded (3)**:
+- mock_route_group_dialer.go:20 - struct MockRouteGroupDialer
+- mock_id_reserver.go:16 - struct MockIDReserver
+- mock_router.go:18 - struct MockRouter
+
+### mockDialer
+**Field (1)**:
+- testing_test.go:55 - field d
+
+### mockGatewayForDialer
+**Field (1)**:
+- testing_test.go:73 - field gw
+
+### net.Conn
+**Embedded (1)**:
+- noise_route_group.go:13 - struct NoiseRouteGroup
+
+**Field (3)**:
+- testing_test.go:57 - struct field
+- setup_rpc_gateway.go:20 - field Conn
+- setupclient.go:27 - field conn
+
+**Return (10)**:
+- router.go:394 - method *router.AcceptRoutes
+- mock_router.go:76 - method *MockRouter.DialRoutes
+- mock_router.go:124 - method *MockRouter.PingRoute
+- map_test.go:153 - method *testDialer.Dial
+- router.go:237 - method *router.DialRoutes
+- mock_router.go:23 - method *MockRouter.AcceptRoutes
+- router.go:331 - method *router.PingRoute
+- setupclient.go:50 - method *SetupClient.dial
+- testing_test.go:57 - method mockDialer.Dial
+- dmsg_wrapper.go:24 - method *dmsgClientDialer.Dial
+
+**Variable (1)**:
+- mock_router.go:83 - variable r0
+
+### network.Dialer
+**Field (3)**:
+- setupnode.go:165 - field dialer
+- testing_test.go:24 - struct field
+- setup_rpc_gateway.go:22 - field Dialer
+
+**Parameter (5)**:
+- id_reserver.go:53 - function NewIDReserver
+- map.go:21 - function MakeMap
+- setupnode.go:165 - function ReserveRouteIDs
+- routerclient.go:30 - function NewClient
+- setupnode.go:113 - function CreateRouteGroup
+
+**Return (2)**:
+- testing_test.go:24 - function newMockDialer
+- dmsg_wrapper.go:16 - function WrapDmsgClient
+
+### rfclient.Client
+**Field (1)**:
+- router.go:69 - field RouteFinder
+
+### rpc.Client
+**Field (1)**:
+- setupclient.go:28 - field rpc
+
+### rpc.Server
+**Field (2)**:
+- router.go:169 - field rpcSrv
+- routerclient_test.go:92 - field s
+
+**Return (1)**:
+- routerclient_test.go:92 - function prepRPCServerAndClient
+
+### setupNodeDialer
+**Field (1)**:
+- wrappers.go:36 - field d
+
+### testDialer
+**Field (2)**:
+- map_test.go:129 - struct field
+- map_test.go:153 - field d
+
+**Return (1)**:
+- map_test.go:129 - function newTestDialer
+
+### transport.DiscoveryClient
+**Field (1)**:
+- router_test.go:32 - field TpD
+
+### transport.ManagedTransport
+**Field (3)**:
+- route_group.go:338 - field tp
+- route_group.go:91 - field tps
+- route_group.go:416 - struct field
+
+**Parameter (5)**:
+- route_group.go:805 - method *RouteGroup.appendRules
+- route_group.go:338 - method *RouteGroup.write
+- route_group.go:575 - method *RouteGroup.sendError
+- route_group.go:366 - method *RouteGroup.writePacketAsync
+- route_group.go:383 - method *RouteGroup.writePacket
+
+**Return (1)**:
+- route_group.go:416 - method *RouteGroup.tp
+
+### transport.Manager
+**Field (4)**:
+- router.go:68 - field TransportManager
+- router_test.go:35 - field TpMngrs
+- router.go:60 - struct field
+- router.go:165 - field tm
+
+---
+
+## pkg/router/setupmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/router/setupmetrics
+**Interface Usages**: 5
+
+### error
+**Field (2)**:
+- empty.go:23 - struct field
+- victoria_metrics.go:42 - field err
+
+### metricsutil.VictoriaMetricsIntGaugeWrapper
+**Field (3)**:
+- victoria_metrics.go:21 - field activeRequests
+- victoria_metrics.go:25 - field routesSetupFailed
+- victoria_metrics.go:24 - field routesSetup
+
+---
+
+## pkg/routing
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/routing
+**Interface Usages**: 17
+
+### error
+**Field (2)**:
+- table.go:72 - struct field
+- table.go:86 - field err
+
+**Return (12)**:
+- route.go:144 - method PathEdges.MarshalText
+- rule.go:293 - method *RuleSummary.ToRule
+- table.go:72 - method *memTable.ReserveKeys
+- route.go:163 - method *PathEdges.UnmarshalText
+- table.go:86 - method *memTable.reserveKeysImpl
+- addr.go:34 - method *Addr.Set
+- table.go:101 - method *memTable.SaveRule
+- route.go:66 - method *BidirectionalRoute.Check
+- table.go:117 - method *memTable.Rule
+- packet.go:181 - function MakeErrorPacket
+- table.go:140 - method *memTable.UpdateActivity
+- packet.go:99 - function MakeDataPacket
+
+### logging.Logger
+**Field (1)**:
+- table.go:58 - field log
+
+**Parameter (1)**:
+- table.go:62 - function NewTable
+
+### sync.RWMutex
+**Embedded (1)**:
+- table.go:52 - struct memTable
+
+---
+
+## pkg/service-discovery/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/service-discovery/api
+**Interface Usages**: 53
+
+### chi.Router
+**Field (1)**:
+- api.go:115 - field r
+
+### context.Context
+**Field (1)**:
+- api.go:141 - field ctx
+
+**Parameter (2)**:
+- api.go:155 - method *API.updateInternalState
+- api.go:141 - method *API.RunBackgroundTasks
+
+### error
+**Field (1)**:
+- api.go:486 - struct field
+
+**Return (1)**:
+- api.go:486 - function serviceAddrFromParam
+
+**Variable (1)**:
+- api.go:267 - variable err
+
+### http.ResponseWriter
+**Field (1)**:
+- api.go:428 - field w
+
+**Parameter (9)**:
+- api.go:188 - method *API.getEntries
+- api.go:440 - method *API.health
+- api.go:351 - method *API.deregisterEntry
+- api.go:450 - method *API.writeJSON
+- api.go:320 - method *API.delEntry
+- api.go:233 - method *API.getEntry
+- api.go:265 - method *API.postEntry
+- api.go:97 - method *API.ServeHTTP
+- api.go:428 - method *API.writeError
+
+### httpauth.NonceStore
+**Field (1)**:
+- api.go:79 - field nonceDB
+
+**Parameter (1)**:
+- api.go:79 - function New
+
+### httptest.Server
+**Field (2)**:
+- integration_test.go:62 - struct field
+- integration_test.go:84 - field srv
+
+**Parameter (1)**:
+- integration_test.go:84 - function makeRandClient
+
+**Return (1)**:
+- integration_test.go:62 - function serveAPI
+
+### logging.Logger
+**Field (1)**:
+- integration_test.go:48 - struct field
+
+**Return (1)**:
+- integration_test.go:48 - function postgresClient
+
+### logrus.FieldLogger
+**Field (3)**:
+- api.go:468 - struct field
+- api.go:155 - field logger
+- api.go:79 - field log
+
+**Parameter (3)**:
+- api.go:141 - method *API.RunBackgroundTasks
+- api.go:79 - function New
+- api.go:155 - method *API.updateInternalState
+
+**Return (1)**:
+- api.go:468 - method *API.logger
+
+### metricsutil.RequestsInFlightCountMiddleware
+**Field (1)**:
+- api.go:70 - field reqsInFlightCountMiddleware
+
+### redis.Client
+**Field (2)**:
+- integration_test.go:58 - field redisC
+- integration_test.go:40 - struct field
+
+**Parameter (1)**:
+- integration_test.go:58 - function clearRedis
+
+**Return (1)**:
+- integration_test.go:40 - function redisClient
+
+### servicedisc.HTTPClient
+**Field (1)**:
+- integration_test.go:84 - struct field
+
+**Return (1)**:
+- integration_test.go:84 - function makeRandClient
+
+### servicedisc.Service
+**Field (6)**:
+- api.go:493 - field services
+- api.go:493 - struct field
+- api_test.go:43 - field servicesRes
+- api_test.go:177 - field serviceRes
+- api_test.go:318 - field service
+- api.go:476 - field se
+
+**Parameter (2)**:
+- api.go:493 - function sampleRandom
+- api.go:476 - function ipIsPublic
+
+**Return (1)**:
+- api.go:493 - function sampleRandom
+
+**Variable (3)**:
+- api_test.go:150 - variable gotServices
+- api.go:266 - variable se
+- api_test.go:402 - variable gotService
+
+### store.Store
+**Field (1)**:
+- api.go:79 - field db
+
+**Parameter (1)**:
+- api.go:79 - function New
+
+---
+
+## pkg/service-discovery/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/service-discovery/store
+**Interface Usages**: 57
+
+### MockStore
+**Field (1)**:
+- mock_store.go:75 - field _m
+
+### Store
+**Field (1)**:
+- store.go:27 - struct field
+
+**Return (1)**:
+- store.go:27 - function NewStore
+
+### context.Context
+**Field (3)**:
+- mock_store.go:129 - struct field
+- store.go:20 - field ctx
+- postgres_store.go:115 - field _
+
+**Parameter (13)**:
+- postgres_store.go:115 - method *postgresStore.DeleteService
+- mock_store.go:54 - method *MockStore.CountServices
+- postgres_store.go:136 - method *postgresStore.CountServices
+- postgres_store.go:42 - method *postgresStore.Service
+- mock_store.go:91 - method *MockStore.Service
+- mock_store.go:116 - method *MockStore.Services
+- mock_store.go:141 - method *MockStore.ServicesByCountry
+- postgres_store.go:122 - method *postgresStore.CountServiceTypes
+- mock_store.go:75 - method *MockStore.DeleteService
+- mock_store.go:33 - method *MockStore.CountServiceTypes
+- mock_store.go:166 - method *MockStore.UpdateService
+- postgres_store.go:89 - method *postgresStore.UpdateService
+- postgres_store.go:55 - method *postgresStore.Services
+
+### error
+**Field (2)**:
+- postgres_store.go:122 - struct field
+- postgres_store.go:155 - field err
+
+**Parameter (1)**:
+- postgres_store.go:145 - method *postgresStore.processErr
+
+**Return (9)**:
+- postgres_store.go:155 - method *postgresStore.Close
+- postgres_store.go:162 - method *postgresStore.storeRecord
+- mock_store.go:33 - method *MockStore.CountServiceTypes
+- postgres_store.go:122 - method *postgresStore.CountServiceTypes
+- postgres_store.go:136 - method *postgresStore.CountServices
+- postgres_store.go:28 - function newPostgresStore
+- store.go:27 - function NewStore
+- mock_store.go:19 - method *MockStore.Close
+- mock_store.go:54 - method *MockStore.CountServices
+
+**Variable (2)**:
+- mock_store.go:43 - variable r1
+- mock_store.go:22 - variable r0
+
+### io.Closer
+**Field (1)**:
+- store.go:17 - struct field
+
+### logging.Logger
+**Field (1)**:
+- postgres_store.go:28 - field logger
+
+**Parameter (2)**:
+- postgres_store.go:28 - function newPostgresStore
+- store.go:27 - function NewStore
+
+### logrus.FieldLogger
+**Field (1)**:
+- postgres_store.go:21 - field log
+
+### mock.Mock
+**Embedded (1)**:
+- mock_store.go:14 - struct MockStore
+
+### postgresStore
+**Field (2)**:
+- postgres_store.go:42 - field s
+- postgres_store.go:28 - struct field
+
+**Return (1)**:
+- postgres_store.go:28 - function newPostgresStore
+
+### servicedisc.Service
+**Field (3)**:
+- postgres_store.go:55 - struct field
+- mock_store.go:166 - field se
+- postgres_store.go:162 - field record
+
+**Parameter (3)**:
+- postgres_store.go:162 - method *postgresStore.storeRecord
+- mock_store.go:166 - method *MockStore.UpdateService
+- postgres_store.go:89 - method *postgresStore.UpdateService
+
+**Return (5)**:
+- postgres_store.go:42 - method *postgresStore.Service
+- postgres_store.go:55 - method *postgresStore.Services
+- mock_store.go:91 - method *MockStore.Service
+- mock_store.go:141 - method *MockStore.ServicesByCountry
+- mock_store.go:116 - method *MockStore.Services
+
+**Variable (4)**:
+- postgres_store.go:43 - variable serviceRecord
+- postgres_store.go:73 - variable record
+- postgres_store.go:56 - variable records
+- mock_store.go:144 - variable r0
+
+---
+
+## pkg/servicedisc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/servicedisc
+**Interface Usages**: 47
+
+### HTTPClient
+**Field (2)**:
+- client.go:125 - field c
+- client.go:59 - struct field
+
+**Return (1)**:
+- client.go:59 - function NewClient
+
+### Service
+**Field (4)**:
+- client.go:195 - struct field
+- types.go:162 - field p
+- client.go:125 - field out
+- client.go:52 - field entry
+
+**Return (2)**:
+- client.go:125 - method *HTTPClient.Services
+- client.go:195 - method *HTTPClient.postEntry
+
+**Variable (1)**:
+- client.go:243 - variable entry
+
+### context.Context
+**Field (1)**:
+- client.go:294 - field ctx
+
+**Parameter (6)**:
+- client.go:105 - method *HTTPClient.Auth
+- client.go:249 - method *HTTPClient.DeleteEntry
+- client.go:169 - method *HTTPClient.RegisterEntry
+- client.go:125 - method *HTTPClient.Services
+- client.go:195 - method *HTTPClient.postEntry
+- client.go:294 - method *HTTPClient.Register
+
+### error
+**Field (2)**:
+- types.go:101 - struct field
+- client.go:249 - field err
+
+**Return (18)**:
+- client.go:249 - method *HTTPClient.DeleteEntry
+- types.go:90 - method *SWAddr.MarshalBinary
+- types.go:95 - method *SWAddr.UnmarshalBinary
+- types.go:68 - method *SWAddr.UnmarshalText
+- types.go:101 - method *SWAddr.Scan
+- types.go:63 - method *SWAddr.MarshalText
+- types.go:116 - method SWAddr.Value
+- query.go:82 - method *ServicesQuery.Fill
+- types.go:142 - method *Service.MarshalBinary
+- query.go:31 - method *GeoQuery.Fill
+- client.go:125 - method *HTTPClient.Services
+- types.go:147 - method *Service.UnmarshalBinary
+- client.go:169 - method *HTTPClient.RegisterEntry
+- client.go:75 - method *HTTPClient.addr
+- types.go:152 - method Service.Check
+- client.go:105 - method *HTTPClient.Auth
+- client.go:294 - method *HTTPClient.Register
+- client.go:195 - method *HTTPClient.postEntry
+
+### http.Client
+**Field (1)**:
+- client.go:54 - field client
+
+**Parameter (1)**:
+- client.go:59 - function NewClient
+
+### httpauth.Client
+**Field (1)**:
+- client.go:105 - struct field
+
+**Return (1)**:
+- client.go:105 - method *HTTPClient.Auth
+
+**Variable (1)**:
+- client.go:101 - variable authClient
+
+### logging.MasterLogger
+**Field (1)**:
+- client.go:59 - field mLog
+
+**Parameter (1)**:
+- client.go:59 - function NewClient
+
+### logrus.FieldLogger
+**Field (1)**:
+- error.go:23 - field log
+
+**Parameter (2)**:
+- client.go:59 - function NewClient
+- error.go:23 - method *HTTPError.Log
+
+---
+
+## pkg/skyenv
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skyenv
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## pkg/skywire-utilities/pkg/buildinfo
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/buildinfo
+**Interface Usages**: 4
+
+### error
+**Field (1)**:
+- buildinfo.go:155 - struct field
+
+**Return (1)**:
+- buildinfo.go:155 - method *Info.WriteTo
+
+### io.Writer
+**Field (1)**:
+- buildinfo.go:155 - field w
+
+**Parameter (1)**:
+- buildinfo.go:155 - method *Info.WriteTo
+
+---
+
+## pkg/skywire-utilities/pkg/calvin
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/calvin
+**Interface Usages**: 1
+
+### strings.Builder
+**Variable (1)**:
+- calvin.go:118 - variable result
+
+---
+
+## pkg/skywire-utilities/pkg/calvin/cmd/calvin
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/calvin/cmd/calvin
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## pkg/skywire-utilities/pkg/calvin/cmd/calvin/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/calvin/cmd/calvin/commands
+**Interface Usages**: 2
+
+### error
+**Field (1)**:
+- root.go:21 - struct field
+
+### strings.Builder
+**Variable (1)**:
+- root.go:27 - variable sb
+
+---
+
+## pkg/skywire-utilities/pkg/cipher
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/cipher
+**Interface Usages**: 20
+
+### error
+**Field (1)**:
+- cipher.go:200 - struct field
+
+**Return (19)**:
+- cipher.go:94 - method PubKey.MarshalBinary
+- cipher.go:224 - method Sig.MarshalText
+- cipher.go:120 - method *PubKeys.Set
+- cipher.go:186 - method SecKey.MarshalBinary
+- cipher.go:99 - method *PubKey.UnmarshalBinary
+- cipher.go:191 - method *SecKey.UnmarshalBinary
+- cipher.go:172 - method SecKey.MarshalText
+- cipher.go:200 - method SecKey.PubKey
+- cipher.go:25 - function GenerateDeterministicKeyPair
+- cipher.go:157 - method *SecKey.Set
+- cipher.go:177 - method *SecKey.UnmarshalText
+- cipher.go:229 - method *Sig.UnmarshalText
+- cipher.go:81 - method *PubKey.UnmarshalText
+- cipher.go:238 - function SignPayload
+- cipher.go:76 - method PubKey.MarshalText
+- cipher.go:244 - function VerifyPubKeySignedPayload
+- cipher.go:61 - method *PubKey.Set
+- cipher.go:258 - function SHA256FromBytes
+- cipher.go:31 - function NewPubKey
+
+---
+
+## pkg/skywire-utilities/pkg/cmdutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/cmdutil
+**Interface Usages**: 24
+
+### context.Context
+**Field (2)**:
+- signal_context.go:13 - field ctx
+- signal_context.go:13 - struct field
+
+**Parameter (1)**:
+- signal_context.go:13 - function SignalContext
+
+**Return (1)**:
+- signal_context.go:13 - function SignalContext
+
+### error
+**Field (2)**:
+- service_flags.go:170 - struct field
+- service_flags_test.go:30 - field err
+
+**Return (5)**:
+- service_flags.go:93 - method *ServiceFlags.Check
+- sysloghook_unix.go:29 - function LevelFromString
+- service_flags.go:206 - function ValidTag
+- service_flags.go:141 - method *ServiceFlags.ParseConfig
+- service_flags.go:170 - method *ServiceFlags.obtainConfigReader
+
+**Variable (1)**:
+- service_flags.go:184 - variable err
+
+### io.ReadCloser
+**Field (1)**:
+- service_flags.go:141 - struct field
+
+**Return (1)**:
+- service_flags.go:170 - method *ServiceFlags.obtainConfigReader
+
+**Variable (1)**:
+- service_flags.go:183 - variable f
+
+### logging.Logger
+**Field (4)**:
+- sysloghook_windows.go:15 - field _
+- service_flags.go:47 - field logger
+- sysloghook_unix.go:17 - field log
+- service_flags.go:118 - struct field
+
+**Parameter (1)**:
+- sysloghook_windows.go:15 - method *ServiceFlags.sysLogHook
+
+**Return (1)**:
+- service_flags.go:118 - method *ServiceFlags.Logger
+
+### logrus.FieldLogger
+**Field (1)**:
+- catch.go:31 - field log
+
+**Parameter (2)**:
+- signal_context.go:13 - function SignalContext
+- catch.go:31 - function CatchWithLog
+
+---
+
+## pkg/skywire-utilities/pkg/flags
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/flags
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## pkg/skywire-utilities/pkg/geo
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/geo
+**Interface Usages**: 4
+
+### error
+**Field (1)**:
+- geo.go:37 - struct field
+
+**Variable (1)**:
+- geo.go:55 - variable err
+
+### logrus.FieldLogger
+**Field (1)**:
+- geo.go:40 - field log
+
+**Parameter (1)**:
+- geo.go:40 - function MakeIPDetails
+
+---
+
+## pkg/skywire-utilities/pkg/httpauth
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/httpauth
+**Interface Usages**: 71
+
+### NonceHandler
+**Field (1)**:
+- handler.go:146 - field as
+
+### NonceStore
+**Field (3)**:
+- nonce-storer.go:34 - struct field
+- handler.go:76 - field store
+- handler.go:140 - field Store
+
+**Parameter (5)**:
+- handler.go:110 - function makeMiddleware
+- auth.go:76 - function verifyAuth
+- handler.go:117 - function MakeMiddleware
+- handler.go:76 - function WithAuth
+- handler.go:128 - function MakeLoadTestingMiddleware
+
+**Return (1)**:
+- nonce-storer.go:34 - function NewNonceStore
+
+### bufio.ReadWriter
+**Field (1)**:
+- handler.go:61 - struct field
+
+**Return (1)**:
+- handler.go:61 - method *statusWriter.Hijack
+
+### bytes.Buffer
+**Variable (1)**:
+- auth.go:89 - variable buf
+
+### context.Context
+**Field (2)**:
+- redis-store.go:68 - field ctx
+- memory_store.go:41 - field _
+
+**Parameter (9)**:
+- memory_store.go:41 - method *memStore.IncrementNonce
+- redis-store.go:68 - method *redisStore.IncrementNonce
+- redis-store.go:82 - method *redisStore.Count
+- redis-store.go:21 - function newRedisStore
+- nonce-storer.go:34 - function NewNonceStore
+- memory_store.go:30 - method *memStore.Nonce
+- handler.go:122 - function PKFromCtx
+- redis-store.go:55 - method *redisStore.Nonce
+- memory_store.go:53 - method *memStore.Count
+
+### error
+**Field (2)**:
+- nonce-storer.go:34 - struct field
+- memory_store.go:24 - field err
+
+**Parameter (1)**:
+- memory_store.go:24 - method *memStore.SetError
+
+**Return (16)**:
+- redis-store.go:55 - method *redisStore.Nonce
+- memory_store.go:53 - method *memStore.Count
+- auth.go:23 - function AuthFromHeaders
+- redis-store.go:82 - method *redisStore.Count
+- nonce-storer.go:34 - function NewNonceStore
+- auth.go:113 - function Sign
+- handler.go:195 - function retrievePkFromURL
+- memory_store.go:41 - method *memStore.IncrementNonce
+- auth.go:118 - function Verify
+- handler.go:61 - method *statusWriter.Hijack
+- memory_store.go:30 - method *memStore.Nonce
+- redis-store.go:21 - function newRedisStore
+- auth.go:76 - function verifyAuth
+- handler.go:51 - method *statusWriter.Write
+- redis-store.go:68 - method *redisStore.IncrementNonce
+- auth.go:71 - method *Auth.Verify
+
+### http.Handler
+**Field (3)**:
+- handler.go:128 - field next
+- handler.go:128 - struct field
+- handler.go:76 - field original
+
+**Parameter (1)**:
+- handler.go:76 - function WithAuth
+
+**Return (1)**:
+- handler.go:76 - function WithAuth
+
+### http.Header
+**Field (2)**:
+- handler_test.go:48 - struct field
+- auth.go:23 - field hdr
+
+**Parameter (1)**:
+- auth.go:23 - function AuthFromHeaders
+
+**Return (3)**:
+- handler_test.go:48 - function invalidHeaders
+- handler_test.go:36 - function validHeadersWithNonce
+- handler_test.go:23 - function validHeaders
+
+### http.Hijacker
+**Embedded (1)**:
+- handler.go:40 - struct statusWriter
+
+**Field (1)**:
+- handler.go:42 - struct field
+
+### http.ResponseWriter
+**Embedded (1)**:
+- handler.go:40 - struct statusWriter
+
+**Field (3)**:
+- handler_test.go:107 - field writer
+- handler.go:77 - field w
+- handler.go:41 - struct field
+
+**Parameter (1)**:
+- handler.go:146 - method *NonceHandler.ServeHTTP
+
+### memStore
+**Field (2)**:
+- memory_store.go:18 - struct field
+- memory_store.go:53 - field s
+
+**Return (1)**:
+- memory_store.go:18 - function newMemoryStore
+
+### net.Conn
+**Field (1)**:
+- handler.go:61 - struct field
+
+**Return (1)**:
+- handler.go:61 - method *statusWriter.Hijack
+
+### redis.Client
+**Field (1)**:
+- redis-store.go:17 - field client
+
+### redisStore
+**Field (2)**:
+- redis-store.go:55 - field s
+- redis-store.go:21 - struct field
+
+**Return (1)**:
+- redis-store.go:21 - function newRedisStore
+
+### statusWriter
+**Field (1)**:
+- handler.go:46 - field w
+
+---
+
+## pkg/skywire-utilities/pkg/httputil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/httputil
+**Interface Usages**: 20
+
+### context.Context
+**Field (1)**:
+- health.go:23 - field _
+
+**Parameter (1)**:
+- health.go:23 - function GetServiceHealth
+
+### ctxKeyLogger
+**Variable (1)**:
+- httputil.go:78 - variable LoggerKey
+
+### error
+**Field (2)**:
+- httputil.go:44 - struct field
+- health.go:23 - field err
+
+**Return (5)**:
+- error.go:23 - function ErrorFromResp
+- httputil.go:44 - function ReadJSON
+- health.go:23 - function GetServiceHealth
+- httputil.go:51 - function BoolFromQuery
+- httputil.go:65 - function SplitRPCAddr
+
+### http.Handler
+**Field (2)**:
+- httputil.go:94 - struct field
+- log.go:21 - field next
+
+### http.ResponseWriter
+**Field (1)**:
+- httputil.go:24 - field w
+
+**Parameter (1)**:
+- httputil.go:24 - function WriteJSON
+
+### logrus.FieldLogger
+**Field (3)**:
+- log.go:14 - field logger
+- httputil.go:93 - field log
+- httputil.go:81 - struct field
+
+**Parameter (2)**:
+- log.go:20 - function NewLogMiddleware
+- httputil.go:93 - function SetLoggerMiddleware
+
+**Return (1)**:
+- httputil.go:81 - function GetLogger
+
+---
+
+## pkg/skywire-utilities/pkg/logging
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/logging
+**Interface Usages**: 27
+
+### Logger
+**Field (2)**:
+- logger.go:18 - field logger
+- logger.go:55 - struct field
+
+**Return (2)**:
+- logger.go:55 - method *MasterLogger.PackageLogger
+- logging.go:48 - function MustGetLogger
+
+### MasterLogger
+**Field (2)**:
+- logger.go:33 - struct field
+- logger.go:67 - field logger
+
+**Return (1)**:
+- logger.go:33 - function NewMasterLogger
+
+### TextFormatter
+**Field (1)**:
+- formatter.go:184 - field f
+
+### bytes.Buffer
+**Field (1)**:
+- formatter.go:244 - field b
+
+**Parameter (3)**:
+- formatter.go:421 - method *TextFormatter.appendKeyValue
+- formatter.go:431 - method *TextFormatter.appendValue
+- formatter.go:244 - method *TextFormatter.printColored
+
+**Variable (1)**:
+- formatter.go:190 - variable b
+
+### error
+**Field (1)**:
+- logging.go:26 - struct field
+
+**Return (3)**:
+- hooks.go:37 - method *WriteHook.Fire
+- formatter.go:189 - method *TextFormatter.Format
+- logging.go:26 - function LevelFromString
+
+### io.Writer
+**Field (1)**:
+- hooks.go:17 - field w
+
+**Parameter (3)**:
+- hooks.go:17 - function NewWriteHook
+- formatter.go:174 - method *TextFormatter.checkIfTerminal
+- logging.go:78 - function SetOutputTo
+
+### logrus.FieldLogger
+**Embedded (1)**:
+- logger.go:12 - struct Logger
+
+**Field (1)**:
+- logger.go:13 - struct field
+
+**Return (1)**:
+- logger.go:18 - method *Logger.Critical
+
+### logrus.Formatter
+**Field (1)**:
+- hooks.go:13 - field formatter
+
+### logrus.Logger
+**Field (1)**:
+- logger.go:29 - struct field
+
+### sync.Once
+**Embedded (1)**:
+- formatter.go:86 - struct TextFormatter
+
+---
+
+## pkg/skywire-utilities/pkg/metricsutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/metricsutil
+**Interface Usages**: 27
+
+### RequestsInFlightCountMiddleware
+**Field (2)**:
+- requests_in_flight_count_middleware.go:14 - struct field
+- requests_in_flight_count_middleware.go:21 - field m
+
+**Return (1)**:
+- requests_in_flight_count_middleware.go:14 - function NewRequestsInFlightCountMiddleware
+
+### StatusResponseWriter
+**Field (2)**:
+- status_response_writer.go:23 - field w
+- status_response_writer.go:16 - struct field
+
+**Return (1)**:
+- status_response_writer.go:16 - function NewStatusResponseWriter
+
+### VictoriaMetricsIntGaugeWrapper
+**Field (3)**:
+- victoria_metrics_int_gauge_wrapper.go:44 - field w
+- victoria_metrics_int_gauge_wrapper.go:19 - struct field
+- requests_in_flight_count_middleware.go:10 - field reqsInFlightGauge
+
+**Return (1)**:
+- victoria_metrics_int_gauge_wrapper.go:19 - function NewVictoriaMetricsIntGauge
+
+**Variable (1)**:
+- victoria_metrics_int_gauge_wrapper.go:20 - variable w
+
+### VictoriaMetricsUintGaugeWrapper
+**Field (2)**:
+- victoria_metrics_uint_gauge_wrapper.go:19 - struct field
+- victoria_metrics_uint_gauge_wrapper.go:29 - field w
+
+**Return (1)**:
+- victoria_metrics_uint_gauge_wrapper.go:19 - function NewVictoriaMetricsUintGauge
+
+**Variable (1)**:
+- victoria_metrics_uint_gauge_wrapper.go:20 - variable w
+
+### http.Handler
+**Field (2)**:
+- request_duration_middleware.go:13 - struct field
+- requests_in_flight_count_middleware.go:21 - field next
+
+**Parameter (2)**:
+- request_duration_middleware.go:13 - function RequestDurationMiddleware
+- requests_in_flight_count_middleware.go:21 - method *RequestsInFlightCountMiddleware.Handle
+
+**Return (2)**:
+- request_duration_middleware.go:13 - function RequestDurationMiddleware
+- requests_in_flight_count_middleware.go:21 - method *RequestsInFlightCountMiddleware.Handle
+
+### http.ResponseWriter
+**Embedded (1)**:
+- status_response_writer.go:10 - struct StatusResponseWriter
+
+**Field (2)**:
+- status_response_writer.go:11 - struct field
+- status_response_writer.go:16 - field w
+
+**Parameter (1)**:
+- status_response_writer.go:16 - function NewStatusResponseWriter
+
+### logrus.FieldLogger
+**Field (1)**:
+- http.go:21 - field log
+
+**Parameter (1)**:
+- http.go:21 - function ServeHTTPMetrics
+
+---
+
+## pkg/skywire-utilities/pkg/netutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/netutil
+**Interface Usages**: 32
+
+### Porter
+**Field (2)**:
+- porter.go:103 - field p
+- porter.go:32 - struct field
+
+**Return (1)**:
+- porter.go:32 - function NewPorter
+
+### Retrier
+**Field (2)**:
+- retrier.go:40 - struct field
+- retrier.go:71 - field r
+
+**Return (3)**:
+- retrier.go:40 - function NewRetrier
+- retrier.go:61 - method *Retrier.WithErrWhitelist
+- retrier.go:55 - function NewDefaultRetrier
+
+### context.Context
+**Field (1)**:
+- retrier.go:71 - field ctx
+
+**Parameter (2)**:
+- porter.go:80 - method *Porter.ReserveEphemeral
+- retrier.go:71 - method *Retrier.Do
+
+### error
+**Field (2)**:
+- net.go:25 - struct field
+- retrier.go:35 - field errWl
+
+**Return (11)**:
+- net.go:98 - function DefaultNetworkInterfaceIPs
+- net.go:12 - function LocalNetworkInterfaceIPs
+- net.go:18 - function NetworkInterfaceIPs
+- net_linux.go:18 - function DefaultNetworkInterface
+- porter.go:80 - method *Porter.ReserveEphemeral
+- net.go:25 - function localNetworkInterfaceIPs
+- retrier.go:71 - method *Retrier.Do
+- copy.go:10 - function CopyReadWriteCloser
+- net.go:112 - function HasPublicIP
+- net.go:126 - function ExtractPort
+- net.go:138 - function LocalAddresses
+
+### io.Closer
+**Field (1)**:
+- porter.go:189 - field c
+
+### io.ReadWriteCloser
+**Field (1)**:
+- copy.go:10 - field conn1
+
+**Parameter (1)**:
+- copy.go:10 - function CopyReadWriteCloser
+
+### logrus.FieldLogger
+**Field (1)**:
+- retrier.go:55 - field log
+
+**Parameter (3)**:
+- porter.go:178 - method *Porter.CloseAll
+- retrier.go:55 - function NewDefaultRetrier
+- retrier.go:40 - function NewRetrier
+
+### sync.RWMutex
+**Embedded (1)**:
+- porter.go:24 - struct Porter
+
+---
+
+## pkg/skywire-utilities/pkg/networkmonitor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/networkmonitor
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## pkg/skywire-utilities/pkg/skyenv
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/skyenv
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## pkg/skywire-utilities/pkg/storeconfig
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/storeconfig
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## pkg/skywire-utilities/pkg/tcpproxy
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/tcpproxy
+**Interface Usages**: 4
+
+### error
+**Field (1)**:
+- http.go:12 - struct field
+
+**Return (1)**:
+- http.go:12 - function ListenAndServe
+
+### http.Handler
+**Field (1)**:
+- http.go:12 - field handler
+
+**Parameter (1)**:
+- http.go:12 - function ListenAndServe
+
+---
+
+## pkg/transport
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport
+**Interface Usages**: 138
+
+### DiscoveryClient
+**Field (5)**:
+- managed_transport.go:65 - field dc
+- manager.go:38 - field DiscoveryClient
+- handshake.go:99 - field _
+- managed_transport.go:45 - field DC
+- discovery.go:29 - struct field
+
+**Parameter (1)**:
+- handshake.go:80 - method SettlementHS.Do
+
+**Return (1)**:
+- discovery.go:29 - function NewDiscoveryMock
+
+### LogStore
+**Field (4)**:
+- managed_transport.go:66 - field ls
+- managed_transport.go:46 - field LS
+- manager.go:39 - field LogStore
+- log.go:147 - struct field
+
+**Parameter (1)**:
+- log.go:42 - function MakeLogEntry
+
+**Return (2)**:
+- log.go:182 - function FileTransportLogStore
+- log.go:147 - function InMemoryTransportLogStore
+
+### ManagedTransport
+**Field (4)**:
+- managed_transport.go:430 - field mt
+- manager.go:516 - struct field
+- manager.go:524 - field tp
+- manager.go:48 - field tps
+
+**Return (7)**:
+- manager.go:359 - method *Manager.GetTransportByID
+- manager.go:343 - method *Manager.GetTransport
+- managed_transport.go:80 - function NewManagedTransport
+- manager.go:370 - method *Manager.GetTransportsByLabel
+- manager.go:383 - method *Manager.SaveTransport
+- manager.go:400 - method *Manager.saveTransport
+- manager.go:516 - method *Manager.Transport
+
+**Variable (2)**:
+- manager.go:229 - variable toDelete
+- manager.go:373 - variable trs
+
+### Manager
+**Field (2)**:
+- manager.go:268 - field tm
+- manager.go:66 - struct field
+
+**Return (1)**:
+- manager.go:66 - function NewManager
+
+### addrresolver.APIClient
+**Field (1)**:
+- manager.go:66 - field arClient
+
+**Parameter (1)**:
+- manager.go:66 - function NewManager
+
+### appevent.Broadcaster
+**Field (1)**:
+- managed_transport.go:44 - field ebc
+
+**Parameter (1)**:
+- manager.go:66 - function NewManager
+
+### bytes.Buffer
+**Variable (1)**:
+- log.go:97 - variable b
+
+### context.Context
+**Field (2)**:
+- handshake.go:131 - field ctx
+- handshake.go:99 - field _
+
+**Parameter (22)**:
+- manager.go:222 - method *Manager.cleanupTransports
+- discovery.go:60 - method *mockDiscoveryClient.GetTransportsByEdge
+- manager.go:86 - method *Manager.InitDmsgClient
+- manager.go:94 - method *Manager.Serve
+- handshake.go:80 - method SettlementHS.Do
+- manager.go:400 - method *Manager.saveTransport
+- manager.go:102 - method *Manager.runReconnectPersistent
+- manager.go:119 - method *Manager.reconnectPersistent
+- manager.go:150 - method *Manager.InitClient
+- manager.go:383 - method *Manager.SaveTransport
+- manager.go:170 - method *Manager.runClient
+- manager.go:195 - method *Manager.acceptTransports
+- managed_transport.go:221 - method *ManagedTransport.Accept
+- discovery.go:33 - method *mockDiscoveryClient.RegisterTransports
+- discovery.go:81 - method *mockDiscoveryClient.DeleteTransport
+- managed_transport.go:251 - method *ManagedTransport.Dial
+- manager.go:268 - method *Manager.acceptTransport
+- managed_transport.go:267 - method *ManagedTransport.DialAsync
+- log.go:182 - function FileTransportLogStore
+- discovery.go:43 - method *mockDiscoveryClient.GetTransportByID
+- managed_transport.go:364 - method *ManagedTransport.WritePacket
+- managed_transport.go:271 - method *ManagedTransport.dial
+
+### dmsg.Client
+**Field (1)**:
+- manager.go:86 - field dmsgC
+
+**Parameter (1)**:
+- manager.go:86 - method *Manager.InitDmsgClient
+
+### error
+**Field (3)**:
+- discovery.go:33 - struct field
+- managed_transport.go:267 - field errCh
+- handshake.go:99 - field err
+
+**Parameter (1)**:
+- managed_transport.go:267 - method *ManagedTransport.DialAsync
+
+**Return (37)**:
+- discovery.go:81 - method *mockDiscoveryClient.DeleteTransport
+- discovery.go:33 - method *mockDiscoveryClient.RegisterTransports
+- log.go:164 - method *inMemoryTransportLogStore.Record
+- managed_transport.go:364 - method *ManagedTransport.WritePacket
+- log.go:83 - method *LogEntry.MarshalJSON
+- discovery.go:43 - method *mockDiscoveryClient.GetTransportByID
+- manager.go:343 - method *Manager.GetTransport
+- managed_transport.go:179 - method *ManagedTransport.Close
+- manager.go:66 - function NewManager
+- managed_transport.go:251 - method *ManagedTransport.Dial
+- log.go:96 - method *LogEntry.GobEncode
+- manager.go:359 - method *Manager.GetTransportByID
+- discovery.go:60 - method *mockDiscoveryClient.GetTransportsByEdge
+- log.go:115 - method *LogEntry.GobDecode
+- log.go:182 - function FileTransportLogStore
+- manager.go:268 - method *Manager.acceptTransport
+- log.go:153 - method *inMemoryTransportLogStore.Entry
+- entry.go:119 - method *Entry.Signature
+- handshake.go:48 - function receiveAndVerifyEntry
+- handshake.go:166 - function writeHsResponse
+- log.go:209 - method *fileTransportLogStore.Entry
+- manager.go:383 - method *Manager.SaveTransport
+- entry.go:137 - method *SignedEntry.Sign
+- managed_transport.go:384 - method *ManagedTransport.readPacket
+- managed_transport.go:340 - method *ManagedTransport.deleteFromDiscovery
+- entry.go:164 - function NewSignedEntry
+- managed_transport.go:271 - method *ManagedTransport.dial
+- log.go:304 - method *fileTransportLogStore.readFromCSV
+- manager.go:400 - method *Manager.saveTransport
+- entry.go:154 - method *SignedEntry.Signature
+- managed_transport.go:221 - method *ManagedTransport.Accept
+- managed_transport.go:313 - method *ManagedTransport.setTransport
+- handshake.go:80 - method SettlementHS.Do
+- log.go:238 - method *fileTransportLogStore.writeToCSV
+- handshake.go:32 - function compareEntries
+- log.go:225 - method *fileTransportLogStore.Record
+- manager.go:503 - method *Manager.ReadPacket
+
+### fileTransportLogStore
+**Field (1)**:
+- log.go:225 - field tls
+
+### inMemoryTransportLogStore
+**Field (1)**:
+- log.go:153 - field tls
+
+### io.Reader
+**Field (1)**:
+- handshake.go:48 - field r
+
+**Parameter (1)**:
+- handshake.go:48 - function receiveAndVerifyEntry
+
+### io.Writer
+**Field (1)**:
+- handshake.go:166 - field w
+
+**Parameter (1)**:
+- handshake.go:166 - function writeHsResponse
+
+### logging.Logger
+**Field (2)**:
+- log.go:176 - field log
+- manager.go:46 - field Logger
+
+**Parameter (4)**:
+- log.go:182 - function FileTransportLogStore
+- handshake.go:97 - function MakeSettlementHS
+- manager.go:66 - function NewManager
+- log.go:42 - function MakeLogEntry
+
+### logging.MasterLogger
+**Field (1)**:
+- managed_transport.go:50 - field mlog
+
+**Variable (1)**:
+- manager_test.go:17 - variable masterLogger
+
+### mockDiscoveryClient
+**Field (1)**:
+- discovery.go:81 - field td
+
+### network.Client
+**Field (3)**:
+- managed_transport.go:68 - field client
+- manager.go:61 - field netClients
+- manager.go:261 - struct field
+
+**Return (1)**:
+- manager.go:261 - method *Manager.Stcpr
+
+### network.ClientFactory
+**Field (1)**:
+- manager.go:66 - field factory
+
+**Parameter (1)**:
+- manager.go:66 - function NewManager
+
+### network.Listener
+**Field (1)**:
+- manager.go:268 - field lis
+
+**Parameter (2)**:
+- manager.go:195 - method *Manager.acceptTransports
+- manager.go:268 - method *Manager.acceptTransport
+
+### network.Transport
+**Field (3)**:
+- managed_transport.go:313 - field newTransport
+- handshake.go:80 - field transport
+- managed_transport.go:300 - struct field
+
+**Parameter (4)**:
+- managed_transport.go:221 - method *ManagedTransport.Accept
+- managed_transport.go:313 - method *ManagedTransport.setTransport
+- handshake.go:27 - function makeEntryFromTransport
+- handshake.go:80 - method SettlementHS.Do
+
+**Return (1)**:
+- managed_transport.go:300 - method *ManagedTransport.getTransport
+
+**Variable (1)**:
+- managed_transport.go:387 - variable transport
+
+### sync.Mutex
+**Embedded (1)**:
+- discovery.go:23 - struct mockDiscoveryClient
+
+### transport.LogStore
+**Field (1)**:
+- log_test.go:20 - field logStore
+
+**Parameter (1)**:
+- log_test.go:20 - function testTransportLogStore
+
+---
+
+## pkg/transport-discovery/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport-discovery/api
+**Interface Usages**: 37
+
+### chi.Router
+**Field (1)**:
+- api.go:94 - field r
+
+### context.Context
+**Field (1)**:
+- api.go:185 - field ctx
+
+**Parameter (2)**:
+- api.go:120 - method *API.RunBackgroundTasks
+- api.go:185 - method *API.updateTransportsNumber
+
+### error
+**Field (2)**:
+- api.go:143 - field err
+- api_test.go:29 - struct field
+
+**Parameter (2)**:
+- api.go:143 - method *API.renderError
+- api.go:151 - method *API.writeError
+
+### http.Handler
+**Embedded (1)**:
+- api.go:48 - struct API
+
+**Field (1)**:
+- api.go:49 - struct field
+
+### http.Header
+**Field (1)**:
+- api_test.go:35 - struct field
+
+**Return (1)**:
+- api_test.go:35 - function validHeaders
+
+### http.ResponseWriter
+**Field (1)**:
+- endpoints.go:220 - field w
+
+**Parameter (10)**:
+- endpoints.go:47 - method *API.getTransportByID
+- endpoints.go:112 - method *API.deleteTransport
+- endpoints.go:220 - method *API.writeJSON
+- endpoints.go:210 - method *API.health
+- api.go:143 - method *API.renderError
+- endpoints.go:67 - method *API.getTransportByEdge
+- api.go:151 - method *API.writeError
+- endpoints.go:91 - method *API.getAllTransports
+- endpoints.go:150 - method *API.deregisterTransport
+- endpoints.go:21 - method *API.registerTransport
+
+### httpauth.NonceStore
+**Field (1)**:
+- api.go:67 - field nonceStore
+
+**Parameter (1)**:
+- api.go:67 - function New
+
+### logrus.FieldLogger
+**Field (3)**:
+- endpoints.go:238 - struct field
+- api.go:67 - field log
+- api.go:120 - field logger
+
+**Parameter (3)**:
+- api.go:185 - method *API.updateTransportsNumber
+- api.go:67 - function New
+- api.go:120 - method *API.RunBackgroundTasks
+
+**Return (2)**:
+- endpoints.go:238 - method *API.logger
+- api.go:134 - method *API.log
+
+### metricsutil.RequestsInFlightCountMiddleware
+**Field (1)**:
+- api.go:51 - field reqsInFlightCountMiddleware
+
+### store.Store
+**Field (2)**:
+- api.go:67 - field s
+- api.go:52 - field store
+
+**Parameter (1)**:
+- api.go:67 - function New
+
+---
+
+## pkg/transport-discovery/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport-discovery/store
+**Interface Usages**: 50
+
+### Transport
+**Field (1)**:
+- postgres_store.go:134 - field record
+
+**Parameter (1)**:
+- postgres_store.go:134 - function makeEntry
+
+**Variable (2)**:
+- postgres_store.go:57 - variable tpRecord
+- postgres_store.go:90 - variable tpRecords
+
+### TransportStore
+**Embedded (1)**:
+- transport_test.go:19 - struct TransportSuite
+
+**Field (1)**:
+- store.go:29 - struct field
+
+**Return (2)**:
+- postgres_store.go:24 - function NewPostgresStore
+- store.go:44 - function New
+
+### context.Context
+**Field (3)**:
+- memory_store.go:120 - field _
+- store.go:39 - struct field
+- postgres_store.go:52 - field ctx
+
+**Parameter (12)**:
+- postgres_store.go:70 - method *postgresStore.GetTransportsByEdge
+- memory_store.go:71 - method *memStore.GetTransportByID
+- memory_store.go:53 - method *memStore.DeregisterTransport
+- memory_store.go:87 - method *memStore.GetTransportsByEdge
+- postgres_store.go:52 - method *postgresStore.DeregisterTransport
+- postgres_store.go:89 - method *postgresStore.GetNumberOfTransports
+- memory_store.go:120 - method *memStore.GetAllTransports
+- memory_store.go:36 - method *memStore.RegisterTransport
+- memory_store.go:110 - method *memStore.GetNumberOfTransports
+- postgres_store.go:39 - method *postgresStore.RegisterTransport
+- postgres_store.go:106 - method *postgresStore.GetAllTransports
+- postgres_store.go:56 - method *postgresStore.GetTransportByID
+
+### error
+**Field (2)**:
+- postgres_store.go:106 - struct field
+- memory_store.go:32 - field err
+
+**Parameter (1)**:
+- memory_store.go:32 - method *memStore.SetError
+
+**Return (15)**:
+- postgres_store.go:70 - method *postgresStore.GetTransportsByEdge
+- postgres_store.go:56 - method *postgresStore.GetTransportByID
+- memory_store.go:110 - method *memStore.GetNumberOfTransports
+- memory_store.go:120 - method *memStore.GetAllTransports
+- postgres_store.go:106 - method *postgresStore.GetAllTransports
+- store.go:44 - function New
+- memory_store.go:36 - method *memStore.RegisterTransport
+- postgres_store.go:134 - function makeEntry
+- postgres_store.go:52 - method *postgresStore.DeregisterTransport
+- postgres_store.go:89 - method *postgresStore.GetNumberOfTransports
+- postgres_store.go:39 - method *postgresStore.RegisterTransport
+- memory_store.go:53 - method *memStore.DeregisterTransport
+- postgres_store.go:24 - function NewPostgresStore
+- memory_store.go:71 - method *memStore.GetTransportByID
+- memory_store.go:87 - method *memStore.GetTransportsByEdge
+
+### logging.Logger
+**Field (2)**:
+- postgres_store.go:17 - field log
+- store.go:44 - field logger
+
+**Parameter (2)**:
+- postgres_store.go:24 - function NewPostgresStore
+- store.go:44 - function New
+
+### memStore
+**Field (2)**:
+- memory_store.go:87 - field s
+- memory_store.go:26 - struct field
+
+**Return (1)**:
+- memory_store.go:26 - function newMemoryStore
+
+### postgresStore
+**Field (1)**:
+- postgres_store.go:130 - field s
+
+### suite.Suite
+**Embedded (1)**:
+- transport_test.go:19 - struct TransportSuite
+
+---
+
+## pkg/transport-setup/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport-setup/api
+**Interface Usages**: 30
+
+### context.Context
+**Field (1)**:
+- utils.go:30 - field ctx
+
+**Parameter (1)**:
+- utils.go:30 - method *API.callVisorRPC
+
+### dmsg.Client
+**Field (2)**:
+- api.go:52 - struct field
+- api.go:22 - field dmsgC
+
+**Return (1)**:
+- api.go:52 - function setupDmsgC
+
+### error
+**Field (2)**:
+- endpoints.go:40 - struct field
+- utils.go:74 - field err
+
+**Parameter (3)**:
+- utils.go:66 - method *API.internalError
+- utils.go:70 - method *API.badRequest
+- utils.go:74 - method *API.writeError
+
+**Return (3)**:
+- endpoints.go:40 - method *API.getUUIDRequest
+- endpoints.go:29 - method *API.getTransportRequest
+- utils.go:30 - method *API.callVisorRPC
+
+### http.Handler
+**Embedded (1)**:
+- api.go:20 - struct API
+
+**Field (1)**:
+- api.go:21 - struct field
+
+### http.ResponseWriter
+**Field (1)**:
+- utils.go:74 - field w
+
+**Parameter (8)**:
+- utils.go:66 - method *API.internalError
+- endpoints.go:51 - method *API.addTransport
+- utils.go:22 - method *API.visorResponse
+- utils.go:70 - method *API.badRequest
+- endpoints.go:76 - method *API.getTransports
+- endpoints.go:65 - method *API.removeTransport
+- utils.go:59 - method *API.writeJSON
+- utils.go:74 - method *API.writeError
+
+### logging.Logger
+**Field (2)**:
+- api.go:23 - field logger
+- api.go:52 - field log
+
+**Parameter (2)**:
+- api.go:52 - function setupDmsgC
+- api.go:28 - function New
+
+### logrus.FieldLogger
+**Field (1)**:
+- utils.go:48 - struct field
+
+**Return (1)**:
+- utils.go:48 - method *API.log
+
+---
+
+## pkg/transport-setup/config
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport-setup/config
+**Interface Usages**: 2
+
+### logging.Logger
+**Field (1)**:
+- config.go:24 - field log
+
+**Parameter (1)**:
+- config.go:24 - function MustReadConfig
+
+---
+
+## pkg/transport/deprecated
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/deprecated
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## pkg/transport/network
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network
+**Interface Usages**: 131
+
+### Client
+**Field (1)**:
+- stcp.go:26 - struct field
+
+**Return (5)**:
+- dmsg.go:21 - function newDmsgClient
+- client.go:66 - method *ClientFactory.MakeClient
+- stcpr.go:21 - function newStcpr
+- sudph.go:37 - function newSudph
+- stcp.go:26 - function newStcp
+
+### ClientFactory
+**Field (1)**:
+- client.go:66 - field f
+
+### Listener
+**Field (1)**:
+- client.go:245 - struct field
+
+**Return (3)**:
+- dmsg.go:49 - method *dmsgClientAdapter.Listen
+- client.go:245 - method *genericClient.Listen
+- listener.go:37 - function NewListener
+
+### MockDialer
+**Field (2)**:
+- mock_dialer.go:51 - field _m
+- mock_dialer.go:73 - struct field
+
+**Return (1)**:
+- mock_dialer.go:70 - function NewMockDialer
+
+### Transport
+**Field (1)**:
+- listener.go:23 - struct field
+
+**Return (7)**:
+- sudph.go:132 - method *sudphClient.Dial
+- dmsg.go:86 - method *dmsgListenerAdapter.AcceptTransport
+- connection.go:58 - function DoHandshake
+- stcp.go:37 - method *stcpClient.Dial
+- listener.go:57 - method *listener.AcceptTransport
+- stcpr.go:28 - method *stcprClient.Dial
+- dmsg.go:34 - method *dmsgClientAdapter.Dial
+
+### addrresolver.APIClient
+**Field (2)**:
+- client.go:318 - field ar
+- client.go:59 - field ARClient
+
+### appevent.Broadcaster
+**Field (2)**:
+- client.go:117 - field eb
+- client.go:60 - field EB
+
+### context.Context
+**Field (2)**:
+- stcp.go:37 - field ctx
+- mock_dialer.go:30 - struct field
+
+**Parameter (9)**:
+- sudph.go:132 - method *sudphClient.Dial
+- stcpr.go:41 - method *stcprClient.dial
+- dmsg.go:34 - method *dmsgClientAdapter.Dial
+- client.go:130 - method *genericClient.initTransport
+- stcp.go:37 - method *stcpClient.Dial
+- client.go:326 - method *resolvedClient.dialVisor
+- sudph.go:145 - method *sudphClient.dialWithTimeout
+- mock_dialer.go:21 - method *MockDialer.Dial
+- stcpr.go:28 - method *stcprClient.Dial
+
+### dmsg.Client
+**Field (2)**:
+- client.go:61 - field DmsgC
+- dmsg.go:21 - field dmsgC
+
+**Parameter (1)**:
+- dmsg.go:21 - function newDmsgClient
+
+### dmsg.Listener
+**Field (1)**:
+- dmsg.go:82 - struct field
+
+### error
+**Field (1)**:
+- client.go:245 - struct field
+
+**Return (36)**:
+- connection.go:64 - function doHandshake
+- dmsg.go:26 - method *dmsgClientAdapter.LocalAddr
+- dmsg.go:68 - method *dmsgClientAdapter.Close
+- stcp.go:61 - method *stcpClient.Start
+- client.go:66 - method *ClientFactory.MakeClient
+- client.go:285 - method *genericClient.Close
+- sudph.go:132 - method *sudphClient.Dial
+- sudph.go:145 - method *sudphClient.dialWithTimeout
+- sudph.go:168 - method *sudphClient.dial
+- client.go:130 - method *genericClient.initTransport
+- client.go:326 - method *resolvedClient.dialVisor
+- dmsg.go:86 - method *dmsgListenerAdapter.AcceptTransport
+- connection.go:58 - function DoHandshake
+- dmsg.go:43 - method *dmsgClientAdapter.Start
+- stcpr.go:28 - method *stcprClient.Dial
+- dmsg.go:34 - method *dmsgClientAdapter.Dial
+- client.go:245 - method *genericClient.Listen
+- dmsg.go:49 - method *dmsgClientAdapter.Listen
+- sudph.go:44 - method *sudphClient.Start
+- stcp.go:37 - method *stcpClient.Dial
+- client.go:173 - method *genericClient.wrapTransport
+- stcpr.go:41 - method *stcprClient.dial
+- client.go:217 - method *genericClient.LocalAddr
+- client.go:236 - method *genericClient.checkListener
+- connection.go:76 - method *transport.encrypt
+- mock_dialer.go:21 - method *MockDialer.Dial
+- stcpr.go:48 - method *stcprClient.Start
+- connection.go:94 - function EncryptConn
+- connection.go:129 - method *transport.Close
+- listener.go:103 - method *listener.introduce
+- client.go:191 - method *genericClient.acceptTransport
+- listener.go:52 - method *listener.Accept
+- client.go:226 - method *genericClient.getListener
+- listener.go:67 - method *listener.Close
+- listener.go:57 - method *listener.AcceptTransport
+- sudph.go:62 - method *sudphClient.listen
+
+**Variable (2)**:
+- stun_client.go:21 - variable err
+- mock_dialer.go:29 - variable r1
+
+### genericClient
+**Field (3)**:
+- client.go:191 - field c
+- stcp.go:26 - field generic
+- client.go:317 - struct field
+
+**Parameter (1)**:
+- stcp.go:26 - function newStcp
+
+### interface{}
+**Field (1)**:
+- mock_dialer.go:70 - field t (anonymous interface)
+
+**Parameter (1)**:
+- mock_dialer.go:70 - function NewMockDialer (anonymous interface)
+
+### logging.Logger
+**Field (1)**:
+- connection.go:64 - field log
+
+**Parameter (3)**:
+- connection.go:58 - function DoHandshake
+- connection.go:64 - function doHandshake
+- stun_client.go:17 - function GetStunDetails
+
+### logging.MasterLogger
+**Field (2)**:
+- client.go:115 - field mLog
+- client.go:62 - field MLogger
+
+### mock.Mock
+**Embedded (1)**:
+- mock_dialer.go:16 - struct MockDialer
+
+### net.Conn
+**Embedded (1)**:
+- connection.go:49 - struct transport
+
+**Field (4)**:
+- sudph.go:104 - struct field
+- connection.go:64 - field rawConn
+- client.go:130 - field conn
+- sudph.go:104 - field in
+
+**Parameter (5)**:
+- connection.go:94 - function EncryptConn
+- client.go:130 - method *genericClient.initTransport
+- client.go:173 - method *genericClient.wrapTransport
+- connection.go:58 - function DoHandshake
+- connection.go:64 - function doHandshake
+
+**Return (7)**:
+- mock_dialer.go:21 - method *MockDialer.Dial
+- client.go:326 - method *resolvedClient.dialVisor
+- listener.go:52 - method *listener.Accept
+- stcpr.go:41 - method *stcprClient.dial
+- sudph.go:145 - method *sudphClient.dialWithTimeout
+- sudph.go:168 - method *sudphClient.dial
+- connection.go:94 - function EncryptConn
+
+**Variable (2)**:
+- mock_dialer.go:28 - variable r0
+- stcp.go:44 - variable conn
+
+### net.Listener
+**Field (3)**:
+- sudph.go:62 - struct field
+- client.go:145 - field lis
+- client.go:119 - field connListener
+
+**Parameter (1)**:
+- client.go:145 - method *genericClient.acceptTransports
+
+**Return (1)**:
+- sudph.go:62 - method *sudphClient.listen
+
+**Variable (1)**:
+- stcpr.go:57 - variable lis
+
+### net.PacketConn
+**Field (1)**:
+- sudph.go:114 - field conn
+
+**Parameter (1)**:
+- sudph.go:114 - method *sudphClient.acceptAddresses
+
+**Variable (1)**:
+- sudph.go:63 - variable packetListener
+
+### pfilter.PacketFilter
+**Field (1)**:
+- sudph.go:33 - field filter
+
+### porter.Porter
+**Field (1)**:
+- client.go:116 - field porter
+
+### resolvedClient
+**Field (3)**:
+- sudph.go:32 - struct field
+- client.go:326 - field c
+- stcpr.go:21 - field resolved
+
+**Parameter (2)**:
+- sudph.go:37 - function newSudph
+- stcpr.go:21 - function newStcpr
+
+### stcpClient
+**Field (1)**:
+- stcp.go:69 - field c
+
+### stcprClient
+**Field (1)**:
+- stcpr.go:56 - field c
+
+### sudphClient
+**Field (1)**:
+- sudph.go:62 - field c
+
+---
+
+## pkg/transport/network/addrresolver
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network/addrresolver
+**Interface Usages**: 71
+
+### APIClient
+**Field (1)**:
+- client.go:97 - struct field
+
+**Return (1)**:
+- client.go:97 - function NewHTTP
+
+### MockAPIClient
+**Field (2)**:
+- mock_api_client.go:21 - field _m
+- mock_api_client.go:167 - struct field
+
+**Return (1)**:
+- mock_api_client.go:164 - function NewMockAPIClient
+
+### context.Context
+**Field (3)**:
+- mock_api_client.go:123 - struct field
+- client.go:187 - field ctx
+- client.go:215 - field _
+
+**Parameter (13)**:
+- client.go:449 - method *httpClient.TransportsType
+- mock_api_client.go:105 - method *MockAPIClient.Resolve
+- client.go:398 - method *httpClient.Transports
+- client.go:168 - method *httpClient.Post
+- client.go:154 - method *httpClient.Get
+- client.go:187 - method *httpClient.Delete
+- client.go:223 - method *httpClient.BindSTCPR
+- mock_api_client.go:133 - method *MockAPIClient.Transports
+- client.go:260 - method *httpClient.delBindSTCPR
+- mock_api_client.go:21 - method *MockAPIClient.Addresses
+- client.go:215 - method *httpClient.Addresses
+- client.go:357 - method *httpClient.Resolve
+- mock_api_client.go:39 - method *MockAPIClient.BindSTCPR
+
+### error
+**Field (1)**:
+- client.go:168 - struct field
+
+**Return (18)**:
+- client.go:223 - method *httpClient.BindSTCPR
+- client.go:357 - method *httpClient.Resolve
+- client.go:559 - method *httpClient.Close
+- client.go:593 - method *httpClient.keepSudphHeartbeatLoop
+- client.go:608 - method *httpClient.delBindSUDPH
+- client.go:97 - function NewHTTP
+- mock_api_client.go:133 - method *MockAPIClient.Transports
+- client.go:260 - method *httpClient.delBindSTCPR
+- client.go:449 - method *httpClient.TransportsType
+- client.go:187 - method *httpClient.Delete
+- client.go:398 - method *httpClient.Transports
+- mock_api_client.go:87 - method *MockAPIClient.Close
+- client.go:154 - method *httpClient.Get
+- mock_api_client.go:39 - method *MockAPIClient.BindSTCPR
+- mock_api_client.go:57 - method *MockAPIClient.BindSUDPH
+- client.go:291 - method *httpClient.BindSUDPH
+- client.go:168 - method *httpClient.Post
+- mock_api_client.go:105 - method *MockAPIClient.Resolve
+
+**Variable (2)**:
+- mock_api_client.go:113 - variable r1
+- mock_api_client.go:46 - variable r0
+
+### http.Client
+**Field (1)**:
+- client.go:127 - field httpC
+
+**Parameter (2)**:
+- client.go:127 - method *httpClient.initHTTPClient
+- client.go:97 - function NewHTTP
+
+### http.Handler
+**Field (2)**:
+- client_test.go:92 - field next
+- client_test.go:92 - struct field
+
+**Parameter (1)**:
+- client_test.go:92 - function authHandler
+
+**Return (1)**:
+- client_test.go:92 - function authHandler
+
+### http.ResponseWriter
+**Field (2)**:
+- client_test.go:77 - field _
+- client_test.go:34 - field w
+
+### httpClient
+**Field (1)**:
+- client.go:260 - field c
+
+### httpauth.Client
+**Field (1)**:
+- client.go:79 - field httpClient
+
+### interface{}
+**Field (1)**:
+- mock_api_client.go:164 - field t (anonymous interface)
+
+**Parameter (1)**:
+- mock_api_client.go:164 - function NewMockAPIClient (anonymous interface)
+
+### io.Reader
+**Field (1)**:
+- client.go:518 - field reader
+
+**Parameter (1)**:
+- client.go:518 - method *httpClient.readSUDPHMessages
+
+### io.Writer
+**Field (1)**:
+- client.go:608 - field w
+
+**Parameter (2)**:
+- client.go:608 - method *httpClient.delBindSUDPH
+- client.go:593 - method *httpClient.keepSudphHeartbeatLoop
+
+### logging.Logger
+**Field (1)**:
+- client.go:97 - field log
+
+**Parameter (1)**:
+- client.go:97 - function NewHTTP
+
+### logging.MasterLogger
+**Field (1)**:
+- client.go:97 - field mLog
+
+**Parameter (1)**:
+- client.go:97 - function NewHTTP
+
+### mock.Mock
+**Embedded (1)**:
+- mock_api_client.go:16 - struct MockAPIClient
+
+### net.Conn
+**Field (1)**:
+- client.go:289 - struct field
+
+### net.PacketConn
+**Field (1)**:
+- client.go:84 - field sudphConn
+
+### pfilter.PacketFilter
+**Field (2)**:
+- mock_api_client.go:57 - field filter
+- mock_api_client.go:77 - struct field
+
+**Parameter (2)**:
+- client.go:291 - method *httpClient.BindSUDPH
+- mock_api_client.go:57 - method *MockAPIClient.BindSUDPH
+
+---
+
+## pkg/transport/network/handshake
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network/handshake
+**Interface Usages**: 26
+
+### bytes.Buffer
+**Variable (1)**:
+- handshake.go:199 - variable b
+
+### error
+**Field (2)**:
+- handshake.go:166 - struct field
+- handshake.go:267 - field err
+
+**Parameter (2)**:
+- handshake.go:267 - function writeFrame3
+- handshake.go:38 - function IsHandshakeError
+
+**Return (10)**:
+- handshake.go:260 - function readFrame2
+- handshake.go:267 - function writeFrame3
+- handshake.go:256 - function writeFrame2
+- handshake.go:166 - method *Frame2.Sign
+- handshake.go:249 - function readFrame1
+- handshake.go:277 - function readFrame3
+- handshake.go:191 - method Frame2.Verify
+- handshake.go:245 - function writeFrame1
+- handshake.go:213 - function writeFrame0
+- handshake.go:226 - function readFrame0
+
+### io.Reader
+**Field (1)**:
+- handshake.go:277 - field r
+
+**Parameter (4)**:
+- handshake.go:277 - function readFrame3
+- handshake.go:260 - function readFrame2
+- handshake.go:226 - function readFrame0
+- handshake.go:249 - function readFrame1
+
+### io.Writer
+**Field (1)**:
+- handshake.go:267 - field w
+
+**Parameter (4)**:
+- handshake.go:256 - function writeFrame2
+- handshake.go:245 - function writeFrame1
+- handshake.go:213 - function writeFrame0
+- handshake.go:267 - function writeFrame3
+
+### net.Conn
+**Field (1)**:
+- handshake.go:45 - field conn
+
+---
+
+## pkg/transport/network/porter
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network/porter
+**Interface Usages**: 7
+
+### Porter
+**Field (2)**:
+- porter.go:23 - struct field
+- porter.go:36 - field p
+
+**Return (1)**:
+- porter.go:23 - function New
+
+### context.Context
+**Field (1)**:
+- porter.go:51 - field ctx
+
+**Parameter (1)**:
+- porter.go:51 - method *Porter.ReserveEphemeral
+
+### error
+**Field (1)**:
+- porter.go:51 - struct field
+
+**Return (1)**:
+- porter.go:51 - method *Porter.ReserveEphemeral
+
+---
+
+## pkg/transport/network/stcp
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network/stcp
+**Interface Usages**: 2
+
+### error
+**Field (1)**:
+- pktable.go:44 - struct field
+
+**Return (1)**:
+- pktable.go:44 - function NewTableFromFile
+
+---
+
+## pkg/transport/setup
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/setup
+**Interface Usages**: 18
+
+### TransportListener
+**Field (2)**:
+- visor.go:27 - struct field
+- visor.go:47 - field ts
+
+**Return (1)**:
+- visor.go:27 - function NewTransportListener
+
+### context.Context
+**Field (1)**:
+- visor.go:47 - field ctx
+
+**Parameter (2)**:
+- visor.go:47 - method *TransportListener.Serve
+- visor.go:27 - function NewTransportListener
+
+### dmsg.Client
+**Field (1)**:
+- visor.go:20 - field dmsgC
+
+**Parameter (1)**:
+- visor.go:27 - function NewTransportListener
+
+### error
+**Field (1)**:
+- rpc.go:47 - struct field
+
+**Return (4)**:
+- visor.go:27 - function NewTransportListener
+- rpc.go:47 - method *TransportGateway.AddTransport
+- rpc.go:81 - method *TransportGateway.GetTransports
+- rpc.go:66 - method *TransportGateway.RemoveTransport
+
+### logging.Logger
+**Field (1)**:
+- rpc.go:19 - field log
+
+### logging.MasterLogger
+**Field (1)**:
+- visor.go:27 - field masterLogger
+
+**Parameter (1)**:
+- visor.go:27 - function NewTransportListener
+
+### transport.Manager
+**Field (1)**:
+- visor.go:27 - field tm
+
+**Parameter (1)**:
+- visor.go:27 - function NewTransportListener
+
+---
+
+## pkg/transport/tpdclient
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/tpdclient
+**Interface Usages**: 33
+
+### apiClient
+**Field (1)**:
+- client.go:109 - field c
+
+### context.Context
+**Field (1)**:
+- client.go:109 - field ctx
+
+**Parameter (7)**:
+- client.go:79 - method *apiClient.Delete
+- client.go:54 - method *apiClient.Post
+- client.go:109 - method *apiClient.GetTransportByID
+- client.go:134 - method *apiClient.GetTransportsByEdge
+- client.go:159 - method *apiClient.DeleteTransport
+- client.go:69 - method *apiClient.Get
+- client.go:89 - method *apiClient.RegisterTransports
+
+### error
+**Field (2)**:
+- client_test.go:116 - field err
+- client.go:159 - struct field
+
+**Return (8)**:
+- client.go:79 - method *apiClient.Delete
+- client.go:134 - method *apiClient.GetTransportsByEdge
+- client.go:69 - method *apiClient.Get
+- client.go:109 - method *apiClient.GetTransportByID
+- client.go:159 - method *apiClient.DeleteTransport
+- client.go:54 - method *apiClient.Post
+- client.go:89 - method *apiClient.RegisterTransports
+- client.go:39 - function NewHTTP
+
+### http.Client
+**Field (1)**:
+- client.go:39 - field httpC
+
+**Parameter (1)**:
+- client.go:39 - function NewHTTP
+
+### http.Handler
+**Field (2)**:
+- client_test.go:228 - struct field
+- client_test.go:228 - field next
+
+**Parameter (1)**:
+- client_test.go:228 - function authHandler
+
+**Return (1)**:
+- client_test.go:228 - function authHandler
+
+### http.ResponseWriter
+**Field (2)**:
+- client_test.go:145 - field _
+- client_test.go:115 - field w
+
+### httpauth.Client
+**Field (1)**:
+- client.go:28 - field client
+
+### logging.Logger
+**Field (1)**:
+- client.go:27 - field log
+
+### logging.MasterLogger
+**Field (1)**:
+- client.go:39 - field mLogger
+
+**Parameter (1)**:
+- client.go:39 - function NewHTTP
+
+### transport.DiscoveryClient
+**Field (1)**:
+- client.go:39 - struct field
+
+**Return (1)**:
+- client.go:39 - function NewHTTP
+
+---
+
+## pkg/transport/types
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/types
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## pkg/uptime-tracker/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/uptime-tracker/api
+**Interface Usages**: 51
+
+### chi.Router
+**Field (1)**:
+- api.go:114 - field r
+
+### context.Context
+**Field (2)**:
+- api.go:648 - field _
+- api.go:154 - field ctx
+
+**Parameter (2)**:
+- api.go:154 - method *API.RunBackgroundTasks
+- api.go:648 - method *API.updateInternalState
+
+### error
+**Field (2)**:
+- api.go:265 - struct field
+- api.go:724 - field err
+
+**Parameter (2)**:
+- api.go:300 - method *API.writeError
+- api.go:724 - method *PrivateAPI.writeError
+
+**Return (6)**:
+- api.go:220 - method *API.storeDailyData
+- api.go:229 - method *API.updateVisorsCache
+- api.go:251 - method *API.updateUptimesCache
+- api.go:757 - function retrievePkFromURL
+- api.go:265 - method *API.updateDailyUptimesCache
+- api.go:624 - method *API.generateData
+
+**Variable (1)**:
+- api.go:420 - variable err
+
+### http.Handler
+**Embedded (2)**:
+- api.go:67 - struct PrivateAPI
+- api.go:44 - struct API
+
+**Field (1)**:
+- api.go:45 - struct field
+
+### http.Header
+**Field (1)**:
+- api_test.go:145 - struct field
+
+**Return (1)**:
+- api_test.go:145 - function validHeaders
+
+### http.ResponseWriter
+**Field (1)**:
+- api.go:354 - field w
+
+**Parameter (10)**:
+- api.go:380 - method *API.handleUptimes
+- api.go:588 - method *API.chart
+- api.go:724 - method *PrivateAPI.writeError
+- api.go:701 - method *PrivateAPI.handleVisorIPs
+- api.go:300 - method *API.writeError
+- api.go:483 - method *API.handleUptime
+- api.go:330 - method *API.handleVisors
+- api.go:557 - method *API.health
+- api.go:350 - function sendGone
+- api.go:567 - method *API.writeJSON
+
+### httpauth.NonceStore
+**Field (1)**:
+- api.go:82 - field nonceStore
+
+**Parameter (1)**:
+- api.go:82 - function New
+
+### logrus.FieldLogger
+**Field (3)**:
+- api.go:584 - struct field
+- api.go:648 - field logger
+- api.go:82 - field log
+
+**Parameter (6)**:
+- api.go:648 - method *API.updateInternalState
+- api.go:154 - method *API.RunBackgroundTasks
+- api.go:677 - function NewPrivate
+- api.go:82 - function New
+- api.go:190 - method *API.dailyRoutine
+- api.go:175 - method *API.updateInternalCaches
+
+**Return (3)**:
+- api.go:719 - method *PrivateAPI.log
+- api.go:584 - method *API.logger
+- api.go:149 - method *API.log
+
+### metricsutil.RequestsInFlightCountMiddleware
+**Field (1)**:
+- api.go:47 - field reqsInFlightCountMiddleware
+
+### store.Store
+**Field (2)**:
+- api.go:48 - field store
+- api.go:677 - field s
+
+**Parameter (2)**:
+- api.go:82 - function New
+- api.go:677 - function NewPrivate
+
+---
+
+## pkg/uptime-tracker/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/uptime-tracker/store
+**Interface Usages**: 44
+
+### Store
+**Field (2)**:
+- memory_store.go:21 - struct field
+- memory_store_test.go:23 - field store
+
+**Parameter (1)**:
+- memory_store_test.go:23 - function testUptime
+
+**Return (3)**:
+- store.go:34 - function New
+- memory_store.go:21 - function NewMemoryStore
+- postgres_store.go:26 - function NewPostgresStore
+
+### error
+**Field (2)**:
+- postgres_store.go:302 - struct field
+- uptime_response.go:33 - field callingErr
+
+**Parameter (1)**:
+- uptime_response.go:33 - function makeUptimeResponse
+
+**Return (27)**:
+- postgres_store.go:296 - method *postgresStore.GetOldestEntry
+- memory_store.go:101 - method *memStore.GetUptimes
+- postgres_store.go:119 - method *postgresStore.GetUptimes
+- memory_store.go:248 - method *memStore.GetOldestEntry
+- postgres_store.go:146 - method *postgresStore.GetAllVisors
+- memory_store.go:29 - method *memStore.UpdateUptime
+- memory_store.go:252 - method *memStore.GetSpecificDayData
+- postgres_store.go:166 - method *postgresStore.GetDailyUpdateHistory
+- visors_response.go:22 - function makeVisorsResponse
+- memory_store.go:244 - method *memStore.DeleteEntries
+- postgres_store.go:187 - method *postgresStore.GetVisorsIPs
+- uptime_response.go:33 - function makeUptimeResponse
+- postgres_store.go:91 - method *postgresStore.GetAllUptimes
+- memory_store.go:74 - method *memStore.GetAllUptimes
+- postgres_store.go:230 - method *postgresStore.readAllUptimeIPMembers
+- postgres_store.go:302 - method *postgresStore.GetSpecificDayData
+- store.go:34 - function New
+- memory_store.go:144 - method *memStore.GetAllVisors
+- memory_store.go:161 - method *memStore.GetVisorsIPs
+- postgres_store.go:272 - method *postgresStore.GetNumberOfUptimesInCurrentMonth
+- memory_store.go:186 - method *memStore.GetNumberOfUptimesInCurrentMonth
+- postgres_store.go:41 - method *postgresStore.UpdateUptime
+- postgres_store.go:279 - method *postgresStore.GetNumberOfUptimesByYearAndMonth
+- memory_store.go:211 - method *memStore.GetNumberOfUptimesByYearAndMonth
+- postgres_store.go:26 - function NewPostgresStore
+- postgres_store.go:286 - method *postgresStore.DeleteEntries
+- memory_store.go:240 - method *memStore.GetDailyUpdateHistory
+
+**Variable (2)**:
+- memory_store.go:56 - variable err
+- postgres_store.go:98 - variable murError
+
+### logging.Logger
+**Field (2)**:
+- store.go:34 - field logger
+- postgres_store.go:18 - field log
+
+**Parameter (2)**:
+- postgres_store.go:26 - function NewPostgresStore
+- store.go:34 - function New
+
+### memStore
+**Field (1)**:
+- memory_store.go:248 - field s
+
+### postgresStore
+**Field (1)**:
+- postgres_store.go:286 - field s
+
+---
+
+## pkg/utclient
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/utclient
+**Interface Usages**: 40
+
+### APIClient
+**Field (1)**:
+- client.go:44 - struct field
+
+**Return (1)**:
+- client.go:44 - function NewHTTP
+
+### MockAPIClient
+**Field (2)**:
+- mock_api_client.go:17 - field _m
+- mock_api_client.go:69 - struct field
+
+**Return (1)**:
+- mock_api_client.go:66 - function NewMockAPIClient
+
+### context.Context
+**Field (3)**:
+- mock_api_client.go:37 - struct field
+- client.go:104 - field ctx
+- mock_api_client.go:17 - field _a0
+
+**Parameter (5)**:
+- client.go:74 - method *httpClient.Get
+- mock_api_client.go:47 - method *MockAPIClient.UpdateVisorUptime
+- client.go:84 - method *httpClient.UpdateVisorUptime
+- mock_api_client.go:17 - method *MockAPIClient.FetchUptimes
+- client.go:104 - method *httpClient.FetchUptimes
+
+### error
+**Field (1)**:
+- client.go:104 - struct field
+
+**Return (6)**:
+- client.go:84 - method *httpClient.UpdateVisorUptime
+- mock_api_client.go:47 - method *MockAPIClient.UpdateVisorUptime
+- client.go:44 - function NewHTTP
+- client.go:74 - method *httpClient.Get
+- client.go:104 - method *httpClient.FetchUptimes
+- mock_api_client.go:17 - method *MockAPIClient.FetchUptimes
+
+**Variable (3)**:
+- mock_api_client.go:54 - variable r0
+- client.go:46 - variable err
+- mock_api_client.go:25 - variable r1
+
+### http.Client
+**Field (1)**:
+- client.go:44 - field httpC
+
+**Parameter (1)**:
+- client.go:44 - function NewHTTP
+
+### http.Handler
+**Field (2)**:
+- client_test.go:85 - struct field
+- client_test.go:85 - field next
+
+**Parameter (1)**:
+- client_test.go:85 - function authHandler
+
+**Return (1)**:
+- client_test.go:85 - function authHandler
+
+### http.ResponseWriter
+**Field (2)**:
+- client_test.go:89 - field w
+- client_test.go:70 - field _
+
+### httpClient
+**Field (1)**:
+- client.go:74 - field c
+
+### httpauth.Client
+**Field (1)**:
+- client.go:28 - field client
+
+**Variable (1)**:
+- client.go:45 - variable client
+
+### interface{}
+**Field (1)**:
+- mock_api_client.go:66 - field t (anonymous interface)
+
+**Parameter (1)**:
+- mock_api_client.go:66 - function NewMockAPIClient (anonymous interface)
+
+### logging.Logger
+**Field (1)**:
+- client.go:31 - field log
+
+### logging.MasterLogger
+**Field (1)**:
+- client.go:44 - field mLogger
+
+**Parameter (1)**:
+- client.go:44 - function NewHTTP
+
+### mock.Mock
+**Embedded (1)**:
+- mock_api_client.go:12 - struct MockAPIClient
+
+---
+
+## pkg/util/cipherutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/cipherutil
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---
+## pkg/util/deadline
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/deadline
+**Interface Usages**: 1
+
+### time.Timer
+**Field (1)**:
+- deadline.go:12 - field timer
+
+---
+
+## pkg/util/osutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/osutil
+**Interface Usages**: 20
+
+### error
+**Field (3)**:
+- run.go:15 - struct field
+- path_check_unix.go:11 - field err
+- errors.go:8 - field Err
+
+**Parameter (2)**:
+- errors.go:13 - function NewErrorWithStderr
+- path_check_unix.go:11 - function pathErrCheck
+
+**Return (10)**:
+- run.go:46 - function RunWithResultReader
+- run.go:20 - function RunElevated
+- run.go:15 - function Run
+- run.go:25 - function RunElevatedWithResultReader
+- osutil.go:9 - function UnlinkSocketFiles
+- privileges_windows.go:16 - function ReleaseRoot
+- run.go:53 - function RunWithResult
+- privileges_windows.go:11 - function GainRoot
+- run.go:67 - function run
+- run.go:32 - function RunElevatedWithResult
+
+### io.Reader
+**Field (1)**:
+- run.go:46 - struct field
+
+**Return (2)**:
+- run.go:25 - function RunElevatedWithResultReader
+- run.go:46 - function RunWithResultReader
+
+### io.Writer
+**Field (1)**:
+- run.go:67 - field stdout
+
+**Parameter (1)**:
+- run.go:67 - function run
+
+---
+
+## pkg/util/pathutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/pathutil
+**Interface Usages**: 5
+
+### error
+**Field (1)**:
+- configpath.go:34 - struct field
+
+**Return (4)**:
+- configpath.go:34 - method *ConfigLocationType.Set
+- util.go:19 - function EnsureDir
+- util.go:29 - function AtomicWriteFile
+- util.go:52 - function AtomicAppendToFile
+
+---
+
+## pkg/util/rename
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/rename
+**Interface Usages**: 3
+
+### error
+**Field (1)**:
+- rename.go:17 - struct field
+
+**Return (2)**:
+- rename.go:17 - function Rename
+- rename.go:47 - function move
+
+---
+
+## pkg/util/rpcutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/rpcutil
+**Interface Usages**: 3
+
+### error
+**Field (1)**:
+- log_call.go:11 - field err
+
+### logrus.FieldLogger
+**Field (1)**:
+- log_call.go:11 - field log
+
+**Parameter (1)**:
+- log_call.go:11 - function LogCall
+
+---
+
+## pkg/visor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor
+**Interface Usages**: 576
+
+### Conn
+**Embedded (1)**:
+- hypervisor.go:1352 - struct httpCtx
+
+**Field (4)**:
+- visor.go:107 - field remoteVisors
+- hypervisor.go:552 - field c
+- hypervisor.go:1354 - struct field
+- hypervisor.go:66 - field selfConn
+
+**Return (1)**:
+- hypervisor.go:1344 - method *Hypervisor.visorConn
+
+### addrresolver.APIClient
+**Field (1)**:
+- visor.go:93 - field arClient
+
+### appcommon.LogStore
+**Field (1)**:
+- rpc_client.go:630 - field logS
+
+### appdisc.Factory
+**Field (1)**:
+- visor.go:99 - field serviceDisc
+
+### appevent.Broadcaster
+**Field (1)**:
+- visor.go:79 - field ebc
+
+### appnet.ForwardConn
+**Field (2)**:
+- api.go:124 - struct field
+- rpc.go:774 - field out
+
+**Parameter (1)**:
+- rpc.go:774 - method *RPC.List
+
+**Return (3)**:
+- rpc_client.go:1324 - method *mockRPCClient.List
+- rpc_client.go:576 - method *rpcClient.List
+- api.go:1648 - method *Visor.List
+
+**Variable (1)**:
+- rpc_client.go:577 - variable out
+
+### appserver.ProcManager
+**Field (1)**:
+- visor.go:97 - field procM
+
+### chi.Router
+**Field (2)**:
+- hypervisor.go:223 - field r
+- hypervisor.go:199 - struct field
+
+**Return (1)**:
+- hypervisor.go:199 - method *Hypervisor.makeMux
+
+### context.Context
+**Field (3)**:
+- init.go:339 - field ctx
+- autoconnect.go:35 - struct field
+- init.go:1388 - field _
+
+**Parameter (41)**:
+- init.go:473 - function initSystemSurvey
+- init.go:251 - function initEventBroadcaster
+- init.go:524 - function initTransport
+- init.go:1538 - function initPublicAutoconnect
+- init.go:517 - function initStcpClient
+- init.go:1643 - function connectToTpDisc
+- init.go:603 - function initTransportSetup
+- init.go:1435 - function initDmsgpty
+- init.go:512 - function initStcprClient
+- hypervisor.go:1539 - method *Hypervisor.serveDmsg
+- init.go:262 - function initAddressResolver
+- init.go:1388 - function initPublicVisor
+- init.go:629 - function initSkywireForwardConn
+- init.go:492 - function initSudphClient
+- init.go:1715 - function getErrors
+- init.go:1321 - function initEnsureTPDConcurrency
+- gui.go:316 - function getSystrayHTTPClient
+- init.go:1726 - function getHTTPClient
+- rpc_client_serve.go:16 - function isDone
+- init.go:1277 - function initEnsureVisorIsTransportable
+- init.go:193 - function initDmsgHTTP
+- init.go:1577 - function initHypervisor
+- rpc_client_serve.go:26 - function ServeRPCClient
+- init.go:1225 - function initUptimeTracker
+- init.go:478 - function initDmsgTrackers
+- autoconnect.go:318 - method *autoconnector.tryEstablishTransport
+- init.go:402 - function initDmsgHTTPLogServer
+- init.go:1179 - function initHypervisors
+- hypervisor.go:107 - method *Hypervisor.ServeRPC
+- init.go:370 - function initDmsgCtrl
+- init.go:996 - function initRouter
+- init.go:1156 - function initCLI
+- init.go:805 - function initPing
+- visor.go:234 - function NewVisor
+- init.go:339 - function initDmsg
+- init.go:329 - function initStunClient
+- init.go:295 - function initDiscovery
+- autoconnect.go:327 - method *autoconnector.fetchPubAddresses
+- autoconnect.go:58 - method *autoconnector.Run
+- init.go:1046 - function initLauncher
+- init.go:907 - function getRouteSetupHooks
+
+### dmsg.Client
+**Field (2)**:
+- visor.go:80 - field dmsgC
+- visor.go:81 - field dmsgDC
+
+**Parameter (4)**:
+- init.go:1095 - function vpnEnvMaker
+- hypervisor.go:71 - function NewHypervisor
+- hypervisor.go:1562 - function setupDmsgPtyUI
+- rpc_client_serve.go:26 - function ServeRPCClient
+
+### dmsgdisc.APIClient
+**Field (1)**:
+- visor.go:82 - field dClient
+
+### dmsgtracker.Manager
+**Field (1)**:
+- visor.go:84 - field dtm
+
+### error
+**Field (7)**:
+- rpc.go:98 - field err
+- rpc_client.go:180 - struct field
+- visor.go:104 - field runtimeErrors
+- rpc_client_serve.go:31 - field rErr
+- rpc_client_serve.go:26 - field errCh
+- init.go:765 - field sendErr
+- init.go:1200 - field hvErrs
+
+**Parameter (2)**:
+- rpc_client_serve.go:26 - function ServeRPCClient
+- init.go:765 - function sendError
+
+**Return (348)**:
+- rpc_client.go:195 - method *rpcClient.StartVPNClient
+- rpc_client.go:891 - method *mockRPCClient.FetchUptimeTrackerData
+- hypervisor.go:1501 - function ridFromParam
+- hypervisor.go:1519 - function pkSliceFromQuery
+- rpc_client.go:190 - method *rpcClient.KillApp
+- hypervisor.go:1490 - function pkFromParam
+- rpc_client.go:180 - method *rpcClient.DeregisterApp
+- hypervisor.go:1497 - function uuidFromParam
+- hypervisor.go:169 - method *Hypervisor.AddMockData
+- hypervisor.go:107 - method *Hypervisor.ServeRPC
+- rpc_client.go:200 - method *rpcClient.StopVPNClient
+- hypervisor.go:71 - function NewHypervisor
+- rpc_client.go:173 - method *rpcClient.RegisterApp
+- rpc_client.go:205 - method *rpcClient.FetchUptimeTrackerData
+- gui_windows.go:23 - function platformExecUninstall
+- rpc_client.go:212 - method *rpcClient.StartSkysocksClient
+- gui.go:463 - function openHypervisor
+- rpc_client.go:165 - method *rpcClient.AddApp
+- rpc_client.go:217 - method *rpcClient.StopSkysocksClients
+- hypervisor_test.go:428 - function decodeErrorBody
+- visor.go:396 - method *Visor.Close
+- rpc_client.go:222 - method *rpcClient.SetAppDetailedStatus
+- gui.go:97 - function readSysTrayIcon
+- rpc_client.go:160 - method *rpcClient.StartApp
+- rpc_client.go:230 - method *rpcClient.SetAppError
+- csrf.go:73 - function verifyCSRFToken
+- csrf.go:48 - function newCSRFToken
+- rpc_client.go:238 - method *rpcClient.RestartApp
+- init.go:193 - function initDmsgHTTP
+- rpc_client.go:153 - method *rpcClient.App
+- rpc_client.go:243 - method *rpcClient.SetAutoStart
+- autoconnect.go:367 - function randInt
+- visor.go:155 - function run
+- rpc_client.go:251 - method *rpcClient.SetAppPassword
+- autoconnect.go:327 - method *autoconnector.fetchPubAddresses
+- rpc_client.go:146 - method *rpcClient.Apps
+- rpc_client.go:259 - method *rpcClient.SetAppPK
+- visor.go:141 - function reload
+- init.go:251 - function initEventBroadcaster
+- rpc_client.go:267 - method *rpcClient.SetAppKillswitch
+- autoconnect.go:318 - method *autoconnector.tryEstablishTransport
+- rpc_client.go:141 - method *rpcClient.DeleteRewardAddress
+- rpc_client.go:275 - method *rpcClient.SetAppNetworkInterface
+- autoconnect.go:58 - method *autoconnector.Run
+- init.go:262 - function initAddressResolver
+- rpc_client.go:283 - method *rpcClient.SetAppSecure
+- api.go:1648 - method *Visor.List
+- rpc_client.go:135 - method *rpcClient.GetRewardAddress
+- rpc_client.go:291 - method *rpcClient.SetAppAddress
+- init.go:295 - function initDiscovery
+- api.go:1642 - method *Visor.Disconnect
+- rpc_client.go:299 - method *rpcClient.SetAppDNS
+- api.go:1585 - method *Visor.Connect
+- rpc_client.go:126 - method *rpcClient.SetRewardAddress
+- rpc_client.go:307 - method *rpcClient.DoCustomSetting
+- init.go:329 - function initStunClient
+- api.go:1574 - method *Visor.ListHTTPPorts
+- rpc_client.go:315 - method *rpcClient.LogsSince
+- api.go:1563 - method *Visor.DeregisterHTTPPort
+- rpc_client.go:119 - method *rpcClient.Uptime
+- rpc_client.go:329 - method *rpcClient.GetAppStats
+- init.go:339 - function initDmsg
+- api.go:1548 - method *Visor.RegisterHTTPPort
+- rpc_client.go:339 - method *rpcClient.GetAppError
+- api.go:1537 - method *Visor.IsDMSGClientReady
+- rpc_client.go:112 - method *rpcClient.Health
+- rpc_client.go:350 - method *rpcClient.GetAppConnectionsSummary
+- init.go:370 - function initDmsgCtrl
+- api.go:1504 - method *Visor.SetPublicAutoconnect
+- rpc_client.go:361 - method *rpcClient.TransportTypes
+- api.go:1499 - method *Visor.GetLogRotationInterval
+- rpc_client.go:105 - method *rpcClient.Overview
+- rpc_client.go:368 - method *rpcClient.Transports
+- init.go:402 - function initDmsgHTTPLogServer
+- api.go:1494 - method *Visor.SetLogRotationInterval
+- rpc_client.go:379 - method *rpcClient.Transport
+- api.go:1489 - method *Visor.GetPersistentTransports
+- rpc_client.go:98 - method *rpcClient.Summary
+- rpc_client.go:386 - method *rpcClient.AddTransport
+- init.go:473 - function initSystemSurvey
+- api.go:1483 - method *Visor.SetPersistentTransports
+- rpc_client.go:398 - method *rpcClient.RemoveTransport
+- api.go:1477 - method *Visor.SetMinHops
+- rpc_client.go:69 - method *rpcClient.Call
+- rpc_client.go:403 - method *rpcClient.RemoveAllTransports
+- init.go:478 - function initDmsgTrackers
+- rpc.go:804 - method *RPC.TestVisor
+- rpc_client.go:407 - method *rpcClient.DiscoverTransportsByPK
+- api.go:1467 - method *Visor.RuntimeLogs
+- rpc.go:797 - method *RPC.StopPing
+- rpc_client.go:413 - method *rpcClient.DiscoverTransportByID
+- api.go:1461 - method *Visor.Shutdown
+- rpc.go:789 - method *RPC.Ping
+- rpc_client.go:420 - method *rpcClient.SetPublicAutoconnect
+- init.go:492 - function initSudphClient
+- rpc.go:782 - method *RPC.DialPing
+- rpc_client.go:425 - method *rpcClient.RoutingRules
+- api.go:1456 - method *Visor.Reload
+- rpc.go:774 - method *RPC.List
+- rpc_client.go:432 - method *rpcClient.RoutingRule
+- api.go:1431 - method *Visor.RouteGroups
+- rpc.go:767 - method *RPC.Disconnect
+- rpc_client.go:439 - method *rpcClient.SaveRoutingRule
+- init.go:512 - function initStcprClient
+- rpc.go:758 - method *RPC.Connect
+- rpc_client.go:444 - method *rpcClient.RemoveRoutingRule
+- api.go:1425 - method *Visor.RemoveRoutingRule
+- rpc.go:743 - method *RPC.ListHTTPPorts
+- rpc_client.go:449 - method *rpcClient.RouteGroups
+- api.go:1420 - method *Visor.SaveRoutingRule
+- rpc.go:737 - method *RPC.DeregisterHTTPPort
+- rpc_client.go:456 - method *rpcClient.Reload
+- init.go:517 - function initStcpClient
+- rpc.go:731 - method *RPC.RegisterHTTPPort
+- rpc_client.go:461 - method *rpcClient.Shutdown
+- api.go:1415 - method *Visor.RoutingRule
+- rpc.go:722 - method *RPC.IsDMSGClientReady
+- rpc_client.go:466 - method *rpcClient.Exec
+- api.go:1362 - method *Visor.TestVisor
+- rpc.go:712 - method *RPC.Ports
+- rpc_client.go:473 - method *rpcClient.RuntimeLogs
+- init.go:524 - function initTransport
+- rpc.go:702 - method *RPC.RemoteVisors
+- rpc_client.go:480 - method *rpcClient.SetMinHops
+- api.go:1339 - method *Visor.StopPing
+- rpc.go:692 - method *RPC.ProxyServers
+- rpc_client.go:486 - method *rpcClient.SetPersistentTransports
+- api.go:1294 - method *Visor.Ping
+- rpc.go:682 - method *RPC.VPNServers
+- rpc_client.go:492 - method *rpcClient.GetPersistentTransports
+- init.go:603 - function initTransportSetup
+- rpc.go:669 - method *RPC.SetPublicAutoconnect
+- rpc_client.go:499 - method *rpcClient.SetLogRotationInterval
+- rpc_client.go:1359 - method *mockRPCClient.TestVisor
+- rpc.go:662 - method *RPC.SetPersistentTransports
+- rpc_client.go:505 - method *rpcClient.GetLogRotationInterval
+- api.go:1253 - method *Visor.DialPing
+- rpc.go:653 - method *RPC.GetPersistentTransports
+- rpc.go:646 - method *RPC.SetMinHops
+- rpc_client.go:518 - method *rpcClient.VPNServers
+- rpc_client.go:1354 - method *mockRPCClient.StopPing
+- rpc.go:638 - method *RPC.Shutdown
+- rpc.go:630 - method *RPC.Reload
+- rpc.go:616 - method *RPC.RouteGroups
+- rpc_client.go:528 - method *rpcClient.ProxyServers
+- init.go:629 - function initSkywireForwardConn
+- rpc.go:598 - method *RPC.RemoveRoutingRule
+- rpc.go:591 - method *RPC.SaveRoutingRule
+- rpc_client.go:538 - method *rpcClient.RemoteVisors
+- rpc_client.go:1349 - method *mockRPCClient.Ping
+- rpc.go:583 - method *RPC.RoutingRule
+- rpc_client.go:545 - method *rpcClient.Ports
+- api.go:1240 - method *Visor.RoutingRules
+- rpc.go:575 - method *RPC.RoutingRules
+- rpc_client.go:552 - method *rpcClient.IsDMSGClientReady
+- rpc_client.go:1344 - method *mockRPCClient.DialPing
+- rpc.go:559 - method *RPC.DiscoverTransportByID
+- rpc_client.go:559 - method *rpcClient.Connect
+- api.go:1228 - method *Visor.DiscoverTransportByID
+- rpc.go:549 - method *RPC.DiscoverTransportsByPK
+- rpc_client.go:570 - method *rpcClient.Disconnect
+- rpc_client.go:1339 - method *mockRPCClient.ListHTTPPorts
+- rpc.go:538 - method *RPC.RemoveAllTransports
+- rpc.go:531 - method *RPC.RemoveTransport
+- rpc_client.go:576 - method *rpcClient.List
+- api.go:1216 - method *Visor.DiscoverTransportsByPK
+- rpc.go:519 - method *RPC.AddTransport
+- rpc.go:500 - method *RPC.Transport
+- rpc.go:490 - method *RPC.Transports
+- rpc_client.go:583 - method *rpcClient.RegisterHTTPPort
+- rpc_client.go:1334 - method *mockRPCClient.DeregisterHTTPPort
+- rpc.go:473 - method *RPC.TransportTypes
+- rpc_client.go:588 - method *rpcClient.DeregisterHTTPPort
+- api.go:1210 - method *Visor.RemoveAllTransports
+- rpc.go:457 - method *RPC.GetAppConnectionsSummary
+- rpc_client.go:594 - method *rpcClient.ListHTTPPorts
+- rpc_client.go:1329 - method *mockRPCClient.RegisterHTTPPort
+- rpc.go:445 - method *RPC.GetAppError
+- rpc_client.go:601 - method *rpcClient.DialPing
+- api.go:1204 - method *Visor.RemoveTransport
+- rpc.go:433 - method *RPC.GetAppStats
+- rpc_client.go:606 - method *rpcClient.Ping
+- api.go:1182 - method *Visor.AddTransport
+- rpc.go:426 - method *RPC.SetAppAddress
+- rpc_client.go:613 - method *rpcClient.StopPing
+- rpc_client.go:1324 - method *mockRPCClient.List
+- rpc.go:419 - method *RPC.SetAppSecure
+- rpc_client.go:618 - method *rpcClient.TestVisor
+- api.go:1172 - method *Visor.Transport
+- rpc.go:412 - method *RPC.SetAppKillswitch
+- rpc.go:405 - method *RPC.SetAppPK
+- rpc.go:374 - method *RPC.SetAppNetworkInterface
+- rpc_client.go:635 - function NewMockRPCClient
+- rpc.go:361 - method *RPC.SetAppPassword
+- rpc_client.go:722 - method *mockRPCClient.do
+- api.go:1134 - method *Visor.Transports
+- rpc.go:348 - method *RPC.SetAutoStart
+- rpc.go:335 - method *RPC.RestartApp
+- rpc_client.go:734 - method *mockRPCClient.Overview
+- rpc_client.go:1319 - method *mockRPCClient.Disconnect
+- rpc.go:328 - method *RPC.StopSkysocksClients
+- rpc.go:321 - method *RPC.StartSkysocksClient
+- rpc_client.go:753 - method *mockRPCClient.Summary
+- api.go:1122 - method *Visor.TransportTypes
+- rpc.go:313 - method *RPC.FetchUptimeTrackerData
+- rpc_client.go:794 - method *mockRPCClient.Health
+- rpc_client.go:1314 - method *mockRPCClient.Connect
+- rpc.go:306 - method *RPC.StopVPNClient
+- rpc_client.go:803 - method *mockRPCClient.Uptime
+- api.go:1067 - method *Visor.Ports
+- rpc.go:299 - method *RPC.StartVPNClient
+- rpc_client.go:808 - method *mockRPCClient.SetRewardAddress
+- rpc_client.go:1309 - method *mockRPCClient.IsDMSGClientReady
+- rpc.go:292 - method *RPC.KillApp
+- rpc_client.go:813 - method *mockRPCClient.GetRewardAddress
+- init.go:805 - function initPing
+- rpc.go:285 - method *RPC.StopApp
+- rpc_client.go:818 - method *mockRPCClient.DeleteRewardAddress
+- rpc_client.go:1304 - method *mockRPCClient.Ports
+- rpc.go:279 - method *RPC.DeregisterApp
+- rpc_client.go:823 - method *mockRPCClient.Apps
+- api.go:1052 - method *Visor.RemoteVisors
+- rpc.go:271 - method *RPC.RegisterApp
+- rpc.go:265 - method *RPC.DoCustomSetting
+- rpc_client.go:836 - method *mockRPCClient.App
+- rpc_client.go:1299 - method *mockRPCClient.RemoteVisors
+- rpc.go:258 - method *RPC.AddApp
+- rpc.go:245 - method *RPC.StartApp
+- rpc_client.go:851 - method *mockRPCClient.StartApp
+- api.go:1031 - method *Visor.PublicVisors
+- rpc.go:235 - method *RPC.Apps
+- rpc_client.go:856 - method *mockRPCClient.AddApp
+- api.go:1010 - method *Visor.ProxyServers
+- rpc.go:225 - method *RPC.App
+- rpc_client.go:861 - method *mockRPCClient.RegisterApp
+- rpc_client.go:1294 - method *mockRPCClient.ProxyServers
+- rpc.go:218 - method *RPC.SetAppError
+- rpc_client.go:866 - method *mockRPCClient.DeregisterApp
+- api.go:989 - method *Visor.VPNServers
+- rpc.go:211 - method *RPC.SetAppDetailedStatus
+- rpc_client.go:871 - method *mockRPCClient.StopApp
+- api.go:976 - method *Visor.GetAppConnectionsSummary
+- rpc.go:183 - method *RPC.Overview
+- rpc_client.go:876 - method *mockRPCClient.KillApp
+- api.go:970 - method *Visor.GetAppError
+- rpc.go:172 - method *RPC.Summary
+- rpc_client.go:881 - method *mockRPCClient.StartVPNClient
+- rpc_client.go:1289 - method *mockRPCClient.VPNServers
+- api.go:158 - method *Visor.Overview
+- rpc_client.go:886 - method *mockRPCClient.StopVPNClient
+- api.go:960 - method *Visor.GetAppStats
+- api.go:244 - method *Visor.Summary
+- rpc_client.go:185 - method *rpcClient.StopApp
+- init.go:996 - function initRouter
+- rpc.go:132 - method *RPC.LogsSince
+- rpc_client.go:896 - method *mockRPCClient.StartSkysocksClient
+- rpc_client.go:1283 - method *mockRPCClient.GetLogRotationInterval
+- rpc.go:114 - method *RPC.DeleteRewardAddress
+- rpc_client.go:901 - method *mockRPCClient.StopSkysocksClients
+- api.go:945 - method *Visor.LogsSince
+- rpc.go:106 - method *RPC.GetRewardAddress
+- rpc_client.go:906 - method *mockRPCClient.SetAppDetailedStatus
+- rpc_client.go:1278 - method *mockRPCClient.SetLogRotationInterval
+- rpc.go:98 - method *RPC.SetRewardAddress
+- rpc.go:84 - method *RPC.Uptime
+- rpc_client.go:920 - method *mockRPCClient.SetAppError
+- api.go:924 - method *Visor.DoCustomSetting
+- rpc.go:68 - method *RPC.Health
+- rpc.go:49 - function newRPCServer
+- rpc_client.go:934 - method *mockRPCClient.RestartApp
+- rpc_client.go:1273 - method *mockRPCClient.GetPersistentTransports
+- api.go:352 - method *Visor.Health
+- rpc_client.go:939 - method *mockRPCClient.SetAutoStart
+- init.go:1046 - function initLauncher
+- api.go:360 - method *Visor.Uptime
+- rpc_client.go:1268 - method *mockRPCClient.SetPersistentTransports
+- rpc_client.go:952 - method *mockRPCClient.SetAppPassword
+- api.go:894 - method *Visor.SetAppDNS
+- init.go:1804 - function GetIP
+- init.go:1770 - function getPublicIP
+- rpc_client.go:967 - method *mockRPCClient.SetAppNetworkInterface
+- rpc_client.go:1263 - method *mockRPCClient.SetMinHops
+- api.go:365 - method *Visor.SetRewardAddress
+- init.go:1726 - function getHTTPClient
+- rpc_client.go:982 - method *mockRPCClient.SetAppPK
+- api.go:864 - method *Visor.SetAppPK
+- api.go:377 - method *Visor.GetRewardAddress
+- init.go:1715 - function getErrors
+- rpc_client.go:997 - method *mockRPCClient.SetAppKillswitch
+- rpc_client.go:1258 - method *mockRPCClient.RuntimeLogs
+- api.go:398 - method *Visor.DeleteRewardAddress
+- api.go:409 - method *Visor.Apps
+- rpc_client.go:1012 - method *mockRPCClient.SetAppSecure
+- api.go:824 - method *Visor.SetAppAddress
+- rpc_client.go:1253 - method *mockRPCClient.Exec
+- api.go:418 - method *Visor.App
+- rpc_client.go:1027 - method *mockRPCClient.SetAppAddress
+- api.go:805 - method *Visor.SetAppSecure
+- api.go:436 - method *Visor.StartApp
+- init.go:1643 - function connectToTpDisc
+- rpc_client.go:1042 - method *mockRPCClient.SetAppDNS
+- rpc_client.go:1248 - method *mockRPCClient.Shutdown
+- init.go:1156 - function initCLI
+- api.go:469 - method *Visor.AddApp
+- rpc_client.go:1057 - method *mockRPCClient.DoCustomSetting
+- rpc_client.go:1243 - method *mockRPCClient.Reload
+- api.go:478 - method *Visor.RegisterApp
+- init.go:1577 - function initHypervisor
+- rpc_client.go:1070 - method *mockRPCClient.LogsSince
+- api.go:780 - method *Visor.SetAppKillswitch
+- api.go:490 - method *Visor.DeregisterApp
+- rpc_client.go:1074 - method *mockRPCClient.GetAppStats
+- rpc_client.go:1219 - method *mockRPCClient.RouteGroups
+- api.go:502 - method *Visor.StopApp
+- rpc_client.go:1078 - method *mockRPCClient.GetAppError
+- api.go:755 - method *Visor.SetAppNetworkInterface
+- init.go:1538 - function initPublicAutoconnect
+- rpc_client.go:1083 - method *mockRPCClient.GetAppConnectionsSummary
+- rpc_client.go:1213 - method *mockRPCClient.RemoveRoutingRule
+- api.go:515 - method *Visor.KillApp
+- rpc_client.go:1088 - method *mockRPCClient.TransportTypes
+- init.go:1179 - function initHypervisors
+- api.go:527 - method *Visor.StartVPNClient
+- rpc_client.go:1097 - method *mockRPCClient.Transports
+- rpc_client.go:1208 - method *mockRPCClient.SaveRoutingRule
+- init.go:1435 - function initDmsgpty
+- api.go:720 - method *Visor.SetAppPassword
+- rpc_client.go:1134 - method *mockRPCClient.Transport
+- rpc_client.go:1203 - method *mockRPCClient.RoutingRule
+- api.go:568 - method *Visor.StopVPNClient
+- init.go:1388 - function initPublicVisor
+- rpc_client.go:1149 - method *mockRPCClient.AddTransport
+- api.go:705 - method *Visor.SetAutoStart
+- api.go:581 - method *Visor.FetchUptimeTrackerData
+- api.go:598 - method *Visor.StartSkysocksClient
+- rpc_client.go:1164 - method *mockRPCClient.RemoveTransport
+- rpc_client.go:1198 - method *mockRPCClient.RoutingRules
+- init.go:1321 - function initEnsureTPDConcurrency
+- api.go:646 - method *Visor.StopSkysocksClients
+- rpc_client.go:1177 - method *mockRPCClient.RemoveAllTransports
+- init.go:1225 - function initUptimeTracker
+- api.go:665 - method *Visor.SetAppDetailedStatus
+- init.go:1277 - function initEnsureVisorIsTransportable
+- rpc_client.go:1184 - method *mockRPCClient.DiscoverTransportsByPK
+- rpc_client.go:1193 - method *mockRPCClient.SetPublicAutoconnect
+- api.go:677 - method *Visor.SetAppError
+- rpc_client.go:1188 - method *mockRPCClient.DiscoverTransportByID
+- api.go:690 - method *Visor.RestartApp
+
+**Variable (1)**:
+- api.go:529 - variable err
+
+### http.Client
+**Field (5)**:
+- init.go:1726 - struct field
+- gui.go:174 - field httpClient
+- hypervisor_test.go:102 - field client
+- gui.go:292 - field httpC
+- visor.go:83 - field dmsgHTTP
+
+**Parameter (5)**:
+- gui.go:174 - function initVpnClientBtn
+- hypervisor_test.go:110 - function testCase
+- autoconnect.go:47 - function MakeConnector
+- gui.go:292 - function getAvailPublicVPNServers
+- hypervisor_test.go:102 - function testCases
+
+**Return (3)**:
+- init.go:1726 - function getHTTPClient
+- hypervisor_test.go:65 - function makeStartNode
+- gui.go:316 - function getSystrayHTTPClient
+
+### http.Handler
+**Field (1)**:
+- hypervisor.go:195 - struct field
+
+**Return (1)**:
+- hypervisor.go:195 - method *Hypervisor.HTTPHandler
+
+### http.ResponseWriter
+**Field (1)**:
+- hypervisor.go:379 - field w
+
+**Parameter (4)**:
+- hypervisor.go:1442 - method *Hypervisor.tpCtx
+- hypervisor.go:1379 - method *Hypervisor.visorCtx
+- hypervisor.go:1422 - method *Hypervisor.appCtx
+- hypervisor.go:1473 - method *Hypervisor.routeCtx
+
+### io.ReadWriteCloser
+**Field (1)**:
+- rpc_client.go:48 - field conn
+
+**Parameter (1)**:
+- rpc_client.go:55 - function NewRPCClient
+
+### io.Reader
+**Field (3)**:
+- hypervisor_test.go:96 - field ReqBody
+- hypervisor_test.go:137 - field body
+- hypervisor_test.go:428 - field rb
+
+**Parameter (1)**:
+- hypervisor_test.go:428 - function decodeErrorBody
+
+**Variable (1)**:
+- cmd.go:272 - variable r
+
+### launcher.AppLauncher
+**Field (1)**:
+- visor.go:98 - field appL
+
+### launcher.EnvMaker
+**Field (1)**:
+- init.go:1095 - struct field
+
+**Return (1)**:
+- init.go:1095 - function vpnEnvMaker
+
+### logging.Logger
+**Field (4)**:
+- init.go:193 - field log
+- init.go:370 - field _
+- gui.go:513 - field logger
+- init.go:191 - struct field
+
+**Parameter (41)**:
+- init.go:791 - function closeConn
+- init.go:1538 - function initPublicAutoconnect
+- init.go:1046 - function initLauncher
+- init.go:370 - function initDmsgCtrl
+- init.go:731 - function forward
+- init.go:402 - function initDmsgHTTPLogServer
+- gui.go:513 - function rpcClientSystray
+- init.go:339 - function initDmsg
+- init.go:688 - function handleServerConn
+- init.go:1321 - function initEnsureTPDConcurrency
+- init.go:629 - function initSkywireForwardConn
+- init.go:329 - function initStunClient
+- init.go:1388 - function initPublicVisor
+- init.go:473 - function initSystemSurvey
+- gui.go:292 - function getAvailPublicVPNServers
+- init.go:1277 - function initEnsureVisorIsTransportable
+- init.go:295 - function initDiscovery
+- init.go:1179 - function initHypervisors
+- survey.go:19 - function GenerateSurvey
+- api.go:1652 - function isPortAvailable
+- hypervisor.go:1539 - method *Hypervisor.serveDmsg
+- init.go:478 - function initDmsgTrackers
+- init.go:765 - function sendError
+- init.go:492 - function initSudphClient
+- init.go:856 - function handlePingConn
+- init.go:1156 - function initCLI
+- init.go:1643 - function connectToTpDisc
+- init.go:603 - function initTransportSetup
+- init.go:1435 - function initDmsgpty
+- init.go:805 - function initPing
+- autoconnect.go:47 - function MakeConnector
+- init.go:193 - function initDmsgHTTP
+- init.go:251 - function initEventBroadcaster
+- init.go:1225 - function initUptimeTracker
+- init.go:512 - function initStcprClient
+- init.go:524 - function initTransport
+- init.go:1577 - function initHypervisor
+- init.go:262 - function initAddressResolver
+- init.go:907 - function getRouteSetupHooks
+- init.go:517 - function initStcpClient
+- init.go:996 - function initRouter
+
+### logging.MasterLogger
+**Field (4)**:
+- init.go:148 - field logger
+- withoutsystray.go:30 - field log
+- visor.go:137 - struct field
+- etc.go:56 - field mLog
+
+**Parameter (7)**:
+- autoconnect.go:47 - function MakeConnector
+- withoutsystray.go:30 - function setStopFunction
+- init.go:148 - function registerModules
+- gui.go:174 - function initVpnClientBtn
+- withoutsystray.go:17 - function setStopFunctionSystray
+- etc.go:56 - function logBuildInfo
+- gui.go:316 - function getSystrayHTTPClient
+
+**Return (2)**:
+- visor.go:345 - function initLogger
+- visor.go:137 - method *Visor.MasterLogger
+
+### logrus.FieldLogger
+**Field (2)**:
+- rpc_client.go:46 - field log
+- hypervisor.go:294 - struct field
+
+**Parameter (2)**:
+- rpc_client_serve.go:26 - function ServeRPCClient
+- rpc_client.go:55 - function NewRPCClient
+
+**Return (1)**:
+- hypervisor.go:294 - method *Hypervisor.log
+
+### logstore.Store
+**Field (2)**:
+- visor.go:74 - field logstore
+- visor.go:463 - field store
+
+**Parameter (1)**:
+- visor.go:463 - method *Visor.SetLogstore
+
+### mockRPCClient
+**Field (2)**:
+- rpc_client.go:906 - field mc
+- rpc_client.go:896 - struct field
+
+### net.Conn
+**Field (2)**:
+- ping.go:12 - field conn
+- init.go:731 - field remoteConn
+
+**Parameter (5)**:
+- init.go:856 - function handlePingConn
+- init.go:791 - function closeConn
+- init.go:688 - function handleServerConn
+- init.go:731 - function forward
+- init.go:765 - function sendError
+
+**Variable (1)**:
+- api.go:1268 - variable conn
+
+### rfclient.Client
+**Field (1)**:
+- visor.go:95 - field rfClient
+
+### router.Router
+**Field (1)**:
+- visor.go:94 - field router
+
+### routing.RuleConsumeFields
+**Embedded (1)**:
+- hypervisor.go:1147 - struct routeGroupResp
+
+### rpc.Client
+**Field (1)**:
+- rpc_client.go:49 - field client
+
+### rpc.Server
+**Field (2)**:
+- rpc_client_serve.go:26 - field rpcS
+- rpc.go:49 - struct field
+
+**Parameter (1)**:
+- rpc_client_serve.go:26 - function ServeRPCClient
+
+**Return (1)**:
+- rpc.go:49 - function newRPCServer
+
+### rpcClient
+**Field (1)**:
+- rpc_client.go:588 - field rc
+
+### servicedisc.HTTPClient
+**Field (1)**:
+- autoconnect.go:39 - field client
+
+### servicedisc.Service
+**Field (2)**:
+- api.go:1010 - struct field
+- rpc.go:692 - field out
+
+**Parameter (2)**:
+- rpc.go:682 - method *RPC.VPNServers
+- rpc.go:692 - method *RPC.ProxyServers
+
+**Return (7)**:
+- rpc_client.go:1289 - method *mockRPCClient.VPNServers
+- rpc_client.go:1294 - method *mockRPCClient.ProxyServers
+- api.go:989 - method *Visor.VPNServers
+- rpc_client.go:528 - method *rpcClient.ProxyServers
+- api.go:1010 - method *Visor.ProxyServers
+- api.go:1031 - method *Visor.PublicVisors
+- rpc_client.go:518 - method *rpcClient.VPNServers
+
+**Variable (1)**:
+- autoconnect.go:329 - variable services
+
+### strings.Builder
+**Variable (1)**:
+- api.go:1468 - variable builder
+
+### sync.RWMutex
+**Embedded (1)**:
+- rpc_client.go:625 - struct mockRPCClient
+
+### transport.DiscoveryClient
+**Field (1)**:
+- visor.go:468 - struct field
+
+**Return (2)**:
+- init.go:1643 - function connectToTpDisc
+- visor.go:468 - method *Visor.tpDiscClient
+
+**Variable (1)**:
+- init.go:1668 - variable tpdC
+
+### transport.LogStore
+**Variable (1)**:
+- init.go:534 - variable logS
+
+### transport.ManagedTransport
+**Field (2)**:
+- api.go:168 - field tp
+- autoconnect.go:349 - field trs
+
+**Parameter (2)**:
+- rpc.go:156 - function newTransportSummary
+- autoconnect.go:349 - method *autoconnector.filterDuplicates
+
+### transport.Manager
+**Field (2)**:
+- autoconnect.go:47 - field tm
+- visor.go:92 - field tpM
+
+**Parameter (2)**:
+- rpc.go:156 - function newTransportSummary
+- autoconnect.go:47 - function MakeConnector
+
+### usermanager.UserManager
+**Field (1)**:
+- hypervisor.go:63 - field users
+
+### utclient.APIClient
+**Field (1)**:
+- visor.go:77 - field uptimeTracker
+
+---
+
+## pkg/visor/dmsgtracker
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/dmsgtracker
+**Interface Usages**: 26
+
+### DmsgTracker
+**Field (2)**:
+- dmsg_tracker.go:70 - field dt
+- dmsg_tracker.go:87 - field dts
+
+**Return (1)**:
+- dmsg_tracker.go:39 - function newDmsgTracker
+
+### Manager
+**Field (2)**:
+- dmsg_tracker.go:286 - field dtm
+- dmsg_tracker.go:95 - struct field
+
+**Return (1)**:
+- dmsg_tracker.go:95 - function NewDmsgTrackerManager
+
+### context.Context
+**Field (1)**:
+- dmsg_tracker.go:70 - field ctx
+
+**Parameter (6)**:
+- dmsg_tracker.go:210 - method *Manager.establishTracker
+- dmsg_tracker.go:141 - method *Manager.updateAllTrackers
+- dmsg_tracker.go:39 - function newDmsgTracker
+- dmsg_tracker.go:256 - method *Manager.GetBulk
+- dmsg_tracker.go:179 - method *Manager.ShouldGet
+- dmsg_tracker.go:70 - method *DmsgTracker.Update
+
+### dmsg.Client
+**Field (2)**:
+- dmsg_tracker.go:39 - field dmsgC
+- dmsg_tracker.go:95 - field dc
+
+**Parameter (2)**:
+- dmsg_tracker.go:39 - function newDmsgTracker
+- dmsg_tracker.go:95 - function NewDmsgTrackerManager
+
+### error
+**Field (2)**:
+- dmsg_tracker.go:215 - field err
+- dmsg_tracker.go:70 - struct field
+
+**Return (4)**:
+- dmsg_tracker.go:39 - function newDmsgTracker
+- dmsg_tracker.go:179 - method *Manager.ShouldGet
+- dmsg_tracker.go:286 - method *Manager.Close
+- dmsg_tracker.go:70 - method *DmsgTracker.Update
+
+### logging.Logger
+**Field (1)**:
+- dmsg_tracker.go:85 - field log
+
+### logging.MasterLogger
+**Field (1)**:
+- dmsg_tracker.go:95 - field mLog
+
+**Parameter (1)**:
+- dmsg_tracker.go:95 - function NewDmsgTrackerManager
+
+---
+
+## pkg/visor/logserver
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/logserver
+**Interface Usages**: 7
+
+### gin.Context
+**Field (1)**:
+- api.go:68 - field c
+
+**Parameter (1)**:
+- api.go:106 - method *API.health
+
+### http.Handler
+**Embedded (1)**:
+- api.go:24 - struct API
+
+**Field (1)**:
+- api.go:25 - struct field
+
+### logging.Logger
+**Field (2)**:
+- api.go:32 - field log
+- api.go:27 - field logger
+
+**Parameter (1)**:
+- api.go:32 - function New
+
+---
+
+## pkg/visor/logstore
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/logstore
+**Interface Usages**: 5
+
+### Store
+**Field (1)**:
+- logstore.go:27 - struct field
+
+**Return (1)**:
+- logstore.go:27 - function MakeStore
+
+### error
+**Field (1)**:
+- logstore.go:73 - struct field
+
+**Return (1)**:
+- logstore.go:73 - method *store.Fire
+
+### logrus.Formatter
+**Field (1)**:
+- logstore.go:41 - field formatter
+
+---
+
+## pkg/visor/rewardconfig
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/rewardconfig
+**Interface Usages**: 3
+
+### error
+**Field (1)**:
+- reward.go:17 - struct field
+
+**Return (2)**:
+- reward.go:17 - function SetReward
+- reward.go:30 - function GetReward
+
+---
+
+## pkg/visor/usermanager
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/usermanager
+**Interface Usages**: 57
+
+### BoltUserStore
+**Field (2)**:
+- user.go:163 - field s
+- user.go:111 - struct field
+
+**Return (1)**:
+- user.go:111 - function NewBoltUserStore
+
+### SingleUserStore
+**Field (2)**:
+- user.go:210 - field s
+- user.go:193 - struct field
+
+**Return (1)**:
+- user.go:193 - function NewSingleUserStore
+
+### User
+**Field (3)**:
+- user.go:130 - field user
+- user.go:77 - field u
+- user_manager.go:362 - struct field
+
+**Parameter (4)**:
+- user.go:210 - method *SingleUserStore.AddUser
+- user.go:219 - method *SingleUserStore.SetUser
+- user.go:163 - method *BoltUserStore.SetUser
+- user.go:146 - method *BoltUserStore.AddUser
+
+**Return (4)**:
+- user.go:201 - method *SingleUserStore.User
+- user_manager.go:362 - method *UserManager.session
+- user.go:130 - method *BoltUserStore.User
+- user.go:87 - function DecodeUser
+
+**Variable (1)**:
+- user_manager.go:220 - variable user
+
+### UserManager
+**Field (2)**:
+- user_manager.go:318 - field s
+- user_manager.go:63 - struct field
+
+**Return (1)**:
+- user_manager.go:63 - function NewUserManager
+
+### UserStore
+**Embedded (1)**:
+- user.go:187 - struct SingleUserStore
+
+**Field (3)**:
+- user.go:193 - field users
+- user_manager.go:56 - field db
+- user.go:188 - struct field
+
+**Parameter (2)**:
+- user.go:193 - function NewSingleUserStore
+- user_manager.go:63 - function NewUserManager
+
+### bytes.Buffer
+**Variable (1)**:
+- user.go:78 - variable buf
+
+### error
+**Field (2)**:
+- user.go:77 - struct field
+- user_test.go:16 - field err
+
+**Return (17)**:
+- user.go:163 - method *BoltUserStore.SetUser
+- user_manager.go:322 - method *UserManager.delSession
+- user.go:130 - method *BoltUserStore.User
+- user.go:77 - method *User.Encode
+- user_manager.go:318 - method *UserManager.Close
+- user.go:210 - method *SingleUserStore.AddUser
+- user.go:244 - function checkPasswordFormat
+- user_manager.go:291 - method *UserManager.newSession
+- user.go:180 - method *BoltUserStore.RemoveUser
+- user.go:60 - method *User.SetPassword
+- user.go:201 - method *SingleUserStore.User
+- user.go:87 - function DecodeUser
+- user.go:111 - function NewBoltUserStore
+- user.go:219 - method *SingleUserStore.SetUser
+- user.go:228 - method *SingleUserStore.RemoveUser
+- user.go:146 - method *BoltUserStore.AddUser
+- user.go:252 - function checkPasswordStrength
+
+### http.Handler
+**Field (2)**:
+- user_manager.go:145 - field next
+- user_manager.go:145 - struct field
+
+**Parameter (1)**:
+- user_manager.go:145 - method *UserManager.Authorize
+
+**Return (1)**:
+- user_manager.go:145 - method *UserManager.Authorize
+
+### http.ResponseWriter
+**Field (1)**:
+- user_manager.go:134 - field w
+
+**Parameter (2)**:
+- user_manager.go:291 - method *UserManager.newSession
+- user_manager.go:322 - method *UserManager.delSession
+
+### logging.Logger
+**Field (1)**:
+- user_manager.go:54 - field log
+
+### logging.MasterLogger
+**Field (1)**:
+- user_manager.go:63 - field mLog
+
+**Parameter (1)**:
+- user_manager.go:63 - function NewUserManager
+
+---
+
+## pkg/visor/visorconfig
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/visorconfig
+**Interface Usages**: 58
+
+### Launcher
+**Field (3)**:
+- v1_test.go:208 - field wantConf
+- v1_test.go:15 - field conf
+- v1.go:30 - field Launcher
+
+**Parameter (3)**:
+- v1.go:424 - function deleteAppArg
+- v1.go:356 - function updateBoolArg
+- v1.go:313 - function updateStringArg
+
+### LogStore
+**Field (1)**:
+- v1.go:61 - field LogStore
+
+### Transport
+**Field (1)**:
+- v1.go:27 - field Transport
+
+### UptimeTracker
+**Field (1)**:
+- v1.go:29 - field UptimeTracker
+
+### error
+**Field (2)**:
+- v1.go:252 - struct field
+- common.go:79 - field err
+
+**Return (27)**:
+- read.go:13 - function Reader
+- v1.go:116 - method *V1.UpdateAppAutostart
+- hypervisorconfig.go:146 - method *HypervisorConfig.Parse
+- v1.go:245 - method *V1.GetPersistentTransports
+- v1.go:206 - method *V1.DeleteAppArg
+- v1.go:252 - method *V1.UpdateLogRotationInterval
+- types.go:32 - method *Duration.UnmarshalJSON
+- v1.go:261 - method *V1.GetLogRotationInterval
+- v1.go:174 - method *V1.UpdateAppArgBatch
+- v1.go:268 - method *V1.UpdatePublicAutoconnect
+- parse.go:23 - function Parse
+- hypervisorconfig.go:45 - method *Key.UnmarshalText
+- v1.go:277 - method *V1.AddAppConfig
+- v1.go:143 - method *V1.UpdateAppArg
+- v1.go:236 - method *V1.UpdatePersistentTransports
+- v1.go:227 - method *V1.UpdateMinHops
+- read.go:22 - function ReadFile
+- config.go:133 - function MakeDefaultConfig
+- hypervisorconfig.go:40 - method Key.MarshalText
+- common.go:79 - method *Common.flush
+- values_windows.go:54 - function SystemSurvey
+- v1.go:105 - function Reload
+- common.go:64 - method *Common.ensureKeys
+- v1.go:97 - method *V1.Flush
+- common.go:37 - function NewCommon
+- read.go:35 - function ReadRaw
+- types.go:27 - method Duration.MarshalJSON
+
+**Variable (1)**:
+- common.go:72 - variable err
+
+### io.Reader
+**Field (1)**:
+- parse.go:23 - field r
+
+**Parameter (2)**:
+- read.go:13 - function Reader
+- parse.go:23 - function Parse
+
+### launcher.AppLauncher
+**Field (1)**:
+- v1.go:277 - field launch
+
+**Parameter (5)**:
+- v1.go:277 - method *V1.AddAppConfig
+- v1.go:206 - method *V1.DeleteAppArg
+- v1.go:116 - method *V1.UpdateAppAutostart
+- v1.go:143 - method *V1.UpdateAppArg
+- v1.go:174 - method *V1.UpdateAppArgBatch
+
+### logging.Logger
+**Field (1)**:
+- parse.go:23 - field log
+
+**Parameter (1)**:
+- parse.go:23 - function Parse
+
+### logging.MasterLogger
+**Field (3)**:
+- config.go:133 - field log
+- services.go:15 - field mLog
+- common.go:55 - struct field
+
+**Parameter (4)**:
+- common.go:60 - method *Common.SetLogger
+- services.go:15 - function Fetch
+- common.go:37 - function NewCommon
+- config.go:133 - function MakeDefaultConfig
+
+**Return (1)**:
+- common.go:55 - method *Common.MasterLogger
+
+---
+
+## pkg/visor/visorinit
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/visorinit
+**Interface Usages**: 11
+
+### context.Context
+**Field (2)**:
+- module.go:106 - field ctx
+- module.go:34 - field _
+
+**Parameter (2)**:
+- module.go:89 - method *Module.Wait
+- module.go:106 - method *Module.InitConcurrent
+
+### error
+**Field (2)**:
+- module.go:34 - struct field
+- module.go:25 - field err
+
+**Return (1)**:
+- module.go:89 - method *Module.Wait
+
+### logging.Logger
+**Field (2)**:
+- module.go:30 - field log
+- module.go:34 - field _
+
+### logging.MasterLogger
+**Field (1)**:
+- module.go:42 - field ml
+
+**Parameter (1)**:
+- module.go:42 - function MakeModule
+
+---
+
+## scripts/mac_installer/desktop-deinstaller
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/scripts/mac_installer/desktop-deinstaller
+**Interface Usages**: 2
+
+### error
+**Field (1)**:
+- deinstaller.go:27 - struct field
+
+**Return (1)**:
+- deinstaller.go:27 - function uninstall
+
+---
+
+## static/icons
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/static/icons
+**Interface Usages**: 0
+
+*No interface usage found*
+
+---

@@ -1,0 +1,4651 @@
+# Skywire Repository Function Listings
+
+## Analysis Summary
+- Total compilation units analyzed: 153
+- Total functions: 1187
+- Total methods: 1618
+- Total functions + methods: 2805
+
+---
+
+## cmd/address-resolver
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/address-resolver
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - address-resolver.go:9
+- **main** (private) - `main()` - address-resolver.go:13
+
+---
+
+## cmd/address-resolver/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/address-resolver/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:220
+- **init** (private) - `init()` - root.go:54
+
+---
+
+## cmd/apps/skychat
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skychat
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - skychat.go:11
+- **main** (private) - `main()` - skychat.go:19
+
+---
+
+## cmd/apps/skychat/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skychat/commands
+**Functions**: 11
+
+### Functions
+- **Execute** (public) - `Execute()` - skychat.go:143
+- **getFileSystem** (private) - `getFileSystem() http.FileSystem` - skychat.go:290
+- **handleConn** (private) - `handleConn(conn net.Conn)` - skychat.go:178
+- **handleIPCSignal** (private) - `handleIPCSignal(client *ipc.Client)` - skychat.go:298
+- **init** (private) - `init()` - skychat.go:54
+- **listenLoop** (private) - `listenLoop()` - skychat.go:149
+- **messageHandler** (private) - `messageHandler(ctx context.Context) func(w http.ResponseWriter, rreq *http.Request)` - skychat.go:205
+- **setAppError** (private) - `setAppError(appCl *app.Client, appErr error)` - skychat.go:327
+- **setAppPort** (private) - `setAppPort(appCl *app.Client, port routing.Port)` - skychat.go:333
+- **setAppStatus** (private) - `setAppStatus(appCl *app.Client, status appserver.AppDetailedStatus)` - skychat.go:321
+- **sseHandler** (private) - `sseHandler(w http.ResponseWriter, req *http.Request)` - skychat.go:260
+
+---
+
+## cmd/apps/skysocks
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skysocks
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - skysocks.go:11
+- **main** (private) - `main()` - skysocks.go:19
+
+---
+
+## cmd/apps/skysocks-client
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skysocks-client
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - skysocks-client.go:11
+- **main** (private) - `main()` - skysocks-client.go:19
+
+---
+
+## cmd/apps/skysocks-client/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skysocks-client/commands
+**Functions**: 7
+
+### Functions
+- **Execute** (public) - `Execute()` - skysocks-client.go:206
+- **dialServer** (private) - `dialServer(ctx context.Context, appCl *app.Client, pk cipher.PubKey) (net.Conn, error)` - skysocks-client.go:143
+- **httpProxy** (private) - `httpProxy(ctx context.Context, httpAddr, sockscAddr string)` - skysocks-client.go:180
+- **init** (private) - `init()` - skysocks-client.go:47
+- **setAppErr** (private) - `setAppErr(appCl *app.Client, err error)` - skysocks-client.go:162
+- **setAppPort** (private) - `setAppPort(appCl *app.Client, port routing.Port)` - skysocks-client.go:174
+- **setAppStatus** (private) - `setAppStatus(appCl *app.Client, status appserver.AppDetailedStatus)` - skysocks-client.go:168
+
+---
+
+## cmd/apps/skysocks/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/skysocks/commands
+**Functions**: 5
+
+### Functions
+- **Execute** (public) - `Execute()` - skysocks.go:120
+- **init** (private) - `init()` - skysocks.go:31
+- **setAppError** (private) - `setAppError(appCl *app.Client, appErr error)` - skysocks.go:107
+- **setAppPort** (private) - `setAppPort(appCl *app.Client, port routing.Port)` - skysocks.go:113
+- **setAppStatus** (private) - `setAppStatus(appCl *app.Client, status appserver.AppDetailedStatus)` - skysocks.go:101
+
+---
+
+## cmd/apps/vpn-client
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/vpn-client
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - vpn-client.go:11
+- **main** (private) - `main()` - vpn-client.go:19
+
+---
+
+## cmd/apps/vpn-client/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/vpn-client/commands
+**Functions**: 5
+
+### Functions
+- **Execute** (public) - `Execute()` - vpn-client.go:238
+- **init** (private) - `init()` - vpn-client.go:37
+- **setAppErr** (private) - `setAppErr(appCl *app.Client, err error)` - vpn-client.go:219
+- **setAppPort** (private) - `setAppPort(appCl *app.Client, port routing.Port)` - vpn-client.go:231
+- **setAppStatus** (private) - `setAppStatus(appCl *app.Client, status appserver.AppDetailedStatus)` - vpn-client.go:225
+
+---
+
+## cmd/apps/vpn-server
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/vpn-server
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - vpn-server.go:11
+- **main** (private) - `main()` - vpn-server.go:19
+
+---
+
+## cmd/apps/vpn-server/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/apps/vpn-server/commands
+**Functions**: 5
+
+### Functions
+- **Execute** (public) - `Execute()` - vpn-server.go:161
+- **init** (private) - `init()` - vpn-server.go:39
+- **setAppErr** (private) - `setAppErr(appCl *app.Client, err error)` - vpn-server.go:142
+- **setAppPort** (private) - `setAppPort(appCl *app.Client, port routing.Port)` - vpn-server.go:154
+- **setAppStatus** (private) - `setAppStatus(appCl *app.Client, status appserver.AppDetailedStatus)` - vpn-server.go:148
+
+---
+
+## cmd/conf
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/conf
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - conf.go:9
+- **main** (private) - `main()` - conf.go:13
+
+---
+
+## cmd/conf/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/conf/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:60
+- **init** (private) - `init()` - root.go:13
+
+---
+
+## cmd/config-bootstrapper
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/config-bootstrapper
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - config.go:9
+- **main** (private) - `main()` - config.go:13
+
+---
+
+## cmd/config-bootstrapper/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/config-bootstrapper/commands
+**Functions**: 3
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:161
+- **init** (private) - `init()` - root.go:39
+- **readConfig** (private) - `readConfig(log *logging.Logger, confPath string) config api.Config` - root.go:130
+
+---
+
+## cmd/gen
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/gen
+**Functions**: 3
+
+### Functions
+- **init** (private) - `init()` - gen.go:20
+- **init** (private) - `init()` - gen.go:69
+- **main** (private) - `main()` - gen.go:77
+
+---
+
+## cmd/network-monitor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/network-monitor
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - network-monitor.go:9
+- **main** (private) - `main()` - network-monitor.go:13
+
+---
+
+## cmd/network-monitor/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/network-monitor/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:130
+- **init** (private) - `init()` - root.go:39
+
+---
+
+## cmd/route-finder
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/route-finder
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - route-finder.go:9
+- **main** (private) - `main()` - route-finder.go:13
+
+---
+
+## cmd/route-finder/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/route-finder/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:187
+- **init** (private) - `init()` - root.go:47
+
+---
+
+## cmd/service-discovery
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/service-discovery
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - service-discovery.go:9
+- **main** (private) - `main()` - service-discovery.go:13
+
+---
+
+## cmd/service-discovery/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/service-discovery/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:206
+- **init** (private) - `init()` - root.go:53
+
+---
+
+## cmd/setup-node
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/setup-node
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - setup-node.go:9
+- **main** (private) - `main()` - setup-node.go:13
+
+---
+
+## cmd/setup-node/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/setup-node/commands
+**Functions**: 3
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:193
+- **init** (private) - `init()` - root.go:41
+- **prepareMetrics** (private) - `prepareMetrics(log logrus.FieldLogger) setupmetrics.Metrics` - root.go:108
+
+---
+
+## cmd/skycoin-skywire
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skycoin-skywire
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - skywire.go:14
+- **main** (private) - `main()` - skywire.go:23
+
+---
+
+## cmd/skywire
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - skywire.go:12
+- **main** (private) - `main()` - skywire.go:16
+
+---
+
+## cmd/skywire-cli
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - skywire-cli.go:9
+- **main** (private) - `main()` - skywire-cli.go:13
+
+---
+
+## cmd/skywire-cli/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:209
+- **init** (private) - `init()` - root.go:37
+
+---
+
+## cmd/skywire-cli/commands/completion
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/completion
+**Functions**: 0
+
+*No functions found*
+
+## cmd/skywire-cli/commands/config
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/config
+**Functions**: 18
+
+### Functions
+- **TestConfigGenCmdFunc** (public) - `TestConfigGenCmdFunc(t *testing.T)` - gen_test.go:38
+- **changeAppsConfig** (private) - `changeAppsConfig(conf *visorconfig.V1, appName string, argName string, argValue string)` - update.go:158
+- **checkConfig** (private) - `checkConfig()` - update.go:218
+- **fetchServicesConf** (private) - `fetchServicesConf() (servicesConf, error)` - services.go:56
+- **getInterfaceNames** (private) - `getInterfaceNames() string` - gen.go:975
+- **init** (private) - `init()` - parse.go:37
+- **init** (private) - `init()` - services.go:18
+- **init** (private) - `init()` - update.go:22
+- **init** (private) - `init()` - gen.go:69
+- **init** (private) - `init()` - gen_test.go:16
+- **initUpdate** (private) - `initUpdate() conf *visorconfig.V1` - update.go:200
+- **resetAppsConfig** (private) - `resetAppsConfig(conf *visorconfig.V1, appName string)` - update.go:177
+- **saveConfig** (private) - `saveConfig(conf *visorconfig.V1)` - update.go:186
+- **scriptExecArray** (private) - `scriptExecArray(s string) string` - root.go:177
+- **scriptExecBool** (private) - `scriptExecBool(s string) bool` - root.go:145
+- **scriptExecInt** (private) - `scriptExecInt(s string) int` - root.go:199
+- **scriptExecString** (private) - `scriptExecString(s string) string` - root.go:118
+- **setDefaults** (private) - `setDefaults()` - update.go:240
+
+---
+
+## cmd/skywire-cli/commands/dmsgpty
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/dmsgpty
+**Functions**: 4
+
+### Functions
+- **init** (private) - `init()` - hvdmsg.go:15
+- **init** (private) - `init()` - root.go:32
+- **init** (private) - `init()` - root.go:44
+- **rpcClient** (private) - `rpcClient(cmdFlags *pflag.FlagSet) visor.API` - root.go:82
+
+---
+
+## cmd/skywire-cli/commands/log
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/log
+**Functions**: 13
+
+### Functions
+- **CancellableCopy** (public) - `CancellableCopy(ctx context.Context, w io.Writer, body io.ReadCloser, length int64) (int64, error)` - log.go:286
+- **contains** (private) - `contains(s []string, str string) bool` - log.go:377
+- **download** (private) - `download(ctx context.Context, log *logging.Logger, httpC http.Client, targetPath, fileName, pubkey string, maxSize int64) error` - log.go:236
+- **downloadDmsg** (private) - `downloadDmsg(ctx context.Context, log logrus.FieldLogger, httpC *http.Client, w io.Writer, urlStr string, maxSize int64) error` - log.go:249
+- **getAllDMSGServers** (private) - `getAllDMSGServers() []dmsgServer` - log.go:353
+- **getUptimes** (private) - `getUptimes(endpoint string, log *logging.Logger) ([]VisorUptimeResponse, error)` - log.go:328
+- **init** (private) - `init()` - tplogs.go:11
+- **init** (private) - `init()` - log.go:31
+- **init** (private) - `init()` - st.go:19
+- **makeTree** (private) - `makeTree()` - st.go:49
+
+### Methods
+
+#### *ProgressWriter
+- **Write** (public) - `(pw *ProgressWriter) Write(p []byte) (int, error)` - log.go:313
+
+#### *httpError
+- **Error** (public) - `(e *httpError) Error() string` - log.go:390
+
+#### readerFunc
+- **Read** (public) - `(rf readerFunc) Read(p []byte) (n int, err error)` - log.go:282
+
+---
+
+## cmd/skywire-cli/commands/mdisc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/mdisc
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - root.go:38
+- **printAvailableServers** (private) - `printAvailableServers(cmdFlags *pflag.FlagSet, entries []*disc.Entry)` - root.go:109
+
+---
+
+## cmd/skywire-cli/commands/proxy
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/proxy
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - proxy.go:30
+- **init** (private) - `init()` - proxy.go:273
+
+---
+
+## cmd/skywire-cli/commands/reward
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/reward
+**Functions**: 4
+
+### Functions
+- **init** (private) - `init()` - root.go:31
+- **init** (private) - `init()` - rules.go:23
+- **longText** (private) - `longText() string` - root.go:71
+- **readRewardFile** (private) - `readRewardFile(cmdFlags *pflag.FlagSet)` - root.go:192
+
+---
+
+## cmd/skywire-cli/commands/rewards
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/rewards
+**Functions**: 29
+
+### Functions
+- **cal** (private) - `cal() ret string` - server.go:1467
+- **compareAndPrintDiffs** (private) - `compareAndPrintDiffs(nodeInfoData, configData []byte, noLogging bool) bool` - calc.go:646
+- **compareMaps** (private) - `compareMaps(nodeInfoServices, configServices map[string]interface{...}, noLogging bool) bool` - calc.go:666
+- **extractFiles** (private) - `extractFiles() (string, error)` - server.go:121
+- **generateAndCacheJSON** (private) - `generateAndCacheJSON() error` - server.go:1274
+- **generateAndCacheStats** (private) - `generateAndCacheStats() err error` - server.go:1338
+- **getBackgroundColor** (private) - `getBackgroundColor(statusCode int) string` - server.go:1531
+- **getMethodColor** (private) - `getMethodColor(method string) string` - server.go:1544
+- **init** (private) - `init()` - server.go:1598
+- **init** (private) - `init()` - services.go:84
+- **init** (private) - `init()` - calc.go:568
+- **init** (private) - `init()` - services.go:31
+- **init** (private) - `init()` - calc.go:73
+- **init** (private) - `init()` - server.go:61
+- **loggingMiddleware** (private) - `loggingMiddleware() gin.HandlerFunc` - server.go:1505
+- **mainPage** (private) - `mainPage(c *gin.Context)` - server.go:1821
+- **mustExist** (private) - `mustExist(path string)` - calc.go:558
+- **printDifference** (private) - `printDifference(key string, value1, value2 interface{...})` - calc.go:713
+- **resetColor** (private) - `resetColor() string` - server.go:1565
+- **scriptExecArray** (private) - `scriptExecArray(s string) string` - server.go:1642
+- **scriptExecInt** (private) - `scriptExecInt(s string) int` - server.go:1664
+- **scriptExecString** (private) - `scriptExecString(s string) string` - server.go:1615
+- **scriptExecUint** (private) - `scriptExecUint(s string) uint` - server.go:1698
+- **scriptExecUint16** (private) - `scriptExecUint16(s string) uint16` - server.go:1733
+- **server** (private) - `server(e error)` - server.go:179
+- **sliceContains** (private) - `sliceContains(slice1, slice2 []interface{...}) bool` - calc.go:689
+- **toJSON** (private) - `toJSON(value interface{...}) string` - calc.go:705
+- **whitelistAuth** (private) - `whitelistAuth(whitelistedPKs []cipher.PubKey) gin.HandlerFunc` - server.go:1774
+
+### Methods
+
+#### *ginHandler
+- **ServeHTTP** (public) - `(h *ginHandler) ServeHTTP(w http.ResponseWriter, r *http.Request)` - server.go:1501
+
+---
+
+## cmd/skywire-cli/commands/rewards/tgbot
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/rewards/tgbot
+**Functions**: 1
+
+### Functions
+- **init** (private) - `init()` - tgbot.go:19
+
+---
+
+## cmd/skywire-cli/commands/rewards/ui
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/rewards/ui
+**Functions**: 7
+
+### Functions
+- **fmtDuration** (private) - `fmtDuration(d time.Duration) string` - ui.go:305
+- **httpGetString** (private) - `httpGetString(url string) string` - ui.go:319
+- **https** (private) - `https(a string) string` - ui.go:301
+- **init** (private) - `init()` - ui.go:74
+- **main** (private) - `main()` - ui.go:100
+
+### Methods
+
+#### *DateButton
+- **Init** (public) - `(db *DateButton) Init()` - ui.go:90
+- **WidgetValue** (public) - `(db *DateButton) WidgetValue() any` - ui.go:87
+
+---
+
+## cmd/skywire-cli/commands/route
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/route
+**Functions**: 5
+
+### Functions
+- **getNextAvailableRouteID** (private) - `getNextAvailableRouteID(rules ...routing.Rule) routing.RouteID` - route.go:384
+- **init** (private) - `init()` - route.go:40
+- **init** (private) - `init()` - route.go:153
+- **parseUint** (private) - `parseUint(cmdFlags *pflag.FlagSet, name, v string, bitSize int) uint64` - route.go:484
+- **printRoutingRules** (private) - `printRoutingRules(cmdFlags *pflag.FlagSet, rules ...routing.Rule)` - route.go:394
+
+---
+
+## cmd/skywire-cli/commands/rpc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/rpc
+**Functions**: 1
+
+### Functions
+- **Client** (public) - `Client(cmdFlags *pflag.FlagSet) (visor.API, error)` - root.go:23
+
+---
+
+## cmd/skywire-cli/commands/skyfwd
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/skyfwd
+**Functions**: 1
+
+### Functions
+- **init** (private) - `init()` - root.go:23
+
+---
+
+## cmd/skywire-cli/commands/skyrev
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/skyrev
+**Functions**: 1
+
+### Functions
+- **init** (private) - `init()` - root.go:27
+
+---
+
+## cmd/skywire-cli/commands/survey
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/survey
+**Functions**: 3
+
+### Functions
+- **FetchIP** (public) - `FetchIP(dmsgDisc string) (string, error)` - root.go:133
+- **init** (private) - `init()` - root.go:39
+- **startDmsg** (private) - `startDmsg(ctx context.Context, log *logging.Logger, pk cipher.PubKey, sk cipher.SecKey, dmsgDisc string) (dmsgC *dmsg.Client, stop func(), err error)` - root.go:150
+
+---
+
+## cmd/skywire-cli/commands/tp
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/tp
+**Functions**: 12
+
+### Functions
+- **PrintTransportEntries** (public) - `PrintTransportEntries(cmdFlags *pflag.FlagSet, entries ...*transport.Entry)` - tp.go:413
+- **PrintTransports** (public) - `PrintTransports(cmdFlags *pflag.FlagSet, tps ...*visor.TransportSummary)` - tp.go:315
+- **filterOnlineStatus** (private) - `filterOnlineStatus(utkeys, offlinekeys []string, key string) lvlN string` - tp.go:769
+- **init** (private) - `init()` - tp.go:43
+- **init** (private) - `init()` - tp.go:139
+- **init** (private) - `init()` - tp.go:286
+- **init** (private) - `init()` - tp.go:369
+- **init** (private) - `init()` - tp.go:465
+- **sortTransports** (private) - `sortTransports(tps ...*visor.TransportSummary)` - tp.go:358
+
+### Methods
+
+#### *transportID
+- **Set** (public) - `(t *transportID) Set(s string) error` - tp.go:453
+
+#### transportID
+- **String** (public) - `(t transportID) String() string` - tp.go:447
+- **Type** (public) - `(transportID) Type() string` - tp.go:450
+
+---
+
+## cmd/skywire-cli/commands/ut
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/ut
+**Functions**: 1
+
+### Functions
+- **init** (private) - `init()` - root.go:30
+
+---
+
+## cmd/skywire-cli/commands/visor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/visor
+**Functions**: 22
+
+### Functions
+- **HypervisorPort** (public) - `HypervisorPort(cmdFlags *pflag.FlagSet) string` - hv.go:92
+- **ensureDir** (private) - `ensureDir(path *string) error` - app.go:336
+- **eventLoop** (private) - `eventLoop(c gotop.Config, grid *layout.MyGrid)` - top.go:235
+- **getIPAddress** (private) - `getIPAddress() (string, error)` - ip.go:40
+- **getLayout** (private) - `getLayout(conf gotop.Config) (io.Reader, error)` - top.go:526
+- **getStunServers** (private) - `getStunServers() ([]string, error)` - ip.go:76
+- **gort** (private) - `gort(ctx context.Context, fn func() error) error` - process.go:61
+- **init** (private) - `init()` - process.go:22
+- **init** (private) - `init()` - top.go:39
+- **init** (private) - `init()` - ping.go:21
+- **init** (private) - `init()` - app.go:26
+- **init** (private) - `init()` - ip.go:18
+- **init** (private) - `init()` - process.go:93
+- **init** (private) - `init()` - root.go:13
+- **init** (private) - `init()` - hv.go:18
+- **init** (private) - `init()` - info.go:20
+- **isPublic** (private) - `isPublic(logger *logging.Logger) string` - ip.go:67
+- **listDevices** (private) - `listDevices()` - top.go:562
+- **parseArgs** (private) - `parseArgs() error` - top.go:97
+- **run** (private) - `run() int` - top.go:420
+- **runTests** (private) - `runTests(_ gotop.Config) int` - top.go:557
+- **setDefaultTermuiColors** (private) - `setDefaultTermuiColors(c gotop.Config)` - top.go:226
+
+---
+
+## cmd/skywire-cli/commands/vpn
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/commands/vpn
+**Functions**: 3
+
+### Functions
+- **init** (private) - `init()` - vvpn.go:28
+- **init** (private) - `init()` - vvpn.go:174
+- **init** (private) - `init()` - vvpnui.go:18
+
+---
+
+## cmd/skywire-cli/internal
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-cli/internal
+**Functions**: 9
+
+### Functions
+- **Catch** (public) - `Catch(cmdFlags *pflag.FlagSet, err error)` - internal.go:26
+- **GetData** (public) - `GetData(cachefile, thisurl string, cacheFilesAge int) thisdata string` - internal.go:122
+- **ParsePK** (public) - `ParsePK(cmdFlags *pflag.FlagSet, name, v string) cipher.PubKey` - internal.go:76
+- **ParseUUID** (public) - `ParseUUID(cmdFlags *pflag.FlagSet, name, v string) uuid.UUID` - internal.go:86
+- **PrintError** (public) - `PrintError(cmdFlags *pflag.FlagSet, err error)` - internal.go:60
+- **PrintFatalError** (public) - `PrintFatalError(cmdFlags *pflag.FlagSet, err error)` - internal.go:33
+- **PrintFatalRPCError** (public) - `PrintFatalRPCError(cmdFlags *pflag.FlagSet, err error)` - internal.go:50
+- **PrintOutput** (public) - `PrintOutput(cmdFlags *pflag.FlagSet, outputJSON, output interface{...})` - internal.go:101
+- **PrintRPCError** (public) - `PrintRPCError(cmdFlags *pflag.FlagSet, err error)` - internal.go:55
+
+---
+
+## cmd/skywire-services
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-services
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - services.go:9
+- **main** (private) - `main()` - services.go:13
+
+---
+
+## cmd/skywire-services/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-services/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:68
+- **init** (private) - `init()` - root.go:27
+
+---
+
+## cmd/skywire-visor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire-visor
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - skywire-visor.go:9
+- **main** (private) - `main()` - skywire-visor.go:13
+
+---
+
+## cmd/skywire/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/skywire/commands
+**Functions**: 3
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:293
+- **init** (private) - `init()` - root.go:37
+- **modifySubcommands** (private) - `modifySubcommands(cmd *cobra.Command)` - root.go:87
+
+---
+
+## cmd/sw-env
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/sw-env
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - sw-env.go:9
+- **main** (private) - `main()` - sw-env.go:13
+
+---
+
+## cmd/sw-env/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/sw-env/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:86
+- **init** (private) - `init()` - root.go:49
+
+---
+
+## cmd/transport-discovery
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/transport-discovery
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - transport-discovery.go:9
+- **main** (private) - `main()` - transport-discovery.go:13
+
+---
+
+## cmd/transport-discovery/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/transport-discovery/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:242
+- **init** (private) - `init()` - root.go:60
+
+---
+
+## cmd/transport-setup
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/transport-setup
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - transport-setup.go:9
+- **main** (private) - `main()` - transport-setup.go:13
+
+---
+
+## cmd/transport-setup/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/transport-setup/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:214
+- **init** (private) - `init()` - root.go:40
+
+---
+
+## cmd/uptime-tracker
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/uptime-tracker
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - uptime-tracker.go:9
+- **main** (private) - `main()` - uptime-tracker.go:13
+
+---
+
+## cmd/uptime-tracker/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/uptime-tracker/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:227
+- **init** (private) - `init()` - root.go:62
+
+---
+
+## cmd/version
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/version
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - version.go:9
+- **main** (private) - `main()` - version.go:13
+
+---
+
+## cmd/version/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/cmd/version/commands
+**Functions**: 1
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:33
+
+---
+
+## example/example-client-app
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/example/example-client-app
+**Functions**: 5
+
+### Functions
+- **dialServer** (private) - `dialServer(ctx context.Context, appCl *app.Client, hostAddr routing.Addr) (net.Conn, error)` - example-client-app.go:35
+- **handleConn** (private) - `handleConn(conn net.Conn)` - example-client-app.go:138
+- **main** (private) - `main()` - example-client-app.go:57
+- **setAppErr** (private) - `setAppErr(appCl *app.Client, err error)` - example-client-app.go:126
+- **setAppStatus** (private) - `setAppStatus(appCl *app.Client, status appserver.AppDetailedStatus)` - example-client-app.go:132
+
+---
+
+## example/example-server-app
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/example/example-server-app
+**Functions**: 4
+
+### Functions
+- **handleConn** (private) - `handleConn(conn net.Conn)` - example-server-app.go:88
+- **main** (private) - `main()` - example-server-app.go:26
+- **setAppError** (private) - `setAppError(appCl *app.Client, appErr error)` - example-server-app.go:82
+- **setAppStatus** (private) - `setAppStatus(appCl *app.Client, status appserver.AppDetailedStatus)` - example-server-app.go:76
+
+---
+
+## example/http-server
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/example/http-server
+**Functions**: 3
+
+### Functions
+- **client** (private) - `client() (visor.API, error)` - server.go:79
+- **homepage** (private) - `homepage(w http.ResponseWriter, r *http.Request)` - server.go:18
+- **main** (private) - `main()` - server.go:31
+
+---
+
+## example/http-server/html
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/example/http-server/html
+**Functions**: 3
+
+### Functions
+- **FS** (public) - `FS() embed.FS` - html.go:34
+- **Homepage** (public) - `Homepage(w io.Writer, p HomepageParams) error` - html.go:24
+- **parse** (private) - `parse(file string) *template.Template` - html.go:28
+
+---
+
+## internal/armetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/armetrics
+**Functions**: 4
+
+### Functions
+- **NewEmpty** (public) - `NewEmpty() Empty` - empty.go:5
+- **NewVictoriaMetrics** (public) - `NewVictoriaMetrics() *VictoriaMetrics` - victoria_metrics.go:13
+
+### Methods
+
+#### *VictoriaMetrics
+- **SetClientsCount** (public) - `(m *VictoriaMetrics) SetClientsCount(val int64)` - victoria_metrics.go:20
+
+#### Empty
+- **SetClientsCount** (public) - `(Empty) SetClientsCount(_ int64)` - empty.go:13
+
+---
+
+## internal/config
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/config
+**Functions**: 34
+
+### Functions
+- **DefaultDockerRunners** (public) - `DefaultDockerRunners(network string) RunnersConfig` - runners.go:70
+- **DefaultDockerizedEnv** (public) - `DefaultDockerizedEnv(network string) *EnvConfig` - default_environments.go:57
+- **DefaultLocalEnv** (public) - `DefaultLocalEnv() *EnvConfig` - default_environments.go:41
+- **DefaultLocalRunners** (public) - `DefaultLocalRunners() RunnersConfig` - runners.go:84
+- **DefaultPublicEnv** (public) - `DefaultPublicEnv() *EnvConfig` - default_environments.go:27
+- **DefaultPublicSkywire** (public) - `DefaultPublicSkywire() SkywireConfig` - skywire.go:37
+- **DefaultPublicVisorConfig** (public) - `DefaultPublicVisorConfig() *visorconfig.V1` - visors.go:65
+- **DefaultSourceRunners** (public) - `DefaultSourceRunners() RunnersConfig` - runners.go:96
+- **EmptyDmsgServerConfig** (public) - `EmptyDmsgServerConfig() msg.Config` - skywire.go:133
+- **EmptySetupNodeConfig** (public) - `EmptySetupNodeConfig() router.SetupConfig` - skywire.go:193
+- **ExampleDefaultDockerRunners** (public) - `ExampleDefaultDockerRunners()` - env_test.go:154
+- **ExampleDefaultPublicSkywire** (public) - `ExampleDefaultPublicSkywire()` - env_test.go:12
+- **ExampleEnvConfig_AddThreeChatVisors** (public) - `ExampleEnvConfig_AddThreeChatVisors()` - default_environments_test.go:7
+- **ExampleEnvConfig_AddVisor** (public) - `ExampleEnvConfig_AddVisor()` - env_test.go:81
+- **ExampleEnvConfig_AddVisorExplicitly** (public) - `ExampleEnvConfig_AddVisorExplicitly()` - env_test.go:61
+- **ExampleEnvConfig_Skywire** (public) - `ExampleEnvConfig_Skywire()` - env_test.go:112
+- **PrintJSON** (public) - `PrintJSON(data interface{...}) string` - env.go:39
+- **_cmd** (private) - `_cmd(tmplt string, args interface{...}) string` - visors.go:28
+- **_pk** (private) - `_pk(pkHex string) cipher.PubKey` - env.go:51
+
+### Methods
+
+#### *EnvConfig
+- **AddAddressResolver** (public) - `(env *EnvConfig) AddAddressResolver(name string, address string) *EnvConfig` - skywire.go:184
+- **AddDmsgDiscovery** (public) - `(env *EnvConfig) AddDmsgDiscovery(name string, address string) *EnvConfig` - skywire.go:103
+- **AddDmsgServer** (public) - `(env *EnvConfig) AddDmsgServer(name string, publicAddress string, localAddress string) *EnvConfig` - skywire.go:114
+- **AddRouteFinder** (public) - `(env *EnvConfig) AddRouteFinder(name string, address string) *EnvConfig` - skywire.go:155
+- **AddSetupNode** (public) - `(env *EnvConfig) AddSetupNode(name string) *EnvConfig` - skywire.go:164
+- **AddThreeChatVisors** (public) - `(env *EnvConfig) AddThreeChatVisors() *EnvConfig` - default_environments.go:11
+- **AddTransportDiscovery** (public) - `(env *EnvConfig) AddTransportDiscovery(name string, address string) *EnvConfig` - skywire.go:146
+- **AddVisor** (public) - `(env *EnvConfig) AddVisor(visorName string, apps []appserver.AppConfig, rpcAddress string) *EnvConfig` - visors.go:43
+- **AddVisorExplicitly** (public) - `(env *EnvConfig) AddVisorExplicitly(visor VisorConfig) *EnvConfig` - visors.go:23
+- **DefaultExternalServices** (public) - `(env *EnvConfig) DefaultExternalServices() *EnvConfig` - external_services.go:9
+- **String** (public) - `(env *EnvConfig) String() string` - env.go:47
+
+#### EnvScripts
+- **String** (public) - `(scr EnvScripts) String() string` - env_scripts.go:10
+
+#### ExternalServicesConfig
+- **String** (public) - `(ext ExternalServicesConfig) String() string` - external_services.go:16
+
+#### SkywireConfig
+- **String** (public) - `(sw SkywireConfig) String() string` - skywire.go:208
+
+#### VisorConfig
+- **String** (public) - `(visorConfig VisorConfig) String() string` - visors.go:109
+
+---
+
+## internal/httpauth
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/httpauth
+**Functions**: 21
+
+### Functions
+- **ExtractError** (public) - `ExtractError(r io.Reader) error` - client.go:285
+- **NewClient** (public) - `NewClient(ctx context.Context, addr string, key cipher.PubKey, sec cipher.SecKey, client *http.Client, clientPublicIP string, mLog *logging.MasterLogger) (*Client, error)` - client.go:69
+- **PayloadWithNonce** (public) - `PayloadWithNonce(payload []byte, nonce Nonce) []byte` - nonce.go:16
+- **Sign** (public) - `Sign(payload []byte, nonce Nonce, sec cipher.SecKey) (cipher.Sig, error)` - nonce.go:21
+- **TestClient** (public) - `TestClient(t *testing.T)` - client_test.go:47
+- **TestClient_BadNonce** (public) - `TestClient_BadNonce(t *testing.T)` - client_test.go:73
+- **TestMain** (public) - `TestMain(m *testing.M)` - client_test.go:31
+- **checkResp** (private) - `checkResp(t *testing.T, headers http.Header, body []byte, pk cipher.PubKey, nonce int)` - client_test.go:99
+- **extractHTTPError** (private) - `extractHTTPError(r io.Reader) error` - client.go:269
+- **isNonceValid** (private) - `isNonceValid(res *http.Response) (*http.Response, bool, error)` - client.go:226
+- **newTestServer** (private) - `newTestServer(t *testing.T, pk cipher.PubKey, headerCh chan<- http.Header) *httptest.Server` - client_test.go:107
+- **sanitizedAddr** (private) - `sanitizedAddr(addr string) string` - client.go:250
+
+### Methods
+
+#### *Client
+- **Addr** (public) - `(c *Client) Addr() string` - client.go:189
+- **Do** (public) - `(c *Client) Do(req *http.Request) (*http.Response, error)` - client.go:92
+- **IncrementNonce** (public) - `(c *Client) IncrementNonce()` - client.go:219
+- **Nonce** (public) - `(c *Client) Nonce(ctx context.Context, key cipher.PubKey) (Nonce, error)` - client.go:150
+- **SetNonce** (public) - `(c *Client) SetNonce(n Nonce)` - client.go:184
+- **do** (private) - `(c *Client) do(client *http.Client, req *http.Request) (*http.Response, error)` - client.go:96
+- **doRequest** (private) - `(c *Client) doRequest(client *http.Client, req *http.Request, body []byte) (*http.Response, error)` - client.go:193
+- **getCurrentNonce** (private) - `(c *Client) getCurrentNonce() Nonce` - client.go:214
+
+#### Nonce
+- **String** (public) - `(n Nonce) String() string` - nonce.go:13
+
+---
+
+## internal/nm
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/nm
+**Functions**: 0
+
+*No functions found*
+
+## internal/packetfilter
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/packetfilter
+**Functions**: 7
+
+### Functions
+- **NewAddressFilter** (public) - `NewAddressFilter(addr net.Addr, mLog *logging.MasterLogger) *AddressFilter` - address-filter.go:17
+- **NewKCPConversationFilter** (public) - `NewKCPConversationFilter(mLog *logging.MasterLogger) *KCPConversationFilter` - kcp-filter.go:26
+
+### Methods
+
+#### *AddressFilter
+- **ClaimIncoming** (public) - `(f *AddressFilter) ClaimIncoming(_ []byte, addr net.Addr) bool` - address-filter.go:25
+- **Outgoing** (public) - `(f *AddressFilter) Outgoing(_ []byte, _ net.Addr)` - address-filter.go:30
+
+#### *KCPConversationFilter
+- **ClaimIncoming** (public) - `(f *KCPConversationFilter) ClaimIncoming(in []byte, _ net.Addr) bool` - kcp-filter.go:33
+- **Outgoing** (public) - `(f *KCPConversationFilter) Outgoing(out []byte, _ net.Addr)` - kcp-filter.go:44
+- **isKCPConversation** (private) - `(f *KCPConversationFilter) isKCPConversation(data []byte) bool` - kcp-filter.go:51
+
+---
+
+## internal/pg
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/pg
+**Functions**: 1
+
+### Functions
+- **Init** (public) - `Init(dns string, pgMaxOpenConn int) (*gorm.DB, error)` - lib.go:10
+
+---
+
+## internal/sdmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/sdmetrics
+**Functions**: 12
+
+### Functions
+- **NewEmpty** (public) - `NewEmpty() Empty` - empty.go:5
+- **NewVictoriaMetrics** (public) - `NewVictoriaMetrics() *VictoriaMetrics` - victoria_metrics.go:17
+
+### Methods
+
+#### *VictoriaMetrics
+- **SetServiceTypeSkysocksCount** (public) - `(m *VictoriaMetrics) SetServiceTypeSkysocksCount(val uint64)` - victoria_metrics.go:48
+- **SetServiceTypeVPNCount** (public) - `(m *VictoriaMetrics) SetServiceTypeVPNCount(val uint64)` - victoria_metrics.go:38
+- **SetServiceTypeVisorCount** (public) - `(m *VictoriaMetrics) SetServiceTypeVisorCount(val uint64)` - victoria_metrics.go:43
+- **SetServiceTypesCount** (public) - `(m *VictoriaMetrics) SetServiceTypesCount(val uint64)` - victoria_metrics.go:28
+- **SetServicesRegByTypeCount** (public) - `(m *VictoriaMetrics) SetServicesRegByTypeCount(val uint64)` - victoria_metrics.go:33
+
+#### Empty
+- **SetServiceTypeSkysocksCount** (public) - `(Empty) SetServiceTypeSkysocksCount(_ uint64)` - empty.go:25
+- **SetServiceTypeVPNCount** (public) - `(Empty) SetServiceTypeVPNCount(_ uint64)` - empty.go:19
+- **SetServiceTypeVisorCount** (public) - `(Empty) SetServiceTypeVisorCount(_ uint64)` - empty.go:22
+- **SetServiceTypesCount** (public) - `(Empty) SetServiceTypesCount(_ uint64)` - empty.go:13
+- **SetServicesRegByTypeCount** (public) - `(Empty) SetServicesRegByTypeCount(_ uint64)` - empty.go:16
+
+---
+
+## internal/skysocks
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/skysocks
+**Functions**: 19
+
+### Functions
+- **NewClient** (public) - `NewClient(conn net.Conn, appCl *app.Client) (*Client, error)` - client.go:29
+- **NewServer** (public) - `NewServer(passcode string, appCl *app.Client) (*Server, error)` - server.go:30
+- **TestMain** (public) - `TestMain(m *testing.M)` - server_test.go:22
+- **TestProxy** (public) - `TestProxy(t *testing.T)` - server_test.go:39
+- **listenIPC** (private) - `listenIPC(ipcClient *ipc.Client, appName string, onClose func())` - common.go:13
+
+### Methods
+
+#### *Client
+- **Close** (public) - `(c *Client) Close() error` - client.go:178
+- **ListenAndServe** (public) - `(c *Client) ListenAndServe(addr string) error` - client.go:51
+- **ListenIPC** (public) - `(c *Client) ListenIPC(client *ipc.Client)` - client.go:162
+- **close** (private) - `(c *Client) close()` - client.go:154
+- **handleStream** (private) - `(c *Client) handleStream(conn, stream net.Conn)` - client.go:108
+- **sessionKeepAliveLoop** (private) - `(c *Client) sessionKeepAliveLoop()` - client.go:90
+- **setAppError** (private) - `(c *Client) setAppError(appErr error)` - client.go:171
+
+#### *Server
+- **Close** (public) - `(s *Server) Close() error` - server.go:112
+- **ListenIPC** (public) - `(s *Server) ListenIPC(client *ipc.Client)` - server.go:95
+- **Serve** (public) - `(s *Server) Serve(l net.Listener) error` - server.go:51
+- **close** (private) - `(s *Server) close()` - server.go:124
+- **isClosed** (private) - `(s *Server) isClosed() bool` - server.go:128
+- **setAppStatus** (private) - `(s *Server) setAppStatus(status appserver.AppDetailedStatus)` - server.go:105
+
+#### passcodeCredentials
+- **Valid** (public) - `(s passcodeCredentials) Valid(user, password string) bool` - server.go:134
+
+---
+
+## internal/testhelpers
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/testhelpers
+**Functions**: 0
+
+*No functions found*
+
+## internal/tpdiscmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/tpdiscmetrics
+**Functions**: 4
+
+### Functions
+- **NewEmpty** (public) - `NewEmpty() Empty` - empty.go:9
+- **NewVictoriaMetrics** (public) - `NewVictoriaMetrics() *VictoriaMetrics` - victoria_metrics.go:20
+
+### Methods
+
+#### *VictoriaMetrics
+- **SetTPCounts** (public) - `(m *VictoriaMetrics) SetTPCounts(tpCounts map[types.Type]int)` - victoria_metrics.go:30
+
+#### Empty
+- **SetTPCounts** (public) - `(Empty) SetTPCounts(_ map[types.Type]int)` - empty.go:17
+
+---
+
+## internal/utmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/utmetrics
+**Functions**: 4
+
+### Functions
+- **NewEmpty** (public) - `NewEmpty() Empty` - empty.go:5
+- **NewVictoriaMetrics** (public) - `NewVictoriaMetrics() *VictoriaMetrics` - victoria_metrics.go:13
+
+### Methods
+
+#### *VictoriaMetrics
+- **SetEntriesCount** (public) - `(m *VictoriaMetrics) SetEntriesCount(val int64)` - victoria_metrics.go:20
+
+#### Empty
+- **SetEntriesCount** (public) - `(Empty) SetEntriesCount(_ int64)` - empty.go:13
+
+---
+
+## internal/vpn
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/internal/vpn
+**Functions**: 135
+
+### Functions
+- **AllowIPToLocalNetwork** (public) - `AllowIPToLocalNetwork(_, _ net.IP) error` - os_server.go:32
+- **AllowIPToLocalNetwork** (public) - `AllowIPToLocalNetwork(src, dst net.IP) error` - os_server_linux.go:54
+- **AppEnvArgs** (public) - `AppEnvArgs(config DirectRoutesEnvConfig) map[string]string` - env.go:60
+- **BlockIPToLocalNetwork** (public) - `BlockIPToLocalNetwork(src, dst net.IP) error` - os_server_linux.go:61
+- **BlockIPToLocalNetwork** (public) - `BlockIPToLocalNetwork(_, _ net.IP) error` - os_server.go:38
+- **DefaultNetworkGateway** (public) - `DefaultNetworkGateway() (net.IP, error)` - os_client_linux.go:22
+- **DefaultNetworkGateway** (public) - `DefaultNetworkGateway() (net.IP, error)` - os_client_windows.go:21
+- **DefaultNetworkGateway** (public) - `DefaultNetworkGateway() (net.IP, error)` - os_client_darwin.go:19
+- **DisableIPMasquerading** (public) - `DisableIPMasquerading(ifcName string) error` - os_server_linux.go:119
+- **DisableIPMasquerading** (public) - `DisableIPMasquerading(_ string) error` - os_server.go:78
+- **EnableIPMasquerading** (public) - `EnableIPMasquerading(ifcName string) error` - os_server_linux.go:113
+- **EnableIPMasquerading** (public) - `EnableIPMasquerading(_ string) error` - os_server.go:73
+- **EnableIPv4Forwarding** (public) - `EnableIPv4Forwarding() error` - os_server_linux.go:103
+- **EnableIPv4Forwarding** (public) - `EnableIPv4Forwarding() error` - os_server.go:63
+- **EnableIPv6Forwarding** (public) - `EnableIPv6Forwarding() error` - os_server_linux.go:108
+- **EnableIPv6Forwarding** (public) - `EnableIPv6Forwarding() error` - os_server.go:68
+- **GetIPTablesForwardPolicy** (public) - `GetIPTablesForwardPolicy() (string, error)` - os_server_linux.go:29
+- **GetIPTablesForwardPolicy** (public) - `GetIPTablesForwardPolicy() (string, error)` - os_server.go:16
+- **GetIPv4ForwardingValue** (public) - `GetIPv4ForwardingValue() (string, error)` - os_server.go:43
+- **GetIPv4ForwardingValue** (public) - `GetIPv4ForwardingValue() (string, error)` - os_server_linux.go:67
+- **GetIPv6ForwardingValue** (public) - `GetIPv6ForwardingValue() (string, error)` - os_server_linux.go:72
+- **GetIPv6ForwardingValue** (public) - `GetIPv6ForwardingValue() (string, error)` - os_server.go:48
+- **IPFromEnv** (public) - `IPFromEnv(key string) (net.IP, bool, error)` - env.go:121
+- **NewClient** (public) - `NewClient(cfg ClientConfig, appCl *app.Client) (*Client, error)` - client.go:61
+- **NewIPGenerator** (public) - `NewIPGenerator() *IPGenerator` - ip_generator.go:18
+- **NewServer** (public) - `NewServer(cfg ServerConfig, appCl *app.Client) (*Server, error)` - server.go:33
+- **ParseIP** (public) - `ParseIP(addr string) (net.IP, bool, error)` - env.go:136
+- **ReadJSON** (public) - `ReadJSON(conn net.Conn, data interface{...}) error` - net.go:66
+- **ReadJSONWithTimeout** (public) - `ReadJSONWithTimeout(conn net.Conn, data interface{...}, timeout time.Duration) error` - net.go:49
+- **SetIPTablesForwardAcceptPolicy** (public) - `SetIPTablesForwardAcceptPolicy() error` - os_server_linux.go:47
+- **SetIPTablesForwardAcceptPolicy** (public) - `SetIPTablesForwardAcceptPolicy() error` - os_server.go:26
+- **SetIPTablesForwardPolicy** (public) - `SetIPTablesForwardPolicy(policy string) error` - os_server_linux.go:41
+- **SetIPTablesForwardPolicy** (public) - `SetIPTablesForwardPolicy(policy string) error` - os_server.go:21
+- **SetIPv4ForwardingValue** (public) - `SetIPv4ForwardingValue(val string) error` - os_server_linux.go:77
+- **SetIPv4ForwardingValue** (public) - `SetIPv4ForwardingValue(_ string) error` - os_server.go:53
+- **SetIPv6ForwardingValue** (public) - `SetIPv6ForwardingValue(_ string) error` - os_server.go:58
+- **SetIPv6ForwardingValue** (public) - `SetIPv6ForwardingValue(val string) error` - os_server_linux.go:90
+- **WriteJSON** (public) - `WriteJSON(conn net.Conn, data interface{...}) error` - net.go:29
+- **WriteJSONWithTimeout** (public) - `WriteJSONWithTimeout(conn net.Conn, data interface{...}, timeout time.Duration) error` - net.go:12
+- **addressResolverIPFromEnv** (private) - `addressResolverIPFromEnv() (net.IP, error)` - client.go:597
+- **dmsgDiscIPFromEnv** (private) - `dmsgDiscIPFromEnv() (net.IP, error)` - client.go:566
+- **dmsgSrvAddrsFromEnv** (private) - `dmsgSrvAddrsFromEnv() ([]net.IP, error)` - client.go:570
+- **fetchIPv4Octets** (private) - `fetchIPv4Octets(ip net.IP) ([...]uint8, error)` - ip_generator.go:67
+- **filterOutEqualIPs** (private) - `filterOutEqualIPs(ips []net.IP) []net.IP` - client.go:782
+- **getIPForwardingValue** (private) - `getIPForwardingValue(cmd string) (string, error)` - os_server_linux.go:124
+- **ipFromEnv** (private) - `ipFromEnv(key string) (net.IP, error)` - client.go:770
+- **modifyRoutingTable** (private) - `modifyRoutingTable(action, ipCIDR, gateway string) error` - os_windows.go:77
+- **newSubnetIPIncrementer** (private) - `newSubnetIPIncrementer(octetLowerBorders, octetBorders [...]uint8, step uint8) *subnetIPIncrementer` - subnet_ip_incrementer.go:21
+- **newTUNDevice** (private) - `newTUNDevice() (TUNDevice, error)` - tun_device_unix.go:12
+- **newTUNDevice** (private) - `newTUNDevice() (TUNDevice, error)` - tun_device_windows.go:17
+- **parseCIDR** (private) - `parseCIDR(ipCIDR string) (ipStr, netmask string, err error)` - os.go:9
+- **parseIPForwardingOutput** (private) - `parseIPForwardingOutput(output []byte) (string, error)` - os_server_linux.go:138
+- **releaseClientSysPrivileges** (private) - `releaseClientSysPrivileges(_ int) error` - os_client_linux.go:83
+- **releaseClientSysPrivileges** (private) - `releaseClientSysPrivileges(oldUID int) error` - os_client_darwin.go:50
+- **rfIPFromEnv** (private) - `rfIPFromEnv() (net.IP, error)` - client.go:601
+- **setupClientSysPrivileges** (private) - `setupClientSysPrivileges() (int, error)` - os_client_darwin.go:42
+- **setupClientSysPrivileges** (private) - `setupClientSysPrivileges() (int, error)` - os_client_linux.go:47
+- **setupClientSysPrivileges** (private) - `setupClientSysPrivileges() (suid int, err error)` - os_client_windows.go:54
+- **stcpEntitiesFromEnv** (private) - `stcpEntitiesFromEnv() ([]net.IP, error)` - client.go:641
+- **tpDiscIPFromEnv** (private) - `tpDiscIPFromEnv() (net.IP, error)` - client.go:593
+- **tpRemoteIPsFromEnv** (private) - `tpRemoteIPsFromEnv() ([]net.IP, error)` - client.go:609
+- **uptimeTrackerIPFromEnv** (private) - `uptimeTrackerIPFromEnv() (net.IP, error)` - client.go:605
+
+### Methods
+
+#### *Client
+- **AddDirectRoute** (public) - `(c *Client) AddDirectRoute(ip net.IP) error` - client.go:243
+- **AddRoute** (public) - `(c *Client) AddRoute(ipCIDR, gateway string) error` - os_darwin.go:61
+- **AddRoute** (public) - `(c *Client) AddRoute(ipCIDR, gateway string) error` - os_windows.go:68
+- **AddRoute** (public) - `(c *Client) AddRoute(ip, gateway string) error` - os_linux.go:82
+- **ChangeRoute** (public) - `(c *Client) ChangeRoute(ipCIDR, gateway string) error` - os_darwin.go:56
+- **ChangeRoute** (public) - `(c *Client) ChangeRoute(ipCIDR, gateway string) error` - os_windows.go:63
+- **ChangeRoute** (public) - `(c *Client) ChangeRoute(ip, gateway string) error` - os_linux.go:72
+- **Close** (public) - `(c *Client) Close()` - client.go:235
+- **DeleteRoute** (public) - `(c *Client) DeleteRoute(ipCIDR, gateway string) error` - os_windows.go:73
+- **DeleteRoute** (public) - `(c *Client) DeleteRoute(ip, gateway string) error` - os_linux.go:107
+- **DeleteRoute** (public) - `(c *Client) DeleteRoute(ipCIDR, gateway string) error` - os_darwin.go:75
+- **ListenIPC** (public) - `(c *Client) ListenIPC(client *ipc.Client)` - client.go:211
+- **RemoveDirectRoute** (public) - `(c *Client) RemoveDirectRoute(ip net.IP) error` - client.go:266
+- **RevertDNS** (public) - `(c *Client) RevertDNS()` - os_linux.go:130
+- **RevertDNS** (public) - `(c *Client) RevertDNS()` - os_windows.go:54
+- **RevertDNS** (public) - `(c *Client) RevertDNS()` - os_darwin.go:47
+- **Serve** (public) - `(c *Client) Serve() error` - client.go:134
+- **SetupDNS** (public) - `(c *Client) SetupDNS()` - os_darwin.go:34
+- **SetupDNS** (public) - `(c *Client) SetupDNS()` - os_windows.go:44
+- **SetupDNS** (public) - `(c *Client) SetupDNS() error` - os_linux.go:117
+- **SetupTUN** (public) - `(c *Client) SetupTUN(ifcName, ipCIDR, gateway string, mtu int) error` - os_darwin.go:16
+- **SetupTUN** (public) - `(c *Client) SetupTUN(ifcName, ipCIDR, gateway string, mtu int) error` - os_windows.go:20
+- **SetupTUN** (public) - `(c *Client) SetupTUN(ifcName, ipCIDR, gateway string, mtu int) error` - os_linux.go:19
+- **closeTUN** (private) - `(c *Client) closeTUN() error` - client.go:319
+- **createTUN** (private) - `(c *Client) createTUN() (TUNDevice, error)` - client.go:300
+- **dialServeConn** (private) - `(c *Client) dialServeConn() error` - client.go:460
+- **dialServer** (private) - `(c *Client) dialServer(appCl *app.Client, pk cipher.PubKey) (net.Conn, error)` - client.go:710
+- **isClosed** (private) - `(c *Client) isClosed() bool` - client.go:755
+- **modifyRoutingTable** (private) - `(c *Client) modifyRoutingTable(action, ipCIDR, gateway string) error` - os_darwin.go:79
+- **releaseSysPrivileges** (private) - `(c *Client) releaseSysPrivileges()` - client_unix.go:10
+- **removeDirectRoute** (private) - `(c *Client) removeDirectRoute(ip net.IP) error` - client.go:543
+- **removeDirectRouteFn** (private) - `(c *Client) removeDirectRouteFn(ip net.IP, i int) error` - client.go:258
+- **removeDirectRoutes** (private) - `(c *Client) removeDirectRoutes()` - client.go:554
+- **resetConnDuration** (private) - `(c *Client) resetConnDuration()` - client.go:765
+- **routeTrafficDirectly** (private) - `(c *Client) routeTrafficDirectly(tunGateway net.IP)` - client.go:507
+- **routeTrafficThroughTUN** (private) - `(c *Client) routeTrafficThroughTUN(tunGateway net.IP, isNewRoute bool) error` - client.go:486
+- **serveConn** (private) - `(c *Client) serveConn(conn net.Conn) error` - client.go:348
+- **setAppError** (private) - `(c *Client) setAppError(appErr error)` - client.go:749
+- **setAppStatus** (private) - `(c *Client) setAppStatus(status appserver.AppDetailedStatus)` - client.go:737
+- **setConnectionDuration** (private) - `(c *Client) setConnectionDuration()` - client.go:743
+- **setSysPrivileges** (private) - `(c *Client) setSysPrivileges() error` - client.go:282
+- **setupDirectRoute** (private) - `(c *Client) setupDirectRoute(ip net.IP) error` - client.go:532
+- **setupDirectRoutes** (private) - `(c *Client) setupDirectRoutes() error` - client.go:519
+- **setupTUN** (private) - `(c *Client) setupTUN(tunIP, tunGateway net.IP) error` - client.go:334
+- **shakeHands** (private) - `(c *Client) shakeHands(conn net.Conn) (TUNIP, TUNGateway net.IP, err error)` - client.go:669
+
+#### *IPGenerator
+- **Next** (public) - `(g *IPGenerator) Next() (net.IP, error)` - ip_generator.go:47
+- **Reserve** (public) - `(g *IPGenerator) Reserve(ip net.IP) error` - ip_generator.go:30
+
+#### *Server
+- **AddRoute** (public) - `(s *Server) AddRoute(ip, gateway string) error` - os_linux.go:173
+- **Close** (public) - `(s *Server) Close() error` - server.go:158
+- **Serve** (public) - `(s *Server) Serve(l net.Listener) error` - server.go:95
+- **SetupTUN** (public) - `(s *Server) SetupTUN(ifcName, ipCIDR, gateway string, mtu int) error` - os_linux.go:147
+- **SetupTUN** (public) - `(s *Server) SetupTUN(ifcName, ipCIDR, gateway string, mtu int) error` - os_darwin.go:94
+- **SetupTUN** (public) - `(s *Server) SetupTUN(ifcName, ipCIDR, gateway string, mtu int) error` - os_windows.go:92
+- **closeConn** (private) - `(s *Server) closeConn(conn net.Conn)` - server.go:209
+- **disableIPMasquerading** (private) - `(s *Server) disableIPMasquerading()` - server.go:193
+- **hasMultipleNetworkInterfaces** (private) - `(s *Server) hasMultipleNetworkInterfaces(defaultNetworkInterface string) ([]string, bool)` - server.go:373
+- **restoreIPTablesForwardPolicy** (private) - `(s *Server) restoreIPTablesForwardPolicy()` - server.go:201
+- **revertIPv4ForwardingValue** (private) - `(s *Server) revertIPv4ForwardingValue()` - server.go:177
+- **revertIPv6ForwardingValue** (private) - `(s *Server) revertIPv6ForwardingValue()` - server.go:185
+- **sendServerErrHello** (private) - `(s *Server) sendServerErrHello(conn net.Conn, status HandshakeStatus)` - server.go:363
+- **serveConn** (private) - `(s *Server) serveConn(conn net.Conn)` - server.go:215
+- **setAppError** (private) - `(s *Server) setAppError(appErr error)` - server.go:357
+- **setAppStatus** (private) - `(s *Server) setAppStatus(status appserver.AppDetailedStatus)` - server.go:351
+- **shakeHands** (private) - `(s *Server) shakeHands(conn net.Conn) (tunIP, tunGateway net.IP, unsecureVPN func(), err error)` - server.go:273
+- **validateInterface** (private) - `(s *Server) validateInterface(ifcs []string, selectedIfc string) bool` - server.go:381
+
+#### *subnetIPIncrementer
+- **next** (private) - `(inc *subnetIPIncrementer) next() (net.IP, error)` - subnet_ip_incrementer.go:35
+- **reserve** (private) - `(inc *subnetIPIncrementer) reserve(octets [...]uint8)` - subnet_ip_incrementer.go:122
+
+#### *tunDevice
+- **Close** (public) - `(t *tunDevice) Close() error` - tun_device_windows.go:51
+- **Name** (public) - `(t *tunDevice) Name() string` - tun_device_windows.go:55
+- **Read** (public) - `(t *tunDevice) Read(buf []byte) (int, error)` - tun_device_windows.go:36
+- **Write** (public) - `(t *tunDevice) Write(buf []byte) (int, error)` - tun_device_windows.go:46
+
+#### HandshakeStatus
+- **String** (public) - `(hs HandshakeStatus) String() string` - handshake_status.go:24
+- **getError** (private) - `(hs HandshakeStatus) getError() error` - handshake_status.go:41
+
+---
+
+## pkg/address-resolver/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/address-resolver/api
+**Functions**: 21
+
+### Functions
+- **New** (public) - `New(log *logging.Logger, s store.Store, nonceStore httpauth.NonceStore, enableMetrics bool, m armetrics.Metrics, dmsgAddr string) *API` - api.go:92
+- **sameIP** (private) - `sameIP(addr1, addr2 string) bool` - api.go:610
+
+### Methods
+
+#### *API
+- **Close** (public) - `(a *API) Close()` - api.go:141
+- **ListenUDP** (public) - `(a *API) ListenUDP(listener net.Listener)` - api.go:506
+- **askToDialUDP** (private) - `(a *API) askToDialUDP(dialerPK, dialeePK cipher.PubKey, r *http.Request, dialeeVisorData addrresolver.VisorData) error` - api.go:446
+- **bind** (private) - `(a *API) bind(w http.ResponseWriter, r *http.Request)` - api.go:174
+- **bindSUDPH** (private) - `(a *API) bindSUDPH(conn net.Conn, remoteAddr, strPK string)` - api.go:539
+- **delBind** (private) - `(a *API) delBind(w http.ResponseWriter, r *http.Request)` - api.go:235
+- **deregister** (private) - `(a *API) deregister(w http.ResponseWriter, r *http.Request)` - api.go:356
+- **getTransports** (private) - `(a *API) getTransports(r *http.Request, netType types.Type) []string` - api.go:436
+- **hasAddress** (private) - `(a *API) hasAddress(ip string, local addrresolver.LocalAddresses) bool` - api.go:262
+- **health** (private) - `(a *API) health(w http.ResponseWriter, r *http.Request)` - api.go:336
+- **logger** (private) - `(a *API) logger(r *http.Request) logrus.FieldLogger` - api.go:170
+- **resolve** (private) - `(a *API) resolve(w http.ResponseWriter, r *http.Request)` - api.go:271
+- **setUDPConn** (private) - `(a *API) setUDPConn(pk cipher.PubKey, conn net.Conn)` - api.go:480
+- **sudphConnHandshake** (private) - `(a *API) sudphConnHandshake(conn net.Conn)` - api.go:521
+- **transports** (private) - `(a *API) transports(w http.ResponseWriter, r *http.Request)` - api.go:346
+- **udpConn** (private) - `(a *API) udpConn(pk cipher.PubKey) (net.Conn, bool)` - api.go:471
+- **updateMetrics** (private) - `(a *API) updateMetrics()` - api.go:162
+- **updateMetricsLoop** (private) - `(a *API) updateMetricsLoop()` - api.go:147
+- **writeJSON** (private) - `(a *API) writeJSON(w http.ResponseWriter, r *http.Request, code int, object interface{...})` - api.go:487
+
+---
+
+## pkg/address-resolver/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/address-resolver/store
+**Functions**: 23
+
+### Functions
+- **New** (public) - `New(ctx context.Context, config storeconfig.Config, logger *logging.Logger) (Store, error)` - store.go:37
+- **TestMemory** (public) - `TestMemory(t *testing.T)` - memory_store_test.go:17
+- **TestRedis** (public) - `TestRedis(t *testing.T)` - redis_store_test.go:20
+- **getKey** (private) - `getKey(kind string, pk cipher.PubKey) string` - redis_store.go:148
+- **getScanKey** (private) - `getScanKey(kind string) string` - redis_store.go:152
+- **newMemoryStore** (private) - `newMemoryStore() *memStore` - memory_store.go:17
+- **newRedisClient** (private) - `newRedisClient() (*redis.Client, error)` - redis_store_test.go:31
+- **newRedisStore** (private) - `newRedisStore(ctx context.Context, addr, password string, poolSize int, logger *logging.Logger) (*redisStore, error)` - redis_store.go:27
+- **newStore** (private) - `newStore() (Store, error)` - redis_store_test.go:42
+
+### Methods
+
+#### *AddressSuite
+- **SetupTest** (public) - `(s *AddressSuite) SetupTest()` - address_test.go:24
+- **TestRegister** (public) - `(s *AddressSuite) TestRegister()` - address_test.go:27
+
+#### *memStore
+- **Bind** (public) - `(s *memStore) Bind(_ context.Context, netType types.Type, pk cipher.PubKey, visorData addrresolver.VisorData) error` - memory_store.go:23
+- **DelBind** (public) - `(s *memStore) DelBind(_ context.Context, netType types.Type, pk cipher.PubKey) error` - memory_store.go:36
+- **GetAll** (public) - `(s *memStore) GetAll(_ context.Context, netType types.Type) (pks []string, err error)` - memory_store.go:60
+- **Resolve** (public) - `(s *memStore) Resolve(_ context.Context, netType types.Type, pk cipher.PubKey) (addrresolver.VisorData, error)` - memory_store.go:43
+
+#### *redisStore
+- **Bind** (public) - `(s *redisStore) Bind(ctx context.Context, netType types.Type, pk cipher.PubKey, visorData addrresolver.VisorData) error` - redis_store.go:51
+- **DelBind** (public) - `(s *redisStore) DelBind(ctx context.Context, netType types.Type, pk cipher.PubKey) error` - redis_store.go:61
+- **GetAll** (public) - `(s *redisStore) GetAll(ctx context.Context, netType types.Type) ([]string, error)` - redis_store.go:81
+- **Resolve** (public) - `(s *redisStore) Resolve(ctx context.Context, netType types.Type, pk cipher.PubKey) (addrresolver.VisorData, error)` - redis_store.go:71
+- **bind** (private) - `(s *redisStore) bind(ctx context.Context, key string, visorData addrresolver.VisorData) error` - redis_store.go:91
+- **delBind** (private) - `(s *redisStore) delBind(ctx context.Context, key string) error` - redis_store.go:104
+- **getAll** (private) - `(s *redisStore) getAll(ctx context.Context, key string) ([]string, error)` - redis_store.go:129
+- **resolve** (private) - `(s *redisStore) resolve(ctx context.Context, key string) (addrresolver.VisorData, error)` - redis_store.go:111
+
+---
+
+## pkg/app
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app
+**Functions**: 34
+
+### Functions
+- **NewClient** (public) - `NewClient(eventSubs *appevent.Subscriber) *Client` - client.go:31
+- **NewClientFromConfig** (public) - `NewClientFromConfig(log logrus.FieldLogger, conf appcommon.ProcConfig, subs *appevent.Subscriber) (*Client, error)` - client.go:46
+- **TestClient_Close** (public) - `TestClient_Close(t *testing.T)` - client_test.go:221
+- **TestClient_Dial** (public) - `TestClient_Dial(t *testing.T)` - client_test.go:19
+- **TestClient_Listen** (public) - `TestClient_Listen(t *testing.T)` - client_test.go:129
+- **TestConn_Close** (public) - `TestConn_Close(t *testing.T)` - conn_test.go:103
+- **TestConn_Read** (public) - `TestConn_Read(t *testing.T)` - conn_test.go:25
+- **TestConn_TestConn** (public) - `TestConn_TestConn(t *testing.T)` - conn_test.go:176
+- **TestConn_Write** (public) - `TestConn_Write(t *testing.T)` - conn_test.go:64
+- **TestListener_Accept** (public) - `TestListener_Accept(t *testing.T)` - listener_test.go:18
+- **TestListener_Close** (public) - `TestListener_Close(t *testing.T)` - listener_test.go:162
+- **prepClient** (private) - `prepClient(l *logging.Logger, visorPK cipher.PubKey, rpc appserver.RPCIngressClient) *Client` - client_test.go:289
+- **wrapConn** (private) - `wrapConn(conn net.Conn, local, remote routing.Addr) *wrappedConn` - conn_test.go:160
+
+### Methods
+
+#### *Client
+- **Close** (public) - `(c *Client) Close()` - client.go:168
+- **Config** (public) - `(c *Client) Config() appcommon.ProcConfig` - client.go:63
+- **Dial** (public) - `(c *Client) Dial(remote appnet.Addr) (net.Conn, error)` - client.go:88
+- **Listen** (public) - `(c *Client) Listen(n appnet.Type, port routing.Port) (net.Listener, error)` - client.go:126
+- **SetAppPort** (public) - `(c *Client) SetAppPort(appPort routing.Port) error` - client.go:83
+- **SetConnectionDuration** (public) - `(c *Client) SetConnectionDuration(dur int64) error` - client.go:73
+- **SetDetailedStatus** (public) - `(c *Client) SetDetailedStatus(status string) error` - client.go:68
+- **SetError** (public) - `(c *Client) SetError(appErr string) error` - client.go:78
+
+#### *Conn
+- **Close** (public) - `(c *Conn) Close() error` - conn.go:49
+- **LocalAddr** (public) - `(c *Conn) LocalAddr() net.Addr` - conn.go:65
+- **Read** (public) - `(c *Conn) Read(b []byte) (int, error)` - conn.go:28
+- **RemoteAddr** (public) - `(c *Conn) RemoteAddr() net.Addr` - conn.go:70
+- **SetDeadline** (public) - `(c *Conn) SetDeadline(t time.Time) error` - conn.go:75
+- **SetReadDeadline** (public) - `(c *Conn) SetReadDeadline(t time.Time) error` - conn.go:80
+- **SetWriteDeadline** (public) - `(c *Conn) SetWriteDeadline(t time.Time) error` - conn.go:85
+- **Write** (public) - `(c *Conn) Write(b []byte) (int, error)` - conn.go:35
+
+#### *Listener
+- **Accept** (public) - `(l *Listener) Accept() (net.Conn, error)` - listener.go:30
+- **Addr** (public) - `(l *Listener) Addr() net.Addr` - listener.go:107
+- **Close** (public) - `(l *Listener) Close() error` - listener.go:72
+
+#### *wrappedConn
+- **LocalAddr** (public) - `(p *wrappedConn) LocalAddr() net.Addr` - conn_test.go:168
+- **RemoteAddr** (public) - `(p *wrappedConn) RemoteAddr() net.Addr` - conn_test.go:172
+
+---
+
+## pkg/app/appcommon
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appcommon
+**Functions**: 41
+
+### Functions
+- **NewBBoltLogStore** (public) - `NewBBoltLogStore(path, appName string) (_ LogStore, err error)` - log_store.go:71
+- **NewProcLogger** (public) - `NewProcLogger(conf ProcConfig, mLog *logging.MasterLogger) (log *logging.MasterLogger, db LogStore)` - log_store.go:28
+- **ProcConfigFromEnv** (public) - `ProcConfigFromEnv() (ProcConfig, error)` - proc_config.go:87
+- **RandProcKey** (public) - `RandProcKey() ProcKey` - proc_config.go:32
+- **ReadHello** (public) - `ReadHello(r io.Reader) (Hello, error)` - hello.go:37
+- **TestLogStore** (public) - `TestLogStore(t *testing.T)` - log_store_test.go:13
+- **TimestampFromLog** (public) - `TimestampFromLog(log string) string` - log_store.go:42
+- **WriteHello** (public) - `WriteHello(w io.Writer, hello Hello) error` - hello.go:58
+- **argEqualsFlag** (private) - `argEqualsFlag(arg, flag string) bool` - proc_config.go:133
+- **iterateFromBeginning** (private) - `iterateFromBeginning(c *bbolt.Cursor, parsedTime []byte) []string` - log_store.go:250
+- **iterateFromKey** (private) - `iterateFromKey(c *bbolt.Cursor) []string` - log_store.go:240
+
+### Methods
+
+#### *Hello
+- **AllowsEventType** (public) - `(h *Hello) AllowsEventType(eventType string) bool` - hello.go:29
+- **String** (public) - `(h *Hello) String() string` - hello.go:20
+
+#### *MockAddr
+- **Network** (public) - `(_m *MockAddr) Network() string` - mock_addr.go:13
+- **String** (public) - `(_m *MockAddr) String() string` - mock_addr.go:27
+
+#### *MockConn
+- **Close** (public) - `(_m *MockConn) Close() error` - mock_conn.go:18
+- **LocalAddr** (public) - `(_m *MockConn) LocalAddr() net.Addr` - mock_conn.go:32
+- **Read** (public) - `(_m *MockConn) Read(b []byte) (int, error)` - mock_conn.go:46
+- **RemoteAddr** (public) - `(_m *MockConn) RemoteAddr() net.Addr` - mock_conn.go:67
+- **SetDeadline** (public) - `(_m *MockConn) SetDeadline(t time.Time) error` - mock_conn.go:81
+- **SetReadDeadline** (public) - `(_m *MockConn) SetReadDeadline(t time.Time) error` - mock_conn.go:95
+- **SetWriteDeadline** (public) - `(_m *MockConn) SetWriteDeadline(t time.Time) error` - mock_conn.go:109
+- **Write** (public) - `(_m *MockConn) Write(b []byte) (int, error)` - mock_conn.go:123
+
+#### *MockListener
+- **Accept** (public) - `(_m *MockListener) Accept() (net.Conn, error)` - mock_listener.go:17
+- **Addr** (public) - `(_m *MockListener) Addr() net.Addr` - mock_listener.go:40
+- **Close** (public) - `(_m *MockListener) Close() error` - mock_listener.go:54
+
+#### *ProcConfig
+- **ArgVal** (public) - `(c *ProcConfig) ArgVal(flag string) string` - proc_config.go:123
+- **ContainsFlag** (public) - `(c *ProcConfig) ContainsFlag(flag string) bool` - proc_config.go:113
+- **EnsureKey** (public) - `(c *ProcConfig) EnsureKey()` - proc_config.go:100
+- **Envs** (public) - `(c *ProcConfig) Envs() []string` - proc_config.go:107
+- **encodeJSON** (private) - `(c *ProcConfig) encodeJSON() []byte` - proc_config.go:154
+
+#### *ProcKey
+- **UnmarshalText** (public) - `(k *ProcKey) UnmarshalText(data []byte) error` - proc_config.go:52
+
+#### *bBoltLogStore
+- **Fire** (public) - `(l *bBoltLogStore) Fire(entry *log.Entry) error` - log_store.go:195
+- **Flush** (public) - `(l *bBoltLogStore) Flush() error` - log_store.go:236
+- **Levels** (public) - `(l *bBoltLogStore) Levels() []log.Level` - log_store.go:232
+- **LogsSince** (public) - `(l *bBoltLogStore) LogsSince(t time.Time) (logs []string, err error)` - log_store.go:161
+- **Store** (public) - `(l *bBoltLogStore) Store(t time.Time, s string) err error` - log_store.go:138
+- **Write** (public) - `(l *bBoltLogStore) Write(p []byte) (n int, err error)` - log_store.go:102
+
+#### ProcKey
+- **MarshalText** (public) - `(k ProcKey) MarshalText() ([]byte, error)` - proc_config.go:47
+- **Null** (public) - `(k ProcKey) Null() bool` - proc_config.go:42
+- **String** (public) - `(k ProcKey) String() string` - proc_config.go:37
+
+---
+
+## pkg/app/appdisc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appdisc
+**Functions**: 7
+
+### Methods
+
+#### *Factory
+- **AppUpdater** (public) - `(f *Factory) AppUpdater(conf appcommon.ProcConfig) (Updater, bool)` - factory.go:69
+- **VisorUpdater** (public) - `(f *Factory) VisorUpdater(port uint16) Updater` - factory.go:48
+- **setDefaults** (private) - `(f *Factory) setDefaults()` - factory.go:30
+
+#### *serviceUpdater
+- **Start** (public) - `(u *serviceUpdater) Start()` - discovery_manager.go:33
+- **Stop** (public) - `(u *serviceUpdater) Stop()` - discovery_manager.go:40
+
+#### emptyUpdater
+- **Start** (public) - `(emptyUpdater) Start()` - discovery_manager.go:24
+- **Stop** (public) - `(emptyUpdater) Stop()` - discovery_manager.go:25
+
+---
+
+## pkg/app/appevent
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appevent
+**Functions**: 38
+
+### Functions
+- **AllTypes** (public) - `AllTypes() map[string]bool` - types.go:5
+- **DoReqHandshake** (public) - `DoReqHandshake(conf appcommon.ProcConfig, subs *Subscriber) (net.Conn, []io.Closer, error)` - handshake.go:19
+- **DoRespHandshake** (public) - `DoRespHandshake(ebc *Broadcaster, conn net.Conn) (*appcommon.Hello, error)` - handshake.go:59
+- **NewBroadcaster** (public) - `NewBroadcaster(log logrus.FieldLogger, timeout time.Duration) *Broadcaster` - broadcaster.go:26
+- **NewEvent** (public) - `NewEvent(t string, v interface{...}) *Event` - event.go:16
+- **NewMockRPCClient** (public) - `NewMockRPCClient(t interface{...}) *MockRPCClient` - mock_rpc_client.go:76
+- **NewRPCClient** (public) - `NewRPCClient(hello *appcommon.Hello) (RPCClient, error)` - rpc.go:48
+- **NewRPCGateway** (public) - `NewRPCGateway(log logrus.FieldLogger, subs *Subscriber) *RPCGateway` - rpc.go:23
+- **NewSubscriber** (public) - `NewSubscriber() *Subscriber` - subscriber.go:27
+- **PushEvent** (public) - `PushEvent(s *Subscriber, e *Event) error` - subscriber.go:115
+- **TestBroadcaster_Broadcast** (public) - `TestBroadcaster_Broadcast(t *testing.T)` - broadcaster_test.go:17
+- **notifyClient** (private) - `notifyClient(ctx context.Context, e *Event, client RPCClient, errCh chan error)` - broadcaster.go:91
+
+### Methods
+
+#### *Broadcaster
+- **AddClient** (public) - `(mc *Broadcaster) AddClient(c RPCClient)` - broadcaster.go:39
+- **Broadcast** (public) - `(mc *Broadcaster) Broadcast(ctx context.Context, e *Event) error` - broadcaster.go:48
+- **Close** (public) - `(mc *Broadcaster) Close() error` - broadcaster.go:100
+- **SendTCPDial** (public) - `(eb *Broadcaster) SendTCPDial(ctx context.Context, remoteNet, remoteAddr string)` - utils.go:9
+- **SendTPClose** (public) - `(eb *Broadcaster) SendTPClose(ctx context.Context, netType, addr string)` - utils.go:16
+- **sendEvent** (private) - `(eb *Broadcaster) sendEvent(ctx context.Context, event *Event)` - utils.go:24
+
+#### *Event
+- **Done** (public) - `(e *Event) Done()` - event.go:35
+- **InitDone** (public) - `(e *Event) InitDone()` - event.go:32
+- **Unmarshal** (public) - `(e *Event) Unmarshal(v interface{...})` - event.go:25
+- **Wait** (public) - `(e *Event) Wait()` - event.go:38
+
+#### *MockRPCClient
+- **Close** (public) - `(_m *MockRPCClient) Close() error` - mock_rpc_client.go:19
+- **Hello** (public) - `(_m *MockRPCClient) Hello() *appcommon.Hello` - mock_rpc_client.go:37
+- **Notify** (public) - `(_m *MockRPCClient) Notify(ctx context.Context, e *Event) error` - mock_rpc_client.go:57
+
+#### *RPCGateway
+- **Notify** (public) - `(g *RPCGateway) Notify(e *Event, _ *struct{...}) err error` - rpc.go:34
+
+#### *Subscriber
+- **Close** (public) - `(s *Subscriber) Close() error` - subscriber.go:98
+- **Count** (public) - `(s *Subscriber) Count() int` - subscriber.go:90
+- **OnTCPClose** (public) - `(s *Subscriber) OnTCPClose(action func(data TCPCloseData))` - subscriber.go:52
+- **OnTCPDial** (public) - `(s *Subscriber) OnTCPDial(action func(data TCPDialData))` - subscriber.go:37
+- **Subscriptions** (public) - `(s *Subscriber) Subscriptions() map[string]bool` - subscriber.go:78
+- **ensureEventChan** (private) - `(s *Subscriber) ensureEventChan(eventType string) chan *Event` - subscriber.go:65
+
+#### *rpcClient
+- **Close** (public) - `(c *rpcClient) Close() error` - rpc.go:86
+- **Hello** (public) - `(c *rpcClient) Hello() *appcommon.Hello` - rpc.go:81
+- **Notify** (public) - `(c *rpcClient) Notify(ctx context.Context, e *Event) error` - rpc.go:66
+- **formatMethod** (private) - `(c *rpcClient) formatMethod(method string) string` - rpc.go:94
+
+#### TCPCloseData
+- **Type** (public) - `(TCPCloseData) Type() string` - types.go:34
+
+#### TCPDialData
+- **Type** (public) - `(TCPDialData) Type() string` - types.go:22
+
+---
+
+## pkg/app/appnet
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appnet
+**Functions**: 69
+
+### Functions
+- **AddForwarding** (public) - `AddForwarding(fwd *ForwardConn)` - forwarding.go:25
+- **AddNetworker** (public) - `AddNetworker(t Type, n Networker) error` - networker.go:27
+- **ClearNetworkers** (public) - `ClearNetworkers()` - networker.go:52
+- **ConvertAddr** (public) - `ConvertAddr(addr net.Addr) (Addr, error)` - addr.go:49
+- **Dial** (public) - `Dial(addr Addr) (net.Conn, error)` - networker.go:69
+- **DialContext** (public) - `DialContext(ctx context.Context, addr Addr) (net.Conn, error)` - networker.go:83
+- **ErrServiceOffline** (public) - `ErrServiceOffline(port uint16) error` - errors.go:11
+- **GetAllForwardConns** (public) - `GetAllForwardConns() map[uuid.UUID]*ForwardConn` - forwarding.go:40
+- **GetForwardConn** (public) - `GetForwardConn(id uuid.UUID) *ForwardConn` - forwarding.go:32
+- **Listen** (public) - `Listen(addr Addr) (net.Listener, error)` - networker.go:93
+- **ListenContext** (public) - `ListenContext(ctx context.Context, addr Addr) (net.Listener, error)` - networker.go:98
+- **MakeHTTPTransport** (public) - `MakeHTTPTransport(appConn net.Conn, log *logging.Logger) HTTPTransport` - http_transport.go:19
+- **NewDMSGNetworker** (public) - `NewDMSGNetworker(dmsgC *dmsg.Client) Networker` - dmsg_networker.go:20
+- **NewForwardConn** (public) - `NewForwardConn(log *logging.Logger, remoteConn net.Conn, remotePort, localPort int) *ForwardConn` - forwarding.go:67
+- **NewMockNetworker** (public) - `NewMockNetworker(t interface{...}) *MockNetworker` - mock_networker.go:172
+- **NewSkywireNetworker** (public) - `NewSkywireNetworker(l logrus.FieldLogger, r router.Router) Networker` - skywire_networker.go:37
+- **Ping** (public) - `Ping(pk cipher.PubKey, addr Addr) (net.Conn, error)` - networker.go:74
+- **RemoveForwardConn** (public) - `RemoveForwardConn(id uuid.UUID)` - forwarding.go:48
+- **ResolveNetworker** (public) - `ResolveNetworker(t Type) (Networker, error)` - networker.go:37
+- **TestAddNetworker** (public) - `TestAddNetworker(t *testing.T)` - networker_test.go:15
+- **TestConvertAddr** (public) - `TestConvertAddr(t *testing.T)` - addr_test.go:15
+- **TestDial** (public) - `TestDial(t *testing.T)` - networker_test.go:47
+- **TestListen** (public) - `TestListen(t *testing.T)` - networker_test.go:78
+- **TestResolveNetworker** (public) - `TestResolveNetworker(t *testing.T)` - networker_test.go:29
+- **TestType_IsValid** (public) - `TestType_IsValid(t *testing.T)` - type_test.go:10
+- **WrapConn** (public) - `WrapConn(conn net.Conn) (net.Conn, error)` - wrapped_conn.go:17
+- **handleFunc** (private) - `handleFunc(remoteConn net.Conn, log *logging.Logger, closeChan chan struct{...}, once *sync.Once, lock *sync.Mutex) func(w http.ResponseWriter, req *http.Request)` - forwarding.go:134
+- **isClosed** (private) - `isClosed(c chan struct{...}) bool` - forwarding.go:125
+- **prepAddr** (private) - `prepAddr() Addr` - networker_test.go:109
+
+### Methods
+
+#### *DmsgNetworker
+- **Dial** (public) - `(n *DmsgNetworker) Dial(addr Addr) (net.Conn, error)` - dmsg_networker.go:27
+- **DialContext** (public) - `(n *DmsgNetworker) DialContext(ctx context.Context, addr Addr) (net.Conn, error)` - dmsg_networker.go:37
+- **Listen** (public) - `(n *DmsgNetworker) Listen(addr Addr) (net.Listener, error)` - dmsg_networker.go:47
+- **ListenContext** (public) - `(n *DmsgNetworker) ListenContext(_ context.Context, addr Addr) (net.Listener, error)` - dmsg_networker.go:52
+- **Ping** (public) - `(n *DmsgNetworker) Ping(pk cipher.PubKey, addr Addr) (net.Conn, error)` - dmsg_networker.go:32
+
+#### *ForwardConn
+- **Close** (public) - `(f *ForwardConn) Close() err error` - forwarding.go:116
+- **Serve** (public) - `(f *ForwardConn) Serve()` - forwarding.go:95
+
+#### *MockNetworker
+- **Dial** (public) - `(_m *MockNetworker) Dial(addr Addr) (net.Conn, error)` - mock_networker.go:21
+- **DialContext** (public) - `(_m *MockNetworker) DialContext(ctx context.Context, addr Addr) (net.Conn, error)` - mock_networker.go:51
+- **Listen** (public) - `(_m *MockNetworker) Listen(addr Addr) (net.Listener, error)` - mock_networker.go:81
+- **ListenContext** (public) - `(_m *MockNetworker) ListenContext(ctx context.Context, addr Addr) (net.Listener, error)` - mock_networker.go:111
+- **Ping** (public) - `(_m *MockNetworker) Ping(pk cipher.PubKey, addr Addr) (net.Conn, error)` - mock_networker.go:141
+
+#### *SkywireConn
+- **BandwidthReceived** (public) - `(c *SkywireConn) BandwidthReceived() uint64` - skywire_conn.go:47
+- **BandwidthSent** (public) - `(c *SkywireConn) BandwidthSent() uint64` - skywire_conn.go:42
+- **Close** (public) - `(c *SkywireConn) Close() error` - skywire_conn.go:62
+- **DownloadSpeed** (public) - `(c *SkywireConn) DownloadSpeed() uint32` - skywire_conn.go:37
+- **GetError** (public) - `(c *SkywireConn) GetError() error` - skywire_conn.go:57
+- **IsAlive** (public) - `(c *SkywireConn) IsAlive() bool` - skywire_conn.go:22
+- **Latency** (public) - `(c *SkywireConn) Latency() time.Duration` - skywire_conn.go:27
+- **SetError** (public) - `(c *SkywireConn) SetError(err error)` - skywire_conn.go:52
+- **UploadSpeed** (public) - `(c *SkywireConn) UploadSpeed() uint32` - skywire_conn.go:32
+
+#### *SkywireNetworker
+- **Dial** (public) - `(r *SkywireNetworker) Dial(addr Addr) (net.Conn, error)` - skywire_networker.go:46
+- **DialContext** (public) - `(r *SkywireNetworker) DialContext(ctx context.Context, addr Addr) (conn net.Conn, err error)` - skywire_networker.go:51
+- **Listen** (public) - `(r *SkywireNetworker) Listen(addr Addr) (net.Listener, error)` - skywire_networker.go:103
+- **ListenContext** (public) - `(r *SkywireNetworker) ListenContext(ctx context.Context, addr Addr) (net.Listener, error)` - skywire_networker.go:108
+- **Ping** (public) - `(r *SkywireNetworker) Ping(pk cipher.PubKey, addr Addr) (net.Conn, error)` - skywire_networker.go:77
+- **close** (private) - `(r *SkywireNetworker) close(closer io.Closer)` - skywire_networker.go:193
+- **serve** (private) - `(r *SkywireNetworker) serve(conn net.Conn)` - skywire_networker.go:160
+- **serveRouteGroup** (private) - `(r *SkywireNetworker) serveRouteGroup(ctx context.Context) error` - skywire_networker.go:138
+
+#### *WrappedConn
+- **LocalAddr** (public) - `(c *WrappedConn) LocalAddr() net.Addr` - wrapped_conn.go:36
+- **RemoteAddr** (public) - `(c *WrappedConn) RemoteAddr() net.Addr` - wrapped_conn.go:41
+
+#### *skywireListener
+- **Accept** (public) - `(l *skywireListener) Accept() (net.Conn, error)` - skywire_networker.go:210
+- **Addr** (public) - `(l *skywireListener) Addr() net.Addr` - skywire_networker.go:235
+- **Close** (public) - `(l *skywireListener) Close() error` - skywire_networker.go:223
+- **putConn** (private) - `(l *skywireListener) putConn(conn net.Conn)` - skywire_networker.go:241
+
+#### Addr
+- **Network** (public) - `(a Addr) Network() string` - addr.go:29
+- **PK** (public) - `(a Addr) PK() cipher.PubKey` - addr.go:43
+- **String** (public) - `(a Addr) String() string` - addr.go:34
+
+#### HTTPTransport
+- **RoundTrip** (public) - `(t HTTPTransport) RoundTrip(req *http.Request) (*http.Response, error)` - http_transport.go:28
+
+#### Type
+- **IsValid** (public) - `(n Type) IsValid() bool` - type.go:15
+
+---
+
+## pkg/app/appserver
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/appserver
+**Functions**: 201
+
+### Functions
+- **NewMockProcManager** (public) - `NewMockProcManager(t interface{...}) *MockProcManager` - mock_proc_manager.go:385
+- **NewMockRPCIngressClient** (public) - `NewMockRPCIngressClient(t interface{...}) *MockRPCIngressClient` - mock_rpc_ingress_client.go:338
+- **NewProc** (public) - `NewProc(mLog *logging.MasterLogger, conf appcommon.ProcConfig, disc appdisc.Updater, m ProcManager, appName, logStorePath string) *Proc` - proc.go:83
+- **NewProcManager** (public) - `NewProcManager(mLog *logging.MasterLogger, discF *appdisc.Factory, eb *appevent.Broadcaster, addr, logStorePath string) (ProcManager, error)` - proc_manager.go:81
+- **NewRPCGateway** (public) - `NewRPCGateway(log *logging.Logger, proc *Proc) *RPCIngressGateway` - rpc_ingress_gateway.go:67
+- **NewRPCIngressClient** (public) - `NewRPCIngressClient(rpc *rpc.Client, procKey appcommon.ProcKey) RPCIngressClient` - rpc_ingress_client.go:41
+- **TestProcManager_DetailedStatus** (public) - `TestProcManager_DetailedStatus(t *testing.T)` - proc_manager_test.go:111
+- **TestProcManager_Pop** (public) - `TestProcManager_Pop(t *testing.T)` - proc_manager_test.go:63
+- **TestProcManager_ProcByName** (public) - `TestProcManager_ProcByName(t *testing.T)` - proc_manager_test.go:14
+- **TestProcManager_Range** (public) - `TestProcManager_Range(t *testing.T)` - proc_manager_test.go:34
+- **TestProcManager_RegisterAndDeregister** (public) - `TestProcManager_RegisterAndDeregister(t *testing.T)` - proc_manager_test.go:134
+- **TestProcManager_SetDetailedStatus** (public) - `TestProcManager_SetDetailedStatus(t *testing.T)` - proc_manager_test.go:86
+- **TestProc_DetailedStatus** (public) - `TestProc_DetailedStatus(t *testing.T)` - proc_test.go:10
+- **TestProc_SetDetailedStatus** (public) - `TestProc_SetDetailedStatus(t *testing.T)` - proc_test.go:20
+- **TestRPCIngressClient_Accept** (public) - `TestRPCIngressClient_Accept(t *testing.T)` - rpc_ingress_client_test.go:160
+- **TestRPCIngressClient_CloseConn** (public) - `TestRPCIngressClient_CloseConn(t *testing.T)` - rpc_ingress_client_test.go:360
+- **TestRPCIngressClient_CloseListener** (public) - `TestRPCIngressClient_CloseListener(t *testing.T)` - rpc_ingress_client_test.go:419
+- **TestRPCIngressClient_Dial** (public) - `TestRPCIngressClient_Dial(t *testing.T)` - rpc_ingress_client_test.go:46
+- **TestRPCIngressClient_Listen** (public) - `TestRPCIngressClient_Listen(t *testing.T)` - rpc_ingress_client_test.go:105
+- **TestRPCIngressClient_Read** (public) - `TestRPCIngressClient_Read(t *testing.T)` - rpc_ingress_client_test.go:293
+- **TestRPCIngressClient_SetDeadline** (public) - `TestRPCIngressClient_SetDeadline(t *testing.T)` - rpc_ingress_client_test.go:474
+- **TestRPCIngressClient_SetDetailedStatus** (public) - `TestRPCIngressClient_SetDetailedStatus(t *testing.T)` - rpc_ingress_client_test.go:25
+- **TestRPCIngressClient_SetReadDeadline** (public) - `TestRPCIngressClient_SetReadDeadline(t *testing.T)` - rpc_ingress_client_test.go:543
+- **TestRPCIngressClient_SetWriteDeadline** (public) - `TestRPCIngressClient_SetWriteDeadline(t *testing.T)` - rpc_ingress_client_test.go:612
+- **TestRPCIngressClient_Write** (public) - `TestRPCIngressClient_Write(t *testing.T)` - rpc_ingress_client_test.go:228
+- **TestRPCIngressGateway_Accept** (public) - `TestRPCIngressGateway_Accept(t *testing.T)` - rpc_ingress_gateway_test.go:259
+- **TestRPCIngressGateway_CloseConn** (public) - `TestRPCIngressGateway_CloseConn(t *testing.T)` - rpc_ingress_gateway_test.go:900
+- **TestRPCIngressGateway_CloseListener** (public) - `TestRPCIngressGateway_CloseListener(t *testing.T)` - rpc_ingress_gateway_test.go:971
+- **TestRPCIngressGateway_Dial** (public) - `TestRPCIngressGateway_Dial(t *testing.T)` - rpc_ingress_gateway_test.go:51
+- **TestRPCIngressGateway_Listen** (public) - `TestRPCIngressGateway_Listen(t *testing.T)` - rpc_ingress_gateway_test.go:171
+- **TestRPCIngressGateway_Read** (public) - `TestRPCIngressGateway_Read(t *testing.T)` - rpc_ingress_gateway_test.go:498
+- **TestRPCIngressGateway_SetDeadline** (public) - `TestRPCIngressGateway_SetDeadline(t *testing.T)` - rpc_ingress_gateway_test.go:804
+- **TestRPCIngressGateway_SetDetailedStatus** (public) - `TestRPCIngressGateway_SetDetailedStatus(t *testing.T)` - rpc_ingress_gateway_test.go:27
+- **TestRPCIngressGateway_SetReadDeadline** (public) - `TestRPCIngressGateway_SetReadDeadline(t *testing.T)` - rpc_ingress_gateway_test.go:708
+- **TestRPCIngressGateway_SetWriteDeadline** (public) - `TestRPCIngressGateway_SetWriteDeadline(t *testing.T)` - rpc_ingress_gateway_test.go:611
+- **TestRPCIngressGateway_Write** (public) - `TestRPCIngressGateway_Write(t *testing.T)` - rpc_ingress_gateway_test.go:388
+- **addConn** (private) - `addConn(t *testing.T, rpc *RPCIngressGateway, conn net.Conn) uint16` - rpc_ingress_gateway_test.go:1054
+- **addListener** (private) - `addListener(t *testing.T, rpc *RPCIngressGateway, lis net.Listener) uint16` - rpc_ingress_gateway_test.go:1064
+- **contains** (private) - `contains(iErrs []string, err string) bool` - stderr.go:29
+- **getIgnoreErrs** (private) - `getIgnoreErrs() []string` - stderr_unix.go:6
+- **getIgnoreErrs** (private) - `getIgnoreErrs() []string` - stderr_windows.go:6
+- **ioErrToRPCIOErr** (private) - `ioErrToRPCIOErr(err error) *RPCIOErr` - rpc_ingress_gateway.go:412
+- **isDone** (private) - `isDone(done chan struct{...}) bool` - proc_manager.go:481
+- **prepAddr** (private) - `prepAddr(nType appnet.Type) appnet.Addr` - rpc_ingress_gateway_test.go:1042
+- **prepAddrs** (private) - `prepAddrs() (dmsgLocal, dmsgRemote dmsg.Addr, local, remote appnet.Addr)` - rpc_ingress_client_test.go:732
+- **prepListener** (private) - `prepListener(t *testing.T) (lis net.Listener, cleanup func())` - rpc_ingress_client_test.go:722
+- **prepNetworkerWithConn** (private) - `prepNetworkerWithConn(t *testing.T, conn *appcommon.MockConn, remote appnet.Addr)` - rpc_ingress_client_test.go:693
+- **prepNetworkerWithListener** (private) - `prepNetworkerWithListener(t *testing.T, lis *appcommon.MockListener, local appnet.Addr)` - rpc_ingress_client_test.go:681
+- **prepRPCClient** (private) - `prepRPCClient(t *testing.T, network, addr string) RPCIngressClient` - rpc_ingress_client_test.go:715
+- **prepRPCServer** (private) - `prepRPCServer(t *testing.T, gateway *RPCIngressGateway) *rpc.Server` - rpc_ingress_client_test.go:707
+- **printStdErr** (private) - `printStdErr(stderr io.ReadCloser, errorLog *logrus.Entry)` - stderr.go:14
+- **storeLog** (private) - `storeLog(log *logging.MasterLogger, localPath string)` - proc.go:479
+- **testRPCIngressGatewayAcceptError** (private) - `testRPCIngressGatewayAcceptError(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:371
+- **testRPCIngressGatewayAcceptErrorWrappingConn** (private) - `testRPCIngressGatewayAcceptErrorWrappingConn(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:349
+- **testRPCIngressGatewayAcceptListenerNotSet** (private) - `testRPCIngressGatewayAcceptListenerNotSet(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:316
+- **testRPCIngressGatewayAcceptNoMoreSlots** (private) - `testRPCIngressGatewayAcceptNoMoreSlots(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:327
+- **testRPCIngressGatewayAcceptNoSuchListener** (private) - `testRPCIngressGatewayAcceptNoSuchListener(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:305
+- **testRPCIngressGatewayAcceptOK** (private) - `testRPCIngressGatewayAcceptOK(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:287
+- **testRPCIngressGatewayCloseConnError** (private) - `testRPCIngressGatewayCloseConnError(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:957
+- **testRPCIngressGatewayCloseConnNotSet** (private) - `testRPCIngressGatewayCloseConnNotSet(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:947
+- **testRPCIngressGatewayCloseConnOK** (private) - `testRPCIngressGatewayCloseConnOK(l *logging.Logger, t *testing.T)` - rpc_ingress_gateway_test.go:920
+- **testRPCIngressGatewayCloseListenerError** (private) - `testRPCIngressGatewayCloseListenerError(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:1028
+- **testRPCIngressGatewayCloseListenerNoSuchListener** (private) - `testRPCIngressGatewayCloseListenerNoSuchListener(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:1008
+- **testRPCIngressGatewayCloseListenerNotSet** (private) - `testRPCIngressGatewayCloseListenerNotSet(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:1018
+- **testRPCIngressGatewayCloseListenerOK** (private) - `testRPCIngressGatewayCloseListenerOK(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:991
+- **testRPCIngressGatewayCloseNoSuchConn** (private) - `testRPCIngressGatewayCloseNoSuchConn(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:937
+- **testRPCIngressGatewayDialError** (private) - `testRPCIngressGatewayDialError(t *testing.T, l *logging.Logger, nType appnet.Type, dialAddr appnet.Addr)` - rpc_ingress_gateway_test.go:124
+- **testRPCIngressGatewayDialErrorWrappingConn** (private) - `testRPCIngressGatewayDialErrorWrappingConn(t *testing.T, l *logging.Logger, nType appnet.Type, dialAddr appnet.Addr)` - rpc_ingress_gateway_test.go:145
+- **testRPCIngressGatewayDialNoMoreSlots** (private) - `testRPCIngressGatewayDialNoMoreSlots(t *testing.T, l *logging.Logger, dialAddr appnet.Addr)` - rpc_ingress_gateway_test.go:104
+- **testRPCIngressGatewayDialOK** (private) - `testRPCIngressGatewayDialOK(t *testing.T, l *logging.Logger, nType appnet.Type, dialAddr appnet.Addr)` - rpc_ingress_gateway_test.go:74
+- **testRPCIngressGatewayListenError** (private) - `testRPCIngressGatewayListenError(t *testing.T, l *logging.Logger, nType appnet.Type, listenAddr appnet.Addr)` - rpc_ingress_gateway_test.go:237
+- **testRPCIngressGatewayListenNoMoreSlots** (private) - `testRPCIngressGatewayListenNoMoreSlots(t *testing.T, l *logging.Logger, listenAddr appnet.Addr)` - rpc_ingress_gateway_test.go:216
+- **testRPCIngressGatewayListenOK** (private) - `testRPCIngressGatewayListenOK(t *testing.T, l *logging.Logger, nType appnet.Type, listenAddr appnet.Addr)` - rpc_ingress_gateway_test.go:190
+- **testRPCIngressGatewayReadConnNotSet** (private) - `testRPCIngressGatewayReadConnNotSet(t *testing.T, l *logging.Logger, readBufLen int)` - rpc_ingress_gateway_test.go:562
+- **testRPCIngressGatewayReadError** (private) - `testRPCIngressGatewayReadError(t *testing.T, l *logging.Logger, readBuf []byte)` - rpc_ingress_gateway_test.go:578
+- **testRPCIngressGatewayReadNoSuchConn** (private) - `testRPCIngressGatewayReadNoSuchConn(t *testing.T, l *logging.Logger, readBufLen int)` - rpc_ingress_gateway_test.go:547
+- **testRPCIngressGatewayReadOK** (private) - `testRPCIngressGatewayReadOK(t *testing.T, l *logging.Logger, readBuf []byte)` - rpc_ingress_gateway_test.go:521
+- **testRPCIngressGatewaySetDeadlineConnNotSet** (private) - `testRPCIngressGatewaySetDeadlineConnNotSet(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:864
+- **testRPCIngressGatewaySetDeadlineError** (private) - `testRPCIngressGatewaySetDeadlineError(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:878
+- **testRPCIngressGatewaySetDeadlineNoSuchConn** (private) - `testRPCIngressGatewaySetDeadlineNoSuchConn(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:850
+- **testRPCIngressGatewaySetDeadlineOK** (private) - `testRPCIngressGatewaySetDeadlineOK(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:828
+- **testRPCIngressGatewaySetDetailedStatusOK** (private) - `testRPCIngressGatewaySetDetailedStatusOK(t *testing.T, l *logging.Logger)` - rpc_ingress_gateway_test.go:35
+- **testRPCIngressGatewaySetReadDeadlineConnNotSet** (private) - `testRPCIngressGatewaySetReadDeadlineConnNotSet(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:768
+- **testRPCIngressGatewaySetReadDeadlineError** (private) - `testRPCIngressGatewaySetReadDeadlineError(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:782
+- **testRPCIngressGatewaySetReadDeadlineNoSuchConn** (private) - `testRPCIngressGatewaySetReadDeadlineNoSuchConn(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:754
+- **testRPCIngressGatewaySetReadDeadlineOK** (private) - `testRPCIngressGatewaySetReadDeadlineOK(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:732
+- **testRPCIngressGatewaySetWriteDeadlineConnNotSet** (private) - `testRPCIngressGatewaySetWriteDeadlineConnNotSet(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:672
+- **testRPCIngressGatewaySetWriteDeadlineError** (private) - `testRPCIngressGatewaySetWriteDeadlineError(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:686
+- **testRPCIngressGatewaySetWriteDeadlineNoSuchConn** (private) - `testRPCIngressGatewaySetWriteDeadlineNoSuchConn(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:657
+- **testRPCIngressGatewaySetWriteDeadlineOK** (private) - `testRPCIngressGatewaySetWriteDeadlineOK(t *testing.T, l *logging.Logger, deadline time.Time)` - rpc_ingress_gateway_test.go:635
+- **testRPCIngressGatewayWriteConnNotSet** (private) - `testRPCIngressGatewayWriteConnNotSet(t *testing.T, l *logging.Logger, writeBuff []byte)` - rpc_ingress_gateway_test.go:451
+- **testRPCIngressGatewayWriteError** (private) - `testRPCIngressGatewayWriteError(t *testing.T, l *logging.Logger, writeBuff []byte)` - rpc_ingress_gateway_test.go:467
+- **testRPCIngressGatewayWriteNoSuchConn** (private) - `testRPCIngressGatewayWriteNoSuchConn(t *testing.T, l *logging.Logger, writeBuff []byte)` - rpc_ingress_gateway_test.go:436
+- **testRPCIngressGatewayWriteOK** (private) - `testRPCIngressGatewayWriteOK(t *testing.T, l *logging.Logger, writeBuff []byte)` - rpc_ingress_gateway_test.go:410
+
+### Methods
+
+#### *MockProcManager
+- **Addr** (public) - `(_m *MockProcManager) Addr() net.Addr` - mock_proc_manager.go:21
+- **Close** (public) - `(_m *MockProcManager) Close() error` - mock_proc_manager.go:41
+- **ConnectionsSummary** (public) - `(_m *MockProcManager) ConnectionsSummary(appName string) ([]ConnectionSummary, error)` - mock_proc_manager.go:59
+- **Deregister** (public) - `(_m *MockProcManager) Deregister(key appcommon.ProcKey) error` - mock_proc_manager.go:89
+- **DetailedStatus** (public) - `(_m *MockProcManager) DetailedStatus(appName string) (string, error)` - mock_proc_manager.go:107
+- **ErrorByName** (public) - `(_m *MockProcManager) ErrorByName(appName string) (string, bool)` - mock_proc_manager.go:135
+- **GetAppPort** (public) - `(_m *MockProcManager) GetAppPort(appName string) (routing.Port, error)` - mock_proc_manager.go:163
+- **ProcByName** (public) - `(_m *MockProcManager) ProcByName(appName string) (*Proc, bool)` - mock_proc_manager.go:191
+- **Range** (public) - `(_m *MockProcManager) Range(next func(string, *Proc) bool)` - mock_proc_manager.go:221
+- **Register** (public) - `(_m *MockProcManager) Register(conf appcommon.ProcConfig) (appcommon.ProcKey, error)` - mock_proc_manager.go:226
+- **SetDetailedStatus** (public) - `(_m *MockProcManager) SetDetailedStatus(appName string, status string) error` - mock_proc_manager.go:256
+- **SetError** (public) - `(_m *MockProcManager) SetError(appName string, status string) error` - mock_proc_manager.go:274
+- **Start** (public) - `(_m *MockProcManager) Start(conf appcommon.ProcConfig) (appcommon.ProcID, error)` - mock_proc_manager.go:292
+- **Stats** (public) - `(_m *MockProcManager) Stats(appName string) (AppStats, error)` - mock_proc_manager.go:320
+- **Stop** (public) - `(_m *MockProcManager) Stop(appName string) error` - mock_proc_manager.go:348
+- **Wait** (public) - `(_m *MockProcManager) Wait(appName string) error` - mock_proc_manager.go:366
+
+#### *MockRPCIngressClient
+- **Accept** (public) - `(_m *MockRPCIngressClient) Accept(lisID uint16) (uint16, appnet.Addr, error)` - mock_rpc_ingress_client.go:21
+- **CloseConn** (public) - `(_m *MockRPCIngressClient) CloseConn(id uint16) error` - mock_rpc_ingress_client.go:56
+- **CloseListener** (public) - `(_m *MockRPCIngressClient) CloseListener(id uint16) error` - mock_rpc_ingress_client.go:74
+- **Dial** (public) - `(_m *MockRPCIngressClient) Dial(remote appnet.Addr) (uint16, routing.Port, error)` - mock_rpc_ingress_client.go:92
+- **Listen** (public) - `(_m *MockRPCIngressClient) Listen(local appnet.Addr) (uint16, error)` - mock_rpc_ingress_client.go:127
+- **Read** (public) - `(_m *MockRPCIngressClient) Read(connID uint16, b []byte) (int, error)` - mock_rpc_ingress_client.go:155
+- **SetAppPort** (public) - `(_m *MockRPCIngressClient) SetAppPort(appPort routing.Port) error` - mock_rpc_ingress_client.go:183
+- **SetConnectionDuration** (public) - `(_m *MockRPCIngressClient) SetConnectionDuration(dur int64) error` - mock_rpc_ingress_client.go:201
+- **SetDeadline** (public) - `(_m *MockRPCIngressClient) SetDeadline(connID uint16, d time.Time) error` - mock_rpc_ingress_client.go:219
+- **SetDetailedStatus** (public) - `(_m *MockRPCIngressClient) SetDetailedStatus(status string) error` - mock_rpc_ingress_client.go:237
+- **SetError** (public) - `(_m *MockRPCIngressClient) SetError(appErr string) error` - mock_rpc_ingress_client.go:255
+- **SetReadDeadline** (public) - `(_m *MockRPCIngressClient) SetReadDeadline(connID uint16, d time.Time) error` - mock_rpc_ingress_client.go:273
+- **SetWriteDeadline** (public) - `(_m *MockRPCIngressClient) SetWriteDeadline(connID uint16, d time.Time) error` - mock_rpc_ingress_client.go:291
+- **Write** (public) - `(_m *MockRPCIngressClient) Write(connID uint16, b []byte) (int, error)` - mock_rpc_ingress_client.go:309
+
+#### *Proc
+- **AwaitConn** (public) - `(p *Proc) AwaitConn() bool` - proc.go:179
+- **Cmd** (public) - `(p *Proc) Cmd() *exec.Cmd` - proc.go:141
+- **ConnectionDuration** (public) - `(p *Proc) ConnectionDuration() int64` - proc.go:374
+- **ConnectionsSummary** (public) - `(p *Proc) ConnectionsSummary() []ConnectionSummary` - proc.go:432
+- **DetailedStatus** (public) - `(p *Proc) DetailedStatus() string` - proc.go:381
+- **Error** (public) - `(p *Proc) Error() string` - proc.go:412
+- **GetAppPort** (public) - `(p *Proc) GetAppPort() routing.Port` - proc.go:404
+- **InjectConn** (public) - `(p *Proc) InjectConn(conn net.Conn) bool` - proc.go:160
+- **IsRunning** (public) - `(p *Proc) IsRunning() bool` - proc.go:347
+- **Logs** (public) - `(p *Proc) Logs() appcommon.LogStore` - proc.go:136
+- **SetAppPort** (public) - `(p *Proc) SetAppPort(port routing.Port)` - proc.go:397
+- **SetConnectionDuration** (public) - `(p *Proc) SetConnectionDuration(dur int64)` - proc.go:367
+- **SetDetailedStatus** (public) - `(p *Proc) SetDetailedStatus(status string)` - proc.go:352
+- **SetError** (public) - `(p *Proc) SetError(appErr string)` - proc.go:389
+- **Start** (public) - `(p *Proc) Start() error` - proc.go:193
+- **StartTime** (public) - `(p *Proc) StartTime() (time.Time, bool)` - proc.go:146
+- **Stop** (public) - `(p *Proc) Stop() error` - proc.go:293
+- **Wait** (public) - `(p *Proc) Wait() error` - proc.go:334
+
+#### *RPCIOErr
+- **ToError** (public) - `(e *RPCIOErr) ToError() error` - rpc_ingress_gateway.go:33
+
+#### *RPCIngressGateway
+- **Accept** (public) - `(r *RPCIngressGateway) Accept(lisID *uint16, resp *AcceptResp) err error` - rpc_ingress_gateway.go:186
+- **CloseConn** (public) - `(r *RPCIngressGateway) CloseConn(connID *uint16, _ *struct{...}) err error` - rpc_ingress_gateway.go:311
+- **CloseListener** (public) - `(r *RPCIngressGateway) CloseListener(lisID *uint16, _ *struct{...}) err error` - rpc_ingress_gateway.go:323
+- **Dial** (public) - `(r *RPCIngressGateway) Dial(remote *appnet.Addr, resp *DialResp) err error` - rpc_ingress_gateway.go:116
+- **Listen** (public) - `(r *RPCIngressGateway) Listen(local *appnet.Addr, lisID *uint16) err error` - rpc_ingress_gateway.go:153
+- **Read** (public) - `(r *RPCIngressGateway) Read(req *ReadReq, resp *ReadResp) error` - rpc_ingress_gateway.go:273
+- **SetAppPort** (public) - `(r *RPCIngressGateway) SetAppPort(port routing.Port, _ *struct{...}) err error` - rpc_ingress_gateway.go:103
+- **SetConnectionDuration** (public) - `(r *RPCIngressGateway) SetConnectionDuration(dur int64, _ *struct{...}) err error` - rpc_ingress_gateway.go:89
+- **SetDeadline** (public) - `(r *RPCIngressGateway) SetDeadline(req *DeadlineReq, _ *struct{...}) error` - rpc_ingress_gateway.go:341
+- **SetDetailedStatus** (public) - `(r *RPCIngressGateway) SetDetailedStatus(status *string, _ *struct{...}) err error` - rpc_ingress_gateway.go:80
+- **SetError** (public) - `(r *RPCIngressGateway) SetError(appErr *string, _ *struct{...}) err error` - rpc_ingress_gateway.go:96
+- **SetReadDeadline** (public) - `(r *RPCIngressGateway) SetReadDeadline(req *DeadlineReq, _ *struct{...}) error` - rpc_ingress_gateway.go:351
+- **SetWriteDeadline** (public) - `(r *RPCIngressGateway) SetWriteDeadline(req *DeadlineReq, _ *struct{...}) error` - rpc_ingress_gateway.go:361
+- **Write** (public) - `(r *RPCIngressGateway) Write(req *WriteReq, resp *WriteResp) error` - rpc_ingress_gateway.go:246
+- **getConn** (private) - `(r *RPCIngressGateway) getConn(connID uint16) (net.Conn, error)` - rpc_ingress_gateway.go:403
+- **getListener** (private) - `(r *RPCIngressGateway) getListener(lisID uint16) (net.Listener, error)` - rpc_ingress_gateway.go:393
+- **popConn** (private) - `(r *RPCIngressGateway) popConn(connID uint16) (net.Conn, error)` - rpc_ingress_gateway.go:383
+- **popListener** (private) - `(r *RPCIngressGateway) popListener(lisID uint16) (net.Listener, error)` - rpc_ingress_gateway.go:372
+
+#### *netErr
+- **Error** (public) - `(e *netErr) Error() string` - errors.go:12
+- **Temporary** (public) - `(e *netErr) Temporary() bool` - errors.go:20
+- **Timeout** (public) - `(e *netErr) Timeout() bool` - errors.go:16
+
+#### *procManager
+- **Addr** (public) - `(m *procManager) Addr() net.Addr` - proc_manager.go:433
+- **Close** (public) - `(m *procManager) Close() error` - proc_manager.go:438
+- **ConnectionsSummary** (public) - `(m *procManager) ConnectionsSummary(appName string) ([]ConnectionSummary, error)` - proc_manager.go:409
+- **Deregister** (public) - `(m *procManager) Deregister(key appcommon.ProcKey) error` - proc_manager.go:273
+- **DetailedStatus** (public) - `(m *procManager) DetailedStatus(appName string) (string, error)` - proc_manager.go:379
+- **ErrorByName** (public) - `(m *procManager) ErrorByName(appName string) (string, bool)` - proc_manager.go:291
+- **GetAppPort** (public) - `(m *procManager) GetAppPort(appName string) (routing.Port, error)` - proc_manager.go:399
+- **ProcByName** (public) - `(m *procManager) ProcByName(appName string) (*Proc, bool)` - proc_manager.go:283
+- **Range** (public) - `(m *procManager) Range(next func(name string, proc *Proc) bool)` - proc_manager.go:337
+- **Register** (public) - `(m *procManager) Register(conf appcommon.ProcConfig) (appcommon.ProcKey, error)` - proc_manager.go:228
+- **SetDetailedStatus** (public) - `(m *procManager) SetDetailedStatus(appName, status string) error` - proc_manager.go:367
+- **SetError** (public) - `(m *procManager) SetError(appName, appErr string) error` - proc_manager.go:389
+- **Start** (public) - `(m *procManager) Start(conf appcommon.ProcConfig) (appcommon.ProcID, error)` - proc_manager.go:182
+- **Stats** (public) - `(m *procManager) Stats(appName string) (AppStats, error)` - proc_manager.go:348
+- **Stop** (public) - `(m *procManager) Stop(name string) error` - proc_manager.go:300
+- **Wait** (public) - `(m *procManager) Wait(name string) error` - proc_manager.go:310
+- **get** (private) - `(m *procManager) get(name string) (*Proc, error)` - proc_manager.go:469
+- **handleConn** (private) - `(m *procManager) handleConn(conn net.Conn) bool` - proc_manager.go:152
+- **pop** (private) - `(m *procManager) pop(name string) (*Proc, error)` - proc_manager.go:454
+- **serve** (private) - `(m *procManager) serve()` - proc_manager.go:120
+- **stopAll** (private) - `(m *procManager) stopAll()` - proc_manager.go:419
+
+#### *rpcIngressClient
+- **Accept** (public) - `(c *rpcIngressClient) Accept(lisID uint16) (connID uint16, remote appnet.Addr, err error)` - rpc_ingress_client.go:98
+- **CloseConn** (public) - `(c *rpcIngressClient) CloseConn(id uint16) error` - rpc_ingress_client.go:142
+- **CloseListener** (public) - `(c *rpcIngressClient) CloseListener(id uint16) error` - rpc_ingress_client.go:147
+- **Dial** (public) - `(c *rpcIngressClient) Dial(remote appnet.Addr) (connID uint16, localPort routing.Port, err error)` - rpc_ingress_client.go:78
+- **Listen** (public) - `(c *rpcIngressClient) Listen(local appnet.Addr) (uint16, error)` - rpc_ingress_client.go:88
+- **Read** (public) - `(c *rpcIngressClient) Read(connID uint16, b []byte) (int, error)` - rpc_ingress_client.go:123
+- **SetAppPort** (public) - `(c *rpcIngressClient) SetAppPort(port routing.Port) error` - rpc_ingress_client.go:64
+- **SetConnectionDuration** (public) - `(c *rpcIngressClient) SetConnectionDuration(dur int64) error` - rpc_ingress_client.go:54
+- **SetDeadline** (public) - `(c *rpcIngressClient) SetDeadline(id uint16, t time.Time) error` - rpc_ingress_client.go:152
+- **SetDetailedStatus** (public) - `(c *rpcIngressClient) SetDetailedStatus(status string) error` - rpc_ingress_client.go:49
+- **SetError** (public) - `(c *rpcIngressClient) SetError(appErr string) error` - rpc_ingress_client.go:59
+- **SetReadDeadline** (public) - `(c *rpcIngressClient) SetReadDeadline(id uint16, t time.Time) error` - rpc_ingress_client.go:162
+- **SetWriteDeadline** (public) - `(c *rpcIngressClient) SetWriteDeadline(id uint16, t time.Time) error` - rpc_ingress_client.go:172
+- **Write** (public) - `(c *rpcIngressClient) Write(connID uint16, b []byte) (int, error)` - rpc_ingress_client.go:108
+- **formatMethod** (private) - `(c *rpcIngressClient) formatMethod(method string) string` - rpc_ingress_client.go:182
+
+#### RPCErr
+- **Error** (public) - `(e RPCErr) Error() string` - rpc_ingress_client.go:73
+
+---
+
+## pkg/app/idmanager
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/idmanager
+**Functions**: 41
+
+### Functions
+- **AssertConn** (public) - `AssertConn(v interface{...}) (net.Conn, error)` - util.go:20
+- **AssertListener** (public) - `AssertListener(v interface{...}) (net.Listener, error)` - util.go:10
+- **New** (public) - `New() *Manager` - manager.go:31
+- **NewDeltaInformer** (public) - `NewDeltaInformer() *DeltaInformer` - delta_informer.go:12
+- **TestAssertConn** (public) - `TestAssertConn(t *testing.T)` - util_test.go:31
+- **TestAssertListener** (public) - `TestAssertListener(t *testing.T)` - util_test.go:12
+- **TestManager_Add** (public) - `TestManager_Add(t *testing.T)` - manager_test.go:175
+- **TestManager_DoRange** (public) - `TestManager_DoRange(t *testing.T)` - manager_test.go:418
+- **TestManager_Get** (public) - `TestManager_Get(t *testing.T)` - manager_test.go:349
+- **TestManager_Pop** (public) - `TestManager_Pop(t *testing.T)` - manager_test.go:95
+- **TestManager_ReserveNextID** (public) - `TestManager_ReserveNextID(t *testing.T)` - manager_test.go:15
+- **TestManager_Set** (public) - `TestManager_Set(t *testing.T)` - manager_test.go:247
+- **TestManager_constructFreeFunc** (public) - `TestManager_constructFreeFunc(t *testing.T)` - manager_test.go:478
+- **testManagerAddConcurrentRun** (private) - `testManagerAddConcurrentRun(t *testing.T)` - manager_test.go:209
+- **testManagerAddSimpleCall** (private) - `testManagerAddSimpleCall(t *testing.T)` - manager_test.go:185
+- **testManagerGetConcurrentRun** (private) - `testManagerGetConcurrentRun(t *testing.T, prepManagerWithValFunc prepManagerWithValFunc)` - manager_test.go:387
+- **testManagerGetSimpleCall** (private) - `testManagerGetSimpleCall(t *testing.T, prepManagerWithValFunc prepManagerWithValFunc)` - manager_test.go:371
+- **testManagerPopConcurrentRun** (private) - `testManagerPopConcurrentRun(t *testing.T)` - manager_test.go:145
+- **testManagerPopNoValue** (private) - `testManagerPopNoValue(t *testing.T)` - manager_test.go:127
+- **testManagerPopSimpleCall** (private) - `testManagerPopSimpleCall(t *testing.T)` - manager_test.go:113
+- **testManagerPopValueNotSet** (private) - `testManagerPopValueNotSet(t *testing.T)` - manager_test.go:135
+- **testManagerReserveNextIDCallOnFullManager** (private) - `testManagerReserveNextIDCallOnFullManager(t *testing.T)` - manager_test.go:53
+- **testManagerReserveNextIDConcurrentRun** (private) - `testManagerReserveNextIDConcurrentRun(t *testing.T)` - manager_test.go:66
+- **testManagerReserveNextIDSimpleCall** (private) - `testManagerReserveNextIDSimpleCall(t *testing.T)` - manager_test.go:29
+- **testManagerSetConcurrentRun** (private) - `testManagerSetConcurrentRun(t *testing.T)` - manager_test.go:303
+- **testManagerSetIDNotReserved** (private) - `testManagerSetIDNotReserved(t *testing.T)` - manager_test.go:279
+- **testManagerSetSimpleCall** (private) - `testManagerSetSimpleCall(t *testing.T)` - manager_test.go:265
+- **testManagerSetValueAlreadyExists** (private) - `testManagerSetValueAlreadyExists(t *testing.T)` - manager_test.go:290
+
+### Methods
+
+#### *DeltaInformer
+- **Chan** (public) - `(di *DeltaInformer) Chan() <-chan int` - delta_informer.go:17
+- **Stop** (public) - `(di *DeltaInformer) Stop()` - delta_informer.go:36
+- **Trigger** (public) - `(di *DeltaInformer) Trigger(n int)` - delta_informer.go:25
+
+#### *Manager
+- **Add** (public) - `(m *Manager) Add(id uint16, v interface{...}) (free func() bool, err error)` - manager.go:96
+- **AddDeltaInformer** (public) - `(m *Manager) AddDeltaInformer() *DeltaInformer` - manager.go:38
+- **CloseAll** (public) - `(m *Manager) CloseAll()` - manager.go:168
+- **DoRange** (public) - `(m *Manager) DoRange(next func(id uint16, v interface{...}) bool)` - manager.go:149
+- **Get** (public) - `(m *Manager) Get(id uint16) (interface{...}, bool)` - manager.go:135
+- **Len** (public) - `(m *Manager) Len() int` - manager.go:160
+- **Pop** (public) - `(m *Manager) Pop(id uint16) (interface{...}, error)` - manager.go:73
+- **ReserveNextID** (public) - `(m *Manager) ReserveNextID() (id *uint16, free func() bool, err error)` - manager.go:47
+- **Set** (public) - `(m *Manager) Set(id uint16, v interface{...}) error` - manager.go:113
+- **constructFreeFunc** (private) - `(m *Manager) constructFreeFunc(id uint16) func() bool` - manager.go:193
+
+---
+
+## pkg/app/launcher
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/app/launcher
+**Functions**: 20
+
+### Functions
+- **NewLauncher** (public) - `NewLauncher(log logrus.FieldLogger, conf AppLauncherConfig, dmsgC *dmsg.Client, r router.Router, procM appserver.ProcManager) (*AppLauncher, error)` - launcher.go:77
+- **ensureDir** (private) - `ensureDir(path *string) error` - launcher.go:325
+- **makeProcConfig** (private) - `makeProcConfig(lc AppLauncherConfig, ac appserver.AppConfig, envs []string) (appcommon.ProcConfig, error)` - launcher.go:307
+
+### Methods
+
+#### *AppLauncher
+- **AppState** (public) - `(l *AppLauncher) AppState(name string) (*appserver.AppState, bool)` - launcher.go:161
+- **AppStates** (public) - `(l *AppLauncher) AppStates() []*appserver.AppState` - launcher.go:196
+- **AutoStart** (public) - `(l *AppLauncher) AutoStart(envMap EnvMap) error` - launcher.go:127
+- **DeregisterApp** (public) - `(l *AppLauncher) DeregisterApp(procKey appcommon.ProcKey) error` - launcher.go:223
+- **KillApp** (public) - `(l *AppLauncher) KillApp(name string) error` - launcher.go:278
+- **RegisterApp** (public) - `(l *AppLauncher) RegisterApp(procConf appcommon.ProcConfig) (appcommon.ProcKey, error)` - launcher.go:215
+- **ResetConfig** (public) - `(l *AppLauncher) ResetConfig(conf AppLauncherConfig)` - launcher.go:58
+- **RestartApp** (public) - `(l *AppLauncher) RestartApp(name, binary string) error` - launcher.go:290
+- **StartApp** (public) - `(l *AppLauncher) StartApp(cmd string, args, envs []string) error` - launcher.go:207
+- **StopApp** (public) - `(l *AppLauncher) StopApp(name string) (*appserver.Proc, error)` - launcher.go:261
+- **killApp** (private) - `(l *AppLauncher) killApp(appName string) error` - launcher.go:427
+- **killArbitraryProc** (private) - `(l *AppLauncher) killArbitraryProc(appName string, pid int)` - launcher.go:457
+- **killHangingProc** (private) - `(l *AppLauncher) killHangingProc(appName string, pid int)` - launcher.go:409
+- **killHangingProcesses** (private) - `(l *AppLauncher) killHangingProcesses() error` - launcher.go:372
+- **persistPID** (private) - `(l *AppLauncher) persistPID(appName string, pid appcommon.ProcID) error` - launcher.go:347
+- **pidFile** (private) - `(l *AppLauncher) pidFile() (*os.File, error)` - launcher.go:343
+- **startApp** (private) - `(l *AppLauncher) startApp(cmd string, args, envs []string) error` - launcher.go:230
+
+---
+
+## pkg/config-bootstrapper/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/config-bootstrapper/api
+**Functions**: 10
+
+### Functions
+- **New** (public) - `New(log *logging.Logger, conf Config, domain, dmsgAddr string) *API` - api.go:65
+- **fetchDMSGAddress** (private) - `fetchDMSGAddress(url string) string` - api.go:178
+- **fetchDMSGServers** (private) - `fetchDMSGServers(url string) []httputil.DMSGServersConf` - api.go:195
+
+### Methods
+
+#### *API
+- **Close** (public) - `(a *API) Close()` - api.go:116
+- **config** (private) - `(a *API) config(w http.ResponseWriter, r *http.Request)` - api.go:135
+- **dmsghttp** (private) - `(a *API) dmsghttp(w http.ResponseWriter, r *http.Request)` - api.go:157
+- **dmsghttpConfGen** (private) - `(a *API) dmsghttpConfGen() httputil.DMSGHTTPConf` - api.go:165
+- **health** (private) - `(a *API) health(w http.ResponseWriter, r *http.Request)` - api.go:126
+- **logger** (private) - `(a *API) logger(r *http.Request) logrus.FieldLogger` - api.go:122
+- **writeJSON** (private) - `(a *API) writeJSON(w http.ResponseWriter, r *http.Request, code int, object interface{...})` - api.go:139
+
+---
+
+## pkg/dmsgc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/dmsgc
+**Functions**: 1
+
+### Functions
+- **New** (public) - `New(pk cipher.PubKey, sk cipher.SecKey, eb *appevent.Broadcaster, conf *DmsgConfig, httpC *http.Client, masterLogger *logging.MasterLogger) *dmsg.Client` - dmsgc.go:25
+
+---
+
+## pkg/network-monitor/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/network-monitor/api
+**Functions**: 21
+
+### Functions
+- **New** (public) - `New(s store.Store, logger *logging.Logger, urls ServicesURLs, config NetworkMonitorConfig) *API` - api.go:85
+
+### Methods
+
+#### *API
+- **InitCleaningLoop** (public) - `(api *API) InitCleaningLoop(ctx context.Context)` - api.go:187
+- **checkingEntries** (private) - `(api *API) checkingEntries(ctx context.Context, data []string, service, sType string) error` - api.go:426
+- **clean** (private) - `(api *API) clean(ctx context.Context, service string)` - api.go:261
+- **cleanNetwork** (private) - `(api *API) cleanNetwork(ctx context.Context) error` - api.go:242
+- **cleaningInfo** (private) - `(api *API) cleaningInfo(ctx context.Context, service, sType string) error` - api.go:453
+- **cleaningService** (private) - `(api *API) cleaningService(ctx context.Context, service, sType string) error` - api.go:292
+- **deregister** (private) - `(api *API) deregister(entries []string, service, sType string) error` - api.go:530
+- **deregisterRequest** (private) - `(api *API) deregisterRequest(keys []string, rawReqURL, service string) error` - api.go:554
+- **fetchArData** (private) - `(api *API) fetchArData(ctx context.Context, sType string) ([]string, error)` - api.go:365
+- **fetchDmsgdData** (private) - `(api *API) fetchDmsgdData(ctx context.Context) ([]string, error)` - api.go:396
+- **fetchSdData** (private) - `(api *API) fetchSdData(ctx context.Context, sType string) ([]string, error)` - api.go:329
+- **fetchUTData** (private) - `(api *API) fetchUTData(ctx context.Context) error` - api.go:598
+- **getStatus** (private) - `(api *API) getStatus(w http.ResponseWriter, r *http.Request)` - api.go:115
+- **health** (private) - `(api *API) health(w http.ResponseWriter, r *http.Request)` - api.go:125
+- **initCleaning** (private) - `(api *API) initCleaning()` - api.go:227
+- **log** (private) - `(api *API) log(r *http.Request) logrus.FieldLogger` - api.go:182
+- **tpdCleaning** (private) - `(api *API) tpdCleaning(ctx context.Context) error` - api.go:471
+- **updateNetworkStatus** (private) - `(api *API) updateNetworkStatus() error` - api.go:205
+- **writeError** (private) - `(api *API) writeError(w http.ResponseWriter, r *http.Request, err error)` - api.go:152
+- **writeJSON** (private) - `(api *API) writeJSON(w http.ResponseWriter, r *http.Request, code int, object interface{...})` - api.go:133
+
+---
+
+## pkg/network-monitor/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/network-monitor/store
+**Functions**: 5
+
+### Functions
+- **New** (public) - `New(config storeconfig.Config) (Store, error)` - store.go:22
+- **newMemoryStore** (private) - `newMemoryStore() Store` - memory_store.go:16
+
+### Methods
+
+#### *memStore
+- **Close** (public) - `(s *memStore) Close()` - memory_store.go:36
+- **GetNetworkStatus** (public) - `(s *memStore) GetNetworkStatus() (nm.Status, error)` - memory_store.go:22
+- **SetNetworkStatus** (public) - `(s *memStore) SetNetworkStatus(status nm.Status) error` - memory_store.go:29
+
+---
+
+## pkg/route-finder/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/route-finder/api
+**Functions**: 6
+
+### Functions
+- **New** (public) - `New(s store.Store, logger logrus.FieldLogger, enableMetrics bool, dmsgAddr string) *API` - api.go:45
+
+### Methods
+
+#### *API
+- **getPairedRoutes** (private) - `(a *API) getPairedRoutes(w http.ResponseWriter, r *http.Request)` - api.go:93
+- **handleError** (private) - `(a *API) handleError(w http.ResponseWriter, r *http.Request, code int, e error)` - api.go:169
+- **health** (private) - `(a *API) health(w http.ResponseWriter, r *http.Request)` - api.go:159
+- **log** (private) - `(a *API) log(r *http.Request) logrus.FieldLogger` - api.go:75
+- **writeJSON** (private) - `(a *API) writeJSON(w http.ResponseWriter, r *http.Request, code int, object interface{...})` - api.go:178
+
+---
+
+## pkg/route-finder/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/route-finder/store
+**Functions**: 26
+
+### Functions
+- **NewGraph** (public) - `NewGraph(ctx context.Context, s store.Store, rootPK cipher.PubKey) (*Graph, error)` - mark_and_sweep.go:49
+- **TestAvailability** (public) - `TestAvailability(t *testing.T)` - graph_test.go:129
+- **TestFinder** (public) - `TestFinder(t *testing.T)` - finder_test.go:12
+- **TestFinderRoute** (public) - `TestFinderRoute(t *testing.T)` - finder_test.go:39
+- **TestMarkAndSweep** (public) - `TestMarkAndSweep(t *testing.T)` - graph_test.go:149
+- **TestNewGraph** (public) - `TestNewGraph(t *testing.T)` - graph_test.go:79
+- **TestNewPartedGraph** (public) - `TestNewPartedGraph(t *testing.T)` - graph_test.go:103
+- **TestNoRoutesFromNoPathWithRootNodes** (public) - `TestNoRoutesFromNoPathWithRootNodes(t *testing.T)` - finder_test.go:61
+- **containsVertex** (private) - `containsVertex(path []*vertex, v *vertex) bool` - finder.go:137
+- **generateNodesPK** (private) - `generateNodesPK(t *testing.T) (cipher.PubKey, cipher.PubKey, cipher.PubKey, cipher.PubKey, cipher.PubKey)` - graph_test.go:176
+- **newMockStore** (private) - `newMockStore() *mockStore` - graph_test.go:24
+- **newVertex** (private) - `newVertex(edgeID cipher.PubKey, transports []*transport.Entry) *vertex` - mark_and_sweep.go:18
+
+### Methods
+
+#### *Graph
+- **DeepFirstSearch** (public) - `(g *Graph) DeepFirstSearch(ctx context.Context, v *vertex) error` - mark_and_sweep.go:95
+- **GetRoute** (public) - `(g *Graph) GetRoute(ctx context.Context, source, destination cipher.PubKey, minLen, maxLen, number int) ([]routing.Route, error)` - finder.go:24
+- **MarkAndSweep** (public) - `(g *Graph) MarkAndSweep(ctx context.Context, rootPK cipher.PubKey) ([]cipher.PubKey, error)` - mark_and_sweep.go:79
+- **Sweep** (public) - `(g *Graph) Sweep() []cipher.PubKey` - mark_and_sweep.go:135
+- **finder** (private) - `(g *Graph) finder(ctx context.Context, source, destination *vertex, minLen, maxLen int) ([][]*vertex, error)` - finder.go:71
+
+#### *mockStore
+- **Close** (public) - `(m *mockStore) Close()` - graph_test.go:53
+- **DeleteAll** (public) - `(m *mockStore) DeleteAll()` - graph_test.go:75
+- **DeregisterTransport** (public) - `(m *mockStore) DeregisterTransport(context.Context, uuid.UUID) error` - graph_test.go:33
+- **GetAllTransports** (public) - `(m *mockStore) GetAllTransports(context.Context, bool) ([]*transport.Entry, error)` - graph_test.go:50
+- **GetNumberOfTransports** (public) - `(m *mockStore) GetNumberOfTransports(context.Context) (map[tptypes.Type]int, error)` - graph_test.go:47
+- **GetTransportByID** (public) - `(m *mockStore) GetTransportByID(context.Context, uuid.UUID) (*transport.Entry, error)` - graph_test.go:36
+- **GetTransportsByEdge** (public) - `(m *mockStore) GetTransportsByEdge(_ context.Context, edgePK cipher.PubKey) ([]*transport.Entry, error)` - graph_test.go:39
+- **RegisterTransport** (public) - `(m *mockStore) RegisterTransport(context.Context, *transport.SignedEntry) error` - graph_test.go:30
+- **SaveEntry** (public) - `(m *mockStore) SaveEntry(source, destiny cipher.PubKey, _ bool)` - graph_test.go:56
+
+---
+
+## pkg/routefinder/rfclient
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/routefinder/rfclient
+**Functions**: 5
+
+### Functions
+- **NewHTTP** (public) - `NewHTTP(addr string, apiTimeout time.Duration, client *http.Client, mlogger *logging.MasterLogger) Client` - client.go:63
+- **NewMockClient** (public) - `NewMockClient(t interface{...}) *MockClient` - mock_client.go:50
+- **sanitizedAddr** (private) - `sanitizedAddr(addr string) string` - client.go:140
+
+### Methods
+
+#### *MockClient
+- **FindRoutes** (public) - `(_m *MockClient) FindRoutes(ctx context.Context, rts []routing.PathEdges, opts *RouteOptions) (map[routing.PathEdges][][]routing.Hop, error)` - mock_client.go:19
+
+#### *apiClient
+- **FindRoutes** (public) - `(c *apiClient) FindRoutes(ctx context.Context, rts []routing.PathEdges, opts *RouteOptions) (map[routing.PathEdges][][]routing.Hop, error)` - client.go:81
+
+---
+
+## pkg/router
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/router
+**Functions**: 234
+
+### Functions
+- **BroadcastIntermediaryRules** (public) - `BroadcastIntermediaryRules(ctx context.Context, log logrus.FieldLogger, rtIDR IDReserver, interRules RulesMap) err error` - setupnode.go:249
+- **CreateRouteGroup** (public) - `CreateRouteGroup(ctx context.Context, dialer network.Dialer, biRt routing.BidirectionalRoute, metrics setupmetrics.Metrics) (resp routing.EdgeRules, err error)` - setupnode.go:113
+- **DefaultDialOptions** (public) - `DefaultDialOptions() *DialOptions` - router.go:107
+- **DefaultRouteGroupConfig** (public) - `DefaultRouteGroupConfig() *RouteGroupConfig` - route_group.go:63
+- **GenerateRules** (public) - `GenerateRules(idR IDReserver, routes []routing.Route) (fwdRules, revRules, interRules RulesMap, err error)` - setupnode.go:193
+- **MakeMap** (public) - `MakeMap(ctx context.Context, dialer network.Dialer, pks []cipher.PubKey) (Map, error)` - map.go:21
+- **New** (public) - `New(dmsgC *dmsg.Client, config *Config, routeSetupHooks []RouteSetupHook) (Router, error)` - router.go:178
+- **NewClient** (public) - `NewClient(ctx context.Context, dialer network.Dialer, rPK cipher.PubKey) (*Client, error)` - routerclient.go:30
+- **NewClientFromRaw** (public) - `NewClientFromRaw(conn io.ReadWriteCloser, rPK cipher.PubKey) *Client` - routerclient.go:39
+- **NewIDReserver** (public) - `NewIDReserver(ctx context.Context, dialer network.Dialer, paths [][]routing.Hop) (IDReserver, error)` - id_reserver.go:53
+- **NewMockIDReserver** (public) - `NewMockIDReserver(t interface{...}) *MockIDReserver` - mock_id_reserver.go:142
+- **NewMockRouteGroupDialer** (public) - `NewMockRouteGroupDialer(t interface{...}) *MockRouteGroupDialer` - mock_route_group_dialer.go:54
+- **NewMockRouter** (public) - `NewMockRouter(t interface{...}) *MockRouter` - mock_router.go:336
+- **NewNode** (public) - `NewNode(conf *SetupConfig) (*Node, error)` - setupnode.go:32
+- **NewRPCGateway** (public) - `NewRPCGateway(router Router, mLog *logging.MasterLogger) *RPCGateway` - rpc_gateway.go:16
+- **NewRouteGroup** (public) - `NewRouteGroup(cfg *RouteGroupConfig, rt routing.Table, desc routing.RouteDescriptor, mLoggger *logging.MasterLogger) *RouteGroup` - route_group.go:125
+- **NewSetupClient** (public) - `NewSetupClient(ctx context.Context, log *logging.Logger, dmsgC *dmsg.Client, setupNodes []cipher.PubKey) (*SetupClient, error)` - setupclient.go:32
+- **NewSetupNodeDialer** (public) - `NewSetupNodeDialer() RouteGroupDialer` - wrappers.go:31
+- **ReserveRouteIDs** (public) - `ReserveRouteIDs(ctx context.Context, log logrus.FieldLogger, dialer network.Dialer, route routing.BidirectionalRoute) (idR IDReserver, err error)` - setupnode.go:165
+- **TestBroadcastIntermediaryRules** (public) - `TestBroadcastIntermediaryRules(t *testing.T)` - setupnode_test.go:272
+- **TestClient_AddEdgeRules** (public) - `TestClient_AddEdgeRules(t *testing.T)` - routerclient_test.go:33
+- **TestClient_AddIntermediaryRules** (public) - `TestClient_AddIntermediaryRules(t *testing.T)` - routerclient_test.go:59
+- **TestClient_Close** (public) - `TestClient_Close(t *testing.T)` - routerclient_test.go:19
+- **TestClient_ReserveIDs** (public) - `TestClient_ReserveIDs(t *testing.T)` - routerclient_test.go:76
+- **TestCreateRouteGroup** (public) - `TestCreateRouteGroup(t *testing.T)` - setupnode_test.go:23
+- **TestGenerateRules** (public) - `TestGenerateRules(t *testing.T)` - setupnode_test.go:221
+- **TestIdReserver_ReserveIDs** (public) - `TestIdReserver_ReserveIDs(t *testing.T)` - id_reserver_test.go:73
+- **TestMain** (public) - `TestMain(m *testing.M)` - router_test.go:15
+- **TestMakeMap** (public) - `TestMakeMap(t *testing.T)` - map_test.go:25
+- **TestNewIDReserver** (public) - `TestNewIDReserver(t *testing.T)` - id_reserver_test.go:21
+- **TestNewRouteGroup** (public) - `TestNewRouteGroup(t *testing.T)` - route_group_test.go:14
+- **TestRPCGateway_AddEdgeRules** (public) - `TestRPCGateway_AddEdgeRules(t *testing.T)` - rpc_gateway_test.go:17
+- **TestRPCGateway_AddIntermediaryRules** (public) - `TestRPCGateway_AddIntermediaryRules(t *testing.T)` - rpc_gateway_test.go:80
+- **TestRPCGateway_ReserveIDs** (public) - `TestRPCGateway_ReserveIDs(t *testing.T)` - rpc_gateway_test.go:116
+- **TestRouteGroup_LocalAddr** (public) - `TestRouteGroup_LocalAddr(t *testing.T)` - route_group_test.go:20
+- **TestRouteGroup_RemoteAddr** (public) - `TestRouteGroup_RemoteAddr(t *testing.T)` - route_group_test.go:27
+- **WrapDmsgClient** (public) - `WrapDmsgClient(dmsgC *dmsg.Client) network.Dialer` - dmsg_wrapper.go:16
+- **biRouteFromKeys** (private) - `biRouteFromKeys(fwdPKs, revPKs []cipher.PubKey, srcPort, dstPort routing.Port) routing.BidirectionalRoute` - setupnode_test.go:135
+- **chanClosed** (private) - `chanClosed(ch chan struct{...}) bool` - route_group.go:815
+- **checkIDReserver** (private) - `checkIDReserver(t *testing.T, rtIDR *idReserver)` - id_reserver_test.go:220
+- **checkRtIDKeysOfRouterRules** (private) - `checkRtIDKeysOfRouterRules(t *testing.T, r *mockRouterGateway)` - setupnode_test.go:99
+- **countUniquePKs** (private) - `countUniquePKs(pks []cipher.PubKey) int` - setupnode_test.go:127
+- **createRouteGroup** (private) - `createRouteGroup(cfg *RouteGroupConfig) *RouteGroup` - route_group_test.go:34
+- **determineTpID** (private) - `determineTpID(pk1, pk2 cipher.PubKey) tpID uuid.UUID` - setupnode_test.go:160
+- **firstError** (private) - `firstError(n int, errCh <-chan error) error` - id_reserver.go:149
+- **isDone** (private) - `isDone(ctx context.Context) bool` - map.go:72
+- **makeHops** (private) - `makeHops(pks ...cipher.PubKey) []routing.Hop` - id_reserver_test.go:207
+- **newMockDialer** (private) - `newMockDialer(t *testing.T, gateways map[cipher.PubKey]interface{...}) network.Dialer` - testing_test.go:24
+- **newMockReserver** (private) - `newMockReserver(t *testing.T, gateways map[cipher.PubKey]interface{...}) IDReserver` - testing_test.go:87
+- **newMockRouterGateway** (private) - `newMockRouterGateway(pk cipher.PubKey) *mockRouterGateway` - setupnode_test.go:184
+- **newNetworkStats** (private) - `newNetworkStats() *networkStats` - network_stats.go:22
+- **newTestDialer** (private) - `newTestDialer(routers int) *testDialer` - map_test.go:129
+- **pkFromAddr** (private) - `pkFromAddr(addr string) pk cipher.PubKey` - map_test.go:115
+- **prepRPCServerAndClient** (private) - `prepRPCServerAndClient(t *testing.T, r Router) (s *rpc.Server, cl *Client, cleanup func())` - routerclient_test.go:92
+- **randIntermediaryRules** (private) - `randIntermediaryRules(n int) []routing.Rule` - setupnode_test.go:339
+- **randPKs** (private) - `randPKs(n int) []cipher.PubKey` - setupnode_test.go:323
+- **randRulesMap** (private) - `randRulesMap(pks []cipher.PubKey) RulesMap` - setupnode_test.go:331
+- **serveRouterRPC** (private) - `serveRouterRPC(t *testing.T, r Router) addr string` - map_test.go:102
+
+### Methods
+
+#### *Client
+- **AddEdgeRules** (public) - `(c *Client) AddEdgeRules(ctx context.Context, rules routing.EdgeRules) (ok bool, err error)` - routerclient.go:56
+- **AddIntermediaryRules** (public) - `(c *Client) AddIntermediaryRules(ctx context.Context, rules []routing.Rule) (ok bool, err error)` - routerclient.go:63
+- **Close** (public) - `(c *Client) Close() error` - routerclient.go:48
+- **ReserveIDs** (public) - `(c *Client) ReserveIDs(ctx context.Context, n uint8) (rtIDs []routing.RouteID, err error)` - routerclient.go:70
+- **call** (private) - `(c *Client) call(ctx context.Context, method string, args interface{...}, reply interface{...}) error` - routerclient.go:76
+
+#### *Config
+- **SetDefaults** (public) - `(c *Config) SetDefaults()` - router.go:78
+
+#### *MockIDReserver
+- **Client** (public) - `(_m *MockIDReserver) Client(pk cipher.PubKey) *Client` - mock_id_reserver.go:21
+- **Close** (public) - `(_m *MockIDReserver) Close() error` - mock_id_reserver.go:41
+- **PopID** (public) - `(_m *MockIDReserver) PopID(pk cipher.PubKey) (routing.RouteID, bool)` - mock_id_reserver.go:59
+- **ReserveIDs** (public) - `(_m *MockIDReserver) ReserveIDs(ctx context.Context) error` - mock_id_reserver.go:87
+- **String** (public) - `(_m *MockIDReserver) String() string` - mock_id_reserver.go:105
+- **TotalIDs** (public) - `(_m *MockIDReserver) TotalIDs() int` - mock_id_reserver.go:123
+
+#### *MockRouteGroupDialer
+- **Dial** (public) - `(_m *MockRouteGroupDialer) Dial(ctx context.Context, log *logging.Logger, dmsgC *dmsg.Client, setupNodes []cipher.PubKey, req routing.BidirectionalRoute) (routing.EdgeRules, error)` - mock_route_group_dialer.go:25
+
+#### *MockRouter
+- **AcceptRoutes** (public) - `(_m *MockRouter) AcceptRoutes(_a0 context.Context) (net.Conn, error)` - mock_router.go:23
+- **Close** (public) - `(_m *MockRouter) Close() error` - mock_router.go:53
+- **DelRules** (public) - `(_m *MockRouter) DelRules(_a0 []routing.RouteID)` - mock_router.go:71
+- **DialRoutes** (public) - `(_m *MockRouter) DialRoutes(ctx context.Context, rPK cipher.PubKey, lPort routing.Port, rPort routing.Port, opts *DialOptions) (net.Conn, error)` - mock_router.go:76
+- **IntroduceRules** (public) - `(_m *MockRouter) IntroduceRules(rules routing.EdgeRules) error` - mock_router.go:106
+- **PingRoute** (public) - `(_m *MockRouter) PingRoute(ctx context.Context, rPK cipher.PubKey, lPort routing.Port, rPort routing.Port, opts *DialOptions) (net.Conn, error)` - mock_router.go:124
+- **ReserveKeys** (public) - `(_m *MockRouter) ReserveKeys(n int) ([]routing.RouteID, error)` - mock_router.go:154
+- **RoutesCount** (public) - `(_m *MockRouter) RoutesCount() int` - mock_router.go:184
+- **Rule** (public) - `(_m *MockRouter) Rule(_a0 routing.RouteID) (routing.Rule, error)` - mock_router.go:202
+- **Rules** (public) - `(_m *MockRouter) Rules() []routing.Rule` - mock_router.go:232
+- **SaveRoutingRules** (public) - `(_m *MockRouter) SaveRoutingRules(rules ...routing.Rule) error` - mock_router.go:252
+- **SaveRule** (public) - `(_m *MockRouter) SaveRule(_a0 routing.Rule) error` - mock_router.go:276
+- **Serve** (public) - `(_m *MockRouter) Serve(_a0 context.Context) error` - mock_router.go:294
+- **SetMinHop** (public) - `(_m *MockRouter) SetMinHop(_a0 uint16)` - mock_router.go:312
+- **SetupIsTrusted** (public) - `(_m *MockRouter) SetupIsTrusted(_a0 cipher.PubKey) bool` - mock_router.go:317
+
+#### *Node
+- **Close** (public) - `(sn *Node) Close() error` - setupnode.go:57
+- **Serve** (public) - `(sn *Node) Serve(ctx context.Context, m setupmetrics.Metrics) error` - setupnode.go:65
+
+#### *NoiseRouteGroup
+- **BandwidthReceived** (public) - `(nrg *NoiseRouteGroup) BandwidthReceived() uint64` - noise_route_group.go:54
+- **BandwidthSent** (public) - `(nrg *NoiseRouteGroup) BandwidthSent() uint64` - noise_route_group.go:49
+- **DownloadSpeed** (public) - `(nrg *NoiseRouteGroup) DownloadSpeed() uint32` - noise_route_group.go:44
+- **GetError** (public) - `(nrg *NoiseRouteGroup) GetError() error` - noise_route_group.go:64
+- **IsAlive** (public) - `(nrg *NoiseRouteGroup) IsAlive() bool` - noise_route_group.go:29
+- **Latency** (public) - `(nrg *NoiseRouteGroup) Latency() time.Duration` - noise_route_group.go:34
+- **LocalAddr** (public) - `(nrg *NoiseRouteGroup) LocalAddr() net.Addr` - noise_route_group.go:19
+- **RemoteAddr** (public) - `(nrg *NoiseRouteGroup) RemoteAddr() net.Addr` - noise_route_group.go:24
+- **SetError** (public) - `(nrg *NoiseRouteGroup) SetError(err error)` - noise_route_group.go:59
+- **UploadSpeed** (public) - `(nrg *NoiseRouteGroup) UploadSpeed() uint32` - noise_route_group.go:39
+- **handlePacket** (private) - `(nrg *NoiseRouteGroup) handlePacket(packet routing.Packet) error` - noise_route_group.go:72
+- **isClosed** (private) - `(nrg *NoiseRouteGroup) isClosed() bool` - noise_route_group.go:68
+
+#### *RPCGateway
+- **AddEdgeRules** (public) - `(r *RPCGateway) AddEdgeRules(rules routing.EdgeRules, ok *bool) error` - rpc_gateway.go:24
+- **AddIntermediaryRules** (public) - `(r *RPCGateway) AddIntermediaryRules(rules []routing.Rule, ok *bool) error` - rpc_gateway.go:39
+- **ReserveIDs** (public) - `(r *RPCGateway) ReserveIDs(n uint8, routeIDs *[]routing.RouteID) error` - rpc_gateway.go:54
+
+#### *RouteGroup
+- **BandwidthReceived** (public) - `(rg *RouteGroup) BandwidthReceived() uint64` - route_group.go:285
+- **BandwidthSent** (public) - `(rg *RouteGroup) BandwidthSent() uint64` - route_group.go:280
+- **Close** (public) - `(rg *RouteGroup) Close() error` - route_group.go:208
+- **DownloadSpeed** (public) - `(rg *RouteGroup) DownloadSpeed() uint32` - route_group.go:275
+- **GetError** (public) - `(rg *RouteGroup) GetError() error` - route_group.go:298
+- **IsAlive** (public) - `(rg *RouteGroup) IsAlive() bool` - route_group.go:260
+- **Latency** (public) - `(rg *RouteGroup) Latency() time.Duration` - route_group.go:265
+- **LocalAddr** (public) - `(rg *RouteGroup) LocalAddr() net.Addr` - route_group.go:229
+- **Read** (public) - `(rg *RouteGroup) Read(p []byte) (n int, err error)` - route_group.go:158
+- **RemoteAddr** (public) - `(rg *RouteGroup) RemoteAddr() net.Addr` - route_group.go:234
+- **SetDeadline** (public) - `(rg *RouteGroup) SetDeadline(t time.Time) error` - route_group.go:239
+- **SetError** (public) - `(rg *RouteGroup) SetError(err error)` - route_group.go:290
+- **SetReadDeadline** (public) - `(rg *RouteGroup) SetReadDeadline(t time.Time) error` - route_group.go:248
+- **SetWriteDeadline** (public) - `(rg *RouteGroup) SetWriteDeadline(t time.Time) error` - route_group.go:254
+- **UploadSpeed** (public) - `(rg *RouteGroup) UploadSpeed() uint32` - route_group.go:270
+- **Write** (public) - `(rg *RouteGroup) Write(p []byte) (n int, err error)` - route_group.go:176
+- **appendRules** (private) - `(rg *RouteGroup) appendRules(forward, reverse routing.Rule, tp *transport.ManagedTransport)` - route_group.go:805
+- **broadcastClosePackets** (private) - `(rg *RouteGroup) broadcastClosePackets(code routing.CloseCode)` - route_group.go:750
+- **close** (private) - `(rg *RouteGroup) close(code routing.CloseCode) error` - route_group.go:597
+- **handleClosePacket** (private) - `(rg *RouteGroup) handleClosePacket(code routing.CloseCode) error` - route_group.go:706
+- **handleDataPacket** (private) - `(rg *RouteGroup) handleDataPacket(packet routing.Packet) error` - route_group.go:674
+- **handleErrorPacket** (private) - `(rg *RouteGroup) handleErrorPacket(packet routing.Packet) error` - route_group.go:693
+- **handlePacket** (private) - `(rg *RouteGroup) handlePacket(packet routing.Packet) error` - route_group.go:642
+- **handlePingPacket** (private) - `(rg *RouteGroup) handlePingPacket(packet routing.Packet) error` - route_group.go:720
+- **handlePongPacket** (private) - `(rg *RouteGroup) handlePongPacket(packet routing.Packet) error` - route_group.go:733
+- **isCloseInitiator** (private) - `(rg *RouteGroup) isCloseInitiator() bool` - route_group.go:787
+- **isClosed** (private) - `(rg *RouteGroup) isClosed() bool` - route_group.go:801
+- **isRemoteClosed** (private) - `(rg *RouteGroup) isRemoteClosed() bool` - route_group.go:797
+- **keepAliveServiceFn** (private) - `(rg *RouteGroup) keepAliveServiceFn(interval time.Duration)` - route_group.go:504
+- **pingServiceFn** (private) - `(rg *RouteGroup) pingServiceFn(_ time.Duration)` - route_group.go:483
+- **read** (private) - `(rg *RouteGroup) read(p []byte) (int, error)` - route_group.go:307
+- **rule** (private) - `(rg *RouteGroup) rule() (routing.Rule, error)` - route_group.go:404
+- **sendError** (private) - `(rg *RouteGroup) sendError(rule routing.Rule, tp *transport.ManagedTransport) error` - route_group.go:575
+- **sendHandshake** (private) - `(rg *RouteGroup) sendHandshake(encrypt bool) error` - route_group.go:543
+- **sendKeepAlive** (private) - `(rg *RouteGroup) sendKeepAlive() error` - route_group.go:516
+- **sendPing** (private) - `(rg *RouteGroup) sendPing() error` - route_group.go:435
+- **sendPong** (private) - `(rg *RouteGroup) sendPong(timestamp int64) error` - route_group.go:461
+- **servicePacketLoop** (private) - `(rg *RouteGroup) servicePacketLoop(name string, interval time.Duration, f sendServicePacketFn)` - route_group.go:489
+- **setRemoteClosed** (private) - `(rg *RouteGroup) setRemoteClosed()` - route_group.go:791
+- **startOffServiceLoops** (private) - `(rg *RouteGroup) startOffServiceLoops()` - route_group.go:430
+- **tp** (private) - `(rg *RouteGroup) tp() (*transport.ManagedTransport, error)` - route_group.go:416
+- **waitForCloseRouteGroup** (private) - `(rg *RouteGroup) waitForCloseRouteGroup(waitTimeout time.Duration) error` - route_group.go:767
+- **write** (private) - `(rg *RouteGroup) write(data []byte, tp *transport.ManagedTransport, rule routing.Rule) (int, error)` - route_group.go:338
+- **writePacket** (private) - `(rg *RouteGroup) writePacket(ctx context.Context, tp *transport.ManagedTransport, packet routing.Packet, ruleID routing.RouteID) error` - route_group.go:383
+- **writePacketAsync** (private) - `(rg *RouteGroup) writePacketAsync(ctx context.Context, tp *transport.ManagedTransport, packet routing.Packet, ruleID routing.RouteID) chan error` - route_group.go:366
+
+#### *SetupClient
+- **Close** (public) - `(c *SetupClient) Close() error` - setupclient.go:66
+- **DialRouteGroup** (public) - `(c *SetupClient) DialRouteGroup(ctx context.Context, req routing.BidirectionalRoute) (routing.EdgeRules, error)` - setupclient.go:79
+- **HealthCheck** (public) - `(c *SetupClient) HealthCheck(ctx context.Context) (string, error)` - setupclient.go:87
+- **call** (private) - `(c *SetupClient) call(ctx context.Context, serviceMethod string, args interface{...}, reply interface{...}) error` - setupclient.go:96
+- **dial** (private) - `(c *SetupClient) dial(ctx context.Context, dmsgC *dmsg.Client) (net.Conn, error)` - setupclient.go:50
+
+#### *SetupRPCGateway
+- **DialRouteGroup** (public) - `(g *SetupRPCGateway) DialRouteGroup(route routing.BidirectionalRoute, rules *routing.EdgeRules) err error` - setup_rpc_gateway.go:27
+- **HealthCheck** (public) - `(g *SetupRPCGateway) HealthCheck(_ *HealthCheckArgs, reply *HealthCheckReply) error` - setup_rpc_gateway.go:60
+
+#### *TestEnv
+- **GenRouterConfig** (public) - `(e *TestEnv) GenRouterConfig(i int) *Config` - router_test.go:40
+- **Teardown** (public) - `(e *TestEnv) Teardown()` - router_test.go:50
+
+#### *dmsgClientDialer
+- **Dial** (public) - `(w *dmsgClientDialer) Dial(ctx context.Context, remote cipher.PubKey, port uint16) (net.Conn, error)` - dmsg_wrapper.go:24
+- **Type** (public) - `(w *dmsgClientDialer) Type() string` - dmsg_wrapper.go:28
+
+#### *idReserver
+- **Client** (public) - `(idr *idReserver) Client(pk cipher.PubKey) *Client` - id_reserver.go:131
+- **Close** (public) - `(idr *idReserver) Close() error` - id_reserver.go:142
+- **PopID** (public) - `(idr *idReserver) PopID(pk cipher.PubKey) (routing.RouteID, bool)` - id_reserver.go:113
+- **ReserveIDs** (public) - `(idr *idReserver) ReserveIDs(ctx context.Context) error` - id_reserver.go:88
+- **String** (public) - `(idr *idReserver) String() string` - id_reserver.go:135
+- **TotalIDs** (public) - `(idr *idReserver) TotalIDs() int` - id_reserver.go:127
+
+#### *mockGatewayForDialer
+- **ReserveIDs** (public) - `(gw *mockGatewayForDialer) ReserveIDs(n uint8, routeIDs *[]routing.RouteID) error` - testing_test.go:73
+
+#### *mockGatewayForReserver
+- **AddIntermediaryRules** (public) - `(gw *mockGatewayForReserver) AddIntermediaryRules(_ []routing.Rule, ok *bool) error` - testing_test.go:125
+
+#### *mockRouterGateway
+- **AddEdgeRules** (public) - `(gw *mockRouterGateway) AddEdgeRules(rules routing.EdgeRules, ok *bool) error` - setupnode_test.go:188
+- **AddIntermediaryRules** (public) - `(gw *mockRouterGateway) AddIntermediaryRules(rules []routing.Rule, ok *bool) error` - setupnode_test.go:197
+- **ReserveIDs** (public) - `(gw *mockRouterGateway) ReserveIDs(n uint8, routeIDs *[]routing.RouteID) error` - setupnode_test.go:206
+
+#### *networkStats
+- **AddBandwidthReceived** (public) - `(s *networkStats) AddBandwidthReceived(amount uint64)` - network_stats.go:66
+- **AddBandwidthSent** (public) - `(s *networkStats) AddBandwidthSent(amount uint64)` - network_stats.go:58
+- **BandwidthReceived** (public) - `(s *networkStats) BandwidthReceived() uint64` - network_stats.go:62
+- **BandwidthSent** (public) - `(s *networkStats) BandwidthSent() uint64` - network_stats.go:54
+- **DownloadSpeed** (public) - `(s *networkStats) DownloadSpeed() uint32` - network_stats.go:50
+- **Latency** (public) - `(s *networkStats) Latency() time.Duration` - network_stats.go:32
+- **RemoteThroughput** (public) - `(s *networkStats) RemoteThroughput() int64` - network_stats.go:71
+- **SetDownloadSpeed** (public) - `(s *networkStats) SetDownloadSpeed(speed uint32)` - network_stats.go:46
+- **SetLatency** (public) - `(s *networkStats) SetLatency(latency uint32)` - network_stats.go:28
+- **SetUploadSpeed** (public) - `(s *networkStats) SetUploadSpeed(speed uint32)` - network_stats.go:38
+- **UploadSpeed** (public) - `(s *networkStats) UploadSpeed() uint32` - network_stats.go:42
+
+#### *router
+- **AcceptRoutes** (public) - `(r *router) AcceptRoutes(ctx context.Context) (net.Conn, error)` - router.go:394
+- **Close** (public) - `(r *router) Close() error` - router.go:959
+- **DelRules** (public) - `(r *router) DelRules(ids []routing.RouteID)` - router.go:1278
+- **DialRoutes** (public) - `(r *router) DialRoutes(ctx context.Context, rPK cipher.PubKey, lPort, rPort routing.Port, opts *DialOptions) (net.Conn, error)` - router.go:237
+- **GetRule** (public) - `(r *router) GetRule(routeID routing.RouteID) (routing.Rule, error)` - router.go:929
+- **IntroduceRules** (public) - `(r *router) IntroduceRules(rules routing.EdgeRules) error` - router.go:1240
+- **PingRoute** (public) - `(r *router) PingRoute(ctx context.Context, rPK cipher.PubKey, lPort, rPort routing.Port, opts *DialOptions) (net.Conn, error)` - router.go:331
+- **RegisterSetupHooks** (public) - `(r *router) RegisterSetupHooks(rshooks ...RouteSetupHook)` - router.go:223
+- **RemoveRouteDescriptor** (public) - `(r *router) RemoveRouteDescriptor(desc routing.RouteDescriptor)` - router.go:1039
+- **ReserveKeys** (public) - `(r *router) ReserveKeys(n int) ([]routing.RouteID, error)` - router.go:1192
+- **RoutesCount** (public) - `(r *router) RoutesCount() int` - router.go:1258
+- **Rule** (public) - `(r *router) Rule(id routing.RouteID) (routing.Rule, error)` - router.go:1268
+- **Rules** (public) - `(r *router) Rules() []routing.Rule` - router.go:1263
+- **SaveRoutingRules** (public) - `(r *router) SaveRoutingRules(rules ...routing.Rule) error` - router.go:1179
+- **SaveRule** (public) - `(r *router) SaveRule(rule routing.Rule) error` - router.go:1273
+- **Serve** (public) - `(r *router) Serve(ctx context.Context) error` - router.go:439
+- **SetMinHop** (public) - `(r *router) SetMinHop(minhop uint16)` - router.go:1174
+- **SetupIsTrusted** (public) - `(r *router) SetupIsTrusted(sPK cipher.PubKey) bool` - router.go:1168
+- **UpdateRuleActivity** (public) - `(r *router) UpdateRuleActivity(routeID routing.RouteID) error` - router.go:949
+- **fetchBestRoutes** (private) - `(r *router) fetchBestRoutes(src, dst cipher.PubKey, opts *DialOptions) (fwd, rev []routing.Hop, err error)` - router.go:1054
+- **fetchPingRoute** (private) - `(r *router) fetchPingRoute(src, pingKey cipher.PubKey, opts *DialOptions) (fwd, rev []routing.Hop, err error)` - router.go:1103
+- **forwardPacket** (private) - `(r *router) forwardPacket(ctx context.Context, packet routing.Packet, rule routing.Rule) error` - router.go:979
+- **handleClosePacket** (private) - `(r *router) handleClosePacket(ctx context.Context, packet routing.Packet) error` - router.go:680
+- **handleDataHandshakePacket** (private) - `(r *router) handleDataHandshakePacket(ctx context.Context, packet routing.Packet) error` - router.go:628
+- **handleErrorPacket** (private) - `(r *router) handleErrorPacket(ctx context.Context, packet routing.Packet) error` - router.go:877
+- **handleKeepAlivePacket** (private) - `(r *router) handleKeepAlivePacket(ctx context.Context, packet routing.Packet) error` - router.go:741
+- **handlePingPacket** (private) - `(r *router) handlePingPacket(ctx context.Context, packet routing.Packet) error` - router.go:771
+- **handlePongPacket** (private) - `(r *router) handlePongPacket(ctx context.Context, packet routing.Packet) error` - router.go:824
+- **handleTransportPacket** (private) - `(r *router) handleTransportPacket(ctx context.Context, packet routing.Packet) error` - router.go:609
+- **initializingRouteGroup** (private) - `(r *router) initializingRouteGroup(desc routing.RouteDescriptor) (*RouteGroup, bool)` - router.go:1224
+- **isTpdExist** (private) - `(r *router) isTpdExist(rPK cipher.PubKey) bool` - router.go:1359
+- **noiseRouteGroup** (private) - `(r *router) noiseRouteGroup(desc routing.RouteDescriptor) (*NoiseRouteGroup, bool)` - router.go:1215
+- **popNoiseRouteGroup** (private) - `(r *router) popNoiseRouteGroup(desc routing.RouteDescriptor) (*NoiseRouteGroup, bool)` - router.go:1201
+- **removeNoiseRouteGroup** (private) - `(r *router) removeNoiseRouteGroup(desc routing.RouteDescriptor)` - router.go:1233
+- **removeRouteGroupOfRule** (private) - `(r *router) removeRouteGroupOfRule(rule routing.Rule)` - router.go:1325
+- **rulesGC** (private) - `(r *router) rulesGC()` - router.go:1311
+- **rulesGCLoop** (private) - `(r *router) rulesGCLoop()` - router.go:1297
+- **saveRouteGroupRules** (private) - `(r *router) saveRouteGroupRules(rules routing.EdgeRules, nsConf noise.Config) (*NoiseRouteGroup, error)` - router.go:501
+- **serveSetup** (private) - `(r *router) serveSetup()` - router.go:473
+- **serveTransportManager** (private) - `(r *router) serveTransportManager(ctx context.Context)` - router.go:449
+
+#### *setupNodeDialer
+- **Dial** (public) - `(d *setupNodeDialer) Dial(ctx context.Context, log *logging.Logger, dmsgC *dmsg.Client, setupNodes []cipher.PubKey, req routing.BidirectionalRoute) (routing.EdgeRules, error)` - wrappers.go:36
+
+#### *testDialer
+- **Add** (public) - `(d *testDialer) Add(addr string, failure *time.Duration) cipher.PubKey` - map_test.go:136
+- **Dial** (public) - `(d *testDialer) Dial(_ context.Context, remote cipher.PubKey, _ uint16) (net.Conn, error)` - map_test.go:153
+- **PKs** (public) - `(d *testDialer) PKs() []cipher.PubKey` - map_test.go:145
+
+#### Map
+- **Client** (public) - `(cm Map) Client(rPK cipher.PubKey) *Client` - map.go:57
+- **CloseAll** (public) - `(cm Map) CloseAll() errs []error` - map.go:62
+
+#### RulesMap
+- **String** (public) - `(rm RulesMap) String() string` - rules_map.go:14
+
+#### mockDialer
+- **Dial** (public) - `(d mockDialer) Dial(_ context.Context, remote cipher.PubKey, _ uint16) (net.Conn, error)` - testing_test.go:57
+- **Type** (public) - `(d mockDialer) Type() string` - testing_test.go:55
+
+#### testDialer
+- **Type** (public) - `(testDialer) Type() string` - map_test.go:163
+
+#### timeoutError
+- **Error** (public) - `(timeoutError) Error() string` - route_group.go:48
+- **Temporary** (public) - `(timeoutError) Temporary() bool` - route_group.go:50
+- **Timeout** (public) - `(timeoutError) Timeout() bool` - route_group.go:49
+
+---
+
+## pkg/router/setupmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/router/setupmetrics
+**Functions**: 6
+
+### Functions
+- **NewEmpty** (public) - `NewEmpty() Empty` - empty.go:9
+- **NewVictoriaMetrics** (public) - `NewVictoriaMetrics() *VictoriaMetrics` - victoria_metrics.go:30
+
+### Methods
+
+#### *VictoriaMetrics
+- **RecordRequest** (public) - `(m *VictoriaMetrics) RecordRequest() func(rules *routing.EdgeRules, err *error)` - victoria_metrics.go:42
+- **RecordRoute** (public) - `(m *VictoriaMetrics) RecordRoute() func(err *error)` - victoria_metrics.go:58
+
+#### Empty
+- **RecordRequest** (public) - `(Empty) RecordRequest() func(*routing.EdgeRules, *error)` - empty.go:17
+- **RecordRoute** (public) - `(Empty) RecordRoute() func(*error)` - empty.go:22
+
+---
+
+## pkg/routing
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/routing
+**Functions**: 90
+
+### Functions
+- **ConsumeRule** (public) - `ConsumeRule(keepAlive time.Duration, key RouteID, lPK, rPK cipher.PubKey, lPort, rPort Port) Rule` - rule.go:372
+- **ForwardRule** (public) - `ForwardRule(keepAlive time.Duration, key, nextRt RouteID, nextTp uuid.UUID, lPK, rPK cipher.PubKey, lPort, rPort Port) Rule` - rule.go:388
+- **IntermediaryForwardRule** (public) - `IntermediaryForwardRule(keepAlive time.Duration, key, nextRoute RouteID, nextTransport uuid.UUID) Rule` - rule.go:412
+- **MakeClosePacket** (public) - `MakeClosePacket(id RouteID, code CloseCode) Packet` - packet.go:115
+- **MakeDataPacket** (public) - `MakeDataPacket(id RouteID, payload []byte) (Packet, error)` - packet.go:99
+- **MakeErrorPacket** (public) - `MakeErrorPacket(id RouteID, errPayload []byte) (Packet, error)` - packet.go:181
+- **MakeHandshakePacket** (public) - `MakeHandshakePacket(id RouteID, supportEncryption bool) Packet` - packet.go:163
+- **MakeKeepAlivePacket** (public) - `MakeKeepAlivePacket(id RouteID) Packet` - packet.go:127
+- **MakePingPacket** (public) - `MakePingPacket(id RouteID, timestamp, throughput int64) Packet` - packet.go:138
+- **MakePongPacket** (public) - `MakePongPacket(id RouteID, timestamp int64) Packet` - packet.go:151
+- **NewRouteDescriptor** (public) - `NewRouteDescriptor(srcPK, dstPK cipher.PubKey, srcPort, dstPort Port) RouteDescriptor` - route_descriptor.go:15
+- **NewTable** (public) - `NewTable(log *logging.Logger) Table` - table.go:62
+- **RoutingTableSuite** (public) - `RoutingTableSuite(t *testing.T, tbl Table)` - table_test.go:33
+- **TestConsumeRule** (public) - `TestConsumeRule(t *testing.T)` - rule_test.go:14
+- **TestForwardRule** (public) - `TestForwardRule(t *testing.T)` - rule_test.go:35
+- **TestIntermediaryForwardRule** (public) - `TestIntermediaryForwardRule(t *testing.T)` - rule_test.go:57
+- **TestMain** (public) - `TestMain(m *testing.M)` - table_test.go:17
+- **TestMakeClosePacket** (public) - `TestMakeClosePacket(t *testing.T)` - packet_test.go:24
+- **TestMakeDataPacket** (public) - `TestMakeDataPacket(t *testing.T)` - packet_test.go:12
+- **TestMakeErrorPacket** (public) - `TestMakeErrorPacket(t *testing.T)` - packet_test.go:78
+- **TestMakeHandshakePacket** (public) - `TestMakeHandshakePacket(t *testing.T)` - packet_test.go:44
+- **TestMakeKeepAlivePacket** (public) - `TestMakeKeepAlivePacket(t *testing.T)` - packet_test.go:34
+- **TestMakePingPacket** (public) - `TestMakePingPacket(t *testing.T)` - packet_test.go:54
+- **TestMakePongPacket** (public) - `TestMakePongPacket(t *testing.T)` - packet_test.go:66
+- **TestRouteDescriptor** (public) - `TestRouteDescriptor(t *testing.T)` - route_descriptor_test.go:12
+- **TestRoutingTable** (public) - `TestRoutingTable(t *testing.T)` - table_test.go:74
+
+### Methods
+
+#### *Addr
+- **Set** (public) - `(a *Addr) Set(s string) error` - addr.go:34
+
+#### *BidirectionalRoute
+- **Check** (public) - `(br *BidirectionalRoute) Check() error` - route.go:66
+- **ForwardAndReverse** (public) - `(br *BidirectionalRoute) ForwardAndReverse() forward, reverse Route` - route.go:49
+- **String** (public) - `(br *BidirectionalRoute) String() string` - route.go:87
+
+#### *PathEdges
+- **UnmarshalText** (public) - `(p *PathEdges) UnmarshalText(b []byte) error` - route.go:163
+
+#### *RouteDescriptor
+- **Dst** (public) - `(rd *RouteDescriptor) Dst() Addr` - route_descriptor.go:35
+- **DstPK** (public) - `(rd *RouteDescriptor) DstPK() cipher.PubKey` - route_descriptor.go:57
+- **DstPort** (public) - `(rd *RouteDescriptor) DstPort() Port` - route_descriptor.go:81
+- **Invert** (public) - `(rd *RouteDescriptor) Invert() RouteDescriptor` - route_descriptor.go:91
+- **Src** (public) - `(rd *RouteDescriptor) Src() Addr` - route_descriptor.go:27
+- **SrcPK** (public) - `(rd *RouteDescriptor) SrcPK() cipher.PubKey` - route_descriptor.go:43
+- **SrcPort** (public) - `(rd *RouteDescriptor) SrcPort() Port` - route_descriptor.go:71
+- **String** (public) - `(rd *RouteDescriptor) String() string` - route_descriptor.go:95
+- **setDstPK** (private) - `(rd *RouteDescriptor) setDstPK(pk cipher.PubKey)` - route_descriptor.go:66
+- **setDstPort** (private) - `(rd *RouteDescriptor) setDstPort(port Port)` - route_descriptor.go:86
+- **setSrcPK** (private) - `(rd *RouteDescriptor) setSrcPK(pk cipher.PubKey)` - route_descriptor.go:52
+- **setSrcPort** (private) - `(rd *RouteDescriptor) setSrcPort(port Port)` - route_descriptor.go:76
+
+#### *RuleSummary
+- **ToRule** (public) - `(rs *RuleSummary) ToRule() (Rule, error)` - rule.go:293
+
+#### *memTable
+- **AllRules** (public) - `(mt *memTable) AllRules() []Rule` - table.go:172
+- **CollectGarbage** (public) - `(mt *memTable) CollectGarbage() []Rule` - table.go:206
+- **Count** (public) - `(mt *memTable) Count() int` - table.go:199
+- **DelRules** (public) - `(mt *memTable) DelRules(keys []RouteID)` - table.go:186
+- **ReserveKeys** (public) - `(mt *memTable) ReserveKeys(n int) ([]RouteID, error)` - table.go:72
+- **Rule** (public) - `(mt *memTable) Rule(key RouteID) (Rule, error)` - table.go:117
+- **RulesWithDesc** (public) - `(mt *memTable) RulesWithDesc(desc RouteDescriptor) []Rule` - table.go:158
+- **SaveRule** (public) - `(mt *memTable) SaveRule(rule Rule) error` - table.go:101
+- **UpdateActivity** (public) - `(mt *memTable) UpdateActivity(key RouteID) error` - table.go:140
+- **delRule** (private) - `(mt *memTable) delRule(key RouteID)` - table.go:194
+- **reserveKeysImpl** (private) - `(mt *memTable) reserveKeysImpl(n int) (first, last RouteID, err error)` - table.go:86
+- **ruleIsTimedOut** (private) - `(mt *memTable) ruleIsTimedOut(key RouteID, rule Rule) bool` - table.go:223
+
+#### Addr
+- **Network** (public) - `(a Addr) Network() string` - addr.go:25
+- **String** (public) - `(a Addr) String() string` - addr.go:29
+
+#### CloseCode
+- **String** (public) - `(cc CloseCode) String() string` - packet.go:80
+
+#### EdgeRules
+- **String** (public) - `(er EdgeRules) String() string` - route.go:111
+
+#### Failure
+- **Error** (public) - `(f Failure) Error() string` - failure.go:14
+
+#### FailureCode
+- **String** (public) - `(fc FailureCode) String() string` - failure.go:30
+
+#### Hop
+- **String** (public) - `(h Hop) String() string` - route.go:136
+
+#### Packet
+- **Payload** (public) - `(p Packet) Payload() []byte` - packet.go:212
+- **RouteID** (public) - `(p Packet) RouteID() RouteID` - packet.go:207
+- **Size** (public) - `(p Packet) Size() uint16` - packet.go:202
+- **Type** (public) - `(p Packet) Type() PacketType` - packet.go:197
+
+#### PacketType
+- **String** (public) - `(t PacketType) String() string` - packet.go:38
+
+#### PathEdges
+- **MarshalText** (public) - `(p PathEdges) MarshalText() ([]byte, error)` - route.go:144
+
+#### Route
+- **String** (public) - `(r Route) String() string` - route.go:24
+
+#### Rule
+- **Body** (public) - `(r Rule) Body() []byte` - rule.go:107
+- **KeepAlive** (public) - `(r Rule) KeepAlive() time.Duration` - rule.go:66
+- **KeyRouteID** (public) - `(r Rule) KeyRouteID() RouteID` - rule.go:95
+- **NextRouteID** (public) - `(r Rule) NextRouteID() RouteID` - rule.go:129
+- **NextTransportID** (public) - `(r Rule) NextTransportID() uuid.UUID` - rule.go:161
+- **RouteDescriptor** (public) - `(r Rule) RouteDescriptor() RouteDescriptor` - rule.go:113
+- **SetKeyRouteID** (public) - `(r Rule) SetKeyRouteID(id RouteID)` - rule.go:101
+- **String** (public) - `(r Rule) String() string` - rule.go:238
+- **Summary** (public) - `(r Rule) Summary() *RuleSummary` - rule.go:327
+- **Type** (public) - `(r Rule) Type() RuleType` - rule.go:83
+- **assertLen** (private) - `(r Rule) assertLen(l int)` - rule.go:59
+- **setDstPK** (private) - `(r Rule) setDstPK(pk cipher.PubKey)` - rule.go:205
+- **setDstPort** (private) - `(r Rule) setDstPort(port Port)` - rule.go:227
+- **setKeepAlive** (private) - `(r Rule) setKeepAlive(keepAlive time.Duration)` - rule.go:72
+- **setNextRouteID** (private) - `(r Rule) setNextRouteID(id RouteID)` - rule.go:145
+- **setNextTransportID** (private) - `(r Rule) setNextTransportID(id uuid.UUID)` - rule.go:178
+- **setSrcPK** (private) - `(r Rule) setSrcPK(pk cipher.PubKey)` - rule.go:194
+- **setSrcPort** (private) - `(r Rule) setSrcPort(port Port)` - rule.go:216
+- **setType** (private) - `(r Rule) setType(t RuleType)` - rule.go:89
+
+#### RuleType
+- **String** (public) - `(rt RuleType) String() string` - rule.go:28
+
+---
+
+## pkg/service-discovery/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/service-discovery/api
+**Functions**: 29
+
+### Functions
+- **New** (public) - `New(log logrus.FieldLogger, db store.Store, nonceDB httpauth.NonceStore, apiKey string, enableMetrics bool, m sdmetrics.Metrics, dmsgAddr string) *API` - api.go:79
+- **TestAPI_AddVPNFromCurrentVisor** (public) - `TestAPI_AddVPNFromCurrentVisor(t *testing.T)` - api_test.go:559
+- **TestAPI_AddVPNFromOldVisor** (public) - `TestAPI_AddVPNFromOldVisor(t *testing.T)` - api_test.go:523
+- **TestAPI_DelService** (public) - `TestAPI_DelService(t *testing.T)` - api_test.go:411
+- **TestAPI_GetService** (public) - `TestAPI_GetService(t *testing.T)` - api_test.go:159
+- **TestAPI_GetServices** (public) - `TestAPI_GetServices(t *testing.T)` - api_test.go:28
+- **TestAPI_UpdateService** (public) - `TestAPI_UpdateService(t *testing.T)` - api_test.go:299
+- **TestNew** (public) - `TestNew(t *testing.T)` - integration_test.go:101
+- **clearRedis** (private) - `clearRedis(t *testing.T, redisC *redis.Client)` - integration_test.go:58
+- **ipIsPublic** (private) - `ipIsPublic(se servicedisc.Service, remoteIP string) bool` - api.go:476
+- **makeRandClient** (private) - `makeRandClient(srv *httptest.Server, sType string) (servicedisc.SWAddr, *servicedisc.HTTPClient)` - integration_test.go:84
+- **postgresClient** (private) - `postgresClient() (*gorm.DB, *logging.Logger)` - integration_test.go:48
+- **redisAddr** (private) - `redisAddr(t *testing.T) string` - integration_test.go:29
+- **redisClient** (private) - `redisClient(t *testing.T) *redis.Client` - integration_test.go:40
+- **sampleRandom** (private) - `sampleRandom(services []servicedisc.Service, n int) []servicedisc.Service` - api.go:493
+- **serveAPI** (private) - `serveAPI(t *testing.T) *httptest.Server` - integration_test.go:62
+- **serviceAddrFromParam** (private) - `serviceAddrFromParam(r *http.Request) (servicedisc.SWAddr, error)` - api.go:486
+
+### Methods
+
+#### *API
+- **RunBackgroundTasks** (public) - `(a *API) RunBackgroundTasks(ctx context.Context, log logrus.FieldLogger)` - api.go:141
+- **ServeHTTP** (public) - `(a *API) ServeHTTP(w http.ResponseWriter, req *http.Request)` - api.go:97
+- **delEntry** (private) - `(a *API) delEntry(w http.ResponseWriter, r *http.Request)` - api.go:320
+- **deregisterEntry** (private) - `(a *API) deregisterEntry(w http.ResponseWriter, r *http.Request)` - api.go:351
+- **getEntries** (private) - `(a *API) getEntries(w http.ResponseWriter, r *http.Request)` - api.go:188
+- **getEntry** (private) - `(a *API) getEntry(w http.ResponseWriter, r *http.Request)` - api.go:233
+- **health** (private) - `(a *API) health(w http.ResponseWriter, r *http.Request)` - api.go:440
+- **logger** (private) - `(a *API) logger(r *http.Request) logrus.FieldLogger` - api.go:468
+- **postEntry** (private) - `(a *API) postEntry(w http.ResponseWriter, r *http.Request)` - api.go:265
+- **updateInternalState** (private) - `(a *API) updateInternalState(ctx context.Context, logger logrus.FieldLogger)` - api.go:155
+- **writeError** (private) - `(a *API) writeError(w http.ResponseWriter, r *http.Request, status int, err string)` - api.go:428
+- **writeJSON** (private) - `(a *API) writeJSON(w http.ResponseWriter, r *http.Request, code int, object interface{...})` - api.go:450
+
+---
+
+## pkg/service-discovery/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/service-discovery/store
+**Functions**: 19
+
+### Functions
+- **NewStore** (public) - `NewStore(db *gorm.DB, logger *logging.Logger) (Store, error)` - store.go:27
+- **newPostgresStore** (private) - `newPostgresStore(cl *gorm.DB, logger *logging.Logger) (*postgresStore, error)` - postgres_store.go:28
+
+### Methods
+
+#### *MockStore
+- **Close** (public) - `(_m *MockStore) Close() error` - mock_store.go:19
+- **CountServiceTypes** (public) - `(_m *MockStore) CountServiceTypes(ctx context.Context) (uint64, error)` - mock_store.go:33
+- **CountServices** (public) - `(_m *MockStore) CountServices(ctx context.Context, serviceType string) (uint64, error)` - mock_store.go:54
+- **DeleteService** (public) - `(_m *MockStore) DeleteService(ctx context.Context, sType string, addr servicedisc.SWAddr) *servicedisc.HTTPError` - mock_store.go:75
+- **Service** (public) - `(_m *MockStore) Service(ctx context.Context, sType string, addr servicedisc.SWAddr) (*servicedisc.Service, *servicedisc.HTTPError)` - mock_store.go:91
+- **Services** (public) - `(_m *MockStore) Services(ctx context.Context, sType, version, country string) ([]servicedisc.Service, *servicedisc.HTTPError)` - mock_store.go:116
+- **ServicesByCountry** (public) - `(_m *MockStore) ServicesByCountry(ctx context.Context, sType string, sCountry string) ([]servicedisc.Service, *servicedisc.HTTPError)` - mock_store.go:141
+- **UpdateService** (public) - `(_m *MockStore) UpdateService(ctx context.Context, se *servicedisc.Service) *servicedisc.HTTPError` - mock_store.go:166
+
+#### *postgresStore
+- **Close** (public) - `(s *postgresStore) Close() err error` - postgres_store.go:155
+- **CountServiceTypes** (public) - `(s *postgresStore) CountServiceTypes(_ context.Context) (uint64, error)` - postgres_store.go:122
+- **CountServices** (public) - `(s *postgresStore) CountServices(ctx context.Context, serviceType string) (uint64, error)` - postgres_store.go:136
+- **DeleteService** (public) - `(s *postgresStore) DeleteService(_ context.Context, sType string, addr servicedisc.SWAddr) *servicedisc.HTTPError` - postgres_store.go:115
+- **Service** (public) - `(s *postgresStore) Service(_ context.Context, sType string, addr servicedisc.SWAddr) (*servicedisc.Service, *servicedisc.HTTPError)` - postgres_store.go:42
+- **Services** (public) - `(s *postgresStore) Services(_ context.Context, sType, version, country string) ([]servicedisc.Service, *servicedisc.HTTPError)` - postgres_store.go:55
+- **UpdateService** (public) - `(s *postgresStore) UpdateService(_ context.Context, se *servicedisc.Service) *servicedisc.HTTPError` - postgres_store.go:89
+- **processErr** (private) - `(s *postgresStore) processErr(err error, status int) *servicedisc.HTTPError` - postgres_store.go:145
+- **storeRecord** (private) - `(s *postgresStore) storeRecord(record servicedisc.Service) error` - postgres_store.go:162
+
+---
+
+## pkg/servicedisc
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/servicedisc
+**Functions**: 28
+
+### Functions
+- **DefaultGeoQuery** (public) - `DefaultGeoQuery() GeoQuery` - query.go:20
+- **NewClient** (public) - `NewClient(log logrus.FieldLogger, mLog *logging.MasterLogger, conf Config, client *http.Client, clientPublicIP string) *HTTPClient` - client.go:59
+- **NewSWAddr** (public) - `NewSWAddr(pk cipher.PubKey, port uint16) SWAddr` - types.go:39
+- **TestProxy_MarshalBinary** (public) - `TestProxy_MarshalBinary(t *testing.T)` - types_test.go:13
+
+### Methods
+
+#### *GeoQuery
+- **Fill** (public) - `(q *GeoQuery) Fill(v url.Values) error` - query.go:31
+
+#### *HTTPClient
+- **Auth** (public) - `(c *HTTPClient) Auth(ctx context.Context) (*httpauth.Client, error)` - client.go:105
+- **DeleteEntry** (public) - `(c *HTTPClient) DeleteEntry(ctx context.Context) err error` - client.go:249
+- **Register** (public) - `(c *HTTPClient) Register(ctx context.Context) error` - client.go:294
+- **RegisterEntry** (public) - `(c *HTTPClient) RegisterEntry(ctx context.Context) error` - client.go:169
+- **Services** (public) - `(c *HTTPClient) Services(ctx context.Context, quantity int, version, country string) (out []Service, err error)` - client.go:125
+- **addr** (private) - `(c *HTTPClient) addr(path, serviceType, version, country string, quantity int) (string, error)` - client.go:75
+- **postEntry** (private) - `(c *HTTPClient) postEntry(ctx context.Context) (Service, error)` - client.go:195
+
+#### *HTTPError
+- **Error** (public) - `(err *HTTPError) Error() string` - error.go:18
+- **Log** (public) - `(err *HTTPError) Log(log logrus.FieldLogger)` - error.go:23
+
+#### *SWAddr
+- **MarshalBinary** (public) - `(a *SWAddr) MarshalBinary() ([]byte, error)` - types.go:90
+- **MarshalText** (public) - `(a *SWAddr) MarshalText() ([]byte, error)` - types.go:63
+- **Port** (public) - `(a *SWAddr) Port() uint16` - types.go:53
+- **PubKey** (public) - `(a *SWAddr) PubKey() pk cipher.PubKey` - types.go:47
+- **Scan** (public) - `(a *SWAddr) Scan(value interface{...}) error` - types.go:101
+- **String** (public) - `(a *SWAddr) String() string` - types.go:58
+- **UnmarshalBinary** (public) - `(a *SWAddr) UnmarshalBinary(data []byte) error` - types.go:95
+- **UnmarshalText** (public) - `(a *SWAddr) UnmarshalText(text []byte) error` - types.go:68
+
+#### *Service
+- **MarshalBinary** (public) - `(p *Service) MarshalBinary() ([]byte, error)` - types.go:142
+- **UnmarshalBinary** (public) - `(p *Service) UnmarshalBinary(data []byte) error` - types.go:147
+
+#### *ServicesQuery
+- **Fill** (public) - `(q *ServicesQuery) Fill(v url.Values) error` - query.go:82
+
+#### SWAddr
+- **Value** (public) - `(a SWAddr) Value() (driver.Value, error)` - types.go:116
+
+#### Service
+- **Check** (public) - `(p Service) Check() error` - types.go:152
+- **String** (public) - `(p Service) String() string` - types.go:162
+
+---
+
+## pkg/skyenv
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skyenv
+**Functions**: 4
+
+### Functions
+- **PackageConfig** (public) - `PackageConfig() PkgConfig` - skyenv_darwin.go:17
+- **PackageConfig** (public) - `PackageConfig() PkgConfig` - skyenv_linux.go:17
+- **PackageConfig** (public) - `PackageConfig() PkgConfig` - skyenv_windows.go:17
+- **SkywireConfig** (public) - `SkywireConfig() string` - skyenv.go:200
+
+---
+
+## pkg/skywire-utilities/pkg/buildinfo
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/buildinfo
+**Functions**: 11
+
+### Functions
+- **Commit** (public) - `Commit() string` - buildinfo.go:122
+- **DBIVersion** (public) - `DBIVersion() string` - buildinfo.go:109
+- **Date** (public) - `Date() string` - buildinfo.go:127
+- **DebugBuildInfo** (public) - `DebugBuildInfo() *debug.BuildInfo` - buildinfo.go:132
+- **Get** (public) - `Get() *Info` - buildinfo.go:137
+- **Go** (public) - `Go() string` - buildinfo.go:117
+- **Version** (public) - `Version() string` - buildinfo.go:104
+- **formatBuildDate** (private) - `formatBuildDate(dateStr string) string` - buildinfo.go:93
+- **init** (private) - `init()` - buildinfo.go:44
+- **parseVersionInfo** (private) - `parseVersionInfo(ver string)` - buildinfo.go:73
+
+### Methods
+
+#### *Info
+- **WriteTo** (public) - `(info *Info) WriteTo(w io.Writer) (int64, error)` - buildinfo.go:155
+
+---
+
+## pkg/skywire-utilities/pkg/calvin
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/calvin
+**Functions**: 2
+
+### Functions
+- **AsciiFont** (public) - `AsciiFont(input string) string` - calvin.go:87
+- **BlackboardBold** (public) - `BlackboardBold(input string) string` - calvin.go:117
+
+---
+
+## pkg/skywire-utilities/pkg/calvin/cmd/calvin
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/calvin/cmd/calvin
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - calvin.go:11
+- **main** (private) - `main()` - calvin.go:19
+
+---
+
+## pkg/skywire-utilities/pkg/calvin/cmd/calvin/commands
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/calvin/cmd/calvin/commands
+**Functions**: 0
+
+*No functions found*
+
+## pkg/skywire-utilities/pkg/cipher
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/cipher
+**Functions**: 47
+
+### Functions
+- **GenerateDeterministicKeyPair** (public) - `GenerateDeterministicKeyPair(seed []byte) (PubKey, SecKey, error)` - cipher.go:25
+- **GenerateKeyPair** (public) - `GenerateKeyPair() (PubKey, SecKey)` - cipher.go:19
+- **NewPubKey** (public) - `NewPubKey(b []byte) (PubKey, error)` - cipher.go:31
+- **RandByte** (public) - `RandByte(n int) []byte` - cipher.go:249
+- **SHA256FromBytes** (public) - `SHA256FromBytes(b []byte) (SHA256, error)` - cipher.go:258
+- **SamePubKeys** (public) - `SamePubKeys(pks1, pks2 []PubKey) bool` - utils_pubkey.go:7
+- **SignPayload** (public) - `SignPayload(payload []byte, sec SecKey) (Sig, error)` - cipher.go:238
+- **SumSHA256** (public) - `SumSHA256(b []byte) SHA256` - cipher.go:264
+- **TestMain** (public) - `TestMain(m *testing.M)` - cipher_test.go:15
+- **TestPubKeyBinaryMarshaller** (public) - `TestPubKeyBinaryMarshaller(t *testing.T)` - cipher_test.go:46
+- **TestPubKeyString** (public) - `TestPubKeyString(t *testing.T)` - cipher_test.go:30
+- **TestPubKeyTextMarshaller** (public) - `TestPubKeyTextMarshaller(t *testing.T)` - cipher_test.go:35
+- **TestSecKeyBinaryMarshaller** (public) - `TestSecKeyBinaryMarshaller(t *testing.T)` - cipher_test.go:73
+- **TestSecKeyString** (public) - `TestSecKeyString(t *testing.T)` - cipher_test.go:57
+- **TestSecKeyTextMarshaller** (public) - `TestSecKeyTextMarshaller(t *testing.T)` - cipher_test.go:62
+- **TestSigString** (public) - `TestSigString(t *testing.T)` - cipher_test.go:84
+- **TestSigTextMarshaller** (public) - `TestSigTextMarshaller(t *testing.T)` - cipher_test.go:91
+- **VerifyPubKeySignedPayload** (public) - `VerifyPubKeySignedPayload(pubkey PubKey, sig Sig, payload []byte) error` - cipher.go:244
+- **init** (private) - `init()` - cipher.go:14
+
+### Methods
+
+#### *PubKey
+- **Set** (public) - `(pk *PubKey) Set(s string) error` - cipher.go:61
+- **UnmarshalBinary** (public) - `(pk *PubKey) UnmarshalBinary(data []byte) error` - cipher.go:99
+- **UnmarshalText** (public) - `(pk *PubKey) UnmarshalText(data []byte) error` - cipher.go:81
+
+#### *PubKeys
+- **Set** (public) - `(p *PubKeys) Set(list string) error` - cipher.go:120
+
+#### *SecKey
+- **Set** (public) - `(sk *SecKey) Set(s string) error` - cipher.go:157
+- **Type** (public) - `(sk *SecKey) Type() string` - cipher.go:167
+- **UnmarshalBinary** (public) - `(sk *SecKey) UnmarshalBinary(data []byte) error` - cipher.go:191
+- **UnmarshalText** (public) - `(sk *SecKey) UnmarshalText(data []byte) error` - cipher.go:177
+
+#### *Sig
+- **UnmarshalText** (public) - `(sig *Sig) UnmarshalText(data []byte) error` - cipher.go:229
+
+#### PubKey
+- **Big** (public) - `(pk PubKey) Big() *big.Int` - cipher.go:56
+- **Hex** (public) - `(pk PubKey) Hex() string` - cipher.go:41
+- **MarshalBinary** (public) - `(pk PubKey) MarshalBinary() ([]byte, error)` - cipher.go:94
+- **MarshalText** (public) - `(pk PubKey) MarshalText() ([]byte, error)` - cipher.go:76
+- **Null** (public) - `(pk PubKey) Null() bool` - cipher.go:46
+- **String** (public) - `(pk PubKey) String() string` - cipher.go:51
+- **Type** (public) - `(pk PubKey) Type() string` - cipher.go:71
+
+#### PubKeys
+- **String** (public) - `(p PubKeys) String() string` - cipher.go:111
+- **Type** (public) - `(p PubKeys) Type() string` - cipher.go:133
+
+#### SecKey
+- **Hex** (public) - `(sk SecKey) Hex() string` - cipher.go:142
+- **MarshalBinary** (public) - `(sk SecKey) MarshalBinary() ([]byte, error)` - cipher.go:186
+- **MarshalText** (public) - `(sk SecKey) MarshalText() ([]byte, error)` - cipher.go:172
+- **Null** (public) - `(sk SecKey) Null() bool` - cipher.go:147
+- **PubKey** (public) - `(sk SecKey) PubKey() (PubKey, error)` - cipher.go:200
+- **String** (public) - `(sk SecKey) String() string` - cipher.go:152
+
+#### Sig
+- **Hex** (public) - `(sig Sig) Hex() string` - cipher.go:209
+- **MarshalText** (public) - `(sig Sig) MarshalText() ([]byte, error)` - cipher.go:224
+- **Null** (public) - `(sig Sig) Null() bool` - cipher.go:219
+- **String** (public) - `(sig Sig) String() string` - cipher.go:214
+
+---
+
+## pkg/skywire-utilities/pkg/cmdutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/cmdutil
+**Functions**: 20
+
+### Functions
+- **Catch** (public) - `Catch(v ...interface{...})` - catch.go:13
+- **CatchWithLog** (public) - `CatchWithLog(log logrus.FieldLogger, msg string, v ...interface{...})` - catch.go:31
+- **CatchWithMsg** (public) - `CatchWithMsg(msg string, v ...interface{...})` - catch.go:18
+- **LevelFromString** (public) - `LevelFromString(s string) (logrus.Level, int, error)` - sysloghook_windows.go:19
+- **LevelFromString** (public) - `LevelFromString(s string) (logrus.Level, int, error)` - sysloghook_unix.go:29
+- **RootCmdName** (public) - `RootCmdName() string` - cmd_name.go:10
+- **SignalContext** (public) - `SignalContext(ctx context.Context, log logrus.FieldLogger) (context.Context, context.CancelFunc)` - signal_context.go:13
+- **TestCatch** (public) - `TestCatch(t *testing.T)` - catch_test.go:14
+- **TestServiceFlags_Init** (public) - `TestServiceFlags_Init(t *testing.T)` - service_flags_test.go:12
+- **ValidTag** (public) - `ValidTag(tag string) error` - service_flags.go:206
+- **alreadyDone** (private) - `alreadyDone(done *bool) bool` - service_flags.go:236
+- **listenSignals** (private) - `listenSignals() []os.Signal` - signal_windows.go:13
+- **listenSignals** (private) - `listenSignals() []os.Signal` - signal_unix.go:13
+
+### Methods
+
+#### *ServiceFlags
+- **Check** (public) - `(sf *ServiceFlags) Check() error` - service_flags.go:93
+- **Init** (public) - `(sf *ServiceFlags) Init(rootCmd *cobra.Command, defaultTag, defaultConf string)` - service_flags.go:56
+- **Logger** (public) - `(sf *ServiceFlags) Logger() *logging.Logger` - service_flags.go:118
+- **ParseConfig** (public) - `(sf *ServiceFlags) ParseConfig(args []string, checkArgs bool, v interface{...}, genDefaultFunc func() io.ReadCloser, error) error` - service_flags.go:141
+- **obtainConfigReader** (private) - `(sf *ServiceFlags) obtainConfigReader(args []string, checkArgs bool, genDefaultFunc func() io.ReadCloser, error) (io.ReadCloser, error)` - service_flags.go:170
+- **sysLogHook** (private) - `(sf *ServiceFlags) sysLogHook(log *logging.Logger, sysLvl int)` - sysloghook_unix.go:17
+- **sysLogHook** (private) - `(sf *ServiceFlags) sysLogHook(_ *logging.Logger, _ int)` - sysloghook_windows.go:15
+
+---
+
+## pkg/skywire-utilities/pkg/flags
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/flags
+**Functions**: 1
+
+### Functions
+- **InitFlags** (public) - `InitFlags(cmd *cobra.Command, usage bool)` - flags.go:10
+
+---
+
+## pkg/skywire-utilities/pkg/geo
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/geo
+**Functions**: 2
+
+### Functions
+- **MakeIPDetails** (public) - `MakeIPDetails(log logrus.FieldLogger, _ string) LocationDetails` - geo.go:40
+- **roundTwoDigits** (private) - `roundTwoDigits(value float64) float64` - geo.go:91
+
+---
+
+## pkg/skywire-utilities/pkg/httpauth
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/httpauth
+**Functions**: 37
+
+### Functions
+- **AuthFromHeaders** (public) - `AuthFromHeaders(hdr http.Header, shouldVerifyAuth bool) (*Auth, error)` - auth.go:23
+- **GetRemoteAddr** (public) - `GetRemoteAddr(r *http.Request) string` - handler.go:206
+- **MakeLoadTestingMiddleware** (public) - `MakeLoadTestingMiddleware(store NonceStore) func(next http.Handler) http.Handler` - handler.go:128
+- **MakeMiddleware** (public) - `MakeMiddleware(store NonceStore) func(next http.Handler) http.Handler` - handler.go:117
+- **NewHTTPErrorResponse** (public) - `NewHTTPErrorResponse(code int, msg string) HTTPResponse` - handler.go:179
+- **NewNonceStore** (public) - `NewNonceStore(ctx context.Context, config storeconfig.Config, prefix string) (NonceStore, error)` - nonce-storer.go:34
+- **PKFromCtx** (public) - `PKFromCtx(ctx context.Context) cipher.PubKey` - handler.go:122
+- **PayloadWithNonce** (public) - `PayloadWithNonce(payload []byte, nonce Nonce) []byte` - auth.go:108
+- **Sign** (public) - `Sign(payload []byte, nonce Nonce, sec cipher.SecKey) (cipher.Sig, error)` - auth.go:113
+- **TestAuthFormat** (public) - `TestAuthFormat(t *testing.T)` - handler_test.go:235
+- **TestAuthSignatureVerification** (public) - `TestAuthSignatureVerification(t *testing.T)` - handler_test.go:261
+- **TestServer_Wrap** (public) - `TestServer_Wrap(t *testing.T)` - handler_test.go:62
+- **TestSignatureVerification** (public) - `TestSignatureVerification(t *testing.T)` - handler_test.go:278
+- **Verify** (public) - `Verify(payload []byte, nonce Nonce, pub cipher.PubKey, sig cipher.Sig) error` - auth.go:118
+- **WithAuth** (public) - `WithAuth(store NonceStore, original http.Handler, shouldVerifyAuth bool) http.Handler` - handler.go:76
+- **invalidHeaders** (private) - `invalidHeaders(t *testing.T, payload []byte) http.Header` - handler_test.go:48
+- **makeMiddleware** (private) - `makeMiddleware(store NonceStore, shouldVerifyAuth bool) func(next http.Handler) http.Handler` - handler.go:110
+- **newMemoryStore** (private) - `newMemoryStore() *memStore` - memory_store.go:18
+- **newRedisStore** (private) - `newRedisStore(ctx context.Context, addr, password, prefix string) (*redisStore, error)` - redis-store.go:21
+- **retrievePkFromURL** (private) - `retrievePkFromURL(url *url.URL) (cipher.PubKey, error)` - handler.go:195
+- **validHeaders** (private) - `validHeaders(t *testing.T, payload []byte) http.Header` - handler_test.go:23
+- **validHeadersWithNonce** (private) - `validHeadersWithNonce(t *testing.T, nonce Nonce, payload []byte) http.Header` - handler_test.go:36
+- **verifyAuth** (private) - `verifyAuth(store NonceStore, r *http.Request, auth *Auth) error` - auth.go:76
+
+### Methods
+
+#### *Auth
+- **Verify** (public) - `(a *Auth) Verify(in []byte) error` - auth.go:71
+
+#### *NonceHandler
+- **ServeHTTP** (public) - `(as *NonceHandler) ServeHTTP(w http.ResponseWriter, r *http.Request)` - handler.go:146
+
+#### *memStore
+- **Count** (public) - `(s *memStore) Count(_ context.Context) (n int, err error)` - memory_store.go:53
+- **IncrementNonce** (public) - `(s *memStore) IncrementNonce(_ context.Context, pk cipher.PubKey) (Nonce, error)` - memory_store.go:41
+- **Nonce** (public) - `(s *memStore) Nonce(_ context.Context, pk cipher.PubKey) (Nonce, error)` - memory_store.go:30
+- **SetError** (public) - `(s *memStore) SetError(err error)` - memory_store.go:24
+
+#### *redisStore
+- **Count** (public) - `(s *redisStore) Count(ctx context.Context) (n int, err error)` - redis-store.go:82
+- **IncrementNonce** (public) - `(s *redisStore) IncrementNonce(ctx context.Context, remotePK cipher.PubKey) (Nonce, error)` - redis-store.go:68
+- **Nonce** (public) - `(s *redisStore) Nonce(ctx context.Context, remotePK cipher.PubKey) (Nonce, error)` - redis-store.go:55
+- **key** (private) - `(s *redisStore) key(v string) string` - redis-store.go:51
+
+#### *statusWriter
+- **Hijack** (public) - `(w *statusWriter) Hijack() (net.Conn, *bufio.ReadWriter, error)` - handler.go:61
+- **Write** (public) - `(w *statusWriter) Write(b []byte) (int, error)` - handler.go:51
+- **WriteHeader** (public) - `(w *statusWriter) WriteHeader(status int)` - handler.go:46
+
+#### Nonce
+- **String** (public) - `(n Nonce) String() string` - nonce-storer.go:15
+
+---
+
+## pkg/skywire-utilities/pkg/httputil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/httputil
+**Functions**: 13
+
+### Functions
+- **BoolFromQuery** (public) - `BoolFromQuery(r *http.Request, key string, defaultVal bool) (bool, error)` - httputil.go:51
+- **ErrorFromResp** (public) - `ErrorFromResp(resp *http.Response) error` - error.go:23
+- **GetLogger** (public) - `GetLogger(r *http.Request) logrus.FieldLogger` - httputil.go:81
+- **GetServiceHealth** (public) - `GetServiceHealth(_ context.Context, url string) (health *HealthCheckResponse, err error)` - health.go:23
+- **LogEntrySetField** (public) - `LogEntrySetField(r *http.Request, key string, value interface{...})` - log.go:53
+- **NewLogMiddleware** (public) - `NewLogMiddleware(logger logrus.FieldLogger) func(http.Handler) http.Handler` - log.go:20
+- **ReadJSON** (public) - `ReadJSON(r *http.Request, v interface{...}) error` - httputil.go:44
+- **SetLoggerMiddleware** (public) - `SetLoggerMiddleware(log logrus.FieldLogger) func(next http.Handler) http.Handler` - httputil.go:93
+- **SplitRPCAddr** (public) - `SplitRPCAddr(rpcAddr string) (host string, port uint16, err error)` - httputil.go:65
+- **WriteJSON** (public) - `WriteJSON(w http.ResponseWriter, r *http.Request, code int, v interface{...})` - httputil.go:24
+
+### Methods
+
+#### *HTTPError
+- **Error** (public) - `(e *HTTPError) Error() string` - error.go:36
+- **Temporary** (public) - `(e *HTTPError) Temporary() bool` - error.go:51
+- **Timeout** (public) - `(e *HTTPError) Timeout() bool` - error.go:41
+
+---
+
+## pkg/skywire-utilities/pkg/logging
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/logging
+**Functions**: 32
+
+### Functions
+- **AddHook** (public) - `AddHook(hook logrus.Hook)` - logging.go:53
+- **Disable** (public) - `Disable()` - logging.go:83
+- **DisableColors** (public) - `DisableColors()` - logging.go:63
+- **EnableColors** (public) - `EnableColors()` - logging.go:58
+- **GetLevel** (public) - `GetLevel() logrus.Level` - logging.go:73
+- **LevelFromString** (public) - `LevelFromString(s string) (logrus.Level, error)` - logging.go:26
+- **MustGetLogger** (public) - `MustGetLogger(module string) *Logger` - logging.go:48
+- **NewMasterLogger** (public) - `NewMasterLogger() *MasterLogger` - logger.go:33
+- **NewWriteHook** (public) - `NewWriteHook(w io.Writer) *WriteHook` - hooks.go:17
+- **SetLevel** (public) - `SetLevel(level logrus.Level)` - logging.go:68
+- **SetOutputTo** (public) - `SetOutputTo(w io.Writer)` - logging.go:78
+- **compileColorScheme** (private) - `compileColorScheme(s *ColorScheme) *compiledColorScheme` - formatter.go:149
+- **extractPrefix** (private) - `extractPrefix(e *logrus.Entry) string` - formatter.go:378
+- **getCompiledColor** (private) - `getCompiledColor(main string, fallback string) func(string) string` - formatter.go:139
+- **miniTS** (private) - `miniTS() int` - formatter.go:52
+
+### Methods
+
+#### *Logger
+- **Critical** (public) - `(logger *Logger) Critical() logrus.FieldLogger` - logger.go:18
+- **WithTime** (public) - `(logger *Logger) WithTime(t time.Time) *logrus.Entry` - logger.go:23
+
+#### *MasterLogger
+- **DisableColors** (public) - `(logger *MasterLogger) DisableColors()` - logger.go:67
+- **EnableColors** (public) - `(logger *MasterLogger) EnableColors()` - logger.go:62
+- **PackageLogger** (public) - `(logger *MasterLogger) PackageLogger(moduleName string) *Logger` - logger.go:55
+
+#### *TextFormatter
+- **Format** (public) - `(f *TextFormatter) Format(entry *logrus.Entry) ([]byte, error)` - formatter.go:189
+- **SetColorScheme** (public) - `(f *TextFormatter) SetColorScheme(colorScheme *ColorScheme)` - formatter.go:184
+- **appendKeyValue** (private) - `(f *TextFormatter) appendKeyValue(b *bytes.Buffer, key string, value interface{...}, appendSpace bool)` - formatter.go:421
+- **appendValue** (private) - `(f *TextFormatter) appendValue(b *bytes.Buffer, value interface{...})` - formatter.go:431
+- **checkIfTerminal** (private) - `(f *TextFormatter) checkIfTerminal(w io.Writer) bool` - formatter.go:174
+- **formatKeyValue** (private) - `(f *TextFormatter) formatKeyValue(key string, value interface{...}) string` - formatter.go:399
+- **formatValue** (private) - `(f *TextFormatter) formatValue(value interface{...}) string` - formatter.go:403
+- **init** (private) - `(f *TextFormatter) init(entry *logrus.Entry)` - formatter.go:165
+- **needsQuoting** (private) - `(f *TextFormatter) needsQuoting(text string) bool` - formatter.go:357
+- **printColored** (private) - `(f *TextFormatter) printColored(b *bytes.Buffer, entry *logrus.Entry, keys []string, timestampFormat string, colorScheme *compiledColorScheme)` - formatter.go:244
+
+#### *WriteHook
+- **Fire** (public) - `(f *WriteHook) Fire(e *logrus.Entry) error` - hooks.go:37
+- **Levels** (public) - `(f *WriteHook) Levels() []logrus.Level` - hooks.go:32
+
+---
+
+## pkg/skywire-utilities/pkg/metricsutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/metricsutil
+**Functions**: 18
+
+### Functions
+- **AddMetricsHandler** (public) - `AddMetricsHandler(mux *chi.Mux)` - http.go:14
+- **NewRequestsInFlightCountMiddleware** (public) - `NewRequestsInFlightCountMiddleware() *RequestsInFlightCountMiddleware` - requests_in_flight_count_middleware.go:14
+- **NewStatusResponseWriter** (public) - `NewStatusResponseWriter(w http.ResponseWriter) *StatusResponseWriter` - status_response_writer.go:16
+- **NewVictoriaMetricsIntGauge** (public) - `NewVictoriaMetricsIntGauge(name string) *VictoriaMetricsIntGaugeWrapper` - victoria_metrics_int_gauge_wrapper.go:19
+- **NewVictoriaMetricsUintGauge** (public) - `NewVictoriaMetricsUintGauge(name string) *VictoriaMetricsUintGaugeWrapper` - victoria_metrics_uint_gauge_wrapper.go:19
+- **RequestDurationMiddleware** (public) - `RequestDurationMiddleware(next http.Handler) http.Handler` - request_duration_middleware.go:13
+- **ServeHTTPMetrics** (public) - `ServeHTTPMetrics(log logrus.FieldLogger, addr string)` - http.go:21
+
+### Methods
+
+#### *RequestsInFlightCountMiddleware
+- **Handle** (public) - `(m *RequestsInFlightCountMiddleware) Handle(next http.Handler) http.Handler` - requests_in_flight_count_middleware.go:21
+
+#### *StatusResponseWriter
+- **StatusCode** (public) - `(w *StatusResponseWriter) StatusCode() int` - status_response_writer.go:29
+- **WriteHeader** (public) - `(w *StatusResponseWriter) WriteHeader(statusCode int)` - status_response_writer.go:23
+
+#### *VictoriaMetricsIntGaugeWrapper
+- **Dec** (public) - `(w *VictoriaMetricsIntGaugeWrapper) Dec()` - victoria_metrics_int_gauge_wrapper.go:34
+- **Inc** (public) - `(w *VictoriaMetricsIntGaugeWrapper) Inc()` - victoria_metrics_int_gauge_wrapper.go:29
+- **Set** (public) - `(w *VictoriaMetricsIntGaugeWrapper) Set(val int64)` - victoria_metrics_int_gauge_wrapper.go:39
+- **Val** (public) - `(w *VictoriaMetricsIntGaugeWrapper) Val() int64` - victoria_metrics_int_gauge_wrapper.go:44
+
+#### *VictoriaMetricsUintGaugeWrapper
+- **Dec** (public) - `(w *VictoriaMetricsUintGaugeWrapper) Dec()` - victoria_metrics_uint_gauge_wrapper.go:34
+- **Inc** (public) - `(w *VictoriaMetricsUintGaugeWrapper) Inc()` - victoria_metrics_uint_gauge_wrapper.go:29
+- **Set** (public) - `(w *VictoriaMetricsUintGaugeWrapper) Set(val uint64)` - victoria_metrics_uint_gauge_wrapper.go:39
+- **Val** (public) - `(w *VictoriaMetricsUintGaugeWrapper) Val() uint64` - victoria_metrics_uint_gauge_wrapper.go:44
+
+---
+
+## pkg/skywire-utilities/pkg/netutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/netutil
+**Functions**: 29
+
+### Functions
+- **CopyReadWriteCloser** (public) - `CopyReadWriteCloser(conn1, conn2 io.ReadWriteCloser) error` - copy.go:10
+- **DefaultNetworkInterface** (public) - `DefaultNetworkInterface() (string, error)` - net_darwin.go:18
+- **DefaultNetworkInterface** (public) - `DefaultNetworkInterface() (string, error)` - net_linux.go:18
+- **DefaultNetworkInterface** (public) - `DefaultNetworkInterface() (string, error)` - net_windows.go:21
+- **DefaultNetworkInterfaceIPs** (public) - `DefaultNetworkInterfaceIPs() ([]net.IP, error)` - net.go:98
+- **ExtractPort** (public) - `ExtractPort(addr net.Addr) (uint16, error)` - net.go:126
+- **HasPublicIP** (public) - `HasPublicIP() (bool, error)` - net.go:112
+- **IsPublicIP** (public) - `IsPublicIP(IP net.IP) bool` - net.go:78
+- **LocalAddresses** (public) - `LocalAddresses() ([]string, error)` - net.go:138
+- **LocalNetworkInterfaceIPs** (public) - `LocalNetworkInterfaceIPs() ([]net.IP, error)` - net.go:12
+- **LocalProtocol** (public) - `LocalProtocol() bool` - net.go:163
+- **NetworkInterfaceIPs** (public) - `NetworkInterfaceIPs(name string) ([]net.IP, error)` - net.go:18
+- **NewDefaultRetrier** (public) - `NewDefaultRetrier(log logrus.FieldLogger) *Retrier` - retrier.go:55
+- **NewPorter** (public) - `NewPorter(minEph uint16) *Porter` - porter.go:32
+- **NewRetrier** (public) - `NewRetrier(log logrus.FieldLogger, initBO, maxBO time.Duration, tries int64, factor float64) *Retrier` - retrier.go:40
+- **TestDefaultNetworkInterfaceIPs** (public) - `TestDefaultNetworkInterfaceIPs(t *testing.T)` - net_test.go:12
+- **TestRetrier_Do** (public) - `TestRetrier_Do(t *testing.T)` - retrier_test.go:14
+- **localNetworkInterfaceIPs** (private) - `localNetworkInterfaceIPs(ifcName string) ([]net.IP, []net.IP, error)` - net.go:25
+
+### Methods
+
+#### *Porter
+- **CloseAll** (public) - `(p *Porter) CloseAll(log logrus.FieldLogger)` - porter.go:178
+- **PortValue** (public) - `(p *Porter) PortValue(port uint16) (interface{...}, bool)` - porter.go:103
+- **RangePortValues** (public) - `(p *Porter) RangePortValues(fn func(port uint16, v interface{...}) next bool)` - porter.go:112
+- **RangePortValuesAndChildren** (public) - `(p *Porter) RangePortValuesAndChildren(fn func(port uint16, v PorterValue) next bool)` - porter.go:124
+- **Reserve** (public) - `(p *Porter) Reserve(port uint16, v interface{...}) (bool, func())` - porter.go:45
+- **ReserveChild** (public) - `(p *Porter) ReserveChild(port, subPort uint16, v interface{...}) (bool, func())` - porter.go:59
+- **ReserveEphemeral** (public) - `(p *Porter) ReserveEphemeral(ctx context.Context, v interface{...}) (uint16, func(), error)` - porter.go:80
+- **makeChildFreer** (private) - `(p *Porter) makeChildFreer(port, subPort uint16) func()` - porter.go:157
+- **makePortFreer** (private) - `(p *Porter) makePortFreer(port uint16) func()` - porter.go:137
+
+#### *Retrier
+- **Do** (public) - `(r *Retrier) Do(ctx context.Context, f RetryFunc) error` - retrier.go:71
+- **WithErrWhitelist** (public) - `(r *Retrier) WithErrWhitelist(errors ...error) *Retrier` - retrier.go:61
+
+---
+
+## pkg/skywire-utilities/pkg/networkmonitor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/networkmonitor
+**Functions**: 3
+
+### Functions
+- **GetWhitelistPKs** (public) - `GetWhitelistPKs() WhitelistPKs` - networkmonitor.go:8
+
+### Methods
+
+#### WhitelistPKs
+- **Get** (public) - `(wl WhitelistPKs) Get(nmPkString string) bool` - networkmonitor.go:18
+- **Set** (public) - `(wl WhitelistPKs) Set(nmPkString string)` - networkmonitor.go:13
+
+---
+
+## pkg/skywire-utilities/pkg/skyenv
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/skyenv
+**Functions**: 1
+
+### Functions
+- **GetStunServers** (public) - `GetStunServers() []string` - values.go:37
+
+---
+
+## pkg/skywire-utilities/pkg/storeconfig
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/storeconfig
+**Functions**: 2
+
+### Functions
+- **PostgresCredential** (public) - `PostgresCredential() (string, string, string)` - storeconfig.go:39
+- **RedisPassword** (public) - `RedisPassword() string` - storeconfig.go:34
+
+---
+
+## pkg/skywire-utilities/pkg/tcpproxy
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/skywire-utilities/pkg/tcpproxy
+**Functions**: 1
+
+### Functions
+- **ListenAndServe** (public) - `ListenAndServe(addr string, handler http.Handler) error` - http.go:12
+
+---
+
+## pkg/transport
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport
+**Functions**: 109
+
+### Functions
+- **ExampleSignedEntry_Sign** (public) - `ExampleSignedEntry_Sign()` - entry_test.go:27
+- **ExampleSignedEntry_Signature** (public) - `ExampleSignedEntry_Signature()` - entry_test.go:62
+- **FileTransportLogStore** (public) - `FileTransportLogStore(ctx context.Context, dir string, rInterval time.Duration, log *logging.Logger) (LogStore, error)` - log.go:182
+- **InMemoryTransportLogStore** (public) - `InMemoryTransportLogStore() LogStore` - log.go:147
+- **MakeEntry** (public) - `MakeEntry(aPK, bPK cipher.PubKey, netType types.Type, label Label) Entry` - entry.go:49
+- **MakeLogEntry** (public) - `MakeLogEntry(ls LogStore, tpID uuid.UUID, log *logging.Logger) *LogEntry` - log.go:42
+- **MakeSettlementHS** (public) - `MakeSettlementHS(init bool, log *logging.Logger) SettlementHS` - handshake.go:97
+- **MakeTransportID** (public) - `MakeTransportID(keyA, keyB cipher.PubKey, netType types.Type) uuid.UUID` - transport.go:19
+- **NewDiscoveryMock** (public) - `NewDiscoveryMock() DiscoveryClient` - discovery.go:29
+- **NewLogEntry** (public) - `NewLogEntry() *LogEntry` - log.go:57
+- **NewManagedTransport** (public) - `NewManagedTransport(conf ManagedTransportConfig) *ManagedTransport` - managed_transport.go:80
+- **NewManager** (public) - `NewManager(log *logging.Logger, arClient addrresolver.APIClient, ebc *appevent.Broadcaster, config *ManagerConfig, factory network.ClientFactory) (*Manager, error)` - manager.go:66
+- **NewSignedEntry** (public) - `NewSignedEntry(entry *Entry, pk cipher.PubKey, secKey cipher.SecKey) (*SignedEntry, error)` - entry.go:164
+- **SortEdges** (public) - `SortEdges(keyA, keyB cipher.PubKey) [...]cipher.PubKey` - transport.go:31
+- **TestFileTransportLogStore** (public) - `TestFileTransportLogStore(t *testing.T)` - log_test.go:47
+- **TestInMemoryTransportLogStore** (public) - `TestInMemoryTransportLogStore(t *testing.T)` - log_test.go:43
+- **TestLogEntry_GobEncode** (public) - `TestLogEntry_GobEncode(t *testing.T)` - log_test.go:72
+- **TestLogEntry_MarshalJSON** (public) - `TestLogEntry_MarshalJSON(t *testing.T)` - log_test.go:60
+- **TestMain** (public) - `TestMain(m *testing.M)` - manager_test.go:19
+- **TestMakeTransportID** (public) - `TestMakeTransportID(t *testing.T)` - manager_test.go:42
+- **TestNewDiscoveryMock** (public) - `TestNewDiscoveryMock(t *testing.T)` - discovery_test.go:14
+- **TestNewEntry** (public) - `TestNewEntry(t *testing.T)` - entry_test.go:14
+- **TestSortEdges** (public) - `TestSortEdges(t *testing.T)` - manager_test.go:34
+- **compareEntries** (private) - `compareEntries(expected, received *Entry) error` - handshake.go:32
+- **makeEntryFromTransport** (private) - `makeEntryFromTransport(transport network.Transport) Entry` - handshake.go:27
+- **receiveAndVerifyEntry** (private) - `receiveAndVerifyEntry(r io.Reader, expected *Entry, remotePK cipher.PubKey) (*SignedEntry, error)` - handshake.go:48
+- **testTransportLogStore** (private) - `testTransportLogStore(t *testing.T, logStore transport.LogStore)` - log_test.go:20
+- **writeHsResponse** (private) - `writeHsResponse(w io.Writer, response hsResponse) error` - handshake.go:166
+
+### Methods
+
+#### *Entry
+- **EdgeIndex** (public) - `(e *Entry) EdgeIndex(pk cipher.PubKey) int` - entry.go:71
+- **HasEdge** (public) - `(e *Entry) HasEdge(edge cipher.PubKey) bool` - entry.go:88
+- **IsLeastSignificantEdge** (public) - `(e *Entry) IsLeastSignificantEdge(pk cipher.PubKey) bool` - entry.go:83
+- **RemoteEdge** (public) - `(e *Entry) RemoteEdge(local cipher.PubKey) cipher.PubKey` - entry.go:60
+- **Signature** (public) - `(e *Entry) Signature(secKey cipher.SecKey) (cipher.Sig, error)` - entry.go:119
+- **String** (public) - `(e *Entry) String() string` - entry.go:98
+- **ToBinary** (public) - `(e *Entry) ToBinary() []byte` - entry.go:109
+
+#### *LogEntry
+- **AddRecv** (public) - `(le *LogEntry) AddRecv(n uint64)` - log.go:67
+- **AddSent** (public) - `(le *LogEntry) AddSent(n uint64)` - log.go:72
+- **GobDecode** (public) - `(le *LogEntry) GobDecode(b []byte) error` - log.go:115
+- **GobEncode** (public) - `(le *LogEntry) GobEncode() ([]byte, error)` - log.go:96
+- **MarshalJSON** (public) - `(le *LogEntry) MarshalJSON() ([]byte, error)` - log.go:83
+- **Reset** (public) - `(le *LogEntry) Reset()` - log.go:77
+
+#### *ManagedTransport
+- **Accept** (public) - `(mt *ManagedTransport) Accept(ctx context.Context, transport network.Transport) error` - managed_transport.go:221
+- **Close** (public) - `(mt *ManagedTransport) Close() err error` - managed_transport.go:179
+- **Dial** (public) - `(mt *ManagedTransport) Dial(ctx context.Context) error` - managed_transport.go:251
+- **DialAsync** (public) - `(mt *ManagedTransport) DialAsync(ctx context.Context, errCh chan error)` - managed_transport.go:267
+- **IsClosed** (public) - `(mt *ManagedTransport) IsClosed() bool` - managed_transport.go:187
+- **Remote** (public) - `(mt *ManagedTransport) Remote() cipher.PubKey` - managed_transport.go:471
+- **Serve** (public) - `(mt *ManagedTransport) Serve(readCh chan<- routing.Packet)` - managed_transport.go:105
+- **Type** (public) - `(mt *ManagedTransport) Type() types.Type` - managed_transport.go:474
+- **WritePacket** (public) - `(mt *ManagedTransport) WritePacket(ctx context.Context, packet routing.Packet) error` - managed_transport.go:364
+- **close** (private) - `(mt *ManagedTransport) close()` - managed_transport.go:201
+- **deleteFromDiscovery** (private) - `(mt *ManagedTransport) deleteFromDiscovery() error` - managed_transport.go:340
+- **dial** (private) - `(mt *ManagedTransport) dial(ctx context.Context) error` - managed_transport.go:271
+- **getTransport** (private) - `(mt *ManagedTransport) getTransport() network.Transport` - managed_transport.go:300
+- **isLeastSignificantEdge** (private) - `(mt *ManagedTransport) isLeastSignificantEdge() bool` - managed_transport.go:291
+- **isServing** (private) - `(mt *ManagedTransport) isServing() bool` - managed_transport.go:167
+- **logLoop** (private) - `(mt *ManagedTransport) logLoop()` - managed_transport.go:148
+- **logMod** (private) - `(mt *ManagedTransport) logMod() bool` - managed_transport.go:448
+- **logRecv** (private) - `(mt *ManagedTransport) logRecv(b uint64)` - managed_transport.go:438
+- **logSent** (private) - `(mt *ManagedTransport) logSent(b uint64)` - managed_transport.go:430
+- **readLoop** (private) - `(mt *ManagedTransport) readLoop(readCh chan<- routing.Packet)` - managed_transport.go:127
+- **readPacket** (private) - `(mt *ManagedTransport) readPacket() (packet routing.Packet, err error)` - managed_transport.go:384
+- **recordLog** (private) - `(mt *ManagedTransport) recordLog()` - managed_transport.go:457
+- **setTransport** (private) - `(mt *ManagedTransport) setTransport(newTransport network.Transport) error` - managed_transport.go:313
+
+#### *Manager
+- **Close** (public) - `(tm *Manager) Close()` - manager.go:541
+- **DeleteAllTransports** (public) - `(tm *Manager) DeleteAllTransports()` - manager.go:487
+- **DeleteTransport** (public) - `(tm *Manager) DeleteTransport(id uuid.UUID)` - manager.go:470
+- **GetTransport** (public) - `(tm *Manager) GetTransport(remote cipher.PubKey, netType types.Type) (*ManagedTransport, error)` - manager.go:343
+- **GetTransportByID** (public) - `(tm *Manager) GetTransportByID(tpID uuid.UUID) (*ManagedTransport, error)` - manager.go:359
+- **GetTransportsByLabel** (public) - `(tm *Manager) GetTransportsByLabel(label Label) []*ManagedTransport` - manager.go:370
+- **InitClient** (public) - `(tm *Manager) InitClient(ctx context.Context, netType types.Type, port int)` - manager.go:150
+- **InitDmsgClient** (public) - `(tm *Manager) InitDmsgClient(ctx context.Context, dmsgC *dmsg.Client)` - manager.go:86
+- **IsKnownNetwork** (public) - `(tm *Manager) IsKnownNetwork(netName types.Type) bool` - manager.go:335
+- **Local** (public) - `(tm *Manager) Local() cipher.PubKey` - manager.go:535
+- **Networks** (public) - `(tm *Manager) Networks() []types.Type` - manager.go:250
+- **ReadPacket** (public) - `(tm *Manager) ReadPacket() (routing.Packet, error)` - manager.go:503
+- **Ready** (public) - `(tm *Manager) Ready() <-chan struct{...}` - manager.go:166
+- **STCPRRemoteAddrs** (public) - `(tm *Manager) STCPRRemoteAddrs() []string` - manager.go:451
+- **SaveTransport** (public) - `(tm *Manager) SaveTransport(ctx context.Context, remote cipher.PubKey, netType types.Type, label Label) (*ManagedTransport, error)` - manager.go:383
+- **Serve** (public) - `(tm *Manager) Serve(ctx context.Context)` - manager.go:94
+- **SetPTpsCache** (public) - `(tm *Manager) SetPTpsCache(pTps []PersistentTransports)` - manager.go:142
+- **Stcpr** (public) - `(tm *Manager) Stcpr() (network.Client, bool)` - manager.go:261
+- **Transport** (public) - `(tm *Manager) Transport(id uuid.UUID) *ManagedTransport` - manager.go:516
+- **WalkTransports** (public) - `(tm *Manager) WalkTransports(walk func(tp *ManagedTransport) bool)` - manager.go:524
+- **acceptTransport** (private) - `(tm *Manager) acceptTransport(ctx context.Context, lis network.Listener) error` - manager.go:268
+- **acceptTransports** (private) - `(tm *Manager) acceptTransports(ctx context.Context, lis network.Listener, t types.Type)` - manager.go:195
+- **cleanupTransports** (private) - `(tm *Manager) cleanupTransports(ctx context.Context)` - manager.go:222
+- **getPTpsCache** (private) - `(tm *Manager) getPTpsCache() []PersistentTransports` - manager.go:134
+- **isClosing** (private) - `(tm *Manager) isClosing() bool` - manager.go:568
+- **reconnectPersistent** (private) - `(tm *Manager) reconnectPersistent(ctx context.Context)` - manager.go:119
+- **runClient** (private) - `(tm *Manager) runClient(ctx context.Context, netType types.Type)` - manager.go:170
+- **runReconnectPersistent** (private) - `(tm *Manager) runReconnectPersistent(ctx context.Context)` - manager.go:102
+- **saveTransport** (private) - `(tm *Manager) saveTransport(ctx context.Context, remote cipher.PubKey, netType types.Type, label Label) (*ManagedTransport, error)` - manager.go:400
+- **tpIDFromPK** (private) - `(tm *Manager) tpIDFromPK(pk cipher.PubKey, netType types.Type) uuid.UUID` - manager.go:577
+
+#### *SignedEntry
+- **Sign** (public) - `(se *SignedEntry) Sign(pk cipher.PubKey, secKey cipher.SecKey) error` - entry.go:137
+- **Signature** (public) - `(se *SignedEntry) Signature(pk cipher.PubKey) (cipher.Sig, error)` - entry.go:154
+
+#### *fileTransportLogStore
+- **Entry** (public) - `(tls *fileTransportLogStore) Entry(tpID uuid.UUID) (*LogEntry, error)` - log.go:209
+- **Record** (public) - `(tls *fileTransportLogStore) Record(tpID uuid.UUID, lEntry *LogEntry) error` - log.go:225
+- **cleanLogs** (private) - `(tls *fileTransportLogStore) cleanLogs(rInterval time.Duration)` - log.go:325
+- **readFromCSV** (private) - `(tls *fileTransportLogStore) readFromCSV(fileName string) ([]*CsvEntry, error)` - log.go:304
+- **todayFileName** (private) - `(tls *fileTransportLogStore) todayFileName() string` - log.go:350
+- **writeToCSV** (private) - `(tls *fileTransportLogStore) writeToCSV(cEntry *CsvEntry) error` - log.go:238
+
+#### *inMemoryTransportLogStore
+- **Entry** (public) - `(tls *inMemoryTransportLogStore) Entry(id uuid.UUID) (*LogEntry, error)` - log.go:153
+- **Record** (public) - `(tls *inMemoryTransportLogStore) Record(id uuid.UUID, entry *LogEntry) error` - log.go:164
+
+#### *mockDiscoveryClient
+- **DeleteTransport** (public) - `(td *mockDiscoveryClient) DeleteTransport(ctx context.Context, id uuid.UUID) error` - discovery.go:81
+- **GetTransportByID** (public) - `(td *mockDiscoveryClient) GetTransportByID(ctx context.Context, id uuid.UUID) (*Entry, error)` - discovery.go:43
+- **GetTransportsByEdge** (public) - `(td *mockDiscoveryClient) GetTransportsByEdge(ctx context.Context, pk cipher.PubKey) ([]*Entry, error)` - discovery.go:60
+- **RegisterTransports** (public) - `(td *mockDiscoveryClient) RegisterTransports(ctx context.Context, entries ...*SignedEntry) error` - discovery.go:33
+
+#### SettlementHS
+- **Do** (public) - `(hs SettlementHS) Do(ctx context.Context, dc DiscoveryClient, transport network.Transport, sk cipher.SecKey) err error` - handshake.go:80
+
+---
+
+## pkg/transport-discovery/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport-discovery/api
+**Functions**: 25
+
+### Functions
+- **New** (public) - `New(log logrus.FieldLogger, s store.Store, nonceStore httpauth.NonceStore, enableMetrics bool, m tpdiscmetrics.Metrics, dmsgAddr string) *API` - api.go:67
+- **TestBadRequest** (public) - `TestBadRequest(t *testing.T)` - api_test.go:57
+- **TestDELETETransportByID** (public) - `TestDELETETransportByID(t *testing.T)` - api_test.go:189
+- **TestGETAllTransports** (public) - `TestGETAllTransports(t *testing.T)` - api_test.go:283
+- **TestGETIncrementingNonces** (public) - `TestGETIncrementingNonces(t *testing.T)` - api_test.go:331
+- **TestGETTransportByEdge** (public) - `TestGETTransportByEdge(t *testing.T)` - api_test.go:246
+- **TestGETTransportByID** (public) - `TestGETTransportByID(t *testing.T)` - api_test.go:152
+- **TestRegisterTimeout** (public) - `TestRegisterTimeout(t *testing.T)` - api_test.go:116
+- **TestRegisterTransport** (public) - `TestRegisterTransport(t *testing.T)` - api_test.go:84
+- **newTestEntry** (private) - `newTestEntry() *transport.Entry` - api_test.go:48
+- **validHeaders** (private) - `validHeaders(t *testing.T, payload []byte) http.Header` - api_test.go:35
+
+### Methods
+
+#### *API
+- **RunBackgroundTasks** (public) - `(api *API) RunBackgroundTasks(ctx context.Context, logger logrus.FieldLogger)` - api.go:120
+- **deleteTransport** (private) - `(api *API) deleteTransport(w http.ResponseWriter, r *http.Request)` - endpoints.go:112
+- **deregisterTransport** (private) - `(api *API) deregisterTransport(w http.ResponseWriter, r *http.Request)` - endpoints.go:150
+- **getAllTransports** (private) - `(api *API) getAllTransports(w http.ResponseWriter, r *http.Request)` - endpoints.go:91
+- **getTransportByEdge** (private) - `(api *API) getTransportByEdge(w http.ResponseWriter, r *http.Request)` - endpoints.go:67
+- **getTransportByID** (private) - `(api *API) getTransportByID(w http.ResponseWriter, r *http.Request)` - endpoints.go:47
+- **health** (private) - `(api *API) health(w http.ResponseWriter, r *http.Request)` - endpoints.go:210
+- **log** (private) - `(api *API) log(r *http.Request) logrus.FieldLogger` - api.go:134
+- **logger** (private) - `(api *API) logger(r *http.Request) logrus.FieldLogger` - endpoints.go:238
+- **registerTransport** (private) - `(api *API) registerTransport(w http.ResponseWriter, r *http.Request)` - endpoints.go:21
+- **renderError** (private) - `(api *API) renderError(w http.ResponseWriter, r *http.Request, code int, err error)` - api.go:143
+- **updateTransportsNumber** (private) - `(api *API) updateTransportsNumber(ctx context.Context, logger logrus.FieldLogger)` - api.go:185
+- **writeError** (private) - `(api *API) writeError(w http.ResponseWriter, r *http.Request, err error)` - api.go:151
+- **writeJSON** (private) - `(api *API) writeJSON(w http.ResponseWriter, r *http.Request, code int, object interface{...})` - endpoints.go:220
+
+---
+
+## pkg/transport-discovery/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport-discovery/store
+**Functions**: 22
+
+### Functions
+- **New** (public) - `New(logger *logging.Logger, gormDB *gorm.DB, memoryStore bool) (TransportStore, error)` - store.go:44
+- **NewPostgresStore** (public) - `NewPostgresStore(logger *logging.Logger, cl *gorm.DB) (TransportStore, error)` - postgres_store.go:24
+- **TestMemory** (public) - `TestMemory(t *testing.T)` - memory_store_test.go:16
+- **makeEntry** (private) - `makeEntry(record Transport) (transport.Entry, error)` - postgres_store.go:134
+- **newMemoryStore** (private) - `newMemoryStore() *memStore` - memory_store.go:26
+
+### Methods
+
+#### *TransportSuite
+- **SetupTest** (public) - `(s *TransportSuite) SetupTest()` - transport_test.go:24
+- **TestRegister** (public) - `(s *TransportSuite) TestRegister()` - transport_test.go:28
+
+#### *memStore
+- **Close** (public) - `(s *memStore) Close()` - memory_store.go:135
+- **DeregisterTransport** (public) - `(s *memStore) DeregisterTransport(_ context.Context, id uuid.UUID) error` - memory_store.go:53
+- **GetAllTransports** (public) - `(s *memStore) GetAllTransports(_ context.Context, selfTransports bool) ([]*transport.Entry, error)` - memory_store.go:120
+- **GetNumberOfTransports** (public) - `(s *memStore) GetNumberOfTransports(context.Context) (map[types.Type]int, error)` - memory_store.go:110
+- **GetTransportByID** (public) - `(s *memStore) GetTransportByID(_ context.Context, id uuid.UUID) (*transport.Entry, error)` - memory_store.go:71
+- **GetTransportsByEdge** (public) - `(s *memStore) GetTransportsByEdge(_ context.Context, pk cipher.PubKey) ([]*transport.Entry, error)` - memory_store.go:87
+- **RegisterTransport** (public) - `(s *memStore) RegisterTransport(_ context.Context, entry *transport.SignedEntry) error` - memory_store.go:36
+- **SetError** (public) - `(s *memStore) SetError(err error)` - memory_store.go:32
+
+#### *postgresStore
+- **Close** (public) - `(s *postgresStore) Close()` - postgres_store.go:130
+- **DeregisterTransport** (public) - `(s *postgresStore) DeregisterTransport(ctx context.Context, id uuid.UUID) error` - postgres_store.go:52
+- **GetAllTransports** (public) - `(s *postgresStore) GetAllTransports(_ context.Context, selfTransports bool) ([]*transport.Entry, error)` - postgres_store.go:106
+- **GetNumberOfTransports** (public) - `(s *postgresStore) GetNumberOfTransports(context.Context) (map[types.Type]int, error)` - postgres_store.go:89
+- **GetTransportByID** (public) - `(s *postgresStore) GetTransportByID(_ context.Context, id uuid.UUID) (*transport.Entry, error)` - postgres_store.go:56
+- **GetTransportsByEdge** (public) - `(s *postgresStore) GetTransportsByEdge(_ context.Context, pk cipher.PubKey) ([]*transport.Entry, error)` - postgres_store.go:70
+- **RegisterTransport** (public) - `(s *postgresStore) RegisterTransport(_ context.Context, sEntry *transport.SignedEntry) error` - postgres_store.go:39
+
+---
+
+## pkg/transport-setup/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport-setup/api
+**Functions**: 14
+
+### Functions
+- **New** (public) - `New(log *logging.Logger, conf config.Config) *API` - api.go:28
+- **setupDmsgC** (private) - `setupDmsgC(conf config.Config, log *logging.Logger) *dmsg.Client` - api.go:52
+
+### Methods
+
+#### *API
+- **addTransport** (private) - `(api *API) addTransport(w http.ResponseWriter, r *http.Request)` - endpoints.go:51
+- **badRequest** (private) - `(api *API) badRequest(w http.ResponseWriter, r *http.Request, err error)` - utils.go:70
+- **callVisorRPC** (private) - `(api *API) callVisorRPC(ctx context.Context, pk cipher.PubKey, method string, req, result interface{...}) error` - utils.go:30
+- **getTransportRequest** (private) - `(api *API) getTransportRequest(r *http.Request) (TransportRequest, error)` - endpoints.go:29
+- **getTransports** (private) - `(api *API) getTransports(w http.ResponseWriter, r *http.Request)` - endpoints.go:76
+- **getUUIDRequest** (private) - `(api *API) getUUIDRequest(r *http.Request) (UUIDRequest, error)` - endpoints.go:40
+- **internalError** (private) - `(api *API) internalError(w http.ResponseWriter, r *http.Request, err error)` - utils.go:66
+- **log** (private) - `(api *API) log(r *http.Request) logrus.FieldLogger` - utils.go:48
+- **removeTransport** (private) - `(api *API) removeTransport(w http.ResponseWriter, r *http.Request)` - endpoints.go:65
+- **visorResponse** (private) - `(api *API) visorResponse(w http.ResponseWriter, r *http.Request, pk cipher.PubKey, method string, req, result interface{...})` - utils.go:22
+- **writeError** (private) - `(api *API) writeError(w http.ResponseWriter, r *http.Request, status int, err error)` - utils.go:74
+- **writeJSON** (private) - `(api *API) writeJSON(w http.ResponseWriter, r *http.Request, data interface{...})` - utils.go:59
+
+---
+
+## pkg/transport-setup/config
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport-setup/config
+**Functions**: 1
+
+### Functions
+- **MustReadConfig** (public) - `MustReadConfig(filename string, log *logging.Logger) Config` - config.go:24
+
+---
+
+## pkg/transport/deprecated
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/deprecated
+**Functions**: 0
+
+*No functions found*
+
+## pkg/transport/network
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network
+**Functions**: 81
+
+### Functions
+- **DoHandshake** (public) - `DoHandshake(rawConn net.Conn, hs handshake.Handshake, netType types.Type, log *logging.Logger) (Transport, error)` - connection.go:58
+- **EncryptConn** (public) - `EncryptConn(config noise.Config, conn net.Conn) (net.Conn, error)` - connection.go:94
+- **GetStunDetails** (public) - `GetStunDetails(stunServers []string, log *logging.Logger) *StunDetails` - stun_client.go:17
+- **NewListener** (public) - `NewListener(lAddr dmsg.Addr, freePort func(), network types.Type) Listener` - listener.go:37
+- **NewMockDialer** (public) - `NewMockDialer(t interface{...}) *MockDialer` - mock_dialer.go:70
+- **doHandshake** (private) - `doHandshake(rawConn net.Conn, hs handshake.Handshake, netType types.Type, log *logging.Logger) (*transport, error)` - connection.go:64
+- **newDmsgClient** (private) - `newDmsgClient(dmsgC *dmsg.Client) Client` - dmsg.go:21
+- **newListener** (private) - `newListener(lAddr dmsg.Addr, freePort func(), network types.Type) *listener` - listener.go:41
+- **newStcp** (private) - `newStcp(generic *genericClient, table stcp.PKTable) Client` - stcp.go:26
+- **newStcpr** (private) - `newStcpr(resolved *resolvedClient, port int) Client` - stcpr.go:21
+- **newSudph** (private) - `newSudph(resolved *resolvedClient, port int) Client` - sudph.go:37
+
+### Methods
+
+#### *ClientFactory
+- **MakeClient** (public) - `(f *ClientFactory) MakeClient(netType types.Type, port int) (Client, error)` - client.go:66
+
+#### *MockDialer
+- **Dial** (public) - `(_m *MockDialer) Dial(ctx context.Context, remote cipher.PubKey, port uint16) (net.Conn, error)` - mock_dialer.go:21
+- **Type** (public) - `(_m *MockDialer) Type() string` - mock_dialer.go:51
+
+#### *dmsgClientAdapter
+- **Close** (public) - `(c *dmsgClientAdapter) Close() error` - dmsg.go:68
+- **Dial** (public) - `(c *dmsgClientAdapter) Dial(ctx context.Context, remote cipher.PubKey, port uint16) (Transport, error)` - dmsg.go:34
+- **Listen** (public) - `(c *dmsgClientAdapter) Listen(port uint16) (Listener, error)` - dmsg.go:49
+- **LocalAddr** (public) - `(c *dmsgClientAdapter) LocalAddr() (net.Addr, error)` - dmsg.go:26
+- **PK** (public) - `(c *dmsgClientAdapter) PK() cipher.PubKey` - dmsg.go:58
+- **SK** (public) - `(c *dmsgClientAdapter) SK() cipher.SecKey` - dmsg.go:63
+- **Start** (public) - `(c *dmsgClientAdapter) Start() error` - dmsg.go:43
+- **Type** (public) - `(c *dmsgClientAdapter) Type() types.Type` - dmsg.go:75
+
+#### *dmsgListenerAdapter
+- **AcceptTransport** (public) - `(lis *dmsgListenerAdapter) AcceptTransport() (Transport, error)` - dmsg.go:86
+- **Network** (public) - `(lis *dmsgListenerAdapter) Network() types.Type` - dmsg.go:95
+- **PK** (public) - `(lis *dmsgListenerAdapter) PK() cipher.PubKey` - dmsg.go:100
+- **Port** (public) - `(lis *dmsgListenerAdapter) Port() uint16` - dmsg.go:105
+
+#### *dmsgTransportAdapter
+- **LocalPK** (public) - `(c *dmsgTransportAdapter) LocalPK() cipher.PubKey` - dmsg.go:116
+- **LocalPort** (public) - `(c *dmsgTransportAdapter) LocalPort() uint16` - dmsg.go:126
+- **LocalRawAddr** (public) - `(c *dmsgTransportAdapter) LocalRawAddr() net.Addr` - dmsg.go:136
+- **Network** (public) - `(c *dmsgTransportAdapter) Network() types.Type` - dmsg.go:146
+- **RemotePK** (public) - `(c *dmsgTransportAdapter) RemotePK() cipher.PubKey` - dmsg.go:121
+- **RemotePort** (public) - `(c *dmsgTransportAdapter) RemotePort() uint16` - dmsg.go:131
+- **RemoteRawAddr** (public) - `(c *dmsgTransportAdapter) RemoteRawAddr() net.Addr` - dmsg.go:141
+
+#### *genericClient
+- **Close** (public) - `(c *genericClient) Close() error` - client.go:285
+- **Listen** (public) - `(c *genericClient) Listen(port uint16) (Listener, error)` - client.go:245
+- **LocalAddr** (public) - `(c *genericClient) LocalAddr() (net.Addr, error)` - client.go:217
+- **PK** (public) - `(c *genericClient) PK() cipher.PubKey` - client.go:275
+- **SK** (public) - `(c *genericClient) SK() cipher.SecKey` - client.go:280
+- **Type** (public) - `(c *genericClient) Type() types.Type` - client.go:309
+- **acceptTransport** (private) - `(c *genericClient) acceptTransport() error` - client.go:191
+- **acceptTransports** (private) - `(c *genericClient) acceptTransports(lis net.Listener)` - client.go:145
+- **checkListener** (private) - `(c *genericClient) checkListener(port uint16) error` - client.go:236
+- **getListener** (private) - `(c *genericClient) getListener(port uint16) (*listener, error)` - client.go:226
+- **initTransport** (private) - `(c *genericClient) initTransport(ctx context.Context, conn net.Conn, rPK cipher.PubKey, rPort uint16) (*transport, error)` - client.go:130
+- **isClosed** (private) - `(c *genericClient) isClosed() bool` - client.go:265
+- **wrapTransport** (private) - `(c *genericClient) wrapTransport(rawConn net.Conn, hs handshake.Handshake, initiator bool, onClose func()) (*transport, error)` - client.go:173
+
+#### *listener
+- **Accept** (public) - `(l *listener) Accept() (net.Conn, error)` - listener.go:52
+- **AcceptTransport** (public) - `(l *listener) AcceptTransport() (Transport, error)` - listener.go:57
+- **Addr** (public) - `(l *listener) Addr() net.Addr` - listener.go:83
+- **Close** (public) - `(l *listener) Close() error` - listener.go:67
+- **Network** (public) - `(l *listener) Network() types.Type` - listener.go:98
+- **PK** (public) - `(l *listener) PK() cipher.PubKey` - listener.go:88
+- **Port** (public) - `(l *listener) Port() uint16` - listener.go:93
+- **introduce** (private) - `(l *listener) introduce(transport *transport) error` - listener.go:103
+
+#### *resolvedClient
+- **dialVisor** (private) - `(c *resolvedClient) dialVisor(ctx context.Context, rPK cipher.PubKey, dial dialFunc) (net.Conn, error)` - client.go:326
+
+#### *stcpClient
+- **Dial** (public) - `(c *stcpClient) Dial(ctx context.Context, rPK cipher.PubKey, rPort uint16) (Transport, error)` - stcp.go:37
+- **Start** (public) - `(c *stcpClient) Start() error` - stcp.go:61
+- **serve** (private) - `(c *stcpClient) serve()` - stcp.go:69
+
+#### *stcprClient
+- **Dial** (public) - `(c *stcprClient) Dial(ctx context.Context, rPK cipher.PubKey, rPort uint16) (Transport, error)` - stcpr.go:28
+- **Start** (public) - `(c *stcprClient) Start() error` - stcpr.go:48
+- **dial** (private) - `(c *stcprClient) dial(ctx context.Context, addr string) (net.Conn, error)` - stcpr.go:41
+- **serve** (private) - `(c *stcprClient) serve()` - stcpr.go:56
+
+#### *sudphClient
+- **Dial** (public) - `(c *sudphClient) Dial(ctx context.Context, rPK cipher.PubKey, rPort uint16) (Transport, error)` - sudph.go:132
+- **Start** (public) - `(c *sudphClient) Start() error` - sudph.go:44
+- **acceptAddresses** (private) - `(c *sudphClient) acceptAddresses(conn net.PacketConn, addrCh <-chan addrresolver.RemoteVisor)` - sudph.go:114
+- **dial** (private) - `(c *sudphClient) dial(remoteAddr string) (net.Conn, error)` - sudph.go:168
+- **dialWithTimeout** (private) - `(c *sudphClient) dialWithTimeout(ctx context.Context, addr string) (net.Conn, error)` - sudph.go:145
+- **listen** (private) - `(c *sudphClient) listen() (net.Listener, error)` - sudph.go:62
+- **makeBindHandshake** (private) - `(c *sudphClient) makeBindHandshake() func(in net.Conn) net.Conn, error` - sudph.go:101
+- **serve** (private) - `(c *sudphClient) serve()` - sudph.go:52
+
+#### *transport
+- **Close** (public) - `(c *transport) Close() error` - connection.go:129
+- **LocalAddr** (public) - `(c *transport) LocalAddr() net.Addr` - connection.go:109
+- **LocalPK** (public) - `(c *transport) LocalPK() cipher.PubKey` - connection.go:138
+- **LocalPort** (public) - `(c *transport) LocalPort() uint16` - connection.go:145
+- **LocalRawAddr** (public) - `(c *transport) LocalRawAddr() net.Addr` - connection.go:119
+- **Network** (public) - `(c *transport) Network() types.Type` - connection.go:152
+- **RemoteAddr** (public) - `(c *transport) RemoteAddr() net.Addr` - connection.go:114
+- **RemotePK** (public) - `(c *transport) RemotePK() cipher.PubKey` - connection.go:141
+- **RemotePort** (public) - `(c *transport) RemotePort() uint16` - connection.go:149
+- **RemoteRawAddr** (public) - `(c *transport) RemoteRawAddr() net.Addr` - connection.go:124
+- **encrypt** (private) - `(c *transport) encrypt(lPK cipher.PubKey, lSK cipher.SecKey, initator bool) error` - connection.go:76
+
+---
+
+## pkg/transport/network/addrresolver
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network/addrresolver
+**Functions**: 28
+
+### Functions
+- **NewHTTP** (public) - `NewHTTP(remoteAddr string, pk cipher.PubKey, sk cipher.SecKey, httpC *http.Client, clientPublicIP string, log *logging.Logger, mLog *logging.MasterLogger) (APIClient, error)` - client.go:97
+- **NewMockAPIClient** (public) - `NewMockAPIClient(t interface{...}) *MockAPIClient` - mock_api_client.go:164
+- **TestBind** (public) - `TestBind(t *testing.T)` - client_test.go:73
+- **TestClientAuth** (public) - `TestClientAuth(t *testing.T)` - client_test.go:27
+- **authHandler** (private) - `authHandler(next http.Handler) http.Handler` - client_test.go:92
+
+### Methods
+
+#### *MockAPIClient
+- **Addresses** (public) - `(_m *MockAPIClient) Addresses(ctx context.Context) string` - mock_api_client.go:21
+- **BindSTCPR** (public) - `(_m *MockAPIClient) BindSTCPR(ctx context.Context, port string) error` - mock_api_client.go:39
+- **BindSUDPH** (public) - `(_m *MockAPIClient) BindSUDPH(filter *pfilter.PacketFilter, handshake Handshake) (<-chan RemoteVisor, error)` - mock_api_client.go:57
+- **Close** (public) - `(_m *MockAPIClient) Close() error` - mock_api_client.go:87
+- **Resolve** (public) - `(_m *MockAPIClient) Resolve(ctx context.Context, netType string, pk cipher.PubKey) (VisorData, error)` - mock_api_client.go:105
+- **Transports** (public) - `(_m *MockAPIClient) Transports(ctx context.Context) (map[cipher.PubKey][]string, error)` - mock_api_client.go:133
+
+#### *httpClient
+- **Addresses** (public) - `(c *httpClient) Addresses(_ context.Context) string` - client.go:215
+- **BindSTCPR** (public) - `(c *httpClient) BindSTCPR(ctx context.Context, port string) error` - client.go:223
+- **BindSUDPH** (public) - `(c *httpClient) BindSUDPH(filter *pfilter.PacketFilter, hs Handshake) (<-chan RemoteVisor, error)` - client.go:291
+- **Close** (public) - `(c *httpClient) Close() error` - client.go:559
+- **Delete** (public) - `(c *httpClient) Delete(ctx context.Context, path string) (*http.Response, error)` - client.go:187
+- **Get** (public) - `(c *httpClient) Get(ctx context.Context, path string) (*http.Response, error)` - client.go:154
+- **Post** (public) - `(c *httpClient) Post(ctx context.Context, path string, payload interface{...}) (*http.Response, error)` - client.go:168
+- **Resolve** (public) - `(c *httpClient) Resolve(ctx context.Context, tType string, pk cipher.PubKey) (VisorData, error)` - client.go:357
+- **Transports** (public) - `(c *httpClient) Transports(ctx context.Context) (map[cipher.PubKey][]string, error)` - client.go:398
+- **TransportsType** (public) - `(c *httpClient) TransportsType(ctx context.Context, tpType types.Type) (map[cipher.PubKey][]string, error)` - client.go:449
+- **delBindSTCPR** (private) - `(c *httpClient) delBindSTCPR(ctx context.Context) error` - client.go:260
+- **delBindSUDPH** (private) - `(c *httpClient) delBindSUDPH(w io.Writer) error` - client.go:608
+- **initHTTPClient** (private) - `(c *httpClient) initHTTPClient(httpC *http.Client)` - client.go:127
+- **isClosed** (private) - `(c *httpClient) isClosed() bool` - client.go:620
+- **isReady** (private) - `(c *httpClient) isReady() bool` - client.go:503
+- **keepSudphHeartbeatLoop** (private) - `(c *httpClient) keepSudphHeartbeatLoop(w io.Writer) error` - client.go:593
+- **readSUDPHMessages** (private) - `(c *httpClient) readSUDPHMessages(reader io.Reader) <-chan RemoteVisor` - client.go:518
+
+---
+
+## pkg/transport/network/handshake
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network/handshake
+**Functions**: 17
+
+### Functions
+- **InitiatorHandshake** (public) - `InitiatorHandshake(lSK cipher.SecKey, localAddr, remoteAddr dmsg.Addr) Handshake` - handshake.go:66
+- **IsHandshakeError** (public) - `IsHandshakeError(err error) bool` - handshake.go:38
+- **MakeF2PortChecker** (public) - `MakeF2PortChecker(portChecker func(port uint16) error) CheckF2` - handshake.go:108
+- **ResponderHandshake** (public) - `ResponderHandshake(checkF2 CheckF2) Handshake` - handshake.go:115
+- **TestHandshake** (public) - `TestHandshake(t *testing.T)` - handshake_test.go:22
+- **handshakeMiddleware** (private) - `handshakeMiddleware(origin Handshake) Handshake` - handshake.go:44
+- **readFrame0** (private) - `readFrame0(r io.Reader) error` - handshake.go:226
+- **readFrame1** (private) - `readFrame1(r io.Reader) (Frame1, error)` - handshake.go:249
+- **readFrame2** (private) - `readFrame2(r io.Reader) (Frame2, error)` - handshake.go:260
+- **readFrame3** (private) - `readFrame3(r io.Reader) (Frame3, error)` - handshake.go:277
+- **writeFrame0** (private) - `writeFrame0(w io.Writer) error` - handshake.go:213
+- **writeFrame1** (private) - `writeFrame1(w io.Writer, nonce [...]byte) error` - handshake.go:245
+- **writeFrame2** (private) - `writeFrame2(w io.Writer, f2 Frame2) error` - handshake.go:256
+- **writeFrame3** (private) - `writeFrame3(w io.Writer, err error) error` - handshake.go:267
+
+### Methods
+
+#### *Frame2
+- **Sign** (public) - `(f2 *Frame2) Sign(srcSK cipher.SecKey) error` - handshake.go:166
+
+#### Error
+- **Error** (public) - `(err Error) Error() string` - handshake.go:33
+
+#### Frame2
+- **Verify** (public) - `(f2 Frame2) Verify(nonce [...]byte) error` - handshake.go:191
+
+---
+
+## pkg/transport/network/porter
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network/porter
+**Functions**: 4
+
+### Functions
+- **New** (public) - `New(minEph uint16) *Porter` - porter.go:23
+
+### Methods
+
+#### *Porter
+- **Reserve** (public) - `(p *Porter) Reserve(port uint16) (bool, func())` - porter.go:36
+- **ReserveEphemeral** (public) - `(p *Porter) ReserveEphemeral(ctx context.Context) (uint16, func(), error)` - porter.go:51
+- **portFreer** (private) - `(p *Porter) portFreer(port uint16) func()` - porter.go:74
+
+---
+
+## pkg/transport/network/stcp
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/network/stcp
+**Functions**: 5
+
+### Functions
+- **NewTable** (public) - `NewTable(entries map[cipher.PubKey]string) PKTable` - pktable.go:30
+- **NewTableFromFile** (public) - `NewTableFromFile(path string) (PKTable, error)` - pktable.go:44
+
+### Methods
+
+#### *memoryTable
+- **Addr** (public) - `(mt *memoryTable) Addr(pk cipher.PubKey) (string, bool)` - pktable.go:85
+- **Count** (public) - `(mt *memoryTable) Count() int` - pktable.go:97
+- **PubKey** (public) - `(mt *memoryTable) PubKey(addr string) (cipher.PubKey, bool)` - pktable.go:91
+
+---
+
+## pkg/transport/setup
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/setup
+**Functions**: 5
+
+### Functions
+- **NewTransportListener** (public) - `NewTransportListener(ctx context.Context, pk cipher.PubKey, tsnodes []cipher.PubKey, dmsgC *dmsg.Client, tm *transport.Manager, masterLogger *logging.MasterLogger) (*TransportListener, error)` - visor.go:27
+
+### Methods
+
+#### *TransportGateway
+- **AddTransport** (public) - `(gw *TransportGateway) AddTransport(req TransportRequest, res *TransportResponse) error` - rpc.go:47
+- **GetTransports** (public) - `(gw *TransportGateway) GetTransports(_ struct{...}, res *[]TransportResponse) error` - rpc.go:81
+- **RemoveTransport** (public) - `(gw *TransportGateway) RemoveTransport(req UUIDRequest, res *BoolResponse) error` - rpc.go:66
+
+#### *TransportListener
+- **Serve** (public) - `(ts *TransportListener) Serve(ctx context.Context)` - visor.go:47
+
+---
+
+## pkg/transport/tpdclient
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/tpdclient
+**Functions**: 16
+
+### Functions
+- **NewHTTP** (public) - `NewHTTP(addr string, key cipher.PubKey, sec cipher.SecKey, httpC *http.Client, clientPublicIP string, mLogger *logging.MasterLogger) (transport.DiscoveryClient, error)` - client.go:39
+- **TestClientAuth** (public) - `TestClientAuth(t *testing.T)` - client_test.go:60
+- **TestGetTransportByID** (public) - `TestGetTransportByID(t *testing.T)` - client_test.go:195
+- **TestGetTransportsByEdge** (public) - `TestGetTransportsByEdge(t *testing.T)` - client_test.go:211
+- **TestMain** (public) - `TestMain(m *testing.M)` - client_test.go:30
+- **TestRegisterTransportResponses** (public) - `TestRegisterTransportResponses(t *testing.T)` - client_test.go:94
+- **TestRegisterTransports** (public) - `TestRegisterTransports(t *testing.T)` - client_test.go:176
+- **authHandler** (private) - `authHandler(t *testing.T, next http.Handler) http.Handler` - client_test.go:228
+- **newTestEntry** (private) - `newTestEntry() *transport.Entry` - client_test.go:48
+
+### Methods
+
+#### *apiClient
+- **Delete** (public) - `(c *apiClient) Delete(ctx context.Context, path string) (*http.Response, error)` - client.go:79
+- **DeleteTransport** (public) - `(c *apiClient) DeleteTransport(ctx context.Context, id uuid.UUID) error` - client.go:159
+- **Get** (public) - `(c *apiClient) Get(ctx context.Context, path string) (*http.Response, error)` - client.go:69
+- **GetTransportByID** (public) - `(c *apiClient) GetTransportByID(ctx context.Context, id uuid.UUID) (*transport.Entry, error)` - client.go:109
+- **GetTransportsByEdge** (public) - `(c *apiClient) GetTransportsByEdge(ctx context.Context, pk cipher.PubKey) ([]*transport.Entry, error)` - client.go:134
+- **Post** (public) - `(c *apiClient) Post(ctx context.Context, path string, payload interface{...}) (*http.Response, error)` - client.go:54
+- **RegisterTransports** (public) - `(c *apiClient) RegisterTransports(ctx context.Context, entries ...*transport.SignedEntry) error` - client.go:89
+
+---
+
+## pkg/transport/types
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/transport/types
+**Functions**: 0
+
+*No functions found*
+
+## pkg/uptime-tracker/api
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/uptime-tracker/api
+**Functions**: 37
+
+### Functions
+- **New** (public) - `New(log logrus.FieldLogger, s store.Store, nonceStore httpauth.NonceStore, locDetails geo.LocationDetails, enableLoadTesting, enableMetrics bool, m utmetrics.Metrics, storeDataCutoff int, storeDataPath, dmsgAddr string) *API` - api.go:82
+- **NewPrivate** (public) - `NewPrivate(log logrus.FieldLogger, s store.Store) *PrivateAPI` - api.go:677
+- **TestAPI_handleUpdate** (public) - `TestAPI_handleUpdate(t *testing.T)` - api_test.go:71
+- **TestApi_UpdateRemovedMethod** (public) - `TestApi_UpdateRemovedMethod(t *testing.T)` - api_test.go:102
+- **TestHandleUptimes** (public) - `TestHandleUptimes(t *testing.T)` - api_test.go:38
+- **isCurrentPeriod** (private) - `isCurrentPeriod(startYear int, startMonth time.Month) bool` - api.go:670
+- **retrievePkFromURL** (private) - `retrievePkFromURL(url *url.URL) (cipher.PubKey, error)` - api.go:757
+- **selectUptimesByPKs** (private) - `selectUptimesByPKs(allUptimes store.UptimeResponse, pks []string) store.UptimeResponse` - api.go:658
+- **sendGone** (private) - `sendGone(w http.ResponseWriter, _ *http.Request)` - api.go:350
+- **validHeaders** (private) - `validHeaders(t *testing.T, payload []byte) http.Header` - api_test.go:145
+
+### Methods
+
+#### *API
+- **RunBackgroundTasks** (public) - `(api *API) RunBackgroundTasks(ctx context.Context, logger logrus.FieldLogger)` - api.go:154
+- **chart** (private) - `(api *API) chart(w http.ResponseWriter, r *http.Request)` - api.go:588
+- **dailyRoutine** (private) - `(api *API) dailyRoutine(logger logrus.FieldLogger)` - api.go:190
+- **generateData** (private) - `(api *API) generateData(length int) ([]opts.BarData, []string, error)` - api.go:624
+- **getAllUptimes** (private) - `(api *API) getAllUptimes() store.UptimeResponse` - api.go:276
+- **getAllUptimesLen** (private) - `(api *API) getAllUptimesLen() int` - api.go:282
+- **getDailyUptimes** (private) - `(api *API) getDailyUptimes() map[string]map[string]string` - api.go:288
+- **getVisors** (private) - `(api *API) getVisors() store.VisorsResponse` - api.go:240
+- **getVisorsLen** (private) - `(api *API) getVisorsLen() int` - api.go:245
+- **handleUpdate** (private) - `(api *API) handleUpdate() func(w http.ResponseWriter, r *http.Request)` - api.go:354
+- **handleUptime** (private) - `(api *API) handleUptime(w http.ResponseWriter, r *http.Request)` - api.go:483
+- **handleUptimes** (private) - `(api *API) handleUptimes(w http.ResponseWriter, r *http.Request)` - api.go:380
+- **handleVisors** (private) - `(api *API) handleVisors(w http.ResponseWriter, r *http.Request)` - api.go:330
+- **health** (private) - `(api *API) health(w http.ResponseWriter, r *http.Request)` - api.go:557
+- **log** (private) - `(api *API) log(r *http.Request) logrus.FieldLogger` - api.go:149
+- **logger** (private) - `(api *API) logger(r *http.Request) logrus.FieldLogger` - api.go:584
+- **storeDailyData** (private) - `(api *API) storeDailyData(data []store.DailyUptimeHistory, timeValue time.Time) error` - api.go:220
+- **updateDailyUptimesCache** (private) - `(api *API) updateDailyUptimesCache() error` - api.go:265
+- **updateInternalCaches** (private) - `(api *API) updateInternalCaches(logger logrus.FieldLogger)` - api.go:175
+- **updateInternalState** (private) - `(api *API) updateInternalState(_ context.Context, logger logrus.FieldLogger)` - api.go:648
+- **updateUptimesCache** (private) - `(api *API) updateUptimesCache() error` - api.go:251
+- **updateVisorsCache** (private) - `(api *API) updateVisorsCache() error` - api.go:229
+- **writeError** (private) - `(api *API) writeError(w http.ResponseWriter, r *http.Request, err error)` - api.go:300
+- **writeJSON** (private) - `(api *API) writeJSON(w http.ResponseWriter, r *http.Request, code int, object interface{...})` - api.go:567
+
+#### *PrivateAPI
+- **handleVisorIPs** (private) - `(pApi *PrivateAPI) handleVisorIPs(w http.ResponseWriter, r *http.Request)` - api.go:701
+- **log** (private) - `(pApi *PrivateAPI) log(r *http.Request) logrus.FieldLogger` - api.go:719
+- **writeError** (private) - `(pApi *PrivateAPI) writeError(w http.ResponseWriter, r *http.Request, err error)` - api.go:724
+
+---
+
+## pkg/uptime-tracker/store
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/uptime-tracker/store
+**Functions**: 35
+
+### Functions
+- **New** (public) - `New(logger *logging.Logger, gormDB *gorm.DB, testing bool) (Store, error)` - store.go:34
+- **NewMemoryStore** (public) - `NewMemoryStore() Store` - memory_store.go:21
+- **NewPostgresStore** (public) - `NewPostgresStore(logger *logging.Logger, cl *gorm.DB) (Store, error)` - postgres_store.go:26
+- **TestMemory** (public) - `TestMemory(t *testing.T)` - memory_store_test.go:18
+- **makeUptimeResponse** (private) - `makeUptimeResponse(keys []string, lastTS map[string]string, versions map[string]string, callingErr error) (UptimeResponse, error)` - uptime_response.go:33
+- **makeVisorsResponse** (private) - `makeVisorsResponse(ips map[string]string, locDetails geo.LocationDetails) (VisorsResponse, error)` - visors_response.go:22
+- **testUptime** (private) - `testUptime(t *testing.T, store Store)` - memory_store_test.go:23
+- **uniqueIPs** (private) - `uniqueIPs(ips []string) string` - postgres_store.go:320
+
+### Methods
+
+#### *memStore
+- **Close** (public) - `(s *memStore) Close()` - memory_store.go:236
+- **DeleteEntries** (public) - `(s *memStore) DeleteEntries([]DailyUptimeHistory) error` - memory_store.go:244
+- **GetAllUptimes** (public) - `(s *memStore) GetAllUptimes(startYear int, startMonth time.Month, endYear int, endMonth time.Month) (UptimeResponse, error)` - memory_store.go:74
+- **GetAllVisors** (public) - `(s *memStore) GetAllVisors(locDetails geo.LocationDetails) (VisorsResponse, error)` - memory_store.go:144
+- **GetDailyUpdateHistory** (public) - `(s *memStore) GetDailyUpdateHistory() (map[string]map[string]string, error)` - memory_store.go:240
+- **GetNumberOfUptimesByYearAndMonth** (public) - `(s *memStore) GetNumberOfUptimesByYearAndMonth(year int, month time.Month) (int, error)` - memory_store.go:211
+- **GetNumberOfUptimesInCurrentMonth** (public) - `(s *memStore) GetNumberOfUptimesInCurrentMonth() (int, error)` - memory_store.go:186
+- **GetOldestEntry** (public) - `(s *memStore) GetOldestEntry() (DailyUptimeHistory, error)` - memory_store.go:248
+- **GetSpecificDayData** (public) - `(s *memStore) GetSpecificDayData(_ time.Time) ([]DailyUptimeHistory, error)` - memory_store.go:252
+- **GetUptimes** (public) - `(s *memStore) GetUptimes(pubKeys []string, startYear int, startMonth time.Month, endYear int, endMonth time.Month) (UptimeResponse, error)` - memory_store.go:101
+- **GetVisorsIPs** (public) - `(s *memStore) GetVisorsIPs(month string) (map[string]visorIPsResponse, error)` - memory_store.go:161
+- **UpdateUptime** (public) - `(s *memStore) UpdateUptime(pk, ip, _ string) error` - memory_store.go:29
+
+#### *postgresStore
+- **Close** (public) - `(s *postgresStore) Close()` - postgres_store.go:226
+- **DeleteEntries** (public) - `(s *postgresStore) DeleteEntries(data []DailyUptimeHistory) error` - postgres_store.go:286
+- **GetAllUptimes** (public) - `(s *postgresStore) GetAllUptimes(startYear int, startMonth time.Month, endYear int, endMonth time.Month) (UptimeResponse, error)` - postgres_store.go:91
+- **GetAllVisors** (public) - `(s *postgresStore) GetAllVisors(locDetails geo.LocationDetails) (VisorsResponse, error)` - postgres_store.go:146
+- **GetDailyUpdateHistory** (public) - `(s *postgresStore) GetDailyUpdateHistory() (map[string]map[string]string, error)` - postgres_store.go:166
+- **GetNumberOfUptimesByYearAndMonth** (public) - `(s *postgresStore) GetNumberOfUptimesByYearAndMonth(year int, month time.Month) (int, error)` - postgres_store.go:279
+- **GetNumberOfUptimesInCurrentMonth** (public) - `(s *postgresStore) GetNumberOfUptimesInCurrentMonth() (int, error)` - postgres_store.go:272
+- **GetOldestEntry** (public) - `(s *postgresStore) GetOldestEntry() (DailyUptimeHistory, error)` - postgres_store.go:296
+- **GetSpecificDayData** (public) - `(s *postgresStore) GetSpecificDayData(timeValue time.Time) ([]DailyUptimeHistory, error)` - postgres_store.go:302
+- **GetUptimes** (public) - `(s *postgresStore) GetUptimes(pubKeys []string, startYear int, startMonth time.Month, endYear int, endMonth time.Month) (UptimeResponse, error)` - postgres_store.go:119
+- **GetVisorsIPs** (public) - `(s *postgresStore) GetVisorsIPs(monthValue string) (map[string]visorIPsResponse, error)` - postgres_store.go:187
+- **UpdateUptime** (public) - `(s *postgresStore) UpdateUptime(pk, ip, version string) error` - postgres_store.go:41
+- **getCache** (private) - `(s *postgresStore) getCache(pk string) (int64, bool)` - postgres_store.go:257
+- **readAllUptimeIPMembers** (private) - `(s *postgresStore) readAllUptimeIPMembers(timeValue time.Time) (map[string]string, error)` - postgres_store.go:230
+- **setCache** (private) - `(s *postgresStore) setCache(pk string, ts int64)` - postgres_store.go:265
+
+---
+
+## pkg/utclient
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/utclient
+**Functions**: 10
+
+### Functions
+- **NewHTTP** (public) - `NewHTTP(addr string, pk cipher.PubKey, sk cipher.SecKey, httpC *http.Client, clientPublicIP string, mLogger *logging.MasterLogger) (APIClient, error)` - client.go:44
+- **NewMockAPIClient** (public) - `NewMockAPIClient(t interface{...}) *MockAPIClient` - mock_api_client.go:66
+- **TestClientAuth** (public) - `TestClientAuth(t *testing.T)` - client_test.go:28
+- **TestUpdateVisorUptime** (public) - `TestUpdateVisorUptime(t *testing.T)` - client_test.go:67
+- **authHandler** (private) - `authHandler(next http.Handler) http.Handler` - client_test.go:85
+
+### Methods
+
+#### *MockAPIClient
+- **FetchUptimes** (public) - `(_m *MockAPIClient) FetchUptimes(_a0 context.Context, _a1 string) ([]byte, error)` - mock_api_client.go:17
+- **UpdateVisorUptime** (public) - `(_m *MockAPIClient) UpdateVisorUptime(_a0 context.Context, _a1 string) error` - mock_api_client.go:47
+
+#### *httpClient
+- **FetchUptimes** (public) - `(c *httpClient) FetchUptimes(ctx context.Context, pk string) ([]byte, error)` - client.go:104
+- **Get** (public) - `(c *httpClient) Get(ctx context.Context, path string) (*http.Response, error)` - client.go:74
+- **UpdateVisorUptime** (public) - `(c *httpClient) UpdateVisorUptime(ctx context.Context, version string) error` - client.go:84
+
+---
+
+## pkg/util/cipherutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/cipherutil
+**Functions**: 1
+
+### Functions
+- **GenKeyPairs** (public) - `GenKeyPairs(n int) []KeyPair` - cipherutil.go:13
+
+---
+
+## pkg/util/deadline
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/deadline
+**Functions**: 4
+
+### Functions
+- **MakePipeDeadline** (public) - `MakePipeDeadline() PipeDeadline` - deadline.go:18
+
+### Methods
+
+#### *PipeDeadline
+- **Closed** (public) - `(d *PipeDeadline) Closed() bool` - deadline.go:73
+- **Set** (public) - `(d *PipeDeadline) Set(t time.Time)` - deadline.go:28
+- **Wait** (public) - `(d *PipeDeadline) Wait() chan struct{...}` - deadline.go:66
+
+---
+
+## pkg/util/osutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/osutil
+**Functions**: 16
+
+### Functions
+- **GainRoot** (public) - `GainRoot() (int, error)` - privileges_windows.go:11
+- **GainRoot** (public) - `GainRoot() (int, error)` - privileges_unix.go:12
+- **NewErrorWithStderr** (public) - `NewErrorWithStderr(err error, stderr []byte) *ErrorWithStderr` - errors.go:13
+- **ReleaseRoot** (public) - `ReleaseRoot(_ int) error` - privileges_windows.go:16
+- **ReleaseRoot** (public) - `ReleaseRoot(oldUID int) error` - privileges_unix.go:23
+- **Run** (public) - `Run(bin string, args ...string) error` - run.go:15
+- **RunElevated** (public) - `RunElevated(bin string, args ...string) error` - run.go:20
+- **RunElevatedWithResult** (public) - `RunElevatedWithResult(bin string, args ...string) ([]byte, error)` - run.go:32
+- **RunElevatedWithResultReader** (public) - `RunElevatedWithResultReader(bin string, args ...string) (io.Reader, error)` - run.go:25
+- **RunWithResult** (public) - `RunWithResult(bin string, args ...string) ([]byte, error)` - run.go:53
+- **RunWithResultReader** (public) - `RunWithResultReader(bin string, args ...string) (io.Reader, error)` - run.go:46
+- **UnlinkSocketFiles** (public) - `UnlinkSocketFiles(socketFiles ...string) error` - osutil.go:9
+- **pathErrCheck** (private) - `pathErrCheck(err error) bool` - path_check_windows.go:11
+- **pathErrCheck** (private) - `pathErrCheck(err error) bool` - path_check_unix.go:11
+- **run** (private) - `run(bin string, stdout io.Writer, withEscalate bool, args ...string) error` - run.go:67
+
+### Methods
+
+#### *ErrorWithStderr
+- **Error** (public) - `(e *ErrorWithStderr) Error() string` - errors.go:21
+
+---
+
+## pkg/util/pathutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/pathutil
+**Functions**: 15
+
+### Functions
+- **AllConfigLocationTypes** (public) - `AllConfigLocationTypes() []ConfigLocationType` - configpath.go:45
+- **AtomicAppendToFile** (public) - `AtomicAppendToFile(filename string, data []byte) error` - util.go:52
+- **AtomicWriteFile** (public) - `AtomicWriteFile(filename string, data []byte) error` - util.go:29
+- **EnsureDir** (public) - `EnsureDir(path string) error` - util.go:19
+- **Exists** (public) - `Exists(path string) bool` - configpath.go:133
+- **FindConfigPath** (public) - `FindConfigPath(args []string, argsIndex int, env string, defaults ConfigPaths) string` - configpath.go:94
+- **HomeDir** (public) - `HomeDir() string` - homedir.go:12
+- **VisorDefaults** (public) - `VisorDefaults() ConfigPaths` - configpath.go:77
+- **VisorDir** (public) - `VisorDir(pk string) string` - homedir.go:26
+- **WriteJSONConfig** (public) - `WriteJSONConfig(conf interface{...}, output string, replace bool)` - configpath.go:141
+
+### Methods
+
+#### *ConfigLocationType
+- **Set** (public) - `(t *ConfigLocationType) Set(s string) error` - configpath.go:34
+
+#### ConfigLocationType
+- **String** (public) - `(t ConfigLocationType) String() string` - configpath.go:29
+- **Type** (public) - `(t ConfigLocationType) Type() string` - configpath.go:40
+
+#### ConfigPaths
+- **Get** (public) - `(dp ConfigPaths) Get(cpType ConfigLocationType) string` - configpath.go:67
+- **String** (public) - `(dp ConfigPaths) String() string` - configpath.go:57
+
+---
+
+## pkg/util/rename
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/rename
+**Functions**: 2
+
+### Functions
+- **Rename** (public) - `Rename(oldPath, newPath string) error` - rename.go:17
+- **move** (private) - `move(oldPath string, newPath string) error` - rename.go:47
+
+---
+
+## pkg/util/rpcutil
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/util/rpcutil
+**Functions**: 1
+
+### Functions
+- **LogCall** (public) - `LogCall(log logrus.FieldLogger, method string, in interface{...}) func(out interface{...}, err *error)` - log_call.go:11
+
+---
+
+## pkg/visor
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor
+**Functions**: 511
+
+### Functions
+- **Execute** (public) - `Execute()` - cmd.go:320
+- **GenerateSurvey** (public) - `GenerateSurvey(v *Visor, log *logging.Logger, routine bool)` - survey.go:19
+- **GetIP** (public) - `GetIP() (string, error)` - init.go:1804
+- **MakeConnector** (public) - `MakeConnector(conf servicedisc.Config, maxConns int, tm *transport.Manager, httpC *http.Client, clientPublicIP string, log *logging.Logger, mLog *logging.MasterLogger) Autoconnector` - autoconnect.go:47
+- **NewHypervisor** (public) - `NewHypervisor(config visorconfig.HypervisorConfig, visor *Visor, dmsgC *dmsg.Client) (*Hypervisor, error)` - hypervisor.go:71
+- **NewMockRPCClient** (public) - `NewMockRPCClient(r *rand.Rand, maxTps int, maxRules int) (cipher.PubKey, API, error)` - rpc_client.go:635
+- **NewRPCClient** (public) - `NewRPCClient(log logrus.FieldLogger, conn io.ReadWriteCloser, prefix string, timeout time.Duration) API` - rpc_client.go:55
+- **NewVisor** (public) - `NewVisor(ctx context.Context, conf *visorconfig.V1) (*Visor, bool)` - visor.go:234
+- **ServeRPCClient** (public) - `ServeRPCClient(ctx context.Context, log logrus.FieldLogger, dmsgC *dmsg.Client, rpcS *rpc.Server, rAddr dmsg.Addr, errCh chan<- error)` - rpc_client_serve.go:26
+- **SetStopVisorFn** (public) - `SetStopVisorFn(fn func())` - gui.go:108
+- **Stop** (public) - `Stop()` - gui.go:115
+- **TestHealth** (public) - `TestHealth(t *testing.T)` - rpc_test.go:26
+- **TestNewNode** (public) - `TestNewNode(t *testing.T)` - hypervisor_test.go:31
+- **TestReadEmbeddedIcon** (public) - `TestReadEmbeddedIcon(t *testing.T)` - gui_test.go:13
+- **TestUptime** (public) - `TestUptime(t *testing.T)` - rpc_test.go:86
+- **baseConfig** (private) - `baseConfig(t *testing.T) *visorconfig.V1` - rpc_test.go:19
+- **checkIsPackage** (private) - `checkIsPackage() bool` - gui_darwin.go:16
+- **checkIsPackage** (private) - `checkIsPackage() bool` - gui_linux.go:17
+- **checkIsPackage** (private) - `checkIsPackage() bool` - gui_windows.go:27
+- **closeConn** (private) - `closeConn(log *logging.Logger, conn net.Conn)` - init.go:791
+- **connectToTpDisc** (private) - `connectToTpDisc(ctx context.Context, v *Visor, log *logging.Logger) (transport.DiscoveryClient, error)` - init.go:1643
+- **decodeErrorBody** (private) - `decodeErrorBody(rb io.Reader) (*ErrorBody, error)` - hypervisor_test.go:428
+- **deinstallerPath** (private) - `deinstallerPath() string` - gui_windows.go:19
+- **forward** (private) - `forward(log *logging.Logger, remoteConn net.Conn, lHost string)` - init.go:731
+- **genCompletion** (private) - `genCompletion(cmd *cobra.Command)` - etc.go:64
+- **getAvailPublicVPNServers** (private) - `getAvailPublicVPNServers(conf *visorconfig.V1, httpC *http.Client, logger *logging.Logger) []string` - gui.go:292
+- **getErrors** (private) - `getErrors(ctx context.Context) chan error` - init.go:1715
+- **getHTTPClient** (private) - `getHTTPClient(ctx context.Context, v *Visor, service string) (*http.Client, error)` - init.go:1726
+- **getHVAddr** (private) - `getHVAddr(conf *visorconfig.V1) string` - gui.go:478
+- **getOnGUIReady** (private) - `getOnGUIReady(icon []byte, conf *visorconfig.V1) func()` - gui.go:63
+- **getPublicIP** (private) - `getPublicIP(v *Visor, service string) (string, error)` - init.go:1770
+- **getRouteSetupHooks** (private) - `getRouteSetupHooks(ctx context.Context, v *Visor, log *logging.Logger) []router.RouteSetupHook` - init.go:907
+- **getSystrayHTTPClient** (private) - `getSystrayHTTPClient(ctx context.Context, conf *visorconfig.V1, logger *logging.MasterLogger) *http.Client` - gui.go:316
+- **getVPNAddr** (private) - `getVPNAddr(conf *visorconfig.V1) string` - gui.go:504
+- **handleOpenHypervisor** (private) - `handleOpenHypervisor(conf *visorconfig.V1)` - gui.go:404
+- **handlePingConn** (private) - `handlePingConn(log *logging.Logger, remoteConn net.Conn, v *Visor)` - init.go:856
+- **handleRootInteraction** (private) - `handleRootInteraction(doneCh chan<- bool)` - gui.go:390
+- **handleServerConn** (private) - `handleServerConn(log *logging.Logger, remoteConn net.Conn, v *Visor)` - init.go:688
+- **handleUninstall** (private) - `handleUninstall()` - gui.go:410
+- **handleUserInteraction** (private) - `handleUserInteraction(conf *visorconfig.V1, doneCh chan<- bool)` - gui.go:372
+- **handleVPNButton** (private) - `handleVPNButton(rpcClient API)` - gui.go:265
+- **handleVPNLinkButton** (private) - `handleVPNLinkButton(conf *visorconfig.V1)` - gui.go:277
+- **init** (private) - `init()` - cmd.go:63
+- **init** (private) - `init()` - csrf.go:37
+- **initAddressResolver** (private) - `initAddressResolver(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:262
+- **initAdvancedButton** (private) - `initAdvancedButton()` - gui.go:124
+- **initCLI** (private) - `initCLI(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:1156
+- **initConfig** (private) - `initConfig() *visorconfig.V1` - cmd.go:269
+- **initDiscovery** (private) - `initDiscovery(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:295
+- **initDmsg** (private) - `initDmsg(ctx context.Context, v *Visor, log *logging.Logger) err error` - init.go:339
+- **initDmsgCtrl** (private) - `initDmsgCtrl(ctx context.Context, v *Visor, _ *logging.Logger) error` - init.go:370
+- **initDmsgHTTP** (private) - `initDmsgHTTP(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:193
+- **initDmsgHTTPLogServer** (private) - `initDmsgHTTPLogServer(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:402
+- **initDmsgTrackers** (private) - `initDmsgTrackers(ctx context.Context, v *Visor, _ *logging.Logger) error` - init.go:478
+- **initDmsgpty** (private) - `initDmsgpty(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:1435
+- **initEnsureTPDConcurrency** (private) - `initEnsureTPDConcurrency(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:1321
+- **initEnsureVisorIsTransportable** (private) - `initEnsureVisorIsTransportable(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:1277
+- **initEventBroadcaster** (private) - `initEventBroadcaster(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:251
+- **initHypervisor** (private) - `initHypervisor(_ context.Context, v *Visor, log *logging.Logger) error` - init.go:1577
+- **initHypervisors** (private) - `initHypervisors(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:1179
+- **initLauncher** (private) - `initLauncher(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:1046
+- **initLogger** (private) - `initLogger() *logging.MasterLogger` - visor.go:345
+- **initPing** (private) - `initPing(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:805
+- **initPublicAutoconnect** (private) - `initPublicAutoconnect(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:1538
+- **initPublicVisor** (private) - `initPublicVisor(_ context.Context, v *Visor, log *logging.Logger) error` - init.go:1388
+- **initQuitBtn** (private) - `initQuitBtn()` - gui.go:368
+- **initRouter** (private) - `initRouter(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:996
+- **initSkywireForwardConn** (private) - `initSkywireForwardConn(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:629
+- **initStcpClient** (private) - `initStcpClient(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:517
+- **initStcprClient** (private) - `initStcprClient(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:512
+- **initStunClient** (private) - `initStunClient(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:329
+- **initSudphClient** (private) - `initSudphClient(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:492
+- **initSystemSurvey** (private) - `initSystemSurvey(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:473
+- **initTransport** (private) - `initTransport(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:524
+- **initTransportSetup** (private) - `initTransportSetup(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:603
+- **initUI** (private) - `initUI() *fs.FS` - visor.go:475
+- **initUIBtns** (private) - `initUIBtns(vc *visorconfig.V1)` - gui.go:134
+- **initUptimeTracker** (private) - `initUptimeTracker(ctx context.Context, v *Visor, log *logging.Logger) error` - init.go:1225
+- **initVpnClientBtn** (private) - `initVpnClientBtn(conf *visorconfig.V1, httpClient *http.Client, logger *logging.MasterLogger)` - gui.go:174
+- **isDone** (private) - `isDone(ctx context.Context) bool` - rpc_client_serve.go:16
+- **isHvRunning** (private) - `isHvRunning(addr string, retries int) bool` - visor.go:376
+- **isHypervisorRunning** (private) - `isHypervisorRunning(addr string) bool` - gui.go:443
+- **isPortAvailable** (private) - `isPortAvailable(log *logging.Logger, port int) bool` - api.go:1652
+- **isPortRegistered** (private) - `isPortRegistered(port int, v *Visor) bool` - api.go:1665
+- **isRoot** (private) - `isRoot() bool` - gui_windows.go:32
+- **isRoot** (private) - `isRoot() bool` - gui_darwin.go:21
+- **isRoot** (private) - `isRoot() bool` - gui_linux.go:22
+- **isVPNExists** (private) - `isVPNExists(vc *visorconfig.V1) bool` - gui.go:493
+- **localDataPath** (private) - `localDataPath() string` - gui_windows.go:15
+- **logBuildInfo** (private) - `logBuildInfo(mLog *logging.MasterLogger)` - etc.go:56
+- **makeRouteGroupResp** (private) - `makeRouteGroupResp(info RouteGroupInfo) routeGroupResp` - hypervisor.go:1152
+- **makeRoutingRuleResp** (private) - `makeRoutingRuleResp(key routing.RouteID, rule routing.Rule, summary bool) routingRuleResp` - hypervisor.go:972
+- **makeStartNode** (private) - `makeStartNode(t *testing.T, config visorconfig.HypervisorConfig) (string, *http.Client, func())` - hypervisor_test.go:65
+- **makeSummaryResp** (private) - `makeSummaryResp(online, hyper bool, sum *Summary) Summary` - hypervisor.go:514
+- **newCSRFToken** (private) - `newCSRFToken() (string, error)` - csrf.go:48
+- **newInternalHealthInfo** (private) - `newInternalHealthInfo() *internalHealthInfo` - api.go:319
+- **newRPCServer** (private) - `newRPCServer(v *Visor, remoteName string) (*rpc.Server, error)` - rpc.go:49
+- **newTransportSummary** (private) - `newTransportSummary(tm *transport.Manager, tp *transport.ManagedTransport, includeLogs, isSetup bool) *TransportSummary` - rpc.go:156
+- **onGUIQuit** (private) - `onGUIQuit()` - gui.go:93
+- **openHypervisor** (private) - `openHypervisor(conf *visorconfig.V1) error` - gui.go:463
+- **pkFromParam** (private) - `pkFromParam(r *http.Request, key string) (cipher.PubKey, error)` - hypervisor.go:1490
+- **pkSliceFromQuery** (private) - `pkSliceFromQuery(r *http.Request, key string, defaultVal []cipher.PubKey) ([]cipher.PubKey, error)` - hypervisor.go:1519
+- **platformExecUninstall** (private) - `platformExecUninstall() error` - gui_windows.go:23
+- **platformExecUninstall** (private) - `platformExecUninstall() error` - gui_unix.go:10
+- **quit** (private) - `quit()` - withoutsystray.go:43
+- **quitSystray** (private) - `quitSystray()` - withoutsystray.go:21
+- **quitSystray** (private) - `quitSystray()` - systray.go:50
+- **randInt** (private) - `randInt(n, x int) (int, error)` - autoconnect.go:367
+- **readSysTrayIcon** (private) - `readSysTrayIcon() (contents []byte, err error)` - gui.go:97
+- **registerModules** (private) - `registerModules(logger *logging.MasterLogger)` - init.go:148
+- **reload** (private) - `reload(v *Visor) error` - visor.go:141
+- **ridFromParam** (private) - `ridFromParam(r *http.Request, key string) (routing.RouteID, error)` - hypervisor.go:1501
+- **rpcClientSystray** (private) - `rpcClientSystray(conf *visorconfig.V1, logger *logging.Logger) API` - gui.go:513
+- **run** (private) - `run(conf *visorconfig.V1) error` - visor.go:155
+- **runApp** (private) - `runApp()` - withoutsystray.go:25
+- **runApp** (private) - `runApp()` - systray.go:54
+- **runAppSystray** (private) - `runAppSystray()` - systray.go:13
+- **runAppSystray** (private) - `runAppSystray()` - withoutsystray.go:13
+- **runBrowser** (private) - `runBrowser(httpAddr string, enableTLS bool)` - visor.go:351
+- **sendError** (private) - `sendError(log *logging.Logger, remoteConn net.Conn, sendErr error)` - init.go:765
+- **serversBtn** (private) - `serversBtn(servers []*systray.MenuItem, rpcClient API)` - gui.go:228
+- **setForceColor** (private) - `setForceColor(conf *visorconfig.V1)` - visor.go:557
+- **setStopFunction** (private) - `setStopFunction(cancel context.CancelFunc, fn func() error)` - systray.go:63
+- **setStopFunction** (private) - `setStopFunction(log *logging.MasterLogger, cancel context.CancelFunc, fn func() error)` - withoutsystray.go:30
+- **setStopFunctionSystray** (private) - `setStopFunctionSystray(log *logging.MasterLogger, cancel context.CancelFunc, fn func() error)` - withoutsystray.go:17
+- **setStopFunctionSystray** (private) - `setStopFunctionSystray(cancel context.CancelFunc, fn func() error)` - systray.go:33
+- **setupDmsgPtyUI** (private) - `setupDmsgPtyUI(dmsgC *dmsg.Client, visorPK cipher.PubKey) *dmsgPtyUI` - hypervisor.go:1562
+- **shufflePubKeys** (private) - `shufflePubKeys(keys []cipher.PubKey) []cipher.PubKey` - autoconnect.go:304
+- **shuffleServers** (private) - `shuffleServers(in []*dmsgdisc.Entry) []*dmsgdisc.Entry` - init.go:227
+- **stopVisor** (private) - `stopVisor()` - gui.go:432
+- **storeLog** (private) - `storeLog(conf *visorconfig.V1)` - visor.go:486
+- **strSliceFromQuery** (private) - `strSliceFromQuery(r *http.Request, key string, defaultVal []string) []string` - hypervisor.go:1510
+- **testCase** (private) - `testCase(t *testing.T, addr string, client *http.Client, tc TestCase, testTag string)` - hypervisor_test.go:110
+- **testCases** (private) - `testCases(t *testing.T, addr string, client *http.Client, cases []TestCase)` - hypervisor_test.go:102
+- **testNodeAccessAfterLogin** (private) - `testNodeAccessAfterLogin(t *testing.T, config visorconfig.HypervisorConfig)` - hypervisor_test.go:229
+- **testNodeCannotLoginTwice** (private) - `testNodeCannotLoginTwice(t *testing.T, config visorconfig.HypervisorConfig)` - hypervisor_test.go:188
+- **testNodeChangePassword** (private) - `testNodeChangePassword(t *testing.T, config visorconfig.HypervisorConfig)` - hypervisor_test.go:337
+- **testNodeNoAccessAfterLogout** (private) - `testNodeNoAccessAfterLogout(t *testing.T, config visorconfig.HypervisorConfig)` - hypervisor_test.go:269
+- **testNodeNoAccessWithoutLogin** (private) - `testNodeNoAccessWithoutLogin(t *testing.T, config visorconfig.HypervisorConfig)` - hypervisor_test.go:133
+- **testNodeOnlyAdminAccountAllowed** (private) - `testNodeOnlyAdminAccountAllowed(t *testing.T, config visorconfig.HypervisorConfig)` - hypervisor_test.go:158
+- **uuidFromParam** (private) - `uuidFromParam(r *http.Request, key string) (uuid.UUID, error)` - hypervisor.go:1497
+- **verifyCSRFToken** (private) - `verifyCSRFToken(headerToken string) error` - csrf.go:73
+- **vpnEnvMaker** (private) - `vpnEnvMaker(conf *visorconfig.V1, dmsgC, dmsgDC *dmsg.Client, tpRemoteAddrs []string) launcher.EnvMaker` - init.go:1095
+- **vpnStatusBtn** (private) - `vpnStatusBtn(rpcClient API)` - gui.go:194
+- **withInitCtx** (private) - `withInitCtx(f initFn) vinit.Hook` - init.go:1699
+
+### Methods
+
+#### *Hypervisor
+- **AddMockData** (public) - `(hv *Hypervisor) AddMockData(config MockConfig) error` - hypervisor.go:169
+- **HTTPHandler** (public) - `(hv *Hypervisor) HTTPHandler() http.Handler` - hypervisor.go:195
+- **ServeRPC** (public) - `(hv *Hypervisor) ServeRPC(ctx context.Context, dmsgPort uint16) error` - hypervisor.go:107
+- **appConnections** (private) - `(hv *Hypervisor) appConnections() http.HandlerFunc` - hypervisor.go:803
+- **appCtx** (private) - `(hv *Hypervisor) appCtx(w http.ResponseWriter, r *http.Request) (*httpCtx, bool)` - hypervisor.go:1422
+- **appLogsSince** (private) - `(hv *Hypervisor) appLogsSince() http.HandlerFunc` - hypervisor.go:774
+- **deleteRewardAddress** (private) - `(hv *Hypervisor) deleteRewardAddress() http.HandlerFunc` - hypervisor.go:1329
+- **deleteRoute** (private) - `(hv *Hypervisor) deleteRoute() http.HandlerFunc` - hypervisor.go:1082
+- **deleteRoutes** (private) - `(hv *Hypervisor) deleteRoutes() http.HandlerFunc` - hypervisor.go:1093
+- **deleteTransport** (private) - `(hv *Hypervisor) deleteTransport() http.HandlerFunc` - hypervisor.go:886
+- **deleteTransports** (private) - `(hv *Hypervisor) deleteTransports() http.HandlerFunc` - hypervisor.go:897
+- **getAbout** (private) - `(hv *Hypervisor) getAbout() http.HandlerFunc` - hypervisor.go:335
+- **getAllVisorsSummary** (private) - `(hv *Hypervisor) getAllVisorsSummary() http.HandlerFunc` - hypervisor.go:520
+- **getApp** (private) - `(hv *Hypervisor) getApp() http.HandlerFunc` - hypervisor.go:604
+- **getAppStats** (private) - `(hv *Hypervisor) getAppStats() http.HandlerFunc` - hypervisor.go:610
+- **getApps** (private) - `(hv *Hypervisor) getApps() http.HandlerFunc` - hypervisor.go:591
+- **getCsrf** (private) - `(hv *Hypervisor) getCsrf() http.HandlerFunc` - hypervisor.go:311
+- **getDmsg** (private) - `(hv *Hypervisor) getDmsg() http.HandlerFunc` - hypervisor.go:344
+- **getDmsgSummary** (private) - `(hv *Hypervisor) getDmsgSummary() []dmsgtracker.DmsgClientSummary` - hypervisor.go:351
+- **getHealth** (private) - `(hv *Hypervisor) getHealth() http.HandlerFunc` - hypervisor.go:378
+- **getLogRotationInterval** (private) - `(hv *Hypervisor) getLogRotationInterval() http.HandlerFunc` - hypervisor.go:1281
+- **getPersistentTransports** (private) - `(hv *Hypervisor) getPersistentTransports() http.HandlerFunc` - hypervisor.go:1248
+- **getPong** (private) - `(hv *Hypervisor) getPong() http.HandlerFunc` - hypervisor.go:298
+- **getPty** (private) - `(hv *Hypervisor) getPty() http.HandlerFunc` - hypervisor.go:1569
+- **getRewardAddress** (private) - `(hv *Hypervisor) getRewardAddress() http.HandlerFunc` - hypervisor.go:1292
+- **getRoute** (private) - `(hv *Hypervisor) getRoute() http.HandlerFunc` - hypervisor.go:1036
+- **getRouteGroups** (private) - `(hv *Hypervisor) getRouteGroups() http.HandlerFunc` - hypervisor.go:1163
+- **getRoutes** (private) - `(hv *Hypervisor) getRoutes() http.HandlerFunc` - hypervisor.go:985
+- **getRuntimeLogs** (private) - `(hv *Hypervisor) getRuntimeLogs() http.HandlerFunc` - hypervisor.go:1190
+- **getTransport** (private) - `(hv *Hypervisor) getTransport() http.HandlerFunc` - hypervisor.go:880
+- **getTransportTypes** (private) - `(hv *Hypervisor) getTransportTypes() http.HandlerFunc` - hypervisor.go:815
+- **getTransports** (private) - `(hv *Hypervisor) getTransports() http.HandlerFunc` - hypervisor.go:827
+- **getUptime** (private) - `(hv *Hypervisor) getUptime() http.HandlerFunc` - hypervisor.go:412
+- **getVisor** (private) - `(hv *Hypervisor) getVisor() http.HandlerFunc` - hypervisor.go:478
+- **getVisorSummary** (private) - `(hv *Hypervisor) getVisorSummary() http.HandlerFunc` - hypervisor.go:491
+- **getVisors** (private) - `(hv *Hypervisor) getVisors() http.HandlerFunc` - hypervisor.go:425
+- **log** (private) - `(hv *Hypervisor) log(r *http.Request) logrus.FieldLogger` - hypervisor.go:294
+- **makeMux** (private) - `(hv *Hypervisor) makeMux() chi.Router` - hypervisor.go:199
+- **postMinHops** (private) - `(hv *Hypervisor) postMinHops() http.HandlerFunc` - hypervisor.go:1206
+- **postRoute** (private) - `(hv *Hypervisor) postRoute() http.HandlerFunc` - hypervisor.go:1008
+- **postTransport** (private) - `(hv *Hypervisor) postTransport() http.HandlerFunc` - hypervisor.go:852
+- **putApp** (private) - `(hv *Hypervisor) putApp() http.HandlerFunc` - hypervisor.go:626
+- **putLogRotationInterval** (private) - `(hv *Hypervisor) putLogRotationInterval() http.HandlerFunc` - hypervisor.go:1259
+- **putPersistentTransports** (private) - `(hv *Hypervisor) putPersistentTransports() http.HandlerFunc` - hypervisor.go:1228
+- **putPublicAutoconnect** (private) - `(hv *Hypervisor) putPublicAutoconnect() http.HandlerFunc` - hypervisor.go:942
+- **putRewardAddress** (private) - `(hv *Hypervisor) putRewardAddress() http.HandlerFunc` - hypervisor.go:1303
+- **putRoute** (private) - `(hv *Hypervisor) putRoute() http.HandlerFunc` - hypervisor.go:1054
+- **routeCtx** (private) - `(hv *Hypervisor) routeCtx(w http.ResponseWriter, r *http.Request) (*httpCtx, bool)` - hypervisor.go:1473
+- **serveDmsg** (private) - `(hv *Hypervisor) serveDmsg(ctx context.Context, log *logging.Logger)` - hypervisor.go:1539
+- **shutdown** (private) - `(hv *Hypervisor) shutdown() http.HandlerFunc` - hypervisor.go:1180
+- **tpCtx** (private) - `(hv *Hypervisor) tpCtx(w http.ResponseWriter, r *http.Request) (*httpCtx, bool)` - hypervisor.go:1442
+- **visorConn** (private) - `(hv *Hypervisor) visorConn(pk cipher.PubKey) (Conn, bool)` - hypervisor.go:1344
+- **visorCtx** (private) - `(hv *Hypervisor) visorCtx(w http.ResponseWriter, r *http.Request) (*httpCtx, bool)` - hypervisor.go:1379
+- **withCtx** (private) - `(hv *Hypervisor) withCtx(vFunc valuesFunc, hFunc handlerFunc) http.HandlerFunc` - hypervisor.go:1371
+
+#### *RPC
+- **AddApp** (public) - `(r *RPC) AddApp(in *SetAppAddIn, _ *struct{...}) err error` - rpc.go:258
+- **AddTransport** (public) - `(r *RPC) AddTransport(in *AddTransportIn, out *TransportSummary) err error` - rpc.go:519
+- **App** (public) - `(r *RPC) App(appName *string, reply *appserver.AppState) err error` - rpc.go:225
+- **Apps** (public) - `(r *RPC) Apps(_ *struct{...}, reply *[]*appserver.AppState) err error` - rpc.go:235
+- **Connect** (public) - `(r *RPC) Connect(in *ConnectIn, out *uuid.UUID) err error` - rpc.go:758
+- **DeleteRewardAddress** (public) - `(r *RPC) DeleteRewardAddress(_ *struct{...}, _ *struct{...}) err error` - rpc.go:114
+- **DeregisterApp** (public) - `(r *RPC) DeregisterApp(procKey *appcommon.ProcKey, _ *struct{...}) err error` - rpc.go:279
+- **DeregisterHTTPPort** (public) - `(r *RPC) DeregisterHTTPPort(port *int, _ *struct{...}) err error` - rpc.go:737
+- **DialPing** (public) - `(r *RPC) DialPing(conf PingConfig, _ *struct{...}) err error` - rpc.go:782
+- **Disconnect** (public) - `(r *RPC) Disconnect(id *uuid.UUID, _ *struct{...}) err error` - rpc.go:767
+- **DiscoverTransportByID** (public) - `(r *RPC) DiscoverTransportByID(id *uuid.UUID, out *transport.Entry) err error` - rpc.go:559
+- **DiscoverTransportsByPK** (public) - `(r *RPC) DiscoverTransportsByPK(pk *cipher.PubKey, out *[]*transport.Entry) err error` - rpc.go:549
+- **DoCustomSetting** (public) - `(r *RPC) DoCustomSetting(in *SetAppMapIn, _ *struct{...}) err error` - rpc.go:265
+- **FetchUptimeTrackerData** (public) - `(r *RPC) FetchUptimeTrackerData(pk string, data *[]byte) err error` - rpc.go:313
+- **GetAppConnectionsSummary** (public) - `(r *RPC) GetAppConnectionsSummary(appName *string, out *[]appserver.ConnectionSummary) err error` - rpc.go:457
+- **GetAppError** (public) - `(r *RPC) GetAppError(appName *string, out *string) err error` - rpc.go:445
+- **GetAppStats** (public) - `(r *RPC) GetAppStats(appName *string, out *appserver.AppStats) err error` - rpc.go:433
+- **GetPersistentTransports** (public) - `(r *RPC) GetPersistentTransports(_ *struct{...}, out *[]transport.PersistentTransports) err error` - rpc.go:653
+- **GetRewardAddress** (public) - `(r *RPC) GetRewardAddress(_ *struct{...}, out *string) err error` - rpc.go:106
+- **Health** (public) - `(r *RPC) Health(_ *struct{...}, out *HealthInfo) err error` - rpc.go:68
+- **IsDMSGClientReady** (public) - `(r *RPC) IsDMSGClientReady(_ *struct{...}, out *bool) err error` - rpc.go:722
+- **KillApp** (public) - `(r *RPC) KillApp(name *string, _ *struct{...}) err error` - rpc.go:292
+- **List** (public) - `(r *RPC) List(_ *struct{...}, out *map[uuid.UUID]*appnet.ForwardConn) err error` - rpc.go:774
+- **ListHTTPPorts** (public) - `(r *RPC) ListHTTPPorts(_ *struct{...}, out *[]int) err error` - rpc.go:743
+- **LogsSince** (public) - `(r *RPC) LogsSince(in *AppLogsRequest, out *[]string) err error` - rpc.go:132
+- **Overview** (public) - `(r *RPC) Overview(_ *struct{...}, out *Overview) err error` - rpc.go:183
+- **Ping** (public) - `(r *RPC) Ping(conf PingConfig, out *[]time.Duration) err error` - rpc.go:789
+- **Ports** (public) - `(r *RPC) Ports(_ *struct{...}, out *map[string]PortDetail) err error` - rpc.go:712
+- **ProxyServers** (public) - `(r *RPC) ProxyServers(vc *FilterServersIn, out *[]servicedisc.Service) err error` - rpc.go:692
+- **RegisterApp** (public) - `(r *RPC) RegisterApp(procConf *appcommon.ProcConfig, reply *appcommon.ProcKey) err error` - rpc.go:271
+- **RegisterHTTPPort** (public) - `(r *RPC) RegisterHTTPPort(port *int, _ *struct{...}) err error` - rpc.go:731
+- **Reload** (public) - `(r *RPC) Reload(_ *struct{...}, _ *struct{...}) err error` - rpc.go:630
+- **RemoteVisors** (public) - `(r *RPC) RemoteVisors(_ *struct{...}, out *[]string) err error` - rpc.go:702
+- **RemoveAllTransports** (public) - `(r *RPC) RemoveAllTransports(_ *struct{...}, _ *struct{...}) err error` - rpc.go:538
+- **RemoveRoutingRule** (public) - `(r *RPC) RemoveRoutingRule(key *routing.RouteID, _ *struct{...}) err error` - rpc.go:598
+- **RemoveTransport** (public) - `(r *RPC) RemoveTransport(tid *uuid.UUID, _ *struct{...}) err error` - rpc.go:531
+- **RestartApp** (public) - `(r *RPC) RestartApp(name *string, _ *struct{...}) err error` - rpc.go:335
+- **RouteGroups** (public) - `(r *RPC) RouteGroups(_ *struct{...}, out *[]RouteGroupInfo) err error` - rpc.go:616
+- **RoutingRule** (public) - `(r *RPC) RoutingRule(key *routing.RouteID, rule *routing.Rule) err error` - rpc.go:583
+- **RoutingRules** (public) - `(r *RPC) RoutingRules(_ *struct{...}, out *[]routing.Rule) err error` - rpc.go:575
+- **SaveRoutingRule** (public) - `(r *RPC) SaveRoutingRule(in *routing.Rule, _ *struct{...}) err error` - rpc.go:591
+- **SetAppAddress** (public) - `(r *RPC) SetAppAddress(in *SetAppStringIn, _ *struct{...}) err error` - rpc.go:426
+- **SetAppDetailedStatus** (public) - `(r *RPC) SetAppDetailedStatus(in *SetAppStatusIn, _ *struct{...}) err error` - rpc.go:211
+- **SetAppError** (public) - `(r *RPC) SetAppError(in *SetAppErrorIn, _ *struct{...}) err error` - rpc.go:218
+- **SetAppKillswitch** (public) - `(r *RPC) SetAppKillswitch(in *SetAppBoolIn, _ *struct{...}) err error` - rpc.go:412
+- **SetAppNetworkInterface** (public) - `(r *RPC) SetAppNetworkInterface(in *SetAppNetworkInterfaceIn, _ *struct{...}) err error` - rpc.go:374
+- **SetAppPK** (public) - `(r *RPC) SetAppPK(in *SetAppPKIn, _ *struct{...}) err error` - rpc.go:405
+- **SetAppPassword** (public) - `(r *RPC) SetAppPassword(in *SetAppPasswordIn, _ *struct{...}) err error` - rpc.go:361
+- **SetAppSecure** (public) - `(r *RPC) SetAppSecure(in *SetAppBoolIn, _ *struct{...}) err error` - rpc.go:419
+- **SetAutoStart** (public) - `(r *RPC) SetAutoStart(in *SetAutoStartIn, _ *struct{...}) err error` - rpc.go:348
+- **SetMinHops** (public) - `(r *RPC) SetMinHops(n *uint16, _ *struct{...}) err error` - rpc.go:646
+- **SetPersistentTransports** (public) - `(r *RPC) SetPersistentTransports(pTs *[]transport.PersistentTransports, _ *struct{...}) err error` - rpc.go:662
+- **SetPublicAutoconnect** (public) - `(r *RPC) SetPublicAutoconnect(pAc *bool, _ *struct{...}) err error` - rpc.go:669
+- **SetRewardAddress** (public) - `(r *RPC) SetRewardAddress(p string, out *string) err error` - rpc.go:98
+- **Shutdown** (public) - `(r *RPC) Shutdown(_ *struct{...}, _ *struct{...}) err error` - rpc.go:638
+- **StartApp** (public) - `(r *RPC) StartApp(name *string, _ *struct{...}) err error` - rpc.go:245
+- **StartSkysocksClient** (public) - `(r *RPC) StartSkysocksClient(pk string, _ *struct{...}) err error` - rpc.go:321
+- **StartVPNClient** (public) - `(r *RPC) StartVPNClient(pk *cipher.PubKey, _ *struct{...}) err error` - rpc.go:299
+- **StopApp** (public) - `(r *RPC) StopApp(name *string, _ *struct{...}) err error` - rpc.go:285
+- **StopPing** (public) - `(r *RPC) StopPing(pk *cipher.PubKey, _ *struct{...}) err error` - rpc.go:797
+- **StopSkysocksClients** (public) - `(r *RPC) StopSkysocksClients(_ *struct{...}, _ *struct{...}) err error` - rpc.go:328
+- **StopVPNClient** (public) - `(r *RPC) StopVPNClient(name *string, _ *struct{...}) err error` - rpc.go:306
+- **Summary** (public) - `(r *RPC) Summary(_ *struct{...}, out *Summary) err error` - rpc.go:172
+- **TestVisor** (public) - `(r *RPC) TestVisor(conf PingConfig, out *[]TestResult) err error` - rpc.go:804
+- **Transport** (public) - `(r *RPC) Transport(in *uuid.UUID, out *TransportSummary) err error` - rpc.go:500
+- **TransportTypes** (public) - `(r *RPC) TransportTypes(_ *struct{...}, out *[]string) err error` - rpc.go:473
+- **Transports** (public) - `(r *RPC) Transports(in *TransportsIn, out *[]*TransportSummary) err error` - rpc.go:490
+- **Uptime** (public) - `(r *RPC) Uptime(_ *struct{...}, out *float64) err error` - rpc.go:84
+- **VPNServers** (public) - `(r *RPC) VPNServers(vc *FilterServersIn, out *[]servicedisc.Service) err error` - rpc.go:682
+
+#### *Visor
+- **AddApp** (public) - `(v *Visor) AddApp(appName, binaryName string) error` - api.go:469
+- **AddTransport** (public) - `(v *Visor) AddTransport(remote cipher.PubKey, tpType string, timeout time.Duration) (*TransportSummary, error)` - api.go:1182
+- **App** (public) - `(v *Visor) App(appName string) (*appserver.AppState, error)` - api.go:418
+- **Apps** (public) - `(v *Visor) Apps() ([]*appserver.AppState, error)` - api.go:409
+- **Close** (public) - `(v *Visor) Close() error` - visor.go:396
+- **Connect** (public) - `(v *Visor) Connect(remotePK cipher.PubKey, remotePort, localPort int) (uuid.UUID, error)` - api.go:1585
+- **DeleteRewardAddress** (public) - `(v *Visor) DeleteRewardAddress() error` - api.go:398
+- **DeregisterApp** (public) - `(v *Visor) DeregisterApp(procKey appcommon.ProcKey) error` - api.go:490
+- **DeregisterHTTPPort** (public) - `(v *Visor) DeregisterHTTPPort(localPort int) error` - api.go:1563
+- **DialPing** (public) - `(v *Visor) DialPing(conf PingConfig) error` - api.go:1253
+- **Disconnect** (public) - `(v *Visor) Disconnect(id uuid.UUID) error` - api.go:1642
+- **DiscoverTransportByID** (public) - `(v *Visor) DiscoverTransportByID(id uuid.UUID) (*transport.Entry, error)` - api.go:1228
+- **DiscoverTransportsByPK** (public) - `(v *Visor) DiscoverTransportsByPK(pk cipher.PubKey) ([]*transport.Entry, error)` - api.go:1216
+- **DoCustomSetting** (public) - `(v *Visor) DoCustomSetting(appName string, customSetting map[string]any) error` - api.go:924
+- **FetchUptimeTrackerData** (public) - `(v *Visor) FetchUptimeTrackerData(pk string) ([]byte, error)` - api.go:581
+- **GetAppConnectionsSummary** (public) - `(v *Visor) GetAppConnectionsSummary(appName string) ([]appserver.ConnectionSummary, error)` - api.go:976
+- **GetAppError** (public) - `(v *Visor) GetAppError(appName string) (string, error)` - api.go:970
+- **GetAppStats** (public) - `(v *Visor) GetAppStats(appName string) (appserver.AppStats, error)` - api.go:960
+- **GetLogRotationInterval** (public) - `(v *Visor) GetLogRotationInterval() (visorconfig.Duration, error)` - api.go:1499
+- **GetPersistentTransports** (public) - `(v *Visor) GetPersistentTransports() ([]transport.PersistentTransports, error)` - api.go:1489
+- **GetRewardAddress** (public) - `(v *Visor) GetRewardAddress() (string, error)` - api.go:377
+- **GetSkysocksClientAddress** (public) - `(v *Visor) GetSkysocksClientAddress() string` - api.go:1523
+- **GetVPNClientAddress** (public) - `(v *Visor) GetVPNClientAddress() string` - api.go:1509
+- **Health** (public) - `(v *Visor) Health() (*HealthInfo, error)` - api.go:352
+- **IsDMSGClientReady** (public) - `(v *Visor) IsDMSGClientReady() (bool, error)` - api.go:1537
+- **KillApp** (public) - `(v *Visor) KillApp(appName string) error` - api.go:515
+- **List** (public) - `(v *Visor) List() (map[uuid.UUID]*appnet.ForwardConn, error)` - api.go:1648
+- **ListHTTPPorts** (public) - `(v *Visor) ListHTTPPorts() ([]int, error)` - api.go:1574
+- **LogsSince** (public) - `(v *Visor) LogsSince(timestamp time.Time, appName string) ([]string, error)` - api.go:945
+- **MasterLogger** (public) - `(v *Visor) MasterLogger() *logging.MasterLogger` - visor.go:137
+- **Overview** (public) - `(v *Visor) Overview() (*Overview, error)` - api.go:158
+- **Ping** (public) - `(v *Visor) Ping(conf PingConfig) ([]time.Duration, error)` - api.go:1294
+- **Ports** (public) - `(v *Visor) Ports() (map[string]PortDetail, error)` - api.go:1067
+- **ProxyServers** (public) - `(v *Visor) ProxyServers(version, country string) ([]servicedisc.Service, error)` - api.go:1010
+- **PublicVisors** (public) - `(v *Visor) PublicVisors(version, country string) ([]servicedisc.Service, error)` - api.go:1031
+- **RegisterApp** (public) - `(v *Visor) RegisterApp(procConf appcommon.ProcConfig) (appcommon.ProcKey, error)` - api.go:478
+- **RegisterHTTPPort** (public) - `(v *Visor) RegisterHTTPPort(localPort int) error` - api.go:1548
+- **Reload** (public) - `(v *Visor) Reload() error` - api.go:1456
+- **RemoteVisors** (public) - `(v *Visor) RemoteVisors() ([]string, error)` - api.go:1052
+- **RemoveAllTransports** (public) - `(v *Visor) RemoveAllTransports() error` - api.go:1210
+- **RemoveRoutingRule** (public) - `(v *Visor) RemoveRoutingRule(key routing.RouteID) error` - api.go:1425
+- **RemoveTransport** (public) - `(v *Visor) RemoveTransport(tid uuid.UUID) error` - api.go:1204
+- **RestartApp** (public) - `(v *Visor) RestartApp(appName string) error` - api.go:690
+- **RouteGroups** (public) - `(v *Visor) RouteGroups() ([]RouteGroupInfo, error)` - api.go:1431
+- **RoutingRule** (public) - `(v *Visor) RoutingRule(key routing.RouteID) (routing.Rule, error)` - api.go:1415
+- **RoutingRules** (public) - `(v *Visor) RoutingRules() ([]routing.Rule, error)` - api.go:1240
+- **RuntimeLogs** (public) - `(v *Visor) RuntimeLogs() (string, error)` - api.go:1467
+- **SaveRoutingRule** (public) - `(v *Visor) SaveRoutingRule(rule routing.Rule) error` - api.go:1420
+- **SetAppAddress** (public) - `(v *Visor) SetAppAddress(appName string, address string) error` - api.go:824
+- **SetAppDNS** (public) - `(v *Visor) SetAppDNS(appName string, dnsAddr string) error` - api.go:894
+- **SetAppDetailedStatus** (public) - `(v *Visor) SetAppDetailedStatus(appName, status string) error` - api.go:665
+- **SetAppError** (public) - `(v *Visor) SetAppError(appName, appErr string) error` - api.go:677
+- **SetAppKillswitch** (public) - `(v *Visor) SetAppKillswitch(appName string, killswitch bool) error` - api.go:780
+- **SetAppNetworkInterface** (public) - `(v *Visor) SetAppNetworkInterface(appName, netifc string) error` - api.go:755
+- **SetAppPK** (public) - `(v *Visor) SetAppPK(appName string, pk cipher.PubKey) error` - api.go:864
+- **SetAppPassword** (public) - `(v *Visor) SetAppPassword(appName, password string) error` - api.go:720
+- **SetAppSecure** (public) - `(v *Visor) SetAppSecure(appName string, isSecure bool) error` - api.go:805
+- **SetAutoStart** (public) - `(v *Visor) SetAutoStart(appName string, autoStart bool) error` - api.go:705
+- **SetLogRotationInterval** (public) - `(v *Visor) SetLogRotationInterval(d visorconfig.Duration) error` - api.go:1494
+- **SetLogstore** (public) - `(v *Visor) SetLogstore(store logstore.Store)` - visor.go:463
+- **SetMinHops** (public) - `(v *Visor) SetMinHops(in uint16) error` - api.go:1477
+- **SetPersistentTransports** (public) - `(v *Visor) SetPersistentTransports(pTps []transport.PersistentTransports) error` - api.go:1483
+- **SetPublicAutoconnect** (public) - `(v *Visor) SetPublicAutoconnect(pAc bool) error` - api.go:1504
+- **SetRewardAddress** (public) - `(v *Visor) SetRewardAddress(p string) (string, error)` - api.go:365
+- **Shutdown** (public) - `(v *Visor) Shutdown() error` - api.go:1461
+- **SkybianBuildVersion** (public) - `(v *Visor) SkybianBuildVersion() string` - api.go:431
+- **StartApp** (public) - `(v *Visor) StartApp(appName string) error` - api.go:436
+- **StartSkysocksClient** (public) - `(v *Visor) StartSkysocksClient(serverKey string) error` - api.go:598
+- **StartVPNClient** (public) - `(v *Visor) StartVPNClient(pk cipher.PubKey) error` - api.go:527
+- **StopApp** (public) - `(v *Visor) StopApp(appName string) error` - api.go:502
+- **StopPing** (public) - `(v *Visor) StopPing(pk cipher.PubKey) error` - api.go:1339
+- **StopSkysocksClients** (public) - `(v *Visor) StopSkysocksClients() error` - api.go:646
+- **StopVPNClient** (public) - `(v *Visor) StopVPNClient(appName string) error` - api.go:568
+- **Summary** (public) - `(v *Visor) Summary() (*Summary, error)` - api.go:244
+- **TestVisor** (public) - `(v *Visor) TestVisor(conf PingConfig) ([]TestResult, error)` - api.go:1362
+- **Transport** (public) - `(v *Visor) Transport(tid uuid.UUID) (*TransportSummary, error)` - api.go:1172
+- **TransportTypes** (public) - `(v *Visor) TransportTypes() ([]string, error)` - api.go:1122
+- **Transports** (public) - `(v *Visor) Transports(typeFilters []string, pks []cipher.PubKey, logs bool) ([]*TransportSummary, error)` - api.go:1134
+- **Uptime** (public) - `(v *Visor) Uptime() (float64, error)` - api.go:360
+- **VPNServers** (public) - `(v *Visor) VPNServers(version, country string) ([]servicedisc.Service, error)` - api.go:989
+- **isDTMReady** (private) - `(v *Visor) isDTMReady() bool` - visor.go:453
+- **isStunReady** (private) - `(v *Visor) isStunReady() bool` - visor.go:336
+- **processRuntimeErrs** (private) - `(v *Visor) processRuntimeErrs() bool` - visor.go:323
+- **pushCloseStack** (private) - `(v *Visor) pushCloseStack(src string, fn closeFn)` - visor.go:130
+- **tpDiscClient** (private) - `(v *Visor) tpDiscClient() transport.DiscoveryClient` - visor.go:468
+
+#### *autoconnector
+- **Run** (public) - `(a *autoconnector) Run(ctx context.Context, v *Visor) err error` - autoconnect.go:58
+- **fetchPubAddresses** (private) - `(a *autoconnector) fetchPubAddresses(ctx context.Context) ([]cipher.PubKey, error)` - autoconnect.go:327
+- **filterDuplicates** (private) - `(a *autoconnector) filterDuplicates(pks []cipher.PubKey, trs []*transport.ManagedTransport) []cipher.PubKey` - autoconnect.go:349
+- **tryEstablishTransport** (private) - `(a *autoconnector) tryEstablishTransport(ctx context.Context, pk cipher.PubKey, netType types.Type, logger *logrus.Entry) error` - autoconnect.go:318
+
+#### *internalHealthInfo
+- **init** (private) - `(h *internalHealthInfo) init()` - api.go:324
+- **set** (private) - `(h *internalHealthInfo) set()` - api.go:329
+- **unset** (private) - `(h *internalHealthInfo) unset()` - api.go:334
+- **value** (private) - `(h *internalHealthInfo) value() string` - api.go:339
+
+#### *mockRPCClient
+- **AddApp** (public) - `(*mockRPCClient) AddApp(string, string) error` - rpc_client.go:856
+- **AddTransport** (public) - `(mc *mockRPCClient) AddTransport(remote cipher.PubKey, tpType string, _ time.Duration) (*TransportSummary, error)` - rpc_client.go:1149
+- **App** (public) - `(mc *mockRPCClient) App(appName string) (*appserver.AppState, error)` - rpc_client.go:836
+- **Apps** (public) - `(mc *mockRPCClient) Apps() ([]*appserver.AppState, error)` - rpc_client.go:823
+- **Connect** (public) - `(mc *mockRPCClient) Connect(remotePK cipher.PubKey, remotePort, localPort int) (uuid.UUID, error)` - rpc_client.go:1314
+- **DeleteRewardAddress** (public) - `(mc *mockRPCClient) DeleteRewardAddress() error` - rpc_client.go:818
+- **DeregisterApp** (public) - `(*mockRPCClient) DeregisterApp(appcommon.ProcKey) error` - rpc_client.go:866
+- **DeregisterHTTPPort** (public) - `(mc *mockRPCClient) DeregisterHTTPPort(localPort int) error` - rpc_client.go:1334
+- **DialPing** (public) - `(mc *mockRPCClient) DialPing(_ PingConfig) error` - rpc_client.go:1344
+- **Disconnect** (public) - `(mc *mockRPCClient) Disconnect(id uuid.UUID) error` - rpc_client.go:1319
+- **DiscoverTransportByID** (public) - `(mc *mockRPCClient) DiscoverTransportByID(uuid.UUID) (*transport.Entry, error)` - rpc_client.go:1188
+- **DiscoverTransportsByPK** (public) - `(mc *mockRPCClient) DiscoverTransportsByPK(cipher.PubKey) ([]*transport.Entry, error)` - rpc_client.go:1184
+- **DoCustomSetting** (public) - `(mc *mockRPCClient) DoCustomSetting(appName string, customSetting map[string]any) error` - rpc_client.go:1057
+- **Exec** (public) - `(mc *mockRPCClient) Exec(string) ([]byte, error)` - rpc_client.go:1253
+- **FetchUptimeTrackerData** (public) - `(*mockRPCClient) FetchUptimeTrackerData(string) ([]byte, error)` - rpc_client.go:891
+- **GetAppConnectionsSummary** (public) - `(mc *mockRPCClient) GetAppConnectionsSummary(_ string) ([]appserver.ConnectionSummary, error)` - rpc_client.go:1083
+- **GetAppError** (public) - `(mc *mockRPCClient) GetAppError(_ string) (string, error)` - rpc_client.go:1078
+- **GetAppStats** (public) - `(mc *mockRPCClient) GetAppStats(_ string) (appserver.AppStats, error)` - rpc_client.go:1074
+- **GetLogRotationInterval** (public) - `(mc *mockRPCClient) GetLogRotationInterval() (visorconfig.Duration, error)` - rpc_client.go:1283
+- **GetPersistentTransports** (public) - `(mc *mockRPCClient) GetPersistentTransports() ([]transport.PersistentTransports, error)` - rpc_client.go:1273
+- **GetRewardAddress** (public) - `(mc *mockRPCClient) GetRewardAddress() (string, error)` - rpc_client.go:813
+- **Health** (public) - `(mc *mockRPCClient) Health() (*HealthInfo, error)` - rpc_client.go:794
+- **IsDMSGClientReady** (public) - `(mc *mockRPCClient) IsDMSGClientReady() (bool, error)` - rpc_client.go:1309
+- **KillApp** (public) - `(*mockRPCClient) KillApp(string) error` - rpc_client.go:876
+- **List** (public) - `(mc *mockRPCClient) List() (map[uuid.UUID]*appnet.ForwardConn, error)` - rpc_client.go:1324
+- **ListHTTPPorts** (public) - `(mc *mockRPCClient) ListHTTPPorts() ([]int, error)` - rpc_client.go:1339
+- **LogsSince** (public) - `(mc *mockRPCClient) LogsSince(timestamp time.Time, _ string) ([]string, error)` - rpc_client.go:1070
+- **Overview** (public) - `(mc *mockRPCClient) Overview() (*Overview, error)` - rpc_client.go:734
+- **Ping** (public) - `(mc *mockRPCClient) Ping(_ PingConfig) ([]time.Duration, error)` - rpc_client.go:1349
+- **Ports** (public) - `(mc *mockRPCClient) Ports() (map[string]PortDetail, error)` - rpc_client.go:1304
+- **ProxyServers** (public) - `(mc *mockRPCClient) ProxyServers(_, _ string) ([]servicedisc.Service, error)` - rpc_client.go:1294
+- **RegisterApp** (public) - `(*mockRPCClient) RegisterApp(appcommon.ProcConfig) (appcommon.ProcKey, error)` - rpc_client.go:861
+- **RegisterHTTPPort** (public) - `(mc *mockRPCClient) RegisterHTTPPort(localPort int) error` - rpc_client.go:1329
+- **Reload** (public) - `(mc *mockRPCClient) Reload() error` - rpc_client.go:1243
+- **RemoteVisors** (public) - `(mc *mockRPCClient) RemoteVisors() ([]string, error)` - rpc_client.go:1299
+- **RemoveAllTransports** (public) - `(mc *mockRPCClient) RemoveAllTransports() error` - rpc_client.go:1177
+- **RemoveRoutingRule** (public) - `(mc *mockRPCClient) RemoveRoutingRule(key routing.RouteID) error` - rpc_client.go:1213
+- **RemoveTransport** (public) - `(mc *mockRPCClient) RemoveTransport(tid uuid.UUID) error` - rpc_client.go:1164
+- **RestartApp** (public) - `(*mockRPCClient) RestartApp(string) error` - rpc_client.go:934
+- **RouteGroups** (public) - `(mc *mockRPCClient) RouteGroups() ([]RouteGroupInfo, error)` - rpc_client.go:1219
+- **RoutingRule** (public) - `(mc *mockRPCClient) RoutingRule(key routing.RouteID) (routing.Rule, error)` - rpc_client.go:1203
+- **RoutingRules** (public) - `(mc *mockRPCClient) RoutingRules() ([]routing.Rule, error)` - rpc_client.go:1198
+- **RuntimeLogs** (public) - `(mc *mockRPCClient) RuntimeLogs() (string, error)` - rpc_client.go:1258
+- **SaveRoutingRule** (public) - `(mc *mockRPCClient) SaveRoutingRule(rule routing.Rule) error` - rpc_client.go:1208
+- **SetAppAddress** (public) - `(mc *mockRPCClient) SetAppAddress(appName string, address string) error` - rpc_client.go:1027
+- **SetAppDNS** (public) - `(mc *mockRPCClient) SetAppDNS(string, string) error` - rpc_client.go:1042
+- **SetAppDetailedStatus** (public) - `(mc *mockRPCClient) SetAppDetailedStatus(appName, status string) error` - rpc_client.go:906
+- **SetAppError** (public) - `(mc *mockRPCClient) SetAppError(appName, appErr string) error` - rpc_client.go:920
+- **SetAppKillswitch** (public) - `(mc *mockRPCClient) SetAppKillswitch(appName string, killswitch bool) error` - rpc_client.go:997
+- **SetAppNetworkInterface** (public) - `(mc *mockRPCClient) SetAppNetworkInterface(string, string) error` - rpc_client.go:967
+- **SetAppPK** (public) - `(mc *mockRPCClient) SetAppPK(string, cipher.PubKey) error` - rpc_client.go:982
+- **SetAppPassword** (public) - `(mc *mockRPCClient) SetAppPassword(string, string) error` - rpc_client.go:952
+- **SetAppSecure** (public) - `(mc *mockRPCClient) SetAppSecure(appName string, isSecure bool) error` - rpc_client.go:1012
+- **SetAutoStart** (public) - `(mc *mockRPCClient) SetAutoStart(appName string, autostart bool) error` - rpc_client.go:939
+- **SetLogRotationInterval** (public) - `(mc *mockRPCClient) SetLogRotationInterval(_ visorconfig.Duration) error` - rpc_client.go:1278
+- **SetMinHops** (public) - `(mc *mockRPCClient) SetMinHops(_ uint16) error` - rpc_client.go:1263
+- **SetPersistentTransports** (public) - `(mc *mockRPCClient) SetPersistentTransports(_ []transport.PersistentTransports) error` - rpc_client.go:1268
+- **SetPublicAutoconnect** (public) - `(mc *mockRPCClient) SetPublicAutoconnect(_ bool) error` - rpc_client.go:1193
+- **SetRewardAddress** (public) - `(mc *mockRPCClient) SetRewardAddress(p string) (string, error)` - rpc_client.go:808
+- **Shutdown** (public) - `(mc *mockRPCClient) Shutdown() error` - rpc_client.go:1248
+- **StartApp** (public) - `(*mockRPCClient) StartApp(string) error` - rpc_client.go:851
+- **StartSkysocksClient** (public) - `(*mockRPCClient) StartSkysocksClient(string) error` - rpc_client.go:896
+- **StartVPNClient** (public) - `(*mockRPCClient) StartVPNClient(cipher.PubKey) error` - rpc_client.go:881
+- **StopApp** (public) - `(*mockRPCClient) StopApp(string) error` - rpc_client.go:871
+- **StopPing** (public) - `(mc *mockRPCClient) StopPing(_ cipher.PubKey) error` - rpc_client.go:1354
+- **StopSkysocksClients** (public) - `(*mockRPCClient) StopSkysocksClients() error` - rpc_client.go:901
+- **StopVPNClient** (public) - `(*mockRPCClient) StopVPNClient(string) error` - rpc_client.go:886
+- **Summary** (public) - `(mc *mockRPCClient) Summary() (*Summary, error)` - rpc_client.go:753
+- **TestVisor** (public) - `(mc *mockRPCClient) TestVisor(_ PingConfig) ([]TestResult, error)` - rpc_client.go:1359
+- **Transport** (public) - `(mc *mockRPCClient) Transport(tid uuid.UUID) (*TransportSummary, error)` - rpc_client.go:1134
+- **TransportTypes** (public) - `(mc *mockRPCClient) TransportTypes() ([]string, error)` - rpc_client.go:1088
+- **Transports** (public) - `(mc *mockRPCClient) Transports(types []string, pks []cipher.PubKey, logs bool) ([]*TransportSummary, error)` - rpc_client.go:1097
+- **Uptime** (public) - `(mc *mockRPCClient) Uptime() (float64, error)` - rpc_client.go:803
+- **VPNServers** (public) - `(mc *mockRPCClient) VPNServers(_, _ string) ([]servicedisc.Service, error)` - rpc_client.go:1289
+- **do** (private) - `(mc *mockRPCClient) do(write bool, f func() error) error` - rpc_client.go:722
+
+#### *rpcClient
+- **AddApp** (public) - `(rc *rpcClient) AddApp(appName, binaryName string) error` - rpc_client.go:165
+- **AddTransport** (public) - `(rc *rpcClient) AddTransport(remote cipher.PubKey, tpType string, timeout time.Duration) (*TransportSummary, error)` - rpc_client.go:386
+- **App** (public) - `(rc *rpcClient) App(appName string) (*appserver.AppState, error)` - rpc_client.go:153
+- **Apps** (public) - `(rc *rpcClient) Apps() ([]*appserver.AppState, error)` - rpc_client.go:146
+- **Call** (public) - `(rc *rpcClient) Call(method string, args, reply interface{...}) error` - rpc_client.go:69
+- **Connect** (public) - `(rc *rpcClient) Connect(remotePK cipher.PubKey, remotePort, localPort int) (uuid.UUID, error)` - rpc_client.go:559
+- **DeleteRewardAddress** (public) - `(rc *rpcClient) DeleteRewardAddress() err error` - rpc_client.go:141
+- **DeregisterApp** (public) - `(rc *rpcClient) DeregisterApp(procKey appcommon.ProcKey) error` - rpc_client.go:180
+- **DeregisterHTTPPort** (public) - `(rc *rpcClient) DeregisterHTTPPort(localPort int) error` - rpc_client.go:588
+- **DialPing** (public) - `(rc *rpcClient) DialPing(conf PingConfig) error` - rpc_client.go:601
+- **Disconnect** (public) - `(rc *rpcClient) Disconnect(id uuid.UUID) error` - rpc_client.go:570
+- **DiscoverTransportByID** (public) - `(rc *rpcClient) DiscoverTransportByID(id uuid.UUID) (*transport.Entry, error)` - rpc_client.go:413
+- **DiscoverTransportsByPK** (public) - `(rc *rpcClient) DiscoverTransportsByPK(pk cipher.PubKey) ([]*transport.Entry, error)` - rpc_client.go:407
+- **DoCustomSetting** (public) - `(rc *rpcClient) DoCustomSetting(appName string, customSetting map[string]any) error` - rpc_client.go:307
+- **Exec** (public) - `(rc *rpcClient) Exec(command string) ([]byte, error)` - rpc_client.go:466
+- **FetchUptimeTrackerData** (public) - `(rc *rpcClient) FetchUptimeTrackerData(pk string) ([]byte, error)` - rpc_client.go:205
+- **GetAppConnectionsSummary** (public) - `(rc *rpcClient) GetAppConnectionsSummary(appName string) ([]appserver.ConnectionSummary, error)` - rpc_client.go:350
+- **GetAppError** (public) - `(rc *rpcClient) GetAppError(appName string) (string, error)` - rpc_client.go:339
+- **GetAppStats** (public) - `(rc *rpcClient) GetAppStats(appName string) (appserver.AppStats, error)` - rpc_client.go:329
+- **GetLogRotationInterval** (public) - `(rc *rpcClient) GetLogRotationInterval() (visorconfig.Duration, error)` - rpc_client.go:505
+- **GetPersistentTransports** (public) - `(rc *rpcClient) GetPersistentTransports() ([]transport.PersistentTransports, error)` - rpc_client.go:492
+- **GetRewardAddress** (public) - `(rc *rpcClient) GetRewardAddress() (rConfig string, err error)` - rpc_client.go:135
+- **Health** (public) - `(rc *rpcClient) Health() (*HealthInfo, error)` - rpc_client.go:112
+- **IsDMSGClientReady** (public) - `(rc *rpcClient) IsDMSGClientReady() (bool, error)` - rpc_client.go:552
+- **KillApp** (public) - `(rc *rpcClient) KillApp(appName string) error` - rpc_client.go:190
+- **List** (public) - `(rc *rpcClient) List() (map[uuid.UUID]*appnet.ForwardConn, error)` - rpc_client.go:576
+- **ListHTTPPorts** (public) - `(rc *rpcClient) ListHTTPPorts() ([]int, error)` - rpc_client.go:594
+- **LogsSince** (public) - `(rc *rpcClient) LogsSince(timestamp time.Time, appName string) ([]string, error)` - rpc_client.go:315
+- **Overview** (public) - `(rc *rpcClient) Overview() (*Overview, error)` - rpc_client.go:105
+- **Ping** (public) - `(rc *rpcClient) Ping(conf PingConfig) ([]time.Duration, error)` - rpc_client.go:606
+- **Ports** (public) - `(rc *rpcClient) Ports() (map[string]PortDetail, error)` - rpc_client.go:545
+- **ProxyServers** (public) - `(rc *rpcClient) ProxyServers(version, country string) ([]servicedisc.Service, error)` - rpc_client.go:528
+- **RegisterApp** (public) - `(rc *rpcClient) RegisterApp(procConf appcommon.ProcConfig) (appcommon.ProcKey, error)` - rpc_client.go:173
+- **RegisterHTTPPort** (public) - `(rc *rpcClient) RegisterHTTPPort(localPort int) error` - rpc_client.go:583
+- **Reload** (public) - `(rc *rpcClient) Reload() error` - rpc_client.go:456
+- **RemoteVisors** (public) - `(rc *rpcClient) RemoteVisors() ([]string, error)` - rpc_client.go:538
+- **RemoveAllTransports** (public) - `(rc *rpcClient) RemoveAllTransports() error` - rpc_client.go:403
+- **RemoveRoutingRule** (public) - `(rc *rpcClient) RemoveRoutingRule(key routing.RouteID) error` - rpc_client.go:444
+- **RemoveTransport** (public) - `(rc *rpcClient) RemoveTransport(tid uuid.UUID) error` - rpc_client.go:398
+- **RestartApp** (public) - `(rc *rpcClient) RestartApp(appName string) error` - rpc_client.go:238
+- **RouteGroups** (public) - `(rc *rpcClient) RouteGroups() ([]RouteGroupInfo, error)` - rpc_client.go:449
+- **RoutingRule** (public) - `(rc *rpcClient) RoutingRule(key routing.RouteID) (routing.Rule, error)` - rpc_client.go:432
+- **RoutingRules** (public) - `(rc *rpcClient) RoutingRules() ([]routing.Rule, error)` - rpc_client.go:425
+- **RuntimeLogs** (public) - `(rc *rpcClient) RuntimeLogs() (string, error)` - rpc_client.go:473
+- **SaveRoutingRule** (public) - `(rc *rpcClient) SaveRoutingRule(rule routing.Rule) error` - rpc_client.go:439
+- **SetAppAddress** (public) - `(rc *rpcClient) SetAppAddress(appName string, address string) error` - rpc_client.go:291
+- **SetAppDNS** (public) - `(rc *rpcClient) SetAppDNS(appName string, dnsAddr string) error` - rpc_client.go:299
+- **SetAppDetailedStatus** (public) - `(rc *rpcClient) SetAppDetailedStatus(appName, status string) error` - rpc_client.go:222
+- **SetAppError** (public) - `(rc *rpcClient) SetAppError(appName, appErr string) error` - rpc_client.go:230
+- **SetAppKillswitch** (public) - `(rc *rpcClient) SetAppKillswitch(appName string, killswitch bool) error` - rpc_client.go:267
+- **SetAppNetworkInterface** (public) - `(rc *rpcClient) SetAppNetworkInterface(appName, netifc string) error` - rpc_client.go:275
+- **SetAppPK** (public) - `(rc *rpcClient) SetAppPK(appName string, pk cipher.PubKey) error` - rpc_client.go:259
+- **SetAppPassword** (public) - `(rc *rpcClient) SetAppPassword(appName, password string) error` - rpc_client.go:251
+- **SetAppSecure** (public) - `(rc *rpcClient) SetAppSecure(appName string, isSecure bool) error` - rpc_client.go:283
+- **SetAutoStart** (public) - `(rc *rpcClient) SetAutoStart(appName string, autostart bool) error` - rpc_client.go:243
+- **SetLogRotationInterval** (public) - `(rc *rpcClient) SetLogRotationInterval(d visorconfig.Duration) error` - rpc_client.go:499
+- **SetMinHops** (public) - `(rc *rpcClient) SetMinHops(hops uint16) error` - rpc_client.go:480
+- **SetPersistentTransports** (public) - `(rc *rpcClient) SetPersistentTransports(pts []transport.PersistentTransports) error` - rpc_client.go:486
+- **SetPublicAutoconnect** (public) - `(rc *rpcClient) SetPublicAutoconnect(pAc bool) error` - rpc_client.go:420
+- **SetRewardAddress** (public) - `(rc *rpcClient) SetRewardAddress(r string) (rConfig string, err error)` - rpc_client.go:126
+- **Shutdown** (public) - `(rc *rpcClient) Shutdown() error` - rpc_client.go:461
+- **StartApp** (public) - `(rc *rpcClient) StartApp(appName string) error` - rpc_client.go:160
+- **StartSkysocksClient** (public) - `(rc *rpcClient) StartSkysocksClient(pk string) error` - rpc_client.go:212
+- **StartVPNClient** (public) - `(rc *rpcClient) StartVPNClient(pk cipher.PubKey) error` - rpc_client.go:195
+- **StopApp** (public) - `(rc *rpcClient) StopApp(appName string) error` - rpc_client.go:185
+- **StopPing** (public) - `(rc *rpcClient) StopPing(pk cipher.PubKey) error` - rpc_client.go:613
+- **StopSkysocksClients** (public) - `(rc *rpcClient) StopSkysocksClients() error` - rpc_client.go:217
+- **StopVPNClient** (public) - `(rc *rpcClient) StopVPNClient(appName string) error` - rpc_client.go:200
+- **Summary** (public) - `(rc *rpcClient) Summary() (*Summary, error)` - rpc_client.go:98
+- **TestVisor** (public) - `(rc *rpcClient) TestVisor(conf PingConfig) ([]TestResult, error)` - rpc_client.go:618
+- **Transport** (public) - `(rc *rpcClient) Transport(tid uuid.UUID) (*TransportSummary, error)` - rpc_client.go:379
+- **TransportTypes** (public) - `(rc *rpcClient) TransportTypes() ([]string, error)` - rpc_client.go:361
+- **Transports** (public) - `(rc *rpcClient) Transports(types []string, pks []cipher.PubKey, logs bool) ([]*TransportSummary, error)` - rpc_client.go:368
+- **Uptime** (public) - `(rc *rpcClient) Uptime() (float64, error)` - rpc_client.go:119
+- **VPNServers** (public) - `(rc *rpcClient) VPNServers(version, country string) ([]servicedisc.Service, error)` - rpc_client.go:518
+
+---
+
+## pkg/visor/dmsgtracker
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/dmsgtracker
+**Functions**: 13
+
+### Functions
+- **NewDmsgTrackerManager** (public) - `NewDmsgTrackerManager(mLog *logging.MasterLogger, dc *dmsg.Client, updateInterval, updateTimeout time.Duration) *Manager` - dmsg_tracker.go:95
+- **TestDmsgTracker_Update** (public) - `TestDmsgTracker_Update(t *testing.T)` - dmsg_tracker_test.go:23
+- **isDone** (private) - `isDone(done <-chan struct{...}) bool` - dmsg_tracker.go:314
+- **newDmsgTracker** (private) - `newDmsgTracker(ctx context.Context, dmsgC *dmsg.Client, pk cipher.PubKey) (dt *DmsgTracker, err error)` - dmsg_tracker.go:39
+
+### Methods
+
+#### *DmsgTracker
+- **Update** (public) - `(dt *DmsgTracker) Update(ctx context.Context) error` - dmsg_tracker.go:70
+
+#### *Manager
+- **Close** (public) - `(dtm *Manager) Close() error` - dmsg_tracker.go:286
+- **Get** (public) - `(dtm *Manager) Get(pk cipher.PubKey) (DmsgClientSummary, bool)` - dmsg_tracker.go:197
+- **GetBulk** (public) - `(dtm *Manager) GetBulk(ctx context.Context, pks []cipher.PubKey) []DmsgClientSummary` - dmsg_tracker.go:256
+- **ShouldGet** (public) - `(dtm *Manager) ShouldGet(ctx context.Context, pk cipher.PubKey) (DmsgClientSummary, error)` - dmsg_tracker.go:179
+- **establishTracker** (private) - `(dtm *Manager) establishTracker(ctx context.Context, pk cipher.PubKey)` - dmsg_tracker.go:210
+- **get** (private) - `(dtm *Manager) get(pk cipher.PubKey) (DmsgClientSummary, bool)` - dmsg_tracker.go:277
+- **serve** (private) - `(dtm *Manager) serve()` - dmsg_tracker.go:121
+- **updateAllTrackers** (private) - `(dtm *Manager) updateAllTrackers(ctx context.Context)` - dmsg_tracker.go:141
+
+---
+
+## pkg/visor/logserver
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/logserver
+**Functions**: 7
+
+### Functions
+- **New** (public) - `New(log *logging.Logger, tpLogPath, localPath, customPath string, whitelistedPKs []cipher.PubKey, survey *visorconfig.Survey, printLog bool) *API` - api.go:32
+- **getBackgroundColor** (private) - `getBackgroundColor(statusCode int) string` - api.go:192
+- **getMethodColor** (private) - `getMethodColor(method string) string` - api.go:205
+- **loggingMiddleware** (private) - `loggingMiddleware() gin.HandlerFunc` - api.go:160
+- **resetColor** (private) - `resetColor() string` - api.go:226
+- **whitelistAuth** (private) - `whitelistAuth(whitelistedPKs []cipher.PubKey) gin.HandlerFunc` - api.go:128
+
+### Methods
+
+#### *API
+- **health** (private) - `(api *API) health(c *gin.Context)` - api.go:106
+
+---
+
+## pkg/visor/logstore
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/logstore
+**Functions**: 5
+
+### Functions
+- **MakeStore** (public) - `MakeStore(maxx int) (Store, logrus.Hook)` - logstore.go:27
+
+### Methods
+
+#### *store
+- **Fire** (public) - `(s *store) Fire(entry *logrus.Entry) error` - logstore.go:73
+- **GetLogs** (public) - `(s *store) GetLogs() ([]string, int64)` - logstore.go:55
+- **Levels** (public) - `(s *store) Levels() []logrus.Level` - logstore.go:67
+- **collectLogs** (private) - `(s *store) collectLogs(from, to int64) []string` - logstore.go:46
+
+---
+
+## pkg/visor/rewardconfig
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/rewardconfig
+**Functions**: 2
+
+### Functions
+- **GetReward** (public) - `GetReward(out string) (*Reward, error)` - reward.go:30
+- **SetReward** (public) - `SetReward(confP *Reward, out string) (*Reward, error)` - reward.go:17
+
+---
+
+## pkg/visor/usermanager
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/usermanager
+**Functions**: 33
+
+### Functions
+- **DecodeUser** (public) - `DecodeUser(raw []byte) (*User, error)` - user.go:87
+- **NewBoltUserStore** (public) - `NewBoltUserStore(path string) (*BoltUserStore, error)` - user.go:111
+- **NewSingleUserStore** (public) - `NewSingleUserStore(username string, users UserStore) *SingleUserStore` - user.go:193
+- **NewUserManager** (public) - `NewUserManager(mLog *logging.MasterLogger, users UserStore, config visorconfig.CookieConfig) *UserManager` - user_manager.go:63
+- **Test_checkPasswordFormat** (public) - `Test_checkPasswordFormat(t *testing.T)` - user_test.go:12
+- **checkPasswordFormat** (private) - `checkPasswordFormat(password string) error` - user.go:244
+- **checkPasswordStrength** (private) - `checkPasswordStrength(password string) error` - user.go:252
+- **checkUsernameFormat** (private) - `checkUsernameFormat(name string) bool` - user.go:240
+- **init** (private) - `init()` - user.go:37
+
+### Methods
+
+#### *BoltUserStore
+- **AddUser** (public) - `(s *BoltUserStore) AddUser(user User) error` - user.go:146
+- **RemoveUser** (public) - `(s *BoltUserStore) RemoveUser(name string) error` - user.go:180
+- **SetUser** (public) - `(s *BoltUserStore) SetUser(user User) error` - user.go:163
+- **User** (public) - `(s *BoltUserStore) User(name string) (user *User, err error)` - user.go:130
+
+#### *SingleUserStore
+- **AddUser** (public) - `(s *SingleUserStore) AddUser(user User) error` - user.go:210
+- **RemoveUser** (public) - `(s *SingleUserStore) RemoveUser(name string) error` - user.go:228
+- **SetUser** (public) - `(s *SingleUserStore) SetUser(user User) error` - user.go:219
+- **User** (public) - `(s *SingleUserStore) User(name string) (*User, error)` - user.go:201
+- **isNameAllowed** (private) - `(s *SingleUserStore) isNameAllowed(name string) bool` - user.go:236
+
+#### *User
+- **Encode** (public) - `(u *User) Encode() ([]byte, error)` - user.go:77
+- **SetName** (public) - `(u *User) SetName(name string) bool` - user.go:49
+- **SetPassword** (public) - `(u *User) SetPassword(password string) error` - user.go:60
+- **VerifyPassword** (public) - `(u *User) VerifyPassword(password string) bool` - user.go:72
+
+#### *UserManager
+- **Authorize** (public) - `(s *UserManager) Authorize(next http.Handler) http.Handler` - user_manager.go:145
+- **ChangePassword** (public) - `(s *UserManager) ChangePassword() http.HandlerFunc` - user_manager.go:162
+- **Close** (public) - `(s *UserManager) Close() error` - user_manager.go:318
+- **CreateAccount** (public) - `(s *UserManager) CreateAccount() http.HandlerFunc` - user_manager.go:203
+- **Login** (public) - `(s *UserManager) Login() http.HandlerFunc` - user_manager.go:75
+- **Logout** (public) - `(s *UserManager) Logout() http.HandlerFunc` - user_manager.go:133
+- **UserInfo** (public) - `(s *UserManager) UserInfo() http.HandlerFunc` - user_manager.go:248
+- **delAllSessionsOfUser** (private) - `(s *UserManager) delAllSessionsOfUser(userName string)` - user_manager.go:350
+- **delSession** (private) - `(s *UserManager) delSession(w http.ResponseWriter, r *http.Request) error` - user_manager.go:322
+- **newSession** (private) - `(s *UserManager) newSession(w http.ResponseWriter, session Session) error` - user_manager.go:291
+- **session** (private) - `(s *UserManager) session(r *http.Request) (User, Session, bool)` - user_manager.go:362
+
+---
+
+## pkg/visor/visorconfig
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/visorconfig
+**Functions**: 72
+
+### Functions
+- **Config** (public) - `Config() skyenv.PkgConfig` - values.go:299
+- **DmsgPtyWhiteList** (public) - `DmsgPtyWhiteList() string` - values.go:248
+- **Fetch** (public) - `Fetch(mLog *logging.MasterLogger, serviceConf string, stdout bool) services *Services` - services.go:15
+- **GenerateHomeConfig** (public) - `GenerateHomeConfig(testenv bool) HypervisorConfig` - hypervisorconfig.go:87
+- **GenerateLocalConfig** (public) - `GenerateLocalConfig(testenv bool) HypervisorConfig` - hypervisorconfig.go:94
+- **GenerateWorkDirConfig** (public) - `GenerateWorkDirConfig(testenv bool) HypervisorConfig` - hypervisorconfig.go:76
+- **HTTPAddr** (public) - `HTTPAddr() string` - hypervisorconfig.go:27
+- **HomePath** (public) - `HomePath() string` - values.go:293
+- **IsRoot** (public) - `IsRoot() bool` - values_linux.go:83
+- **IsRoot** (public) - `IsRoot() bool` - values_darwin.go:70
+- **IsRoot** (public) - `IsRoot() bool` - values_windows.go:159
+- **MakeBaseConfig** (public) - `MakeBaseConfig(common *Common, testEnv bool, dmsgHTTP bool, services *Services, dmsgHTTPServersList *DmsgHTTPServers) *V1` - config.go:27
+- **MakeConfig** (public) - `MakeConfig(testenv bool) HypervisorConfig` - hypervisorconfig.go:69
+- **MakeDefaultConfig** (public) - `MakeDefaultConfig(log *logging.MasterLogger, sk *cipher.SecKey, usrEnv bool, pkgEnv bool, testEnv bool, dmsgHTTP bool, hypervisor bool, confPath, hypervisorPKs string, services *Services) (*V1, error)` - config.go:133
+- **MustPK** (public) - `MustPK(pk string) cipher.PubKey` - values.go:253
+- **MustPKs** (public) - `MustPKs(pks string) []cipher.PubKey` - values.go:264
+- **NewCommon** (public) - `NewCommon(log *logging.MasterLogger, confPath string, sk *cipher.SecKey) (*Common, error)` - common.go:37
+- **PackageConfig** (public) - `PackageConfig() skyenv.PkgConfig` - values.go:312
+- **Parse** (public) - `Parse(log *logging.Logger, r io.Reader, confPath string, visorBuildInfo *buildinfo.Info) (conf *V1, compat bool, err error)` - parse.go:23
+- **ReadFile** (public) - `ReadFile(confPath string) (*V1, error)` - read.go:22
+- **ReadRaw** (public) - `ReadRaw(raw []byte, confPath string) (*V1, error)` - read.go:35
+- **Reader** (public) - `Reader(r io.Reader, confPath string) (*V1, error)` - read.go:13
+- **Reload** (public) - `Reload() (*V1, error)` - v1.go:105
+- **SkywireConfig** (public) - `SkywireConfig() string` - values.go:223
+- **SystemSurvey** (public) - `SystemSurvey() (Survey, error)` - values_windows.go:54
+- **SystemSurvey** (public) - `SystemSurvey() (Survey, error)` - values_darwin.go:52
+- **SystemSurvey** (public) - `SystemSurvey() (Survey, error)` - values_linux.go:52
+- **TestCommon_ensureKeys** (public) - `TestCommon_ensureKeys(t *testing.T)` - common_test.go:17
+- **Test_updateBoolArg** (public) - `Test_updateBoolArg(t *testing.T)` - v1_test.go:197
+- **Test_updateStringArg** (public) - `Test_updateStringArg(t *testing.T)` - v1_test.go:13
+- **UpdateCommand** (public) - `UpdateCommand() []string` - values.go:317
+- **UserConfig** (public) - `UserConfig() skyenv.PkgConfig` - values_linux.go:21
+- **UserConfig** (public) - `UserConfig() skyenv.PkgConfig` - values_windows.go:23
+- **UserConfig** (public) - `UserConfig() skyenv.PkgConfig` - values_darwin.go:23
+- **Version** (public) - `Version() string` - values.go:274
+- **deleteAppArg** (private) - `deleteAppArg(conf *Launcher, appName string) bool` - v1.go:424
+- **genSysInfo** (private) - `genSysInfo() customSysinfo` - values_windows.go:94
+- **genSysInfo** (private) - `genSysInfo() customSysinfo` - values_darwin.go:80
+- **getMacAddr** (private) - `getMacAddr() []sysinfo.NetworkDevice` - values_darwin.go:87
+- **getMacAddr** (private) - `getMacAddr() []networkDevice` - values_windows.go:101
+- **getNodeHypervisor** (private) - `getNodeHypervisor() string` - values_darwin.go:102
+- **getNodeHypervisor** (private) - `getNodeHypervisor() string` - values_windows.go:116
+- **makeDefaultLauncherAppsConfig** (private) - `makeDefaultLauncherAppsConfig(dnsServer string) []appserver.AppConfig` - config.go:237
+- **updateBoolArg** (private) - `updateBoolArg(conf *Launcher, appName, argName string, value bool) bool` - v1.go:356
+- **updateStringArg** (private) - `updateStringArg(conf *Launcher, appName, argName, value string) bool` - v1.go:313
+
+### Methods
+
+#### *Common
+- **MasterLogger** (public) - `(c *Common) MasterLogger() *logging.MasterLogger` - common.go:55
+- **SetLogger** (public) - `(c *Common) SetLogger(log *logging.MasterLogger)` - common.go:60
+- **ensureKeys** (private) - `(c *Common) ensureKeys() error` - common.go:64
+- **flush** (private) - `(c *Common) flush(v interface{...}) err error` - common.go:79
+
+#### *CookieConfig
+- **FillDefaults** (public) - `(c *CookieConfig) FillDefaults()` - hypervisorconfig.go:180
+- **HTTPOnly** (public) - `(c *CookieConfig) HTTPOnly() bool` - hypervisorconfig.go:193
+- **SameSite** (public) - `(c *CookieConfig) SameSite() http.SameSite` - hypervisorconfig.go:198
+- **Secure** (public) - `(c *CookieConfig) Secure() bool` - hypervisorconfig.go:188
+
+#### *Duration
+- **UnmarshalJSON** (public) - `(d *Duration) UnmarshalJSON(b []byte) error` - types.go:32
+
+#### *HypervisorConfig
+- **FillDefaults** (public) - `(c *HypervisorConfig) FillDefaults(testEnv bool)` - hypervisorconfig.go:101
+- **Parse** (public) - `(c *HypervisorConfig) Parse(path string) error` - hypervisorconfig.go:146
+
+#### *Key
+- **UnmarshalText** (public) - `(hk *Key) UnmarshalText(text []byte) error` - hypervisorconfig.go:45
+
+#### *V1
+- **AddAppConfig** (public) - `(v1 *V1) AddAppConfig(launch *launcher.AppLauncher, appName, binaryName string) error` - v1.go:277
+- **DeleteAppArg** (public) - `(v1 *V1) DeleteAppArg(launch *launcher.AppLauncher, appName string) error` - v1.go:206
+- **Flush** (public) - `(v1 *V1) Flush() error` - v1.go:97
+- **GetLogRotationInterval** (public) - `(v1 *V1) GetLogRotationInterval() (Duration, error)` - v1.go:261
+- **GetPersistentTransports** (public) - `(v1 *V1) GetPersistentTransports() ([]transport.PersistentTransports, error)` - v1.go:245
+- **UpdateAppArg** (public) - `(v1 *V1) UpdateAppArg(launch *launcher.AppLauncher, appName, argName string, value interface{...}) error` - v1.go:143
+- **UpdateAppArgBatch** (public) - `(v1 *V1) UpdateAppArgBatch(launch *launcher.AppLauncher, appName string, args map[string]any) error` - v1.go:174
+- **UpdateAppAutostart** (public) - `(v1 *V1) UpdateAppAutostart(launch *launcher.AppLauncher, appName string, autoStart bool) error` - v1.go:116
+- **UpdateLogRotationInterval** (public) - `(v1 *V1) UpdateLogRotationInterval(d Duration) error` - v1.go:252
+- **UpdateMinHops** (public) - `(v1 *V1) UpdateMinHops(hops uint16) error` - v1.go:227
+- **UpdatePersistentTransports** (public) - `(v1 *V1) UpdatePersistentTransports(pTps []transport.PersistentTransports) error` - v1.go:236
+- **UpdatePublicAutoconnect** (public) - `(v1 *V1) UpdatePublicAutoconnect(pAc bool) error` - v1.go:268
+
+#### Duration
+- **MarshalJSON** (public) - `(d Duration) MarshalJSON() ([]byte, error)` - types.go:27
+
+#### Key
+- **MarshalText** (public) - `(hk Key) MarshalText() ([]byte, error)` - hypervisorconfig.go:40
+- **String** (public) - `(hk Key) String() string` - hypervisorconfig.go:35
+
+---
+
+## pkg/visor/visorinit
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/pkg/visor/visorinit
+**Functions**: 6
+
+### Functions
+- **MakeModule** (public) - `MakeModule(name string, init Hook, ml *logging.MasterLogger, deps ...*Module) Module` - module.go:42
+
+### Methods
+
+#### *Module
+- **InitConcurrent** (public) - `(m *Module) InitConcurrent(ctx context.Context)` - module.go:106
+- **Wait** (public) - `(m *Module) Wait(ctx context.Context) error` - module.go:89
+- **isFinished** (private) - `(m *Module) isFinished() bool` - module.go:78
+- **start** (private) - `(m *Module) start() bool` - module.go:59
+- **stop** (private) - `(m *Module) stop()` - module.go:70
+
+---
+
+## scripts/mac_installer/desktop-deinstaller
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/scripts/mac_installer/desktop-deinstaller
+**Functions**: 2
+
+### Functions
+- **main** (private) - `main()` - deinstaller.go:20
+- **uninstall** (private) - `uninstall() error` - deinstaller.go:27
+
+---
+
+## static/icons
+**Path**: /Users/tayyab/development/sythtask/repos/skywire/static/icons
+**Functions**: 0
+
+*No functions found*
+
