@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Database, FileText, Code, Package, GitBranch, Layers, Network, Settings } from 'lucide-react'
+import { Database, FileText, Code, Package, GitBranch, Layers, Network, Settings, Search, ExternalLink } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 
 const dataTypes = [
@@ -58,6 +58,187 @@ const repositories = [
   { id: 'skywire', name: 'Skywire', description: 'Mesh networking protocol' }
 ]
 
+// Component for displaying external dependencies in a clean list view
+function ExternalDependenciesView({ content }) {
+  const [searchTerm, setSearchTerm] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('all')
+  
+  // Parse the markdown content to extract dependencies
+  const parseDependencies = (markdownContent) => {
+    const lines = markdownContent.split('\n')
+    const categories = []
+    let currentCategory = null
+    let inTable = false
+    
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i].trim()
+      
+      // Check for category headers (### 🌐 Web & Network Libraries)
+      if (line.startsWith('### ')) {
+        const match = line.match(/### (.+)/)
+        if (match) {
+          currentCategory = {
+            name: match[1],
+            icon: match[1].split(' ')[0],
+            title: match[1].substring(match[1].indexOf(' ') + 1),
+            packages: []
+          }
+          categories.push(currentCategory)
+          inTable = false
+        }
+      }
+      
+      // Check for table headers
+      if (line.includes('Package') && line.includes('Version') && line.includes('Description')) {
+        inTable = true
+        continue
+      }
+      
+      // Skip table separator
+      if (line.includes('|---')) {
+        continue
+      }
+      
+      // Parse table rows
+      if (inTable && line.includes('|') && currentCategory && !line.includes('Package')) {
+        const parts = line.split('|').map(part => part.trim()).filter(part => part)
+        if (parts.length >= 3) {
+          const pkg = parts[0].replace(/`/g, '')
+          const version = parts[1].replace(/`/g, '')
+          const description = parts[2]
+          
+          if (pkg && version && description) {
+            currentCategory.packages.push({
+              package: pkg,
+              version: version,
+              description: description
+            })
+          }
+        }
+      }
+      
+      // End table when we hit an empty line
+      if (inTable && line === '') {
+        inTable = false
+      }
+    }
+    
+    return categories
+  }
+  
+  const dependencies = parseDependencies(content)
+  const allCategories = ['all', ...dependencies.map(cat => cat.title.toLowerCase())]
+  
+  // Filter dependencies based on search and category
+  const filteredDependencies = dependencies.map(category => ({
+    ...category,
+    packages: category.packages.filter(pkg => {
+      const matchesSearch = searchTerm === '' || 
+        pkg.package.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        pkg.description.toLowerCase().includes(searchTerm.toLowerCase())
+      
+      const matchesCategory = selectedCategory === 'all' || 
+        category.title.toLowerCase().includes(selectedCategory)
+      
+      return matchesSearch && matchesCategory
+    })
+  })).filter(category => category.packages.length > 0)
+  
+  const totalDependencies = dependencies.reduce((sum, cat) => sum + cat.packages.length, 0)
+  const filteredTotal = filteredDependencies.reduce((sum, cat) => sum + cat.packages.length, 0)
+  
+  return (
+    <div className="space-y-6">
+      {/* Header */}
+      <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-lg p-6 border border-slate-600">
+        <h1 className="text-3xl font-bold text-white mb-2">External Dependencies</h1>
+        <p className="text-slate-300">
+          Total: <span className="text-blue-400 font-semibold">{totalDependencies}</span> dependencies
+          {searchTerm || selectedCategory !== 'all' ? (
+            <span> • Showing: <span className="text-green-400 font-semibold">{filteredTotal}</span></span>
+          ) : null}
+        </p>
+      </div>
+
+      {/* Filters */}
+      <div className="flex flex-col sm:flex-row gap-4">
+        {/* Search */}
+        <div className="relative flex-1">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+          <input
+            type="text"
+            placeholder="Search dependencies..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full pl-10 pr-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+        </div>
+        
+        {/* Category Filter */}
+        <select
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          className="px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        >
+          <option value="all">All Categories</option>
+          {dependencies.map((cat, idx) => (
+            <option key={idx} value={cat.title.toLowerCase()}>
+              {cat.title}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Dependencies List */}
+      <div className="space-y-8">
+        {filteredDependencies.map((category, categoryIdx) => (
+          <div key={categoryIdx} className="space-y-4">
+            {/* Category Header */}
+            <div className="flex items-center space-x-3 pb-2 border-b border-slate-600">
+              <span className="text-2xl">{category.icon}</span>
+              <h2 className="text-xl font-semibold text-white">{category.title}</h2>
+              <span className="text-sm text-slate-400">({category.packages.length})</span>
+            </div>
+            
+            {/* Packages Grid */}
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {category.packages.map((pkg, pkgIdx) => (
+                <div key={pkgIdx} className="bg-slate-800 rounded-lg p-4 border border-slate-600 hover:border-slate-500 transition-colors">
+                  <div className="flex items-start justify-between mb-2">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-mono text-sm font-semibold text-blue-400 truncate" title={pkg.package}>
+                        {pkg.package}
+                      </h3>
+                      <p className="text-xs text-green-400 font-mono mt-1">{pkg.version}</p>
+                    </div>
+                    <a
+                      href={`https://${pkg.package}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-white transition-colors ml-2"
+                      title="View on web"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                  <p className="text-sm text-slate-300 leading-relaxed">{pkg.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {filteredDependencies.length === 0 && (
+        <div className="text-center py-12">
+          <div className="text-gray-400 text-lg mb-2">No dependencies found</div>
+          <div className="text-gray-500 text-sm">Try adjusting your search or filter criteria</div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 function App() {
   const [selectedRepo, setSelectedRepo] = useState('dmsg')
   const [selectedDataType, setSelectedDataType] = useState('external_dependencies')
@@ -96,23 +277,54 @@ function App() {
       case 'external_dependencies':
         return `# ${repoName} External Dependencies
 
-## Summary
+## 📊 Summary
 
 - **Total Dependencies**: ${repo === 'dmsg' ? '61' : '165'}
 - **Repository**: ${repo}
-- **Module Path**: github.com/skycoin/${repo}
+- **Module Path**: \`github.com/skycoin/${repo}\`
 
-## Dependencies List
+## 🏷️ Dependencies by Category
 
-| Package | Version |
-|---------|----------|
-| \`github.com/gin-gonic/gin\` | \`v1.10.1\` |
-| \`github.com/sirupsen/logrus\` | \`v1.9.3\` |
-| \`github.com/spf13/cobra\` | \`v1.8.1\` |
-| \`github.com/stretchr/testify\` | \`v1.9.0\` |
-| \`golang.org/x/crypto\` | \`v0.31.0\` |
+### 🌐 Web & Network Libraries
+| Package | Version | Description |
+|---------|---------|-------------|
+| \`github.com/gin-gonic/gin\` | \`v1.10.1\` | High-performance HTTP web framework |
+| \`github.com/go-chi/chi/v5\` | \`v5.2.2\` | Lightweight, idiomatic HTTP router |
+| \`github.com/coder/websocket\` | \`v1.8.13\` | WebSocket implementation |
+| \`golang.org/x/net\` | \`v0.41.0\` | Go network packages |
 
-*This is sample data. Install dependencies and run the dev server to load actual data.*`
+### 🔒 Security & Cryptography
+| Package | Version | Description |
+|---------|---------|-------------|
+| \`golang.org/x/crypto\` | \`v0.39.0\` | Go cryptography packages |
+| \`github.com/skycoin/noise\` | \`v0.0.0-20180327030543-2492fe189ae6\` | Noise protocol implementation |
+
+### 🛠️ CLI & Utilities
+| Package | Version | Description |
+|---------|---------|-------------|
+| \`github.com/spf13/cobra\` | \`v1.9.1\` | CLI library with commands, flags & config |
+| \`github.com/sirupsen/logrus\` | \`v1.9.3\` | Structured logging library |
+| \`github.com/fatih/color\` | \`v1.18.0\` | Color terminal output |
+
+### 🧪 Testing & Development
+| Package | Version | Description |
+|---------|---------|-------------|
+| \`github.com/stretchr/testify\` | \`v1.10.0\` | Testing toolkit with assertions & mocks |
+
+### 📡 Data & Serialization
+| Package | Version | Description |
+|---------|---------|-------------|
+| \`github.com/goccy/go-json\` | \`v0.10.5\` | High-performance JSON encoder/decoder |
+| \`google.golang.org/protobuf\` | \`v1.36.6\` | Protocol Buffers implementation |
+| \`gopkg.in/yaml.v3\` | \`v3.0.1\` | YAML support |
+
+### 🏗️ Skycoin Ecosystem
+| Package | Version | Description |
+|---------|---------|-------------|
+| \`github.com/skycoin/skycoin\` | \`v0.28.1-0.20241105130348-39b49a2d0a7f\` | Core Skycoin blockchain |
+| \`github.com/skycoin/skywire\` | \`v1.3.29-rc7.0.20250623153831-0d7a5018d3d1\` | Skywire mesh network |
+
+*This is enhanced sample data. Install dependencies and run the dev server to load actual categorized data.*`
 
       case 'compilation_units':
         return `# ${repoName} Compilation Units
@@ -273,11 +485,15 @@ This is placeholder content to demonstrate the interface. The actual data would 
                 </div>
               ) : null}
 
-              <div className="prose prose-invert max-w-none">
-                <div className="markdown-content">
-                  <ReactMarkdown>{content}</ReactMarkdown>
+              {selectedDataType === 'external_dependencies' ? (
+                <ExternalDependenciesView content={content} />
+              ) : (
+                <div className="prose prose-invert max-w-none">
+                  <div className="markdown-content">
+                    <ReactMarkdown>{content}</ReactMarkdown>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>

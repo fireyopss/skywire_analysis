@@ -69,8 +69,13 @@ code {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
-  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-radius: 12px;
+  border-left: 4px solid #3b82f6;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.1);
 }
 
 .markdown-content h4 {
@@ -138,26 +143,68 @@ code {
 .markdown-content table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   background-color: #0a0a0a;
-  border: 1px solid #404040;
-  border-radius: 8px;
+  border: 1px solid #525252;
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 .markdown-content th {
-  background-color: #1a1a1a;
-  border: 1px solid #404040;
-  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border: 1px solid #525252;
+  padding: 1rem 1.25rem;
   text-align: left;
   font-weight: 600;
   color: #ffffff;
+  font-size: 0.95rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
 }
 
 .markdown-content td {
   border: 1px solid #404040;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1.25rem;
   color: #e5e5e5;
+  transition: background-color 0.2s ease;
+}
+
+.markdown-content tbody tr:hover td {
+  background-color: #1a1a1a;
+}
+
+.markdown-content tbody tr:nth-child(even) {
+  background-color: #0f0f0f;
+}
+
+.markdown-content tbody tr:nth-child(odd) {
+  background-color: #0a0a0a;
+}
+
+/* Special styling for dependency tables */
+.markdown-content td:first-child code {
+  background-color: #0f172a;
+  color: #38bdf8;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 1px solid #1e40af;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+.markdown-content td:nth-child(2) {
+  font-family: 'JetBrains Mono', monospace;
+  color: #22c55e;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.markdown-content td:nth-child(3) {
+  color: #d1d5db;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 .markdown-content blockquote {
