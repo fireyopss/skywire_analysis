@@ -1,0 +1,4014 @@
+# Skywire Compilation Unit Import/Export Relationships
+
+## Analysis Overview
+- Total compilation units analyzed: 154
+
+---
+
+## PART A: IMPORTED BY (What depends on each compilation unit)
+
+### .
+**Imported by (19):**
+- cmd/conf/commands
+- cmd/setup-node/commands
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/log
+- cmd/skywire-cli/commands/mdisc
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/reward
+- cmd/skywire-cli/commands/rewards
+- cmd/skywire-cli/commands/rewards/ui
+- cmd/skywire-cli/commands/route
+- cmd/skywire-cli/commands/survey
+- cmd/skywire-cli/commands/tp
+- cmd/skywire-cli/commands/ut
+- cmd/skywire-cli/commands/vpn
+- cmd/transport-discovery/commands
+- pkg/app/appdisc
+- pkg/config-bootstrapper/api
+- pkg/visor
+- pkg/visor/visorconfig
+
+### cmd/address-resolver
+**Imported by (0):** None
+
+### cmd/address-resolver/commands
+**Imported by (2):**
+- cmd/address-resolver
+- cmd/skywire-services/commands
+
+### cmd/apps/skychat
+**Imported by (0):** None
+
+### cmd/apps/skychat/commands
+**Imported by (2):**
+- cmd/apps/skychat
+- cmd/skywire/commands
+
+### cmd/apps/skysocks
+**Imported by (0):** None
+
+### cmd/apps/skysocks-client
+**Imported by (0):** None
+
+### cmd/apps/skysocks-client/commands
+**Imported by (2):**
+- cmd/apps/skysocks-client
+- cmd/skywire/commands
+
+### cmd/apps/skysocks/commands
+**Imported by (2):**
+- cmd/apps/skysocks
+- cmd/skywire/commands
+
+### cmd/apps/vpn-client
+**Imported by (0):** None
+
+### cmd/apps/vpn-client/commands
+**Imported by (2):**
+- cmd/apps/vpn-client
+- cmd/skywire/commands
+
+### cmd/apps/vpn-server
+**Imported by (0):** None
+
+### cmd/apps/vpn-server/commands
+**Imported by (2):**
+- cmd/apps/vpn-server
+- cmd/skywire/commands
+
+### cmd/conf
+**Imported by (0):** None
+
+### cmd/conf/commands
+**Imported by (2):**
+- cmd/conf
+- cmd/skywire/commands
+
+### cmd/config-bootstrapper
+**Imported by (0):** None
+
+### cmd/config-bootstrapper/commands
+**Imported by (2):**
+- cmd/config-bootstrapper
+- cmd/skywire-services/commands
+
+### cmd/gen
+**Imported by (0):** None
+
+### cmd/network-monitor
+**Imported by (0):** None
+
+### cmd/network-monitor/commands
+**Imported by (2):**
+- cmd/network-monitor
+- cmd/skywire-services/commands
+
+### cmd/route-finder
+**Imported by (0):** None
+
+### cmd/route-finder/commands
+**Imported by (2):**
+- cmd/route-finder
+- cmd/skywire-services/commands
+
+### cmd/service-discovery
+**Imported by (0):** None
+
+### cmd/service-discovery/commands
+**Imported by (3):**
+- cmd/service-discovery
+- cmd/skywire-services/commands
+- cmd/skywire/commands
+
+### cmd/setup-node
+**Imported by (0):** None
+
+### cmd/setup-node/commands
+**Imported by (3):**
+- cmd/setup-node
+- cmd/skywire-services/commands
+- cmd/skywire/commands
+
+### cmd/skycoin-skywire
+**Imported by (0):** None
+
+### cmd/skywire
+**Imported by (0):** None
+
+### cmd/skywire-cli
+**Imported by (0):** None
+
+### cmd/skywire-cli/commands
+**Imported by (2):**
+- cmd/skywire-cli
+- cmd/skywire/commands
+
+### cmd/skywire-cli/commands/completion
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/config
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/dmsgpty
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/log
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/mdisc
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/proxy
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/reward
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/rewards
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/rewards/tgbot
+**Imported by (1):**
+- cmd/skywire-cli/commands/rewards
+
+### cmd/skywire-cli/commands/rewards/ui
+**Imported by (0):** None
+
+### cmd/skywire-cli/commands/route
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/rpc
+**Imported by (8):**
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/reward
+- cmd/skywire-cli/commands/route
+- cmd/skywire-cli/commands/skyfwd
+- cmd/skywire-cli/commands/skyrev
+- cmd/skywire-cli/commands/tp
+- cmd/skywire-cli/commands/visor
+- cmd/skywire-cli/commands/vpn
+
+### cmd/skywire-cli/commands/skyfwd
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/skyrev
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/survey
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/tp
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/ut
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/commands/visor
+**Imported by (2):**
+- cmd/skywire-cli/commands
+- cmd/skywire-cli/commands/vpn
+
+### cmd/skywire-cli/commands/vpn
+**Imported by (1):**
+- cmd/skywire-cli/commands
+
+### cmd/skywire-cli/internal
+**Imported by (14):**
+- cmd/skywire-cli/commands
+- cmd/skywire-cli/commands/dmsgpty
+- cmd/skywire-cli/commands/mdisc
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/reward
+- cmd/skywire-cli/commands/route
+- cmd/skywire-cli/commands/rpc
+- cmd/skywire-cli/commands/skyfwd
+- cmd/skywire-cli/commands/skyrev
+- cmd/skywire-cli/commands/survey
+- cmd/skywire-cli/commands/tp
+- cmd/skywire-cli/commands/ut
+- cmd/skywire-cli/commands/visor
+- cmd/skywire-cli/commands/vpn
+
+### cmd/skywire-services
+**Imported by (0):** None
+
+### cmd/skywire-services/commands
+**Imported by (2):**
+- cmd/skywire-services
+- cmd/skywire/commands
+
+### cmd/skywire-visor
+**Imported by (0):** None
+
+### cmd/skywire/commands
+**Imported by (2):**
+- cmd/skycoin-skywire
+- cmd/skywire
+
+### cmd/sw-env
+**Imported by (0):** None
+
+### cmd/sw-env/commands
+**Imported by (2):**
+- cmd/skywire-services/commands
+- cmd/sw-env
+
+### cmd/transport-discovery
+**Imported by (0):** None
+
+### cmd/transport-discovery/commands
+**Imported by (2):**
+- cmd/skywire-services/commands
+- cmd/transport-discovery
+
+### cmd/transport-setup
+**Imported by (0):** None
+
+### cmd/transport-setup/commands
+**Imported by (2):**
+- cmd/skywire-services/commands
+- cmd/transport-setup
+
+### cmd/uptime-tracker
+**Imported by (0):** None
+
+### cmd/uptime-tracker/commands
+**Imported by (2):**
+- cmd/skywire-services/commands
+- cmd/uptime-tracker
+
+### cmd/version
+**Imported by (0):** None
+
+### cmd/version/commands
+**Imported by (1):**
+- cmd/version
+
+### example/example-client-app
+**Imported by (0):** None
+
+### example/example-server-app
+**Imported by (0):** None
+
+### example/http-server
+**Imported by (0):** None
+
+### example/http-server/html
+**Imported by (1):**
+- example/http-server
+
+### internal/armetrics
+**Imported by (2):**
+- cmd/address-resolver/commands
+- pkg/address-resolver/api
+
+### internal/config
+**Imported by (1):**
+- cmd/sw-env/commands
+
+### internal/httpauth
+**Imported by (4):**
+- pkg/servicedisc
+- pkg/transport/network/addrresolver
+- pkg/transport/tpdclient
+- pkg/utclient
+
+### internal/nm
+**Imported by (2):**
+- pkg/network-monitor/api
+- pkg/network-monitor/store
+
+### internal/packetfilter
+**Imported by (2):**
+- pkg/transport/network
+- pkg/transport/network/addrresolver
+
+### internal/pg
+**Imported by (4):**
+- cmd/route-finder/commands
+- cmd/service-discovery/commands
+- cmd/transport-discovery/commands
+- cmd/uptime-tracker/commands
+
+### internal/sdmetrics
+**Imported by (2):**
+- cmd/service-discovery/commands
+- pkg/service-discovery/api
+
+### internal/skysocks
+**Imported by (2):**
+- cmd/apps/skysocks-client/commands
+- cmd/apps/skysocks/commands
+
+### internal/testhelpers
+**Imported by (3):**
+- pkg/app
+- pkg/app/appserver
+- pkg/router
+
+### internal/tpdiscmetrics
+**Imported by (2):**
+- cmd/transport-discovery/commands
+- pkg/transport-discovery/api
+
+### internal/utmetrics
+**Imported by (2):**
+- cmd/uptime-tracker/commands
+- pkg/uptime-tracker/api
+
+### internal/vpn
+**Imported by (3):**
+- cmd/apps/vpn-client/commands
+- cmd/apps/vpn-server/commands
+- pkg/visor
+
+### pkg/address-resolver/api
+**Imported by (1):**
+- cmd/address-resolver/commands
+
+### pkg/address-resolver/store
+**Imported by (2):**
+- cmd/address-resolver/commands
+- pkg/address-resolver/api
+
+### pkg/app
+**Imported by (9):**
+- cmd/apps/skychat/commands
+- cmd/apps/skysocks-client/commands
+- cmd/apps/skysocks/commands
+- cmd/apps/vpn-client/commands
+- cmd/apps/vpn-server/commands
+- example/example-client-app
+- example/example-server-app
+- internal/skysocks
+- internal/vpn
+
+### pkg/app/appcommon
+**Imported by (9):**
+- cmd/skywire-cli/commands/visor
+- example/example-client-app
+- pkg/app
+- pkg/app/appdisc
+- pkg/app/appevent
+- pkg/app/appserver
+- pkg/app/idmanager
+- pkg/app/launcher
+- pkg/visor
+
+### pkg/app/appdisc
+**Imported by (2):**
+- pkg/app/appserver
+- pkg/visor
+
+### pkg/app/appevent
+**Imported by (7):**
+- cmd/apps/vpn-client/commands
+- pkg/app
+- pkg/app/appserver
+- pkg/dmsgc
+- pkg/transport
+- pkg/transport/network
+- pkg/visor
+
+### pkg/app/appnet
+**Imported by (11):**
+- cmd/apps/skychat/commands
+- cmd/apps/skysocks-client/commands
+- cmd/apps/skysocks/commands
+- cmd/apps/vpn-server/commands
+- example/example-client-app
+- example/example-server-app
+- internal/vpn
+- pkg/app
+- pkg/app/appserver
+- pkg/app/launcher
+- pkg/visor
+
+### pkg/app/appserver
+**Imported by (18):**
+- cmd/apps/skychat/commands
+- cmd/apps/skysocks-client/commands
+- cmd/apps/skysocks/commands
+- cmd/apps/vpn-client/commands
+- cmd/apps/vpn-server/commands
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/visor
+- cmd/skywire-cli/commands/vpn
+- example/example-client-app
+- example/example-server-app
+- internal/config
+- internal/skysocks
+- internal/vpn
+- pkg/app
+- pkg/app/launcher
+- pkg/visor
+- pkg/visor/visorconfig
+
+### pkg/app/idmanager
+**Imported by (2):**
+- pkg/app
+- pkg/app/appserver
+
+### pkg/app/launcher
+**Imported by (2):**
+- pkg/visor
+- pkg/visor/visorconfig
+
+### pkg/config-bootstrapper/api
+**Imported by (1):**
+- cmd/config-bootstrapper/commands
+
+### pkg/dmsgc
+**Imported by (6):**
+- cmd/skywire-cli/commands/config
+- internal/config
+- pkg/router
+- pkg/transport-setup/config
+- pkg/visor
+- pkg/visor/visorconfig
+
+### pkg/network-monitor/api
+**Imported by (1):**
+- cmd/network-monitor/commands
+
+### pkg/network-monitor/store
+**Imported by (2):**
+- cmd/network-monitor/commands
+- pkg/network-monitor/api
+
+### pkg/route-finder/api
+**Imported by (1):**
+- cmd/route-finder/commands
+
+### pkg/route-finder/store
+**Imported by (1):**
+- pkg/route-finder/api
+
+### pkg/routefinder/rfclient
+**Imported by (5):**
+- cmd/skywire-cli/commands/route
+- internal/vpn
+- pkg/route-finder/api
+- pkg/router
+- pkg/visor
+
+### pkg/router
+**Imported by (8):**
+- cmd/setup-node/commands
+- cmd/skywire-cli/commands/route
+- internal/config
+- internal/skysocks
+- internal/vpn
+- pkg/app/appnet
+- pkg/app/launcher
+- pkg/visor
+
+### pkg/router/setupmetrics
+**Imported by (2):**
+- cmd/setup-node/commands
+- pkg/router
+
+### pkg/routing
+**Imported by (22):**
+- cmd/apps/skychat/commands
+- cmd/apps/skysocks-client/commands
+- cmd/apps/skysocks/commands
+- cmd/apps/vpn-client/commands
+- cmd/apps/vpn-server/commands
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/route
+- example/example-client-app
+- internal/vpn
+- pkg/app
+- pkg/app/appcommon
+- pkg/app/appnet
+- pkg/app/appserver
+- pkg/route-finder/api
+- pkg/route-finder/store
+- pkg/routefinder/rfclient
+- pkg/router
+- pkg/router/setupmetrics
+- pkg/transport
+- pkg/visor
+- pkg/visor/visorconfig
+
+### pkg/service-discovery/api
+**Imported by (1):**
+- cmd/service-discovery/commands
+
+### pkg/service-discovery/store
+**Imported by (2):**
+- cmd/service-discovery/commands
+- pkg/service-discovery/api
+
+### pkg/servicedisc
+**Imported by (6):**
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/vpn
+- pkg/app/appdisc
+- pkg/service-discovery/api
+- pkg/service-discovery/store
+- pkg/visor
+
+### pkg/skyenv
+**Imported by (16):**
+- cmd/apps/vpn-server/commands
+- cmd/setup-node/commands
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/route
+- internal/skysocks
+- internal/vpn
+- pkg/app/appdisc
+- pkg/app/appnet
+- pkg/app/appserver
+- pkg/router
+- pkg/transport
+- pkg/transport-setup/api
+- pkg/transport/setup
+- pkg/visor
+- pkg/visor/dmsgtracker
+- pkg/visor/visorconfig
+
+### pkg/skywire-utilities/pkg/buildinfo
+**Imported by (36):**
+- cmd/address-resolver/commands
+- cmd/apps/skychat/commands
+- cmd/apps/skysocks-client/commands
+- cmd/apps/skysocks/commands
+- cmd/apps/vpn-client/commands
+- cmd/apps/vpn-server/commands
+- cmd/config-bootstrapper/commands
+- cmd/network-monitor/commands
+- cmd/route-finder/commands
+- cmd/service-discovery/commands
+- cmd/setup-node/commands
+- cmd/skywire-cli/commands
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/vpn
+- cmd/skywire-services/commands
+- cmd/skywire/commands
+- cmd/sw-env/commands
+- cmd/transport-discovery/commands
+- cmd/transport-setup/commands
+- cmd/uptime-tracker/commands
+- cmd/version/commands
+- example/example-client-app
+- example/example-server-app
+- pkg/address-resolver/api
+- pkg/config-bootstrapper/api
+- pkg/network-monitor/api
+- pkg/route-finder/api
+- pkg/service-discovery/api
+- pkg/servicedisc
+- pkg/skywire-utilities/pkg/httputil
+- pkg/transport-discovery/api
+- pkg/uptime-tracker/api
+- pkg/visor
+- pkg/visor/logserver
+- pkg/visor/visorconfig
+
+### pkg/skywire-utilities/pkg/calvin
+**Imported by (21):**
+- cmd/address-resolver/commands
+- cmd/apps/skychat/commands
+- cmd/apps/skysocks-client/commands
+- cmd/apps/skysocks/commands
+- cmd/apps/vpn-client/commands
+- cmd/apps/vpn-server/commands
+- cmd/config-bootstrapper/commands
+- cmd/network-monitor/commands
+- cmd/route-finder/commands
+- cmd/service-discovery/commands
+- cmd/setup-node/commands
+- cmd/skywire-cli/commands
+- cmd/skywire-cli/commands/rewards
+- cmd/skywire-cli/commands/rewards/ui
+- cmd/skywire-services/commands
+- cmd/skywire/commands
+- cmd/sw-env/commands
+- cmd/transport-discovery/commands
+- cmd/transport-setup/commands
+- cmd/uptime-tracker/commands
+- pkg/skywire-utilities/pkg/calvin/cmd/calvin/commands
+
+### pkg/skywire-utilities/pkg/calvin/cmd/calvin
+**Imported by (0):** None
+
+### pkg/skywire-utilities/pkg/calvin/cmd/calvin/commands
+**Imported by (1):**
+- pkg/skywire-utilities/pkg/calvin/cmd/calvin
+
+### pkg/skywire-utilities/pkg/cipher
+**Imported by (68):**
+- .
+- cmd/address-resolver/commands
+- cmd/apps/skychat/commands
+- cmd/apps/skysocks-client/commands
+- cmd/apps/vpn-client/commands
+- cmd/apps/vpn-server/commands
+- cmd/config-bootstrapper/commands
+- cmd/network-monitor/commands
+- cmd/route-finder/commands
+- cmd/service-discovery/commands
+- cmd/setup-node/commands
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/log
+- cmd/skywire-cli/commands/mdisc
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/rewards
+- cmd/skywire-cli/commands/route
+- cmd/skywire-cli/commands/skyrev
+- cmd/skywire-cli/commands/survey
+- cmd/skywire-cli/commands/tp
+- cmd/skywire-cli/commands/visor
+- cmd/skywire-cli/commands/vpn
+- cmd/skywire-cli/internal
+- cmd/transport-discovery/commands
+- cmd/transport-setup/commands
+- cmd/uptime-tracker/commands
+- internal/config
+- internal/httpauth
+- internal/vpn
+- pkg/address-resolver/api
+- pkg/address-resolver/store
+- pkg/app
+- pkg/app/appcommon
+- pkg/app/appdisc
+- pkg/app/appnet
+- pkg/app/appserver
+- pkg/app/launcher
+- pkg/config-bootstrapper/api
+- pkg/dmsgc
+- pkg/network-monitor/api
+- pkg/route-finder/api
+- pkg/route-finder/store
+- pkg/router
+- pkg/routing
+- pkg/service-discovery/api
+- pkg/servicedisc
+- pkg/skywire-utilities/pkg/cmdutil
+- pkg/skywire-utilities/pkg/httpauth
+- pkg/transport
+- pkg/transport-discovery/api
+- pkg/transport-discovery/store
+- pkg/transport-setup/api
+- pkg/transport-setup/config
+- pkg/transport/network
+- pkg/transport/network/addrresolver
+- pkg/transport/network/handshake
+- pkg/transport/network/stcp
+- pkg/transport/setup
+- pkg/transport/tpdclient
+- pkg/uptime-tracker/api
+- pkg/uptime-tracker/store
+- pkg/utclient
+- pkg/util/cipherutil
+- pkg/visor
+- pkg/visor/dmsgtracker
+- pkg/visor/logserver
+- pkg/visor/usermanager
+- pkg/visor/visorconfig
+
+### pkg/skywire-utilities/pkg/cmdutil
+**Imported by (17):**
+- cmd/address-resolver/commands
+- cmd/config-bootstrapper/commands
+- cmd/network-monitor/commands
+- cmd/route-finder/commands
+- cmd/service-discovery/commands
+- cmd/setup-node/commands
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/dmsgpty
+- cmd/skywire-cli/commands/log
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/rewards
+- cmd/skywire-cli/commands/survey
+- cmd/skywire-cli/commands/vpn
+- cmd/transport-discovery/commands
+- cmd/uptime-tracker/commands
+- pkg/service-discovery/api
+- pkg/visor
+
+### pkg/skywire-utilities/pkg/flags
+**Imported by (17):**
+- cmd/address-resolver
+- cmd/conf
+- cmd/config-bootstrapper
+- cmd/network-monitor
+- cmd/route-finder
+- cmd/service-discovery
+- cmd/setup-node
+- cmd/skycoin-skywire
+- cmd/skywire
+- cmd/skywire-cli
+- cmd/skywire-services
+- cmd/skywire-visor
+- cmd/sw-env
+- cmd/transport-discovery
+- cmd/transport-setup
+- cmd/uptime-tracker
+- cmd/version
+
+### pkg/skywire-utilities/pkg/geo
+**Imported by (6):**
+- cmd/uptime-tracker/commands
+- pkg/service-discovery/api
+- pkg/service-discovery/store
+- pkg/servicedisc
+- pkg/uptime-tracker/api
+- pkg/uptime-tracker/store
+
+### pkg/skywire-utilities/pkg/httpauth
+**Imported by (8):**
+- cmd/address-resolver/commands
+- cmd/service-discovery/commands
+- cmd/transport-discovery/commands
+- cmd/uptime-tracker/commands
+- pkg/address-resolver/api
+- pkg/service-discovery/api
+- pkg/transport-discovery/api
+- pkg/uptime-tracker/api
+
+### pkg/skywire-utilities/pkg/httputil
+**Imported by (14):**
+- pkg/address-resolver/api
+- pkg/config-bootstrapper/api
+- pkg/network-monitor/api
+- pkg/route-finder/api
+- pkg/service-discovery/api
+- pkg/skywire-utilities/pkg/httpauth
+- pkg/transport
+- pkg/transport-discovery/api
+- pkg/transport-setup/api
+- pkg/transport/tpdclient
+- pkg/uptime-tracker/api
+- pkg/visor
+- pkg/visor/logserver
+- pkg/visor/usermanager
+
+### pkg/skywire-utilities/pkg/logging
+**Imported by (65):**
+- cmd/address-resolver/commands
+- cmd/config-bootstrapper/commands
+- cmd/network-monitor/commands
+- cmd/route-finder/commands
+- cmd/service-discovery/commands
+- cmd/setup-node/commands
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/dmsgpty
+- cmd/skywire-cli/commands/log
+- cmd/skywire-cli/commands/mdisc
+- cmd/skywire-cli/commands/rewards
+- cmd/skywire-cli/commands/rpc
+- cmd/skywire-cli/commands/survey
+- cmd/skywire-cli/commands/tp
+- cmd/skywire-cli/commands/visor
+- cmd/skywire-cli/internal
+- cmd/transport-discovery/commands
+- cmd/transport-setup/commands
+- cmd/uptime-tracker/commands
+- example/http-server
+- internal/httpauth
+- internal/packetfilter
+- internal/skysocks
+- pkg/address-resolver/api
+- pkg/address-resolver/store
+- pkg/app
+- pkg/app/appcommon
+- pkg/app/appdisc
+- pkg/app/appevent
+- pkg/app/appnet
+- pkg/app/appserver
+- pkg/config-bootstrapper/api
+- pkg/dmsgc
+- pkg/network-monitor/api
+- pkg/routefinder/rfclient
+- pkg/router
+- pkg/routing
+- pkg/service-discovery/api
+- pkg/service-discovery/store
+- pkg/servicedisc
+- pkg/skywire-utilities/pkg/cipher
+- pkg/skywire-utilities/pkg/cmdutil
+- pkg/skywire-utilities/pkg/geo
+- pkg/skywire-utilities/pkg/httpauth
+- pkg/skywire-utilities/pkg/httputil
+- pkg/transport
+- pkg/transport-discovery/api
+- pkg/transport-discovery/store
+- pkg/transport-setup/api
+- pkg/transport-setup/config
+- pkg/transport/network
+- pkg/transport/network/addrresolver
+- pkg/transport/setup
+- pkg/transport/tpdclient
+- pkg/uptime-tracker/api
+- pkg/uptime-tracker/store
+- pkg/utclient
+- pkg/util/pathutil
+- pkg/visor
+- pkg/visor/dmsgtracker
+- pkg/visor/logserver
+- pkg/visor/usermanager
+- pkg/visor/visorconfig
+- pkg/visor/visorinit
+- scripts/mac_installer/desktop-deinstaller
+
+### pkg/skywire-utilities/pkg/metricsutil
+**Imported by (16):**
+- cmd/address-resolver/commands
+- cmd/route-finder/commands
+- cmd/service-discovery/commands
+- cmd/setup-node/commands
+- cmd/transport-discovery/commands
+- cmd/uptime-tracker/commands
+- internal/armetrics
+- internal/sdmetrics
+- internal/tpdiscmetrics
+- internal/utmetrics
+- pkg/address-resolver/api
+- pkg/route-finder/api
+- pkg/router/setupmetrics
+- pkg/service-discovery/api
+- pkg/transport-discovery/api
+- pkg/uptime-tracker/api
+
+### pkg/skywire-utilities/pkg/netutil
+**Imported by (17):**
+- cmd/apps/skychat/commands
+- cmd/apps/skysocks-client/commands
+- cmd/skywire-cli/commands/config
+- example/example-client-app
+- internal/vpn
+- pkg/address-resolver/api
+- pkg/address-resolver/store
+- pkg/app/appnet
+- pkg/servicedisc
+- pkg/skywire-utilities/pkg/geo
+- pkg/skywire-utilities/pkg/netutil
+- pkg/transport
+- pkg/transport/network
+- pkg/transport/network/addrresolver
+- pkg/uptime-tracker/api
+- pkg/utclient
+- pkg/visor
+
+### pkg/skywire-utilities/pkg/networkmonitor
+**Imported by (3):**
+- pkg/address-resolver/api
+- pkg/service-discovery/api
+- pkg/transport-discovery/api
+
+### pkg/skywire-utilities/pkg/skyenv
+**Imported by (0):** None
+
+### pkg/skywire-utilities/pkg/storeconfig
+**Imported by (12):**
+- cmd/address-resolver/commands
+- cmd/network-monitor/commands
+- cmd/route-finder/commands
+- cmd/service-discovery/commands
+- cmd/transport-discovery/commands
+- cmd/uptime-tracker/commands
+- pkg/address-resolver/store
+- pkg/network-monitor/store
+- pkg/service-discovery/api
+- pkg/skywire-utilities/pkg/httpauth
+- pkg/transport-discovery/api
+- pkg/uptime-tracker/api
+
+### pkg/skywire-utilities/pkg/tcpproxy
+**Imported by (7):**
+- cmd/address-resolver/commands
+- cmd/config-bootstrapper/commands
+- cmd/network-monitor/commands
+- cmd/route-finder/commands
+- cmd/service-discovery/commands
+- cmd/transport-discovery/commands
+- cmd/uptime-tracker/commands
+
+### pkg/transport
+**Imported by (11):**
+- cmd/skywire-cli/commands/tp
+- pkg/network-monitor/api
+- pkg/route-finder/store
+- pkg/router
+- pkg/transport
+- pkg/transport-discovery/api
+- pkg/transport-discovery/store
+- pkg/transport/setup
+- pkg/transport/tpdclient
+- pkg/visor
+- pkg/visor/visorconfig
+
+### pkg/transport-discovery/api
+**Imported by (1):**
+- cmd/transport-discovery/commands
+
+### pkg/transport-discovery/store
+**Imported by (5):**
+- cmd/route-finder/commands
+- cmd/transport-discovery/commands
+- pkg/route-finder/api
+- pkg/route-finder/store
+- pkg/transport-discovery/api
+
+### pkg/transport-setup/api
+**Imported by (1):**
+- cmd/transport-setup/commands
+
+### pkg/transport-setup/config
+**Imported by (2):**
+- cmd/transport-setup/commands
+- pkg/transport-setup/api
+
+### pkg/transport/deprecated
+**Imported by (0):** None
+
+### pkg/transport/network
+**Imported by (7):**
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/visor
+- pkg/address-resolver/api
+- pkg/router
+- pkg/transport
+- pkg/visor
+- pkg/visor/visorconfig
+
+### pkg/transport/network/addrresolver
+**Imported by (5):**
+- pkg/address-resolver/api
+- pkg/address-resolver/store
+- pkg/transport
+- pkg/transport/network
+- pkg/visor
+
+### pkg/transport/network/handshake
+**Imported by (2):**
+- pkg/address-resolver/api
+- pkg/transport/network
+
+### pkg/transport/network/porter
+**Imported by (1):**
+- pkg/transport/network
+
+### pkg/transport/network/stcp
+**Imported by (2):**
+- pkg/transport/network
+- pkg/visor
+
+### pkg/transport/setup
+**Imported by (2):**
+- pkg/transport-setup/api
+- pkg/visor
+
+### pkg/transport/tpdclient
+**Imported by (1):**
+- pkg/visor
+
+### pkg/transport/types
+**Imported by (13):**
+- cmd/skywire-cli/commands/tp
+- internal/tpdiscmetrics
+- pkg/address-resolver/api
+- pkg/address-resolver/store
+- pkg/route-finder/store
+- pkg/router
+- pkg/transport
+- pkg/transport-discovery/store
+- pkg/transport-setup/api
+- pkg/transport/network
+- pkg/transport/network/addrresolver
+- pkg/transport/setup
+- pkg/visor
+
+### pkg/uptime-tracker/api
+**Imported by (1):**
+- cmd/uptime-tracker/commands
+
+### pkg/uptime-tracker/store
+**Imported by (2):**
+- cmd/uptime-tracker/commands
+- pkg/uptime-tracker/api
+
+### pkg/utclient
+**Imported by (1):**
+- pkg/visor
+
+### pkg/util/cipherutil
+**Imported by (2):**
+- pkg/app
+- pkg/visor
+
+### pkg/util/deadline
+**Imported by (1):**
+- pkg/router
+
+### pkg/util/osutil
+**Imported by (3):**
+- internal/vpn
+- pkg/visor
+- scripts/mac_installer/desktop-deinstaller
+
+### pkg/util/pathutil
+**Imported by (3):**
+- pkg/app/launcher
+- pkg/visor
+- pkg/visor/visorconfig
+
+### pkg/util/rename
+**Imported by (1):**
+- pkg/util/pathutil
+
+### pkg/util/rpcutil
+**Imported by (2):**
+- pkg/app/appserver
+- pkg/visor
+
+### pkg/visor
+**Imported by (8):**
+- cmd/skywire-cli/commands/dmsgpty
+- cmd/skywire-cli/commands/rpc
+- cmd/skywire-cli/commands/tp
+- cmd/skywire-cli/commands/visor
+- cmd/skywire-cli/commands/vpn
+- cmd/skywire-visor
+- cmd/skywire/commands
+- example/http-server
+
+### pkg/visor/dmsgtracker
+**Imported by (1):**
+- pkg/visor
+
+### pkg/visor/logserver
+**Imported by (1):**
+- pkg/visor
+
+### pkg/visor/logstore
+**Imported by (1):**
+- pkg/visor
+
+### pkg/visor/rewardconfig
+**Imported by (1):**
+- pkg/visor
+
+### pkg/visor/usermanager
+**Imported by (1):**
+- pkg/visor
+
+### pkg/visor/visorconfig
+**Imported by (19):**
+- cmd/apps/skychat/commands
+- cmd/apps/skysocks-client/commands
+- cmd/apps/skysocks/commands
+- cmd/apps/vpn-client/commands
+- cmd/skywire-cli/commands/config
+- cmd/skywire-cli/commands/dmsgpty
+- cmd/skywire-cli/commands/proxy
+- cmd/skywire-cli/commands/reward
+- cmd/skywire-cli/commands/route
+- cmd/skywire-cli/commands/survey
+- cmd/skywire-cli/commands/visor
+- cmd/skywire-cli/commands/vpn
+- internal/config
+- internal/vpn
+- pkg/config-bootstrapper/api
+- pkg/visor
+- pkg/visor/dmsgtracker
+- pkg/visor/logserver
+- pkg/visor/usermanager
+
+### pkg/visor/visorinit
+**Imported by (1):**
+- pkg/visor
+
+### scripts/mac_installer/desktop-deinstaller
+**Imported by (0):** None
+
+### static/icons
+**Imported by (1):**
+- pkg/visor
+
+---
+
+## PART B: IMPORTS (What each compilation unit depends on)
+
+### .
+**Imports (4):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+- External:
+  - embed
+- Standard Library:
+  - encoding/json
+  - log
+
+### cmd/address-resolver
+**Imports (2):**
+- Internal:
+  - cmd/address-resolver/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/address-resolver/commands
+**Imports (24):**
+- Internal:
+  - internal/armetrics
+  - pkg/address-resolver/api
+  - pkg/address-resolver/store
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/httpauth
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/skywire-utilities/pkg/storeconfig
+  - pkg/skywire-utilities/pkg/tcpproxy
+- External:
+  - github.com/skycoin/dmsg/pkg/direct
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/dmsghttp
+  - github.com/spf13/cobra
+  - github.com/xtaci/kcp-go
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/apps/skychat
+**Imports (3):**
+- Internal:
+  - cmd/apps/skychat/commands
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/spf13/cobra
+
+### cmd/apps/skychat/commands
+**Imports (24):**
+- Internal:
+  - pkg/app
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/visor/visorconfig
+- External:
+  - embed
+  - github.com/james-barrow/golang-ipc
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - encoding/json
+  - fmt
+  - io/fs
+  - log
+  - net
+  - net/http
+  - os
+  - os/signal
+  - runtime
+  - sync
+  - time
+
+### cmd/apps/skysocks
+**Imports (3):**
+- Internal:
+  - cmd/apps/skysocks/commands
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/spf13/cobra
+
+### cmd/apps/skysocks-client
+**Imports (3):**
+- Internal:
+  - cmd/apps/skysocks-client/commands
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/spf13/cobra
+
+### cmd/apps/skysocks-client/commands
+**Imports (24):**
+- Internal:
+  - internal/skysocks
+  - pkg/app
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/visor/visorconfig
+- External:
+  - github.com/elazarl/goproxy
+  - github.com/james-barrow/golang-ipc
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - errors
+  - fmt
+  - log
+  - net
+  - net/http
+  - net/url
+  - os
+  - os/signal
+  - runtime
+  - time
+
+### cmd/apps/skysocks/commands
+**Imports (15):**
+- Internal:
+  - internal/skysocks
+  - pkg/app
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/visor/visorconfig
+- External:
+  - github.com/james-barrow/golang-ipc
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+  - os
+  - os/signal
+  - runtime
+
+### cmd/apps/vpn-client
+**Imports (3):**
+- Internal:
+  - cmd/apps/vpn-client/commands
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/spf13/cobra
+
+### cmd/apps/vpn-client/commands
+**Imports (19):**
+- Internal:
+  - internal/vpn
+  - pkg/app
+  - pkg/app/appevent
+  - pkg/app/appserver
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/visor/visorconfig
+- External:
+  - github.com/james-barrow/golang-ipc
+  - github.com/spf13/cobra
+- Standard Library:
+  - errors
+  - fmt
+  - log
+  - net
+  - os
+  - os/signal
+  - runtime
+  - syscall
+
+### cmd/apps/vpn-server
+**Imports (3):**
+- Internal:
+  - cmd/apps/vpn-server/commands
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/spf13/cobra
+
+### cmd/apps/vpn-server/commands
+**Imports (17):**
+- Internal:
+  - internal/vpn
+  - pkg/app
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/routing
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - errors
+  - fmt
+  - log
+  - os
+  - os/signal
+  - runtime
+  - syscall
+
+### cmd/conf
+**Imports (2):**
+- Internal:
+  - cmd/conf/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/conf/commands
+**Imports (4):**
+- Internal:
+  - .
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+
+### cmd/config-bootstrapper
+**Imports (2):**
+- Internal:
+  - cmd/config-bootstrapper/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/config-bootstrapper/commands
+**Imports (19):**
+- Internal:
+  - pkg/config-bootstrapper/api
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/tcpproxy
+- External:
+  - github.com/skycoin/dmsg/pkg/direct
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/dmsghttp
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - encoding/json
+  - fmt
+  - io
+  - log
+  - os
+  - path/filepath
+  - strings
+
+### cmd/gen
+**Imports (7):**
+- External:
+  - github.com/bitfield/script
+  - github.com/ivanpirog/coloredcobra
+  - github.com/spf13/cobra
+- Standard Library:
+  - encoding/json
+  - log
+  - regexp
+  - runtime
+
+### cmd/network-monitor
+**Imports (2):**
+- Internal:
+  - cmd/network-monitor/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/network-monitor/commands
+**Imports (16):**
+- Internal:
+  - pkg/network-monitor/api
+  - pkg/network-monitor/store
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/storeconfig
+  - pkg/skywire-utilities/pkg/tcpproxy
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+
+### cmd/route-finder
+**Imports (2):**
+- Internal:
+  - cmd/route-finder/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/route-finder/commands
+**Imports (23):**
+- Internal:
+  - internal/pg
+  - pkg/route-finder/api
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/skywire-utilities/pkg/storeconfig
+  - pkg/skywire-utilities/pkg/tcpproxy
+  - pkg/transport-discovery/store
+- External:
+  - github.com/skycoin/dmsg/pkg/direct
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/dmsghttp
+  - github.com/spf13/cobra
+  - gorm.io/gorm
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/service-discovery
+**Imports (2):**
+- Internal:
+  - cmd/service-discovery/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/service-discovery/commands
+**Imports (24):**
+- Internal:
+  - internal/pg
+  - internal/sdmetrics
+  - pkg/service-discovery/api
+  - pkg/service-discovery/store
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/httpauth
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/skywire-utilities/pkg/storeconfig
+  - pkg/skywire-utilities/pkg/tcpproxy
+- External:
+  - github.com/skycoin/dmsg/pkg/direct
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/dmsghttp
+  - github.com/spf13/cobra
+  - gorm.io/gorm
+- Standard Library:
+  - context
+  - fmt
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/setup-node
+**Imports (2):**
+- Internal:
+  - cmd/setup-node/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/setup-node/commands
+**Imports (26):**
+- Internal:
+  - .
+  - pkg/router
+  - pkg/router/setupmetrics
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+- External:
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/spf13/cobra
+- Standard Library:
+  - bufio
+  - context
+  - encoding/json
+  - fmt
+  - io
+  - log
+  - net/http
+  - net/rpc
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/skycoin-skywire
+**Imports (3):**
+- Internal:
+  - cmd/skywire/commands
+  - pkg/skywire-utilities/pkg/flags
+- External:
+  - github.com/skycoin/skycoin/cmd/skycoin-wallet/commands
+
+### cmd/skywire
+**Imports (2):**
+- Internal:
+  - cmd/skywire/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/skywire-cli
+**Imports (2):**
+- Internal:
+  - cmd/skywire-cli/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/skywire-cli/commands
+**Imports (28):**
+- Internal:
+  - cmd/skywire-cli/commands/completion
+  - cmd/skywire-cli/commands/config
+  - cmd/skywire-cli/commands/dmsgpty
+  - cmd/skywire-cli/commands/log
+  - cmd/skywire-cli/commands/mdisc
+  - cmd/skywire-cli/commands/proxy
+  - cmd/skywire-cli/commands/reward
+  - cmd/skywire-cli/commands/rewards
+  - cmd/skywire-cli/commands/route
+  - cmd/skywire-cli/commands/skyfwd
+  - cmd/skywire-cli/commands/skyrev
+  - cmd/skywire-cli/commands/survey
+  - cmd/skywire-cli/commands/tp
+  - cmd/skywire-cli/commands/ut
+  - cmd/skywire-cli/commands/visor
+  - cmd/skywire-cli/commands/vpn
+  - cmd/skywire-cli/internal
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+- External:
+  - github.com/bitfield/script
+  - github.com/pterm/pterm
+  - github.com/pterm/pterm/putils
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+
+### cmd/skywire-cli/commands/completion
+**Imports (2):**
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - os
+
+### cmd/skywire-cli/commands/config
+**Imports (34):**
+- Internal:
+  - .
+  - pkg/app/appserver
+  - pkg/dmsgc
+  - pkg/routing
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/transport/network
+  - pkg/visor/visorconfig
+- External:
+  - github.com/bitfield/script
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/skycoin/dmsg/pkg/dmsgpty
+  - github.com/skycoin/skycoin/src/cipher
+  - github.com/spf13/cobra
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - fmt
+  - io
+  - net
+  - net/http
+  - os
+  - os/exec
+  - os/user
+  - path/filepath
+  - runtime
+  - strconv
+  - strings
+  - testing
+  - time
+
+### cmd/skywire-cli/commands/dmsgpty
+**Imports (15):**
+- Internal:
+  - cmd/skywire-cli/internal
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/visor
+  - pkg/visor/visorconfig
+- External:
+  - github.com/skycoin/dmsg/pkg/dmsgpty
+  - github.com/spf13/cobra
+  - github.com/spf13/pflag
+  - github.com/toqueteos/webbrowser
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - net
+  - strconv
+  - time
+
+### cmd/skywire-cli/commands/log
+**Imports (26):**
+- Internal:
+  - .
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/bitfield/script
+  - github.com/hashicorp/go-version
+  - github.com/pterm/pterm
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/dmsgcurl
+  - github.com/skycoin/dmsg/pkg/dmsghttp
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - encoding/json
+  - errors
+  - flag
+  - fmt
+  - io
+  - log
+  - math/rand
+  - net/http
+  - os
+  - path/filepath
+  - strings
+  - sync
+  - sync/atomic
+  - time
+
+### cmd/skywire-cli/commands/mdisc
+**Imports (17):**
+- Internal:
+  - .
+  - cmd/skywire-cli/internal
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/bitfield/script
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/spf13/cobra
+  - github.com/spf13/pflag
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - fmt
+  - net/http
+  - os
+  - text/tabwriter
+  - time
+
+### cmd/skywire-cli/commands/proxy
+**Imports (22):**
+- Internal:
+  - .
+  - cmd/skywire-cli/commands/rpc
+  - cmd/skywire-cli/internal
+  - pkg/app/appserver
+  - pkg/routing
+  - pkg/servicedisc
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/visor/visorconfig
+- External:
+  - github.com/bitfield/script
+  - github.com/sirupsen/logrus
+  - github.com/spf13/cobra
+  - github.com/tidwall/pretty
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - fmt
+  - os
+  - strings
+  - text/tabwriter
+  - time
+
+### cmd/skywire-cli/commands/reward
+**Imports (17):**
+- Internal:
+  - .
+  - cmd/skywire-cli/commands/rpc
+  - cmd/skywire-cli/internal
+  - pkg/visor/visorconfig
+- External:
+  - github.com/MichaelMure/go-term-markdown
+  - github.com/skycoin/skycoin/src/cipher
+  - github.com/spf13/cobra
+  - github.com/spf13/pflag
+  - github.com/yuin/goldmark
+  - github.com/yuin/goldmark/extension
+  - github.com/yuin/goldmark/renderer/html
+  - golang.org/x/term
+- Standard Library:
+  - bytes
+  - fmt
+  - os
+  - regexp
+  - strings
+
+### cmd/skywire-cli/commands/rewards
+**Imports (40):**
+- Internal:
+  - .
+  - cmd/skywire-cli/commands/rewards/tgbot
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - embed
+  - github.com/bitfield/script
+  - github.com/fatih/color
+  - github.com/gin-gonic/gin
+  - github.com/robert-nix/ansihtml
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/skycoin/src/cipher
+  - github.com/spf13/cobra
+  - github.com/tidwall/pretty
+- Standard Library:
+  - bytes
+  - context
+  - encoding/base64
+  - encoding/json
+  - errors
+  - fmt
+  - html/template
+  - io
+  - io/fs
+  - net
+  - net/http
+  - os
+  - os/user
+  - path/filepath
+  - reflect
+  - regexp
+  - runtime
+  - sort
+  - strconv
+  - strings
+  - sync
+  - syscall
+  - text/template
+  - time
+
+### cmd/skywire-cli/commands/rewards/tgbot
+**Imports (9):**
+- External:
+  - github.com/bitfield/script
+  - github.com/spf13/cobra
+  - gopkg.in/telebot.v3
+- Standard Library:
+  - fmt
+  - log
+  - os
+  - strconv
+  - strings
+  - time
+
+### cmd/skywire-cli/commands/rewards/ui
+**Imports (20):**
+- Internal:
+  - .
+  - pkg/skywire-utilities/pkg/calvin
+- External:
+  - cogentcore.org/core/core
+  - cogentcore.org/core/events
+  - cogentcore.org/core/htmlcore
+  - cogentcore.org/core/icons
+  - cogentcore.org/core/styles
+  - cogentcore.org/core/text/fonts
+  - cogentcore.org/core/text/rich
+  - cogentcore.org/core/text/text
+  - cogentcore.org/core/tree
+  - embed
+- Standard Library:
+  - encoding/json
+  - fmt
+  - io
+  - log
+  - net/http
+  - runtime
+  - strings
+  - time
+
+### cmd/skywire-cli/commands/route
+**Imports (23):**
+- Internal:
+  - .
+  - cmd/skywire-cli/commands/rpc
+  - cmd/skywire-cli/internal
+  - pkg/routefinder/rfclient
+  - pkg/router
+  - pkg/routing
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/visor/visorconfig
+- External:
+  - github.com/google/uuid
+  - github.com/spf13/cobra
+  - github.com/spf13/pflag
+  - golang.org/x/net/context
+- Standard Library:
+  - bytes
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net/http
+  - os
+  - strconv
+  - text/tabwriter
+  - time
+
+### cmd/skywire-cli/commands/rpc
+**Imports (7):**
+- Internal:
+  - cmd/skywire-cli/internal
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/visor
+- External:
+  - github.com/spf13/pflag
+- Standard Library:
+  - fmt
+  - net
+  - time
+
+### cmd/skywire-cli/commands/skyfwd
+**Imports (8):**
+- Internal:
+  - cmd/skywire-cli/commands/rpc
+  - cmd/skywire-cli/internal
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - bytes
+  - fmt
+  - os
+  - strconv
+  - text/tabwriter
+
+### cmd/skywire-cli/commands/skyrev
+**Imports (10):**
+- Internal:
+  - cmd/skywire-cli/commands/rpc
+  - cmd/skywire-cli/internal
+  - pkg/skywire-utilities/pkg/cipher
+- External:
+  - github.com/google/uuid
+  - github.com/spf13/cobra
+- Standard Library:
+  - bytes
+  - fmt
+  - os
+  - strconv
+  - text/tabwriter
+
+### cmd/skywire-cli/commands/survey
+**Imports (14):**
+- Internal:
+  - .
+  - cmd/skywire-cli/internal
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/visor/visorconfig
+- External:
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - encoding/json
+  - fmt
+  - net/http
+  - os
+
+### cmd/skywire-cli/commands/tp
+**Imports (24):**
+- Internal:
+  - .
+  - cmd/skywire-cli/commands/rpc
+  - cmd/skywire-cli/internal
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport
+  - pkg/transport/types
+  - pkg/visor
+- External:
+  - github.com/bitfield/script
+  - github.com/google/uuid
+  - github.com/pterm/pterm
+  - github.com/pterm/pterm/putils
+  - github.com/spf13/cobra
+  - github.com/spf13/pflag
+  - github.com/tidwall/pretty
+- Standard Library:
+  - bytes
+  - errors
+  - fmt
+  - os
+  - regexp
+  - sort
+  - strings
+  - text/tabwriter
+  - time
+
+### cmd/skywire-cli/commands/ut
+**Imports (6):**
+- Internal:
+  - .
+  - cmd/skywire-cli/internal
+- External:
+  - github.com/bitfield/script
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - os
+
+### cmd/skywire-cli/commands/visor
+**Imports (48):**
+- Internal:
+  - cmd/skywire-cli/commands/rpc
+  - cmd/skywire-cli/internal
+  - pkg/app/appcommon
+  - pkg/app/appserver
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport/network
+  - pkg/visor
+  - pkg/visor/visorconfig
+- External:
+  - embed
+  - github.com/VictoriaMetrics/metrics
+  - github.com/bitfield/script
+  - github.com/cloudfoundry-attic/jibber_jabber
+  - github.com/droundy/goopt
+  - github.com/gizak/termui/v3
+  - github.com/shibukawa/configdir
+  - github.com/sirupsen/logrus
+  - github.com/spf13/cobra
+  - github.com/spf13/pflag
+  - github.com/toqueteos/webbrowser
+  - github.com/xxxserxxx/gotop/v4
+  - github.com/xxxserxxx/gotop/v4/colorschemes
+  - github.com/xxxserxxx/gotop/v4/devices
+  - github.com/xxxserxxx/gotop/v4/layout
+  - github.com/xxxserxxx/gotop/v4/logging
+  - github.com/xxxserxxx/gotop/v4/widgets
+  - github.com/xxxserxxx/lingo/v2
+  - golang.org/x/sync/errgroup
+- Standard Library:
+  - bufio
+  - bytes
+  - context
+  - encoding/json
+  - flag
+  - fmt
+  - io
+  - io/fs
+  - log
+  - net/http
+  - os
+  - os/signal
+  - os/user
+  - path/filepath
+  - sort
+  - strconv
+  - strings
+  - syscall
+  - text/tabwriter
+  - time
+
+### cmd/skywire-cli/commands/vpn
+**Imports (24):**
+- Internal:
+  - .
+  - cmd/skywire-cli/commands/rpc
+  - cmd/skywire-cli/commands/visor
+  - cmd/skywire-cli/internal
+  - pkg/app/appserver
+  - pkg/servicedisc
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/visor
+  - pkg/visor/visorconfig
+- External:
+  - github.com/bitfield/script
+  - github.com/sirupsen/logrus
+  - github.com/spf13/cobra
+  - github.com/tidwall/pretty
+  - github.com/toqueteos/webbrowser
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - fmt
+  - os
+  - strings
+  - text/tabwriter
+  - time
+
+### cmd/skywire-cli/internal
+**Imports (11):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/bitfield/script
+  - github.com/google/uuid
+  - github.com/spf13/pflag
+- Standard Library:
+  - bytes
+  - encoding/json
+  - fmt
+  - net/http
+  - os
+  - time
+
+### cmd/skywire-services
+**Imports (2):**
+- Internal:
+  - cmd/skywire-services/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/skywire-services/commands
+**Imports (18):**
+- Internal:
+  - cmd/address-resolver/commands
+  - cmd/config-bootstrapper/commands
+  - cmd/network-monitor/commands
+  - cmd/route-finder/commands
+  - cmd/service-discovery/commands
+  - cmd/setup-node/commands
+  - cmd/sw-env/commands
+  - cmd/transport-discovery/commands
+  - cmd/transport-setup/commands
+  - cmd/uptime-tracker/commands
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+
+### cmd/skywire-visor
+**Imports (2):**
+- Internal:
+  - pkg/skywire-utilities/pkg/flags
+  - pkg/visor
+
+### cmd/skywire/commands
+**Imports (23):**
+- Internal:
+  - cmd/apps/skychat/commands
+  - cmd/apps/skysocks-client/commands
+  - cmd/apps/skysocks/commands
+  - cmd/apps/vpn-client/commands
+  - cmd/apps/vpn-server/commands
+  - cmd/conf/commands
+  - cmd/service-discovery/commands
+  - cmd/setup-node/commands
+  - cmd/skywire-cli/commands
+  - cmd/skywire-services/commands
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/visor
+- External:
+  - github.com/bitfield/script
+  - github.com/pterm/pterm
+  - github.com/pterm/pterm/putils
+  - github.com/skycoin/dmsg/cmd/dmsg/commands
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+
+### cmd/sw-env
+**Imports (2):**
+- Internal:
+  - cmd/sw-env/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/sw-env/commands
+**Imports (9):**
+- Internal:
+  - internal/config
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+
+### cmd/transport-discovery
+**Imports (2):**
+- Internal:
+  - cmd/transport-discovery/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/transport-discovery/commands
+**Imports (27):**
+- Internal:
+  - .
+  - internal/pg
+  - internal/tpdiscmetrics
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/httpauth
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/skywire-utilities/pkg/storeconfig
+  - pkg/skywire-utilities/pkg/tcpproxy
+  - pkg/transport-discovery/api
+  - pkg/transport-discovery/store
+- External:
+  - github.com/skycoin/dmsg/pkg/direct
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/dmsghttp
+  - github.com/spf13/cobra
+  - gorm.io/gorm
+- Standard Library:
+  - context
+  - encoding/json
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/transport-setup
+**Imports (2):**
+- Internal:
+  - cmd/transport-setup/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/transport-setup/commands
+**Imports (18):**
+- Internal:
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport-setup/api
+  - pkg/transport-setup/config
+- External:
+  - github.com/bitfield/script
+  - github.com/google/uuid
+  - github.com/spf13/cobra
+  - github.com/tidwall/pretty
+- Standard Library:
+  - encoding/json
+  - fmt
+  - log
+  - net/http
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/uptime-tracker
+**Imports (2):**
+- Internal:
+  - cmd/uptime-tracker/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/uptime-tracker/commands
+**Imports (26):**
+- Internal:
+  - internal/pg
+  - internal/utmetrics
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/calvin
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/geo
+  - pkg/skywire-utilities/pkg/httpauth
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/skywire-utilities/pkg/storeconfig
+  - pkg/skywire-utilities/pkg/tcpproxy
+  - pkg/uptime-tracker/api
+  - pkg/uptime-tracker/store
+- External:
+  - github.com/skycoin/dmsg/pkg/direct
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/dmsghttp
+  - github.com/spf13/cobra
+  - gorm.io/gorm
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/version
+**Imports (2):**
+- Internal:
+  - cmd/version/commands
+  - pkg/skywire-utilities/pkg/flags
+
+### cmd/version/commands
+**Imports (7):**
+- Internal:
+  - pkg/skywire-utilities/pkg/buildinfo
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+
+### example/example-client-app
+**Imports (17):**
+- Internal:
+  - pkg/app
+  - pkg/app/appcommon
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/netutil
+- External:
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - context
+  - encoding/json
+  - flag
+  - fmt
+  - net
+  - os
+  - os/signal
+  - syscall
+  - time
+
+### example/example-server-app
+**Imports (11):**
+- Internal:
+  - pkg/app
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/skywire-utilities/pkg/buildinfo
+- Standard Library:
+  - encoding/json
+  - flag
+  - fmt
+  - net
+  - os
+  - os/signal
+  - syscall
+
+### example/http-server
+**Imports (10):**
+- Internal:
+  - example/http-server/html
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/visor
+- Standard Library:
+  - fmt
+  - net
+  - net/http
+  - os
+  - os/signal
+  - syscall
+  - time
+
+### example/http-server/html
+**Imports (3):**
+- External:
+  - embed
+- Standard Library:
+  - io
+  - text/template
+
+### internal/armetrics
+**Imports (1):**
+- Internal:
+  - pkg/skywire-utilities/pkg/metricsutil
+
+### internal/config
+**Imports (12):**
+- Internal:
+  - pkg/app/appserver
+  - pkg/dmsgc
+  - pkg/router
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/visor/visorconfig
+- External:
+  - github.com/skycoin/dmsg/pkg/dmsgserver
+- Standard Library:
+  - bytes
+  - encoding/base64
+  - encoding/json
+  - fmt
+  - log
+  - text/template
+
+### internal/httpauth
+**Imports (19):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net/http
+  - net/http/httptest
+  - net/url
+  - os
+  - strconv
+  - strings
+  - sync
+  - sync/atomic
+  - testing
+
+### internal/nm
+**Imports (1):**
+- Standard Library:
+  - time
+
+### internal/packetfilter
+**Imports (5):**
+- Internal:
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/xtaci/kcp-go
+- Standard Library:
+  - encoding/binary
+  - net
+  - sync/atomic
+
+### internal/pg
+**Imports (2):**
+- External:
+  - gorm.io/driver/postgres
+  - gorm.io/gorm
+
+### internal/sdmetrics
+**Imports (1):**
+- Internal:
+  - pkg/skywire-utilities/pkg/metricsutil
+
+### internal/skysocks
+**Imports (22):**
+- Internal:
+  - pkg/app
+  - pkg/app/appserver
+  - pkg/router
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/armon/go-socks5
+  - github.com/hashicorp/yamux
+  - github.com/james-barrow/golang-ipc
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+  - golang.org/x/net/proxy
+- Standard Library:
+  - fmt
+  - io
+  - net
+  - net/http
+  - net/http/httptest
+  - os
+  - sync
+  - sync/atomic
+  - testing
+  - time
+
+### internal/testhelpers
+**Imports (1):**
+- Standard Library:
+  - errors
+
+### internal/tpdiscmetrics
+**Imports (3):**
+- Internal:
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/transport/types
+- Standard Library:
+  - sync
+
+### internal/utmetrics
+**Imports (1):**
+- Internal:
+  - pkg/skywire-utilities/pkg/metricsutil
+
+### internal/vpn
+**Imports (32):**
+- Internal:
+  - pkg/app
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/routefinder/rfclient
+  - pkg/router
+  - pkg/routing
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/util/osutil
+  - pkg/visor/visorconfig
+- External:
+  - github.com/james-barrow/golang-ipc
+  - github.com/skycoin/dmsg/pkg/dmsgcurl
+  - github.com/songgao/water
+  - github.com/syndtr/gocapability/capability
+  - golang.org/x/sys/unix
+  - golang.zx2c4.com/wireguard/tun
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net
+  - os
+  - regexp
+  - runtime
+  - strconv
+  - strings
+  - sync
+  - sync/atomic
+  - time
+
+### pkg/address-resolver/api
+**Imports (27):**
+- Internal:
+  - internal/armetrics
+  - pkg/address-resolver/store
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httpauth
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/skywire-utilities/pkg/networkmonitor
+  - pkg/transport/network
+  - pkg/transport/network/addrresolver
+  - pkg/transport/network/handshake
+  - pkg/transport/types
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/dmsg
+- Standard Library:
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net
+  - net/http
+  - sync
+  - time
+
+### pkg/address-resolver/store
+**Imports (17):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/skywire-utilities/pkg/storeconfig
+  - pkg/transport/network/addrresolver
+  - pkg/transport/types
+- External:
+  - github.com/go-redis/redis
+  - github.com/go-redis/redis/v8
+  - github.com/stretchr/testify/require
+  - github.com/stretchr/testify/suite
+- Standard Library:
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - strings
+  - sync
+  - testing
+
+### pkg/app
+**Imports (23):**
+- Internal:
+  - internal/testhelpers
+  - pkg/app/appcommon
+  - pkg/app/appevent
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/app/idmanager
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/util/cipherutil
+- External:
+  - github.com/sirupsen/logrus
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+- Standard Library:
+  - errors
+  - fmt
+  - io
+  - net
+  - net/rpc
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/app/appcommon
+**Imports (23):**
+- Internal:
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/google/uuid
+  - github.com/sirupsen/logrus
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+  - go.etcd.io/bbolt
+  - go.etcd.io/bbolt/errors
+- Standard Library:
+  - bytes
+  - encoding/binary
+  - encoding/hex
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net
+  - os
+  - regexp
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/app/appdisc
+**Imports (11):**
+- Internal:
+  - .
+  - pkg/app/appcommon
+  - pkg/servicedisc
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - context
+  - encoding/json
+  - net/http
+  - sync
+
+### pkg/app/appevent
+**Imports (16):**
+- Internal:
+  - pkg/app/appcommon
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/sirupsen/logrus
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net
+  - net/rpc
+  - sync
+  - testing
+  - time
+
+### pkg/app/appnet
+**Imports (23):**
+- Internal:
+  - pkg/router
+  - pkg/routing
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+- External:
+  - github.com/google/uuid
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bufio
+  - context
+  - errors
+  - fmt
+  - io
+  - net
+  - net/http
+  - strings
+  - sync
+  - sync/atomic
+  - testing
+  - time
+
+### pkg/app/appserver
+**Imports (35):**
+- Internal:
+  - internal/testhelpers
+  - pkg/app/appcommon
+  - pkg/app/appdisc
+  - pkg/app/appevent
+  - pkg/app/appnet
+  - pkg/app/idmanager
+  - pkg/routing
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/util/rpcutil
+- External:
+  - github.com/james-barrow/golang-ipc
+  - github.com/orandin/lumberjackrus
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+- Standard Library:
+  - bufio
+  - context
+  - errors
+  - fmt
+  - io
+  - math
+  - net
+  - net/rpc
+  - os
+  - os/exec
+  - runtime
+  - sort
+  - strings
+  - sync
+  - sync/atomic
+  - testing
+  - time
+
+### pkg/app/idmanager
+**Imports (11):**
+- Internal:
+  - pkg/app/appcommon
+- External:
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - errors
+  - fmt
+  - io
+  - math
+  - net
+  - sort
+  - strings
+  - sync
+  - testing
+
+### pkg/app/launcher
+**Imports (18):**
+- Internal:
+  - pkg/app/appcommon
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/router
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/util/pathutil
+- External:
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/dmsg
+- Standard Library:
+  - bufio
+  - errors
+  - fmt
+  - os
+  - path/filepath
+  - runtime
+  - strconv
+  - strings
+  - sync
+  - syscall
+
+### pkg/config-bootstrapper/api
+**Imports (16):**
+- Internal:
+  - .
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/visor/visorconfig
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - encoding/json
+  - fmt
+  - io
+  - net/http
+  - strings
+  - sync
+  - time
+
+### pkg/dmsgc
+**Imports (7):**
+- Internal:
+  - pkg/app/appevent
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/skycoin/dmsg/pkg/dmsg
+- Standard Library:
+  - context
+  - net/http
+
+### pkg/network-monitor/api
+**Imports (20):**
+- Internal:
+  - internal/nm
+  - pkg/network-monitor/store
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - fmt
+  - io
+  - net/http
+  - net/url
+  - strings
+  - sync
+  - time
+
+### pkg/network-monitor/store
+**Imports (4):**
+- Internal:
+  - internal/nm
+  - pkg/skywire-utilities/pkg/storeconfig
+- Standard Library:
+  - errors
+  - sync
+
+### pkg/route-finder/api
+**Imports (15):**
+- Internal:
+  - pkg/route-finder/store
+  - pkg/routefinder/rfclient
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/transport-discovery/store
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - encoding/json
+  - io
+  - net/http
+  - time
+
+### pkg/route-finder/store
+**Imports (13):**
+- Internal:
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/transport
+  - pkg/transport-discovery/store
+  - pkg/transport/types
+- External:
+  - github.com/google/uuid
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - context
+  - errors
+  - fmt
+  - sort
+  - testing
+  - time
+
+### pkg/routefinder/rfclient
+**Imports (11):**
+- Internal:
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/stretchr/testify/mock
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - errors
+  - net/http
+  - net/url
+  - strings
+  - time
+
+### pkg/router
+**Imports (40):**
+- Internal:
+  - internal/testhelpers
+  - pkg/dmsgc
+  - pkg/routefinder/rfclient
+  - pkg/router/setupmetrics
+  - pkg/routing
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport
+  - pkg/transport/network
+  - pkg/transport/types
+  - pkg/util/deadline
+- External:
+  - github.com/google/uuid
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/ioutil
+  - github.com/skycoin/dmsg/pkg/noise
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+- Standard Library:
+  - bytes
+  - context
+  - encoding/binary
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - math/rand
+  - net
+  - net/http
+  - net/rpc
+  - os
+  - strconv
+  - strings
+  - sync
+  - sync/atomic
+  - testing
+  - time
+
+### pkg/router/setupmetrics
+**Imports (4):**
+- Internal:
+  - pkg/routing
+  - pkg/skywire-utilities/pkg/metricsutil
+- External:
+  - github.com/VictoriaMetrics/metrics
+- Standard Library:
+  - time
+
+### pkg/routing
+**Imports (17):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/google/uuid
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - encoding/binary
+  - encoding/json
+  - errors
+  - fmt
+  - log
+  - math
+  - os
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/service-discovery/api
+**Imports (37):**
+- Internal:
+  - internal/sdmetrics
+  - pkg/service-discovery/store
+  - pkg/servicedisc
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/geo
+  - pkg/skywire-utilities/pkg/httpauth
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/skywire-utilities/pkg/networkmonitor
+  - pkg/skywire-utilities/pkg/storeconfig
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/go-chi/cors
+  - github.com/go-redis/redis
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skycoin/src/util/logging
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+  - gorm.io/driver/postgres
+  - gorm.io/gorm
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - math/rand
+  - net
+  - net/http
+  - net/http/httptest
+  - os
+  - strconv
+  - testing
+  - time
+
+### pkg/service-discovery/store
+**Imports (13):**
+- Internal:
+  - pkg/servicedisc
+  - pkg/skywire-utilities/pkg/geo
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/chen3feng/safecast
+  - github.com/lib/pq
+  - github.com/sirupsen/logrus
+  - github.com/stretchr/testify/mock
+  - gorm.io/gorm
+- Standard Library:
+  - context
+  - fmt
+  - io
+  - net/http
+  - sync
+
+### pkg/servicedisc
+**Imports (23):**
+- Internal:
+  - internal/httpauth
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/geo
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+- External:
+  - github.com/lib/pq
+  - github.com/sirupsen/logrus
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - context
+  - database/sql/driver
+  - encoding/binary
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net/http
+  - net/url
+  - strconv
+  - sync
+  - testing
+  - time
+
+### pkg/skyenv
+**Imports (1):**
+- Standard Library:
+  - time
+
+### pkg/skywire-utilities/pkg/buildinfo
+**Imports (6):**
+- Standard Library:
+  - encoding/json
+  - fmt
+  - io
+  - regexp
+  - runtime/debug
+  - strings
+
+### pkg/skywire-utilities/pkg/calvin
+**Imports (1):**
+- Standard Library:
+  - strings
+
+### pkg/skywire-utilities/pkg/calvin/cmd/calvin
+**Imports (3):**
+- Internal:
+  - pkg/skywire-utilities/pkg/calvin/cmd/calvin/commands
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/spf13/cobra
+
+### pkg/skywire-utilities/pkg/calvin/cmd/calvin/commands
+**Imports (6):**
+- Internal:
+  - pkg/skywire-utilities/pkg/calvin
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - bufio
+  - fmt
+  - os
+  - strings
+
+### pkg/skywire-utilities/pkg/cipher
+**Imports (11):**
+- Internal:
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/skycoin/skycoin/src/cipher
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - fmt
+  - log
+  - math/big
+  - os
+  - strings
+  - testing
+
+### pkg/skywire-utilities/pkg/cmdutil
+**Imports (21):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/json-iterator/go
+  - github.com/sirupsen/logrus
+  - github.com/sirupsen/logrus/hooks/syslog
+  - github.com/spf13/cobra
+  - github.com/stretchr/testify/require
+  - golang.org/x/sys/unix
+  - golang.org/x/sys/windows
+- Standard Library:
+  - context
+  - errors
+  - fmt
+  - io
+  - log/syslog
+  - math/rand
+  - os
+  - os/signal
+  - path
+  - strings
+  - testing
+  - unicode
+
+### pkg/skywire-utilities/pkg/flags
+**Imports (2):**
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/spf13/cobra
+
+### pkg/skywire-utilities/pkg/geo
+**Imports (9):**
+- Internal:
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+- External:
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - encoding/json
+  - errors
+  - fmt
+  - math
+  - net
+  - net/http
+
+### pkg/skywire-utilities/pkg/httpauth
+**Imports (24):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/storeconfig
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-redis/redis/v8
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bufio
+  - bytes
+  - context
+  - errors
+  - fmt
+  - io
+  - log
+  - net
+  - net/http
+  - net/http/httptest
+  - net/url
+  - strconv
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/skywire-utilities/pkg/httputil
+**Imports (13):**
+- Internal:
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/json-iterator/go
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - bytes
+  - context
+  - fmt
+  - io
+  - net/http
+  - strconv
+  - strings
+  - time
+
+### pkg/skywire-utilities/pkg/logging
+**Imports (12):**
+- External:
+  - github.com/mgutz/ansi
+  - github.com/sirupsen/logrus
+  - golang.org/x/term
+- Standard Library:
+  - bytes
+  - errors
+  - fmt
+  - io
+  - os
+  - sort
+  - strings
+  - sync
+  - time
+
+### pkg/skywire-utilities/pkg/metricsutil
+**Imports (8):**
+- External:
+  - github.com/VictoriaMetrics/metrics
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - fmt
+  - net/http
+  - sync/atomic
+  - time
+
+### pkg/skywire-utilities/pkg/netutil
+**Imports (16):**
+- Internal:
+  - pkg/skywire-utilities/pkg/netutil
+- External:
+  - github.com/sirupsen/logrus
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - context
+  - errors
+  - fmt
+  - io
+  - net
+  - net/http
+  - os/exec
+  - regexp
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/skywire-utilities/pkg/networkmonitor
+**Imports (0):**
+
+### pkg/skywire-utilities/pkg/skyenv
+**Imports (0):**
+
+### pkg/skywire-utilities/pkg/storeconfig
+**Imports (1):**
+- Standard Library:
+  - os
+
+### pkg/skywire-utilities/pkg/tcpproxy
+**Imports (3):**
+- External:
+  - github.com/pires/go-proxyproto
+- Standard Library:
+  - net
+  - net/http
+
+### pkg/transport
+**Imports (35):**
+- Internal:
+  - pkg/app/appevent
+  - pkg/routing
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/transport
+  - pkg/transport/network
+  - pkg/transport/network/addrresolver
+  - pkg/transport/types
+- External:
+  - github.com/gocarina/gocsv
+  - github.com/google/uuid
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - context
+  - crypto/sha256
+  - encoding/gob
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - log
+  - math/big
+  - net
+  - net/http
+  - os
+  - path/filepath
+  - strings
+  - sync
+  - sync/atomic
+  - testing
+  - time
+
+### pkg/transport-discovery/api
+**Imports (28):**
+- Internal:
+  - internal/tpdiscmetrics
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httpauth
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/skywire-utilities/pkg/networkmonitor
+  - pkg/skywire-utilities/pkg/storeconfig
+  - pkg/transport
+  - pkg/transport-discovery/store
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/google/uuid
+  - github.com/sirupsen/logrus
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+  - gorm.io/gorm
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net/http
+  - net/http/httptest
+  - testing
+  - time
+
+### pkg/transport-discovery/store
+**Imports (14):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport
+  - pkg/transport/types
+- External:
+  - github.com/google/uuid
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+  - github.com/stretchr/testify/suite
+  - gorm.io/gorm
+- Standard Library:
+  - context
+  - errors
+  - sync
+  - testing
+  - time
+
+### pkg/transport-setup/api
+**Imports (21):**
+- Internal:
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport-setup/config
+  - pkg/transport/setup
+  - pkg/transport/types
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/go-playground/validator/v10
+  - github.com/google/uuid
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/skycoin/dmsg/pkg/dmsg
+- Standard Library:
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net/http
+  - net/rpc
+
+### pkg/transport-setup/config
+**Imports (6):**
+- Internal:
+  - pkg/dmsgc
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+- Standard Library:
+  - encoding/json
+  - io
+  - os
+
+### pkg/transport/deprecated
+**Imports (1):**
+- External:
+  - github.com/google/uuid
+
+### pkg/transport/network
+**Imports (24):**
+- Internal:
+  - internal/packetfilter
+  - pkg/app/appevent
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/transport/network/addrresolver
+  - pkg/transport/network/handshake
+  - pkg/transport/network/porter
+  - pkg/transport/network/stcp
+  - pkg/transport/types
+- External:
+  - github.com/AudriusButkevicius/pfilter
+  - github.com/ccding/go-stun/stun
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/noise
+  - github.com/stretchr/testify/mock
+  - github.com/xtaci/kcp-go
+- Standard Library:
+  - context
+  - errors
+  - fmt
+  - io
+  - net
+  - strings
+  - sync
+  - time
+
+### pkg/transport/network/addrresolver
+**Imports (26):**
+- Internal:
+  - internal/httpauth
+  - internal/packetfilter
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/transport/types
+- External:
+  - github.com/AudriusButkevicius/pfilter
+  - github.com/go-chi/chi/v5
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+  - github.com/xtaci/kcp-go
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net
+  - net/http
+  - net/http/httptest
+  - net/url
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/transport/network/handshake
+**Imports (12):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+- External:
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - net
+  - testing
+  - time
+
+### pkg/transport/network/porter
+**Imports (2):**
+- Standard Library:
+  - context
+  - sync
+
+### pkg/transport/network/stcp
+**Imports (7):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+- Standard Library:
+  - bufio
+  - errors
+  - fmt
+  - os
+  - path/filepath
+  - strings
+
+### pkg/transport/setup
+**Imports (11):**
+- Internal:
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport
+  - pkg/transport/types
+- External:
+  - github.com/google/uuid
+  - github.com/skycoin/dmsg/pkg/dmsg
+- Standard Library:
+  - context
+  - errors
+  - fmt
+  - net/rpc
+
+### pkg/transport/tpdclient
+**Imports (18):**
+- Internal:
+  - internal/httpauth
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/google/uuid
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - fmt
+  - net/http
+  - net/http/httptest
+  - os
+  - sync
+  - testing
+
+### pkg/transport/types
+**Imports (0):**
+
+### pkg/uptime-tracker/api
+**Imports (34):**
+- Internal:
+  - internal/utmetrics
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/geo
+  - pkg/skywire-utilities/pkg/httpauth
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/metricsutil
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/skywire-utilities/pkg/storeconfig
+  - pkg/uptime-tracker/store
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/go-chi/httprate
+  - github.com/go-echarts/go-echarts/v2/charts
+  - github.com/go-echarts/go-echarts/v2/opts
+  - github.com/sirupsen/logrus
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - errors
+  - fmt
+  - net
+  - net/http
+  - net/http/httptest
+  - net/url
+  - os
+  - strconv
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/uptime-tracker/store
+**Imports (15):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/geo
+  - pkg/skywire-utilities/pkg/logging
+- External:
+  - github.com/stretchr/testify/require
+  - gorm.io/gorm
+- Standard Library:
+  - errors
+  - fmt
+  - math
+  - net
+  - sort
+  - strconv
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/utclient
+**Imports (18):**
+- Internal:
+  - internal/httpauth
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - context
+  - encoding/json
+  - fmt
+  - io
+  - net/http
+  - net/http/httptest
+  - sync
+  - testing
+  - time
+
+### pkg/util/cipherutil
+**Imports (1):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+
+### pkg/util/deadline
+**Imports (2):**
+- Standard Library:
+  - sync
+  - time
+
+### pkg/util/osutil
+**Imports (10):**
+- Standard Library:
+  - bytes
+  - errors
+  - fmt
+  - io
+  - io/fs
+  - os
+  - os/exec
+  - runtime
+  - strings
+  - syscall
+
+### pkg/util/pathutil
+**Imports (7):**
+- Internal:
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/util/rename
+- Standard Library:
+  - encoding/json
+  - fmt
+  - os
+  - path/filepath
+  - runtime
+
+### pkg/util/rename
+**Imports (5):**
+- Standard Library:
+  - fmt
+  - io
+  - log
+  - os
+  - strings
+
+### pkg/util/rpcutil
+**Imports (2):**
+- External:
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - time
+
+### pkg/visor
+**Imports (97):**
+- Internal:
+  - .
+  - internal/vpn
+  - pkg/app/appcommon
+  - pkg/app/appdisc
+  - pkg/app/appevent
+  - pkg/app/appnet
+  - pkg/app/appserver
+  - pkg/app/launcher
+  - pkg/dmsgc
+  - pkg/routefinder/rfclient
+  - pkg/router
+  - pkg/routing
+  - pkg/servicedisc
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/cmdutil
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/skywire-utilities/pkg/netutil
+  - pkg/transport
+  - pkg/transport/network
+  - pkg/transport/network/addrresolver
+  - pkg/transport/network/stcp
+  - pkg/transport/setup
+  - pkg/transport/tpdclient
+  - pkg/transport/types
+  - pkg/utclient
+  - pkg/util/cipherutil
+  - pkg/util/osutil
+  - pkg/util/pathutil
+  - pkg/util/rpcutil
+  - pkg/visor/dmsgtracker
+  - pkg/visor/logserver
+  - pkg/visor/logstore
+  - pkg/visor/rewardconfig
+  - pkg/visor/usermanager
+  - pkg/visor/visorconfig
+  - pkg/visor/visorinit
+  - static/icons
+- External:
+  - embed
+  - github.com/bitfield/script
+  - github.com/ccding/go-stun/stun
+  - github.com/gen2brain/dlgs
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/google/uuid
+  - github.com/orandin/lumberjackrus
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/dmsg/pkg/direct
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/dmsgctrl
+  - github.com/skycoin/dmsg/pkg/dmsgcurl
+  - github.com/skycoin/dmsg/pkg/dmsghttp
+  - github.com/skycoin/dmsg/pkg/dmsgpty
+  - github.com/skycoin/skycoin/src/cipher
+  - github.com/skycoin/systray
+  - github.com/spf13/cobra
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+  - github.com/toqueteos/webbrowser
+- Standard Library:
+  - bufio
+  - bytes
+  - context
+  - crypto/hmac
+  - crypto/rand
+  - crypto/sha256
+  - encoding/base64
+  - encoding/binary
+  - encoding/hex
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - io/fs
+  - math/big
+  - math/rand
+  - mime
+  - net
+  - net/http
+  - net/http/cookiejar
+  - net/http/httptest
+  - net/http/pprof
+  - net/rpc
+  - os
+  - os/exec
+  - os/user
+  - path/filepath
+  - runtime
+  - strconv
+  - strings
+  - sync
+  - sync/atomic
+  - testing
+  - time
+
+### pkg/visor/dmsgtracker
+**Imports (16):**
+- Internal:
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/visor/visorconfig
+- External:
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/dmsgctrl
+  - github.com/skycoin/dmsg/pkg/dmsgtest
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - context
+  - io
+  - runtime
+  - sort
+  - sync
+  - testing
+  - time
+
+### pkg/visor/logserver
+**Imports (13):**
+- Internal:
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/visor/visorconfig
+- External:
+  - github.com/gin-gonic/gin
+- Standard Library:
+  - encoding/json
+  - fmt
+  - net
+  - net/http
+  - os
+  - path/filepath
+  - time
+
+### pkg/visor/logstore
+**Imports (2):**
+- External:
+  - github.com/sirupsen/logrus
+- Standard Library:
+  - sync
+
+### pkg/visor/rewardconfig
+**Imports (4):**
+- Standard Library:
+  - encoding/json
+  - fmt
+  - os
+  - path/filepath
+
+### pkg/visor/usermanager
+**Imports (23):**
+- Internal:
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/httputil
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/visor/visorconfig
+- External:
+  - github.com/google/uuid
+  - github.com/gorilla/securecookie
+  - github.com/stretchr/testify/assert
+  - go.etcd.io/bbolt
+- Standard Library:
+  - bytes
+  - context
+  - encoding/gob
+  - errors
+  - fmt
+  - io
+  - net/http
+  - os
+  - path/filepath
+  - regexp
+  - strings
+  - sync
+  - testing
+  - time
+  - unicode
+
+### pkg/visor/visorconfig
+**Imports (44):**
+- Internal:
+  - .
+  - pkg/app/appserver
+  - pkg/app/launcher
+  - pkg/dmsgc
+  - pkg/routing
+  - pkg/skyenv
+  - pkg/skywire-utilities/pkg/buildinfo
+  - pkg/skywire-utilities/pkg/cipher
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/transport
+  - pkg/transport/network
+  - pkg/util/pathutil
+- External:
+  - github.com/bitfield/script
+  - github.com/blang/semver/v4
+  - github.com/google/uuid
+  - github.com/jaypipes/ghw
+  - github.com/skycoin/dmsg/pkg/disc
+  - github.com/skycoin/dmsg/pkg/dmsg
+  - github.com/skycoin/dmsg/pkg/dmsgpty
+  - github.com/skycoin/skycoin/src/cipher
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+  - github.com/zcalusic/sysinfo
+  - golang.org/x/sys/windows
+- Standard Library:
+  - bytes
+  - encoding/hex
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - io/fs
+  - log
+  - math/rand
+  - net
+  - net/http
+  - os
+  - os/exec
+  - os/user
+  - path/filepath
+  - runtime
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/visor/visorinit
+**Imports (5):**
+- Internal:
+  - pkg/skywire-utilities/pkg/logging
+- Standard Library:
+  - context
+  - errors
+  - fmt
+  - sync
+
+### scripts/mac_installer/desktop-deinstaller
+**Imports (6):**
+- Internal:
+  - pkg/skywire-utilities/pkg/logging
+  - pkg/util/osutil
+- Standard Library:
+  - fmt
+  - os
+  - path/filepath
+  - syscall
+
+### static/icons
+**Imports (1):**
+- External:
+  - embed
+

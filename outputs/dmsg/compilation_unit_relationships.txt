@@ -1,0 +1,1407 @@
+# Dmsg Compilation Unit Import/Export Relationships
+
+## Analysis Overview
+- Total compilation units analyzed: 64
+
+---
+
+## PART A: IMPORTED BY (What depends on each compilation unit)
+
+### .
+**Imported by (0):** None
+
+### cmd/conf
+**Imported by (0):** None
+
+### cmd/conf/commands
+**Imported by (2):**
+- cmd/conf
+- cmd/dmsg/commands
+
+### cmd/dial
+**Imported by (0):** None
+
+### cmd/dial/commands
+**Imported by (2):**
+- cmd/dial
+- cmd/dmsg/commands
+
+### cmd/dmsg
+**Imported by (0):** None
+
+### cmd/dmsg-discovery
+**Imported by (0):** None
+
+### cmd/dmsg-discovery/commands
+**Imported by (2):**
+- cmd/dmsg-discovery
+- cmd/dmsg/commands
+
+### cmd/dmsg-server
+**Imported by (0):** None
+
+### cmd/dmsg-server/commands
+**Imported by (2):**
+- cmd/dmsg-server
+- cmd/dmsg/commands
+
+### cmd/dmsg-server/commands/config
+**Imported by (1):**
+- cmd/dmsg-server/commands
+
+### cmd/dmsg-server/commands/start
+**Imported by (1):**
+- cmd/dmsg-server/commands
+
+### cmd/dmsg-socks5
+**Imported by (0):** None
+
+### cmd/dmsg-socks5/commands
+**Imported by (2):**
+- cmd/dmsg-socks5
+- cmd/dmsg/commands
+
+### cmd/dmsg/commands
+**Imported by (1):**
+- cmd/dmsg
+
+### cmd/dmsgcurl
+**Imported by (0):** None
+
+### cmd/dmsgcurl/commands
+**Imported by (2):**
+- cmd/dmsg/commands
+- cmd/dmsgcurl
+
+### cmd/dmsghttp
+**Imported by (0):** None
+
+### cmd/dmsghttp/commands
+**Imported by (2):**
+- cmd/dmsg/commands
+- cmd/dmsghttp
+
+### cmd/dmsgip
+**Imported by (0):** None
+
+### cmd/dmsgip/commands
+**Imported by (2):**
+- cmd/dmsg/commands
+- cmd/dmsgip
+
+### cmd/dmsgpty-cli
+**Imported by (0):** None
+
+### cmd/dmsgpty-cli/commands
+**Imported by (2):**
+- cmd/dmsg/commands
+- cmd/dmsgpty-cli
+
+### cmd/dmsgpty-host
+**Imported by (0):** None
+
+### cmd/dmsgpty-host/commands
+**Imported by (2):**
+- cmd/dmsg/commands
+- cmd/dmsgpty-host
+
+### cmd/dmsgpty-ui
+**Imported by (0):** None
+
+### cmd/dmsgpty-ui/commands
+**Imported by (2):**
+- cmd/dmsg/commands
+- cmd/dmsgpty-ui
+
+### cmd/dmsgweb
+**Imported by (0):** None
+
+### cmd/dmsgweb/commands
+**Imported by (2):**
+- cmd/dmsg/commands
+- cmd/dmsgweb
+
+### examples/basics
+**Imported by (0):** None
+
+### examples/dmsgcurl/dmsg-example-http-server
+**Imported by (0):** None
+
+### examples/dmsgcurl/gen-keys
+**Imported by (0):** None
+
+### examples/dmsghttp
+**Imported by (0):** None
+
+### examples/dmsghttp-client
+**Imported by (0):** None
+
+### examples/dmsgtcp
+**Imported by (0):** None
+
+### examples/dmsgweb
+**Imported by (0):** None
+
+### examples/dmsgweb/commands
+**Imported by (1):**
+- examples/dmsgweb
+
+### examples/gen-keys
+**Imported by (0):** None
+
+### examples/http
+**Imported by (0):** None
+
+### examples/proxified
+**Imported by (0):** None
+
+### examples/tcp
+**Imported by (0):** None
+
+### examples/tcp-multi-proxy-dmsg
+**Imported by (0):** None
+
+### examples/tcp-proxy
+**Imported by (0):** None
+
+### examples/tcp-proxy-dmsg
+**Imported by (0):** None
+
+### examples/tcp-reverse-proxy-dmsg
+**Imported by (0):** None
+
+### internal/cli
+**Imported by (8):**
+- cmd/dial/commands
+- cmd/dmsg-socks5/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgip/commands
+- cmd/dmsgweb/commands
+- examples/dmsghttp-client
+- examples/dmsgtcp
+
+### internal/discmetrics
+**Imported by (2):**
+- cmd/dmsg-discovery/commands
+- internal/dmsg-discovery/api
+
+### internal/dmsg-discovery/api
+**Imported by (1):**
+- cmd/dmsg-discovery/commands
+
+### internal/dmsg-discovery/store
+**Imported by (2):**
+- cmd/dmsg-discovery/commands
+- internal/dmsg-discovery/api
+
+### internal/dmsg-server/api
+**Imported by (1):**
+- cmd/dmsg-server/commands/start
+
+### internal/flags
+**Imported by (5):**
+- cmd/dial/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgweb/commands
+- internal/cli
+
+### internal/fsutil
+**Imported by (1):**
+- cmd/dmsgpty-host/commands
+
+### internal/servermetrics
+**Imported by (3):**
+- cmd/dmsg-server/commands/start
+- internal/dmsg-server/api
+- pkg/dmsg
+
+### pkg/direct
+**Imported by (2):**
+- cmd/dmsg-discovery/commands
+- internal/cli
+
+### pkg/disc
+**Imported by (22):**
+- cmd/dial/commands
+- cmd/dmsg-discovery/commands
+- cmd/dmsg-server/commands/start
+- cmd/dmsgcurl/commands
+- cmd/dmsgpty-host/commands
+- examples/basics
+- examples/dmsgcurl/dmsg-example-http-server
+- examples/dmsghttp
+- examples/dmsgweb/commands
+- examples/proxified
+- examples/tcp-multi-proxy-dmsg
+- examples/tcp-proxy-dmsg
+- examples/tcp-reverse-proxy-dmsg
+- internal/cli
+- internal/dmsg-discovery/api
+- internal/dmsg-discovery/store
+- pkg/direct
+- pkg/disc
+- pkg/dmsg
+- pkg/dmsgcurl
+- pkg/dmsghttp
+- pkg/dmsgtest
+
+### pkg/dmsg
+**Imported by (32):**
+- cmd/conf/commands
+- cmd/dial/commands
+- cmd/dmsg-discovery/commands
+- cmd/dmsg-server/commands/start
+- cmd/dmsg-socks5/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgip/commands
+- cmd/dmsgpty-cli/commands
+- cmd/dmsgpty-host/commands
+- cmd/dmsgweb/commands
+- examples/basics
+- examples/dmsgcurl/dmsg-example-http-server
+- examples/dmsghttp
+- examples/dmsghttp-client
+- examples/dmsgtcp
+- examples/dmsgweb/commands
+- examples/proxified
+- examples/tcp-multi-proxy-dmsg
+- examples/tcp-proxy-dmsg
+- examples/tcp-reverse-proxy-dmsg
+- internal/cli
+- internal/dmsg-discovery/api
+- internal/dmsg-discovery/store
+- internal/dmsg-server/api
+- internal/flags
+- pkg/direct
+- pkg/dmsgcurl
+- pkg/dmsghttp
+- pkg/dmsgpty
+- pkg/dmsgserver
+- pkg/dmsgtest
+
+### pkg/dmsgctrl
+**Imported by (0):** None
+
+### pkg/dmsgcurl
+**Imported by (0):** None
+
+### pkg/dmsghttp
+**Imported by (8):**
+- cmd/dmsg-discovery/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsgweb/commands
+- examples/dmsghttp-client
+- examples/dmsgweb/commands
+- internal/cli
+- pkg/dmsgcurl
+- pkg/dmsghttp
+
+### pkg/dmsgpty
+**Imported by (4):**
+- cmd/dmsgpty-cli/commands
+- cmd/dmsgpty-host/commands
+- cmd/dmsgpty-ui/commands
+- pkg/dmsgpty
+
+### pkg/dmsgserver
+**Imported by (2):**
+- cmd/dmsg-server/commands/config
+- cmd/dmsg-server/commands/start
+
+### pkg/dmsgtest
+**Imported by (1):**
+- pkg/dmsgpty
+
+### pkg/ioutil
+**Imported by (1):**
+- pkg/noise
+
+### pkg/noise
+**Imported by (1):**
+- pkg/dmsg
+
+---
+
+## PART B: IMPORTS (What each compilation unit depends on)
+
+### .
+**Imports (0):**
+
+### cmd/conf
+**Imports (2):**
+- Internal:
+  - cmd/conf/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/conf/commands
+**Imports (4):**
+- Internal:
+  - pkg/dmsg
+- External:
+  - github.com/bitfield/script
+  - github.com/spf13/cobra
+- Standard Library:
+  - log
+
+### cmd/dial
+**Imports (2):**
+- Internal:
+  - cmd/dial/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dial/commands
+**Imports (20):**
+- Internal:
+  - internal/cli
+  - internal/flags
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/chen3feng/safecast
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/calvin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - net/http
+  - os
+  - path/filepath
+  - strconv
+  - strings
+  - time
+
+### cmd/dmsg
+**Imports (2):**
+- Internal:
+  - cmd/dmsg/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsg-discovery
+**Imports (2):**
+- Internal:
+  - cmd/dmsg-discovery/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsg-discovery/commands
+**Imports (25):**
+- Internal:
+  - internal/discmetrics
+  - internal/dmsg-discovery/api
+  - internal/dmsg-discovery/store
+  - pkg/direct
+  - pkg/disc
+  - pkg/dmsg
+  - pkg/dmsghttp
+- External:
+  - github.com/pires/go-proxyproto
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/metricsutil
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - errors
+  - fmt
+  - log
+  - net
+  - net/http
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/dmsg-server
+**Imports (2):**
+- Internal:
+  - cmd/dmsg-server/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsg-server/commands
+**Imports (9):**
+- Internal:
+  - cmd/dmsg-server/commands/config
+  - cmd/dmsg-server/commands/start
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+
+### cmd/dmsg-server/commands/config
+**Imports (4):**
+- Internal:
+  - pkg/dmsgserver
+- External:
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skycoin/src/util/logging
+  - github.com/spf13/cobra
+
+### cmd/dmsg-server/commands/start
+**Imports (20):**
+- Internal:
+  - internal/dmsg-server/api
+  - internal/servermetrics
+  - pkg/disc
+  - pkg/dmsg
+  - pkg/dmsgserver
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/metricsutil
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - errors
+  - io
+  - log
+  - net/http
+  - net/url
+  - os
+  - strconv
+
+### cmd/dmsg-socks5
+**Imports (2):**
+- Internal:
+  - cmd/dmsg-socks5/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsg-socks5/commands
+**Imports (17):**
+- Internal:
+  - internal/cli
+  - pkg/dmsg
+- External:
+  - github.com/confiant-inc/go-socks5
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/calvin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - net/http
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/dmsg/commands
+**Imports (20):**
+- Internal:
+  - cmd/conf/commands
+  - cmd/dial/commands
+  - cmd/dmsg-discovery/commands
+  - cmd/dmsg-server/commands
+  - cmd/dmsg-socks5/commands
+  - cmd/dmsgcurl/commands
+  - cmd/dmsghttp/commands
+  - cmd/dmsgip/commands
+  - cmd/dmsgpty-cli/commands
+  - cmd/dmsgpty-host/commands
+  - cmd/dmsgpty-ui/commands
+  - cmd/dmsgweb/commands
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+  - os
+  - os/signal
+  - path/filepath
+  - strings
+  - syscall
+
+### cmd/dmsgcurl
+**Imports (2):**
+- Internal:
+  - cmd/dmsgcurl/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsgcurl/commands
+**Imports (26):**
+- Internal:
+  - internal/cli
+  - internal/flags
+  - pkg/disc
+  - pkg/dmsg
+  - pkg/dmsghttp
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/calvin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+  - golang.org/x/net/proxy
+- Standard Library:
+  - context
+  - errors
+  - fmt
+  - io
+  - io/fs
+  - log
+  - net
+  - net/http
+  - net/url
+  - os
+  - path/filepath
+  - strings
+  - sync/atomic
+  - time
+
+### cmd/dmsghttp
+**Imports (2):**
+- Internal:
+  - cmd/dmsghttp/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsghttp/commands
+**Imports (21):**
+- Internal:
+  - internal/cli
+  - internal/flags
+  - pkg/dmsg
+- External:
+  - github.com/gin-gonic/gin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/calvin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+  - golang.org/x/net/proxy
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - net
+  - net/http
+  - os
+  - path/filepath
+  - strings
+  - sync
+  - time
+
+### cmd/dmsgip
+**Imports (2):**
+- Internal:
+  - cmd/dmsgip/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsgip/commands
+**Imports (16):**
+- Internal:
+  - internal/cli
+  - pkg/dmsg
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/calvin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+  - golang.org/x/net/proxy
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - net/http
+  - os
+  - path/filepath
+  - strings
+
+### cmd/dmsgpty-cli
+**Imports (2):**
+- Internal:
+  - cmd/dmsgpty-cli/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsgpty-cli/commands
+**Imports (14):**
+- Internal:
+  - pkg/dmsg
+  - pkg/dmsgpty
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/calvin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - encoding/json
+  - fmt
+  - log
+  - os
+  - path/filepath
+  - strings
+
+### cmd/dmsgpty-host
+**Imports (2):**
+- Internal:
+  - cmd/dmsgpty-host/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsgpty-host/commands
+**Imports (22):**
+- Internal:
+  - internal/fsutil
+  - pkg/disc
+  - pkg/dmsg
+  - pkg/dmsgpty
+- External:
+  - github.com/json-iterator/go
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/calvin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - fmt
+  - log
+  - net
+  - net/http
+  - os
+  - path/filepath
+  - strconv
+  - strings
+  - sync
+
+### cmd/dmsgpty-ui
+**Imports (2):**
+- Internal:
+  - cmd/dmsgpty-ui/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsgpty-ui/commands
+**Imports (11):**
+- Internal:
+  - pkg/dmsgpty
+- External:
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/spf13/cobra
+- Standard Library:
+  - fmt
+  - log
+  - net/http
+  - os
+  - path/filepath
+  - strings
+  - time
+
+### cmd/dmsgweb
+**Imports (2):**
+- Internal:
+  - cmd/dmsgweb/commands
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+
+### cmd/dmsgweb/commands
+**Imports (30):**
+- Internal:
+  - internal/cli
+  - internal/flags
+  - pkg/dmsg
+  - pkg/dmsghttp
+- External:
+  - github.com/bitfield/script
+  - github.com/chen3feng/safecast
+  - github.com/confiant-inc/go-socks5
+  - github.com/gin-gonic/gin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+  - golang.org/x/net/proxy
+- Standard Library:
+  - context
+  - fmt
+  - io
+  - log
+  - net
+  - net/http
+  - net/http/httputil
+  - net/url
+  - os
+  - path/filepath
+  - regexp
+  - runtime
+  - strconv
+  - strings
+  - sync
+  - time
+
+### examples/basics
+**Imports (7):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - golang.org/x/net/nettest
+- Standard Library:
+  - context
+  - log
+  - time
+
+### examples/dmsgcurl/dmsg-example-http-server
+**Imports (12):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+- Standard Library:
+  - context
+  - flag
+  - fmt
+  - net/http
+  - os
+  - path
+  - time
+
+### examples/dmsgcurl/gen-keys
+**Imports (2):**
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+- Standard Library:
+  - fmt
+
+### examples/dmsghttp
+**Imports (13):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - log
+  - net/http
+  - os
+  - strings
+  - time
+
+### examples/dmsghttp-client
+**Imports (11):**
+- Internal:
+  - internal/cli
+  - pkg/dmsg
+  - pkg/dmsghttp
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+- Standard Library:
+  - context
+  - fmt
+  - io
+  - net/http
+  - net/url
+  - os
+
+### examples/dmsgtcp
+**Imports (15):**
+- Internal:
+  - internal/cli
+  - pkg/dmsg
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - log
+  - net
+  - net/http
+  - os
+  - os/signal
+  - strings
+  - syscall
+
+### examples/dmsgweb
+**Imports (3):**
+- Internal:
+  - examples/dmsgweb/commands
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/spf13/cobra
+
+### examples/dmsgweb/commands
+**Imports (24):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+  - pkg/dmsghttp
+- External:
+  - github.com/confiant-inc/go-socks5
+  - github.com/gin-gonic/gin
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+  - golang.org/x/net/proxy
+- Standard Library:
+  - context
+  - fmt
+  - io
+  - log
+  - net
+  - net/http
+  - os
+  - os/signal
+  - regexp
+  - strings
+  - sync
+  - syscall
+  - time
+
+### examples/gen-keys
+**Imports (2):**
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+- Standard Library:
+  - fmt
+
+### examples/http
+**Imports (5):**
+- Standard Library:
+  - fmt
+  - log
+  - net
+  - net/http
+  - os
+
+### examples/proxified
+**Imports (8):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - golang.org/x/net/proxy
+- Standard Library:
+  - context
+  - net/http
+  - time
+
+### examples/tcp
+**Imports (3):**
+- Standard Library:
+  - log
+  - net
+  - os
+
+### examples/tcp-multi-proxy-dmsg
+**Imports (13):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - fmt
+  - io
+  - net
+  - net/http
+  - sync
+
+### examples/tcp-proxy
+**Imports (7):**
+- Standard Library:
+  - fmt
+  - io
+  - log
+  - net
+  - os
+  - strconv
+  - sync
+
+### examples/tcp-proxy-dmsg
+**Imports (14):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - fmt
+  - io
+  - net
+  - net/http
+  - os
+  - sync
+
+### examples/tcp-reverse-proxy-dmsg
+**Imports (20):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/ivanpirog/coloredcobra
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/spf13/cobra
+- Standard Library:
+  - context
+  - fmt
+  - io
+  - log
+  - net
+  - net/http
+  - os
+  - os/signal
+  - path/filepath
+  - strconv
+  - strings
+  - sync
+  - syscall
+
+### internal/cli
+**Imports (12):**
+- Internal:
+  - internal/flags
+  - pkg/direct
+  - pkg/disc
+  - pkg/dmsg
+  - pkg/dmsghttp
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+- Standard Library:
+  - context
+  - fmt
+  - io
+  - log
+  - net/http
+
+### internal/discmetrics
+**Imports (1):**
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/metricsutil
+
+### internal/dmsg-discovery/api
+**Imports (26):**
+- Internal:
+  - internal/discmetrics
+  - internal/dmsg-discovery/store
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/go-chi/chi/v5/middleware
+  - github.com/json-iterator/go
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/httputil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/metricsutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/networkmonitor
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - context
+  - fmt
+  - io
+  - net
+  - net/http
+  - net/http/httptest
+  - sort
+  - testing
+  - time
+
+### internal/dmsg-discovery/store
+**Imports (15):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/go-redis/redis/v8
+  - github.com/json-iterator/go
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/netutil
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - context
+  - errors
+  - sort
+  - sync
+  - testing
+  - time
+
+### internal/dmsg-server/api
+**Imports (17):**
+- Internal:
+  - internal/servermetrics
+  - pkg/dmsg
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/pires/go-proxyproto
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/httputil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+- Standard Library:
+  - context
+  - encoding/json
+  - math
+  - math/big
+  - net
+  - net/http
+  - sync
+  - time
+
+### internal/flags
+**Imports (3):**
+- Internal:
+  - pkg/dmsg
+- External:
+  - github.com/spf13/cobra
+- Standard Library:
+  - os
+
+### internal/fsutil
+**Imports (1):**
+- Standard Library:
+  - os
+
+### internal/servermetrics
+**Imports (3):**
+- External:
+  - github.com/VictoriaMetrics/metrics
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/metricsutil
+- Standard Library:
+  - fmt
+
+### pkg/direct
+**Imports (6):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+- Standard Library:
+  - context
+  - sync
+
+### pkg/disc
+**Imports (18):**
+- Internal:
+  - pkg/disc
+- External:
+  - github.com/json-iterator/go
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - bytes
+  - context
+  - errors
+  - fmt
+  - io
+  - log
+  - net/http
+  - os
+  - strings
+  - sync
+  - testing
+  - time
+
+### pkg/dmsg
+**Imports (34):**
+- Internal:
+  - internal/servermetrics
+  - pkg/disc
+  - pkg/noise
+- External:
+  - github.com/chen3feng/safecast
+  - github.com/hashicorp/yamux
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/netutil
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+  - golang.org/x/net/proxy
+- Standard Library:
+  - bytes
+  - context
+  - crypto/rand
+  - encoding/binary
+  - encoding/gob
+  - encoding/json
+  - errors
+  - fmt
+  - io
+  - log
+  - math/big
+  - math/rand
+  - net
+  - regexp
+  - runtime
+  - strings
+  - sync
+  - sync/atomic
+  - testing
+  - time
+
+### pkg/dmsgctrl
+**Imports (10):**
+- External:
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+- Standard Library:
+  - context
+  - errors
+  - fmt
+  - io
+  - net
+  - sync
+  - testing
+  - time
+
+### pkg/dmsgcurl
+**Imports (27):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+  - pkg/dmsghttp
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/json-iterator/go
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+- Standard Library:
+  - context
+  - encoding/json
+  - errors
+  - flag
+  - fmt
+  - io
+  - net/http
+  - net/url
+  - os
+  - path/filepath
+  - sync/atomic
+  - testing
+  - time
+
+### pkg/dmsghttp
+**Imports (20):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+  - pkg/dmsghttp
+- External:
+  - github.com/go-chi/chi/v5
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+- Standard Library:
+  - bufio
+  - bytes
+  - context
+  - fmt
+  - io
+  - net
+  - net/http
+  - testing
+  - time
+
+### pkg/dmsgpty
+**Imports (41):**
+- Internal:
+  - pkg/dmsg
+  - pkg/dmsgpty
+  - pkg/dmsgtest
+- External:
+  - github.com/ActiveState/termtest/conpty
+  - github.com/coder/websocket
+  - github.com/creack/pty
+  - github.com/json-iterator/go
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/httputil
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+  - golang.org/x/sys/windows
+  - golang.org/x/term
+- Standard Library:
+  - bufio
+  - bytes
+  - compress/gzip
+  - context
+  - errors
+  - fmt
+  - io
+  - io/fs
+  - log
+  - math
+  - net
+  - net/http
+  - net/rpc
+  - net/url
+  - os
+  - os/exec
+  - os/signal
+  - path
+  - path/filepath
+  - runtime
+  - strings
+  - sync
+  - sync/atomic
+  - syscall
+  - testing
+  - time
+
+### pkg/dmsgserver
+**Imports (6):**
+- Internal:
+  - pkg/dmsg
+- External:
+  - github.com/skycoin/skycoin/src/util/logging
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+- Standard Library:
+  - encoding/json
+  - os
+  - time
+
+### pkg/dmsgtest
+**Imports (17):**
+- Internal:
+  - pkg/disc
+  - pkg/dmsg
+- External:
+  - github.com/sirupsen/logrus
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+- Standard Library:
+  - context
+  - fmt
+  - io
+  - math/rand
+  - net
+  - sort
+  - sync
+  - testing
+  - time
+
+### pkg/ioutil
+**Imports (2):**
+- External:
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+- Standard Library:
+  - bytes
+
+### pkg/noise
+**Imports (24):**
+- Internal:
+  - pkg/ioutil
+- External:
+  - github.com/chen3feng/safecast
+  - github.com/skycoin/noise
+  - github.com/skycoin/skycoin/src/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+  - github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/require
+  - golang.org/x/net/nettest
+- Standard Library:
+  - bufio
+  - bytes
+  - crypto/rand
+  - encoding/binary
+  - errors
+  - fmt
+  - io
+  - log
+  - math/rand
+  - net
+  - net/rpc
+  - os
+  - sync
+  - testing
+  - time
+

@@ -1,0 +1,327 @@
+# Dmsg External Dependencies to Compilation Units Mapping
+
+## Analysis Summary
+- Total external dependencies: 61
+- Total compilation units: 64
+
+## External Dependencies Usage
+
+### github.com/ActiveState/termtest/conpty
+- pkg/dmsgpty
+
+### github.com/VictoriaMetrics/metrics
+- internal/servermetrics
+
+### github.com/bitfield/script
+- cmd/conf/commands
+- cmd/dmsgweb/commands
+
+### github.com/chen3feng/safecast
+- cmd/dial/commands
+- cmd/dmsgweb/commands
+- pkg/dmsg
+- pkg/noise
+
+### github.com/coder/websocket
+- pkg/dmsgpty
+
+### github.com/confiant-inc/go-socks5
+- cmd/dmsg-socks5/commands
+- cmd/dmsgweb/commands
+- examples/dmsgweb/commands
+
+### github.com/creack/pty
+- pkg/dmsgpty
+
+### github.com/gin-gonic/gin
+- cmd/dmsghttp/commands
+- cmd/dmsgweb/commands
+- examples/dmsgweb/commands
+
+### github.com/go-chi/chi/v5
+- cmd/dmsg-server/commands/start
+- internal/dmsg-discovery/api
+- internal/dmsg-server/api
+- pkg/dmsgcurl
+- pkg/dmsghttp
+
+### github.com/go-chi/chi/v5/middleware
+- cmd/dmsg-server/commands/start
+- internal/dmsg-discovery/api
+
+### github.com/go-redis/redis/v8
+- internal/dmsg-discovery/store
+
+### github.com/hashicorp/yamux
+- pkg/dmsg
+
+### github.com/ivanpirog/coloredcobra
+- examples/dmsghttp
+- examples/dmsgtcp
+- examples/dmsgweb
+- examples/tcp-multi-proxy-dmsg
+- examples/tcp-proxy-dmsg
+- examples/tcp-reverse-proxy-dmsg
+
+### github.com/json-iterator/go
+- cmd/dmsgpty-host/commands
+- internal/dmsg-discovery/api
+- internal/dmsg-discovery/store
+- pkg/disc
+- pkg/dmsgcurl
+- pkg/dmsgpty
+
+### github.com/pires/go-proxyproto
+- cmd/dmsg-discovery/commands
+- internal/dmsg-server/api
+
+### github.com/sirupsen/logrus
+- cmd/dmsg-discovery/commands
+- cmd/dmsg-server/commands/config
+- cmd/dmsgpty-host/commands
+- cmd/dmsgpty-ui/commands
+- internal/dmsg-discovery/api
+- internal/dmsg-server/api
+- pkg/dmsg
+- pkg/dmsgcurl
+- pkg/dmsghttp
+- pkg/dmsgpty
+- pkg/dmsgtest
+
+### github.com/skycoin/noise
+- pkg/noise
+
+### github.com/skycoin/skycoin/src/cipher
+- pkg/noise
+
+### github.com/skycoin/skycoin/src/util/logging
+- cmd/dmsg-server/commands/config
+- pkg/dmsgserver
+
+### github.com/skycoin/skywire
+- pkg/dmsg
+- pkg/dmsgcurl
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/buildinfo
+- cmd/dial/commands
+- cmd/dmsg-discovery/commands
+- cmd/dmsg-server/commands
+- cmd/dmsg-server/commands/start
+- cmd/dmsg-socks5/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgip/commands
+- cmd/dmsgpty-cli/commands
+- cmd/dmsgpty-host/commands
+- cmd/dmsgpty-ui/commands
+- cmd/dmsgweb/commands
+- examples/dmsgweb/commands
+- internal/dmsg-discovery/api
+- internal/dmsg-server/api
+- pkg/dmsgcurl
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/calvin
+- cmd/dial/commands
+- cmd/dmsg-socks5/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgip/commands
+- cmd/dmsgpty-cli/commands
+- cmd/dmsgpty-host/commands
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cipher
+- cmd/dial/commands
+- cmd/dmsg-discovery/commands
+- cmd/dmsg-socks5/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgip/commands
+- cmd/dmsgpty-cli/commands
+- cmd/dmsgpty-host/commands
+- cmd/dmsgweb/commands
+- examples/basics
+- examples/dmsgcurl/dmsg-example-http-server
+- examples/dmsgcurl/gen-keys
+- examples/dmsghttp
+- examples/dmsghttp-client
+- examples/dmsgtcp
+- examples/dmsgweb/commands
+- examples/gen-keys
+- examples/proxified
+- examples/tcp-multi-proxy-dmsg
+- examples/tcp-proxy-dmsg
+- examples/tcp-reverse-proxy-dmsg
+- internal/cli
+- internal/dmsg-discovery/api
+- internal/dmsg-discovery/store
+- internal/dmsg-server/api
+- pkg/direct
+- pkg/disc
+- pkg/dmsg
+- pkg/dmsgcurl
+- pkg/dmsghttp
+- pkg/dmsgpty
+- pkg/dmsgserver
+- pkg/dmsgtest
+- pkg/noise
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/cmdutil
+- cmd/dial/commands
+- cmd/dmsg-discovery/commands
+- cmd/dmsg-server/commands/start
+- cmd/dmsg-socks5/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgip/commands
+- cmd/dmsgpty-cli/commands
+- cmd/dmsgpty-host/commands
+- cmd/dmsgweb/commands
+- examples/dmsgcurl/dmsg-example-http-server
+- examples/dmsghttp
+- examples/dmsgtcp
+- examples/dmsgweb/commands
+- examples/tcp-multi-proxy-dmsg
+- examples/tcp-proxy-dmsg
+- examples/tcp-reverse-proxy-dmsg
+- pkg/dmsgcurl
+- pkg/dmsghttp
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/flags
+- cmd/conf
+- cmd/dial
+- cmd/dmsg
+- cmd/dmsg-discovery
+- cmd/dmsg-server
+- cmd/dmsg-socks5
+- cmd/dmsgcurl
+- cmd/dmsghttp
+- cmd/dmsgip
+- cmd/dmsgpty-cli
+- cmd/dmsgpty-host
+- cmd/dmsgpty-ui
+- cmd/dmsgweb
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/httputil
+- internal/dmsg-discovery/api
+- internal/dmsg-server/api
+- pkg/dmsgpty
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/logging
+- cmd/dial/commands
+- cmd/dmsg-discovery/commands
+- cmd/dmsg-server/commands/start
+- cmd/dmsg-socks5/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgip/commands
+- cmd/dmsgpty-host/commands
+- cmd/dmsgweb/commands
+- examples/dmsgcurl/dmsg-example-http-server
+- examples/dmsghttp
+- examples/dmsghttp-client
+- examples/dmsgtcp
+- examples/dmsgweb/commands
+- examples/proxified
+- examples/tcp-multi-proxy-dmsg
+- examples/tcp-proxy-dmsg
+- examples/tcp-reverse-proxy-dmsg
+- internal/cli
+- internal/dmsg-discovery/api
+- internal/dmsg-discovery/store
+- internal/dmsg-server/api
+- pkg/direct
+- pkg/disc
+- pkg/dmsg
+- pkg/dmsgcurl
+- pkg/dmsghttp
+- pkg/dmsgpty
+- pkg/dmsgtest
+- pkg/ioutil
+- pkg/noise
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/metricsutil
+- cmd/dmsg-discovery/commands
+- cmd/dmsg-server/commands/start
+- internal/discmetrics
+- internal/dmsg-discovery/api
+- internal/servermetrics
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/netutil
+- internal/dmsg-discovery/store
+- pkg/dmsg
+
+### github.com/skycoin/skywire/pkg/skywire-utilities/pkg/networkmonitor
+- internal/dmsg-discovery/api
+
+### github.com/spf13/cobra
+- cmd/conf/commands
+- cmd/dial/commands
+- cmd/dmsg-discovery/commands
+- cmd/dmsg-server/commands
+- cmd/dmsg-server/commands/config
+- cmd/dmsg-server/commands/start
+- cmd/dmsg-socks5/commands
+- cmd/dmsg/commands
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgip/commands
+- cmd/dmsgpty-cli/commands
+- cmd/dmsgpty-host/commands
+- cmd/dmsgpty-ui/commands
+- cmd/dmsgweb/commands
+- examples/dmsghttp
+- examples/dmsgtcp
+- examples/dmsgweb
+- examples/dmsgweb/commands
+- examples/tcp-multi-proxy-dmsg
+- examples/tcp-proxy-dmsg
+- examples/tcp-reverse-proxy-dmsg
+- internal/flags
+
+### github.com/stretchr/testify/assert
+- internal/dmsg-discovery/api
+- internal/dmsg-discovery/store
+- pkg/disc
+- pkg/dmsg
+- pkg/dmsgctrl
+- pkg/dmsgcurl
+- pkg/dmsghttp
+- pkg/dmsgtest
+- pkg/noise
+
+### github.com/stretchr/testify/require
+- internal/dmsg-discovery/api
+- internal/dmsg-discovery/store
+- pkg/disc
+- pkg/dmsg
+- pkg/dmsgctrl
+- pkg/dmsgcurl
+- pkg/dmsghttp
+- pkg/dmsgpty
+- pkg/dmsgtest
+- pkg/noise
+
+### golang.org/x/net/nettest
+- examples/basics
+- pkg/dmsg
+- pkg/dmsgcurl
+- pkg/dmsghttp
+- pkg/dmsgpty
+- pkg/dmsgtest
+- pkg/noise
+
+### golang.org/x/net/proxy
+- cmd/dmsgcurl/commands
+- cmd/dmsghttp/commands
+- cmd/dmsgip/commands
+- cmd/dmsgweb/commands
+- examples/dmsgweb/commands
+- examples/proxified
+- pkg/dmsg
+
+### golang.org/x/sys/windows
+- pkg/dmsgpty
+
+### golang.org/x/term
+- pkg/dmsgpty
+
