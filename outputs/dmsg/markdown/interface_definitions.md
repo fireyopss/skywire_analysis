@@ -1,0 +1,536 @@
+# DMSG Repository Interface Definitions
+
+## Analysis Summary
+- Total compilation units analyzed: 64
+- Total interface definitions: 8
+- Public interfaces: 8
+- Private interfaces: 0
+- Total interface methods: 36
+
+---
+## .
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/conf
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/conf
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/conf/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/conf/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dial
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dial
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dial/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dial/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg-discovery
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-discovery
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg-discovery/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-discovery/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg-server
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg-server/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg-server/commands/config
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server/commands/config
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg-server/commands/start
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server/commands/start
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg-socks5
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-socks5
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg-socks5/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-socks5/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsg/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgcurl
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgcurl
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgcurl/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgcurl/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsghttp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsghttp
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsghttp/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsghttp/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgip
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgip
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgip/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgip/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgpty-cli
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-cli
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgpty-cli/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-cli/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgpty-host
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-host
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgpty-host/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-host/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgpty-ui
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-ui
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgpty-ui/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-ui/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgweb
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgweb
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## cmd/dmsgweb/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgweb/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/basics
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/basics
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/dmsgcurl/dmsg-example-http-server
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgcurl/dmsg-example-http-server
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/dmsgcurl/gen-keys
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgcurl/gen-keys
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/dmsghttp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsghttp
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/dmsghttp-client
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsghttp-client
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/dmsgtcp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgtcp
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/dmsgweb
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgweb
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/dmsgweb/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgweb/commands
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/gen-keys
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/gen-keys
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/http
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/http
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/proxified
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/proxified
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/tcp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/tcp-multi-proxy-dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-multi-proxy-dmsg
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/tcp-proxy
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-proxy
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/tcp-proxy-dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-proxy-dmsg
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## examples/tcp-reverse-proxy-dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-reverse-proxy-dmsg
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## internal/cli
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/cli
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## internal/discmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/discmetrics
+**Interface Definitions**: 1
+
+### Metrics (public)
+**File**: metrics.go:5
+**Package**: discmetrics
+**Documentation**: Metrics collects metrics for metrics tracking system.
+**Methods** (2):
+- `SetClientsCount(val int64)`
+- `SetServersCount(val int64)`
+
+---
+
+## internal/dmsg-discovery/api
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/dmsg-discovery/api
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## internal/dmsg-discovery/store
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/dmsg-discovery/store
+**Interface Definitions**: 1
+
+### Storer (public)
+**File**: storer.go:24
+**Package**: store
+**Documentation**: Storer is an interface which allows to implement different kinds of stores and choose which one to use in the server
+**Methods** (9):
+- `Entry(ctx context.Context, staticPubKey cipher.PubKey) (*disc.Entry, error)` - Entry obtains a single dmsg instance entry.
+- `SetEntry(ctx context.Context, entry *disc.Entry, timeout time.Duration) error` - SetEntry set's an entry. This is unsafe and does not check signature.
+- `DelEntry(ctx context.Context, staticPubKey cipher.PubKey) error` - DelEntry delete's an entry.
+- `AvailableServers(ctx context.Context, maxCount int) ([]*disc.Entry, error)` - AvailableServers discovers available dmsg servers.
+- `AllServers(ctx context.Context) ([]*disc.Entry, error)` - AllServers discovers available dmsg servers.
+- `CountEntries(ctx context.Context) (int64, int64, error)` - CountEntries returns numbers of servers and clients.
+- `RemoveOldServerEntries(ctx context.Context) error` - RemoveOldServerEntries check and remove old server entries that left on redis because of unexpected server shutdown
+- `AllEntries(ctx context.Context) ([]string, error)` - AllEntries returns all clients PKs.
+- `AllVisorEntries(ctx context.Context) ([]string, error)` - AllVisorEntries returns all clients PKs.
+
+---
+
+## internal/dmsg-server/api
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/dmsg-server/api
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## internal/flags
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/flags
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## internal/fsutil
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/fsutil
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## internal/servermetrics
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/servermetrics
+**Interface Definitions**: 1
+
+### Metrics (public)
+**File**: metrics.go:5
+**Package**: servermetrics
+**Documentation**: Metrics collects metrics for metrics tracking system.
+**Methods** (5):
+- `RecordSession(delta DeltaType)`
+- `RecordStream(delta DeltaType)`
+- `SetClientsCount(val int64)`
+- `SetPacketsPerSecond(val uint64)`
+- `SetPacketsPerMinute(val uint64)`
+
+---
+
+## pkg/direct
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/direct
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## pkg/disc
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/disc
+**Interface Definitions**: 1
+
+### APIClient (public)
+**File**: client.go:21
+**Package**: disc
+**Documentation**: APIClient implements dmsg discovery API client.
+**Methods** (7):
+- `Entry(context.Context, cipher.PubKey) (*Entry, error)`
+- `PostEntry(context.Context, *Entry) error`
+- `PutEntry(context.Context, cipher.SecKey, *Entry) error`
+- `DelEntry(context.Context, *Entry) error`
+- `AvailableServers(context.Context) ([]*Entry, error)`
+- `AllServers(context.Context) ([]*Entry, error)`
+- `AllEntries(ctx context.Context) ([]string, error)`
+
+---
+
+## pkg/dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsg
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## pkg/dmsgctrl
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgctrl
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## pkg/dmsgcurl
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgcurl
+**Interface Definitions**: 1
+
+### FlagGroup (public)
+**File**: flags.go:19
+**Package**: dmsgcurl
+**Documentation**: FlagGroup represents a group of flags.
+**Methods** (2):
+- `Name() string`
+- `Init(fs *flag.FlagSet)`
+
+---
+
+## pkg/dmsghttp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsghttp
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## pkg/dmsgpty
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgpty
+**Interface Definitions**: 3
+
+### PtyGateway (public)
+**File**: pty_gateway.go:13
+**Package**: dmsgpty
+**Documentation**: PtyGateway represents a pty gateway, hosted by the pty.SessionServer
+**Methods** (5):
+- `Start(req *CommandReq, _ *struct{...}) error`
+- `Stop(_, _ *struct{...}) error`
+- `Read(reqN *int, respB *[]byte) error`
+- `Write(reqB *[]byte, respN *int) error`
+- `SetPtySize(size *WinSize, _ *struct{...}) error`
+
+### UIDialer (public)
+**File**: ui_dialer.go:12
+**Package**: dmsgpty
+**Documentation**: UIDialer represents a dialer for dmsgpty-ui.
+**Methods** (2):
+- `Dial() (net.Conn, error)`
+- `AddrString() string`
+
+### Whitelist (public)
+**File**: whitelist.go:24
+**Package**: dmsgpty
+**Documentation**: Whitelist represents a whitelist of public keys.
+**Methods** (4):
+- `Get(pk cipher.PubKey) (bool, error)`
+- `All() (map[cipher.PubKey]bool, error)`
+- `Add(pks ...cipher.PubKey) error`
+- `Remove(pks ...cipher.PubKey) error`
+
+---
+
+## pkg/dmsgserver
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgserver
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## pkg/dmsgtest
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgtest
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## pkg/ioutil
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/ioutil
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---
+## pkg/noise
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/noise
+**Interface Definitions**: 0
+
+*No interface definitions found*
+
+---

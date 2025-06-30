@@ -1,0 +1,1457 @@
+# DMSG Repository Function Listings
+
+## Analysis Summary
+- Total compilation units analyzed: 64
+- Total functions: 349
+- Total methods: 380
+- Total functions + methods: 729
+
+---
+
+## .
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg
+**Functions**: 0
+
+*No functions found*
+
+## cmd/conf
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/conf
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - conf.go:10
+- **main** (private) - `main()` - conf.go:14
+
+---
+
+## cmd/conf/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/conf/commands
+**Functions**: 1
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:30
+
+---
+
+## cmd/dial
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dial
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dial.go:10
+- **main** (private) - `main()` - dial.go:14
+
+---
+
+## cmd/dial/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dial/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - dial.go:188
+- **init** (private) - `init()` - dial.go:37
+
+---
+
+## cmd/dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsg.go:10
+- **main** (private) - `main()` - dmsg.go:14
+
+---
+
+## cmd/dmsg-discovery
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-discovery
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsg-discovery.go:10
+- **main** (private) - `main()` - dmsg-discovery.go:14
+
+---
+
+## cmd/dmsg-discovery/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-discovery/commands
+**Functions**: 7
+
+### Functions
+- **Execute** (public) - `Execute()` - dmsg-discovery.go:185
+- **fetchOfficialDmsgServers** (private) - `fetchOfficialDmsgServers(officialServers string) (map[string]bool, error)` - dmsg-discovery.go:285
+- **getServers** (private) - `getServers(ctx context.Context, a *api.API, dmsgServerType string, log logrus.FieldLogger) servers []*disc.Entry` - dmsg-discovery.go:206
+- **init** (private) - `init()` - dmsg-discovery.go:53
+- **listenAndServe** (private) - `listenAndServe(addr string, handler http.Handler) error` - dmsg-discovery.go:271
+- **prepareDB** (private) - `prepareDB(ctx context.Context, log *logging.Logger) store.Storer` - dmsg-discovery.go:191
+- **updateServers** (private) - `updateServers(ctx context.Context, a *api.API, dClient disc.APIClient, dmsgC *dmsg.Client, dmsgServerType string, log logrus.FieldLogger)` - dmsg-discovery.go:237
+
+---
+
+## cmd/dmsg-server
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsg-server.go:10
+- **main** (private) - `main()` - dmsg-server.go:14
+
+---
+
+## cmd/dmsg-server/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:47
+- **init** (private) - `init()` - root.go:18
+
+---
+
+## cmd/dmsg-server/commands/config
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server/commands/config
+**Functions**: 1
+
+### Functions
+- **init** (private) - `init()` - gen.go:17
+
+---
+
+## cmd/dmsg-server/commands/start
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-server/commands/start
+**Functions**: 3
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:120
+- **configNotFound** (private) - `configNotFound() (io.ReadCloser, error)` - root.go:126
+- **init** (private) - `init()` - root.go:34
+
+---
+
+## cmd/dmsg-socks5
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-socks5
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsg-socks5.go:10
+- **main** (private) - `main()` - dmsg-socks5.go:14
+
+---
+
+## cmd/dmsg-socks5/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg-socks5/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - dmsg-socks5.go:42
+- **init** (private) - `init()` - dmsg-socks5.go:47
+
+---
+
+## cmd/dmsg/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsg/commands
+**Functions**: 3
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:94
+- **init** (private) - `init()` - kill.go:10
+- **init** (private) - `init()` - root.go:27
+
+---
+
+## cmd/dmsgcurl
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgcurl
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsgcurl.go:10
+- **main** (private) - `main()` - dmsgcurl.go:14
+
+---
+
+## cmd/dmsgcurl/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgcurl/commands
+**Functions**: 12
+
+### Functions
+- **Execute** (public) - `Execute()` - dmsgcurl.go:389
+- **buildHTTPRequest** (private) - `buildHTTPRequest(url, data string) (*http.Request, error)` - dmsgcurl.go:289
+- **cancellableCopy** (private) - `cancellableCopy(ctx context.Context, w io.Writer, body io.ReadCloser, length int64) (int64, error)` - dmsgcurl.go:355
+- **closeAndCleanFile** (private) - `closeAndCleanFile(file *os.File, err error)` - dmsgcurl.go:313
+- **closeResponseBody** (private) - `closeResponseBody(resp *http.Response)` - dmsgcurl.go:324
+- **handleRequest** (private) - `handleRequest(ctx context.Context, pk cipher.PubKey, sk cipher.SecKey, httpClient *http.Client, parsedURL *url.URL, dmsgcurlData string) curlError` - dmsgcurl.go:161
+- **init** (private) - `init()` - dmsgcurl.go:51
+- **isFatalHTTPErr** (private) - `isFatalHTTPErr(err error) bool` - dmsgcurl.go:301
+- **parseOutputFile** (private) - `parseOutputFile(output string, replace bool) (*os.File, error)` - dmsgcurl.go:330
+- **prepareOutputFile** (private) - `prepareOutputFile() (*os.File, error)` - dmsgcurl.go:306
+
+### Methods
+
+#### *progressWriter
+- **Write** (public) - `(pw *progressWriter) Write(p []byte) (int, error)` - dmsgcurl.go:372
+
+#### readerFunc
+- **Read** (public) - `(rf readerFunc) Read(p []byte) (n int, err error)` - dmsgcurl.go:353
+
+---
+
+## cmd/dmsghttp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsghttp
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsghttp.go:10
+- **main** (private) - `main()` - dmsghttp.go:14
+
+---
+
+## cmd/dmsghttp/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsghttp/commands
+**Functions**: 9
+
+### Functions
+- **Execute** (public) - `Execute()` - dmsghttp.go:306
+- **getBackgroundColor** (private) - `getBackgroundColor(statusCode int) string` - dmsghttp.go:256
+- **getMethodColor** (private) - `getMethodColor(method string) string` - dmsghttp.go:269
+- **init** (private) - `init()` - dmsghttp.go:43
+- **loggingMiddleware** (private) - `loggingMiddleware() gin.HandlerFunc` - dmsghttp.go:223
+- **resetColor** (private) - `resetColor() string` - dmsghttp.go:290
+- **server** (private) - `server()` - dmsghttp.go:77
+- **whitelistAuth** (private) - `whitelistAuth(whitelistedPKs []cipher.PubKey) gin.HandlerFunc` - dmsghttp.go:180
+
+### Methods
+
+#### *GinHandler
+- **ServeHTTP** (public) - `(h *GinHandler) ServeHTTP(w http.ResponseWriter, r *http.Request)` - dmsghttp.go:219
+
+---
+
+## cmd/dmsgip
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgip
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsgip.go:10
+- **main** (private) - `main()` - dmsgip.go:14
+
+---
+
+## cmd/dmsgip/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgip/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - dmsgip.go:137
+- **init** (private) - `init()` - dmsgip.go:38
+
+---
+
+## cmd/dmsgpty-cli
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-cli
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsgpty-cli.go:10
+- **main** (private) - `main()` - dmsgpty-cli.go:14
+
+---
+
+## cmd/dmsgpty-cli/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-cli/commands
+**Functions**: 4
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:123
+- **init** (private) - `init()` - root.go:35
+- **init** (private) - `init()` - whitelist.go:12
+- **pksFromArgs** (private) - `pksFromArgs(args []string) ([]cipher.PubKey, error)` - whitelist.go:85
+
+---
+
+## cmd/dmsgpty-host
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-host
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsgpty-host.go:10
+- **main** (private) - `main()` - dmsgpty-host.go:14
+
+---
+
+## cmd/dmsgpty-host/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-host/commands
+**Functions**: 7
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:156
+- **configFromJSON** (private) - `configFromJSON(conf dmsgpty.Config) (dmsgpty.Config, error)` - root.go:162
+- **fillConfigFromENV** (private) - `fillConfigFromENV(conf dmsgpty.Config) (dmsgpty.Config, error)` - root.go:239
+- **fillConfigFromFlags** (private) - `fillConfigFromFlags(conf dmsgpty.Config) dmsgpty.Config` - root.go:274
+- **getConfig** (private) - `getConfig(cmd *cobra.Command, skGen bool) (dmsgpty.Config, error)` - root.go:299
+- **init** (private) - `init()` - confgen.go:15
+- **init** (private) - `init()` - root.go:57
+
+---
+
+## cmd/dmsgpty-ui
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-ui
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsgpty-ui.go:10
+- **main** (private) - `main()` - dmsgpty-ui.go:14
+
+---
+
+## cmd/dmsgpty-ui/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgpty-ui/commands
+**Functions**: 2
+
+### Functions
+- **Execute** (public) - `Execute()` - dmsgpty-ui.go:73
+- **init** (private) - `init()` - dmsgpty-ui.go:27
+
+---
+
+## cmd/dmsgweb
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgweb
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsgweb.go:10
+- **main** (private) - `main()` - dmsgweb.go:14
+
+---
+
+## cmd/dmsgweb/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/cmd/dmsgweb/commands
+**Functions**: 21
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:57
+- **getBackgroundColor** (private) - `getBackgroundColor(statusCode int) string` - root.go:367
+- **getMethodColor** (private) - `getMethodColor(method string) string` - root.go:380
+- **init** (private) - `init()` - dmsgwebsrv.go:31
+- **init** (private) - `init()` - dmsgweb.go:53
+- **loggingMiddleware** (private) - `loggingMiddleware() gin.HandlerFunc` - root.go:335
+- **printEnvs** (private) - `printEnvs(envfile string)` - root.go:63
+- **proxyHTTPConn** (private) - `proxyHTTPConn(n int)` - dmsgweb.go:379
+- **proxyHTTPConnections** (private) - `proxyHTTPConnections(ctx context.Context, localPort uint, listener net.Listener)` - dmsgwebsrv.go:164
+- **proxyTCPConn** (private) - `proxyTCPConn(n int)` - dmsgweb.go:316
+- **proxyTCPConnections** (private) - `proxyTCPConnections(ctx context.Context, localPort uint, listener net.Listener)` - dmsgwebsrv.go:204
+- **resetColor** (private) - `resetColor() string` - root.go:401
+- **scriptExecBoolSlice** (private) - `scriptExecBoolSlice(s, envfile string) []bool` - root.go:150
+- **scriptExecString** (private) - `scriptExecString(s, envfile string) string` - root.go:80
+- **scriptExecStringSlice** (private) - `scriptExecStringSlice(s, envfile string) []string` - root.go:131
+- **scriptExecUint** (private) - `scriptExecUint(s, envfile string) uint` - root.go:253
+- **scriptExecUintSlice** (private) - `scriptExecUintSlice(s, envfile string) []uint` - root.go:186
+- **server** (private) - `server()` - dmsgwebsrv.go:117
+- **whitelistAuth** (private) - `whitelistAuth(whitelistedPKs []cipher.PubKey) gin.HandlerFunc` - root.go:296
+
+### Methods
+
+#### *customResolver
+- **Resolve** (public) - `(r *customResolver) Resolve(ctx context.Context, name string) (context.Context, net.IP, error)` - dmsgweb.go:35
+
+#### *ginHandler
+- **ServeHTTP** (public) - `(h *ginHandler) ServeHTTP(w http.ResponseWriter, r *http.Request)` - root.go:331
+
+---
+
+## examples/basics
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/basics
+**Functions**: 1
+
+### Functions
+- **main** (private) - `main()` - main.go:15
+
+---
+
+## examples/dmsgcurl/dmsg-example-http-server
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgcurl/dmsg-example-http-server
+**Functions**: 4
+
+### Functions
+- **fileServerHandler** (private) - `fileServerHandler(w http.ResponseWriter, r *http.Request)` - dmsg-example-http-server.go:88
+- **init** (private) - `init()` - dmsg-example-http-server.go:27
+- **main** (private) - `main()` - dmsg-example-http-server.go:41
+- **parse** (private) - `parse() err error` - dmsg-example-http-server.go:34
+
+---
+
+## examples/dmsgcurl/gen-keys
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgcurl/gen-keys
+**Functions**: 1
+
+### Functions
+- **main** (private) - `main()` - gen-keys.go:9
+
+---
+
+## examples/dmsghttp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsghttp
+**Functions**: 4
+
+### Functions
+- **Execute** (public) - `Execute()` - dmsghttp.go:115
+- **init** (private) - `init()` - dmsghttp.go:28
+- **init** (private) - `init()` - dmsghttp.go:121
+- **main** (private) - `main()` - dmsghttp.go:129
+
+---
+
+## examples/dmsghttp-client
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsghttp-client
+**Functions**: 1
+
+### Functions
+- **main** (private) - `main()` - dmsghttp-client.go:19
+
+---
+
+## examples/dmsgtcp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgtcp
+**Functions**: 5
+
+### Functions
+- **Execute** (public) - `Execute()` - dmsgtcp.go:127
+- **handleConnection** (private) - `handleConnection(conn net.Conn, log *logging.Logger)` - dmsgtcp.go:115
+- **init** (private) - `init()` - dmsgtcp.go:30
+- **init** (private) - `init()` - dmsgtcp.go:133
+- **main** (private) - `main()` - dmsgtcp.go:141
+
+---
+
+## examples/dmsgweb
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgweb
+**Functions**: 2
+
+### Functions
+- **init** (private) - `init()` - dmsgweb.go:11
+- **main** (private) - `main()` - dmsgweb.go:19
+
+---
+
+## examples/dmsgweb/commands
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/dmsgweb/commands
+**Functions**: 8
+
+### Functions
+- **Execute** (public) - `Execute()` - root.go:175
+- **getBackgroundColor** (private) - `getBackgroundColor(statusCode int) string` - root.go:125
+- **getMethodColor** (private) - `getMethodColor(method string) string` - root.go:138
+- **init** (private) - `init()` - dmsgweb.go:29
+- **loggingMiddleware** (private) - `loggingMiddleware() gin.HandlerFunc` - root.go:93
+- **resetColor** (private) - `resetColor() string` - root.go:159
+- **startDmsg** (private) - `startDmsg(ctx context.Context, pk cipher.PubKey, sk cipher.SecKey) (dmsgC *dmsg.Client, stop func(), err error)` - root.go:69
+
+### Methods
+
+#### *customResolver
+- **Resolve** (public) - `(r *customResolver) Resolve(ctx context.Context, name string) (context.Context, net.IP, error)` - root.go:37
+
+---
+
+## examples/gen-keys
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/gen-keys
+**Functions**: 1
+
+### Functions
+- **main** (private) - `main()` - gen-keys.go:10
+
+---
+
+## examples/http
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/http
+**Functions**: 1
+
+### Functions
+- **main** (private) - `main()` - http.go:12
+
+---
+
+## examples/proxified
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/proxified
+**Functions**: 1
+
+### Functions
+- **main** (private) - `main()` - main.go:16
+
+---
+
+## examples/tcp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp
+**Functions**: 2
+
+### Functions
+- **handleConnection** (private) - `handleConnection(conn net.Conn)` - tcp.go:31
+- **main** (private) - `main()` - tcp.go:10
+
+---
+
+## examples/tcp-multi-proxy-dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-multi-proxy-dmsg
+**Functions**: 5
+
+### Functions
+- **handleTCPConnection** (private) - `handleTCPConnection(dmsgConn net.Conn, localPort uint, log *logging.Logger)` - tcp-multi-proxy-dmsg.go:149
+- **init** (private) - `init()` - tcp-multi-proxy-dmsg.go:55
+- **main** (private) - `main()` - tcp-multi-proxy-dmsg.go:21
+- **proxyPort** (private) - `proxyPort(ctx context.Context, dmsgC *dmsg.Client, localPort, dmsgPort uint, log *logging.Logger)` - tcp-multi-proxy-dmsg.go:124
+- **server** (private) - `server()` - tcp-multi-proxy-dmsg.go:79
+
+---
+
+## examples/tcp-proxy
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-proxy
+**Functions**: 3
+
+### Functions
+- **handleConnection** (private) - `handleConnection(conn net.Conn, targetPort int)` - tcp-proxy.go:43
+- **isClosedConnErr** (private) - `isClosedConnErr(err error) bool` - tcp-proxy.go:78
+- **main** (private) - `main()` - tcp-proxy.go:13
+
+---
+
+## examples/tcp-proxy-dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-proxy-dmsg
+**Functions**: 9
+
+### Functions
+- **handleTCPConnection** (private) - `handleTCPConnection(dmsgConn net.Conn, localPort uint, log *logging.Logger)` - tcp-proxy-dmsg.go:167
+- **init** (private) - `init()` - tcp-proxy-dmsg.go:78
+- **isClosedConnErr** (private) - `isClosedConnErr(err error) bool` - tcp-proxy-dmsg.go:226
+- **logWriter** (private) - `logWriter(direction string, log *logging.Logger) io.Writer` - tcp-proxy-dmsg.go:207
+- **main** (private) - `main()` - tcp-proxy-dmsg.go:22
+- **proxyTCPConnections** (private) - `proxyTCPConnections(localPort uint, lis net.Listener, log *logging.Logger)` - tcp-proxy-dmsg.go:155
+- **server** (private) - `server()` - tcp-proxy-dmsg.go:102
+- **startDmsg** (private) - `startDmsg(ctx context.Context, pk cipher.PubKey, sk cipher.SecKey) (dmsgC *dmsg.Client, stop func(), err error)` - tcp-proxy-dmsg.go:234
+
+### Methods
+
+#### *logWriterImpl
+- **Write** (public) - `(lw *logWriterImpl) Write(p []byte) (int, error)` - tcp-proxy-dmsg.go:220
+
+---
+
+## examples/tcp-reverse-proxy-dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/examples/tcp-reverse-proxy-dmsg
+**Functions**: 6
+
+### Functions
+- **init** (private) - `init()` - tcp-reverse-proxy-dmsg.go:74
+- **logWriter** (private) - `logWriter(direction string, log *logging.Logger) io.Writer` - tcp-reverse-proxy-dmsg.go:209
+- **main** (private) - `main()` - tcp-reverse-proxy-dmsg.go:28
+- **proxyTCPConn** (private) - `proxyTCPConn()` - tcp-reverse-proxy-dmsg.go:156
+- **startDmsg** (private) - `startDmsg(ctx context.Context, pk cipher.PubKey, sk cipher.SecKey) (dmsgC *dmsg.Client, stop func(), err error)` - tcp-reverse-proxy-dmsg.go:227
+
+### Methods
+
+#### *logWriterImpl
+- **Write** (public) - `(lw *logWriterImpl) Write(p []byte) (int, error)` - tcp-reverse-proxy-dmsg.go:222
+
+---
+
+## internal/cli
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/cli
+**Functions**: 6
+
+### Functions
+- **InitDmsgWithFlags** (public) - `InitDmsgWithFlags(ctx context.Context, dlog *logging.Logger, pk cipher.PubKey, sk cipher.SecKey, httpClient *http.Client, destination string) (dmsgC *dmsg.Client, stop func(), err error)` - cli.go:46
+- **NewFallbackRoundTripper** (public) - `NewFallbackRoundTripper(ctx context.Context, clients []*dmsg.Client) http.RoundTripper` - cli.go:225
+- **StartDmsg** (public) - `StartDmsg(ctx context.Context, dlog *logging.Logger, pk cipher.PubKey, sk cipher.SecKey, httpClient *http.Client, dmsgDisc string, dmsgSessions int) (dmsgC *dmsg.Client, stop func(), err error)` - cli.go:118
+- **StartDmsgDirect** (public) - `StartDmsgDirect(ctx context.Context, dlog *logging.Logger, pk cipher.PubKey, sk cipher.SecKey, dmsgDiscAddr string, dmsgSessions int, destination string) (*dmsg.Client, func(), error)` - cli.go:148
+- **StartDmsgDirectWithServers** (public) - `StartDmsgDirectWithServers(ctx context.Context, dlog *logging.Logger, pk cipher.PubKey, sk cipher.SecKey, dmsgDiscAddr string, dmsgServers []*disc.Entry, dmsgSessions int, destination string) (dmsgC *dmsg.Client, stop func(), err error)` - cli.go:163
+
+### Methods
+
+#### *FallbackRoundTripper
+- **RoundTrip** (public) - `(f *FallbackRoundTripper) RoundTrip(req *http.Request) (*http.Response, error)` - cli.go:233
+
+---
+
+## internal/discmetrics
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/discmetrics
+**Functions**: 6
+
+### Functions
+- **NewEmpty** (public) - `NewEmpty() Empty` - empty.go:5
+- **NewVictoriaMetrics** (public) - `NewVictoriaMetrics() *VictoriaMetrics` - victoria_metrics.go:15
+
+### Methods
+
+#### *VictoriaMetrics
+- **SetClientsCount** (public) - `(m *VictoriaMetrics) SetClientsCount(val int64)` - victoria_metrics.go:23
+- **SetServersCount** (public) - `(m *VictoriaMetrics) SetServersCount(val int64)` - victoria_metrics.go:28
+
+#### Empty
+- **SetClientsCount** (public) - `(Empty) SetClientsCount(_ int64)` - empty.go:13
+- **SetServersCount** (public) - `(Empty) SetServersCount(_ int64)` - empty.go:16
+
+---
+
+## internal/dmsg-discovery/api
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/dmsg-discovery/api
+**Functions**: 21
+
+### Functions
+- **New** (public) - `New(log logrus.FieldLogger, db store.Storer, m discmetrics.Metrics, testMode, enableLoadTesting, enableMetrics bool, dmsgAddr, authPassphrase string) *API` - api.go:53
+- **TestEntriesEndpoint** (public) - `TestEntriesEndpoint(t *testing.T)` - entries_endpoint_test.go:22
+- **TestErrorHandler** (public) - `TestErrorHandler(t *testing.T)` - error_handler_test.go:33
+- **TestGetAvailableServers** (public) - `TestGetAvailableServers(t *testing.T)` - get_available_servers_test.go:21
+- **isLoopbackAddr** (private) - `isLoopbackAddr(addr string) (bool, error)` - api.go:455
+- **toJSON** (private) - `toJSON(t *testing.T, e *disc.Entry) string` - entries_endpoint_test.go:221
+
+### Methods
+
+#### *API
+- **AllServers** (public) - `(a *API) AllServers(ctx context.Context, _ logrus.FieldLogger) (entries []*disc.Entry, err error)` - api.go:121
+- **RunBackgroundTasks** (public) - `(a *API) RunBackgroundTasks(ctx context.Context, log logrus.FieldLogger)` - api.go:106
+- **allEntries** (private) - `(a *API) allEntries() func(w http.ResponseWriter, r *http.Request)` - api.go:156
+- **allVisorEntries** (private) - `(a *API) allVisorEntries() func(w http.ResponseWriter, r *http.Request)` - api.go:170
+- **delEntry** (private) - `(a *API) delEntry() func(w http.ResponseWriter, r *http.Request)` - api.go:357
+- **deregisterEntry** (private) - `(a *API) deregisterEntry() func(w http.ResponseWriter, r *http.Request)` - api.go:184
+- **getAllServers** (private) - `(a *API) getAllServers() http.HandlerFunc` - api.go:423
+- **getAvailableServers** (private) - `(a *API) getAvailableServers() http.HandlerFunc` - api.go:399
+- **getEntry** (private) - `(a *API) getEntry() func(w http.ResponseWriter, r *http.Request)` - api.go:132
+- **handleError** (private) - `(a *API) handleError(w http.ResponseWriter, r *http.Request, e error)` - error_handler.go:29
+- **log** (private) - `(a *API) log(r *http.Request) logrus.FieldLogger` - api.go:101
+- **serviceHealth** (private) - `(a *API) serviceHealth(w http.ResponseWriter, r *http.Request)` - api.go:444
+- **setEntry** (private) - `(a *API) setEntry() func(w http.ResponseWriter, r *http.Request)` - api.go:260
+- **updateInternalState** (private) - `(a *API) updateInternalState(ctx context.Context, logger logrus.FieldLogger)` - api.go:484
+- **writeJSON** (private) - `(a *API) writeJSON(w http.ResponseWriter, r *http.Request, code int, object interface{...})` - api.go:469
+
+---
+
+## internal/dmsg-discovery/store
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/dmsg-discovery/store
+**Functions**: 31
+
+### Functions
+- **DefaultConfig** (public) - `DefaultConfig() *Config` - storer.go:68
+- **NewMock** (public) - `NewMock() Storer` - testing.go:52
+- **NewStore** (public) - `NewStore(ctx context.Context, name string, conf *Config, log *logging.Logger) (Storer, error)` - storer.go:77
+- **TestRedisCountEntries** (public) - `TestRedisCountEntries(t *testing.T)` - redis_test.go:94
+- **TestRedisStoreClientEntry** (public) - `TestRedisStoreClientEntry(t *testing.T)` - redis_test.go:25
+- **TestRedisStoreServerEntry** (public) - `TestRedisStoreServerEntry(t *testing.T)` - redis_test.go:56
+- **arrayFromMap** (private) - `arrayFromMap(m map[string][]byte) [][]byte` - testing.go:186
+- **newRedis** (private) - `newRedis(ctx context.Context, url, password string, timeout time.Duration, log *logging.Logger) (Storer, error)` - redis.go:26
+
+### Methods
+
+#### *MockStore
+- **AllEntries** (public) - `(ms *MockStore) AllEntries(_ context.Context) ([]string, error)` - testing.go:201
+- **AllServers** (public) - `(ms *MockStore) AllServers(_ context.Context) ([]*disc.Entry, error)` - testing.go:138
+- **AllVisorEntries** (public) - `(ms *MockStore) AllVisorEntries(_ context.Context) ([]string, error)` - testing.go:222
+- **AvailableServers** (public) - `(ms *MockStore) AvailableServers(_ context.Context, _ int) ([]*disc.Entry, error)` - testing.go:116
+- **Clear** (public) - `(ms *MockStore) Clear()` - testing.go:110
+- **CountEntries** (public) - `(ms *MockStore) CountEntries(_ context.Context) (int64, int64, error)` - testing.go:160
+- **DelEntry** (public) - `(ms *MockStore) DelEntry(_ context.Context, staticPubKey cipher.PubKey) error` - testing.go:99
+- **Entry** (public) - `(ms *MockStore) Entry(_ context.Context, staticPubKey cipher.PubKey) (*disc.Entry, error)` - testing.go:60
+- **RemoveOldServerEntries** (public) - `(ms *MockStore) RemoveOldServerEntries(_ context.Context) error` - testing.go:105
+- **SetEntry** (public) - `(ms *MockStore) SetEntry(_ context.Context, entry *disc.Entry, _ time.Duration) error` - testing.go:83
+- **delEntry** (private) - `(ms *MockStore) delEntry(staticPubKey string)` - testing.go:29
+- **entry** (private) - `(ms *MockStore) entry(staticPubkey string) ([]byte, bool)` - testing.go:35
+- **setEntry** (private) - `(ms *MockStore) setEntry(staticPubKey string, payload []byte)` - testing.go:22
+- **setServer** (private) - `(ms *MockStore) setServer(staticPubKey string, payload []byte)` - testing.go:44
+
+#### *redisStore
+- **AllEntries** (public) - `(r *redisStore) AllEntries(ctx context.Context) ([]string, error)` - redis.go:237
+- **AllServers** (public) - `(r *redisStore) AllServers(ctx context.Context) ([]*disc.Entry, error)` - redis.go:171
+- **AllVisorEntries** (public) - `(r *redisStore) AllVisorEntries(ctx context.Context) ([]string, error)` - redis.go:245
+- **AvailableServers** (public) - `(r *redisStore) AvailableServers(ctx context.Context, maxCount int) ([]*disc.Entry, error)` - redis.go:122
+- **CountEntries** (public) - `(r *redisStore) CountEntries(ctx context.Context) (int64, int64, error)` - redis.go:209
+- **DelEntry** (public) - `(r *redisStore) DelEntry(ctx context.Context, staticPubKey cipher.PubKey) error` - redis.go:108
+- **Entry** (public) - `(r *redisStore) Entry(ctx context.Context, staticPubKey cipher.PubKey) (*disc.Entry, error)` - redis.go:46
+- **RemoveOldServerEntries** (public) - `(r *redisStore) RemoveOldServerEntries(ctx context.Context) error` - redis.go:224
+- **SetEntry** (public) - `(r *redisStore) SetEntry(ctx context.Context, entry *disc.Entry, timeout time.Duration) error` - redis.go:66
+
+---
+
+## internal/dmsg-server/api
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/dmsg-server/api
+**Functions**: 11
+
+### Functions
+- **New** (public) - `New(r *chi.Mux, log *logging.Logger, m servermetrics.Metrics) *API` - api.go:40
+- **calculateThroughput** (private) - `calculateThroughput(sessions map[cipher.PubKey]*dmsg.SessionCommon, previousDecValues map[*dmsg.SessionCommon]uint64, previousEncValues map[*dmsg.SessionCommon]uint64) (map[*dmsg.SessionCommon]uint64, map[*dmsg.SessionCommon]uint64, uint64)` - api.go:198
+
+### Methods
+
+#### *API
+- **Close** (public) - `(a *API) Close() error` - api.go:121
+- **ListenAndServe** (public) - `(a *API) ListenAndServe(lAddr, pAddr, httpAddr string) error` - api.go:84
+- **RunBackgroundTasks** (public) - `(a *API) RunBackgroundTasks(ctx context.Context)` - api.go:56
+- **SetDmsgServer** (public) - `(a *API) SetDmsgServer(srv *dmsg.Server)` - api.go:79
+- **health** (private) - `(a *API) health(w http.ResponseWriter, r *http.Request)` - api.go:126
+- **log** (private) - `(a *API) log(r *http.Request) logrus.FieldLogger` - api.go:150
+- **updateAverageNumberOfPacketsPerMinute** (private) - `(a *API) updateAverageNumberOfPacketsPerMinute()` - api.go:162
+- **updateInternalState** (private) - `(a *API) updateInternalState()` - api.go:155
+- **writeJSON** (private) - `(a *API) writeJSON(w http.ResponseWriter, r *http.Request, code int, object interface{...})` - api.go:135
+
+---
+
+## internal/flags
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/flags
+**Functions**: 2
+
+### Functions
+- **InitConfig** (public) - `InitConfig() error` - flags.go:43
+- **InitFlags** (public) - `InitFlags(cmd *cobra.Command)` - flags.go:33
+
+---
+
+## internal/fsutil
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/fsutil
+**Functions**: 1
+
+### Functions
+- **Exists** (public) - `Exists(path string) (bool, error)` - fsutil.go:9
+
+---
+
+## internal/servermetrics
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/internal/servermetrics
+**Functions**: 12
+
+### Functions
+- **NewEmpty** (public) - `NewEmpty() Empty` - empty.go:5
+- **NewVictoriaMetrics** (public) - `NewVictoriaMetrics() *VictoriaMetrics` - victoria_metrics.go:25
+
+### Methods
+
+#### *VictoriaMetrics
+- **RecordSession** (public) - `(m *VictoriaMetrics) RecordSession(delta DeltaType)` - victoria_metrics.go:55
+- **RecordStream** (public) - `(m *VictoriaMetrics) RecordStream(delta DeltaType)` - victoria_metrics.go:70
+- **SetClientsCount** (public) - `(m *VictoriaMetrics) SetClientsCount(val int64)` - victoria_metrics.go:50
+- **SetPacketsPerMinute** (public) - `(m *VictoriaMetrics) SetPacketsPerMinute(val uint64)` - victoria_metrics.go:40
+- **SetPacketsPerSecond** (public) - `(m *VictoriaMetrics) SetPacketsPerSecond(val uint64)` - victoria_metrics.go:45
+
+#### Empty
+- **RecordSession** (public) - `(Empty) RecordSession(_ DeltaType)` - empty.go:13
+- **RecordStream** (public) - `(Empty) RecordStream(_ DeltaType)` - empty.go:16
+- **SetClientsCount** (public) - `(Empty) SetClientsCount(_ int64)` - empty.go:25
+- **SetPacketsPerMinute** (public) - `(Empty) SetPacketsPerMinute(_ uint64)` - empty.go:19
+- **SetPacketsPerSecond** (public) - `(Empty) SetPacketsPerSecond(_ uint64)` - empty.go:22
+
+---
+
+## pkg/direct
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/direct
+**Functions**: 11
+
+### Functions
+- **GetAllEntries** (public) - `GetAllEntries(pks cipher.PubKeys, servers []*disc.Entry) entries []*disc.Entry` - entries.go:30
+- **GetClientEntry** (public) - `GetClientEntry(pks cipher.PubKeys, servers []*disc.Entry) clients []*disc.Entry` - entries.go:11
+- **NewClient** (public) - `NewClient(entries []*disc.Entry, log *logging.Logger) disc.APIClient` - client.go:24
+- **StartDmsg** (public) - `StartDmsg(ctx context.Context, log *logging.Logger, pk cipher.PubKey, sk cipher.SecKey, dClient disc.APIClient, config *dmsg.Config) (dmsgDC *dmsg.Client, stop func(), err error)` - direct.go:16
+
+### Methods
+
+#### *directClient
+- **AllEntries** (public) - `(c *directClient) AllEntries(_ context.Context) (entries []string, err error)` - client.go:96
+- **AllServers** (public) - `(c *directClient) AllServers(_ context.Context) (entries []*disc.Entry, err error)` - client.go:84
+- **AvailableServers** (public) - `(c *directClient) AvailableServers(_ context.Context) (entries []*disc.Entry, err error)` - client.go:72
+- **DelEntry** (public) - `(c *directClient) DelEntry(_ context.Context, entry *disc.Entry) error` - client.go:56
+- **Entry** (public) - `(c *directClient) Entry(_ context.Context, pubKey cipher.PubKey) (*disc.Entry, error)` - client.go:36
+- **PostEntry** (public) - `(c *directClient) PostEntry(_ context.Context, entry *disc.Entry) error` - client.go:48
+- **PutEntry** (public) - `(c *directClient) PutEntry(_ context.Context, _ cipher.SecKey, entry *disc.Entry) error` - client.go:64
+
+---
+
+## pkg/disc
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/disc
+**Functions**: 52
+
+### Functions
+- **Copy** (public) - `Copy(dst, src *Entry)` - entry.go:309
+- **NewClientEntry** (public) - `NewClientEntry(pubkey cipher.PubKey, sequence uint64, delegatedServers []cipher.PubKey) *Entry` - entry.go:188
+- **NewEntryValidationError** (public) - `NewEntryValidationError(cause string) error` - entry.go:93
+- **NewHTTP** (public) - `NewHTTP(address string, client *http.Client, log *logging.Logger) APIClient` - client.go:41
+- **NewMock** (public) - `NewMock(timeout time.Duration) APIClient` - testing.go:24
+- **NewServerEntry** (public) - `NewServerEntry(pk cipher.PubKey, seq uint64, addr string, availableSessions int) *Entry` - entry.go:199
+- **TestCopy** (public) - `TestCopy(t *testing.T)` - entry_test.go:241
+- **TestMain** (public) - `TestMain(m *testing.M)` - entry_test.go:19
+- **TestNewClientEntryIsValid** (public) - `TestNewClientEntryIsValid(t *testing.T)` - entry_test.go:34
+- **TestNewMockEntriesEndpoint** (public) - `TestNewMockEntriesEndpoint(t *testing.T)` - client_mock_test.go:110
+- **TestNewMockGetAvailableServers** (public) - `TestNewMockGetAvailableServers(t *testing.T)` - client_mock_test.go:18
+- **TestNewMockSetEntriesEndpoint** (public) - `TestNewMockSetEntriesEndpoint(t *testing.T)` - client_mock_test.go:172
+- **TestNewMockUpdateEntriesEndpoint** (public) - `TestNewMockUpdateEntriesEndpoint(t *testing.T)` - client_mock_test.go:277
+- **TestNewMockUpdateEntrySequence** (public) - `TestNewMockUpdateEntrySequence(t *testing.T)` - client_mock_test.go:348
+- **TestValidateIteration** (public) - `TestValidateIteration(t *testing.T)` - entry_test.go:161
+- **TestValidateIterationEmptyClient** (public) - `TestValidateIterationEmptyClient(t *testing.T)` - entry_test.go:179
+- **TestValidateIterationWrongSequence** (public) - `TestValidateIterationWrongSequence(t *testing.T)` - entry_test.go:201
+- **TestValidateIterationWrongTime** (public) - `TestValidateIterationWrongTime(t *testing.T)` - entry_test.go:221
+- **TestValidateNonClientNonServerEntry** (public) - `TestValidateNonClientNonServerEntry(t *testing.T)` - entry_test.go:130
+- **TestValidateNonKeysEntry** (public) - `TestValidateNonKeysEntry(t *testing.T)` - entry_test.go:108
+- **TestValidateNonSignedEntry** (public) - `TestValidateNonSignedEntry(t *testing.T)` - entry_test.go:147
+- **TestValidateRightEntry** (public) - `TestValidateRightEntry(t *testing.T)` - entry_test.go:94
+- **TestVerifySignature** (public) - `TestVerifySignature(t *testing.T)` - entry_test.go:69
+- **checkEqualEntries** (private) - `checkEqualEntries(t *testing.T, entries, expected []*disc.Entry)` - client_mock_test.go:97
+- **errFromString** (private) - `errFromString(s string) error` - entry.go:78
+- **newTestEntry** (private) - `newTestEntry(pk cipher.PubKey) disc.Entry` - client_mock_test.go:371
+
+### Methods
+
+#### *Client
+- **String** (public) - `(c *Client) String() string` - entry.go:156
+
+#### *Entry
+- **Sign** (public) - `(e *Entry) Sign(sk cipher.SecKey) error` - entry.go:233
+- **String** (public) - `(e *Entry) String() string` - entry.go:128
+- **Validate** (public) - `(e *Entry) Validate(validateTimestamp bool) error` - entry.go:251
+- **ValidateIteration** (public) - `(e *Entry) ValidateIteration(nextEntry *Entry) error` - entry.go:290
+- **VerifySignature** (public) - `(e *Entry) VerifySignature() error` - entry.go:210
+
+#### *Server
+- **String** (public) - `(s *Server) String() string` - entry.go:179
+
+#### *httpClient
+- **AllEntries** (public) - `(c *httpClient) AllEntries(ctx context.Context) ([]string, error)` - client.go:320
+- **AllServers** (public) - `(c *httpClient) AllServers(ctx context.Context) ([]*Entry, error)` - client.go:278
+- **AvailableServers** (public) - `(c *httpClient) AvailableServers(ctx context.Context) ([]*Entry, error)` - client.go:236
+- **DelEntry** (public) - `(c *httpClient) DelEntry(ctx context.Context, entry *Entry) error` - client.go:149
+- **Entry** (public) - `(c *httpClient) Entry(ctx context.Context, publicKey cipher.PubKey) (*Entry, error)` - client.go:53
+- **PostEntry** (public) - `(c *httpClient) PostEntry(ctx context.Context, entry *Entry) error` - client.go:95
+- **PutEntry** (public) - `(c *httpClient) PutEntry(ctx context.Context, sk cipher.SecKey, entry *Entry) error` - client.go:203
+
+#### *mockClient
+- **AllEntries** (public) - `(m *mockClient) AllEntries(_ context.Context) ([]string, error)` - testing.go:160
+- **AllServers** (public) - `(m *mockClient) AllServers(_ context.Context) ([]*Entry, error)` - testing.go:147
+- **AvailableServers** (public) - `(m *mockClient) AvailableServers(_ context.Context) ([]*Entry, error)` - testing.go:134
+- **DelEntry** (public) - `(m *mockClient) DelEntry(_ context.Context, entry *Entry) error` - testing.go:98
+- **Entry** (public) - `(m *mockClient) Entry(_ context.Context, pk cipher.PubKey) (*Entry, error)` - testing.go:69
+- **PostEntry** (public) - `(m *mockClient) PostEntry(_ context.Context, entry *Entry) error` - testing.go:80
+- **PutEntry** (public) - `(m *mockClient) PutEntry(ctx context.Context, sk cipher.SecKey, e *Entry) error` - testing.go:104
+- **delEntry** (private) - `(m *mockClient) delEntry(pk cipher.PubKey)` - testing.go:39
+- **entry** (private) - `(m *mockClient) entry(pk cipher.PubKey) (Entry, bool)` - testing.go:31
+- **setEntry** (private) - `(m *mockClient) setEntry(entry Entry)` - testing.go:45
+
+#### EntryValidationError
+- **Error** (public) - `(e EntryValidationError) Error() string` - entry.go:97
+
+#### HTTPMessage
+- **String** (public) - `(h HTTPMessage) String() string` - http_message.go:22
+
+---
+
+## pkg/dmsg
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsg
+**Functions**: 153
+
+### Functions
+- **DefaultConfig** (public) - `DefaultConfig() *Config` - client.go:61
+- **DefaultServerConfig** (public) - `DefaultServerConfig() *ServerConfig` - server.go:26
+- **DiscAddr** (public) - `DiscAddr(testenv bool) string` - const.go:50
+- **DiscURL** (public) - `DiscURL(testenv bool) string` - const.go:42
+- **ErrorFromCode** (public) - `ErrorFromCode(code errorCode) (bool, error)` - errors.go:50
+- **ExtractPKFromDmsgAddr** (public) - `ExtractPKFromDmsgAddr(input string) string` - const.go:58
+- **GenKeyPair** (public) - `GenKeyPair(t *testing.T, seed string) (cipher.PubKey, cipher.SecKey)` - stream_test.go:305
+- **InitConfig** (public) - `InitConfig() error` - const.go:86
+- **MakeSignedStreamRequest** (public) - `MakeSignedStreamRequest(req *StreamRequest, sk cipher.SecKey) SignedObject` - types.go:105
+- **MakeSignedStreamResponse** (public) - `MakeSignedStreamResponse(resp *StreamResponse, sk cipher.SecKey) SignedObject` - types.go:114
+- **NewClient** (public) - `NewClient(pk cipher.PubKey, sk cipher.SecKey, dc disc.APIClient, conf *Config) *Client` - client.go:89
+- **NewServer** (public) - `NewServer(pk cipher.PubKey, sk cipher.SecKey, dc disc.APIClient, conf *ServerConfig, m servermetrics.Metrics) *Server` - server.go:57
+- **SignBytes** (public) - `SignBytes(b []byte, sk cipher.SecKey) cipher.Sig` - types.go:240
+- **TestLookupIP** (public) - `TestLookupIP(t *testing.T)` - stream_test.go:213
+- **TestStream** (public) - `TestStream(t *testing.T)` - stream_test.go:24
+- **addrToIP** (private) - `addrToIP(addr net.Addr) (net.IP, error)` - server_session.go:156
+- **awaitDone** (private) - `awaitDone(ctx context.Context, done chan struct{...})` - util.go:10
+- **decodeGob** (private) - `decodeGob(v interface{...}, b []byte) error` - util.go:36
+- **encodeGob** (private) - `encodeGob(v interface{...}) []byte` - util.go:28
+- **getClientEntry** (private) - `getClientEntry(ctx context.Context, dc disc.APIClient, clientPK cipher.PubKey) (*disc.Entry, error)` - entity_common.go:326
+- **getServerEntry** (private) - `getServerEntry(ctx context.Context, dc disc.APIClient, srvPK cipher.PubKey) (*disc.Entry, error)` - entity_common.go:315
+- **hasPK** (private) - `hasPK(pks []cipher.PubKey, pk cipher.PubKey) bool` - client.go:649
+- **init** (private) - `init()` - const.go:78
+- **isClosed** (private) - `isClosed(done chan struct{...}) bool` - util.go:17
+- **makeClientSession** (private) - `makeClientSession(entity *EntityCommon, porter *netutil.Porter, conn net.Conn, rPK cipher.PubKey) (ClientSession, error)` - client_session.go:20
+- **makeServerSession** (private) - `makeServerSession(m servermetrics.Metrics, entity *EntityCommon, conn net.Conn) (ServerSession, error)` - server_session.go:23
+- **newInitiatingStream** (private) - `newInitiatingStream(cSes *ClientSession) (*Stream, error)` - stream.go:30
+- **newListener** (private) - `newListener(porter *netutil.Porter, addr Addr) *Listener` - listener.go:26
+- **newRespondingStream** (private) - `newRespondingStream(cSes *ClientSession) (*Stream, error)` - stream.go:38
+- **registerErr** (private) - `registerErr(e Error) Error` - errors.go:64
+- **shuffleServers** (private) - `shuffleServers(in []disc.Entry) []disc.Entry` - const.go:104
+
+### Methods
+
+#### *Addr
+- **Set** (public) - `(a *Addr) Set(s string) error` - types.go:60
+
+#### *Client
+- **AllEntries** (public) - `(ce *Client) AllEntries(ctx context.Context) (entries []string, err error)` - client.go:584
+- **AllSessions** (public) - `(ce *Client) AllSessions() []ClientSession` - client.go:448
+- **AllStreams** (public) - `(ce *Client) AllStreams() out []*Stream` - client.go:564
+- **AllVisorEntries** (public) - `(ce *Client) AllVisorEntries(ctx context.Context) (entries []string, err error)` - client.go:593
+- **Close** (public) - `(ce *Client) Close() error` - client.go:298
+- **ConnectedServers** (public) - `(ce *Client) ConnectedServers() []string` - client.go:455
+- **ConnectedServersPK** (public) - `(ce *Client) ConnectedServersPK() []string` - client.go:602
+- **ConnectionsSummary** (public) - `(ce *Client) ConnectionsSummary() ConnectionsSummary` - client.go:616
+- **Dial** (public) - `(ce *Client) Dial(ctx context.Context, addr Addr) (net.Conn, error)` - client.go:338
+- **DialStream** (public) - `(ce *Client) DialStream(ctx context.Context, addr Addr) (*Stream, error)` - client.go:343
+- **EnsureAndObtainSession** (public) - `(ce *Client) EnsureAndObtainSession(ctx context.Context, srvPK cipher.PubKey) (ClientSession, error)` - client.go:467
+- **EnsureSession** (public) - `(ce *Client) EnsureSession(ctx context.Context, entry *disc.Entry) error` - client.go:484
+- **Listen** (public) - `(ce *Client) Listen(port uint16) (*Listener, error)` - client.go:326
+- **LookupIP** (public) - `(ce *Client) LookupIP(ctx context.Context, servers []cipher.PubKey) (myIP net.IP, err error)` - client.go:371
+- **Ready** (public) - `(ce *Client) Ready() <-chan struct{...}` - client.go:280
+- **Serve** (public) - `(ce *Client) Serve(ctx context.Context)` - client.go:139
+- **Session** (public) - `(ce *Client) Session(pk cipher.PubKey) (ClientSession, bool)` - client.go:443
+- **Type** (public) - `(*Client) Type() string` - client.go:133
+- **dialSession** (private) - `(ce *Client) dialSession(ctx context.Context, entry *disc.Entry) (cs ClientSession, err error)` - client.go:502
+- **discoverServers** (private) - `(ce *Client) discoverServers(ctx context.Context, all bool) (entries []*disc.Entry, err error)` - client.go:284
+- **serveWait** (private) - `(ce *Client) serveWait()` - client.go:634
+
+#### *ClientCallbacks
+- **ensure** (private) - `(sc *ClientCallbacks) ensure()` - client.go:34
+
+#### *ClientSession
+- **DialStream** (public) - `(cs *ClientSession) DialStream(dst Addr) (dStr *Stream, err error)` - client_session.go:31
+- **LookupIP** (public) - `(cs *ClientSession) LookupIP(dst Addr) (myIP net.IP, err error)` - client_session.go:73
+- **acceptStream** (private) - `(cs *ClientSession) acceptStream() (dStr *Stream, err error)` - client_session.go:143
+- **serve** (private) - `(cs *ClientSession) serve() error` - client_session.go:117
+
+#### *Config
+- **Ensure** (public) - `(c *Config) Ensure()` - client.go:53
+
+#### *EntityCommon
+- **LocalPK** (public) - `(c *EntityCommon) LocalPK() cipher.PubKey` - entity_common.go:54
+- **LocalSK** (public) - `(c *EntityCommon) LocalSK() cipher.SecKey` - entity_common.go:57
+- **Logger** (public) - `(c *EntityCommon) Logger() logrus.FieldLogger` - entity_common.go:60
+- **MasterLogger** (public) - `(c *EntityCommon) MasterLogger() *logging.MasterLogger` - entity_common.go:67
+- **SessionCount** (public) - `(c *EntityCommon) SessionCount() int` - entity_common.go:103
+- **SetLogger** (public) - `(c *EntityCommon) SetLogger(log logrus.FieldLogger)` - entity_common.go:64
+- **SetMasterLogger** (public) - `(c *EntityCommon) SetMasterLogger(mlog *logging.MasterLogger)` - entity_common.go:71
+- **allClientSessions** (private) - `(c *EntityCommon) allClientSessions(porter *netutil.Porter) []ClientSession` - entity_common.go:92
+- **clientSession** (private) - `(c *EntityCommon) clientSession(porter *netutil.Porter, pk cipher.PubKey) (ClientSession, bool)` - entity_common.go:87
+- **delEntry** (private) - `(c *EntityCommon) delEntry(ctx context.Context) err error` - entity_common.go:298
+- **delSession** (private) - `(c *EntityCommon) delSession(ctx context.Context, pk cipher.PubKey)` - entity_common.go:130
+- **init** (private) - `(c *EntityCommon) init(pk cipher.PubKey, sk cipher.SecKey, dc disc.APIClient, log logrus.FieldLogger, updateInterval time.Duration)` - entity_common.go:40
+- **recordUpdate** (private) - `(c *EntityCommon) recordUpdate()` - entity_common.go:350
+- **serverSession** (private) - `(c *EntityCommon) serverSession(pk cipher.PubKey) (ServerSession, bool)` - entity_common.go:81
+- **session** (private) - `(c *EntityCommon) session(pk cipher.PubKey) (*SessionCommon, bool)` - entity_common.go:73
+- **setSession** (private) - `(c *EntityCommon) setSession(ctx context.Context, dSes *SessionCommon) bool` - entity_common.go:110
+- **updateClientEntry** (private) - `(c *EntityCommon) updateClientEntry(ctx context.Context, done chan struct{...}, clientType string) err error` - entity_common.go:228
+- **updateClientEntryLoop** (private) - `(c *EntityCommon) updateClientEntryLoop(ctx context.Context, done chan struct{...}, clientType string)` - entity_common.go:269
+- **updateIsDue** (private) - `(c *EntityCommon) updateIsDue() (lastUpdate time.Time, isDue bool)` - entity_common.go:344
+- **updateServerEntry** (private) - `(c *EntityCommon) updateServerEntry(ctx context.Context, addr string, maxSessions int, authPassphrase string) err error` - entity_common.go:146
+- **updateServerEntryLoop** (private) - `(c *EntityCommon) updateServerEntryLoop(ctx context.Context, addr string, maxSessions int, authPassphrase string)` - entity_common.go:199
+
+#### *Listener
+- **Accept** (public) - `(l *Listener) Accept() (net.Conn, error)` - listener.go:68
+- **AcceptStream** (public) - `(l *Listener) AcceptStream() (*Stream, error)` - listener.go:73
+- **Addr** (public) - `(l *Listener) Addr() net.Addr` - listener.go:134
+- **Close** (public) - `(l *Listener) Close() error` - listener.go:92
+- **DmsgAddr** (public) - `(l *Listener) DmsgAddr() Addr` - listener.go:137
+- **Type** (public) - `(l *Listener) Type() string` - listener.go:140
+- **addCloseCallback** (private) - `(l *Listener) addCloseCallback(cb func())` - listener.go:37
+- **close** (private) - `(l *Listener) close() closed bool` - listener.go:99
+- **introduceStream** (private) - `(l *Listener) introduceStream(tp *Stream) error` - listener.go:40
+- **isClosed** (private) - `(l *Listener) isClosed() bool` - listener.go:124
+
+#### *Server
+- **AdvertisedAddr** (public) - `(s *Server) AdvertisedAddr() string` - server.go:186
+- **Close** (public) - `(s *Server) Close() error` - server.go:97
+- **GetSessions** (public) - `(s *Server) GetSessions() map[cipher.PubKey]*SessionCommon` - server.go:84
+- **Ready** (public) - `(s *Server) Ready() <-chan struct{...}` - server.go:203
+- **Serve** (public) - `(s *Server) Serve(lis net.Listener, addr string) error` - server.go:113
+- **SetAdvertisedAddr** (public) - `(s *Server) SetAdvertisedAddr(lis net.Listener, addr *string)` - server.go:193
+- **handleSession** (private) - `(s *Server) handleSession(conn net.Conn)` - server.go:207
+- **startUpdateEntryLoop** (private) - `(s *Server) startUpdateEntryLoop(ctx context.Context) error` - server.go:172
+
+#### *ServerSession
+- **Close** (public) - `(ss *ServerSession) Close() error` - server_session.go:36
+- **Serve** (public) - `(ss *ServerSession) Serve()` - server_session.go:44
+- **forwardRequest** (private) - `(ss *ServerSession) forwardRequest(req StreamRequest) (yStr *yamux.Stream, respObj SignedObject, err error)` - server_session.go:167
+- **serveStream** (private) - `(ss *ServerSession) serveStream(log logrus.FieldLogger, yStr *yamux.Stream) error` - server_session.go:70
+
+#### *SessionCommon
+- **Close** (public) - `(sc *SessionCommon) Close() error` - session_common.go:176
+- **GetConn** (public) - `(sc *SessionCommon) GetConn() net.Conn` - session_common.go:37
+- **GetDecNonce** (public) - `(sc *SessionCommon) GetDecNonce() uint64` - session_common.go:42
+- **GetEncNonce** (public) - `(sc *SessionCommon) GetEncNonce() uint64` - session_common.go:49
+- **LocalPK** (public) - `(sc *SessionCommon) LocalPK() cipher.PubKey` - session_common.go:161
+- **LocalTCPAddr** (public) - `(sc *SessionCommon) LocalTCPAddr() net.Addr` - session_common.go:167
+- **Ping** (public) - `(sc *SessionCommon) Ping() (time.Duration, error)` - session_common.go:173
+- **RemotePK** (public) - `(sc *SessionCommon) RemotePK() cipher.PubKey` - session_common.go:164
+- **RemoteTCPAddr** (public) - `(sc *SessionCommon) RemoteTCPAddr() net.Addr` - session_common.go:170
+- **initClient** (private) - `(sc *SessionCommon) initClient(entity *EntityCommon, conn net.Conn, rPK cipher.PubKey) error` - session_common.go:55
+- **initServer** (private) - `(sc *SessionCommon) initServer(entity *EntityCommon, conn net.Conn) error` - session_common.go:89
+- **localSK** (private) - `(sc *SessionCommon) localSK() cipher.SecKey` - session_common.go:158
+- **readObject** (private) - `(sc *SessionCommon) readObject(r io.Reader) (SignedObject, error)` - session_common.go:137
+- **writeObject** (private) - `(sc *SessionCommon) writeObject(w io.Writer, obj SignedObject) error` - session_common.go:123
+
+#### *Stream
+- **Close** (public) - `(s *Stream) Close() error` - stream.go:47
+- **LocalAddr** (public) - `(s *Stream) LocalAddr() net.Addr` - stream.go:218
+- **Logger** (public) - `(s *Stream) Logger() logrus.FieldLogger` - stream.go:58
+- **RawLocalAddr** (public) - `(s *Stream) RawLocalAddr() Addr` - stream.go:223
+- **RawRemoteAddr** (public) - `(s *Stream) RawRemoteAddr() Addr` - stream.go:233
+- **Read** (public) - `(s *Stream) Read(b []byte) (int, error)` - stream.go:248
+- **RemoteAddr** (public) - `(s *Stream) RemoteAddr() net.Addr` - stream.go:228
+- **ServerPK** (public) - `(s *Stream) ServerPK() cipher.PubKey` - stream.go:238
+- **SetDeadline** (public) - `(s *Stream) SetDeadline(t time.Time) error` - stream.go:258
+- **SetReadDeadline** (public) - `(s *Stream) SetReadDeadline(t time.Time) error` - stream.go:263
+- **SetWriteDeadline** (public) - `(s *Stream) SetWriteDeadline(t time.Time) error` - stream.go:268
+- **StreamID** (public) - `(s *Stream) StreamID() uint32` - stream.go:243
+- **Write** (public) - `(s *Stream) Write(b []byte) (int, error)` - stream.go:253
+- **prepareFields** (private) - `(s *Stream) prepareFields(init bool, lAddr, rAddr Addr)` - stream.go:199
+- **readIPResponse** (private) - `(s *Stream) readIPResponse(req StreamRequest) (net.IP, error)` - stream.go:184
+- **readRequest** (private) - `(s *Stream) readRequest() (req StreamRequest, err error)` - stream.go:113
+- **readResponse** (private) - `(s *Stream) readResponse(req StreamRequest) error` - stream.go:169
+- **writeIPRequest** (private) - `(s *Stream) writeIPRequest(rAddr Addr) (req StreamRequest, err error)` - stream.go:90
+- **writeRequest** (private) - `(s *Stream) writeRequest(rAddr Addr) (req StreamRequest, err error)` - stream.go:62
+- **writeResponse** (private) - `(s *Stream) writeResponse(reqHash cipher.SHA256) error` - stream.go:138
+
+#### Addr
+- **Network** (public) - `(Addr) Network() string` - types.go:38
+- **ShortString** (public) - `(a Addr) ShortString() string` - types.go:51
+- **String** (public) - `(a Addr) String() string` - types.go:43
+- **Type** (public) - `(Addr) Type() string` - types.go:93
+
+#### Error
+- **Error** (public) - `(e Error) Error() string` - errors.go:87
+- **Temporary** (public) - `(e Error) Temporary() bool` - errors.go:109
+- **Timeout** (public) - `(e Error) Timeout() bool` - errors.go:104
+- **Wrap** (public) - `(e Error) Wrap(err error) Error` - errors.go:114
+- **errorString** (private) - `(e Error) errorString() string` - errors.go:91
+
+#### SignedObject
+- **Hash** (public) - `(so SignedObject) Hash() cipher.SHA256` - types.go:128
+- **Object** (public) - `(so SignedObject) Object() []byte` - types.go:140
+- **ObtainStreamRequest** (public) - `(so SignedObject) ObtainStreamRequest() (StreamRequest, error)` - types.go:145
+- **ObtainStreamResponse** (public) - `(so SignedObject) ObtainStreamResponse() (StreamResponse, error)` - types.go:156
+- **Sig** (public) - `(so SignedObject) Sig() cipher.Sig` - types.go:133
+- **Valid** (public) - `(so SignedObject) Valid() bool` - types.go:123
+
+#### StreamRequest
+- **Verify** (public) - `(req StreamRequest) Verify(lastTimestamp int64) error` - types.go:178
+
+#### StreamResponse
+- **Verify** (public) - `(resp StreamResponse) Verify(req StreamRequest) error` - types.go:216
+
+---
+
+## pkg/dmsgctrl
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgctrl
+**Functions**: 12
+
+### Functions
+- **ControlStream** (public) - `ControlStream(conn net.Conn) *Control` - control.go:38
+- **ServeListener** (public) - `ServeListener(l net.Listener, chanLen int) <-chan *Control` - serve_listener.go:10
+- **TestControl_Done** (public) - `TestControl_Done(t *testing.T)` - control_test.go:40
+- **TestControl_Ping** (public) - `TestControl_Ping(t *testing.T)` - control_test.go:14
+- **isDone** (private) - `isDone(done <-chan struct{...}) bool` - control.go:139
+
+### Methods
+
+#### *Control
+- **Close** (public) - `(c *Control) Close() error` - control.go:109
+- **Conn** (public) - `(c *Control) Conn() net.Conn` - control.go:104
+- **Done** (public) - `(c *Control) Done() <-chan struct{...}` - control.go:119
+- **Err** (public) - `(c *Control) Err() error` - control.go:125
+- **Ping** (public) - `(c *Control) Ping(ctx context.Context) (time.Duration, error)` - control.go:84
+- **reportErr** (private) - `(c *Control) reportErr(err error)` - control.go:132
+- **serve** (private) - `(c *Control) serve()` - control.go:51
+
+---
+
+## pkg/dmsgcurl
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgcurl
+**Functions**: 26
+
+### Functions
+- **CancellableCopy** (public) - `CancellableCopy(ctx context.Context, w io.Writer, body io.ReadCloser, length int64) (int64, error)` - dmsgcurl.go:253
+- **Download** (public) - `Download(ctx context.Context, log logrus.FieldLogger, httpC *http.Client, w io.Writer, urlStr string, maxSize int64) error` - dmsgcurl.go:220
+- **New** (public) - `New(fs *flag.FlagSet) *DmsgCurl` - dmsgcurl.go:37
+- **TestDownload** (public) - `TestDownload(t *testing.T)` - dmsgcurl_test.go:40
+- **makeFile** (private) - `makeFile(t *testing.T, data []byte) *os.File` - dmsgcurl_test.go:86
+- **newHTTPClient** (private) - `newHTTPClient(t *testing.T, dc disc.APIClient) *http.Client` - dmsgcurl_test.go:174
+- **parseKeyPair** (private) - `parseKeyPair(skStr string) (pk cipher.PubKey, sk cipher.SecKey, err error)` - dmsgcurl.go:140
+- **parseOutputFile** (private) - `parseOutputFile(name string, urlPath string) (*os.File, error)` - dmsgcurl.go:171
+- **parseURL** (private) - `parseURL(args []string) (*URL, error)` - dmsgcurl.go:154
+- **runHTTPSrv** (private) - `runHTTPSrv(t *testing.T, dc disc.APIClient, fName string) string` - dmsgcurl_test.go:136
+- **startDmsgEnv** (private) - `startDmsgEnv(t *testing.T, nSrvs, maxSessions int) disc.APIClient` - dmsgcurl_test.go:104
+
+### Methods
+
+#### *DmsgCurl
+- **Run** (public) - `(dg *DmsgCurl) Run(ctx context.Context, log *logging.Logger, skStr string, args []string) err error` - dmsgcurl.go:73
+- **StartDmsg** (public) - `(dg *DmsgCurl) StartDmsg(ctx context.Context, log *logging.Logger, pk cipher.PubKey, sk cipher.SecKey) (dmsgC *dmsg.Client, stop func(), err error)` - dmsgcurl.go:196
+- **String** (public) - `(dg *DmsgCurl) String() string` - dmsgcurl.go:56
+- **flagGroups** (private) - `(dg *DmsgCurl) flagGroups() []FlagGroup` - dmsgcurl.go:68
+
+#### *ProgressWriter
+- **Write** (public) - `(pw *ProgressWriter) Write(p []byte) (int, error)` - progress_writer.go:17
+
+#### *URL
+- **Fill** (public) - `(du *URL) Fill(str string) error` - url.go:24
+
+#### *dmsgFlags
+- **Init** (public) - `(f *dmsgFlags) Init(fs *flag.FlagSet)` - flags.go:42
+- **Name** (public) - `(f *dmsgFlags) Name() string` - flags.go:40
+
+#### *downloadFlags
+- **Init** (public) - `(f *downloadFlags) Init(fs *flag.FlagSet)` - flags.go:62
+- **Name** (public) - `(f *downloadFlags) Name() string` - flags.go:60
+
+#### *httpFlags
+- **Init** (public) - `(f *httpFlags) Init(fs *flag.FlagSet)` - flags.go:74
+- **Name** (public) - `(f *httpFlags) Name() string` - flags.go:72
+
+#### *startupFlags
+- **Init** (public) - `(f *startupFlags) Init(fs *flag.FlagSet)` - flags.go:30
+- **Name** (public) - `(f *startupFlags) Name() string` - flags.go:28
+
+#### readerFunc
+- **Read** (public) - `(rf readerFunc) Read(p []byte) (n int, err error)` - dmsgcurl.go:249
+
+---
+
+## pkg/dmsghttp
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsghttp
+**Functions**: 14
+
+### Functions
+- **ExampleMakeHTTPTransport** (public) - `ExampleMakeHTTPTransport()` - examples_test.go:22
+- **GetServers** (public) - `GetServers(ctx context.Context, dmsgDisc string, dmsgServerType string, log *logging.Logger) entries []*disc.Entry` - util.go:16
+- **ListenAndServe** (public) - `ListenAndServe(ctx context.Context, _ cipher.SecKey, a http.Handler, _ disc.APIClient, dmsgPort uint16, dmsgC *dmsg.Client, log *logging.Logger) error` - http.go:18
+- **MakeHTTPTransport** (public) - `MakeHTTPTransport(ctx context.Context, dmsgC *dmsg.Client) HTTPTransport` - http_transport.go:24
+- **TestHTTPTransport_RoundTrip** (public) - `TestHTTPTransport_RoundTrip(t *testing.T)` - http_transport_test.go:22
+- **UpdateServers** (public) - `UpdateServers(ctx context.Context, dClient disc.APIClient, dmsgDisc string, dmsgC *dmsg.Client, dmsgServerType string, log *logging.Logger) entries []*disc.Entry` - util.go:48
+- **newDmsgClient** (private) - `newDmsgClient(t *testing.T, dc disc.APIClient, minSessions int, name string) *dmsg.Client` - http_transport_test.go:134
+- **requestHTTP** (private) - `requestHTTP(httpC *http.Client, method, url string, body []byte) httpClientResult` - http_test.go:148
+- **startDmsgEnv** (private) - `startDmsgEnv(t *testing.T, nSrvs, maxSessions int) disc.APIClient` - http_transport_test.go:101
+- **startHTTPServer** (private) - `startHTTPServer(t *testing.T, results chan httpServerResult, lis net.Listener)` - http_test.go:86
+
+### Methods
+
+#### *wrappedBody
+- **Close** (public) - `(wb *wrappedBody) Close() error` - http_transport.go:70
+
+#### HTTPTransport
+- **RoundTrip** (public) - `(t HTTPTransport) RoundTrip(req *http.Request) (*http.Response, error)` - http_transport.go:33
+
+#### httpClientResult
+- **Assert** (public) - `(r httpClientResult) Assert(t *testing.T, i int)` - http_test.go:66
+
+#### httpServerResult
+- **Assert** (public) - `(r httpServerResult) Assert(t *testing.T, i int)` - http_test.go:37
+
+---
+
+## pkg/dmsgpty
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgpty
+**Functions**: 123
+
+### Functions
+- **DefaultCLI** (public) - `DefaultCLI() CLI` - cli.go:27
+- **DefaultCLIAddr** (public) - `DefaultCLIAddr() string` - const_windows.go:13
+- **DefaultCLIAddr** (public) - `DefaultCLIAddr() string` - const_unix.go:13
+- **DefaultConfig** (public) - `DefaultConfig() Config` - conf.go:27
+- **DefaultUIConfig** (public) - `DefaultUIConfig() UIConfig` - ui.go:33
+- **DmsgUIDialer** (public) - `DmsgUIDialer(dmsgC *dmsg.Client, rAddr dmsg.Addr) UIDialer` - ui_dialer.go:18
+- **NetUIDialer** (public) - `NetUIDialer(network, address string) UIDialer` - ui_dialer.go:23
+- **NewConfigWhitelist** (public) - `NewConfigWhitelist(confPath string) (Whitelist, error)` - whitelist.go:35
+- **NewHost** (public) - `NewHost(dmsgC *dmsg.Client, wl Whitelist) *Host` - host.go:32
+- **NewMemoryWhitelist** (public) - `NewMemoryWhitelist() Whitelist` - whitelist.go:211
+- **NewProxyClient** (public) - `NewProxyClient(conn io.ReadWriteCloser, rPK cipher.PubKey, rPort uint16) (*PtyClient, error)` - pty_client.go:40
+- **NewProxyGateway** (public) - `NewProxyGateway(ptyC *PtyClient) PtyGateway` - pty_gateway.go:79
+- **NewPty** (public) - `NewPty() *Pty` - pty_windows.go:29
+- **NewPty** (public) - `NewPty() *Pty` - pty_unix.go:29
+- **NewPtyClient** (public) - `NewPtyClient(conn io.ReadWriteCloser) (*PtyClient, error)` - pty_client.go:24
+- **NewPtyGateway** (public) - `NewPtyGateway(ses *Pty) PtyGateway` - pty_gateway.go:34
+- **NewUI** (public) - `NewUI(dialer UIDialer, conf UIConfig) *UI` - ui.go:48
+- **NewWhitelistClient** (public) - `NewWhitelistClient(conn io.ReadWriteCloser) (*WhitelistClient, error)` - whitelist_client.go:17
+- **NewWhitelistGateway** (public) - `NewWhitelistGateway(auth Whitelist) *WhitelistGateway` - whitelist_gateway.go:14
+- **NewWinSize** (public) - `NewWinSize(w *pty.Winsize) (*WinSize, error)` - pty_gateway_unix.go:14
+- **NewWinSize** (public) - `NewWinSize(w *windows.Coord) (*WinSize, error)` - pty_gateway_windows.go:14
+- **ParseWindowsEnv** (public) - `ParseWindowsEnv(cliAddr string) string` - conf.go:77
+- **TestHost** (public) - `TestHost(t *testing.T)` - host_test.go:24
+- **TestParseWindowsConf** (public) - `TestParseWindowsConf(t *testing.T)` - conf_test.go:12
+- **WriteConfig** (public) - `WriteConfig(conf Config, path string) error` - conf.go:38
+- **checkPty** (private) - `checkPty(t *testing.T, ptyC *PtyClient, msg string)` - host_test.go:237
+- **checkWhitelist** (private) - `checkWhitelist(t *testing.T, wlCli *WhitelistClient, initN, rounds int)` - host_test.go:255
+- **cliEndpoints** (private) - `cliEndpoints(h *Host) mux hostMux` - host.go:199
+- **dmsgEndpoints** (private) - `dmsgEndpoints(h *Host) mux hostMux` - host.go:207
+- **findStringsEnclosedBy** (private) - `findStringsEnclosedBy(str string, sep string, result []string, lastIndex int) ([]string, int)` - conf.go:51
+- **getConfig** (private) - `getConfig(c *dmsg.Client) Config` - host_test.go:279
+- **getPtySize** (private) - `getPtySize(t *os.File) (*pty.Winsize, error)` - cli_unix.go:43
+- **getSize** (private) - `getSize() (*WinSize, error)` - pty_client_windows.go:14
+- **handleProxy** (private) - `handleProxy(h *Host) handleFunc` - host.go:233
+- **handlePty** (private) - `handlePty(h *Host) handleFunc` - host.go:219
+- **handleWhitelist** (private) - `handleWhitelist(h *Host) handleFunc` - host.go:212
+- **isWebsocket** (private) - `isWebsocket(h http.Header) bool` - ui.go:199
+- **logWS** (private) - `logWS(conn net.Conn, msg string)` - ui.go:209
+- **processRPCError** (private) - `processRPCError(err error) error` - rpc_util.go:17
+- **ptyResizeLoop** (private) - `ptyResizeLoop(ctx context.Context, ptyC *PtyClient) error` - cli_unix.go:19
+- **ptyResizeLoop** (private) - `ptyResizeLoop(ctx context.Context, ptyC *PtyClient) error` - cli_windows.go:16
+- **readRequest** (private) - `readRequest(r io.Reader) (*url.URL, error)` - rpc_util.go:56
+- **readResponse** (private) - `readResponse(r io.Reader) error` - rpc_util.go:89
+- **tempWhitelist** (private) - `tempWhitelist(t *testing.T, c *dmsg.Client) (Whitelist, func())` - host_test.go:217
+- **updateFile** (private) - `updateFile(confPath string) error` - whitelist.go:194
+- **urlCommands** (private) - `urlCommands(r *http.Request, customCommands map[string][]string) string` - ui.go:241
+- **writeError** (private) - `writeError(log logrus.FieldLogger, w http.ResponseWriter, r *http.Request, err error, code int)` - ui.go:230
+- **writeRequest** (private) - `writeRequest(rw io.ReadWriter, uri string) error` - rpc_util.go:39
+- **writeResponse** (private) - `writeResponse(w io.Writer, err error) error` - rpc_util.go:75
+- **writeTermHTML** (private) - `writeTermHTML(w io.Writer) (int64, error)` - ui_html.go:13
+- **writeWSError** (private) - `writeWSError(log logrus.FieldLogger, wsConn net.Conn, err error)` - ui.go:213
+
+### Methods
+
+#### *CLI
+- **StartLocalPty** (public) - `(cli *CLI) StartLocalPty(ctx context.Context, cmd string, args ...string) error` - cli.go:45
+- **StartRemotePty** (public) - `(cli *CLI) StartRemotePty(ctx context.Context, rPK cipher.PubKey, rPort uint16, cmd string, args ...string) error` - cli.go:66
+- **WhitelistClient** (public) - `(cli *CLI) WhitelistClient() (*WhitelistClient, error)` - cli.go:36
+- **prepareConn** (private) - `(cli *CLI) prepareConn() (net.Conn, error)` - cli.go:87
+- **prepareStdin** (private) - `(cli *CLI) prepareStdin() (restore func(), err error)` - cli_unix.go:48
+- **prepareStdin** (private) - `(cli *CLI) prepareStdin() (restore func(), err error)` - cli_windows.go:44
+- **servePty** (private) - `(cli *CLI) servePty(ctx context.Context, ptyC *PtyClient, cmd string, args []string) error` - cli.go:112
+
+#### *Host
+- **ListenAndServe** (public) - `(h *Host) ListenAndServe(ctx context.Context, port uint16) error` - host.go:87
+- **ServeCLI** (public) - `(h *Host) ServeCLI(ctx context.Context, lis net.Listener) error` - host.go:40
+- **authorize** (private) - `(h *Host) authorize(log logrus.FieldLogger, rPK cipher.PubKey) bool` - host.go:176
+- **log** (private) - `(h *Host) log() logrus.FieldLogger` - host.go:190
+- **serveConn** (private) - `(h *Host) serveConn(ctx context.Context, log logrus.FieldLogger, mux *hostMux, conn net.Conn)` - host.go:158
+
+#### *LocalPtyGateway
+- **Read** (public) - `(g *LocalPtyGateway) Read(reqN *int, respB *[]byte) error` - pty_gateway.go:44
+- **SetPtySize** (public) - `(g *LocalPtyGateway) SetPtySize(size *WinSize, _ *struct{...}) error` - pty_gateway.go:64
+- **Start** (public) - `(g *LocalPtyGateway) Start(req *CommandReq, _ *struct{...}) error` - pty_gateway.go:52
+- **Stop** (public) - `(g *LocalPtyGateway) Stop(_, _ *struct{...}) error` - pty_gateway.go:39
+- **Write** (public) - `(g *LocalPtyGateway) Write(wb *[]byte, n *int) error` - pty_gateway.go:57
+
+#### *ProxiedPtyGateway
+- **Read** (public) - `(g *ProxiedPtyGateway) Read(reqN *int, respB *[]byte) error` - pty_gateway.go:94
+- **SetPtySize** (public) - `(g *ProxiedPtyGateway) SetPtySize(size *WinSize, _ *struct{...}) error` - pty_gateway.go:69
+- **Start** (public) - `(g *ProxiedPtyGateway) Start(req *CommandReq, _ *struct{...}) error` - pty_gateway.go:84
+- **Stop** (public) - `(g *ProxiedPtyGateway) Stop(_, _ *struct{...}) error` - pty_gateway.go:89
+- **Write** (public) - `(g *ProxiedPtyGateway) Write(reqB *[]byte, respN *int) error` - pty_gateway.go:102
+
+#### *Pty
+- **Read** (public) - `(s *Pty) Read(b []byte) (int, error)` - pty_windows.go:48
+- **Read** (public) - `(s *Pty) Read(b []byte) (int, error)` - pty_unix.go:48
+- **SetPtySize** (public) - `(s *Pty) SetPtySize(size *WinSize) error` - pty_unix.go:101
+- **SetPtySize** (public) - `(s *Pty) SetPtySize(size *WinSize) error` - pty_windows.go:114
+- **Start** (public) - `(s *Pty) Start(name string, args []string, size *WinSize) error` - pty_windows.go:73
+- **Start** (public) - `(s *Pty) Start(name string, args []string, size *WinSize) error` - pty_unix.go:72
+- **Stop** (public) - `(s *Pty) Stop() error` - pty_windows.go:34
+- **Stop** (public) - `(s *Pty) Stop() error` - pty_unix.go:34
+- **Write** (public) - `(s *Pty) Write(b []byte) (int, error)` - pty_windows.go:60
+- **Write** (public) - `(s *Pty) Write(b []byte) (int, error)` - pty_unix.go:60
+
+#### *PtyClient
+- **Close** (public) - `(sc *PtyClient) Close() error` - pty_client.go:56
+- **Read** (public) - `(sc *PtyClient) Read(b []byte) (int, error)` - pty_client.go:79
+- **SetPtySize** (public) - `(sc *PtyClient) SetPtySize(size *WinSize) error` - pty_client.go:122
+- **Start** (public) - `(sc *PtyClient) Start(name string, arg ...string) error` - pty_client.go:108
+- **StartWithSize** (public) - `(sc *PtyClient) StartWithSize(name string, arg []string, c *WinSize) error` - pty_client.go:117
+- **Stop** (public) - `(sc *PtyClient) Stop() error` - pty_client.go:74
+- **Write** (public) - `(sc *PtyClient) Write(b []byte) (int, error)` - pty_client.go:87
+- **call** (private) - `(sc *PtyClient) call(method string, args, reply interface{...}) error` - pty_client.go:97
+- **close** (private) - `(sc *PtyClient) close() closed bool` - pty_client.go:65
+- **rpcMethod** (private) - `(*PtyClient) rpcMethod(m string) string` - pty_client.go:93
+
+#### *UI
+- **Handler** (public) - `(ui *UI) Handler(customCommands map[string][]string) http.HandlerFunc` - ui.go:103
+- **Logger** (public) - `(ui *UI) Logger() logrus.FieldLogger` - ui.go:60
+- **SetLogger** (public) - `(ui *UI) SetLogger(log logrus.FieldLogger)` - ui.go:66
+- **uiStartSize** (private) - `(ui *UI) uiStartSize(ptyC *PtyClient) error` - ui_windows.go:11
+- **uiStartSize** (private) - `(ui *UI) uiStartSize(ptyC *PtyClient) error` - ui_unix.go:11
+- **writeBanner** (private) - `(ui *UI) writeBanner(w io.Writer, uiAddr string, sID int32) error` - ui.go:70
+
+#### *WhitelistClient
+- **rpcMethod** (private) - `(*WhitelistClient) rpcMethod(m string) string` - whitelist_client.go:44
+
+#### *WhitelistGateway
+- **Whitelist** (public) - `(g *WhitelistGateway) Whitelist(_ *struct{...}, out *[]cipher.PubKey) error` - whitelist_gateway.go:19
+- **WhitelistAdd** (public) - `(g *WhitelistGateway) WhitelistAdd(in *[]cipher.PubKey, _ *struct{...}) error` - whitelist_gateway.go:34
+- **WhitelistRemove** (public) - `(g *WhitelistGateway) WhitelistRemove(in *[]cipher.PubKey, _ *struct{...}) error` - whitelist_gateway.go:39
+
+#### *WinSize
+- **PtySize** (public) - `(w *WinSize) PtySize() *pty.Winsize` - pty_gateway_unix.go:27
+- **PtySize** (public) - `(w *WinSize) PtySize() *windows.Coord` - pty_gateway_windows.go:25
+
+#### *configWhitelist
+- **Add** (public) - `(w *configWhitelist) Add(pks ...cipher.PubKey) error` - whitelist.go:77
+- **All** (public) - `(w *configWhitelist) All() (map[cipher.PubKey]bool, error)` - whitelist.go:65
+- **Get** (public) - `(w *configWhitelist) Get(pk cipher.PubKey) (bool, error)` - whitelist.go:51
+- **Remove** (public) - `(w *configWhitelist) Remove(pks ...cipher.PubKey) error` - whitelist.go:125
+- **open** (private) - `(w *configWhitelist) open() error` - whitelist.go:155
+
+#### *dmsgUIDialer
+- **AddrString** (public) - `(d *dmsgUIDialer) AddrString() string` - ui_dialer.go:36
+- **Dial** (public) - `(d *dmsgUIDialer) Dial() (net.Conn, error)` - ui_dialer.go:32
+
+#### *hostMux
+- **Handle** (public) - `(h *hostMux) Handle(pattern string, fn handleFunc)` - host_mux.go:25
+- **ServeConn** (public) - `(h *hostMux) ServeConn(ctx context.Context, conn net.Conn) error` - host_mux.go:36
+
+#### *memoryWhitelist
+- **Add** (public) - `(w *memoryWhitelist) Add(pks ...cipher.PubKey) error` - whitelist.go:239
+- **All** (public) - `(w *memoryWhitelist) All() (map[cipher.PubKey]bool, error)` - whitelist.go:229
+- **Get** (public) - `(w *memoryWhitelist) Get(pk cipher.PubKey) (bool, error)` - whitelist.go:222
+- **Remove** (public) - `(w *memoryWhitelist) Remove(pks ...cipher.PubKey) error` - whitelist.go:248
+
+#### *netUIDialer
+- **AddrString** (public) - `(d *netUIDialer) AddrString() string` - ui_dialer.go:49
+- **Dial** (public) - `(d *netUIDialer) Dial() (net.Conn, error)` - ui_dialer.go:45
+
+#### WhitelistClient
+- **ViewWhitelist** (public) - `(wc WhitelistClient) ViewWhitelist() ([]cipher.PubKey, error)` - whitelist_client.go:28
+- **WhitelistAdd** (public) - `(wc WhitelistClient) WhitelistAdd(pks ...cipher.PubKey) error` - whitelist_client.go:35
+- **WhitelistRemove** (public) - `(wc WhitelistClient) WhitelistRemove(pks ...cipher.PubKey) error` - whitelist_client.go:40
+
+---
+
+## pkg/dmsgserver
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgserver
+**Functions**: 2
+
+### Functions
+- **GenerateDefaultConfig** (public) - `GenerateDefaultConfig(c *Config)` - config.go:45
+
+### Methods
+
+#### Config
+- **Flush** (public) - `(c Config) Flush(log *logging.Logger) err error` - config.go:60
+
+---
+
+## pkg/dmsgtest
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/dmsgtest
+**Functions**: 22
+
+### Functions
+- **NewEnv** (public) - `NewEnv(t *testing.T, timeout time.Duration) *Env` - env.go:42
+- **TestClient_RemoteClients** (public) - `TestClient_RemoteClients(t *testing.T)` - dmsg_client_test.go:22
+- **TestEnv** (public) - `TestEnv(t *testing.T)` - env_test.go:14
+- **checkRemoteClients** (private) - `checkRemoteClients(t *testing.T, lc *dmsg.Client, expectedConnections int)` - dmsg_client_test.go:213
+- **clientsNeeded** (private) - `clientsNeeded(t *testing.T, changes []clientChange) int` - dmsg_client_test.go:163
+- **continuousRandomWrite** (private) - `continuousRandomWrite(t *testing.T, conn net.Conn)` - dmsg_client_test.go:174
+- **listenAndDiscard** (private) - `listenAndDiscard(t *testing.T, c *dmsg.Client, port uint16)` - dmsg_client_test.go:196
+- **makeAdvanceClientFunc** (private) - `makeAdvanceClientFunc(clients []*dmsg.Client) advanceClientFunc` - dmsg_client_test.go:146
+- **timeoutContext** (private) - `timeoutContext(timeout time.Duration) (context.Context, context.CancelFunc)` - env.go:246
+
+### Methods
+
+#### *Env
+- **AllClients** (public) - `(env *Env) AllClients() []*dmsg.Client` - env.go:173
+- **AllServers** (public) - `(env *Env) AllServers() []*dmsg.Server` - env.go:190
+- **ClientOfPK** (public) - `(env *Env) ClientOfPK(pk cipher.PubKey) (*dmsg.Client, bool)` - env.go:207
+- **CloseAllClients** (public) - `(env *Env) CloseAllClients()` - env.go:227
+- **CloseAllServers** (public) - `(env *Env) CloseAllServers()` - env.go:237
+- **Discovery** (public) - `(env *Env) Discovery() disc.APIClient` - env.go:168
+- **NewClient** (public) - `(env *Env) NewClient(conf *dmsg.Config) (*dmsg.Client, error)` - env.go:123
+- **NewClientWithKeys** (public) - `(env *Env) NewClientWithKeys(pk cipher.PubKey, sk cipher.SecKey, conf *dmsg.Config) (*dmsg.Client, error)` - env.go:135
+- **NewServer** (public) - `(env *Env) NewServer(updateInterval time.Duration) (*dmsg.Server, error)` - env.go:77
+- **Shutdown** (public) - `(env *Env) Shutdown()` - env.go:221
+- **Startup** (public) - `(env *Env) Startup(entryTimeout time.Duration, servers, clients int, conf *dmsg.Config) error` - env.go:53
+- **newClientWithKeys** (private) - `(env *Env) newClientWithKeys(ctx context.Context, pk cipher.PubKey, sk cipher.SecKey, conf *dmsg.Config) (*dmsg.Client, error)` - env.go:145
+- **newServer** (private) - `(env *Env) newServer(ctx context.Context, updateInterval time.Duration) (*dmsg.Server, error)` - env.go:87
+
+---
+
+## pkg/ioutil
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/ioutil
+**Functions**: 1
+
+### Functions
+- **BufRead** (public) - `BufRead(buf *bytes.Buffer, data, p []byte) (int, error)` - buf_read.go:11
+
+---
+
+## pkg/noise
+**Path**: /Users/tayyab/development/sythtask/repos/dmsg/pkg/noise
+**Functions**: 65
+
+### Functions
+- **InitiatorHandshake** (public) - `InitiatorHandshake(ns *Noise, r *bufio.Reader, w io.Writer) error` - read_writer.go:210
+- **KKAndSecp256k1** (public) - `KKAndSecp256k1(config Config) (*Noise, error)` - noise.go:81
+- **New** (public) - `New(pattern noise.HandshakePattern, config Config) (*Noise, error)` - noise.go:50
+- **NewRPCClientDialer** (public) - `NewRPCClientDialer(addr string, pattern noise.HandshakePattern, config Config) *RPCClientDialer` - net.go:55
+- **NewReadWriter** (public) - `NewReadWriter(rw io.ReadWriter, ns *Noise) *ReadWriter` - read_writer.go:66
+- **ReadRawFrame** (public) - `ReadRawFrame(r *bufio.Reader) (p []byte, err error)` - read_writer.go:279
+- **ResponderHandshake** (public) - `ResponderHandshake(ns *Noise, r *bufio.Reader, w io.Writer) error` - read_writer.go:237
+- **TestConn** (public) - `TestConn(t *testing.T)` - net_test.go:102
+- **TestKKAndSecp256k1** (public) - `TestKKAndSecp256k1(t *testing.T)` - noise_test.go:30
+- **TestListener** (public) - `TestListener(t *testing.T)` - net_test.go:354
+- **TestMain** (public) - `TestMain(m *testing.M)` - noise_test.go:15
+- **TestNewReadWriter** (public) - `TestNewReadWriter(t *testing.T)` - read_writer_test.go:15
+- **TestRPCClientDialer** (public) - `TestRPCClientDialer(t *testing.T)` - net_test.go:30
+- **TestReadWriterKKPattern** (public) - `TestReadWriterKKPattern(t *testing.T)` - read_writer_test.go:105
+- **TestReadWriterXKPattern** (public) - `TestReadWriterXKPattern(t *testing.T)` - read_writer_test.go:162
+- **TestXKAndSecp256k1** (public) - `TestXKAndSecp256k1(t *testing.T)` - noise_test.go:85
+- **WrapConn** (public) - `WrapConn(conn net.Conn, ns *Noise, hsTimeout time.Duration) (*Conn, error)` - net.go:167
+- **WrapListener** (public) - `WrapListener(lis net.Listener, pk cipher.PubKey, sk cipher.SecKey, init bool, pattern noise.HandshakePattern) *Listener` - net.go:211
+- **WriteRawFrame** (public) - `WriteRawFrame(w io.Writer, p []byte) ([]byte, error)` - read_writer.go:265
+- **XKAndSecp256k1** (public) - `XKAndSecp256k1(config Config) (*Noise, error)` - noise.go:88
+- **isTemp** (private) - `isTemp(err error) bool` - read_writer.go:307
+- **prepareConns** (private) - `prepareConns(t *testing.T) (*Conn, *Conn, func())` - net_test.go:311
+
+### Methods
+
+#### *Conn
+- **LocalAddr** (public) - `(c *Conn) LocalAddr() net.Addr` - net.go:186
+- **Read** (public) - `(c *Conn) Read(b []byte) (int, error)` - net.go:176
+- **RemoteAddr** (public) - `(c *Conn) RemoteAddr() net.Addr` - net.go:194
+- **Write** (public) - `(c *Conn) Write(b []byte) (int, error)` - net.go:181
+
+#### *Listener
+- **Accept** (public) - `(ml *Listener) Accept() (net.Conn, error)` - net.go:217
+- **Addr** (public) - `(ml *Listener) Addr() net.Addr` - net.go:242
+
+#### *Noise
+- **DecryptUnsafe** (public) - `(ns *Noise) DecryptUnsafe(ciphertext []byte) ([]byte, error)` - noise.go:154
+- **DecryptWithNonceMap** (public) - `(ns *Noise) DecryptWithNonceMap(nm NonceMap, ciphertext []byte) ([]byte, error)` - noise.go:170
+- **EncryptUnsafe** (public) - `(ns *Noise) EncryptUnsafe(plaintext []byte) []byte` - noise.go:145
+- **GetDecNonce** (public) - `(ns *Noise) GetDecNonce() uint64` - noise.go:98
+- **GetEncNonce** (public) - `(ns *Noise) GetEncNonce() uint64` - noise.go:93
+- **HandshakeFinished** (public) - `(ns *Noise) HandshakeFinished() bool` - noise.go:125
+- **LocalStatic** (public) - `(ns *Noise) LocalStatic() cipher.PubKey` - noise.go:130
+- **MakeHandshakeMessage** (public) - `(ns *Noise) MakeHandshakeMessage() (res []byte, err error)` - noise.go:103
+- **ProcessHandshakeMessage** (public) - `(ns *Noise) ProcessHandshakeMessage(msg []byte) err error` - noise.go:114
+- **RemoteStatic** (public) - `(ns *Noise) RemoteStatic() cipher.PubKey` - noise.go:135
+
+#### *RPCClientDialer
+- **Close** (public) - `(d *RPCClientDialer) Close() err error` - net.go:87
+- **Run** (public) - `(d *RPCClientDialer) Run(srv *rpc.Server, retry time.Duration) error` - net.go:62
+- **clearDone** (private) - `(d *RPCClientDialer) clearDone()` - net.go:138
+- **establishConn** (private) - `(d *RPCClientDialer) establishConn() error` - net.go:103
+- **setConn** (private) - `(d *RPCClientDialer) setConn(conn net.Conn)` - net.go:123
+- **setDone** (private) - `(d *RPCClientDialer) setDone() ok bool` - net.go:129
+
+#### *ReadWriter
+- **Buffered** (public) - `(rw *ReadWriter) Buffered() int` - read_writer.go:195
+- **Handshake** (public) - `(rw *ReadWriter) Handshake(hsTimeout time.Duration) error` - read_writer.go:176
+- **LocalStatic** (public) - `(rw *ReadWriter) LocalStatic() cipher.PubKey` - read_writer.go:200
+- **Read** (public) - `(rw *ReadWriter) Read(p []byte) (int, error)` - read_writer.go:74
+- **RemoteStatic** (public) - `(rw *ReadWriter) RemoteStatic() cipher.PubKey` - read_writer.go:205
+- **Write** (public) - `(rw *ReadWriter) Write(p []byte) (n int, err error)` - read_writer.go:125
+- **processReadError** (private) - `(rw *ReadWriter) processReadError(err error) error` - read_writer.go:108
+
+#### *TestRPC
+- **Add** (public) - `(r *TestRPC) Add(in *AddIn, out *int) error` - net_test.go:25
+
+#### *netError
+- **Error** (public) - `(e *netError) Error() string` - read_writer.go:45
+- **Temporary** (public) - `(e *netError) Temporary() bool` - read_writer.go:47
+- **Timeout** (public) - `(e *netError) Timeout() bool` - read_writer.go:46
+- **Unwrap** (public) - `(e *netError) Unwrap() error` - read_writer.go:48
+
+#### Addr
+- **Network** (public) - `(a Addr) Network() string` - net.go:151
+- **String** (public) - `(a Addr) String() string` - net.go:156
+
+#### Secp256k1
+- **DH** (public) - `(Secp256k1) DH(sk, pk []byte) []byte` - dh.go:24
+- **DHLen** (public) - `(Secp256k1) DHLen() int` - dh.go:31
+- **DHName** (public) - `(Secp256k1) DHName() string` - dh.go:36
+- **GenerateKeypair** (public) - `(Secp256k1) GenerateKeypair(_ io.Reader) (noise.DHKey, error)` - dh.go:15
+
+#### timeoutError
+- **Error** (public) - `(timeoutError) Error() string` - read_writer.go:35
+- **Temporary** (public) - `(timeoutError) Temporary() bool` - read_writer.go:37
+- **Timeout** (public) - `(timeoutError) Timeout() bool` - read_writer.go:36
+
+---
+
